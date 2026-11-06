@@ -1,0 +1,5 @@
+allowBuilds:
+  workerd: true
+  esbuild: true
+  better-sqlite3: false
+engineStrict: true
