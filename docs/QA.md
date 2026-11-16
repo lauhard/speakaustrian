@@ -18,17 +18,18 @@ Pools of a real chapter go into `src/lib/content/<chapter>-pools.json` = `{ "cha
 | `pool.size` · `pool.twins` | error | test pool ≥ 60 · every test item ≥ 2 twins (family ≥ 3) |
 | `pool.quota` | error | `policy.testComposition` reachable with different twin families per discipline |
 | `practice.gate` | error | ≥ 2 readiness blocks without repeats: 2 × quota per discipline |
-| `practice.size` | warning | practice part ≈ 40 + 2 blocks = 80 (G-010) |
+| `practice.size` | error | practice part 40 + 2 blocks = 80 (G-010, decided) |
 | `pool.duplicate` | error | same task text twice (practice/test overlap, twin without a new surface) |
 | `choice.options` · `test.parts` · `goals.uncovered` | error | duplicate options · test task > 3 parts · chapter goal without item |
 | `i18n.blank` · `image.missing` | error | blank `de`/`en`/`tl` · picture file missing |
+| `practice.twins` | warning | practice item without a twin in its family (masterprompt: every item ≥ 1 twin) |
 | `recycling` | error | < 20 % of practice items with `refs`/goals of earlier chapters (first chapter: info, G-011) |
 | `vocab.unknown` | warning | word neither in lessons/inventory up to this chapter nor on `src/lib/content/qa-allowlist.json` |
 | `variety.de` · `i18n.untranslated` · `pool.family-skill` | warning | German-German form of `03g` · `en`/`tl` equals `de` · twins with different disciplines |
 
 Sandbox chapters (DEMO) get quantity rules and `vocab.unknown` as info only.
 
-## Expected result today (16.11.2026): `0 error(s), 4 warning(s), 31 info`, exit 0
-- A1-01: `pools.missing` (info) and 4 × `i18n.untranslated` (verb paradigms repeated in all three languages; fix with the 004b batch).
-- DEMO (small on purpose): `pool.size` 12 < 60, 6 × `pool.twins` (1 twin each), `practice.size` 9 < 52, `recycling.na`, 21 × `vocab.unknown` (sandbox texts go beyond A1-01).
-- Fixture: 23 errors, 5 warnings, exit 1.
+## Expected result today (16.11.2026)
+- `pnpm qa`: `0 error(s), 4 warning(s), 28 info` (27 of them DEMO sandbox, 1 recycling), exit 0. The 4 warnings are `i18n.untranslated` in A1-01 lessons (verb paradigms repeated in all three languages). Info: recycling not measured in the first chapter.
+- A1-01 pools (`a1-01-pools.json`): 90 test items in 30 families (twins ≥ 2), 90 practice items, no pool warnings. DEMO (sandbox) only gets quantity and vocabulary findings as info.
+- Fixture `--file src/lib/core/qa/fixtures/broken.json`: 24 errors, 7 warnings, exit 1.

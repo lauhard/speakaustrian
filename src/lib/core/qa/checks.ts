@@ -23,7 +23,7 @@ export const QA_CONFIG = {
 	POOL_MIN: 60, // 04a constants, 03 Q6
 	TWINS_MIN_TESTPOOL: 2, // R-K3
 	GATE_BLOCKS_MIN: 2, // masterprompt Phase 5 no. 11
-	PRACTICE_PART_ITEMS: 40, // masterprompt Phase 5 no. 2 ("≈ 40"), see spec-gaps G-010
+	PRACTICE_PART_ITEMS: 40, // masterprompt Phase 5 no. 2 ("≈ 40"), fixed minimum by G-010 (decided A)
 	TEST_PARTS_MAX: 3, // R-T3
 	RECYCLING_MIN: 0.2 // 03 Q8
 } as const;
@@ -71,9 +71,14 @@ export const germanTexts = (item: Item): string[] => {
 	return [...own, item.audioText ?? ''].filter((t) => t !== '');
 };
 
+// German text of the lessons: vocabulary, cards (phrase + note), titles, instructions and explanations count as introduced.
 const lessonTexts = (c: ChapterContent): string[] => [
 	...(c.vocab ?? []).map((v) => v.lemma),
-	...c.lessons.flatMap((l) => [...(l.cards ?? []).map((card) => card.phrase), ...l.items.flatMap(germanTexts)])
+	...c.lessons.flatMap((l) => [
+		l.title.de,
+		...(l.cards ?? []).flatMap((card) => [card.phrase, card.note.de]),
+		...l.items.flatMap((i) => [...germanTexts(i), i.instruction.de, i.explanation.de])
+	])
 ];
 
 export type Lexicon = { forms: ReadonlySet<string>; stems: ReadonlySet<string> };
@@ -201,7 +206,9 @@ export const checkChapter = (raw: unknown, ctx: QaContext): Finding[] => {
 			.map(([d, n]) => [d, n * C.GATE_BLOCKS_MIN, practice.filter((i) => i.skill === d).length] as const)
 			.filter(([, need, have]) => have < need)
 			.map(([d, need, have]) => f(sizeLevel, 'practice.gate', `${C.GATE_BLOCKS_MIN} readiness blocks need ${need} × ${d} in the practice pool, it has ${have} (R-G1)`)),
-		...(practice.length < practiceMin ? [f(ctx.real ? 'warning' : 'info', 'practice.size', `practice pool has ${practice.length} items; practice part (≈ ${C.PRACTICE_PART_ITEMS}) + ${C.GATE_BLOCKS_MIN} readiness blocks need ${practiceMin} (G-010)`)] : []),
+		...(practice.length < practiceMin ? [f(sizeLevel, 'practice.size', `practice pool has ${practice.length} items; practice part (${C.PRACTICE_PART_ITEMS}) + ${C.GATE_BLOCKS_MIN} readiness blocks need ${practiceMin} (G-010)`)] : []),
+		// Masterprompt: every item has ≥ 1 twin. In the practice pool a twin is a family member; a warning, the draws do not depend on it.
+		...(ctx.real ? [...groupBy(practice, familyOf).values()].filter((m) => m.length < 2).map(([i]) => f('warning', 'practice.twins', 'practice item without a twin', i.id)) : []),
 		// 3./Q6: no task twice – neither across practice and test pool nor as a "twin" with the same surface.
 		...duplicates.flatMap(([first, ...rest]) => rest.map((i) => f('error', 'pool.duplicate', `same task text as ${first.id}`, i.id))),
 		// 4. Choice: the answer index is checked by the schema; equal options would make two answers right.

@@ -1,0 +1,5958 @@
+{
+	"chapterId": "A1-01",
+	"goals": {
+		"A1-01-G1": {
+			"de": "Grüßen und sich verabschieden",
+			"en": "Greeting and saying goodbye",
+			"tl": "Bumati at magpaalam"
+		},
+		"A1-01-G2": {
+			"de": "Sich mit Namen vorstellen",
+			"en": "Introducing yourself by name",
+			"tl": "Magpakilala gamit ang pangalan"
+		},
+		"A1-01-G3": {
+			"de": "du oder Sie – höflich ansprechen",
+			"en": "du or Sie – addressing people politely",
+			"tl": "du o Sie – magalang na pakikipag-usap"
+		},
+		"A1-01-G4": {
+			"de": "Fragen zu Name und Herkunft",
+			"en": "Questions about name and origin",
+			"tl": "Mga tanong tungkol sa pangalan at pinagmulan"
+		},
+		"A1-01-G5": {
+			"de": "Die Verben sein, heißen, kommen",
+			"en": "The verbs sein, heißen, kommen",
+			"tl": "Ang mga pandiwang sein, heißen, kommen"
+		},
+		"A1-01-G6": {
+			"de": "Wie geht's? Danke, ja, nein",
+			"en": "How are you? Thanks, yes, no",
+			"tl": "Kumusta? Salamat, oo, hindi"
+		},
+		"A1-01-G7": {
+			"de": "Pronomen ich, du, er, sie, wir, ihr",
+			"en": "Pronouns ich, du, er, sie, wir, ihr",
+			"tl": "Mga panghalip na ich, du, er, sie, wir, ihr"
+		}
+	},
+	"pools": {
+		"practice": [
+			{
+				"id": "A1-01-P-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Huber",
+					"Anna",
+					"Frau"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„Anna“ ist der Vorname, „Huber“ ist der Familienname.",
+					"en": "“Anna” is the first name (Vorname), “Huber” is the family name (Familienname).",
+					"tl": "Ang “Anna” ay ang pangalan (Vorname), ang “Huber” ay ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0325",
+					"W-A1-0326",
+					"W-A1-0147"
+				],
+				"prompt": "„Ich heiße Anna Huber.“ Was ist der Vorname?"
+			},
+			{
+				"id": "A1-01-P-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Gruber",
+					"Jonas",
+					"Herr"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„Jonas“ ist der Vorname, „Gruber“ ist der Familienname.",
+					"en": "“Jonas” is the first name (Vorname), “Gruber” is the family name (Familienname).",
+					"tl": "Ang “Jonas” ay ang pangalan (Vorname), ang “Gruber” ay ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0325",
+					"W-A1-0326",
+					"W-A1-0147"
+				],
+				"prompt": "„Ich heiße Jonas Gruber.“ Was ist der Vorname?",
+				"family": "A1-01-P-LE1-1"
+			},
+			{
+				"id": "A1-01-P-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Berger",
+					"Frau",
+					"Maria"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Maria“ ist der Vorname, „Berger“ ist der Familienname.",
+					"en": "“Maria” is the first name (Vorname), “Berger” is the family name (Familienname).",
+					"tl": "Ang “Maria” ay ang pangalan (Vorname), ang “Berger” ay ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0325",
+					"W-A1-0326",
+					"W-A1-0147"
+				],
+				"prompt": "„Ich heiße Maria Berger.“ Was ist der Vorname?",
+				"family": "A1-01-P-LE1-1"
+			},
+			{
+				"id": "A1-01-P-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Im Text steht: „Maria kommt aus den Philippinen.“ Maria kommt also aus den Philippinen.",
+					"en": "The text says: “Maria kommt aus den Philippinen.” So Maria comes from the Philippines.",
+					"tl": "Sabi sa teksto: “Maria kommt aus den Philippinen.” Kaya galing si Maria sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Das ist Maria. Sie kommt aus den Philippinen. Herr Bauer kommt aus Österreich. Woher kommt Maria?"
+			},
+			{
+				"id": "A1-01-P-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Im Text steht: „Herr Bauer kommt aus Österreich.“ Herr Bauer kommt also aus Österreich.",
+					"en": "The text says: “Herr Bauer kommt aus Österreich.” So Herr Bauer comes from Austria.",
+					"tl": "Sabi sa teksto: “Herr Bauer kommt aus Österreich.” Kaya galing si Herr Bauer sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Das ist Herr Bauer. Er kommt aus Österreich. Frau Santos kommt aus den Philippinen. Woher kommt Herr Bauer?",
+				"family": "A1-01-P-LE2-1"
+			},
+			{
+				"id": "A1-01-P-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Im Text steht: „Frau Santos kommt aus den Philippinen.“ Frau Santos kommt also aus den Philippinen.",
+					"en": "The text says: “Frau Santos kommt aus den Philippinen.” So Frau Santos comes from the Philippines.",
+					"tl": "Sabi sa teksto: “Frau Santos kommt aus den Philippinen.” Kaya galing si Frau Santos sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Das ist Frau Santos. Sie kommt aus den Philippinen. Herr Mayer kommt aus Österreich. Woher kommt Frau Santos?",
+				"family": "A1-01-P-LE2-1"
+			},
+			{
+				"id": "A1-01-P-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Guten Morgen!",
+					"Auf Wiedersehen!",
+					"Guten Abend!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Es ist Abend: Man sagt „Guten Abend!“. „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is evening: you say “Guten Abend!”. “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa gabi, sinasabi ang “Guten Abend!”. Hindi bagay ang “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Abend. Frau Santos kommt. Was sagt sie?"
+			},
+			{
+				"id": "A1-01-P-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Gute Nacht!",
+					"Guten Morgen!",
+					"Auf Wiedersehen!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Es ist Morgen: Man sagt „Guten Morgen!“. „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is morning: you say “Guten Morgen!”. “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa umaga, sinasabi ang “Guten Morgen!”. Hindi bagay ang “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Morgen. Herr Huber kommt. Was sagt er?",
+				"family": "A1-01-P-LE3-1"
+			},
+			{
+				"id": "A1-01-P-LE3-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Gute Nacht!",
+					"Auf Wiedersehen!",
+					"Guten Tag!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Es ist Tag: Man sagt „Guten Tag!“. „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is daytime: you say “Guten Tag!”. “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag!”. Hindi bagay ang “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Tag. Frau Gruber kommt. Was sagt sie?",
+				"family": "A1-01-P-LE3-1"
+			},
+			{
+				"id": "A1-01-P-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Sehr gut.",
+					"Er heißt Lukas.",
+					"Er kommt aus Österreich."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Lukas sagt: „Mir geht's sehr gut, danke.“ Auf „Wie geht's?“ ist „sehr gut“ die Antwort.",
+					"en": "Lukas says: “Mir geht's sehr gut, danke.” The answer to “Wie geht's?” is “sehr gut”.",
+					"tl": "Sinabi ni Lukas: “Mir geht's sehr gut, danke.” Ang sagot sa “Wie geht's?” ay “sehr gut”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"prompt": "Lukas: „Mir geht's sehr gut, danke. Und dir?“ Wie geht's Lukas?"
+			},
+			{
+				"id": "A1-01-P-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Sie heißt Maria.",
+					"Sie kommt aus Österreich.",
+					"Sehr gut."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Maria sagt: „Mir geht's sehr gut, danke.“ Auf „Wie geht's?“ ist „sehr gut“ die Antwort.",
+					"en": "Maria says: “Mir geht's sehr gut, danke.” The answer to “Wie geht's?” is “sehr gut”.",
+					"tl": "Sinabi ni Maria: “Mir geht's sehr gut, danke.” Ang sagot sa “Wie geht's?” ay “sehr gut”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"prompt": "Maria: „Mir geht's sehr gut, danke. Und dir?“ Wie geht's Maria?",
+				"family": "A1-01-P-LE4-1"
+			},
+			{
+				"id": "A1-01-P-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Er heißt Ali.",
+					"Gut.",
+					"Er kommt aus Österreich."
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Ali sagt: „Mir geht's gut, danke.“ Auf „Wie geht's?“ ist „gut“ die Antwort.",
+					"en": "Ali says: “Mir geht's gut, danke.” The answer to “Wie geht's?” is “gut”.",
+					"tl": "Sinabi ni Ali: “Mir geht's gut, danke.” Ang sagot sa “Wie geht's?” ay “gut”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"prompt": "Ali: „Mir geht's gut, danke. Und dir?“ Wie geht's Ali?",
+				"family": "A1-01-P-LE4-1"
+			},
+			{
+				"id": "A1-01-P-LE5-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Anna",
+					"Lukas"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Lukas kommt aus den Philippinen.",
+					"en": "Lukas comes from the Philippines.",
+					"tl": "Galing si Lukas sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362",
+					"W-A1-0006"
+				],
+				"prompt": "Lukas: „Ich komme aus den Philippinen.“ Anna: „Ich komme aus Österreich.“ Wer kommt aus den Philippinen?"
+			},
+			{
+				"id": "A1-01-P-LE5-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Sofia",
+					"Ali"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sofia kommt aus den Philippinen.",
+					"en": "Sofia comes from the Philippines.",
+					"tl": "Galing si Sofia sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362",
+					"W-A1-0006"
+				],
+				"prompt": "Ali: „Ich komme aus Österreich.“ Sofia: „Ich komme aus den Philippinen.“ Wer kommt aus den Philippinen?",
+				"family": "A1-01-P-LE5-1"
+			},
+			{
+				"id": "A1-01-P-LE5-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Anna",
+					"Lukas"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Anna kommt aus den Philippinen.",
+					"en": "Anna comes from the Philippines.",
+					"tl": "Galing si Anna sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362",
+					"W-A1-0006"
+				],
+				"prompt": "Anna: „Ich komme aus den Philippinen.“ Lukas: „Ich komme aus Österreich.“ Wer kommt aus den Philippinen?",
+				"family": "A1-01-P-LE5-1"
+			},
+			{
+				"id": "A1-01-P-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienname?",
+					"en": "Listen. What is the family name?",
+					"tl": "Makinig. Alin ang apelyido (Familienname)?"
+				},
+				"options": [
+					"Huber",
+					"Ali",
+					"Herr"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich heiße Ali Huber.“ „Huber“ ist der Familienname.",
+					"en": "You hear: “Ich heiße Ali Huber.” “Huber” is the family name.",
+					"tl": "Narinig mo: “Ich heiße Ali Huber.” Ang “Huber” ang apelyido."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0147",
+					"W-A1-0325"
+				],
+				"audioText": "Wie heißen Sie? – Ich heiße Ali Huber.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-P-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienname?",
+					"en": "Listen. What is the family name?",
+					"tl": "Makinig. Alin ang apelyido (Familienname)?"
+				},
+				"options": [
+					"Santos",
+					"Anna",
+					"Frau"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich heiße Anna Santos.“ „Santos“ ist der Familienname.",
+					"en": "You hear: “Ich heiße Anna Santos.” “Santos” is the family name.",
+					"tl": "Narinig mo: “Ich heiße Anna Santos.” Ang “Santos” ang apelyido."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0147",
+					"W-A1-0325"
+				],
+				"audioText": "Wie heißen Sie? – Ich heiße Anna Santos.",
+				"audioOnly": true,
+				"family": "A1-01-P-HO1-1"
+			},
+			{
+				"id": "A1-01-P-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienname?",
+					"en": "Listen. What is the family name?",
+					"tl": "Makinig. Alin ang apelyido (Familienname)?"
+				},
+				"options": [
+					"Jonas",
+					"Mayer",
+					"Herr"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Ich heiße Jonas Mayer.“ „Mayer“ ist der Familienname.",
+					"en": "You hear: “Ich heiße Jonas Mayer.” “Mayer” is the family name.",
+					"tl": "Narinig mo: “Ich heiße Jonas Mayer.” Ang “Mayer” ang apelyido."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0147",
+					"W-A1-0325"
+				],
+				"audioText": "Wie heißen Sie? – Ich heiße Jonas Mayer.",
+				"audioOnly": true,
+				"family": "A1-01-P-HO1-1"
+			},
+			{
+				"id": "A1-01-P-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Grüß Gott!",
+					"Servus!",
+					"Tschüss!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Grüß Gott, Herr Mayer!“ Der Gruß ist „Grüß Gott!“.",
+					"en": "You hear: “Grüß Gott, Herr Mayer!” The greeting is “Grüß Gott!”.",
+					"tl": "Narinig mo: “Grüß Gott, Herr Mayer!” Ang pagbati ay “Grüß Gott!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0381",
+					"W-A1-0379",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0385",
+					"W-A1-0378"
+				],
+				"audioText": "Grüß Gott, Herr Mayer!",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-P-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Grüß Gott!",
+					"Hallo!",
+					"Servus!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie hören: „Servus, Anna!“ Der Gruß ist „Servus!“.",
+					"en": "You hear: “Servus, Anna!” The greeting is “Servus!”.",
+					"tl": "Narinig mo: “Servus, Anna!” Ang pagbati ay “Servus!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0381",
+					"W-A1-0379",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0385",
+					"W-A1-0378"
+				],
+				"audioText": "Servus, Anna!",
+				"audioOnly": true,
+				"family": "A1-01-P-HO2-1"
+			},
+			{
+				"id": "A1-01-P-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Gute Nacht!",
+					"Guten Tag!",
+					"Guten Morgen!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Gute Nacht, Lukas!“ Der Gruß ist „Gute Nacht!“.",
+					"en": "You hear: “Gute Nacht, Lukas!” The greeting is “Gute Nacht!”.",
+					"tl": "Narinig mo: “Gute Nacht, Lukas!” Ang pagbati ay “Gute Nacht!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0381",
+					"W-A1-0379",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0385",
+					"W-A1-0378"
+				],
+				"audioText": "Gute Nacht, Lukas!",
+				"audioOnly": true,
+				"family": "A1-01-P-HO2-1"
+			},
+			{
+				"id": "A1-01-P-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where is the person from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"options": [
+					"Österreich",
+					"den Philippinen"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus Österreich.“",
+					"en": "You hear: “Ich komme aus Österreich.” That means: I come from Austria.",
+					"tl": "Narinig mo: “Ich komme aus Österreich.” Ibig sabihin: galing ako sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"audioText": "Herr Huber, woher kommen Sie? – Ich komme aus Österreich.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-P-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where is the person from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"options": [
+					"Österreich",
+					"den Philippinen"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus Österreich.“",
+					"en": "You hear: “Ich komme aus Österreich.” That means: I come from Austria.",
+					"tl": "Narinig mo: “Ich komme aus Österreich.” Ibig sabihin: galing ako sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"audioText": "Woher kommst du, Lukas? – Ich komme aus Österreich.",
+				"audioOnly": true,
+				"family": "A1-01-P-HO3-1"
+			},
+			{
+				"id": "A1-01-P-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where is the person from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus den Philippinen.“",
+					"en": "You hear: “Ich komme aus den Philippinen.” That means: I come from the Philippines.",
+					"tl": "Narinig mo: “Ich komme aus den Philippinen.” Ibig sabihin: galing ako sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"audioText": "Woher kommst du, Maria? – Ich komme aus den Philippinen.",
+				"audioOnly": true,
+				"family": "A1-01-P-HO3-1"
+			},
+			{
+				"id": "A1-01-P-HO4-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist die Antwort auf „Wie geht's?“",
+					"en": "Listen. What is the answer to “Wie geht's?”",
+					"tl": "Makinig. Ano ang sagot sa “Wie geht's?”"
+				},
+				"options": [
+					"Auf Wiedersehen.",
+					"Gut.",
+					"Ich heiße Lukas."
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Gut, danke!“ Das ist die Antwort auf „Wie geht's?“",
+					"en": "You hear: “Gut, danke!” That is the answer to “Wie geht's?”",
+					"tl": "Narinig mo: “Gut, danke!” Iyon ang sagot sa “Wie geht's?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"audioText": "Hallo Lukas! Wie geht's dir? – Gut, danke! Und dir?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-P-HO4-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist die Antwort auf „Wie geht's?“",
+					"en": "Listen. What is the answer to “Wie geht's?”",
+					"tl": "Makinig. Ano ang sagot sa “Wie geht's?”"
+				},
+				"options": [
+					"Auf Wiedersehen.",
+					"Ich heiße Maria.",
+					"Gut."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie hören: „Gut, danke!“ Das ist die Antwort auf „Wie geht's?“",
+					"en": "You hear: “Gut, danke!” That is the answer to “Wie geht's?”",
+					"tl": "Narinig mo: “Gut, danke!” Iyon ang sagot sa “Wie geht's?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"audioText": "Hallo Maria! Wie geht's dir? – Gut, danke! Und dir?",
+				"audioOnly": true,
+				"family": "A1-01-P-HO4-1"
+			},
+			{
+				"id": "A1-01-P-HO4-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist die Antwort auf „Wie geht's?“",
+					"en": "Listen. What is the answer to “Wie geht's?”",
+					"tl": "Makinig. Ano ang sagot sa “Wie geht's?”"
+				},
+				"options": [
+					"Sehr gut.",
+					"Auf Wiedersehen.",
+					"Ich heiße Ali."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Sehr gut, danke!“ Das ist die Antwort auf „Wie geht's?“",
+					"en": "You hear: “Sehr gut, danke!” That is the answer to “Wie geht's?”",
+					"tl": "Narinig mo: “Sehr gut, danke!” Iyon ang sagot sa “Wie geht's?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"audioText": "Hallo Ali! Wie geht's dir? – Sehr gut, danke! Und dir?",
+				"audioOnly": true,
+				"family": "A1-01-P-HO4-1"
+			},
+			{
+				"id": "A1-01-P-HO5-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommt sie?",
+					"Woher kommen Sie?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie hören: „Woher kommen Sie?“ Achten Sie auf: kommen Sie (Sie-Form).",
+					"en": "You hear: “Woher kommen Sie?” Listen for: kommen Sie (Sie-Form).",
+					"tl": "Narinig mo: “Woher kommen Sie?” Pakinggan ang: kommen Sie (Sie-Form)."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"audioText": "Woher kommen Sie?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-P-HO5-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Wie heißen Sie?",
+					"Wie heißt du?",
+					"Wie geht's dir?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie hören: „Wie geht's dir?“ Achten Sie auf: „dir“ sagt man zu einer Person mit „du“.",
+					"en": "You hear: “Wie geht's dir?” Listen for: „dir“ sagt man zu einer Person mit „du“.",
+					"tl": "Narinig mo: “Wie geht's dir?” Pakinggan ang: „dir“ sagt man zu einer Person mit „du“."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"audioText": "Wie geht's dir?",
+				"audioOnly": true,
+				"family": "A1-01-P-HO5-1"
+			},
+			{
+				"id": "A1-01-P-HO5-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommt sie?",
+					"Woher kommen Sie?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Woher kommt sie?“ Achten Sie auf: kommt sie (sie, eine Frau).",
+					"en": "You hear: “Woher kommt sie?” Listen for: kommt sie (sie, eine Frau).",
+					"tl": "Narinig mo: “Woher kommt sie?” Pakinggan ang: kommt sie (sie, eine Frau)."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"audioText": "Woher kommt sie?",
+				"audioOnly": true,
+				"family": "A1-01-P-HO5-1"
+			},
+			{
+				"id": "A1-01-P-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Grüß Gott! Wie {{1}} Sie? – Ich {{2}} Anna Huber.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heißen"
+						]
+					},
+					"2": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich heiße · du heißt · Sie heißen.",
+					"en": "Endings: ich heiße · du heißt · Sie heißen.",
+					"tl": "Mga dulo ng pandiwa: ich heiße · du heißt · Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				]
+			},
+			{
+				"id": "A1-01-P-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Wie {{1}} Sie, bitte? – Ich {{2}} Jonas Mayer.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heißen"
+						]
+					},
+					"2": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich heiße · du heißt · Sie heißen.",
+					"en": "Endings: ich heiße · du heißt · Sie heißen.",
+					"tl": "Mga dulo ng pandiwa: ich heiße · du heißt · Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-P-SC1-1"
+			},
+			{
+				"id": "A1-01-P-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Hallo! Wie {{1}} du? – Ich {{2}} Maria.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heißt"
+						]
+					},
+					"2": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich heiße · du heißt · Sie heißen.",
+					"en": "Endings: ich heiße · du heißt · Sie heißen.",
+					"tl": "Mga dulo ng pandiwa: ich heiße · du heißt · Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-P-SC1-1"
+			},
+			{
+				"id": "A1-01-P-SC2-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Woher {{1}} Herr Santos? – Er {{2}} aus den Philippinen.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"kommt"
+						]
+					},
+					"2": {
+						"accept": [
+							"kommt"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "Endings: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Mga dulo ng pandiwa: ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				]
+			},
+			{
+				"id": "A1-01-P-SC2-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Wir {{1}} aus Österreich.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"kommen"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "Endings: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Mga dulo ng pandiwa: ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-P-SC2-1"
+			},
+			{
+				"id": "A1-01-P-SC2-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Woher {{1}} du? – Ich {{2}} aus Österreich.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"kommst"
+						]
+					},
+					"2": {
+						"accept": [
+							"komme"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "Endings: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Mga dulo ng pandiwa: ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-P-SC2-1"
+			},
+			{
+				"id": "A1-01-P-SC3-1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Ihr Name ist Anna Huber. Sie sagen: „Ich …“",
+				"accept": [
+					"Ich heiße Anna Huber",
+					"Ich heiße Anna Huber.",
+					"Ich bin Anna Huber",
+					"Ich bin Anna Huber.",
+					"heiße Anna Huber",
+					"bin Anna Huber"
+				],
+				"explanation": {
+					"de": "Sie können sagen: „Ich heiße Anna Huber.“ oder „Ich bin Anna Huber.“",
+					"en": "You can say: “Ich heiße Anna Huber.” or “Ich bin Anna Huber.”",
+					"tl": "Puwede mong sabihin: “Ich heiße Anna Huber.” o “Ich bin Anna Huber.”"
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0116"
+				]
+			},
+			{
+				"id": "A1-01-P-SC3-2",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Ihr Name ist Jonas Gruber. Sie sagen: „Ich …“",
+				"accept": [
+					"Ich heiße Jonas Gruber",
+					"Ich heiße Jonas Gruber.",
+					"Ich bin Jonas Gruber",
+					"Ich bin Jonas Gruber.",
+					"heiße Jonas Gruber",
+					"bin Jonas Gruber"
+				],
+				"explanation": {
+					"de": "Sie können sagen: „Ich heiße Jonas Gruber.“ oder „Ich bin Jonas Gruber.“",
+					"en": "You can say: “Ich heiße Jonas Gruber.” or “Ich bin Jonas Gruber.”",
+					"tl": "Puwede mong sabihin: “Ich heiße Jonas Gruber.” o “Ich bin Jonas Gruber.”"
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0116"
+				],
+				"family": "A1-01-P-SC3-1"
+			},
+			{
+				"id": "A1-01-P-SC3-3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Ihr Name ist Maria Santos. Sie sagen: „Ich …“",
+				"accept": [
+					"Ich heiße Maria Santos",
+					"Ich heiße Maria Santos.",
+					"Ich bin Maria Santos",
+					"Ich bin Maria Santos.",
+					"heiße Maria Santos",
+					"bin Maria Santos"
+				],
+				"explanation": {
+					"de": "Sie können sagen: „Ich heiße Maria Santos.“ oder „Ich bin Maria Santos.“",
+					"en": "You can say: “Ich heiße Maria Santos.” or “Ich bin Maria Santos.”",
+					"tl": "Puwede mong sabihin: “Ich heiße Maria Santos.” o “Ich bin Maria Santos.”"
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0116"
+				],
+				"family": "A1-01-P-SC3-1"
+			},
+			{
+				"id": "A1-01-P-SC4-1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Es ist Morgen. Herr Bauer kommt. Schreiben Sie: „Guten Morgen, … Bauer!“",
+				"accept": [
+					"Herr"
+				],
+				"explanation": {
+					"de": "Vor dem Familiennamen steht „Herr“ oder „Frau“: Herr Bauer.",
+					"en": "Before the family name you use “Herr” or “Frau”: Herr Bauer.",
+					"tl": "Bago ang apelyido ginagamit ang “Herr” o “Frau”: Herr Bauer."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0376"
+				]
+			},
+			{
+				"id": "A1-01-P-SC4-2",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Das ist Frau Santos. Sie sagen „Sie“. Schreiben Sie: „Guten Tag, … Santos!“",
+				"accept": [
+					"Frau"
+				],
+				"explanation": {
+					"de": "Vor dem Familiennamen steht „Herr“ oder „Frau“: Frau Santos.",
+					"en": "Before the family name you use “Herr” or “Frau”: Frau Santos.",
+					"tl": "Bago ang apelyido ginagamit ang “Herr” o “Frau”: Frau Santos."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0376"
+				],
+				"family": "A1-01-P-SC4-1"
+			},
+			{
+				"id": "A1-01-P-SC4-3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Es ist Tag. Herr Berger kommt. Schreiben Sie: „Guten Tag, … Berger!“",
+				"accept": [
+					"Herr"
+				],
+				"explanation": {
+					"de": "Vor dem Familiennamen steht „Herr“ oder „Frau“: Herr Berger.",
+					"en": "Before the family name you use “Herr” or “Frau”: Herr Berger.",
+					"tl": "Bago ang apelyido ginagamit ang “Herr” o “Frau”: Herr Berger."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0376"
+				],
+				"family": "A1-01-P-SC4-1"
+			},
+			{
+				"id": "A1-01-P-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Guten Morgen, Herr Mayer!",
+					"Gute Nacht, Herr Mayer!",
+					"Auf Wiedersehen, Herr Mayer!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Es ist Morgen: Man sagt „Guten Morgen“. „Gute Nacht“ passt nicht.",
+					"en": "It is morning: you say “Guten Morgen”. “Gute Nacht” does not fit.",
+					"tl": "Sa umaga, sinasabi ang “Guten Morgen”. Hindi bagay ang “Gute Nacht”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Morgen. Herr Mayer kommt. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Guten Morgen, Frau Santos!",
+					"Guten Abend, Frau Santos!",
+					"Auf Wiedersehen, Frau Santos!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Es ist Abend: Man sagt „Guten Abend“. „Guten Morgen“ passt nicht.",
+					"en": "It is evening: you say “Guten Abend”. “Guten Morgen” does not fit.",
+					"tl": "Sa gabi, sinasabi ang “Guten Abend”. Hindi bagay ang “Guten Morgen”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Abend. Frau Santos kommt. Was sagen Sie?",
+				"family": "A1-01-P-SP1-1"
+			},
+			{
+				"id": "A1-01-P-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Gute Nacht, Herr Bauer!",
+					"Guten Tag, Herr Bauer!",
+					"Auf Wiedersehen, Herr Bauer!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Es ist Tag: Man sagt „Guten Tag“. „Gute Nacht“ passt nicht.",
+					"en": "It is daytime: you say “Guten Tag”. “Gute Nacht” does not fit.",
+					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag”. Hindi bagay ang “Gute Nacht”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Tag. Herr Bauer kommt. Was sagen Sie?",
+				"family": "A1-01-P-SP1-1"
+			},
+			{
+				"id": "A1-01-P-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie heißt Anna Huber.",
+					"Wie heißen Sie?",
+					"Ich heiße Anna Huber."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0324"
+				],
+				"prompt": "Herr Mayer sagt: „Wie heißen Sie?“ Sie sind Anna Huber. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Ich heiße Jonas Gruber.",
+					"Sie heißt Jonas Gruber.",
+					"Wie heißen Sie?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0324"
+				],
+				"prompt": "Frau Berger sagt: „Wie heißen Sie?“ Sie sind Jonas Gruber. Was sagen Sie?",
+				"family": "A1-01-P-SP2-1"
+			},
+			{
+				"id": "A1-01-P-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie heißt Maria Santos.",
+					"Ich heiße Maria Santos.",
+					"Wie heißen Sie?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0324"
+				],
+				"prompt": "Herr Bauer sagt: „Wie heißen Sie?“ Sie sind Maria Santos. Was sagen Sie?",
+				"family": "A1-01-P-SP2-1"
+			},
+			{
+				"id": "A1-01-P-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Wie heißen Sie?",
+					"Wie heißt er?",
+					"Wie heißt du?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Bei „du“ passt: „Wie heißt du?“",
+					"en": "For “du” this fits: “Wie heißt du?”",
+					"tl": "Para sa “du” ito ang bagay: “Wie heißt du?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Ein Mann kommt. Sie sagen „du“. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommt er?",
+					"Woher kommen Sie?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Bei „Sie“ passt: „Woher kommen Sie?“",
+					"en": "For “Sie” this fits: “Woher kommen Sie?”",
+					"tl": "Para sa “Sie” ito ang bagay: “Woher kommen Sie?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Das ist Herr Huber. Sie sagen „Sie“. Was sagen Sie?",
+				"family": "A1-01-P-SP3-1"
+			},
+			{
+				"id": "A1-01-P-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommen Sie?",
+					"Woher kommt sie?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Bei „du“ passt: „Woher kommst du?“",
+					"en": "For “du” this fits: “Woher kommst du?”",
+					"tl": "Para sa “du” ito ang bagay: “Woher kommst du?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Das ist Anna. Sie sagen „du“. Was sagen Sie?",
+				"family": "A1-01-P-SP3-1"
+			},
+			{
+				"id": "A1-01-P-SP4-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Mir geht's sehr gut, danke. Und dir?",
+					"Ich heiße Lukas.",
+					"Auf Wiedersehen!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Auf „Wie geht's?“ antworten Sie zum Beispiel: „Mir geht's sehr gut, danke.“ Dann fragen Sie zurück: „Und dir?“",
+					"en": "To “Wie geht's?” you can answer: “Mir geht's sehr gut, danke.” Then you ask back: “Und dir?”",
+					"tl": "Sa “Wie geht's?” puwede kang sumagot: “Mir geht's sehr gut, danke.” Pagkatapos magtanong ka pabalik: “Und dir?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0017",
+					"W-A1-0046"
+				],
+				"prompt": "Lukas sagt: „Wie geht's dir?“ Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-SP4-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Gut, danke. Und dir?",
+					"Ich heiße Maria.",
+					"Auf Wiedersehen!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Auf „Wie geht's?“ antworten Sie zum Beispiel: „Gut, danke.“ Dann fragen Sie zurück: „Und dir?“",
+					"en": "To “Wie geht's?” you can answer: “Gut, danke.” Then you ask back: “Und dir?”",
+					"tl": "Sa “Wie geht's?” puwede kang sumagot: “Gut, danke.” Pagkatapos magtanong ka pabalik: “Und dir?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0017",
+					"W-A1-0046"
+				],
+				"prompt": "Maria sagt: „Wie geht's dir?“ Was sagen Sie?",
+				"family": "A1-01-P-SP4-1"
+			},
+			{
+				"id": "A1-01-P-SP4-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Ich heiße Ali.",
+					"Sehr gut, danke. Und dir?",
+					"Auf Wiedersehen!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Auf „Wie geht's?“ antworten Sie zum Beispiel: „Sehr gut, danke.“ Dann fragen Sie zurück: „Und dir?“",
+					"en": "To “Wie geht's?” you can answer: “Sehr gut, danke.” Then you ask back: “Und dir?”",
+					"tl": "Sa “Wie geht's?” puwede kang sumagot: “Sehr gut, danke.” Pagkatapos magtanong ka pabalik: “Und dir?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0017",
+					"W-A1-0046"
+				],
+				"prompt": "Ali sagt: „Wie geht's dir?“ Was sagen Sie?",
+				"family": "A1-01-P-SP4-1"
+			},
+			{
+				"id": "A1-01-P-SP5-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Servus, Anna!",
+					"Guten Morgen, Anna!",
+					"Woher kommst du, Anna?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Zum Abschied sagt man „Servus, Anna!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Servus, Anna!”. The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Servus, Anna!”. Ang iba ay bagay sa pagdating o sa tanong."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0383",
+					"W-A1-0385",
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Anna sagt: „Servus!“ Sie sagen „du“. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-SP5-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Auf Wiedersehen, Herr Mayer!",
+					"Grüß Gott, Herr Mayer!",
+					"Wie heißen Sie, Herr Mayer?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Zum Abschied sagt man „Auf Wiedersehen, Herr Mayer!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Auf Wiedersehen, Herr Mayer!”. The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Herr Mayer!”. Ang iba ay bagay sa pagdating o sa tanong."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0383",
+					"W-A1-0385",
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Herr Mayer sagt: „Auf Wiedersehen!“ Sie sagen „Sie“. Was sagen Sie?",
+				"family": "A1-01-P-SP5-1"
+			},
+			{
+				"id": "A1-01-P-SP5-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Gute Nacht, Ali!",
+					"Wie heißt du, Ali?",
+					"Tschüss, Ali!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Zum Abschied sagt man „Tschüss, Ali!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Tschüss, Ali!”. The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Tschüss, Ali!”. Ang iba ay bagay sa pagdating o sa tanong."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0383",
+					"W-A1-0385",
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Ali sagt: „Tschüss!“ Sie sagen „du“. Was sagen Sie?",
+				"family": "A1-01-P-SP5-1"
+			},
+			{
+				"id": "A1-01-P-SP6-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie kommt aus den Philippinen.",
+					"Wir kommen aus den Philippinen.",
+					"Ich komme aus den Philippinen."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
+					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is another person, “wir kommen” is several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (galing ako sa Pilipinas.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+				},
+				"goals": [
+					"A1-01-G4",
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0006",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Frau Gruber sagt: „Woher kommen Sie?“ Sie kommen aus den Philippinen. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-SP6-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie kommt aus Österreich.",
+					"Wir kommen aus Österreich.",
+					"Ich komme aus Österreich."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
+					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is another person, “wir kommen” is several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (galing ako sa Austria.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+				},
+				"goals": [
+					"A1-01-G4",
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0006",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Frau Mayer sagt: „Woher kommen Sie?“ Sie kommen aus Österreich. Was sagen Sie?",
+				"family": "A1-01-P-SP6-1"
+			},
+			{
+				"id": "A1-01-P-SP6-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Ich komme aus den Philippinen.",
+					"Sie kommt aus den Philippinen.",
+					"Wir kommen aus den Philippinen."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
+					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is another person, “wir kommen” is several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (galing ako sa Pilipinas.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+				},
+				"goals": [
+					"A1-01-G4",
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0006",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Herr Bauer sagt: „Woher kommen Sie?“ Sie kommen aus den Philippinen. Was sagen Sie?",
+				"family": "A1-01-P-SP6-1"
+			},
+			{
+				"id": "A1-01-P-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"bist",
+					"sind",
+					"ist"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „sein“: ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (mehrere) und Sie sind.",
+					"en": "The verb “sein” (to be): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (several people) and Sie sind.",
+					"tl": "Ang pandiwang “sein” (maging / ay): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (marami) at Sie sind."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0116",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0008",
+					"W-A1-0011",
+					"W-A1-0012"
+				],
+				"prompt": "Er … Herr Huber."
+			},
+			{
+				"id": "A1-01-P-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"seid",
+					"sind",
+					"bist"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Das Verb „sein“: ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (mehrere) und Sie sind.",
+					"en": "The verb “sein” (to be): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (several people) and Sie sind.",
+					"tl": "Ang pandiwang “sein” (maging / ay): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (marami) at Sie sind."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0116",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0008",
+					"W-A1-0011",
+					"W-A1-0012"
+				],
+				"prompt": "Ihr … aus Österreich.",
+				"family": "A1-01-P-GW1-1"
+			},
+			{
+				"id": "A1-01-P-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"ist",
+					"bin",
+					"sind"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „sein“: ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (mehrere) und Sie sind.",
+					"en": "The verb “sein” (to be): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (several people) and Sie sind.",
+					"tl": "Ang pandiwang “sein” (maging / ay): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (marami) at Sie sind."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0116",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0008",
+					"W-A1-0011",
+					"W-A1-0012"
+				],
+				"prompt": "Anna und Jonas … aus Österreich.",
+				"family": "A1-01-P-GW1-1"
+			},
+			{
+				"id": "A1-01-P-GW2-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"heiße",
+					"heißt",
+					"heißen"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Das Verb „heißen“: ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"en": "The verb “heißen” (to be called): ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"tl": "Ang pandiwang “heißen” (ang pangalan ay …): ich heiße · du heißt · er/sie heißt · wir/Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0011"
+				],
+				"prompt": "Er … Lukas Bauer."
+			},
+			{
+				"id": "A1-01-P-GW2-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"heißen",
+					"heißt",
+					"heiße"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Das Verb „heißen“: ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"en": "The verb “heißen” (to be called): ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"tl": "Ang pandiwang “heißen” (ang pangalan ay …): ich heiße · du heißt · er/sie heißt · wir/Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0011"
+				],
+				"prompt": "Wie … Frau Berger?",
+				"family": "A1-01-P-GW2-1"
+			},
+			{
+				"id": "A1-01-P-GW2-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"heißt",
+					"heiße",
+					"heißen"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „heißen“: ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"en": "The verb “heißen” (to be called): ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"tl": "Ang pandiwang “heißen” (ang pangalan ay …): ich heiße · du heißt · er/sie heißt · wir/Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0011"
+				],
+				"prompt": "Wir … Huber.",
+				"family": "A1-01-P-GW2-1"
+			},
+			{
+				"id": "A1-01-P-GW3-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"kommst",
+					"kommen",
+					"komme"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „kommen“: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "The verb “kommen” (to come): ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Ang pandiwang “kommen” (dumating, galing): ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Ich … aus den Philippinen."
+			},
+			{
+				"id": "A1-01-P-GW3-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"kommt",
+					"komme",
+					"kommen"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „kommen“: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "The verb “kommen” (to come): ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Ang pandiwang “kommen” (dumating, galing): ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Wir … aus Österreich.",
+				"family": "A1-01-P-GW3-1"
+			},
+			{
+				"id": "A1-01-P-GW3-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"kommen",
+					"kommt",
+					"kommst"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Das Verb „kommen“: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "The verb “kommen” (to come): ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Ang pandiwang “kommen” (dumating, galing): ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Woher … Frau Santos?",
+				"family": "A1-01-P-GW3-1"
+			},
+			{
+				"id": "A1-01-P-GW4-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Er",
+					"Sie",
+					"Ihr"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
+					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
+				},
+				"goals": [
+					"A1-01-G7"
+				],
+				"refs": [
+					"W-A1-0008",
+					"W-A1-0009",
+					"W-A1-0011",
+					"W-A1-0012",
+					"W-A1-0010"
+				],
+				"prompt": "Das ist Lukas. … heißt Lukas Bauer."
+			},
+			{
+				"id": "A1-01-P-GW4-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Er",
+					"Wir",
+					"Sie"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
+					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
+				},
+				"goals": [
+					"A1-01-G7"
+				],
+				"refs": [
+					"W-A1-0008",
+					"W-A1-0009",
+					"W-A1-0011",
+					"W-A1-0012",
+					"W-A1-0010"
+				],
+				"prompt": "Das ist Maria. … kommt aus den Philippinen.",
+				"family": "A1-01-P-GW4-1"
+			},
+			{
+				"id": "A1-01-P-GW4-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"ihr",
+					"wir",
+					"du"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
+					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
+				},
+				"goals": [
+					"A1-01-G7"
+				],
+				"refs": [
+					"W-A1-0008",
+					"W-A1-0009",
+					"W-A1-0011",
+					"W-A1-0012",
+					"W-A1-0010"
+				],
+				"prompt": "Lukas und Ali, woher kommt …?",
+				"family": "A1-01-P-GW4-1"
+			},
+			{
+				"id": "A1-01-P-GW5-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Vorname",
+					"Familienname",
+					"Herr"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„Huber“ steht nach dem Vornamen: Das ist der Familienname.",
+					"en": "“Huber” comes after the first name: it is the family name (Familienname).",
+					"tl": "Ang “Huber” ay pagkatapos ng pangalan: ito ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0324"
+				],
+				"prompt": "Anna Huber: „Huber“ ist der …"
+			},
+			{
+				"id": "A1-01-P-GW5-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Familienname",
+					"Vorname",
+					"Herr"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„Gruber“ steht nach dem Vornamen: Das ist der Familienname.",
+					"en": "“Gruber” comes after the first name: it is the family name (Familienname).",
+					"tl": "Ang “Gruber” ay pagkatapos ng pangalan: ito ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0324"
+				],
+				"prompt": "Jonas Gruber: „Gruber“ ist der …",
+				"family": "A1-01-P-GW5-1"
+			},
+			{
+				"id": "A1-01-P-GW5-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Vorname",
+					"Herr",
+					"Familienname"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Santos“ steht nach dem Vornamen: Das ist der Familienname.",
+					"en": "“Santos” comes after the first name: it is the family name (Familienname).",
+					"tl": "Ang “Santos” ay pagkatapos ng pangalan: ito ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0324"
+				],
+				"prompt": "Maria Santos: „Santos“ ist der …",
+				"family": "A1-01-P-GW5-1"
+			},
+			{
+				"id": "A1-01-P-GW6-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"auch",
+					"nein",
+					"bitte"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„auch“ heißt: ich ebenfalls.",
+					"en": "“auch” means: me too.",
+					"tl": "Ang “auch” ay: ako rin."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"prompt": "Ich komme aus Österreich. Und du? – Ich komme … aus Österreich."
+			},
+			{
+				"id": "A1-01-P-GW6-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Bitte",
+					"Danke",
+					"Ja"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Auf „Danke!“ antwortet man „Bitte!“.",
+					"en": "You answer “Danke!” with “Bitte!”.",
+					"tl": "Sa “Danke!” sumasagot ng “Bitte!”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"prompt": "Danke! – …!",
+				"family": "A1-01-P-GW6-1"
+			},
+			{
+				"id": "A1-01-P-GW6-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"bitte",
+					"nein",
+					"danke"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Man antwortet mit „danke“ und fragt zurück.",
+					"en": "You answer with “danke” and ask back.",
+					"tl": "Sumasagot ka ng “danke” at nagtatanong pabalik."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"prompt": "Wie geht's dir? – Mir geht's gut, … Und dir?",
+				"family": "A1-01-P-GW6-1"
+			},
+			{
+				"id": "A1-01-P-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You meet this adult for the first time.",
+					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
+				},
+				"options": [
+					"Wie heißt du?",
+					"Wie heißt er?",
+					"Wie heißen Sie?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "In Österreich sagt man zu Erwachsenen, die man nicht kennt, „Sie“.",
+					"en": "In Austria you say “Sie” to adults you do not know.",
+					"tl": "Sa Austria, “Sie” ang sinasabi sa mga nasa hustong gulang na hindi mo kilala."
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0013",
+					"W-A1-0007",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Ein Herr kommt. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You meet this adult for the first time.",
+					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommen Sie?",
+					"Woher kommt er?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "In Österreich sagt man zu Erwachsenen, die man nicht kennt, „Sie“.",
+					"en": "In Austria you say “Sie” to adults you do not know.",
+					"tl": "Sa Austria, “Sie” ang sinasabi sa mga nasa hustong gulang na hindi mo kilala."
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0013",
+					"W-A1-0007",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Herr Huber. Was sagen Sie?",
+				"family": "A1-01-P-WE1-1"
+			},
+			{
+				"id": "A1-01-P-WE1-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You meet this adult for the first time.",
+					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommt sie?",
+					"Woher kommen Sie?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "In Österreich sagt man zu Erwachsenen, die man nicht kennt, „Sie“.",
+					"en": "In Austria you say “Sie” to adults you do not know.",
+					"tl": "Sa Austria, “Sie” ang sinasabi sa mga nasa hustong gulang na hindi mo kilala."
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0013",
+					"W-A1-0007",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Frau Berger. Was sagen Sie?",
+				"family": "A1-01-P-WE1-1"
+			},
+			{
+				"id": "A1-01-P-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You greet an adult you do not know.",
+					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
+				},
+				"options": [
+					"Servus, Herr Mayer!",
+					"Grüß Gott, Herr Mayer!",
+					"Auf Wiedersehen, Herr Mayer!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"prompt": "Es ist Morgen. Herr Mayer kommt. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You greet an adult you do not know.",
+					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
+				},
+				"options": [
+					"Servus, Frau Santos!",
+					"Gute Nacht, Frau Santos!",
+					"Grüß Gott, Frau Santos!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"prompt": "Es ist Abend. Frau Santos kommt. Was sagen Sie?",
+				"family": "A1-01-P-WE2-1"
+			},
+			{
+				"id": "A1-01-P-WE2-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You greet an adult you do not know.",
+					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
+				},
+				"options": [
+					"Grüß Gott, Herr Bauer!",
+					"Servus, Herr Bauer!",
+					"Auf Wiedersehen, Herr Bauer!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"prompt": "Es ist Tag. Herr Bauer kommt. Was sagen Sie?",
+				"family": "A1-01-P-WE2-1"
+			},
+			{
+				"id": "A1-01-P-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You say “Sie” to this person.",
+					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
+				},
+				"options": [
+					"Grüß Gott, Herr Lukas!",
+					"Grüß Gott, Herr Bauer!",
+					"Grüß Gott, Bauer!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Mit „Sie“ sagt man „Herr“ oder „Frau“ und den Familiennamen: „Grüß Gott, Herr Bauer!“",
+					"en": "With “Sie” you use “Herr” or “Frau” and the family name: “Grüß Gott, Herr Bauer!”",
+					"tl": "Sa “Sie” ginagamit ang “Herr” o “Frau” at ang apelyido: “Grüß Gott, Herr Bauer!”"
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0376"
+				],
+				"prompt": "Lukas Bauer. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-P-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You say “Sie” to this person.",
+					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
+				},
+				"options": [
+					"Grüß Gott, Frau Maria!",
+					"Grüß Gott, Santos!",
+					"Grüß Gott, Frau Santos!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Mit „Sie“ sagt man „Herr“ oder „Frau“ und den Familiennamen: „Grüß Gott, Frau Santos!“",
+					"en": "With “Sie” you use “Herr” or “Frau” and the family name: “Grüß Gott, Frau Santos!”",
+					"tl": "Sa “Sie” ginagamit ang “Herr” o “Frau” at ang apelyido: “Grüß Gott, Frau Santos!”"
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0376"
+				],
+				"prompt": "Maria Santos. Was sagen Sie?",
+				"family": "A1-01-P-WE3-1"
+			},
+			{
+				"id": "A1-01-P-WE3-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You say “Sie” to this person.",
+					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
+				},
+				"options": [
+					"Grüß Gott, Herr Ali!",
+					"Grüß Gott, Herr Mayer!",
+					"Grüß Gott, Mayer!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Mit „Sie“ sagt man „Herr“ oder „Frau“ und den Familiennamen: „Grüß Gott, Herr Mayer!“",
+					"en": "With “Sie” you use “Herr” or “Frau” and the family name: “Grüß Gott, Herr Mayer!”",
+					"tl": "Sa “Sie” ginagamit ang “Herr” o “Frau” at ang apelyido: “Grüß Gott, Herr Mayer!”"
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0376"
+				],
+				"prompt": "Ali Mayer. Was sagen Sie?",
+				"family": "A1-01-P-WE3-1"
+			},
+			{
+				"id": "A1-01-P-WE4-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
+					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
+				},
+				"options": [
+					"Servus, Maria! Wie geht's dir?",
+					"Gute Nacht, Maria! Wie geht's dir?",
+					"Auf Wiedersehen, Maria! Wie geht's dir?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Unter Freunden sagt man „du“ und „Servus“: „Servus, Maria! Wie geht's dir?“",
+					"en": "Between friends you say “du” and “Servus”: “Servus, Maria! Wie geht's dir?”",
+					"tl": "Sa magkakaibigan, “du” at “Servus” ang sinasabi: “Servus, Maria! Wie geht's dir?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0387",
+					"W-A1-0017"
+				],
+				"prompt": "Jonas und Maria. Was sagt Jonas?"
+			},
+			{
+				"id": "A1-01-P-WE4-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
+					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
+				},
+				"options": [
+					"Gute Nacht, Lukas! Wie geht's dir?",
+					"Auf Wiedersehen, Lukas! Wie geht's dir?",
+					"Servus, Lukas! Wie geht's dir?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Unter Freunden sagt man „du“ und „Servus“: „Servus, Lukas! Wie geht's dir?“",
+					"en": "Between friends you say “du” and “Servus”: “Servus, Lukas! Wie geht's dir?”",
+					"tl": "Sa magkakaibigan, “du” at “Servus” ang sinasabi: “Servus, Lukas! Wie geht's dir?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0387",
+					"W-A1-0017"
+				],
+				"prompt": "Ali und Lukas. Was sagt Ali?",
+				"family": "A1-01-P-WE4-1"
+			},
+			{
+				"id": "A1-01-P-WE4-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
+					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
+				},
+				"options": [
+					"Gute Nacht, Sofia! Wie geht's dir?",
+					"Servus, Sofia! Wie geht's dir?",
+					"Auf Wiedersehen, Sofia! Wie geht's dir?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Unter Freunden sagt man „du“ und „Servus“: „Servus, Sofia! Wie geht's dir?“",
+					"en": "Between friends you say “du” and “Servus”: “Servus, Sofia! Wie geht's dir?”",
+					"tl": "Sa magkakaibigan, “du” at “Servus” ang sinasabi: “Servus, Sofia! Wie geht's dir?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0387",
+					"W-A1-0017"
+				],
+				"prompt": "Maria und Sofia. Was sagt Maria?",
+				"family": "A1-01-P-WE4-1"
+			}
+		],
+		"test": [
+			{
+				"id": "A1-01-T-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Sofia",
+					"Berger",
+					"Frau"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„Sofia“ ist der Vorname, „Berger“ ist der Familienname.",
+					"en": "“Sofia” is the first name (Vorname), “Berger” is the family name (Familienname).",
+					"tl": "Ang “Sofia” ay ang pangalan (Vorname), ang “Berger” ay ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0325",
+					"W-A1-0326",
+					"W-A1-0147"
+				],
+				"prompt": "„Ich heiße Sofia Berger.“ Was ist der Vorname?"
+			},
+			{
+				"id": "A1-01-T-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Lukas",
+					"Bauer",
+					"Herr"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„Lukas“ ist der Vorname, „Bauer“ ist der Familienname.",
+					"en": "“Lukas” is the first name (Vorname), “Bauer” is the family name (Familienname).",
+					"tl": "Ang “Lukas” ay ang pangalan (Vorname), ang “Bauer” ay ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0325",
+					"W-A1-0326",
+					"W-A1-0147"
+				],
+				"prompt": "„Ich heiße Lukas Bauer.“ Was ist der Vorname?",
+				"family": "A1-01-T-LE1-1"
+			},
+			{
+				"id": "A1-01-T-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Mayer",
+					"Herr",
+					"Ali"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Ali“ ist der Vorname, „Mayer“ ist der Familienname.",
+					"en": "“Ali” is the first name (Vorname), “Mayer” is the family name (Familienname).",
+					"tl": "Ang “Ali” ay ang pangalan (Vorname), ang “Mayer” ay ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0325",
+					"W-A1-0326",
+					"W-A1-0147"
+				],
+				"prompt": "„Ich heiße Ali Mayer.“ Was ist der Vorname?",
+				"family": "A1-01-T-LE1-1"
+			},
+			{
+				"id": "A1-01-T-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Im Text steht: „Frau Berger kommt aus Österreich.“ Frau Berger kommt also aus Österreich.",
+					"en": "The text says: “Frau Berger kommt aus Österreich.” So Frau Berger comes from Austria.",
+					"tl": "Sabi sa teksto: “Frau Berger kommt aus Österreich.” Kaya galing si Frau Berger sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Das ist Frau Berger. Sie kommt aus Österreich. Herr Santos kommt aus den Philippinen. Woher kommt Frau Berger?"
+			},
+			{
+				"id": "A1-01-T-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Im Text steht: „Herr Santos kommt aus den Philippinen.“ Herr Santos kommt also aus den Philippinen.",
+					"en": "The text says: “Herr Santos kommt aus den Philippinen.” So Herr Santos comes from the Philippines.",
+					"tl": "Sabi sa teksto: “Herr Santos kommt aus den Philippinen.” Kaya galing si Herr Santos sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Das ist Herr Santos. Er kommt aus den Philippinen. Frau Huber kommt aus Österreich. Woher kommt Herr Santos?",
+				"family": "A1-01-T-LE2-1"
+			},
+			{
+				"id": "A1-01-T-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Österreich",
+					"den Philippinen"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Im Text steht: „Frau Huber kommt aus Österreich.“ Frau Huber kommt also aus Österreich.",
+					"en": "The text says: “Frau Huber kommt aus Österreich.” So Frau Huber comes from Austria.",
+					"tl": "Sabi sa teksto: “Frau Huber kommt aus Österreich.” Kaya galing si Frau Huber sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Das ist Frau Huber. Sie kommt aus Österreich. Maria kommt aus den Philippinen. Woher kommt Frau Huber?",
+				"family": "A1-01-T-LE2-1"
+			},
+			{
+				"id": "A1-01-T-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Gute Nacht!",
+					"Auf Wiedersehen!",
+					"Guten Morgen!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Es ist Morgen: Man sagt „Guten Morgen!“. „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is morning: you say “Guten Morgen!”. “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa umaga, sinasabi ang “Guten Morgen!”. Hindi bagay ang “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Morgen. Frau Berger kommt. Was sagt sie?"
+			},
+			{
+				"id": "A1-01-T-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Guten Morgen!",
+					"Auf Wiedersehen!",
+					"Guten Abend!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Es ist Abend: Man sagt „Guten Abend!“. „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is evening: you say “Guten Abend!”. “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa gabi, sinasabi ang “Guten Abend!”. Hindi bagay ang “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Abend. Herr Mayer kommt. Was sagt er?",
+				"family": "A1-01-T-LE3-1"
+			},
+			{
+				"id": "A1-01-T-LE3-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Gute Nacht!",
+					"Guten Tag!",
+					"Auf Wiedersehen!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Es ist Tag: Man sagt „Guten Tag!“. „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is daytime: you say “Guten Tag!”. “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag!”. Hindi bagay ang “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Tag. Herr Bauer kommt. Was sagt er?",
+				"family": "A1-01-T-LE3-1"
+			},
+			{
+				"id": "A1-01-T-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Sie heißt Anna.",
+					"Sehr gut.",
+					"Sie kommt aus Österreich."
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Anna sagt: „Mir geht's sehr gut, danke.“ Auf „Wie geht's?“ ist „sehr gut“ die Antwort.",
+					"en": "Anna says: “Mir geht's sehr gut, danke.” The answer to “Wie geht's?” is “sehr gut”.",
+					"tl": "Sinabi ni Anna: “Mir geht's sehr gut, danke.” Ang sagot sa “Wie geht's?” ay “sehr gut”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"prompt": "Anna: „Mir geht's sehr gut, danke. Und dir?“ Wie geht's Anna?"
+			},
+			{
+				"id": "A1-01-T-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Er heißt Jonas.",
+					"Er kommt aus Österreich.",
+					"Gut."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Jonas sagt: „Mir geht's gut, danke.“ Auf „Wie geht's?“ ist „gut“ die Antwort.",
+					"en": "Jonas says: “Mir geht's gut, danke.” The answer to “Wie geht's?” is “gut”.",
+					"tl": "Sinabi ni Jonas: “Mir geht's gut, danke.” Ang sagot sa “Wie geht's?” ay “gut”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"prompt": "Jonas: „Mir geht's gut, danke. Und dir?“ Wie geht's Jonas?",
+				"family": "A1-01-T-LE4-1"
+			},
+			{
+				"id": "A1-01-T-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Gut.",
+					"Sie heißt Sofia.",
+					"Sie kommt aus Österreich."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sofia sagt: „Mir geht's gut, danke.“ Auf „Wie geht's?“ ist „gut“ die Antwort.",
+					"en": "Sofia says: “Mir geht's gut, danke.” The answer to “Wie geht's?” is “gut”.",
+					"tl": "Sinabi ni Sofia: “Mir geht's gut, danke.” Ang sagot sa “Wie geht's?” ay “gut”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"prompt": "Sofia: „Mir geht's gut, danke. Und dir?“ Wie geht's Sofia?",
+				"family": "A1-01-T-LE4-1"
+			},
+			{
+				"id": "A1-01-T-LE5-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Maria",
+					"Jonas"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Jonas kommt aus Österreich.",
+					"en": "Jonas comes from Austria.",
+					"tl": "Galing si Jonas sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362",
+					"W-A1-0006"
+				],
+				"prompt": "Jonas: „Ich komme aus Österreich.“ Maria: „Ich komme aus den Philippinen.“ Wer kommt aus Österreich?"
+			},
+			{
+				"id": "A1-01-T-LE5-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Maria",
+					"Jonas"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Jonas kommt aus Österreich.",
+					"en": "Jonas comes from Austria.",
+					"tl": "Galing si Jonas sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362",
+					"W-A1-0006"
+				],
+				"prompt": "Maria: „Ich komme aus den Philippinen.“ Jonas: „Ich komme aus Österreich.“ Wer kommt aus Österreich?",
+				"family": "A1-01-T-LE5-1"
+			},
+			{
+				"id": "A1-01-T-LE5-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie.",
+					"en": "Read.",
+					"tl": "Basahin."
+				},
+				"options": [
+					"Ali",
+					"Sofia"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Ali kommt aus den Philippinen.",
+					"en": "Ali comes from the Philippines.",
+					"tl": "Galing si Ali sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362",
+					"W-A1-0006"
+				],
+				"prompt": "Sofia: „Ich komme aus Österreich.“ Ali: „Ich komme aus den Philippinen.“ Wer kommt aus den Philippinen?",
+				"family": "A1-01-T-LE5-1"
+			},
+			{
+				"id": "A1-01-T-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienname?",
+					"en": "Listen. What is the family name?",
+					"tl": "Makinig. Alin ang apelyido (Familienname)?"
+				},
+				"options": [
+					"Bauer",
+					"Sofia",
+					"Frau"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich heiße Sofia Bauer.“ „Bauer“ ist der Familienname.",
+					"en": "You hear: “Ich heiße Sofia Bauer.” “Bauer” is the family name.",
+					"tl": "Narinig mo: “Ich heiße Sofia Bauer.” Ang “Bauer” ang apelyido."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0147",
+					"W-A1-0325"
+				],
+				"audioText": "Wie heißen Sie? – Ich heiße Sofia Bauer.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-T-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienname?",
+					"en": "Listen. What is the family name?",
+					"tl": "Makinig. Alin ang apelyido (Familienname)?"
+				},
+				"options": [
+					"Lukas",
+					"Herr",
+					"Berger"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie hören: „Ich heiße Lukas Berger.“ „Berger“ ist der Familienname.",
+					"en": "You hear: “Ich heiße Lukas Berger.” “Berger” is the family name.",
+					"tl": "Narinig mo: “Ich heiße Lukas Berger.” Ang “Berger” ang apelyido."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0147",
+					"W-A1-0325"
+				],
+				"audioText": "Wie heißen Sie? – Ich heiße Lukas Berger.",
+				"audioOnly": true,
+				"family": "A1-01-T-HO1-1"
+			},
+			{
+				"id": "A1-01-T-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienname?",
+					"en": "Listen. What is the family name?",
+					"tl": "Makinig. Alin ang apelyido (Familienname)?"
+				},
+				"options": [
+					"Mayer",
+					"Maria",
+					"Frau"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich heiße Maria Mayer.“ „Mayer“ ist der Familienname.",
+					"en": "You hear: “Ich heiße Maria Mayer.” “Mayer” is the family name.",
+					"tl": "Narinig mo: “Ich heiße Maria Mayer.” Ang “Mayer” ang apelyido."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0147",
+					"W-A1-0325"
+				],
+				"audioText": "Wie heißen Sie? – Ich heiße Maria Mayer.",
+				"audioOnly": true,
+				"family": "A1-01-T-HO1-1"
+			},
+			{
+				"id": "A1-01-T-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Guten Morgen!",
+					"Guten Abend!",
+					"Gute Nacht!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Guten Abend, Frau Gruber!“ Der Gruß ist „Guten Abend!“.",
+					"en": "You hear: “Guten Abend, Frau Gruber!” The greeting is “Guten Abend!”.",
+					"tl": "Narinig mo: “Guten Abend, Frau Gruber!” Ang pagbati ay “Guten Abend!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0381",
+					"W-A1-0379",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0385",
+					"W-A1-0378"
+				],
+				"audioText": "Guten Abend, Frau Gruber!",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-T-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Guten Abend!",
+					"Auf Wiedersehen!",
+					"Guten Morgen!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie hören: „Guten Morgen, Herr Huber!“ Der Gruß ist „Guten Morgen!“.",
+					"en": "You hear: “Guten Morgen, Herr Huber!” The greeting is “Guten Morgen!”.",
+					"tl": "Narinig mo: “Guten Morgen, Herr Huber!” Ang pagbati ay “Guten Morgen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0381",
+					"W-A1-0379",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0385",
+					"W-A1-0378"
+				],
+				"audioText": "Guten Morgen, Herr Huber!",
+				"audioOnly": true,
+				"family": "A1-01-T-HO2-1"
+			},
+			{
+				"id": "A1-01-T-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Auf Wiedersehen!",
+					"Guten Tag!",
+					"Gute Nacht!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Auf Wiedersehen, Frau Berger!“ Der Gruß ist „Auf Wiedersehen!“.",
+					"en": "You hear: “Auf Wiedersehen, Frau Berger!” The greeting is “Auf Wiedersehen!”.",
+					"tl": "Narinig mo: “Auf Wiedersehen, Frau Berger!” Ang pagbati ay “Auf Wiedersehen!”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0381",
+					"W-A1-0379",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0385",
+					"W-A1-0378"
+				],
+				"audioText": "Auf Wiedersehen, Frau Berger!",
+				"audioOnly": true,
+				"family": "A1-01-T-HO2-1"
+			},
+			{
+				"id": "A1-01-T-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where is the person from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"options": [
+					"Österreich",
+					"den Philippinen"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus Österreich.“",
+					"en": "You hear: “Ich komme aus Österreich.” That means: I come from Austria.",
+					"tl": "Narinig mo: “Ich komme aus Österreich.” Ibig sabihin: galing ako sa Austria."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"audioText": "Woher kommen Sie? – Ich komme aus Österreich.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-T-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where is the person from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"options": [
+					"den Philippinen",
+					"Österreich"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus den Philippinen.“",
+					"en": "You hear: “Ich komme aus den Philippinen.” That means: I come from the Philippines.",
+					"tl": "Narinig mo: “Ich komme aus den Philippinen.” Ibig sabihin: galing ako sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"audioText": "Woher kommst du? – Ich komme aus den Philippinen.",
+				"audioOnly": true,
+				"family": "A1-01-T-HO3-1"
+			},
+			{
+				"id": "A1-01-T-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where is the person from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"options": [
+					"Österreich",
+					"den Philippinen"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus den Philippinen.“",
+					"en": "You hear: “Ich komme aus den Philippinen.” That means: I come from the Philippines.",
+					"tl": "Narinig mo: “Ich komme aus den Philippinen.” Ibig sabihin: galing ako sa Pilipinas."
+				},
+				"goals": [
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"audioText": "Frau Berger, woher kommen Sie? – Ich komme aus den Philippinen.",
+				"audioOnly": true,
+				"family": "A1-01-T-HO3-1"
+			},
+			{
+				"id": "A1-01-T-HO4-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist die Antwort auf „Wie geht's?“",
+					"en": "Listen. What is the answer to “Wie geht's?”",
+					"tl": "Makinig. Ano ang sagot sa “Wie geht's?”"
+				},
+				"options": [
+					"Sehr gut.",
+					"Auf Wiedersehen.",
+					"Ich heiße Anna."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Sehr gut, danke!“ Das ist die Antwort auf „Wie geht's?“",
+					"en": "You hear: “Sehr gut, danke!” That is the answer to “Wie geht's?”",
+					"tl": "Narinig mo: “Sehr gut, danke!” Iyon ang sagot sa “Wie geht's?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"audioText": "Hallo Anna! Wie geht's dir? – Sehr gut, danke! Und dir?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-T-HO4-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist die Antwort auf „Wie geht's?“",
+					"en": "Listen. What is the answer to “Wie geht's?”",
+					"tl": "Makinig. Ano ang sagot sa “Wie geht's?”"
+				},
+				"options": [
+					"Auf Wiedersehen.",
+					"Gut.",
+					"Ich heiße Jonas."
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Gut, danke!“ Das ist die Antwort auf „Wie geht's?“",
+					"en": "You hear: “Gut, danke!” That is the answer to “Wie geht's?”",
+					"tl": "Narinig mo: “Gut, danke!” Iyon ang sagot sa “Wie geht's?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"audioText": "Hallo Jonas! Wie geht's dir? – Gut, danke! Und dir?",
+				"audioOnly": true,
+				"family": "A1-01-T-HO4-1"
+			},
+			{
+				"id": "A1-01-T-HO4-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist die Antwort auf „Wie geht's?“",
+					"en": "Listen. What is the answer to “Wie geht's?”",
+					"tl": "Makinig. Ano ang sagot sa “Wie geht's?”"
+				},
+				"options": [
+					"Sehr gut.",
+					"Auf Wiedersehen.",
+					"Ich heiße Sofia."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Sehr gut, danke!“ Das ist die Antwort auf „Wie geht's?“",
+					"en": "You hear: “Sehr gut, danke!” That is the answer to “Wie geht's?”",
+					"tl": "Narinig mo: “Sehr gut, danke!” Iyon ang sagot sa “Wie geht's?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057"
+				],
+				"audioText": "Hallo Sofia! Wie geht's dir? – Sehr gut, danke! Und dir?",
+				"audioOnly": true,
+				"family": "A1-01-T-HO4-1"
+			},
+			{
+				"id": "A1-01-T-HO5-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Wie heißt du?",
+					"Wie heißen Sie?",
+					"Wie geht's?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie hören: „Wie heißen Sie?“ Achten Sie auf: heißen Sie (Sie-Form).",
+					"en": "You hear: “Wie heißen Sie?” Listen for: heißen Sie (Sie-Form).",
+					"tl": "Narinig mo: “Wie heißen Sie?” Pakinggan ang: heißen Sie (Sie-Form)."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"audioText": "Wie heißen Sie?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-01-T-HO5-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommen Sie?",
+					"Woher kommt er?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Woher kommst du?“ Achten Sie auf: kommst du (du-Form).",
+					"en": "You hear: “Woher kommst du?” Listen for: kommst du (du-Form).",
+					"tl": "Narinig mo: “Woher kommst du?” Pakinggan ang: kommst du (du-Form)."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"audioText": "Woher kommst du?",
+				"audioOnly": true,
+				"family": "A1-01-T-HO5-1"
+			},
+			{
+				"id": "A1-01-T-HO5-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was hören Sie?",
+					"en": "Listen. What do you hear?",
+					"tl": "Makinig. Ano ang naririnig mo?"
+				},
+				"options": [
+					"Wie heißt du?",
+					"Wie heißen Sie?",
+					"Wie heißt sie?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie hören: „Wie heißt du?“ Achten Sie auf: heißt du (du-Form).",
+					"en": "You hear: “Wie heißt du?” Listen for: heißt du (du-Form).",
+					"tl": "Narinig mo: “Wie heißt du?” Pakinggan ang: heißt du (du-Form)."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"audioText": "Wie heißt du?",
+				"audioOnly": true,
+				"family": "A1-01-T-HO5-1"
+			},
+			{
+				"id": "A1-01-T-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Wie {{1}} du? – Ich {{2}} Sofia Berger.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heißt"
+						]
+					},
+					"2": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich heiße · du heißt · Sie heißen.",
+					"en": "Endings: ich heiße · du heißt · Sie heißen.",
+					"tl": "Mga dulo ng pandiwa: ich heiße · du heißt · Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				]
+			},
+			{
+				"id": "A1-01-T-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Wie {{1}} Sie? – Ich {{2}} Lukas Bauer.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heißen"
+						]
+					},
+					"2": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich heiße · du heißt · Sie heißen.",
+					"en": "Endings: ich heiße · du heißt · Sie heißen.",
+					"tl": "Mga dulo ng pandiwa: ich heiße · du heißt · Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-T-SC1-1"
+			},
+			{
+				"id": "A1-01-T-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Wie {{1}} du? – Ich {{2}} Ali.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heißt"
+						]
+					},
+					"2": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich heiße · du heißt · Sie heißen.",
+					"en": "Endings: ich heiße · du heißt · Sie heißen.",
+					"tl": "Mga dulo ng pandiwa: ich heiße · du heißt · Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-T-SC1-1"
+			},
+			{
+				"id": "A1-01-T-SC2-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Woher {{1}} Sie? – Ich {{2}} aus Österreich.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"kommen"
+						]
+					},
+					"2": {
+						"accept": [
+							"komme"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "Endings: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Mga dulo ng pandiwa: ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				]
+			},
+			{
+				"id": "A1-01-T-SC2-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Woher {{1}} du? – Ich {{2}} aus den Philippinen.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"kommst"
+						]
+					},
+					"2": {
+						"accept": [
+							"komme"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "Endings: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Mga dulo ng pandiwa: ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-T-SC2-1"
+			},
+			{
+				"id": "A1-01-T-SC2-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Frau Berger {{1}} aus Österreich.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"kommt"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Endungen: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "Endings: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Mga dulo ng pandiwa: ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"family": "A1-01-T-SC2-1"
+			},
+			{
+				"id": "A1-01-T-SC3-1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Ihr Name ist Sofia Berger. Sie sagen: „Ich …“",
+				"accept": [
+					"Ich heiße Sofia Berger",
+					"Ich heiße Sofia Berger.",
+					"Ich bin Sofia Berger",
+					"Ich bin Sofia Berger.",
+					"heiße Sofia Berger",
+					"bin Sofia Berger"
+				],
+				"explanation": {
+					"de": "Sie können sagen: „Ich heiße Sofia Berger.“ oder „Ich bin Sofia Berger.“",
+					"en": "You can say: “Ich heiße Sofia Berger.” or “Ich bin Sofia Berger.”",
+					"tl": "Puwede mong sabihin: “Ich heiße Sofia Berger.” o “Ich bin Sofia Berger.”"
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0116"
+				]
+			},
+			{
+				"id": "A1-01-T-SC3-2",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Ihr Name ist Lukas Bauer. Sie sagen: „Ich …“",
+				"accept": [
+					"Ich heiße Lukas Bauer",
+					"Ich heiße Lukas Bauer.",
+					"Ich bin Lukas Bauer",
+					"Ich bin Lukas Bauer.",
+					"heiße Lukas Bauer",
+					"bin Lukas Bauer"
+				],
+				"explanation": {
+					"de": "Sie können sagen: „Ich heiße Lukas Bauer.“ oder „Ich bin Lukas Bauer.“",
+					"en": "You can say: “Ich heiße Lukas Bauer.” or “Ich bin Lukas Bauer.”",
+					"tl": "Puwede mong sabihin: “Ich heiße Lukas Bauer.” o “Ich bin Lukas Bauer.”"
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0116"
+				],
+				"family": "A1-01-T-SC3-1"
+			},
+			{
+				"id": "A1-01-T-SC3-3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Ihr Name ist Ali Mayer. Sie sagen: „Ich …“",
+				"accept": [
+					"Ich heiße Ali Mayer",
+					"Ich heiße Ali Mayer.",
+					"Ich bin Ali Mayer",
+					"Ich bin Ali Mayer.",
+					"heiße Ali Mayer",
+					"bin Ali Mayer"
+				],
+				"explanation": {
+					"de": "Sie können sagen: „Ich heiße Ali Mayer.“ oder „Ich bin Ali Mayer.“",
+					"en": "You can say: “Ich heiße Ali Mayer.” or “Ich bin Ali Mayer.”",
+					"tl": "Puwede mong sabihin: “Ich heiße Ali Mayer.” o “Ich bin Ali Mayer.”"
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0116"
+				],
+				"family": "A1-01-T-SC3-1"
+			},
+			{
+				"id": "A1-01-T-SC4-1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Das ist Herr Huber. Sie sagen „Sie“. Schreiben Sie: „Grüß Gott, … Huber!“",
+				"accept": [
+					"Herr"
+				],
+				"explanation": {
+					"de": "Vor dem Familiennamen steht „Herr“ oder „Frau“: Herr Huber.",
+					"en": "Before the family name you use “Herr” or “Frau”: Herr Huber.",
+					"tl": "Bago ang apelyido ginagamit ang “Herr” o “Frau”: Herr Huber."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0376"
+				]
+			},
+			{
+				"id": "A1-01-T-SC4-2",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Das ist Frau Gruber. Sie sagen „Sie“. Schreiben Sie: „Grüß Gott, … Gruber!“",
+				"accept": [
+					"Frau"
+				],
+				"explanation": {
+					"de": "Vor dem Familiennamen steht „Herr“ oder „Frau“: Frau Gruber.",
+					"en": "Before the family name you use “Herr” or “Frau”: Frau Gruber.",
+					"tl": "Bago ang apelyido ginagamit ang “Herr” o “Frau”: Frau Gruber."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0376"
+				],
+				"family": "A1-01-T-SC4-1"
+			},
+			{
+				"id": "A1-01-T-SC4-3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die Antwort.",
+					"en": "Write the answer.",
+					"tl": "Isulat ang sagot."
+				},
+				"prompt": "Es ist Abend. Frau Mayer kommt. Schreiben Sie: „Guten Abend, … Mayer!“",
+				"accept": [
+					"Frau"
+				],
+				"explanation": {
+					"de": "Vor dem Familiennamen steht „Herr“ oder „Frau“: Frau Mayer.",
+					"en": "Before the family name you use “Herr” or “Frau”: Frau Mayer.",
+					"tl": "Bago ang apelyido ginagamit ang “Herr” o “Frau”: Frau Mayer."
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0376"
+				],
+				"family": "A1-01-T-SC4-1"
+			},
+			{
+				"id": "A1-01-T-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Gute Nacht, Frau Gruber!",
+					"Guten Morgen, Frau Gruber!",
+					"Auf Wiedersehen, Frau Gruber!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Es ist Morgen: Man sagt „Guten Morgen“. „Gute Nacht“ passt nicht.",
+					"en": "It is morning: you say “Guten Morgen”. “Gute Nacht” does not fit.",
+					"tl": "Sa umaga, sinasabi ang “Guten Morgen”. Hindi bagay ang “Gute Nacht”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Morgen. Frau Gruber kommt. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Guten Morgen, Herr Huber!",
+					"Auf Wiedersehen, Herr Huber!",
+					"Guten Abend, Herr Huber!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Es ist Abend: Man sagt „Guten Abend“. „Guten Morgen“ passt nicht.",
+					"en": "It is evening: you say “Guten Abend”. “Guten Morgen” does not fit.",
+					"tl": "Sa gabi, sinasabi ang “Guten Abend”. Hindi bagay ang “Guten Morgen”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Abend. Herr Huber kommt. Was sagen Sie?",
+				"family": "A1-01-T-SP1-1"
+			},
+			{
+				"id": "A1-01-T-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Gute Nacht, Frau Berger!",
+					"Guten Tag, Frau Berger!",
+					"Auf Wiedersehen, Frau Berger!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Es ist Tag: Man sagt „Guten Tag“. „Gute Nacht“ passt nicht.",
+					"en": "It is daytime: you say “Guten Tag”. “Gute Nacht” does not fit.",
+					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag”. Hindi bagay ang “Gute Nacht”."
+				},
+				"goals": [
+					"A1-01-G1"
+				],
+				"refs": [
+					"W-A1-0379",
+					"W-A1-0381",
+					"W-A1-0380",
+					"W-A1-0382",
+					"W-A1-0383"
+				],
+				"prompt": "Es ist Tag. Frau Berger kommt. Was sagen Sie?",
+				"family": "A1-01-T-SP1-1"
+			},
+			{
+				"id": "A1-01-T-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Ich heiße Sofia Berger.",
+					"Sie heißt Sofia Berger.",
+					"Wie heißen Sie?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0324"
+				],
+				"prompt": "Frau Gruber sagt: „Wie heißen Sie?“ Sie sind Sofia Berger. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie heißt Lukas Bauer.",
+					"Ich heiße Lukas Bauer.",
+					"Wie heißen Sie?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0324"
+				],
+				"prompt": "Herr Huber sagt: „Wie heißen Sie?“ Sie sind Lukas Bauer. Was sagen Sie?",
+				"family": "A1-01-T-SP2-1"
+			},
+			{
+				"id": "A1-01-T-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie heißt Ali Mayer.",
+					"Wie heißen Sie?",
+					"Ich heiße Ali Mayer."
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0006",
+					"W-A1-0147",
+					"W-A1-0324"
+				],
+				"prompt": "Frau Santos sagt: „Wie heißen Sie?“ Sie sind Ali Mayer. Was sagen Sie?",
+				"family": "A1-01-T-SP2-1"
+			},
+			{
+				"id": "A1-01-T-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommen Sie?",
+					"Woher kommt er?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Bei „Sie“ passt: „Woher kommen Sie?“",
+					"en": "For “Sie” this fits: “Woher kommen Sie?”",
+					"tl": "Para sa “Sie” ito ang bagay: “Woher kommen Sie?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Das ist Herr Bauer. Sie sagen „Sie“. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Wie heißt du?",
+					"Wie heißen Sie?",
+					"Wie heißt sie?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Bei „Sie“ passt: „Wie heißen Sie?“",
+					"en": "For “Sie” this fits: “Wie heißen Sie?”",
+					"tl": "Para sa “Sie” ito ang bagay: “Wie heißen Sie?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Eine Frau kommt. Sie sagen „Sie“. Was sagen Sie?",
+				"family": "A1-01-T-SP3-1"
+			},
+			{
+				"id": "A1-01-T-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Woher kommen Sie?",
+					"Woher kommt er?",
+					"Woher kommst du?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Bei „du“ passt: „Woher kommst du?“",
+					"en": "For “du” this fits: “Woher kommst du?”",
+					"tl": "Para sa “du” ito ang bagay: “Woher kommst du?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G4"
+				],
+				"refs": [
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Das ist Lukas. Sie sagen „du“. Was sagen Sie?",
+				"family": "A1-01-T-SP3-1"
+			},
+			{
+				"id": "A1-01-T-SP4-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Ich heiße Anna.",
+					"Danke, gut. Und dir?",
+					"Auf Wiedersehen!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Auf „Wie geht's?“ antworten Sie zum Beispiel: „Danke, gut.“ Dann fragen Sie zurück: „Und dir?“",
+					"en": "To “Wie geht's?” you can answer: “Danke, gut.” Then you ask back: “Und dir?”",
+					"tl": "Sa “Wie geht's?” puwede kang sumagot: “Danke, gut.” Pagkatapos magtanong ka pabalik: “Und dir?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0017",
+					"W-A1-0046"
+				],
+				"prompt": "Anna sagt: „Wie geht's dir?“ Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-SP4-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Danke, sehr gut. Und dir?",
+					"Ich heiße Jonas.",
+					"Auf Wiedersehen!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Auf „Wie geht's?“ antworten Sie zum Beispiel: „Danke, sehr gut.“ Dann fragen Sie zurück: „Und dir?“",
+					"en": "To “Wie geht's?” you can answer: “Danke, sehr gut.” Then you ask back: “Und dir?”",
+					"tl": "Sa “Wie geht's?” puwede kang sumagot: “Danke, sehr gut.” Pagkatapos magtanong ka pabalik: “Und dir?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0017",
+					"W-A1-0046"
+				],
+				"prompt": "Jonas sagt: „Wie geht's dir?“ Was sagen Sie?",
+				"family": "A1-01-T-SP4-1"
+			},
+			{
+				"id": "A1-01-T-SP4-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Mir geht's gut, danke. Und dir?",
+					"Ich heiße Sofia.",
+					"Auf Wiedersehen!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Auf „Wie geht's?“ antworten Sie zum Beispiel: „Mir geht's gut, danke.“ Dann fragen Sie zurück: „Und dir?“",
+					"en": "To “Wie geht's?” you can answer: “Mir geht's gut, danke.” Then you ask back: “Und dir?”",
+					"tl": "Sa “Wie geht's?” puwede kang sumagot: “Mir geht's gut, danke.” Pagkatapos magtanong ka pabalik: “Und dir?”"
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0387",
+					"W-A1-0092",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0017",
+					"W-A1-0046"
+				],
+				"prompt": "Sofia sagt: „Wie geht's dir?“ Was sagen Sie?",
+				"family": "A1-01-T-SP4-1"
+			},
+			{
+				"id": "A1-01-T-SP5-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Guten Morgen, Herr Huber!",
+					"Wie heißen Sie, Herr Huber?",
+					"Auf Wiedersehen, Herr Huber!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Zum Abschied sagt man „Auf Wiedersehen, Herr Huber!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Auf Wiedersehen, Herr Huber!”. The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Herr Huber!”. Ang iba ay bagay sa pagdating o sa tanong."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0383",
+					"W-A1-0385",
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Herr Huber sagt: „Auf Wiedersehen!“ Sie sagen „Sie“. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-SP5-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Tschüss, Lukas!",
+					"Guten Morgen, Lukas!",
+					"Wie heißt du, Lukas?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Zum Abschied sagt man „Tschüss, Lukas!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Tschüss, Lukas!”. The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Tschüss, Lukas!”. Ang iba ay bagay sa pagdating o sa tanong."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0383",
+					"W-A1-0385",
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Lukas sagt: „Tschüss!“ Sie sagen „du“. Was sagen Sie?",
+				"family": "A1-01-T-SP5-1"
+			},
+			{
+				"id": "A1-01-T-SP5-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Auf Wiedersehen, Frau Gruber!",
+					"Guten Abend, Frau Gruber!",
+					"Woher kommen Sie, Frau Gruber?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Zum Abschied sagt man „Auf Wiedersehen, Frau Gruber!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Auf Wiedersehen, Frau Gruber!”. The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Frau Gruber!”. Ang iba ay bagay sa pagdating o sa tanong."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0383",
+					"W-A1-0385",
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Frau Gruber sagt: „Auf Wiedersehen!“ Sie sagen „Sie“. Was sagen Sie?",
+				"family": "A1-01-T-SP5-1"
+			},
+			{
+				"id": "A1-01-T-SP6-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Ich komme aus Österreich.",
+					"Sie kommt aus Österreich.",
+					"Wir kommen aus Österreich."
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
+					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is another person, “wir kommen” is several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (galing ako sa Austria.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+				},
+				"goals": [
+					"A1-01-G4",
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0006",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Frau Berger sagt: „Woher kommen Sie?“ Sie kommen aus Österreich. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-SP6-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie kommt aus den Philippinen.",
+					"Ich komme aus den Philippinen.",
+					"Wir kommen aus den Philippinen."
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
+					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is another person, “wir kommen” is several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (galing ako sa Pilipinas.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+				},
+				"goals": [
+					"A1-01-G4",
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0006",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Herr Santos sagt: „Woher kommen Sie?“ Sie kommen aus den Philippinen. Was sagen Sie?",
+				"family": "A1-01-T-SP6-1"
+			},
+			{
+				"id": "A1-01-T-SP6-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "What do you say? Choose, then say it aloud.",
+					"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"options": [
+					"Sie kommt aus Österreich.",
+					"Ich komme aus Österreich.",
+					"Wir kommen aus Österreich."
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
+					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is another person, “wir kommen” is several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (galing ako sa Austria.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+				},
+				"goals": [
+					"A1-01-G4",
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0128",
+					"W-A1-0006",
+					"W-A1-0357",
+					"W-A1-0362"
+				],
+				"prompt": "Herr Huber sagt: „Woher kommen Sie?“ Sie kommen aus Österreich. Was sagen Sie?",
+				"family": "A1-01-T-SP6-1"
+			},
+			{
+				"id": "A1-01-T-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"bist",
+					"bin",
+					"ist"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Das Verb „sein“: ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (mehrere) und Sie sind.",
+					"en": "The verb “sein” (to be): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (several people) and Sie sind.",
+					"tl": "Ang pandiwang “sein” (maging / ay): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (marami) at Sie sind."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0116",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0008",
+					"W-A1-0011",
+					"W-A1-0012"
+				],
+				"prompt": "Ich … Frau Berger."
+			},
+			{
+				"id": "A1-01-T-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"bin",
+					"ist",
+					"bist"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „sein“: ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (mehrere) und Sie sind.",
+					"en": "The verb “sein” (to be): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (several people) and Sie sind.",
+					"tl": "Ang pandiwang “sein” (maging / ay): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (marami) at Sie sind."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0116",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0008",
+					"W-A1-0011",
+					"W-A1-0012"
+				],
+				"prompt": "Du … Anna.",
+				"family": "A1-01-T-GW1-1"
+			},
+			{
+				"id": "A1-01-T-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"seid",
+					"bin",
+					"sind"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „sein“: ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (mehrere) und Sie sind.",
+					"en": "The verb “sein” (to be): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (several people) and Sie sind.",
+					"tl": "Ang pandiwang “sein” (maging / ay): ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie (marami) at Sie sind."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0116",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0008",
+					"W-A1-0011",
+					"W-A1-0012"
+				],
+				"prompt": "Wir … aus Österreich.",
+				"family": "A1-01-T-GW1-1"
+			},
+			{
+				"id": "A1-01-T-GW2-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"heißt",
+					"heißen",
+					"heiße"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Das Verb „heißen“: ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"en": "The verb “heißen” (to be called): ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"tl": "Ang pandiwang “heißen” (ang pangalan ay …): ich heiße · du heißt · er/sie heißt · wir/Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0011"
+				],
+				"prompt": "Wie … Sie?"
+			},
+			{
+				"id": "A1-01-T-GW2-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"heißen",
+					"heiße",
+					"heißt"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „heißen“: ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"en": "The verb “heißen” (to be called): ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"tl": "Ang pandiwang “heißen” (ang pangalan ay …): ich heiße · du heißt · er/sie heißt · wir/Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0011"
+				],
+				"prompt": "Wie … du?",
+				"family": "A1-01-T-GW2-1"
+			},
+			{
+				"id": "A1-01-T-GW2-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"heißt",
+					"heiße",
+					"heißen"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Das Verb „heißen“: ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"en": "The verb “heißen” (to be called): ich heiße · du heißt · er/sie heißt · wir/Sie heißen.",
+					"tl": "Ang pandiwang “heißen” (ang pangalan ay …): ich heiße · du heißt · er/sie heißt · wir/Sie heißen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013",
+					"W-A1-0011"
+				],
+				"prompt": "Ich … Jonas.",
+				"family": "A1-01-T-GW2-1"
+			},
+			{
+				"id": "A1-01-T-GW3-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"kommt",
+					"komme",
+					"kommen"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Das Verb „kommen“: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "The verb “kommen” (to come): ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Ang pandiwang “kommen” (dumating, galing): ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Woher … Sie?"
+			},
+			{
+				"id": "A1-01-T-GW3-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"kommst",
+					"kommt",
+					"komme"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Das Verb „kommen“: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "The verb “kommen” (to come): ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Ang pandiwang “kommen” (dumating, galing): ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Woher … du?",
+				"family": "A1-01-T-GW3-1"
+			},
+			{
+				"id": "A1-01-T-GW3-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"kommt",
+					"kommen",
+					"komme"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Das Verb „kommen“: ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"en": "The verb “kommen” (to come): ich komme · du kommst · er/sie kommt · wir/Sie kommen.",
+					"tl": "Ang pandiwang “kommen” (dumating, galing): ich komme · du kommst · er/sie kommt · wir/Sie kommen."
+				},
+				"goals": [
+					"A1-01-G5"
+				],
+				"refs": [
+					"W-A1-0128",
+					"W-A1-0038",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0013"
+				],
+				"prompt": "Er … aus Österreich.",
+				"family": "A1-01-T-GW3-1"
+			},
+			{
+				"id": "A1-01-T-GW4-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Er",
+					"Sie",
+					"Wir"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
+					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
+				},
+				"goals": [
+					"A1-01-G7"
+				],
+				"refs": [
+					"W-A1-0008",
+					"W-A1-0009",
+					"W-A1-0011",
+					"W-A1-0012",
+					"W-A1-0010"
+				],
+				"prompt": "Das ist Herr Huber. … heißt Jonas."
+			},
+			{
+				"id": "A1-01-T-GW4-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Er",
+					"Ihr",
+					"Sie"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
+					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
+				},
+				"goals": [
+					"A1-01-G7"
+				],
+				"refs": [
+					"W-A1-0008",
+					"W-A1-0009",
+					"W-A1-0011",
+					"W-A1-0012",
+					"W-A1-0010"
+				],
+				"prompt": "Das ist Frau Santos. … kommt aus den Philippinen.",
+				"family": "A1-01-T-GW4-1"
+			},
+			{
+				"id": "A1-01-T-GW4-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Wir",
+					"Ihr",
+					"Er"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
+					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
+				},
+				"goals": [
+					"A1-01-G7"
+				],
+				"refs": [
+					"W-A1-0008",
+					"W-A1-0009",
+					"W-A1-0011",
+					"W-A1-0012",
+					"W-A1-0010"
+				],
+				"prompt": "Anna und ich: … kommen aus Österreich.",
+				"family": "A1-01-T-GW4-1"
+			},
+			{
+				"id": "A1-01-T-GW5-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Vorname",
+					"Herr",
+					"Familienname"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Berger“ steht nach dem Vornamen: Das ist der Familienname.",
+					"en": "“Berger” comes after the first name: it is the family name (Familienname).",
+					"tl": "Ang “Berger” ay pagkatapos ng pangalan: ito ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0324"
+				],
+				"prompt": "Sofia Berger: „Berger“ ist der …"
+			},
+			{
+				"id": "A1-01-T-GW5-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Vorname",
+					"Herr",
+					"Familienname"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Bauer“ steht nach dem Vornamen: Das ist der Familienname.",
+					"en": "“Bauer” comes after the first name: it is the family name (Familienname).",
+					"tl": "Ang “Bauer” ay pagkatapos ng pangalan: ito ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0324"
+				],
+				"prompt": "Lukas Bauer: „Bauer“ ist der …",
+				"family": "A1-01-T-GW5-1"
+			},
+			{
+				"id": "A1-01-T-GW5-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Vorname",
+					"Herr",
+					"Familienname"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Mayer“ steht nach dem Vornamen: Das ist der Familienname.",
+					"en": "“Mayer” comes after the first name: it is the family name (Familienname).",
+					"tl": "Ang “Mayer” ay pagkatapos ng pangalan: ito ang apelyido (Familienname)."
+				},
+				"goals": [
+					"A1-01-G2"
+				],
+				"refs": [
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0324"
+				],
+				"prompt": "Ali Mayer: „Mayer“ ist der …",
+				"family": "A1-01-T-GW5-1"
+			},
+			{
+				"id": "A1-01-T-GW6-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Nein",
+					"Auch",
+					"Ja"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Die Antwort bestätigt die Frage: „Ja“.",
+					"en": "The answer confirms the question: “Ja”.",
+					"tl": "Oo ang sagot sa tanong: “Ja”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"prompt": "Kommst du aus Österreich? – …, ich komme aus Österreich."
+			},
+			{
+				"id": "A1-01-T-GW6-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Ja",
+					"Nein",
+					"Auch"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Der Name ist anders: „Nein“.",
+					"en": "The name is different: “Nein”.",
+					"tl": "Iba ang pangalan: “Nein”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"prompt": "Heißen Sie Huber? – …, ich heiße Gruber.",
+				"family": "A1-01-T-GW6-1"
+			},
+			{
+				"id": "A1-01-T-GW6-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"options": [
+					"Nein",
+					"Auch",
+					"Ja"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Die Antwort bestätigt die Frage: „Ja“.",
+					"en": "The answer confirms the question: “Ja”.",
+					"tl": "Oo ang sagot sa tanong: “Ja”."
+				},
+				"goals": [
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"prompt": "Sind Sie Frau Santos? – …, ich bin Frau Santos.",
+				"family": "A1-01-T-GW6-1"
+			},
+			{
+				"id": "A1-01-T-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You meet this adult for the first time.",
+					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommen Sie?",
+					"Woher kommt er?"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "In Österreich sagt man zu Erwachsenen, die man nicht kennt, „Sie“.",
+					"en": "In Austria you say “Sie” to adults you do not know.",
+					"tl": "Sa Austria, “Sie” ang sinasabi sa mga nasa hustong gulang na hindi mo kilala."
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0013",
+					"W-A1-0007",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Herr Bauer. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You meet this adult for the first time.",
+					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
+				},
+				"options": [
+					"Wie heißt du?",
+					"Wie heißt sie?",
+					"Wie heißen Sie?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "In Österreich sagt man zu Erwachsenen, die man nicht kennt, „Sie“.",
+					"en": "In Austria you say “Sie” to adults you do not know.",
+					"tl": "Sa Austria, “Sie” ang sinasabi sa mga nasa hustong gulang na hindi mo kilala."
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0013",
+					"W-A1-0007",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Eine Frau kommt. Was sagen Sie?",
+				"family": "A1-01-T-WE1-1"
+			},
+			{
+				"id": "A1-01-T-WE1-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You meet this adult for the first time.",
+					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
+				},
+				"options": [
+					"Woher kommst du?",
+					"Woher kommt sie?",
+					"Woher kommen Sie?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "In Österreich sagt man zu Erwachsenen, die man nicht kennt, „Sie“.",
+					"en": "In Austria you say “Sie” to adults you do not know.",
+					"tl": "Sa Austria, “Sie” ang sinasabi sa mga nasa hustong gulang na hindi mo kilala."
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0013",
+					"W-A1-0007",
+					"W-A1-0147",
+					"W-A1-0128"
+				],
+				"prompt": "Frau Gruber. Was sagen Sie?",
+				"family": "A1-01-T-WE1-1"
+			},
+			{
+				"id": "A1-01-T-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You greet an adult you do not know.",
+					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
+				},
+				"options": [
+					"Grüß Gott, Frau Gruber!",
+					"Servus, Frau Gruber!",
+					"Gute Nacht, Frau Gruber!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"prompt": "Es ist Morgen. Frau Gruber kommt. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You greet an adult you do not know.",
+					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
+				},
+				"options": [
+					"Servus, Herr Huber!",
+					"Auf Wiedersehen, Herr Huber!",
+					"Grüß Gott, Herr Huber!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"prompt": "Es ist Abend. Herr Huber kommt. Was sagen Sie?",
+				"family": "A1-01-T-WE2-1"
+			},
+			{
+				"id": "A1-01-T-WE2-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You greet an adult you do not know.",
+					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
+				},
+				"options": [
+					"Servus, Frau Berger!",
+					"Gute Nacht, Frau Berger!",
+					"Grüß Gott, Frau Berger!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+				},
+				"goals": [
+					"A1-01-G1",
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0376",
+					"W-A1-0377",
+					"W-A1-0382",
+					"W-A1-0383",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"prompt": "Es ist Tag. Frau Berger kommt. Was sagen Sie?",
+				"family": "A1-01-T-WE2-1"
+			},
+			{
+				"id": "A1-01-T-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You say “Sie” to this person.",
+					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
+				},
+				"options": [
+					"Grüß Gott, Frau Sofia!",
+					"Grüß Gott, Frau Berger!",
+					"Grüß Gott, Berger!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Mit „Sie“ sagt man „Herr“ oder „Frau“ und den Familiennamen: „Grüß Gott, Frau Berger!“",
+					"en": "With “Sie” you use “Herr” or “Frau” and the family name: “Grüß Gott, Frau Berger!”",
+					"tl": "Sa “Sie” ginagamit ang “Herr” o “Frau” at ang apelyido: “Grüß Gott, Frau Berger!”"
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0376"
+				],
+				"prompt": "Sofia Berger. Was sagen Sie?"
+			},
+			{
+				"id": "A1-01-T-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You say “Sie” to this person.",
+					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
+				},
+				"options": [
+					"Grüß Gott, Herr Jonas!",
+					"Grüß Gott, Huber!",
+					"Grüß Gott, Herr Huber!"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Mit „Sie“ sagt man „Herr“ oder „Frau“ und den Familiennamen: „Grüß Gott, Herr Huber!“",
+					"en": "With “Sie” you use “Herr” or “Frau” and the family name: “Grüß Gott, Herr Huber!”",
+					"tl": "Sa “Sie” ginagamit ang “Herr” o “Frau” at ang apelyido: “Grüß Gott, Herr Huber!”"
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0376"
+				],
+				"prompt": "Jonas Huber. Was sagen Sie?",
+				"family": "A1-01-T-WE3-1"
+			},
+			{
+				"id": "A1-01-T-WE3-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. You say “Sie” to this person.",
+					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
+				},
+				"options": [
+					"Grüß Gott, Frau Gruber!",
+					"Grüß Gott, Frau Anna!",
+					"Grüß Gott, Gruber!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Mit „Sie“ sagt man „Herr“ oder „Frau“ und den Familiennamen: „Grüß Gott, Frau Gruber!“",
+					"en": "With “Sie” you use “Herr” or “Frau” and the family name: “Grüß Gott, Frau Gruber!”",
+					"tl": "Sa “Sie” ginagamit ang “Herr” o “Frau” at ang apelyido: “Grüß Gott, Frau Gruber!”"
+				},
+				"goals": [
+					"A1-01-G3"
+				],
+				"refs": [
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0326",
+					"W-A1-0325",
+					"W-A1-0376"
+				],
+				"prompt": "Anna Gruber. Was sagen Sie?",
+				"family": "A1-01-T-WE3-1"
+			},
+			{
+				"id": "A1-01-T-WE4-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
+					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
+				},
+				"options": [
+					"Gute Nacht, Anna! Wie geht's dir?",
+					"Auf Wiedersehen, Anna! Wie geht's dir?",
+					"Servus, Anna! Wie geht's dir?"
+				],
+				"answer": 2,
+				"explanation": {
+					"de": "Unter Freunden sagt man „du“ und „Servus“: „Servus, Anna! Wie geht's dir?“",
+					"en": "Between friends you say “du” and “Servus”: “Servus, Anna! Wie geht's dir?”",
+					"tl": "Sa magkakaibigan, “du” at “Servus” ang sinasabi: “Servus, Anna! Wie geht's dir?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0387",
+					"W-A1-0017"
+				],
+				"prompt": "Lukas und Anna. Was sagt Lukas?"
+			},
+			{
+				"id": "A1-01-T-WE4-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
+					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
+				},
+				"options": [
+					"Servus, Jonas! Wie geht's dir?",
+					"Gute Nacht, Jonas! Wie geht's dir?",
+					"Auf Wiedersehen, Jonas! Wie geht's dir?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Unter Freunden sagt man „du“ und „Servus“: „Servus, Jonas! Wie geht's dir?“",
+					"en": "Between friends you say “du” and “Servus”: “Servus, Jonas! Wie geht's dir?”",
+					"tl": "Sa magkakaibigan, “du” at “Servus” ang sinasabi: “Servus, Jonas! Wie geht's dir?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0387",
+					"W-A1-0017"
+				],
+				"prompt": "Anna und Jonas. Was sagt Anna?",
+				"family": "A1-01-T-WE4-1"
+			},
+			{
+				"id": "A1-01-T-WE4-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
+					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
+				},
+				"options": [
+					"Servus, Ali! Wie geht's dir?",
+					"Gute Nacht, Ali! Wie geht's dir?",
+					"Auf Wiedersehen, Ali! Wie geht's dir?"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Unter Freunden sagt man „du“ und „Servus“: „Servus, Ali! Wie geht's dir?“",
+					"en": "Between friends you say “du” and “Servus”: “Servus, Ali! Wie geht's dir?”",
+					"tl": "Sa magkakaibigan, “du” at “Servus” ang sinasabi: “Servus, Ali! Wie geht's dir?”"
+				},
+				"goals": [
+					"A1-01-G3",
+					"A1-01-G6"
+				],
+				"refs": [
+					"W-A1-0377",
+					"W-A1-0007",
+					"W-A1-0387",
+					"W-A1-0017"
+				],
+				"prompt": "Sofia und Ali. Was sagt Sofia?",
+				"family": "A1-01-T-WE4-1"
+			}
+		]
+	}
+}

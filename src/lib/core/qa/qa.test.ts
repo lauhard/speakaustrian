@@ -19,7 +19,7 @@ const item = (id: string, skill: Discipline, n: number, extra: object = {}) => (
 const good = () => {
 	const skills = (Object.keys(quota) as Discipline[]).flatMap((d) => Array.from({ length: quota[d] }, () => d));
 	const test = skills.flatMap((d, f) => [0, 1, 2].map((t) => item(`OK-T${f}-${t}`, d, f * 3 + t, t ? { family: `OK-T${f}-0` } : {})));
-	const practice = Array.from({ length: 4 }, (_, r) => skills.map((d, f) => item(`OK-P${r}-${f}`, d, 100 + r * 20 + f, r === 0 ? { refs: ['W-A1-0001'] } : {}))).flat();
+	const practice = Array.from({ length: 4 }, (_, r) => skills.map((d, f) => item(`OK-P${r}-${f}`, d, 100 + r * 20 + f, r === 0 ? { refs: ['W-A1-0001'] } : { family: `OK-P0-${f}` }))).flat();
 	return { schemaVersion: 1, chapterId: 'A1-02', tlReviewStatus: 'machine', lessons: [{ id: 'OK-L1', title: L('Lektion'), items: [item('OK-L1-I1', 'lesen', 999)] }], goals: { G1: L('Grüßen') }, pools: { practice, test } };
 };
 const has = (findings: Finding[], check: string, level: string, itemId?: string) =>
@@ -46,7 +46,8 @@ describe('qa on the broken fixture: one finding per check', () => {
 		['pool.quota', 'error', undefined],
 		['pool.family-skill', 'warning', 'FX-T2'],
 		['practice.gate', 'error', undefined],
-		['practice.size', 'warning', undefined],
+		['practice.size', 'error', undefined],
+		['practice.twins', 'warning', 'FX-P1'],
 		['pool.duplicate', 'error', 'FX-T3'],
 		['choice.options', 'error', 'FX-T1'],
 		['goals.uncovered', 'error', undefined],
