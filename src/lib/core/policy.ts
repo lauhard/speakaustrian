@@ -16,6 +16,8 @@ export type RuleConfig = {
 	TEST_FOCUS_EXTRA: number;
 	TEST_EXAM_EXTRA: number;
 	GATE_ITEMS: number;
+	// Size of the practice part before the readiness round (masterprompt phase 5 no. 2, G-010 A).
+	PRACTICE_PART_ITEMS: number;
 	GATE_MIN_CORRECT: number;
 	LEITNER_INTERVALS_DAYS: readonly number[];
 };
@@ -52,6 +54,7 @@ export const defaultConfig: RuleConfig = {
 	TEST_FOCUS_EXTRA: 2,
 	TEST_EXAM_EXTRA: 1,
 	GATE_ITEMS: 20,
+	PRACTICE_PART_ITEMS: 40,
 	GATE_MIN_CORRECT: 18,
 	LEITNER_INTERVALS_DAYS: [1, 3, 7, 14, 30]
 };

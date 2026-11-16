@@ -89,6 +89,7 @@ Format:
 - Found in: 004a QA script (`practice.size`, `practice.gate`)
 - Spec says: masterprompt Phase 5 no. 2: practice pool for the practice part (“≈ 40”) and several readiness blocks of 20; no. 11: practice part + ≥ 2 readiness blocks without overlap with the test pool. R-G1: readiness round = last block of the practice part, drawn from the practice pool.
 - Problem: “≈ 40” is no hard number, and the spec does not say whether the practice part and the readiness blocks may share items. The app walks the whole practice pool as practice part and then draws the blocks from the same pool.
+- App (004g): practice part = 40 fixed, interleaved items (`splitPractice`), readiness blocks draw from the other items.
 - Implemented (decision A): error if a discipline has fewer than 2 × quota practice items (R-G1) or the pool has fewer than 40 + 2 × 20 = 80 items. A1-01 has 90, built from the same task patterns as the test; more variety (new task patterns, texts, pictures) comes in a later content pass.
 - Options: A 80 is a hard minimum, practice part = 40 fixed items, blocks from the rest · B as implemented (blocks may reuse practice-part items) · C other number.
 - Blocks: nothing (004b can aim at ≥ 80).

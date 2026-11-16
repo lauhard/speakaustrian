@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { allItems, availableFilters, chapters, course, pickPractice } from './index';
+import { allItems, availableFilters, chapters, course, pickPractice, poolItems, practiceParts } from './index';
 
 describe('course', () => {
 	it('lists all 39 chapters in order', () => {
@@ -55,5 +55,24 @@ describe('content rules per chapter', () => {
 	it('every picture file exists', async () => {
 		const { existsSync } = await import('node:fs');
 		for (const item of allItems()) if (item.image) expect(existsSync(`static${item.image.src}`), item.image.src).toBe(true);
+	});
+});
+
+describe('practice part of A1-01 (G-010 A)', () => {
+	const { part, rest } = practiceParts('A1-01');
+	it('has 40 items, the readiness blocks get the rest', () => {
+		expect(part).toHaveLength(40);
+		expect(rest).toHaveLength(poolItems('A1-01', 'practice').length - 40);
+		expect(rest.some((r) => part.some((p) => p.id === r.id))).toBe(false);
+	});
+	it('never asks the same discipline or twin family twice in a row', () => {
+		part.slice(1).forEach((p, i) => {
+			expect(p.skill, p.id).not.toBe(part[i].skill);
+			expect(p.family, p.id).not.toBe(part[i].family);
+		});
+	});
+	it('leaves enough items per discipline for two readiness blocks', () => {
+		const bySkill = (skill: string) => rest.filter((r) => r.skill === skill).length;
+		for (const skill of new Set(rest.map((r) => r.skill))) expect(bySkill(skill), skill).toBeGreaterThanOrEqual(6);
 	});
 });

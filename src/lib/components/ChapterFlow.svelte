@@ -4,7 +4,7 @@
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
 	import Runner from './Runner.svelte';
-	import { chapterContent, findItem, poolItems, PREVIEW_CHAPTER } from '#lib/content/index.ts';
+	import { chapterContent, findItem, poolItems, practiceParts, PREVIEW_CHAPTER } from '#lib/content/index.ts';
 	import type { Item } from '#lib/core/content/schema.ts';
 	import { gateDraw, nextGateItem, targetedItems, testDraw } from '#lib/core/flow.ts';
 	import type { game } from '#lib/game.svelte.ts';
@@ -17,13 +17,15 @@
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const content = $derived(chapterContent(chapterId));
 	const practicePool = $derived(poolItems(chapterId, 'practice'));
+	const parts = $derived(practiceParts(chapterId));
 	const testPool = $derived(poolItems(chapterId, 'test'));
 	const s = $derived(store.state);
 	const run = $derived(s.course.chapter?.id === chapterId ? s.course.chapter : null);
 	const attempt = $derived(run?.attempt);
 	const completed = $derived(chapterId in s.course.completed);
 	const tlMachine = $derived(content?.tlReviewStatus === 'machine');
-	const backHref = $derived(resolve('/chapter/[id]', { id: chapterId }));
+	// The flow is the chapter page itself, so "close" leads back to the course.
+	const backHref = resolve('/');
 
 	const practice = $derived(attempt?.kind === 'PRACTICE' ? attempt : null);
 	const gate = $derived(attempt?.kind === 'GATE' ? attempt : null);
@@ -33,10 +35,10 @@
 	const correction = $derived(attempt?.kind === 'CORRECTION' ? attempt : null);
 	const review = $derived(attempt?.kind === 'ERROR_REVIEW' ? attempt : null);
 
-	const practiceItem = $derived(practice ? findItem(practicePool[practice.answered]?.id ?? '') : undefined);
+	const practiceItem = $derived(practice ? findItem(parts.part[practice.answered]?.id ?? '') : undefined);
 	const gateItem = $derived.by(() => {
 		if (!gate || !run) return undefined;
-		return findItem(nextGateItem(gateDraw(store.policy, s, run, practicePool, gate.block), gate.items) ?? '');
+		return findItem(nextGateItem(gateDraw(store.policy, s, run, parts.rest, gate.block), gate.items) ?? '');
 	});
 	const targetedList = $derived(targeted ? targetedItems(practicePool, targeted.goalIds).flatMap((id) => findItem(id) ?? []) : []);
 	const testItem = $derived(test ? findItem(test.items[test.idx]) : undefined);
@@ -107,7 +109,7 @@
 			top={header}
 			{tlMachine}
 			{backHref}
-			backLabel={m.back_chapter()}
+			backLabel={m.course()}
 			nextLabel={m.next()}
 			onchecked={(_, ok) => (checked = ok)}
 			onfinish={(correct) => done(correct === 1)}
@@ -120,6 +122,7 @@
 {/snippet}
 {#snippet gateTop()}
 	{@render label(m.flow_gate({ block: gate?.block ?? 1, current: (gate?.answered ?? 0) + 1, total: store.policy.config.GATE_ITEMS }), 'GATE')}
+	<p class="font-bold" data-testid="gate-score"><span class="text-ok">✓ {gate?.correct ?? 0}</span> · <span class="text-warn">✗ {(gate?.answered ?? 0) - (gate?.correct ?? 0)}</span></p>
 	<p class="text-sm text-muted">{m.flow_gate_note({ min: store.policy.config.GATE_MIN_CORRECT, total: store.policy.config.GATE_ITEMS })}</p>
 {/snippet}
 {#snippet testTop()}
@@ -159,7 +162,7 @@
 					top={targetedTop}
 					{tlMachine}
 					{backHref}
-					backLabel={m.back_chapter()}
+					backLabel={m.course()}
 					onfinish={() => store.dispatch({ type: 'TARGETED_PRACTICE_DONE', goalIds: targeted.goalIds })}
 				/>
 			{/key}
@@ -210,7 +213,10 @@
 			<p class="text-5xl">🎉</p>
 			<h2 class="h2">{m.flow_passed_title()}</h2>
 			{#if s.course.nextChapterBonus > 0}<p class="font-bold text-ok">{m.flow_bonus({ count: s.course.nextChapterBonus })}</p>{/if}
-			{#if s.course.phase.kind === 'CHAPTER'}
+			{#if s.course.phase.kind === 'CHAPTER' && !chapterContent(s.course.phase.id)}
+				<p class="text-muted" data-testid="flow-next-soon">{m.flow_next_soon()}</p>
+				<a href={resolve('/')} class="btn-primary">{m.course()}</a>
+			{:else if s.course.phase.kind === 'CHAPTER'}
 				<a href={resolve('/chapter/[id]', { id: s.course.phase.id })} class="btn-primary" data-testid="flow-next-chapter">{m.flow_next_chapter()}</a>
 			{:else if chapterId === PREVIEW_CHAPTER}
 				<button type="button" class="btn-secondary" data-testid="flow-restart" onclick={() => store.reset()}>{m.flow_demo_restart()}</button>
