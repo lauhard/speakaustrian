@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"dev": "vite dev",
-		"build": "wrangler types && vite build",
+		"build": "vite build",
 		"preview": "wrangler dev .svelte-kit/cloudflare/_worker.js --port 4173",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "pnpm i18n && wrangler types && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -18,7 +18,7 @@
 		"test": "vitest run",
 		"gen": "wrangler types",
 		"test:watch": "vitest",
-		"deploy": "pnpm build && wrangler deploy",
+		"deploy": "wrangler deploy",
 		"i18n": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --emit-ts-declarations --silent"
 	},
 	"devDependencies": {
