@@ -61,5 +61,9 @@
 	"q_genus": "der, die oder das?",
 	"article_hint": "Nomen immer mit Artikel schreiben: der, die oder das.",
 	"skill_woerter": "Wörter",
-	"cards_left": "Noch {count} Karten"
+	"cards_left": "Noch {count} Karten",
+	"continue_learning": "Weiter lernen",
+	"your_chapter": "Ihr Kapitel",
+	"all_chapters": "Alle Kapitel",
+	"per_day": "{time} pro Tag"
 }

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif">
+<rect width="400" height="260" fill="#27365c"/><rect y="204" width="400" height="56" fill="#1b2542"/>
+<!-- window: night with moon and stars -->
+<rect x="30" y="28" width="104" height="96" rx="4" fill="#0e1730" stroke="#c9d3ea" stroke-width="8"/>
+<path d="M100 48a22 22 0 1 0 16 36a26 26 0 0 1-16-36z" fill="#ffe89a"/>
+<g fill="#fff"><circle cx="52" cy="50" r="2.5"/><circle cx="70" cy="84" r="2"/><circle cx="48" cy="104" r="2"/><circle cx="84" cy="44" r="1.8"/><circle cx="116" cy="106" r="2"/></g>
+<path d="M82 28v96M30 76h104" stroke="#c9d3ea" stroke-width="5"/>
+<!-- bedside table with digital clock and lamp -->
+<rect x="148" y="170" width="50" height="46" rx="4" fill="#6b4a2b"/>
+<rect x="152" y="150" width="42" height="20" rx="4" fill="#111"/><text x="173" y="165" font-size="13" font-weight="bold" fill="#7dff8a" text-anchor="middle">21:00</text>
+<!-- bed with child -->
+<rect x="204" y="150" width="14" height="76" rx="5" fill="#7a5230"/><rect x="204" y="186" width="176" height="30" rx="6" fill="#7a5230"/><rect x="366" y="170" width="14" height="56" rx="5" fill="#7a5230"/>
+<rect x="222" y="158" width="52" height="30" rx="12" fill="#fff"/>
+<circle cx="250" cy="160" r="16" fill="#f1c9a5"/><path d="M234 158q2-18 16-18t16 18q-6-8-16-8t-16 8z" fill="#6b3f1d"/>
+<path d="M243 160q3 3 6 0M252 160q3 3 6 0" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round"/><path d="M246 168q4 3 8 0" fill="none" stroke="#b5533c" stroke-width="2" stroke-linecap="round"/>
+<path d="M262 170q60-22 116 6v22H262z" fill="#5fa8d3"/><path d="M262 170q60-22 116 6" fill="none" stroke="#3f86b3" stroke-width="3"/>
+<g fill="#fff" opacity=".8"><circle cx="300" cy="180" r="3"/><circle cx="330" cy="174" r="3"/><circle cx="356" cy="184" r="3"/><circle cx="316" cy="192" r="3"/></g>
+<text x="276" y="140" font-size="18" font-weight="bold" fill="#c9d3ea">z</text><text x="288" y="126" font-size="14" font-weight="bold" fill="#c9d3ea">z</text>
+<!-- mother at the bed, waving good night -->
+<rect x="64" y="200" width="12" height="40" rx="5" fill="#3b3054"/><rect x="82" y="200" width="12" height="40" rx="5" fill="#3b3054"/>
+<path d="M54 156q0-26 25-26t25 26v50H54z" fill="#c2185b"/>
+<path d="M102 146l26-22" stroke="#c2185b" stroke-width="12" stroke-linecap="round"/><circle cx="131" cy="121" r="7" fill="#f1c9a5"/>
+<circle cx="79" cy="112" r="18" fill="#f1c9a5"/><path d="M60 114q-2-30 19-30t19 30q-4-16-19-16t-19 16z" fill="#3a2414"/><path d="M60 112q-4 22 2 34l6-4q-6-14-2-28z" fill="#3a2414"/>
+<circle cx="74" cy="112" r="2" fill="#333"/><circle cx="87" cy="112" r="2" fill="#333"/><path d="M74 120q6 5 13 0" fill="none" stroke="#b5533c" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -7,6 +7,7 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [x] 001 Course overview (39 chapters), chapter A1-01 with micro lessons 1–4, free practice (D22), listening tasks with transcript fallback
 - [x] 002 Core state: `GameState` schema, events `PROFILE_CREATED`/`PENSUM_CHANGED`/`LESSON_COMPLETED`/`OVERRIDE_GRANTED`, `makeReducer(policy)`, `defaultPolicy` (R-F1, R-F3, R-L1/3, R-G2, R-PL2), storage v2 + migration, daily workload at sign-up, plan day
 - [x] 003 Vocabulary cards + Leitner review (R-W2, R-W5, R-W6, R-W7), answer tolerances of `02g` §3.1, free practice „Wörter“, picture tasks in A1-01, content rule D24 as a test
+- [x] 004a UI/UX: design system (bundled font, tokens, component classes), home with smart continue, sticky action bar, result ring; free practice covers all chapters (D25); richer pictures for A1-01
 
 ## Next (in this order)
 - [ ] 004 A1-01 complete: micro lessons 5–14 (remaining A1-01 words: er, sie, es, wir, ihr, mir, was, ja, nein, auch, vorstellen), error cards (R-W3), practice pool, test pool ≥ 60 with twins (needs `02g`, `03` Q1–Q11, `02a` Can-Do, WOW facts with sources)

@@ -1,6 +1,6 @@
 # 00 – Kurzfassung: Arbeitsstand für jeden Chat
 
-> **Projekt:** „Weg zur A2“ · **Stand:** 16.11.2026 (Phase 4 abgeschlossen, D14–D24; App live auf speakaustrian.lauhard.workers.dev)
+> **Projekt:** „Weg zur A2“ · **Stand:** 16.11.2026 (Phase 4 abgeschlossen, D14–D25; App live auf speakaustrian.lauhard.workers.dev)
 > **Abgeleitet aus:** `00-masterprompt.md` (Rev. 4.2, 16.11.2026) · `01-ressourcen.md` Abschn. 7 (E1–E4) · `02-aufbereitung.md` Abschn. 5.1 (D1–D6) · `03-curriculum.md` (Rev. 3R, D7–D11) · `04-spielregeln.md` (Phase 4, D14–D16)
 > **Vorrang:** Bei Widerspruch gilt `00-masterprompt.md`. Jede neue Entscheidung wird hier **und** im Phasen-Dokument nachgetragen.
 > **Den vollen Masterprompt lesen nur:** bei Unklarheit, bei Änderungen an der Spezifikation oder in Phasen 5–7 (Claude Code, `docs/`).
@@ -66,6 +66,7 @@
 | **D22** | **Frei üben:** Disziplin oder „Bilder“ wählen, Aufgaben aus zugänglichen Kapiteln, ohne Leben und ohne Einfluss auf den Kursfortschritt; Kurs bleibt gemischt, R-F1 unberührt. | 5, 6 |
 | **D23** | **Claude implementiert selbst**, kleine Schritte, nach grüner CI auf `main` → sofort live auf `speakaustrian.lauhard.workers.dev`. Ersetzt D17d („Andi implementiert manuell“). Reihenfolge: `docs/ROADMAP.md`. | 5–7 |
 | **D24** | **Lückentext und ≥ 2 Bildaufgaben in jedem Kapitel;** Bilder (SVG) und Aufgaben entstehen bei der Content-Erstellung mit KI, geprüft, nicht zur Laufzeit; automatischer Test je Kapitel. Freie Bildbeschreibung mit KI-Bewertung offen (G-007). | 5 |
+| **D25** | **Frei üben = alle Aufgaben aller Kapitel**, auch gesperrter (ändert D22) · freie Bildbeschreibung mit KI-Bewertung **nicht nötig** · **Bildqualität:** eindeutige Szene, einheitlicher Stil, für die Antwort nötig, mehrere abfragbare Details. | 5, 6 |
 
 ### 3.1 Phase 4 – Vorschläge und Auslegungen im Detail (bestätigt als D14)
 
