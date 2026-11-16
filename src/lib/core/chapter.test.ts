@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { makeDefaultPolicy, type RulePolicy } from './policy';
-import { makeReducer, newGame, type ContentInfo, type GameEvent } from './reducer';
+import { makeReducer, newGame, settleChapter, type ContentInfo, type GameEvent } from './reducer';
 import { GameState } from './state';
 
 // Chapter attempt automaton (docs/spec/04a §4.2), test cases of docs/spec/04b §1–5 and §13a.
@@ -204,5 +204,20 @@ describe('override effects (T-PL04)', () => {
 		const s2 = run(stub, s1, review(s1));
 		expect(s2.course.chapter).toMatchObject({ attemptNo: 2, attempt: { kind: 'TEST_READY' } });
 		expect(s2.course.chapter!.recovery).toBeUndefined();
+	});
+});
+
+describe('settleChapter (content arrives after the lessons were finished)', () => {
+	const noPools: ContentInfo = { ...content, chapter: () => undefined };
+	const stale = () => [...lessons('A1-01')].reduce(makeReducer(policy, order, noPools), [profile].reduce(makeReducer(policy, order, noPools), newGame(policy)));
+	it('moves a finished LESSONS attempt to PRACTICE once the chapter has pools', () => {
+		const s = stale();
+		expect(attempt(s).kind).toBe('LESSONS');
+		expect(attempt(settleChapter(content)(s)).kind).toBe('PRACTICE');
+	});
+	it('leaves unfinished lessons and chapters without pools untouched', () => {
+		const half = [profile, ...lessons('A1-01').slice(0, 1)].reduce(makeReducer(policy, order, noPools), newGame(policy));
+		expect(settleChapter(content)(half)).toBe(half);
+		expect(settleChapter(noPools)(stale())).toEqual(stale());
 	});
 });
