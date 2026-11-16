@@ -22,20 +22,24 @@
 	onMount(() => game.init());
 </script>
 
-<a href={resolve('/')} class="text-sm text-stone-600 underline">← {m.course()}</a>
+<a href={resolve('/')} class="backlink">‹ {m.course()}</a>
 
 {#if content}
 	<section class="space-y-4 pt-4">
-		<h1 class="text-2xl font-bold" lang="de">{meta ? `${meta.id} · ${meta.title.de}` : m.preview()}</h1>
-		{#if meta && helpLocale !== 'de'}<p class="text-stone-600">{meta.title[helpLocale]}</p>{/if}
+		{#if meta}<span class="chip">{meta.id}</span>{/if}
+		<h1 class="h1" lang="de">{meta ? meta.title.de : m.preview()}</h1>
+		{#if meta && helpLocale !== 'de'}<p class="text-muted">{meta.title[helpLocale]}</p>{/if}
 
 		{#if dueCount > 0 && meta}
-			<a href={resolve('/review')} class="block rounded-xl bg-red-700 px-4 py-3 text-center font-semibold text-white no-underline">
+			<a href={resolve('/review')} class="btn-primary">
 				{m.review_first()} {m.review_due({ count: dueCount })}
 			</a>
 		{/if}
 
-		<h2 class="text-lg font-semibold">{m.lessons()}</h2>
+		{#if content.lessons.length > 0}
+			<div class="bar"><span style="width: {(done.length / content.lessons.length) * 100}%"></span></div>
+		{/if}
+		<h2 class="h2">{m.lessons()}</h2>
 		<ol class="space-y-2">
 			{#each content.lessons as lesson, i (lesson.id)}
 				{@const isDone = done.includes(lesson.id)}
@@ -43,20 +47,19 @@
 					<a
 						href={resolve('/chapter/[id]/[lesson]', { id, lesson: lesson.id })}
 						data-testid="lesson-{lesson.id}"
-						class="flex items-center justify-between gap-3 rounded-xl border bg-white px-4 py-3 no-underline {isDone
-							? 'border-green-600'
-							: 'border-stone-300'}"
+						class="card-link flex items-center gap-3"
 					>
-						<span>
-							<span class="block font-semibold" lang="de">{i + 1}. {lesson.title.de}</span>
-							{#if helpLocale !== 'de'}<span class="block text-sm text-stone-600">{lesson.title[helpLocale]}</span>{/if}
+						<span class="badge {isDone ? '!bg-ok-soft !text-ok' : ''}">{isDone ? '✓' : i + 1}</span>
+						<span class="flex-1">
+							<span class="block text-lg font-extrabold" lang="de">{lesson.title.de}</span>
+							{#if helpLocale !== 'de'}<span class="block text-sm text-muted">{lesson.title[helpLocale]}</span>{/if}
 						</span>
-						{#if isDone}<span class="text-sm font-medium text-green-700">✓ {m.lesson_done()}</span>{/if}
+						<span class="text-sm font-bold {isDone ? 'text-ok' : 'text-muted'}">{isDone ? `✓ ${m.lesson_done()}` : '›'}</span>
 					</a>
 				</li>
 			{/each}
 		</ol>
-		{#if meta}<p class="text-sm text-stone-500">{m.chapter_more_soon()}</p>{/if}
+		{#if meta}<p class="text-sm text-muted">{m.chapter_more_soon()}</p>{/if}
 	</section>
 {:else}
 	<p class="pt-6">{m.not_found()}</p>

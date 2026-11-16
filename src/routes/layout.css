@@ -1,8 +1,113 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/nunito';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+/* Design tokens: Austrian red on warm paper. Font is bundled (no external font requests). */
+@theme {
+	--font-sans: 'Nunito Variable', ui-rounded, system-ui, sans-serif;
+	--color-brand: #c8102e;
+	--color-brand-dark: #9d0b23;
+	--color-brand-soft: #fdecee;
+	--color-paper: #fbf6ee;
+	--color-ink: #231d17;
+	--color-muted: #6f655b;
+	--color-line: #e6dccd;
+	--color-ok: #15803d;
+	--color-ok-soft: #e9f7ee;
+	--color-warn: #b45309;
+	--color-warn-soft: #fff4de;
+	--color-bad: #b91c1c;
+	--color-bad-soft: #fdeceb;
+}
+
 body {
-	background: #faf7f2;
-	color: #1c1917;
+	background: var(--color-paper);
+	color: var(--color-ink);
+	font-family: var(--font-sans);
+	-webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+	.btn-primary,
+	.btn-secondary {
+		@apply flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl px-5 py-3 text-center text-lg font-extrabold no-underline transition active:translate-y-0.5;
+	}
+	.btn-primary {
+		@apply bg-brand text-white shadow-[0_4px_0_var(--color-brand-dark)] hover:brightness-105 active:shadow-none disabled:cursor-not-allowed disabled:bg-stone-300 disabled:text-stone-500 disabled:shadow-none;
+	}
+	.btn-secondary {
+		@apply border-2 border-line bg-white text-ink shadow-[0_4px_0_var(--color-line)] hover:border-brand active:shadow-none;
+	}
+	.btn-ghost {
+		@apply inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-ink ring-1 ring-line hover:ring-brand;
+	}
+	.card,
+	.card-link {
+		@apply rounded-2xl border border-line bg-white p-4 shadow-sm;
+	}
+	.card-link {
+		@apply block no-underline transition hover:border-brand hover:shadow-md active:translate-y-0.5;
+	}
+	.card-muted {
+		@apply rounded-2xl border border-dashed border-line px-4 py-3 text-muted;
+	}
+	.chip {
+		@apply inline-flex items-center gap-1 rounded-full bg-brand-soft px-3 py-1 text-sm font-bold text-brand;
+	}
+	.badge {
+		@apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-soft text-sm font-extrabold text-brand;
+	}
+	.option {
+		@apply flex min-h-14 cursor-pointer items-center gap-3 rounded-2xl border-2 border-line bg-white px-4 py-3 text-lg font-semibold transition has-[:checked]:border-brand has-[:checked]:bg-brand-soft;
+	}
+	.option.is-right {
+		@apply border-ok bg-ok-soft;
+	}
+	.option.is-wrong {
+		@apply border-bad bg-bad-soft;
+	}
+	.field {
+		@apply rounded-xl border-2 border-line bg-white text-lg font-semibold focus:border-brand focus:ring-brand;
+	}
+	.field.is-right {
+		@apply border-ok bg-ok-soft;
+	}
+	.field.is-near {
+		@apply border-warn bg-warn-soft;
+	}
+	.field.is-wrong {
+		@apply border-bad bg-bad-soft;
+	}
+	.feedback {
+		@apply space-y-2 rounded-2xl border-2 p-4;
+	}
+	.feedback[data-verdict='correct'] {
+		@apply border-ok bg-ok-soft;
+	}
+	.feedback[data-verdict='near'] {
+		@apply border-warn bg-warn-soft;
+	}
+	.feedback[data-verdict='wrong'] {
+		@apply border-bad bg-bad-soft;
+	}
+	.bar {
+		@apply h-3 w-full overflow-hidden rounded-full bg-line;
+	}
+	.bar > span {
+		@apply block h-full rounded-full bg-brand transition-[width] duration-300;
+	}
+	.backlink {
+		@apply inline-flex items-center gap-1 text-sm font-bold text-muted no-underline hover:text-brand;
+	}
+	.h1 {
+		@apply text-2xl font-black tracking-tight;
+	}
+	.h2 {
+		@apply text-lg font-extrabold;
+	}
+	/* Action bar that stays reachable with the thumb on long tasks. */
+	.actionbar {
+		@apply sticky bottom-0 -mx-4 bg-gradient-to-t from-paper via-paper to-transparent px-4 pt-6 pb-4;
+	}
 }

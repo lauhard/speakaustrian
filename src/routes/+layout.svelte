@@ -7,24 +7,29 @@
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
-	const labels: Record<string, string> = { de: 'Deutsch', en: 'English', tl: 'Tagalog' };
+	const labels: Record<string, string> = { de: 'DE', en: 'EN', tl: 'TL' };
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	<title>{m.app_title()}</title>
+	<meta name="theme-color" content="#c8102e" />
 </svelte:head>
 
-<div class="mx-auto flex min-h-dvh max-w-md flex-col px-4 pb-8">
+<div class="mx-auto flex min-h-dvh max-w-md flex-col px-4">
 	<header class="flex items-center justify-between gap-3 py-4">
-		<a href={resolve('/')} class="text-lg font-bold text-red-700 no-underline">{m.app_title()}</a>
-		<nav aria-label={m.language()} class="flex gap-1">
+		<a href={resolve('/')} class="flex items-center gap-2 no-underline">
+			<!-- Small Austrian flag as logo mark -->
+			<span class="flex h-8 w-8 flex-col overflow-hidden rounded-lg shadow-sm" aria-hidden="true">
+				<span class="flex-1 bg-brand"></span><span class="flex-1 bg-white"></span><span class="flex-1 bg-brand"></span>
+			</span>
+			<span class="text-xl font-black tracking-tight text-ink">{m.app_title()}</span>
+		</a>
+		<nav aria-label={m.language()} class="flex rounded-full bg-white p-1 ring-1 ring-line">
 			{#each locales as locale (locale)}
 				<button
 					type="button"
-					class="rounded-full px-3 py-1 text-sm {locale === getLocale()
-						? 'bg-red-700 text-white'
-						: 'bg-stone-200 text-stone-800'}"
+					class="rounded-full px-3 py-1 text-sm font-extrabold {locale === getLocale() ? 'bg-brand text-white' : 'text-muted'}"
 					aria-pressed={locale === getLocale()}
 					onclick={() => setLocale(locale)}
 				>
@@ -33,7 +38,7 @@
 			{/each}
 		</nav>
 	</header>
-	<main class="flex-1">
+	<main class="flex-1 pb-6">
 		{@render children()}
 	</main>
 </div>

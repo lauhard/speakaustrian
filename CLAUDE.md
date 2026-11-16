@@ -28,3 +28,9 @@ Claude implements. Small vertical steps from `docs/ROADMAP.md`: branch `t/NNN-sl
 
 ## Architecture (as built)
 `src/lib/core` pure logic (content schema, grading, `state.ts`, `policy.ts`, `reducer.ts`) · `src/lib/game.svelte.ts` composition root (clock, ids, storage → `dispatch`) · `src/lib/ports` interfaces · `src/lib/adapters/web` device TTS, localStorage · `src/lib/content` lesson JSON · `src/routes` UI · `messages/` UI strings (paraglide, de/en/tl). Hosting: Cloudflare Workers (D18), see `docs/DEPLOY.md`. Imports of own TS files use `#lib/….ts`.
+
+## Content rules (D24, D25)
+- Every chapter: gap-fill tasks and ≥ 2 picture tasks (test in `src/lib/content/content.test.ts`).
+- Pictures: SVG in `static/img/`, one flat style (see `a1-01-amt.svg`, `a1-01-nacht.svg`), an unambiguous scene that is needed for the answer and carries several details to ask about (people, name signs, clock, place). Render and look at every new picture before shipping. No decorative or ambiguous pictures.
+- Only vocabulary of the chapter and earlier chapters (`grep -P "\tA1-01$" docs/spec/03c-kapitel-wortschatz.tsv`); situations go into the translated `instruction`.
+- UI: use the component classes in `src/routes/layout.css` (`btn-primary`, `btn-secondary`, `card`, `card-link`, `option`, `field`, `feedback`, `chip`, `badge`, `bar`, `actionbar`) instead of long utility strings.

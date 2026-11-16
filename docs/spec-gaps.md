@@ -64,7 +64,7 @@ Format:
 - Options: A copy-prompt + offline help only for now · B add a rate-limited Worker endpoint later.
 - Blocks: TutorPort/FeedbackPort tickets.
 
-## G-008 – Picture tasks: scope and image production   (status: decided D21 + D24; open only: free picture description needs G-007)
+## G-008 – Picture tasks: scope and image production   (status: decided D21 + D24 + D25 – free picture description is not needed)
 - Decided: any item type may carry an optional picture; pictures are static, reviewed assets made at authoring time (no runtime generation).
 - Note 16.11.: `03a` names picture topics (Q05) for A2 speaking: bank, mobile shop, market, parents' evening, German course (A2-10, A2-11, A2-13, A2-14).
 - Open: which exam parts picture tasks train (check `00-quellen.md` A/B for picture-based speaking/writing parts), how many per chapter, style guide for the pictures, free-text picture description (needs G-007).

@@ -61,5 +61,9 @@
 	"q_genus": "der, die or das?",
 	"article_hint": "Always write nouns with their article: der, die or das.",
 	"skill_woerter": "Words",
-	"cards_left": "{count} cards left"
+	"cards_left": "{count} cards left",
+	"continue_learning": "Continue learning",
+	"your_chapter": "Your chapter",
+	"all_chapters": "All chapters",
+	"per_day": "{time} per day"
 }

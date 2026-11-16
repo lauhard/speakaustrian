@@ -75,27 +75,24 @@
 
 {#if !task || !question}
 	<section class="space-y-6 pt-10 text-center" data-testid="cards-done">
-		<h1 class="text-3xl font-bold">{m.review_done()}</h1>
-		<a href={backHref} class="block text-stone-700 underline">{backLabel}</a>
+		<p class="text-6xl">🎉</p>
+		<h1 class="text-3xl font-black">{m.review_done()}</h1>
+		<a href={backHref} class="btn-primary">{backLabel}</a>
 	</section>
 {:else}
 	<form class="space-y-5" onsubmit={check}>
-		<p class="text-sm text-stone-600">{m.cards_left({ count: queue.length })}</p>
+		<p class="text-sm text-muted">{m.cards_left({ count: queue.length })}</p>
 
 		{#if question.direction === 'recognize'}
-			<p class="font-semibold">{m.q_meaning()}</p>
+			<p class="font-bold text-muted">{m.q_meaning()}</p>
 			<div class="flex items-center gap-3">
-				<p class="text-2xl font-bold" lang="de" data-testid="card-word">{fullForm(question.vocab)}</p>
-				<button type="button" class="rounded-full bg-stone-200 px-3 py-1" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))}>🔊</button>
+				<p class="h1" lang="de" data-testid="card-word">{fullForm(question.vocab)}</p>
+				<button type="button" class="btn-ghost" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))}>🔊</button>
 			</div>
 			<fieldset class="space-y-2" disabled={verdict !== null}>
 				{#each question.options as option, i (option.id)}
 					<label
-						class="flex items-center gap-3 rounded-xl border bg-white px-4 py-3 text-lg {verdict && i === question.answer
-							? 'border-green-600 bg-green-50'
-							: verdict && i === selected
-								? 'border-red-600 bg-red-50'
-								: 'border-stone-300'}"
+						class="option {verdict && i === question.answer ? 'is-right' : verdict && i === selected ? 'is-wrong' : ''}"
 					>
 						<input type="radio" name="option" value={i} bind:group={selected} data-correct={i === question.answer} />
 						<span>{meaning(option)}</span>
@@ -103,12 +100,12 @@
 				{/each}
 			</fieldset>
 		{:else if question.direction === 'produce'}
-			<p class="font-semibold">{m.q_produce()}</p>
-			<p class="text-2xl font-bold">{meaning(question.vocab)}</p>
-			{#if question.vocab.article}<p class="text-sm text-stone-600">{m.article_hint()}</p>{/if}
+			<p class="font-bold text-muted">{m.q_produce()}</p>
+			<p class="h1">{meaning(question.vocab)}</p>
+			{#if question.vocab.article}<p class="text-sm text-muted">{m.article_hint()}</p>{/if}
 			<input
 				data-testid="card-input"
-				class="w-full rounded-xl text-lg"
+				class="field w-full"
 				bind:value={text}
 				placeholder={m.answer_placeholder()}
 				disabled={verdict !== null}
@@ -120,12 +117,12 @@
 			/>
 		{:else}
 			<!-- R-W7: no audio before the answer, it would give the article away. -->
-			<p class="font-semibold">{m.q_genus()}</p>
-			<p class="text-2xl font-bold" lang="de">… {question.vocab.lemma}</p>
+			<p class="font-bold text-muted">{m.q_genus()}</p>
+			<p class="h1" lang="de">… {question.vocab.lemma}</p>
 			<fieldset class="grid grid-cols-3 gap-2" disabled={verdict !== null}>
 				{#each articles as article, i (article)}
 					<label
-						class="rounded-xl border px-2 py-3 text-center text-lg {selected === i ? 'border-red-700 bg-red-50 font-semibold' : 'border-stone-300 bg-white'}"
+						class="option justify-center text-xl"
 					>
 						<input type="radio" class="sr-only" name="article" value={i} bind:group={selected} />
 						{article}
@@ -139,11 +136,7 @@
 				data-testid="card-feedback"
 				data-verdict={verdict}
 				role="status"
-				class="space-y-2 rounded-xl border p-4 {verdict === 'correct'
-					? 'border-green-600 bg-green-50'
-					: verdict === 'near'
-						? 'border-amber-500 bg-amber-50'
-						: 'border-red-600 bg-red-50'}"
+				class="feedback"
 			>
 				<p class="text-lg font-bold">
 					{verdict === 'correct' ? m.verdict_correct() : verdict === 'near' ? m.verdict_near() : m.verdict_wrong()}
@@ -151,14 +144,14 @@
 				<p class="flex items-center gap-3 text-lg">
 					<span lang="de" class="font-semibold">{fullForm(question.vocab)}</span>
 					<span>– {meaning(question.vocab)}</span>
-					<button type="button" class="rounded-full bg-stone-200 px-3 py-1" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))}>🔊</button>
+					<button type="button" class="btn-ghost" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))}>🔊</button>
 				</p>
 			</div>
-			<button type="button" data-testid="card-next" class="w-full rounded-xl bg-red-700 px-4 py-4 text-lg font-semibold text-white" onclick={next}>
+			<button type="button" data-testid="card-next" class="btn-primary" onclick={next}>
 				{m.next()}
 			</button>
 		{:else}
-			<button data-testid="card-check" class="w-full rounded-xl bg-red-700 px-4 py-4 text-lg font-semibold text-white disabled:opacity-40" disabled={!hasAnswer}>
+			<button data-testid="card-check" class="btn-primary" disabled={!hasAnswer}>
 				{m.check()}
 			</button>
 		{/if}

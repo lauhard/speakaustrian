@@ -24,6 +24,16 @@
 	const profile = $derived(game.state.profile);
 	const run = $derived(game.state.course.chapter);
 	const dueCount = $derived(game.ready ? dueQueue(game.state, game.today).length : 0);
+	const pensumLabel = $derived(pensumOptions.find((o) => o.value === profile?.pensumMin)?.label ?? '');
+	// Smart continue: the first lesson of the chapter in work that is not finished yet.
+	const current = $derived.by(() => {
+		const content = run ? chapterContent(run.id) : undefined;
+		const meta = course.chapters.find((c) => c.id === run?.id);
+		if (!run || !content || !meta) return null;
+		const done = run.attempt.kind === 'LESSONS' ? run.attempt.done : [];
+		const next = content.lessons.find((l) => !done.includes(l.id));
+		return { meta, total: content.lessons.length, done: content.lessons.filter((l) => done.includes(l.id)).length, next };
+	});
 	const doneCount = (chapterId: string) => {
 		const attempt = run?.id === chapterId ? run.attempt : null;
 		const done = attempt?.kind === 'LESSONS' ? attempt.done : [];
@@ -44,105 +54,115 @@
 	};
 </script>
 
-<section class="space-y-6 pt-6">
-	<p class="text-stone-700">{m.home_intro()}</p>
+{#if !game.ready}
+	<p aria-busy="true" class="pt-10 text-center text-muted">…</p>
+{:else if profile}
+	<section class="space-y-5">
+		<div>
+			<h1 class="h1">{m.welcome_back({ name: profile.name })}</h1>
+			<p class="mt-2 flex flex-wrap gap-2">
+				<span class="chip" data-testid="plan-day">📅 {m.day_x({ day: planDay(profile.startDate, game.today) })}</span>
+				<span class="chip !bg-white !text-muted ring-1 ring-line">⏱ {m.per_day({ time: pensumLabel })}</span>
+			</p>
+		</div>
 
-	{#if !game.ready}
-		<p aria-busy="true" class="text-stone-500">…</p>
-	{:else if profile}
-		<h1 class="text-2xl font-bold">{m.welcome_back({ name: profile.name })}</h1>
-		<p class="text-stone-600" data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</p>
 		{#if dueCount > 0}
-			<a
-				href={resolve('/review')}
-				data-testid="review-due"
-				class="block rounded-xl bg-red-700 px-4 py-4 text-center text-lg font-semibold text-white no-underline"
-			>
-				{m.review_due({ count: dueCount })}
-			</a>
+			<a href={resolve('/review')} data-testid="review-due" class="btn-primary">🔁 {m.review_due({ count: dueCount })}</a>
 		{/if}
-		<a
-			href={resolve('/practice')}
-			data-testid="free-practice"
-			class="block rounded-xl border-2 border-red-700 px-4 py-3 text-center text-lg font-semibold text-red-700 no-underline"
-		>
-			{m.free_practice()}
-		</a>
 
+		{#if current}
+			<div class="card space-y-3 !border-brand/30">
+				<p class="text-sm font-bold text-muted">{m.your_chapter()} · {current.meta.id}</p>
+				<p class="text-xl leading-tight font-black" lang="de">{current.meta.title.de}</p>
+				{#if helpLocale !== 'de'}<p class="text-sm text-muted">{current.meta.title[helpLocale]}</p>{/if}
+				<div class="flex items-center gap-3">
+					<div class="bar"><span style="width: {(current.done / current.total) * 100}%"></span></div>
+					<span class="text-sm font-bold text-muted">{current.done}/{current.total}</span>
+				</div>
+				<a
+					href={current.next
+						? resolve('/chapter/[id]/[lesson]', { id: current.meta.id, lesson: current.next.id })
+						: resolve('/chapter/[id]', { id: current.meta.id })}
+					data-testid="continue"
+					class={dueCount > 0 ? 'btn-secondary' : 'btn-primary'}
+				>
+					▶ {m.continue_learning()}
+				</a>
+			</div>
+		{/if}
+
+		<a href={resolve('/practice')} data-testid="free-practice" class="btn-secondary">🎯 {m.free_practice()}</a>
+
+		<h2 class="h2 pt-2">{m.all_chapters()}</h2>
 		{#each levels as level (level)}
-			<h2 class="pt-2 text-xl font-bold">{level}</h2>
-			<ol class="space-y-2">
-				{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter (chapter.id)}
-					{@const content = chapterContent(chapter.id)}
-					{@const access = policy.canAccessChapter(game.state, chapter.id)}
-					<li>
-						{#if content && access.allowed}
-							<a
-								href={resolve('/chapter/[id]', { id: chapter.id })}
-								data-testid="chapter-{chapter.id}"
-								class="block rounded-xl border border-stone-300 bg-white px-4 py-3 no-underline"
-							>
-								<span class="text-sm text-stone-500">{chapter.id} · {doneCount(chapter.id)}/{content.lessons.length} {m.lessons()}</span>
-								<span class="block font-semibold" lang="de">{chapter.title.de}</span>
-								{#if helpLocale !== 'de'}<span class="block text-sm text-stone-600">{chapter.title[helpLocale]}</span>{/if}
-							</a>
-						{:else}
-							<div class="rounded-xl border border-stone-200 px-4 py-3 text-stone-500">
-								<span class="text-sm">{chapter.id} · {content ? m.chapter_locked() : m.chapter_soon()}</span>
-								<span class="block" lang="de">{chapter.title.de}</span>
-							</div>
-						{/if}
-					</li>
-				{/each}
-			</ol>
+			<details class="group" open={level === 'A1'}>
+				<summary class="flex cursor-pointer list-none items-center justify-between rounded-2xl bg-white px-4 py-3 font-black ring-1 ring-line">
+					<span>{level}</span>
+					<span class="text-muted transition group-open:rotate-90">›</span>
+				</summary>
+				<ol class="mt-2 space-y-2">
+					{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter, i (chapter.id)}
+						{@const content = chapterContent(chapter.id)}
+						{@const access = policy.canAccessChapter(game.state, chapter.id)}
+						<li>
+							{#if content && access.allowed}
+								<a href={resolve('/chapter/[id]', { id: chapter.id })} data-testid="chapter-{chapter.id}" class="card-link flex items-center gap-3">
+									<span class="badge">{i + 1}</span>
+									<span class="flex-1">
+										<span class="block leading-tight font-extrabold" lang="de">{chapter.title.de}</span>
+										<span class="text-sm text-muted">{doneCount(chapter.id)}/{content.lessons.length} {m.lessons()}</span>
+									</span>
+									<span class="text-muted">›</span>
+								</a>
+							{:else}
+								<div class="card-muted flex items-center gap-3">
+									<span class="badge !bg-stone-100 !text-stone-400">{content ? '🔒' : i + 1}</span>
+									<span class="flex-1">
+										<span class="block leading-tight font-bold" lang="de">{chapter.title.de}</span>
+										<span class="text-sm">{content ? m.chapter_locked() : m.chapter_soon()}</span>
+									</span>
+								</div>
+							{/if}
+						</li>
+					{/each}
+				</ol>
+			</details>
 		{/each}
 
-		<h2 class="pt-2 text-xl font-bold">{m.preview()}</h2>
-		<a
-			href={resolve('/chapter/[id]', { id: PREVIEW_CHAPTER })}
-			data-testid="chapter-preview"
-			class="block rounded-xl border border-stone-300 bg-white px-4 py-3 no-underline"
-		>
-			<span class="block font-semibold" lang="de">{chapterContent(PREVIEW_CHAPTER)?.lessons[0].title.de}</span>
+		<a href={resolve('/chapter/[id]', { id: PREVIEW_CHAPTER })} data-testid="chapter-preview" class="card-link flex items-center gap-3">
+			<span class="badge">🧪</span>
+			<span class="flex-1 font-extrabold" lang="de">{chapterContent(PREVIEW_CHAPTER)?.lessons[0].title.de}</span>
+			<span class="text-muted">›</span>
 		</a>
-		<button type="button" class="text-sm text-stone-600 underline" onclick={reset}>{m.change_name()}</button>
-	{:else}
-		<form class="space-y-4" onsubmit={start}>
+
+		<p class="text-center text-sm text-muted">{m.local_note()}</p>
+		<p class="text-center"><button type="button" class="backlink" onclick={reset}>{m.change_name()}</button></p>
+	</section>
+{:else}
+	<section class="space-y-6 pt-4">
+		<div class="space-y-2 text-center">
+			<p class="text-6xl">👋</p>
+			<h1 class="text-3xl font-black">Grüß Gott!</h1>
+			<p class="text-muted">{m.home_intro()}</p>
+		</div>
+		<form class="card space-y-5" onsubmit={start}>
 			<label class="block space-y-2">
-				<span class="text-lg font-semibold">{m.name_label()}</span>
-				<input
-					data-testid="name-input"
-					class="w-full rounded-xl border-stone-300 text-lg"
-					bind:value={name}
-					placeholder={m.name_placeholder()}
-					autocomplete="given-name"
-					maxlength="40"
-				/>
+				<span class="h2">{m.name_label()}</span>
+				<input data-testid="name-input" class="field w-full" bind:value={name} placeholder={m.name_placeholder()} autocomplete="given-name" maxlength="40" />
 			</label>
 			<fieldset class="space-y-2">
-				<legend class="font-semibold">{m.pensum_label()}</legend>
+				<legend class="h2">{m.pensum_label()}</legend>
 				<div class="grid grid-cols-4 gap-2">
 					{#each pensumOptions as option (option.value)}
-						<label
-							class="rounded-xl border px-2 py-3 text-center {pensumMin === option.value
-								? 'border-red-700 bg-red-50 font-semibold'
-								: 'border-stone-300 bg-white'}"
-						>
+						<label class="option justify-center !px-1">
 							<input type="radio" class="sr-only" name="pensum" value={option.value} bind:group={pensumMin} />
 							{option.label}
 						</label>
 					{/each}
 				</div>
 			</fieldset>
-			<button
-				data-testid="start"
-				class="w-full rounded-xl bg-red-700 px-4 py-4 text-lg font-semibold text-white disabled:opacity-40"
-				disabled={name.trim() === ''}
-			>
-				{m.start()}
-			</button>
+			<button data-testid="start" class="btn-primary" disabled={name.trim() === ''}>{m.start()}</button>
 		</form>
-	{/if}
-
-	<p class="text-sm text-stone-500">{m.local_note()}</p>
-</section>
+		<p class="text-center text-sm text-muted">{m.local_note()}</p>
+	</section>
+{/if}

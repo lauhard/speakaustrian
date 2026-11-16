@@ -22,11 +22,11 @@
 		game.dispatch({ type: 'REVIEW_ANSWERED', cardId: task.cardId, direction: task.direction, correct });
 </script>
 
-<a href={resolve('/')} class="text-sm text-stone-600 underline">← {m.course()}</a>
-<h1 class="pt-4 pb-2 text-2xl font-bold">{m.review_title()}</h1>
+<a href={resolve('/')} class="backlink">‹ {m.course()}</a>
+<h1 class="h1 pt-4 pb-2">{m.review_title()}</h1>
 
 {#if tasks && tasks.length > 0}
 	<CardRunner {tasks} pool={allVocab()} backHref={resolve('/')} backLabel={m.home()} onanswer={answer} />
 {:else if tasks}
-	<p class="text-stone-700" data-testid="review-none">{m.review_none()}</p>
+	<p class="text-muted" data-testid="review-none">{m.review_none()}</p>
 {/if}

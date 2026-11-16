@@ -44,12 +44,15 @@ test('chapter A1-01: learn cards, tasks, lesson marked as done', async ({ page }
 	// Picture tasks: gap-fill and a short description
 	await expect(page.getByTestId('item-image')).toBeVisible();
 	await page.getByTestId('gap-1').fill('Anna');
-	await page.getByTestId('gap-2').fill('Gruber');
+	await page.getByTestId('gap-2').fill('Huber');
 	await page.getByTestId('check').click();
 	await page.getByTestId('next').click();
-	await page.getByTestId('short-input').fill('sie heisst Anna Gruber');
+	await page.getByTestId('short-input').fill('er heisst Jonas Huber');
 	await page.getByTestId('check').click();
 	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'near');
+	await page.getByTestId('next').click();
+	await page.getByRole('radio', { name: 'Der Vorname von Herrn Huber ist Jonas.' }).check();
+	await page.getByTestId('check').click();
 	await page.getByTestId('next').click();
 
 	await expect(page.getByTestId('result')).toBeVisible();

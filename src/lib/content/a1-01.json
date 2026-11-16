@@ -400,29 +400,58 @@
 					"id": "A1-01-L01-B1",
 					"type": "choice",
 					"skill": "lesen",
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Die Frau kommt. Was sagt sie?",
-						"en": "Look at the picture. The woman arrives. What does she say?",
-						"tl": "Tingnan ang larawan. Dumating ang babae. Ano ang sinasabi niya?"
-					},
 					"image": {
-						"src": "/img/a1-01-morgen.svg",
+						"src": "/img/a1-01-nacht.svg",
 						"alt": {
 							"de": "Bild zur Aufgabe",
 							"en": "Picture for the task",
 							"tl": "Larawan para sa gawain"
 						}
 					},
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Das Kind schläft ein. Was sagt die Mutter?",
+						"en": "Look at the picture. The child is falling asleep. What does the mother say?",
+						"tl": "Tingnan ang larawan. Natutulog na ang bata. Ano ang sinasabi ng nanay?"
+					},
 					"options": [
-						"Guten Abend!",
 						"Guten Morgen!",
-						"Gute Nacht!"
+						"Gute Nacht!",
+						"Grüß Gott!"
 					],
 					"answer": 1,
 					"explanation": {
-						"de": "Die Sonne geht auf, es ist 7 Uhr: Es ist Morgen. Man sagt „Guten Morgen“.",
-						"en": "The sun is rising, it is 7 o'clock: it is morning. You say “Guten Morgen”.",
-						"tl": "Sumisikat ang araw, alas-7: umaga na. “Guten Morgen” ang sinasabi."
+						"de": "Es ist Nacht, das Kind liegt im Bett. Wenn jemand schlafen geht, sagt man „Gute Nacht“.",
+						"en": "It is night, the child is in bed. When someone goes to sleep you say “Gute Nacht”.",
+						"tl": "Gabi na at nasa kama ang bata. Kapag matutulog na ang isang tao, “Gute Nacht” ang sinasabi."
+					}
+				},
+				{
+					"id": "A1-01-L01-B2",
+					"type": "choice",
+					"skill": "lesen",
+					"image": {
+						"src": "/img/a1-01-amt.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					},
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Der Mann kommt ins Büro. Was sagt er?",
+						"en": "Look at the picture. The man comes into the office. What does he say?",
+						"tl": "Tingnan ang larawan. Pumasok ang lalaki sa opisina. Ano ang sinasabi niya?"
+					},
+					"options": [
+						"Gute Nacht!",
+						"Auf Wiedersehen!",
+						"Grüß Gott!"
+					],
+					"answer": 2,
+					"explanation": {
+						"de": "Er kommt und es ist Tag (10 Uhr). Im Büro grüßt man höflich: „Grüß Gott!“",
+						"en": "He is arriving and it is daytime (10 o'clock). In an office you greet politely: “Grüß Gott!”",
+						"tl": "Dumarating siya at araw pa (alas-10). Sa opisina, magalang ang pagbati: “Grüß Gott!”"
 					}
 				}
 			],
@@ -611,20 +640,20 @@
 					"id": "A1-01-L02-B1",
 					"type": "cloze",
 					"skill": "lesen",
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Schreiben Sie den Vornamen und den Familiennamen.",
-						"en": "Look at the picture. Write the first name and the family name.",
-						"tl": "Tingnan ang larawan. Isulat ang pangalan at ang apelyido."
-					},
 					"image": {
-						"src": "/img/a1-01-ausweis.svg",
+						"src": "/img/a1-01-amt.svg",
 						"alt": {
 							"de": "Bild zur Aufgabe",
 							"en": "Picture for the task",
 							"tl": "Larawan para sa gawain"
 						}
 					},
-					"text": "Vorname: {{1}} · Familienname: {{2}}",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Lesen Sie die Namen und schreiben Sie.",
+						"en": "Look at the picture. Read the names and write.",
+						"tl": "Tingnan ang larawan. Basahin ang mga pangalan at isulat."
+					},
+					"text": "Sie heißt {{1}} Gruber. Er heißt Jonas {{2}}.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -633,44 +662,73 @@
 						},
 						"2": {
 							"accept": [
-								"Gruber"
+								"Huber"
 							]
 						}
 					},
 					"explanation": {
-						"de": "Der Vorname steht vorne: Anna. Der Familienname steht hinten: Gruber.",
-						"en": "The first name comes first: Anna. The family name comes last: Gruber.",
-						"tl": "Nauuna ang pangalan: Anna. Kasunod ang apelyido: Gruber."
+						"de": "Die Namen stehen auf den Schildern: Anna Gruber und Jonas Huber. „sie“ für eine Frau, „er“ für einen Mann.",
+						"en": "The names are on the signs: Anna Gruber and Jonas Huber. “sie” for a woman, “er” for a man.",
+						"tl": "Nasa mga karatula ang mga pangalan: Anna Gruber at Jonas Huber. “sie” para sa babae, “er” para sa lalaki."
 					}
 				},
 				{
 					"id": "A1-01-L02-B2",
 					"type": "short",
 					"skill": "schreiben",
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Antworten Sie mit einem Satz.",
-						"en": "Look at the picture. Answer with one sentence.",
-						"tl": "Tingnan ang larawan. Sumagot gamit ang isang pangungusap."
-					},
 					"image": {
-						"src": "/img/a1-01-ausweis.svg",
+						"src": "/img/a1-01-amt.svg",
 						"alt": {
 							"de": "Bild zur Aufgabe",
 							"en": "Picture for the task",
 							"tl": "Larawan para sa gawain"
 						}
 					},
-					"prompt": "Wie heißt sie?",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Antworten Sie mit einem Satz.",
+						"en": "Look at the picture. Answer with one sentence.",
+						"tl": "Tingnan ang larawan. Sumagot gamit ang isang pangungusap."
+					},
+					"prompt": "Wie heißt er?",
 					"accept": [
-						"Sie heißt Anna Gruber.",
-						"Sie heißt Anna.",
-						"Anna Gruber",
-						"Sie heißt Frau Gruber."
+						"Er heißt Jonas Huber.",
+						"Er heißt Jonas.",
+						"Er heißt Herr Huber.",
+						"Jonas Huber"
 					],
 					"explanation": {
-						"de": "„Sie heißt Anna Gruber.“ Bei „sie“ (eine Frau) endet das Verb auf -t: sie heißt.",
-						"en": "“Sie heißt Anna Gruber.” With “sie” (a woman) the verb ends in -t: sie heißt.",
-						"tl": "“Sie heißt Anna Gruber.” Kapag “sie” (isang babae), -t ang dulo ng pandiwa: sie heißt."
+						"de": "„Er heißt Jonas Huber.“ Bei „er“ endet das Verb auf -t: er heißt.",
+						"en": "“Er heißt Jonas Huber.” With “er” the verb ends in -t: er heißt.",
+						"tl": "“Er heißt Jonas Huber.” Kapag “er”, -t ang dulo ng pandiwa: er heißt."
+					}
+				},
+				{
+					"id": "A1-01-L02-B3",
+					"type": "choice",
+					"skill": "lesen",
+					"image": {
+						"src": "/img/a1-01-amt.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					},
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Was ist richtig?",
+						"en": "Look at the picture. What is correct?",
+						"tl": "Tingnan ang larawan. Alin ang tama?"
+					},
+					"options": [
+						"Der Familienname von Anna ist Huber.",
+						"Der Vorname von Herrn Huber ist Jonas.",
+						"Frau Gruber heißt Jonas."
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Auf dem Schild steht „Jonas Huber“: Jonas ist der Vorname, Huber der Familienname.",
+						"en": "The badge says “Jonas Huber”: Jonas is the first name, Huber the family name.",
+						"tl": "Nakasulat sa karatula ang “Jonas Huber”: Jonas ang pangalan, Huber ang apelyido."
 					}
 				}
 			],

@@ -61,5 +61,9 @@
 	"q_genus": "der, die o das?",
 	"article_hint": "Laging isulat ang pangngalan kasama ang artikulo: der, die o das.",
 	"skill_woerter": "Mga salita",
-	"cards_left": "{count} card pa"
+	"cards_left": "{count} card pa",
+	"continue_learning": "Ituloy ang pag-aaral",
+	"your_chapter": "Ang kabanata mo",
+	"all_chapters": "Lahat ng kabanata",
+	"per_day": "{time} bawat araw"
 }

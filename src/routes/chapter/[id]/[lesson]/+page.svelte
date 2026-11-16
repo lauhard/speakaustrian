@@ -46,32 +46,35 @@
 	<p class="pt-6">{m.not_found()}</p>
 {:else if learning && cards.length > 0}
 	<section class="space-y-4">
-		<h1 class="text-2xl font-bold" lang="de">{lesson.title.de}</h1>
-		<p class="text-stone-600">{m.learn_title()}</p>
+		<a href={resolve('/chapter/[id]', { id })} class="backlink">‹ {m.back_chapter()}</a>
+		<h1 class="h1" lang="de">{lesson.title.de}</h1>
+		<p class="chip">🎧 {m.learn_title()}</p>
 		{#if ttsFailed}<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>{/if}
 		<ul class="space-y-3">
 			{#each cards as card (card.phrase)}
-				<li class="rounded-xl border border-stone-300 bg-white p-4">
+				<li class="card">
 					<button type="button" class="flex w-full items-start gap-3 text-left" onclick={() => listen(card.phrase)}>
-						<span aria-hidden="true">🔊</span>
-						<span class="text-lg font-semibold" lang="de">{card.phrase}</span>
+						<span aria-hidden="true" class="badge">🔊</span>
+						<span class="text-xl font-extrabold" lang="de">{card.phrase}</span>
 					</button>
-					<p class="mt-2" lang="de">{card.note.de}</p>
-					{#if helpLocale !== 'de'}<p class="text-sm text-stone-600">{card.note[helpLocale]}</p>{/if}
+					<p class="mt-3 font-semibold" lang="de">{card.note.de}</p>
+					{#if helpLocale !== 'de'}<p class="text-sm text-muted">{card.note[helpLocale]}</p>{/if}
 				</li>
 			{/each}
 		</ul>
+		<div class="actionbar">
 		<button
 			type="button"
 			data-testid="to-tasks"
-			class="w-full rounded-xl bg-red-700 px-4 py-4 text-lg font-semibold text-white"
+			class="btn-primary"
 			onclick={() => {
 				tts?.stop();
 				learning = false;
 			}}
 		>
-			{m.to_tasks()}
+			{m.to_tasks()} →
 		</button>
+		</div>
 	</section>
 {:else}
 	{#key lesson.id}
