@@ -2,7 +2,7 @@ import { createLocalStorage } from './adapters/web/local-storage.ts';
 import { contentInfo, course, PREVIEW_CHAPTER } from './content/index.ts';
 import { legacyEvents } from './core/migrate.ts';
 import { defaultConfig, demoConfig, makeDefaultPolicy, type RulePolicy } from './core/policy.ts';
-import { localDate, makeReducer, newGame, type GameEvent } from './core/reducer.ts';
+import { localDate, makeReducer, newGame, settleChapter, type GameEvent } from './core/reducer.ts';
 import type { GameState } from './core/state.ts';
 import type { StoragePort } from './ports/storage.ts';
 
@@ -21,6 +21,7 @@ type StoreOptions = { policy: RulePolicy; order: readonly string[]; storageKey?:
 
 const createStore = (o: StoreOptions) => {
 	const reduce = makeReducer(o.policy, o.order, contentInfo);
+	const settle = settleChapter(contentInfo);
 	let state = $state.raw<GameState>(newGame(o.policy));
 	let ready = $state(false);
 	let storage: StoragePort | null = null;
@@ -48,8 +49,8 @@ const createStore = (o: StoreOptions) => {
 			storage = createLocalStorage(window.localStorage, o.storageKey);
 			const saved = storage.load();
 			const legacy = saved || !o.legacy ? null : storage.loadLegacy();
-			state = saved ?? (legacy ? legacyEvents(legacy, tzOffsetMin()).reduce(reduce, newGame(o.policy)) : newGame(o.policy));
-			if (legacy) storage.save(state);
+			state = settle(saved ?? (legacy ? legacyEvents(legacy, tzOffsetMin()).reduce(reduce, newGame(o.policy)) : newGame(o.policy)));
+			if (legacy || saved) storage.save(state);
 			ready = true;
 			// The sandbox needs no sign-up of its own: it takes the name of the course profile.
 			if (!state.profile && o.autoProfile) dispatch({ type: 'PROFILE_CREATED', name: o.autoProfile(), pensumMin: 90 });

@@ -111,6 +111,17 @@ const applyEffect = (policy: RulePolicy, order: readonly ChapterId[], s: GameSta
 	return isCurrent ? enterPhase(policy, withCompletion, phaseAfter(order, effect.chapterId)) : withCompletion;
 };
 
+// Content can arrive after the learner finished the lessons (e.g. pools are added to a chapter): the attempt then still says
+// LESSONS with every lesson done and no event would move it on. Settling is pure and runs after loading a saved state.
+export const settleChapter = (content: ContentInfo) => (state: GameState): GameState => {
+	const run = state.course.chapter;
+	const info = run && run.attempt.kind === 'LESSONS' ? content.chapter(run.id) : undefined;
+	if (!run || run.attempt.kind !== 'LESSONS' || !info) return state;
+	const done = run.attempt.done;
+	if (!info.lessonIds.every((l) => done.includes(l))) return state;
+	return { ...state, course: { ...state.course, chapter: { ...run, attempt: entryState(content, run.id, { entry: 'PRACTICE', repeatMode: run.attempt.repeatMode }) } } };
+};
+
 export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[], content: ContentInfo = noContent): Reducer => (state, event) => {
 	const s: GameState = {
 		...state,
