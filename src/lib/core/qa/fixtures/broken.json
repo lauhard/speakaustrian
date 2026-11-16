@@ -1,0 +1,306 @@
+{
+	"schemaVersion": 1,
+	"chapterId": "A1-02",
+	"tlReviewStatus": "machine",
+	"lessons": [
+		{
+			"id": "FX-L01",
+			"title": {
+				"de": "Fixture",
+				"en": "Fixture (en)",
+				"tl": "Fixture (tl)"
+			},
+			"items": [
+				{
+					"id": "FX-L01-I1",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Wählen Sie.",
+						"en": "Wählen Sie. (en)",
+						"tl": "Wählen Sie. (tl)"
+					},
+					"explanation": {
+						"de": "So grüßt man.",
+						"en": "So grüßt man. (en)",
+						"tl": "So grüßt man. (tl)"
+					},
+					"goals": [
+						"G1"
+					],
+					"type": "choice",
+					"prompt": "Wie heißen Sie?",
+					"options": [
+						"Ich heiße Anna.",
+						"Danke."
+					],
+					"answer": 0
+				}
+			]
+		}
+	],
+	"goals": {
+		"G1": {
+			"de": "Grüßen",
+			"en": "Grüßen (en)",
+			"tl": "Grüßen (tl)"
+		},
+		"G2": {
+			"de": "Nie benutzt",
+			"en": "Nie benutzt (en)",
+			"tl": "Nie benutzt (tl)"
+		}
+	},
+	"pools": {
+		"practice": [
+			{
+				"id": "FX-P1",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "choice",
+				"prompt": "Wer kommt?",
+				"options": [
+					"Frau Huber.",
+					"Nein."
+				],
+				"answer": 0
+			},
+			{
+				"id": "FX-P2",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "short",
+				"prompt": "Wie heißen Sie?",
+				"accept": [
+					"Ich heiße Anna."
+				]
+			},
+			{
+				"id": "FX-P3",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "cloze",
+				"text": "Ich {{1}} Anna.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heiße"
+						]
+					}
+				}
+			}
+		],
+		"test": [
+			{
+				"id": "FX-T1",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "choice",
+				"prompt": "Was sagen Sie?",
+				"options": [
+					"Grüß Gott!",
+					"Servus!",
+					"grüß gott!"
+				],
+				"answer": 0
+			},
+			{
+				"id": "FX-T1B",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "choice",
+				"prompt": "Was sagen Sie hier?",
+				"options": [
+					"Servus!",
+					"Hallo!"
+				],
+				"answer": 0,
+				"family": "FX-T1",
+				"image": {
+					"src": "/img/does-not-exist.svg",
+					"alt": {
+						"de": "Bild",
+						"en": "Bild (en)",
+						"tl": "Bild (tl)"
+					}
+				}
+			},
+			{
+				"id": "FX-T2",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "cloze",
+				"text": "{{1}} {{2}} {{3}} {{4}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"ja"
+						]
+					},
+					"2": {
+						"accept": [
+							"ja"
+						]
+					},
+					"3": {
+						"accept": [
+							"ja"
+						]
+					},
+					"4": {
+						"accept": [
+							"ja"
+						]
+					}
+				}
+			},
+			{
+				"id": "FX-T2B",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "cloze",
+				"text": "Ich {{1}} gut.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heiße"
+						]
+					}
+				},
+				"family": "FX-T2"
+			},
+			{
+				"id": "FX-T3",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "choice",
+				"prompt": "Wer kommt?",
+				"options": [
+					"Frau Huber.",
+					"Nein."
+				],
+				"answer": 0
+			},
+			{
+				"id": "FX-T3B",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": " "
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "choice",
+				"prompt": "Die Tomate und die Quantenphysik.",
+				"options": [
+					"ja",
+					"nein"
+				],
+				"answer": 0,
+				"family": "FX-T3"
+			}
+		]
+	}
+}

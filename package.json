@@ -16,6 +16,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:e2e": "playwright test",
 		"test": "vitest run",
+		"qa": "node --disable-warning=ExperimentalWarning scripts/qa/run.ts",
 		"gen": "wrangler types",
 		"test:watch": "vitest",
 		"deploy": "wrangler deploy",

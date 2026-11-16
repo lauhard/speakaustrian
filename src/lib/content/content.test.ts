@@ -36,6 +36,11 @@ describe('content rules per chapter', () => {
 		expect(items.some((i) => i.type === 'cloze')).toBe(true);
 		expect(items.filter((i) => i.image).length).toBeGreaterThanOrEqual(2);
 	});
+	// R-K3: real chapters need ≥ 2 twins per test item (the schema only asks for 1, the DEMO sandbox uses that).
+	it.each(real.map((c) => [c.chapterId, c] as const))('%s: every test item has at least 2 twins', (_id, chapter) => {
+		const test = chapter.pools?.test ?? [];
+		for (const i of test) expect(test.filter((t) => (t.family ?? t.id) === (i.family ?? i.id)).length, i.id).toBeGreaterThanOrEqual(3);
+	});
 	it('every picture file exists', async () => {
 		const { existsSync } = await import('node:fs');
 		for (const item of allItems()) if (item.image) expect(existsSync(`static${item.image.src}`), item.image.src).toBe(true);
