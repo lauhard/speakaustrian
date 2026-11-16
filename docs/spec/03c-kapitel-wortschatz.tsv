@@ -1,0 +1,2036 @@
+id	lemma	pos	hf	level	use	at	set	kind	chapter
+W-A1-0001	der	art	GW	A1	a	0		v1	A1-03
+W-A1-0002	die	art	GW	A1	a	0		v1	A1-03
+W-A1-0003	das	art	GW	A1	a	0		v1	A1-03
+W-A1-0004	ein	art	GW	A1	a	0		v1	A1-03
+W-A1-0005	kein	art	GW	A1	a	0		v1	A1-05
+W-A1-0006	ich	pron	GW	A1	a	0		v1	A1-01
+W-A1-0007	du	pron	GW	A1	a	0		v1	A1-01
+W-A1-0008	er	pron	GW	A1	a	0		v1	A1-01
+W-A1-0009	sie	pron	GW	A1	a	0		v1	A1-01
+W-A1-0010	es	pron	GW	A1	a	0		v1	A1-01
+W-A1-0011	wir	pron	GW	A1	a	0		v1	A1-01
+W-A1-0012	ihr	pron	GW	A1	a	0		v1	A1-01
+W-A1-0013	Sie	pron	GW	A1	a	0		v1	A1-01
+W-A1-0014	mich	pron	GW	A1	a	0		v1	A1-10
+W-A1-0015	dich	pron	GW	A1	a	0		v1	A1-10
+W-A1-0016	mir	pron	GW	A1	a	0		v1	A1-01
+W-A1-0017	dir	pron	GW	A1	a	0		v1	A1-01
+W-A1-0018	ihn	pron	GW	A1	a	0		v1	A1-10
+W-A1-0019	ihm	pron	GW	A1	a	0		v1	A1-14
+W-A1-0020	uns	pron	GW	A1	a	0		v1	A1-10
+W-A1-0021	Ihnen	pron	GW	A1	a	0		v1	A1-14
+W-A1-0022	mein	pron	GW	A1	a	0		v1	A1-04
+W-A1-0023	dein	pron	GW	A1	a	0		v1	A1-04
+W-A1-0024	sein	pron	GW	A1	a	0		v1	A1-14
+W-A1-0025	ihr (Possessiv)	pron	GW	A1	a	0		v1	A1-14
+W-A1-0026	unser	pron	GW	A1	a	0		v1	A1-14
+W-A1-0027	euer	pron	GW	A1	p	0		v1	A1-14
+W-A1-0028	Ihr (Possessiv)	pron	GW	A1	a	0		v1	A1-04
+W-A1-0029	man	pron	GW	A1	a	0		v1	A1-09
+W-A1-0030	alle	pron	GW	A1	a	0		v1	A1-02
+W-A1-0031	etwas	pron	GW	A1	a	0		v1	A1-02
+W-A1-0032	nichts	pron	GW	A1	a	0		v1	A1-02
+W-A1-0033	jemand	pron	GW	A1	p	0		v1	A1-01
+W-A1-0034	dieser	pron	GW	A1	a	0		v1	A1-02
+W-A1-0035	wer	pron	GW	A1	a	0		v1	A1-01
+W-A1-0036	was	pron	GW	A1	a	0		v1	A1-01
+W-A1-0037	wo	adv	GW	A1	a	0		v1	A1-03
+W-A1-0038	woher	adv	GW	A1	a	0		v1	A1-01
+W-A1-0039	wohin	adv	GW	A1	a	0		v1	A1-13
+W-A1-0040	wann	adv	GW	A1	a	0		v1	A1-06
+W-A1-0041	wie	adv	GW	A1	a	0		v1	A1-01
+W-A1-0042	wie viel	adv	GW	A1	a	0		v1	A1-02
+W-A1-0043	wie viele	adv	GW	A1	a	0		v1	A1-02
+W-A1-0044	warum	adv	GW	A1	a	0		v1	A1-16
+W-A1-0045	welcher	pron	GW	A1	a	0		v1	A1-08
+W-A1-0046	und	konj	GW	A1	a	0		v1	A1-01
+W-A1-0047	oder	konj	GW	A1	a	0		v1	A1-16
+W-A1-0048	aber	konj	GW	A1	a	0		v1	A1-16
+W-A1-0049	denn	konj	GW	A1	a	0		v1	A1-16
+W-A1-0050	weil	konj	GW	A1	a	0		v1	A1-19
+W-A1-0051	ja	part	GW	A1	a	0		v1	A1-01
+W-A1-0052	nein	part	GW	A1	a	0		v1	A1-01
+W-A1-0053	nicht	part	GW	A1	a	0		v1	A1-05
+W-A1-0054	doch	part	GW	A1	a	0		v1	A1-03
+W-A1-0055	auch	adv	GW	A1	a	0		v1	A1-01
+W-A1-0056	nur	adv	GW	A1	a	0		v1	A1-02
+W-A1-0057	sehr	adv	GW	A1	a	0		v1	A1-01
+W-A1-0058	gern	adv	GW	A1	a	0		v1	A1-08
+W-A1-0059	noch	adv	GW	A1	a	0		v1	A1-02
+W-A1-0060	schon	adv	GW	A1	a	0		v1	A1-02
+W-A1-0061	immer	adv	GW	A1	a	0		v1	A1-18
+W-A1-0062	oft	adv	GW	A1	a	0		v1	A1-18
+W-A1-0063	manchmal	adv	GW	A1	a	0		v1	A1-18
+W-A1-0064	nie	adv	GW	A1	a	0		v1	A1-18
+W-A1-0065	jetzt	adv	GW	A1	a	0		v1	A1-06
+W-A1-0066	heute	adv	GW	A1	a	0		v1	A1-06
+W-A1-0067	morgen	adv	GW	A1	a	0		v1	A1-06
+W-A1-0068	gestern	adv	GW	A1	a	0		v1	A1-17
+W-A1-0069	bald	adv	GW	A1	a	0		v1	A1-02
+W-A1-0070	dann	adv	GW	A1	a	0		v1	A1-06
+W-A1-0071	zuerst	adv	GW	A1	a	0		v1	A1-06
+W-A1-0072	später	adv	GW	A1	a	0		v1	A1-06
+W-A1-0073	hier	adv	GW	A1	a	0		v1	A1-03
+W-A1-0074	dort	adv	GW	A1	a	0		v1	A1-03
+W-A1-0075	da	adv	GW	A1	a	0		v1	A1-03
+W-A1-0076	links	adv	GW	A1	a	0		v1	A1-13
+W-A1-0077	rechts	adv	GW	A1	a	0		v1	A1-13
+W-A1-0078	geradeaus	adv	GW	A1	a	0		v1	A1-13
+W-A1-0079	oben	adv	GW	A1	a	0		v1	A1-13
+W-A1-0080	unten	adv	GW	A1	a	0		v1	A1-13
+W-A1-0081	draußen	adv	GW	A1	a	0		v1	A1-17
+W-A1-0082	viel	adv	GW	A1	a	0		v1	A1-02
+W-A1-0083	wenig	adv	GW	A1	a	0		v1	A1-02
+W-A1-0084	mehr	adv	GW	A1	a	0		v1	A1-02
+W-A1-0085	genug	adv	GW	A1	a	0		v1	A1-02
+W-A1-0086	zusammen	adv	GW	A1	a	0		v1	A1-02
+W-A1-0087	allein	adv	GW	A1	a	0		v1	A1-02
+W-A1-0088	vielleicht	adv	GW	A1	a	0		v1	A1-02
+W-A1-0089	wieder	adv	GW	A1	a	0		v1	A1-02
+W-A1-0090	zurück	adv	GW	A1	a	0		v1	A1-02
+W-A1-0091	bitte	part	GW	A1	a	0		v1	A1-01
+W-A1-0092	danke	part	GW	A1	a	0		v1	A1-01
+W-A1-0093	in	prep	GW	A1	a	0		v1	A1-03
+W-A1-0094	an	prep	GW	A1	a	0		v1	A1-13
+W-A1-0095	auf	prep	GW	A1	a	0		v1	A1-13
+W-A1-0096	aus	prep	GW	A1	a	0		v1	A1-03
+W-A1-0097	bei	prep	GW	A1	a	0		v1	A1-12
+W-A1-0098	mit	prep	GW	A1	a	0		v1	A1-12
+W-A1-0099	nach	prep	GW	A1	a	0		v1	A1-12
+W-A1-0100	von	prep	GW	A1	a	0		v1	A1-12
+W-A1-0101	zu	prep	GW	A1	a	0		v1	A1-12
+W-A1-0102	für	prep	GW	A1	a	0		v1	A1-07
+W-A1-0103	ohne	prep	GW	A1	a	0		v1	A1-07
+W-A1-0104	um	prep	GW	A1	a	0		v1	A1-06
+W-A1-0105	vor	prep	GW	A1	a	0		v1	A1-06
+W-A1-0106	nach (zeitlich)	prep	GW	A1	a	0		v1	A1-06
+W-A1-0107	seit	prep	GW	A1	a	0		v1	A1-12
+W-A1-0108	bis	prep	GW	A1	a	0		v1	A1-06
+W-A1-0109	ab	prep	GW	A1	a	0		v1	A1-06
+W-A1-0110	über	prep	GW	A1	a	0		v1	A1-13
+W-A1-0111	unter	prep	GW	A1	a	0		v1	A1-13
+W-A1-0112	neben	prep	GW	A1	a	0		v1	A1-13
+W-A1-0113	zwischen	prep	GW	A1	a	0		v1	A1-13
+W-A1-0114	hinter	prep	GW	A1	a	0		v1	A1-13
+W-A1-0115	gegenüber	prep	GW	A1	a	0		v1	A1-13
+W-A1-0116	sein (Verb)	v	GW	A1	a	0		v1	A1-01
+W-A1-0117	haben	v	GW	A1	a	0		v1	A1-02
+W-A1-0118	werden	v	GW	A1	a	0		v1	A1-02
+W-A1-0119	können	v	GW	A1	a	0		v1	A1-09
+W-A1-0120	müssen	v	GW	A1	a	0		v1	A1-09
+W-A1-0121	wollen	v	GW	A1	a	0		v1	A1-09
+W-A1-0122	möchten	v	GW	A1	a	0		v1	A1-07
+W-A1-0123	dürfen	v	GW	A1	a	0		v1	A1-09
+W-A1-0124	sollen	v	GW	A1	a	0		v1	A1-09
+W-A1-0125	mögen	v	GW	A1	a	0		v1	A1-08
+W-A1-0126	machen	v	GW	A1	a	0		v1	A1-02
+W-A1-0127	gehen	v	GW	A1	a	0		v1	A1-12
+W-A1-0128	kommen	v	GW	A1	a	0		v1	A1-01
+W-A1-0129	fahren	v	GW	A1	a	0		v1	A1-12
+W-A1-0130	sagen	v	GW	A1	a	0		v1	A1-02
+W-A1-0131	sprechen	v	GW	A1	a	0		v1	A1-03
+W-A1-0132	fragen	v	GW	A1	a	0		v1	A1-02
+W-A1-0133	antworten	v	GW	A1	a	0		v1	A1-02
+W-A1-0134	verstehen	v	GW	A1	a	0		v1	A1-03
+W-A1-0135	wissen	v	GW	A1	a	0		v1	A1-02
+W-A1-0136	kennen	v	GW	A1	a	0		v1	A1-02
+W-A1-0137	geben	v	GW	A1	a	0		v1	A1-03
+W-A1-0138	nehmen	v	GW	A1	a	0		v1	A1-03
+W-A1-0139	brauchen	v	GW	A1	a	0		v1	A1-07
+W-A1-0140	finden	v	GW	A1	a	0		v1	A1-03
+W-A1-0141	suchen	v	GW	A1	a	0		v1	A1-03
+W-A1-0142	sehen	v	GW	A1	a	0		v1	A1-04
+W-A1-0143	hören	v	GW	A1	a	0		v1	A1-04
+W-A1-0144	lesen	v	GW	A1	a	0		v1	A1-04
+W-A1-0145	schreiben	v	GW	A1	a	0		v1	A1-04
+W-A1-0146	lernen	v	GW	A1	a	0		v1	A1-05
+W-A1-0147	heißen	v	GW	A1	a	0		v1	A1-01
+W-A1-0148	wohnen	v	GW	A1	a	0		v1	A1-03
+W-A1-0149	leben	v	GW	A1	a	0		v1	A1-04
+W-A1-0150	arbeiten	v	GW	A1	a	0		v1	A1-06
+W-A1-0151	bleiben	v	GW	A1	a	0		v1	A1-04
+W-A1-0152	warten	v	GW	A1	a	0		v1	A1-05
+W-A1-0153	helfen	v	GW	A1	a	0		v1	A1-14
+W-A1-0154	bringen	v	GW	A1	a	0		v1	A1-05
+W-A1-0155	holen	v	GW	A1	a	0		v1	A1-05
+W-A1-0156	zeigen	v	GW	A1	a	0		v1	A1-05
+W-A1-0157	öffnen	v	GW	A1	a	0		v1	A1-05
+W-A1-0158	schließen	v	GW	A1	a	0		v1	A1-10
+W-A1-0159	beginnen	v	GW	A1	a	0		v1	A1-10
+W-A1-0160	anfangen	v	GW	A1	a	0		v1	A1-10
+W-A1-0161	aufhören	v	GW	A1	a	0		v1	A1-10
+W-A1-0162	mitkommen	v	GW	A1	a	0		v1	A1-10
+W-A1-0163	mitbringen	v	GW	A1	a	0		v1	A1-10
+W-A1-0164	gefallen	v	GW	A1	a	0		v1	A1-14
+W-A1-0165	gehören	v	GW	A1	a	0		v1	A1-14
+W-A1-0166	glauben	v	GW	A1	a	0		v1	A1-10
+W-A1-0167	denken	v	GW	A1	a	0		v1	A1-10
+W-A1-0168	liegen	v	GW	A1	a	1		v1	A1-13
+W-A1-0169	stehen	v	GW	A1	a	1		v1	A1-13
+W-A1-0170	sitzen	v	GW	A1	a	1		v1	A1-13
+W-A1-0171	stellen	v	GW	A1	a	0		v1	A1-13
+W-A1-0172	legen	v	GW	A1	a	0		v1	A1-13
+W-A1-0173	gut	adj	GW	A1	a	0		v1	A1-01
+W-A1-0174	schlecht	adj	GW	A1	a	0		v1	A1-10
+W-A1-0175	groß	adj	GW	A1	a	0		v1	A1-10
+W-A1-0176	klein	adj	GW	A1	a	0		v1	A1-10
+W-A1-0177	neu	adj	GW	A1	a	0		v1	A1-10
+W-A1-0178	alt	adj	GW	A1	a	0		v1	A1-10
+W-A1-0179	jung	adj	GW	A1	a	0		v1	A1-10
+W-A1-0180	schön	adj	GW	A1	a	0		v1	A1-10
+W-A1-0181	lang	adj	GW	A1	a	0		v1	A1-10
+W-A1-0182	kurz	adj	GW	A1	a	0		v1	A1-10
+W-A1-0183	schnell	adj	GW	A1	a	0		v1	A1-10
+W-A1-0184	langsam	adj	GW	A1	a	0		v1	A1-03
+W-A1-0185	richtig	adj	GW	A1	a	0		v1	A1-05
+W-A1-0186	falsch	adj	GW	A1	a	0		v1	A1-05
+W-A1-0187	leicht	adj	GW	A1	a	0		v1	A1-10
+W-A1-0188	schwer	adj	GW	A1	a	0		v1	A1-10
+W-A1-0189	billig	adj	GW	A1	a	0		v1	A1-07
+W-A1-0190	teuer	adj	GW	A1	a	0		v1	A1-07
+W-A1-0191	frei	adj	GW	A1	a	0		v1	A1-10
+W-A1-0192	offen	adj	GW	A1	a	0		v1	A1-10
+W-A1-0193	geschlossen	adj	GW	A1	a	0		v1	A1-10
+W-A1-0194	wichtig	adj	GW	A1	a	0		v1	A1-11
+W-A1-0195	möglich	adj	GW	A1	p	0		v1	A1-02
+W-A1-0196	fertig	adj	GW	A1	a	0		v1	A1-11
+W-A1-0197	gleich	adv	GW	A1	a	0		v1	A1-12
+W-A1-0198	nah	adj	GW	A1	a	0		v1	A1-13
+W-A1-0199	weit	adj	GW	A1	a	0		v1	A1-13
+W-A1-0200	spät	adj	GW	A1	a	0		v1	A1-06
+W-A1-0201	früh	adj	GW	A1	a	0		v1	A1-06
+W-A1-0202	zufrieden	adj	GW	A1	p	0		v1	A1-04
+W-A1-0203	toll	adj	GW	A1	a	0		v1	A1-12
+W-A1-0204	super	adj	GW	A1	a	0		v1	A1-12
+W-A1-0205	Farbe	n	GW	A1	a	0		v1	A1-17
+W-A1-0206	weiß	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0207	schwarz	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0208	rot	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0209	blau	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0210	grün	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0211	gelb	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0212	grau	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0213	braun	adj	GW	A1	a	0	SET-FARBEN	v1	A1-17
+W-A1-0214	Problem	n	GW	A1	a	0		v1	A1-12
+W-A1-0215	Gespräch	n	GW	A1	a	0		v1	A1-12
+W-A1-0216	bekommen	v	GW	A1	a	0		v1	A1-12
+W-A1-0217	bitten	v	GW	A1	a	0		v1	A1-14
+W-A1-0218	danken	v	GW	A1	a	0		v1	A1-14
+W-A1-0219	Dank	n	GW	A1	a	0		v1	A1-14
+W-A1-0220	dauern	v	GW	A1	a	0		v1	A1-14
+W-A1-0221	tun	v	GW	A1	a	0		v1	A1-14
+W-A1-0222	erzählen	v	GW	A1	a	0		v1	A1-18
+W-A1-0223	lachen	v	GW	A1	a	0		v1	A1-14
+W-A1-0224	benutzen	v	GW	A1	a	0		v1	A1-14
+W-A1-0225	fehlen	v	GW	A1	a	0		v1	A1-14
+W-A1-0226	halten	v	GW	A1	a	0		v1	A1-14
+W-A1-0227	rauchen	v	GW	A1	a	0		v1	A1-14
+W-A1-0228	Zigarette	n	GW	A1	p	0		v1	A1-05
+W-A1-0229	verboten	adj	GW	A1	a	0		v1	A1-09
+W-A1-0230	Achtung	n	GW	A1	a	0		v1	A1-14
+W-A1-0231	Vorsicht	n	GW	A1	a	0		v1	A1-15
+W-A1-0232	Schild	n	GW	A1	a	0		v1	A1-15
+W-A1-0233	Ordnung	n	GW	A1	a	0		v1	A1-15
+W-A1-0234	in Ordnung	phr	GW	A1	a	0		v1	A1-15
+W-A1-0235	einfach	adj	GW	A1	a	0		v1	A1-15
+W-A1-0236	bekannt	adj	GW	A1	a	0		v1	A1-15
+W-A1-0237	fremd	adj	GW	A1	p	0		v1	A1-07
+W-A1-0238	international	adj	GW	A1	p	0		v1	A1-08
+W-A1-0239	Welt	n	GW	A1	a	0		v1	A1-15
+W-A1-0240	Ort	n	GW	A1	a	0		v1	A1-15
+W-A1-0241	Raum	n	GW	A1	a	0		v1	A1-15
+W-A1-0242	Mitte	n	GW	A1	a	0		v1	A1-15
+W-A1-0243	Ende	n	GW	A1	a	0		v1	A1-16
+W-A1-0244	Anfang	n	GW	A1	a	0		v1	A1-16
+W-A1-0245	Teil	n	GW	A1	a	0		v1	A1-16
+W-A1-0246	Moment	n	GW	A1	a	0		v1	A1-16
+W-A1-0247	Glück	n	GW	A1	a	0		v1	A1-16
+W-A1-0248	leider	adv	GW	A1	a	0		v1	A1-16
+W-A1-0249	sofort	adv	GW	A1	a	0		v1	A1-16
+W-A1-0250	gerade	adv	GW	A1	a	0		v1	A1-16
+W-A1-0251	einmal	adv	GW	A1	a	0		v1	A1-18
+W-A1-0252	früher	adv	GW	A1	a	0		v1	A1-18
+W-A1-0253	lange	adv	GW	A1	a	0		v1	A1-18
+W-A1-0254	zurzeit	adv	GW	A1	p	0		v1	A1-10
+W-A1-0255	also	adv	GW	A1	a	0		v1	A1-16
+W-A1-0256	so	adv	GW	A1	a	0		v1	A1-17
+W-A1-0257	bisschen	adv	GW	A1	a	0		v1	A1-17
+W-A1-0258	ein paar	pron	GW	A1	a	0		v1	A1-19
+W-A1-0259	beide	pron	GW	A1	a	0		v1	A1-19
+W-A1-0260	jeder	pron	GW	A1	a	0		v1	A1-19
+W-A1-0261	anderer	pron	GW	A1	a	0		v1	A1-19
+W-A1-0262	letzter	adj	GW	A1	a	0		v1	A1-19
+W-A1-0263	nächster	adj	GW	A1	a	0		v1	A1-19
+W-A1-0264	lieber	adv	GW	A1	a	0		v1	A1-08
+W-A1-0265	besser	adj	GW	A1	a	0		v1	A1-19
+W-A1-0266	am besten	phr	GW	A1	a	0		v1	A1-08
+W-A1-0267	Lieblings-	pref	GW	A1	a	0		v1	A1-08
+W-A1-0268	hoch	adj	GW	A1	a	0		v1	A1-19
+W-A1-0269	breit	adj	GW	A1	p	0		v1	A1-11
+W-A1-0270	leise	adj	GW	A1	a	0		v1	A1-19
+W-A1-0271	lustig	adj	GW	A1	a	0		v1	A1-19
+W-A1-0272	lieb	adj	GW	A1	a	0		v1	A1-19
+W-A1-0273	normal	adj	GW	A1	a	0		v1	A1-19
+W-A1-0274	wunderbar	adj	GW	A1	a	0		v1	A1-19
+W-A1-0275	klar	adj	GW	A1	a	0		v1	A1-19
+W-A1-0276	willkommen	adj	GW	A1	a	0		v1	A1-05
+W-A1-0277	aussehen	v	GW	A1	a	0		v1	A1-19
+W-A1-0278	freuen (sich)	v	GW	A1	a	0		v1	A1-16
+W-A1-0279	entschuldigen (sich)	v	GW	A1	a	0		v1	A1-19
+W-A1-0280	empfehlen	v	GW	A1	p	0		v1	A1-13
+W-A1-0281	erlauben	v	GW	A1	p	0		v1	A1-14
+W-A1-0282	anbieten	v	GW	A1	p	0		v1	A1-16
+W-A1-0283	mitnehmen	v	GW	A1	a	0		v1	A1-20
+W-A1-0284	abgeben	v	GW	A1	a	0		v1	A1-20
+W-A1-0285	Kurs	n	HF00	A1	a	0		v1	A1-05
+W-A1-0286	Deutschkurs	n	HF00	A1	a	0		v1	A1-05
+W-A1-0287	Lehrer, Lehrerin	n	HF00	A1	a	0		v1	A1-05
+W-A1-0288	Buch	n	HF00	A1	a	0		v1	A1-05
+W-A1-0289	Heft	n	HF00	A1	a	0		v1	A1-05
+W-A1-0290	Kugelschreiber	n	HF00	A1	a	0		v1	A1-05
+W-A1-0291	Bleistift	n	HF00	A1	a	0		v1	A1-05
+W-A1-0292	Papier	n	HF00	A1	a	0		v1	A1-05
+W-A1-0293	Seite	n	HF00	A1	a	0		v1	A1-05
+W-A1-0294	Wort	n	HF00	A1	a	0		v1	A1-05
+W-A1-0295	Satz	n	HF00	A1	a	0		v1	A1-05
+W-A1-0296	Text	n	HF00	A1	a	0		v1	A1-05
+W-A1-0297	Frage	n	HF00	A1	a	0		v1	A1-05
+W-A1-0298	Antwort	n	HF00	A1	a	0		v1	A1-05
+W-A1-0299	Beispiel	n	HF00	A1	a	0		v1	A1-05
+W-A1-0300	Aufgabe	n	HF00	A1	a	0		v1	A1-05
+W-A1-0301	Prüfung	n	HF00	A1	a	0		v1	A1-05
+W-A1-0302	Test	n	HF00	A1	a	0		v1	A1-05
+W-A1-0303	Sprache	n	HF00	A1	a	0		v1	A1-03
+W-A1-0304	Deutsch	n	HF00	A1	a	0		v1	A1-03
+W-A1-0305	Englisch	n	HF00	A1	a	0		v1	A1-03
+W-A1-0306	Tagalog	n	HF00	A1	a	0		v1	A1-03
+W-A1-0307	ankreuzen	v	HF00	A1	a	0		v1	A1-05
+W-A1-0308	ergänzen	v	HF00	A1	a	0		v1	A1-05
+W-A1-0309	zuordnen	v	HF00	A1	p	0		v1	A1-05
+W-A1-0310	markieren	v	HF00	A1	p	0		v1	A1-05
+W-A1-0311	wiederholen	v	HF00	A1	a	0		v1	A1-03
+W-A1-0312	buchstabieren	v	HF00	A1	a	0		v1	A1-02
+W-A1-0313	erklären	v	HF00	A1	a	0		v1	A1-05
+W-A1-0314	üben	v	HF00	A1	a	0		v1	A1-05
+W-A1-0315	bedeuten	v	HF00	A1	a	0		v1	A1-05
+W-A1-0316	Hausübung	n	HF00	A1	a	1		v1	A1-05
+W-A1-0317	Tafel	n	HF00	A1	p	0		v1	A1-05
+W-A1-0318	Pause	n	HF00	A1	a	0		v1	A1-05
+W-A1-0319	Fehler	n	HF00	A1	a	0		v1	A1-05
+W-A1-0320	Lösung	n	HF00	A1	a	0		v1	A1-05
+W-A1-0321	Unterricht	n	HF00	A1	a	0		v1	A1-05
+W-A1-0322	Buchstabe	n	HF00	A1	a	0		v1	A1-02
+W-A1-0323	Thema	n	HF00	A1	a	0		v1	A1-05
+W-A1-0324	Name	n	HF01	A1	a	0		v1	A1-01
+W-A1-0325	Vorname	n	HF01	A1	a	0		v1	A1-01
+W-A1-0326	Familienname	n	HF01	A1	a	0		v1	A1-01
+W-A1-0327	Herr	n	HF01	A1	a	0		v1	A1-01
+W-A1-0328	Frau	n	HF01	A1	a	0		v1	A1-01
+W-A1-0329	Mann	n	HF01	A1	a	0		v1	A1-04
+W-A1-0330	Kind	n	HF01	A1	a	0		v1	A1-04
+W-A1-0331	Familie	n	HF01	A1	a	0		v1	A1-04
+W-A1-0332	Eltern	n	HF01	A1	a	0		v1	A1-04
+W-A1-0333	Mutter	n	HF01	A1	a	0		v1	A1-04
+W-A1-0334	Vater	n	HF01	A1	a	0		v1	A1-04
+W-A1-0335	Sohn	n	HF01	A1	a	0		v1	A1-04
+W-A1-0336	Tochter	n	HF01	A1	a	0		v1	A1-04
+W-A1-0337	Bruder	n	HF01	A1	a	0		v1	A1-04
+W-A1-0338	Schwester	n	HF01	A1	a	0		v1	A1-04
+W-A1-0339	Geschwister	n	HF01	A1	a	0		v1	A1-04
+W-A1-0340	Großeltern	n	HF01	A1	a	0		v1	A1-04
+W-A1-0341	Oma	n	HF01	A1	a	0		v1	A1-04
+W-A1-0342	Opa	n	HF01	A1	a	0		v1	A1-04
+W-A1-0343	Baby	n	HF01	A1	a	0		v1	A1-04
+W-A1-0344	Partner, Partnerin	n	HF01	A1	a	0		v1	A1-04
+W-A1-0345	verheiratet	adj	HF01	A1	a	0		v1	A1-04
+W-A1-0346	ledig	adj	HF01	A1	a	0		v1	A1-04
+W-A1-0347	geschieden	adj	HF01	A1	a	0		v1	A1-04
+W-A1-0348	Freund, Freundin	n	HF01	A1	a	0		v1	A1-04
+W-A1-0349	Leute	n	HF01	A1	a	0		v1	A1-04
+W-A1-0350	Mensch	n	HF01	A1	a	0		v1	A1-03
+W-A1-0351	Alter	n	HF01	A1	a	0		v1	A1-02
+W-A1-0352	Jahre alt	phr	HF01	A1	a	0		v1	A1-02
+W-A1-0353	Geburtstag	n	HF01	A1	a	0		v1	A1-15
+W-A1-0354	geboren	adj	HF01	A1	a	0		v1	A1-15
+W-A1-0355	Land	n	HF01	A1	a	0		v1	A1-03
+W-A1-0356	Heimatland	n	HF01	A1	a	0		v1	A1-03
+W-A1-0357	Österreich	n	HF01	A1	a	0		v1	A1-01
+W-A1-0358	Österreicher, Österreicherin	n	HF01	A1	a	0		v1	A1-03
+W-A1-0359	österreichisch	adj	HF01	A1	a	0		v1	A1-03
+W-A1-0360	Deutschland	n	HF01	A1	a	0		v1	A1-03
+W-A1-0361	Schweiz	n	HF01	A1	p	0		v1	A1-03
+W-A1-0362	Philippinen	n	HF01	A1	a	0		v1	A1-01
+W-A1-0363	Philippiner, Philippinerin	n	HF01	A1	a	0		v1	A1-03
+W-A1-0364	Europa	n	HF01	A1	a	0		v1	A1-03
+W-A1-0365	Ausland	n	HF01	A1	p	0		v1	A1-03
+W-A1-0366	Stadt	n	HF01	A1	a	0		v1	A1-03
+W-A1-0367	Dorf	n	HF01	A1	a	0		v1	A1-03
+W-A1-0368	Adresse	n	HF01	A1	a	0		v1	A1-03
+W-A1-0369	Straße	n	HF01	A1	a	0		v1	A1-03
+W-A1-0370	Hausnummer	n	HF01	A1	a	0		v1	A1-02
+W-A1-0371	Postleitzahl	n	HF01	A1	a	0		v1	A1-02
+W-A1-0372	Telefonnummer	n	HF01	A1	a	0		v1	A1-02
+W-A1-0373	E-Mail	n	HF01	A1	a	1		v1	A1-03
+W-A1-0374	Beruf	n	HF01	A1	a	0		v1	A1-14
+W-A1-0375	Hobby	n	HF01	A1	a	0		v1	A1-03
+W-A1-0376	grüß Gott	phr	HF01	A1	a	1		v1	A1-01
+W-A1-0377	servus	interj	HF01	A1	a	1		v1	A1-01
+W-A1-0378	hallo	interj	HF01	A1	a	0		v1	A1-01
+W-A1-0379	guten Morgen	phr	HF01	A1	a	0		v1	A1-01
+W-A1-0380	guten Tag	phr	HF01	A1	a	0		v1	A1-01
+W-A1-0381	guten Abend	phr	HF01	A1	a	0		v1	A1-01
+W-A1-0382	gute Nacht	phr	HF01	A1	a	0		v1	A1-01
+W-A1-0383	auf Wiedersehen	phr	HF01	A1	a	0		v1	A1-01
+W-A1-0384	auf Wiederhören	phr	HF01	A1	a	0		v1	A1-03
+W-A1-0385	tschüss	interj	HF01	A1	a	0		v1	A1-01
+W-A1-0386	Entschuldigung	n	HF01	A1	a	0		v1	A1-01
+W-A1-0387	Wie geht's?	phr	HF01	A1	a	0		v1	A1-01
+W-A1-0388	kennenlernen	v	HF01	A1	a	0		v1	A1-16
+W-A1-0389	vorstellen (sich)	v	HF01	A1	a	0		v1	A1-01
+W-A1-0390	froh	adj	HF01	A1	a	0		v1	A1-11
+W-A1-0391	glücklich	adj	HF01	A1	a	0		v1	A1-04
+W-A1-0392	traurig	adj	HF01	A1	a	0		v1	A1-04
+W-A1-0393	müde	adj	HF01	A1	a	0		v1	A1-11
+W-A1-0394	lieben	v	HF01	A1	a	0		v1	A1-04
+W-A1-0395	heiraten	v	HF01	A1	a	0		v1	A1-04
+W-A1-0396	Verwandte	n	HF01	A1	a	0		v1	A1-04
+W-A1-0397	Mädchen	n	HF01	A1	a	0		v1	A1-04
+W-A1-0398	Bub	n	HF01	A1	a	1		v1	A1-04
+W-A1-0399	Jugendliche	n	HF01	A1	p	0		v1	A1-04
+W-A1-0400	Erwachsene	n	HF01	A1	a	0		v1	A1-04
+W-A1-0401	Dame	n	HF01	A1	p	0		v1	A1-04
+W-A1-0402	Ehefrau	n	HF01	A1	a	0		v1	A1-04
+W-A1-0403	Ehemann	n	HF01	A1	a	0		v1	A1-04
+W-A1-0404	Bekannte	n	HF01	A1	a	0		v1	A1-04
+W-A1-0405	Ausländer, Ausländerin	n	HF01	A1	a	0		v1	A1-03
+W-A1-0406	Heimat	n	HF01	A1	a	0		v1	A1-03
+W-A1-0407	gestorben	adj	HF01	A1	p	0		v1	A1-04
+W-A1-0408	Wohnung	n	HF02	A1	a	0		v1	A1-09
+W-A1-0409	Haus	n	HF02	A1	a	0		v1	A1-09
+W-A1-0410	Zimmer	n	HF02	A1	a	0		v1	A1-09
+W-A1-0411	Küche	n	HF02	A1	a	0		v1	A1-09
+W-A1-0412	Bad	n	HF02	A1	a	0		v1	A1-09
+W-A1-0413	WC	n	HF02	A1	a	0		v1	A1-09
+W-A1-0414	Toilette	n	HF02	A1	a	0		v1	A1-09
+W-A1-0415	Schlafzimmer	n	HF02	A1	a	0		v1	A1-09
+W-A1-0416	Wohnzimmer	n	HF02	A1	a	0		v1	A1-09
+W-A1-0417	Kinderzimmer	n	HF02	A1	a	0		v1	A1-09
+W-A1-0418	Balkon	n	HF02	A1	a	0		v1	A1-09
+W-A1-0419	Garten	n	HF02	A1	a	0		v1	A1-09
+W-A1-0420	Stock	n	HF02	A1	a	0		v1	A1-09
+W-A1-0421	Erdgeschoß	n	HF02	A1	a	1		v1	A1-09
+W-A1-0422	Lift	n	HF02	A1	a	1		v1	A1-09
+W-A1-0423	Stiege	n	HF02	A1	a	1		v1	A1-09
+W-A1-0424	Tür	n	HF02	A1	a	0		v1	A1-09
+W-A1-0425	Fenster	n	HF02	A1	a	0		v1	A1-09
+W-A1-0426	Schlüssel	n	HF02	A1	a	0		v1	A1-09
+W-A1-0427	Möbel	n	HF02	A1	a	0		v1	A1-13
+W-A1-0428	Tisch	n	HF02	A1	a	0		v1	A1-13
+W-A1-0429	Stuhl	n	HF02	A1	a	0		v1	A1-13
+W-A1-0430	Sessel	n	HF02	A1	a	1		v1	A1-13
+W-A1-0431	Bett	n	HF02	A1	a	0		v1	A1-13
+W-A1-0432	Kasten	n	HF02	A1	a	1		v1	A1-13
+W-A1-0433	Sofa	n	HF02	A1	a	0		v1	A1-13
+W-A1-0434	Lampe	n	HF02	A1	a	0		v1	A1-13
+W-A1-0435	Kühlschrank	n	HF02	A1	a	0		v1	A1-13
+W-A1-0436	Herd	n	HF02	A1	p	0		v1	A1-13
+W-A1-0437	Waschmaschine	n	HF02	A1	a	0		v1	A1-13
+W-A1-0438	Miete	n	HF02	A1	a	0		v1	A1-09
+W-A1-0439	mieten	v	HF02	A1	a	0		v1	A1-09
+W-A1-0440	Quadratmeter	n	HF02	A1	a	0		v1	A1-09
+W-A1-0441	hell	adj	HF02	A1	a	0		v1	A1-09
+W-A1-0442	dunkel	adj	HF02	A1	a	0		v1	A1-09
+W-A1-0443	ruhig	adj	HF02	A1	a	0		v1	A1-09
+W-A1-0444	laut	adj	HF02	A1	a	0		v1	A1-09
+W-A1-0445	kaputt	adj	HF02	A1	a	0		v1	A1-09
+W-A1-0446	Nachbar, Nachbarin	n	HF02	A1	a	0		v1	A1-13
+W-A1-0447	Hausordnung	n	HF02	A1	a	0		v1	A1-09
+W-A1-0448	Ruhe	n	HF02	A1	a	0		v1	A1-09
+W-A1-0449	Meldezettel	n	HF02	A1	a	1		v1	A1-15
+W-A1-0450	anmelden (sich)	v	HF02	A1	a	0		v1	A1-15
+W-A1-0451	umziehen	v	HF02	A1	a	0		v1	A1-15
+W-A1-0452	einziehen	v	HF02	A1	p	0		v1	A1-15
+W-A1-0453	Müll	n	HF02	A1	a	0		v1	A1-09
+W-A1-0454	Mistkübel	n	HF02	A1	a	1		v1	A1-09
+W-A1-0455	putzen	v	HF02	A1	a	0		v1	A1-18
+W-A1-0456	kochen	v	HF02	A1	a	0		v1	A1-18
+W-A1-0457	schlafen	v	HF02	A1	a	0		v1	A1-06
+W-A1-0458	aufstehen	v	HF02	A1	a	0		v1	A1-06
+W-A1-0459	waschen	v	HF02	A1	a	0		v1	A1-18
+W-A1-0460	duschen	v	HF02	A1	a	0		v1	A1-06
+W-A1-0461	Dusche	n	HF02	A1	a	0		v1	A1-06
+W-A1-0462	baden	v	HF02	A1	p	0		v1	A1-18
+W-A1-0463	anziehen	v	HF02	A1	a	0		v1	A1-06
+W-A1-0464	ausziehen	v	HF02	A1	a	0		v1	A1-06
+W-A1-0465	anmachen	v	HF02	A1	a	0		v1	A1-18
+W-A1-0466	ausmachen	v	HF02	A1	a	0		v1	A1-18
+W-A1-0467	Licht	n	HF02	A1	a	0		v1	A1-18
+W-A1-0468	reparieren	v	HF02	A1	a	0		v1	A1-09
+W-A1-0469	Reparatur	n	HF02	A1	p	0		v1	A1-09
+W-A1-0470	vermieten	v	HF02	A1	p	0		v1	A1-09
+W-A1-0471	Vermieter, Vermieterin	n	HF02	A1	a	0		v1	A1-09
+W-A1-0472	Apartment	n	HF02	A1	p	0		v1	A1-09
+W-A1-0473	Essen	n	HF03	A1	a	0		v1	A1-08
+W-A1-0474	essen	v	HF03	A1	a	0		v1	A1-08
+W-A1-0475	trinken	v	HF03	A1	a	0		v1	A1-08
+W-A1-0476	Frühstück	n	HF03	A1	a	0		v1	A1-08
+W-A1-0477	frühstücken	v	HF03	A1	a	0		v1	A1-08
+W-A1-0478	Mittagessen	n	HF03	A1	a	0		v1	A1-08
+W-A1-0479	Abendessen	n	HF03	A1	a	0		v1	A1-08
+W-A1-0480	Hunger	n	HF03	A1	a	0		v1	A1-08
+W-A1-0481	Durst	n	HF03	A1	a	0		v1	A1-08
+W-A1-0482	Brot	n	HF03	A1	a	0		v1	A1-07
+W-A1-0483	Semmel	n	HF03	A1	a	1		v1	A1-07
+W-A1-0484	Butter	n	HF03	A1	a	0		v1	A1-07
+W-A1-0485	Käse	n	HF03	A1	a	0		v1	A1-07
+W-A1-0486	Ei	n	HF03	A1	a	0		v1	A1-07
+W-A1-0487	Milch	n	HF03	A1	a	0		v1	A1-07
+W-A1-0488	Joghurt	n	HF03	A1	a	1		v1	A1-07
+W-A1-0489	Topfen	n	HF03	A1	p	1		v1	A1-07
+W-A1-0490	Obers	n	HF03	A1	p	1		v1	A1-07
+W-A1-0491	Fleisch	n	HF03	A1	a	0		v1	A1-07
+W-A1-0492	Huhn	n	HF03	A1	a	0		v1	A1-07
+W-A1-0493	Hendl	n	HF03	A1	p	1		v1	A1-07
+W-A1-0494	Rindfleisch	n	HF03	A1	a	0		v1	A1-07
+W-A1-0495	Schweinefleisch	n	HF03	A1	a	0		v1	A1-07
+W-A1-0496	Faschiertes	n	HF03	A1	p	1		v1	A1-07
+W-A1-0497	Wurst	n	HF03	A1	a	0		v1	A1-07
+W-A1-0498	Schinken	n	HF03	A1	a	0		v1	A1-07
+W-A1-0499	Fisch	n	HF03	A1	a	0		v1	A1-07
+W-A1-0500	Reis	n	HF03	A1	a	0		v1	A1-07
+W-A1-0501	Nudel	n	HF03	A1	a	0		v1	A1-07
+W-A1-0502	Erdapfel	n	HF03	A1	a	1		v1	A1-07
+W-A1-0503	Paradeiser	n	HF03	A1	a	1		v1	A1-07
+W-A1-0504	Gurke	n	HF03	A1	a	0		v1	A1-07
+W-A1-0505	Karotte	n	HF03	A1	a	1		v1	A1-07
+W-A1-0506	Zwiebel	n	HF03	A1	a	0		v1	A1-07
+W-A1-0507	Salat	n	HF03	A1	a	0		v1	A1-07
+W-A1-0508	Gemüse	n	HF03	A1	a	0		v1	A1-07
+W-A1-0509	Obst	n	HF03	A1	a	0		v1	A1-07
+W-A1-0510	Apfel	n	HF03	A1	a	0		v1	A1-07
+W-A1-0511	Banane	n	HF03	A1	a	0		v1	A1-07
+W-A1-0512	Orange	n	HF03	A1	a	0		v1	A1-07
+W-A1-0513	Marille	n	HF03	A1	p	1		v1	A1-07
+W-A1-0514	Zucker	n	HF03	A1	a	0		v1	A1-08
+W-A1-0515	Salz	n	HF03	A1	a	0		v1	A1-08
+W-A1-0516	Kuchen	n	HF03	A1	a	0		v1	A1-08
+W-A1-0517	Kaffee	n	HF03	A1	a	0		v1	A1-08
+W-A1-0518	Tee	n	HF03	A1	a	0		v1	A1-08
+W-A1-0519	Wasser	n	HF03	A1	a	0		v1	A1-08
+W-A1-0520	Saft	n	HF03	A1	a	0		v1	A1-08
+W-A1-0521	Bier	n	HF03	A1	a	0		v1	A1-08
+W-A1-0522	Wein	n	HF03	A1	a	0		v1	A1-08
+W-A1-0523	Getränk	n	HF03	A1	a	0		v1	A1-08
+W-A1-0524	Flasche	n	HF03	A1	a	0	SET-MENGEN	v1	A1-07
+W-A1-0525	Glas	n	HF03	A1	a	0		v1	A1-08
+W-A1-0526	Tasse	n	HF03	A1	a	0		v1	A1-08
+W-A1-0527	Teller	n	HF03	A1	a	0		v1	A1-08
+W-A1-0528	Kilo	n	HF03	A1	a	0	SET-MENGEN	v1	A1-07
+W-A1-0529	Gramm	n	HF03	A1	a	0	SET-MENGEN	v1	A1-07
+W-A1-0530	Deka	n	HF03	A1	a	1	SET-MENGEN	v1	A1-07
+W-A1-0531	Liter	n	HF03	A1	a	0	SET-MENGEN	v1	A1-07
+W-A1-0532	Stück	n	HF03	A1	a	0	SET-MENGEN	v1	A1-07
+W-A1-0533	Packung	n	HF03	A1	a	0	SET-MENGEN	v1	A1-07
+W-A1-0534	Euro	n	HF03	A1	a	0		v1	A1-02
+W-A1-0535	Cent	n	HF03	A1	a	0		v1	A1-02
+W-A1-0536	Preis	n	HF03	A1	a	0		v1	A1-02
+W-A1-0537	kosten	v	HF03	A1	a	0		v1	A1-02
+W-A1-0538	kaufen	v	HF03	A1	a	0		v1	A1-07
+W-A1-0539	verkaufen	v	HF03	A1	a	0		v1	A1-07
+W-A1-0540	bezahlen	v	HF03	A1	a	0		v1	A1-19
+W-A1-0541	zahlen	v	HF03	A1	a	0		v1	A1-19
+W-A1-0542	Geld	n	HF03	A1	a	0		v1	A1-19
+W-A1-0543	Kassa	n	HF03	A1	a	1		v1	A1-07
+W-A1-0544	Supermarkt	n	HF03	A1	a	0		v1	A1-07
+W-A1-0545	Geschäft	n	HF03	A1	a	0		v1	A1-07
+W-A1-0546	Markt	n	HF03	A1	a	0		v1	A1-07
+W-A1-0547	Bäckerei	n	HF03	A1	a	0		v1	A1-07
+W-A1-0548	Sackerl	n	HF03	A1	a	1		v1	A1-07
+W-A1-0549	einkaufen	v	HF03	A1	a	0		v1	A1-07
+W-A1-0550	Angebot	n	HF03	A1	a	0		v1	A1-07
+W-A1-0551	Restaurant	n	HF03	A1	a	0		v1	A1-08
+W-A1-0552	Gasthaus	n	HF03	A1	a	1		v1	A1-08
+W-A1-0553	Speisekarte	n	HF03	A1	a	0		v1	A1-08
+W-A1-0554	bestellen	v	HF03	A1	a	0		v1	A1-08
+W-A1-0555	Rechnung	n	HF03	A1	a	0		v1	A1-08
+W-A1-0556	schmecken	v	HF03	A1	a	0		v1	A1-08
+W-A1-0557	lecker	adj	HF03	A1	p	0		v1	A1-08
+W-A1-0558	gut (schmecken)	adj	HF03	A1	a	0		v1	A1-08
+W-A1-0559	Kleidung	n	HF03	A1	a	0		v1	A1-17
+W-A1-0560	Hose	n	HF03	A1	a	0		v1	A1-17
+W-A1-0561	Hemd	n	HF03	A1	a	0		v1	A1-17
+W-A1-0562	Jacke	n	HF03	A1	a	0		v1	A1-17
+W-A1-0563	Kleid	n	HF03	A1	a	0		v1	A1-17
+W-A1-0564	Schuh	n	HF03	A1	a	0		v1	A1-17
+W-A1-0565	Größe	n	HF03	A1	a	0		v1	A1-17
+W-A1-0566	passen	v	HF03	A1	a	0		v1	A1-17
+W-A1-0567	Tasche	n	HF03	A1	a	0		v1	A1-17
+W-A1-0568	Anzeige	n	HF03	A1	a	0		v1	A1-16
+W-A1-0569	Café	n	HF03	A1	a	0		v1	A1-08
+W-A1-0570	Kaffeehaus	n	HF03	A1	p	1		v1	A1-08
+W-A1-0571	Pommes frites	n	HF03	A1	a	0		v1	A1-08
+W-A1-0572	Birne	n	HF03	A1	a	0		v1	A1-08
+W-A1-0573	Öl	n	HF03	A1	a	0		v1	A1-08
+W-A1-0574	Appetit	n	HF03	A1	a	0		v1	A1-08
+W-A1-0575	Mahlzeit	interj	HF03	A1	a	1		v1	A1-08
+W-A1-0576	günstig	adj	HF03	A1	a	0		v1	A1-07
+W-A1-0577	Kunde, Kundin	n	HF03	A1	a	0		v1	A1-08
+W-A1-0578	Gesundheit	n	HF04	A1	a	0		v1	A1-11
+W-A1-0579	krank	adj	HF04	A1	a	0		v1	A1-11
+W-A1-0580	gesund	adj	HF04	A1	a	0		v1	A1-11
+W-A1-0581	Arzt, Ärztin	n	HF04	A1	a	0		v1	A1-11
+W-A1-0582	Hausarzt, Hausärztin	n	HF04	A1	a	0		v1	A1-11
+W-A1-0583	Ordination	n	HF04	A1	a	1		v1	A1-11
+W-A1-0584	Krankenhaus	n	HF04	A1	a	0		v1	A1-11
+W-A1-0585	Spital	n	HF04	A1	p	1		v1	A1-11
+W-A1-0586	Apotheke	n	HF04	A1	a	0		v1	A1-11
+W-A1-0587	Medikament	n	HF04	A1	a	0		v1	A1-11
+W-A1-0588	Tablette	n	HF04	A1	a	0		v1	A1-11
+W-A1-0589	Rezept	n	HF04	A1	a	0		v1	A1-11
+W-A1-0590	e-card	n	HF04	A1	a	1		v1	A1-11
+W-A1-0591	Versicherung	n	HF04	A1	a	0		v1	A1-11
+W-A1-0592	Sozialversicherungsnummer	n	HF04	A1	a	0		v1	A1-11
+W-A1-0593	Termin	n	HF04	A1	a	0		v1	A1-10
+W-A1-0594	Schmerz	n	HF04	A1	a	0		v1	A1-11
+W-A1-0595	wehtun	v	HF04	A1	a	0		v1	A1-11
+W-A1-0596	Fieber	n	HF04	A1	a	0		v1	A1-11
+W-A1-0597	Husten	n	HF04	A1	a	0		v1	A1-11
+W-A1-0598	Schnupfen	n	HF04	A1	a	0		v1	A1-11
+W-A1-0599	Kopf	n	HF04	A1	a	0		v1	A1-11
+W-A1-0600	Bauch	n	HF04	A1	a	0		v1	A1-11
+W-A1-0601	Hals	n	HF04	A1	a	0		v1	A1-11
+W-A1-0602	Rücken	n	HF04	A1	a	0		v1	A1-11
+W-A1-0603	Arm	n	HF04	A1	a	0		v1	A1-11
+W-A1-0604	Hand	n	HF04	A1	a	0		v1	A1-11
+W-A1-0605	Bein	n	HF04	A1	a	0		v1	A1-11
+W-A1-0606	Fuß	n	HF04	A1	a	0		v1	A1-11
+W-A1-0607	Auge	n	HF04	A1	a	0		v1	A1-11
+W-A1-0608	Ohr	n	HF04	A1	a	0		v1	A1-11
+W-A1-0609	Mund	n	HF04	A1	a	0		v1	A1-11
+W-A1-0610	Nase	n	HF04	A1	a	0		v1	A1-11
+W-A1-0611	Zahn	n	HF04	A1	a	0		v1	A1-11
+W-A1-0612	Zahnarzt, Zahnärztin	n	HF04	A1	a	0		v1	A1-11
+W-A1-0613	Körper	n	HF04	A1	a	0		v1	A1-11
+W-A1-0614	Wartezimmer	n	HF04	A1	a	0		v1	A1-11
+W-A1-0615	Haar	n	HF04	A1	a	0		v1	A1-11
+W-A1-0616	Arbeit	n	HF05	A1	a	0		v1	A1-14
+W-A1-0617	Firma	n	HF05	A1	a	0		v1	A1-14
+W-A1-0618	Büro	n	HF05	A1	a	0		v1	A1-14
+W-A1-0619	Chef, Chefin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0620	Kollege, Kollegin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0621	Arbeitszeit	n	HF05	A1	a	0		v1	A1-14
+W-A1-0622	Job	n	HF05	A1	a	0		v1	A1-14
+W-A1-0623	Stelle	n	HF05	A1	a	0		v1	A1-14
+W-A1-0624	arbeitslos	adj	HF05	A1	a	0		v1	A1-14
+W-A1-0625	AMS	n	HF05	A1	a	1		v1	A1-14
+W-A1-0626	verdienen	v	HF05	A1	a	0		v1	A1-14
+W-A1-0627	Verkäufer, Verkäuferin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0628	Koch, Köchin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0629	Krankenpfleger, Krankenpflegerin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0630	Kellner, Kellnerin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0631	Fahrer, Fahrerin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0632	Reinigungskraft	n	HF05	A1	a	0		v1	A1-14
+W-A1-0633	Student, Studentin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0634	Schüler, Schülerin	n	HF05	A1	a	0		v1	A1-14
+W-A1-0635	Hausfrau, Hausmann	n	HF05	A1	a	0		v1	A1-20
+W-A1-0636	Praktikum	n	HF05	A1	p	0		v1	A1-14
+W-A1-0637	Arbeitsplatz	n	HF05	A1	a	0		v1	A1-14
+W-A1-0638	selbstständig	adj	HF05	A1	p	0		v1	A1-14
+W-A1-0639	Amt	n	HF06	A1	a	0		v1	A1-15
+W-A1-0640	Magistrat	n	HF06	A1	a	1		v1	A1-15
+W-A1-0641	Gemeindeamt	n	HF06	A1	a	1		v1	A1-15
+W-A1-0642	Formular	n	HF06	A1	a	0		v1	A1-15
+W-A1-0643	ausfüllen	v	HF06	A1	a	0		v1	A1-15
+W-A1-0644	unterschreiben	v	HF06	A1	a	0		v1	A1-15
+W-A1-0645	Unterschrift	n	HF06	A1	a	0		v1	A1-15
+W-A1-0646	Ausweis	n	HF06	A1	a	0		v1	A1-15
+W-A1-0647	Reisepass	n	HF06	A1	a	0		v1	A1-15
+W-A1-0648	Staatsangehörigkeit	n	HF06	A1	a	0		v1	A1-15
+W-A1-0649	Geburtsdatum	n	HF06	A1	a	0		v1	A1-15
+W-A1-0650	Geburtsort	n	HF06	A1	a	0		v1	A1-15
+W-A1-0651	Familienstand	n	HF06	A1	a	0		v1	A1-15
+W-A1-0652	männlich	adj	HF06	A1	a	0		v1	A1-15
+W-A1-0653	weiblich	adj	HF06	A1	a	0		v1	A1-15
+W-A1-0654	Geschlecht	n	HF06	A1	p	0		v1	A1-15
+W-A1-0655	Öffnungszeit	n	HF06	A1	a	0		v1	A1-15
+W-A1-0656	geöffnet	adj	HF06	A1	a	0		v1	A1-15
+W-A1-0657	Schalter	n	HF06	A1	a	0		v1	A1-15
+W-A1-0658	Information	n	HF06	A1	a	0		v1	A1-15
+W-A1-0659	gültig	adj	HF06	A1	p	0		v1	A1-15
+W-A1-0660	Geburtsjahr	n	HF06	A1	a	0		v1	A1-15
+W-A1-0661	Papiere	n	HF06	A1	a	0		v1	A1-15
+W-A1-0662	Pass	n	HF06	A1	a	0		v1	A1-15
+W-A1-0663	Bank	n	HF07	A1	a	0		v1	A1-19
+W-A1-0664	Konto	n	HF07	A1	a	0		v1	A1-19
+W-A1-0665	Bankomat	n	HF07	A1	a	1		v1	A1-19
+W-A1-0666	Bankomatkarte	n	HF07	A1	a	1		v1	A1-19
+W-A1-0667	Karte	n	HF07	A1	a	0		v1	A1-19
+W-A1-0668	Post	n	HF07	A1	a	0		v1	A1-19
+W-A1-0669	Brief	n	HF07	A1	a	0		v1	A1-19
+W-A1-0670	Paket	n	HF07	A1	a	0		v1	A1-19
+W-A1-0671	Briefmarke	n	HF07	A1	a	0		v1	A1-19
+W-A1-0672	schicken	v	HF07	A1	a	0		v1	A1-19
+W-A1-0673	Absender	n	HF07	A1	p	0		v1	A1-19
+W-A1-0674	Empfänger	n	HF07	A1	p	0		v1	A1-19
+W-A1-0675	überweisen	v	HF07	A1	p	0		v1	A1-19
+W-A1-0676	bar	adj	HF07	A1	a	0		v1	A1-19
+W-A1-0677	Bus	n	HF08	A1	a	0		v1	A1-12
+W-A1-0678	Zug	n	HF08	A1	a	0		v1	A1-12
+W-A1-0679	Straßenbahn	n	HF08	A1	a	0		v1	A1-12
+W-A1-0680	Bim	n	HF08	A1	p	1		v1	A1-12
+W-A1-0681	U-Bahn	n	HF08	A1	a	0		v1	A1-12
+W-A1-0682	Auto	n	HF08	A1	a	0		v1	A1-12
+W-A1-0683	Fahrrad	n	HF08	A1	a	0		v1	A1-12
+W-A1-0684	Taxi	n	HF08	A1	a	0		v1	A1-12
+W-A1-0685	Flugzeug	n	HF08	A1	a	0		v1	A1-12
+W-A1-0686	Bahnhof	n	HF08	A1	a	0		v1	A1-12
+W-A1-0687	Haltestelle	n	HF08	A1	a	0		v1	A1-12
+W-A1-0688	Bahnsteig	n	HF08	A1	a	0		v1	A1-12
+W-A1-0689	Gleis	n	HF08	A1	a	0		v1	A1-12
+W-A1-0690	Fahrkarte	n	HF08	A1	a	0		v1	A1-12
+W-A1-0691	Fahrschein	n	HF08	A1	a	0		v1	A1-12
+W-A1-0692	Fahrplan	n	HF08	A1	a	0		v1	A1-12
+W-A1-0693	abfahren	v	HF08	A1	a	0		v1	A1-12
+W-A1-0694	ankommen	v	HF08	A1	a	0		v1	A1-12
+W-A1-0695	einsteigen	v	HF08	A1	a	0		v1	A1-12
+W-A1-0696	aussteigen	v	HF08	A1	a	0		v1	A1-12
+W-A1-0697	umsteigen	v	HF08	A1	a	0		v1	A1-12
+W-A1-0698	Weg	n	HF08	A1	a	0		v1	A1-13
+W-A1-0699	Platz	n	HF08	A1	a	0		v1	A1-13
+W-A1-0700	Kreuzung	n	HF08	A1	a	0		v1	A1-13
+W-A1-0701	Ampel	n	HF08	A1	a	0		v1	A1-13
+W-A1-0702	Ecke	n	HF08	A1	a	0		v1	A1-13
+W-A1-0703	zu Fuß	phr	HF08	A1	a	0		v1	A1-13
+W-A1-0704	Verspätung	n	HF08	A1	a	0		v1	A1-12
+W-A1-0705	Reise	n	HF08	A1	a	0		v1	A1-18
+W-A1-0706	reisen	v	HF08	A1	a	0		v1	A1-18
+W-A1-0707	Abfahrt	n	HF08	A1	a	0		v1	A1-18
+W-A1-0708	Ankunft	n	HF08	A1	a	0		v1	A1-18
+W-A1-0709	Flughafen	n	HF08	A1	a	0		v1	A1-18
+W-A1-0710	fliegen	v	HF08	A1	a	0		v1	A1-18
+W-A1-0711	Gepäck	n	HF08	A1	a	0		v1	A1-18
+W-A1-0712	Koffer	n	HF08	A1	a	0		v1	A1-18
+W-A1-0713	Ausgang	n	HF08	A1	a	0		v1	A1-13
+W-A1-0714	Eingang	n	HF08	A1	a	0		v1	A1-13
+W-A1-0715	Autobahn	n	HF08	A1	p	0		v1	A1-18
+W-A1-0716	S-Bahn	n	HF08	A1	a	0		v1	A1-12
+W-A1-0717	Ticket	n	HF08	A1	a	0		v1	A1-12
+W-A1-0718	Auskunft	n	HF08	A1	a	0		v1	A1-12
+W-A1-0719	Durchsage	n	HF08	A1	a	0		v1	A1-12
+W-A1-0720	abholen	v	HF08	A1	a	0		v1	A1-12
+W-A1-0721	Automat	n	HF08	A1	a	0		v1	A1-12
+W-A1-0722	Zoll	n	HF08	A1	p	0		v1	A1-18
+W-A1-0723	Kindergarten	n	HF09	A1	a	0		v1	A1-20
+W-A1-0724	Schule	n	HF09	A1	a	0		v1	A1-20
+W-A1-0725	Volksschule	n	HF09	A1	a	1		v1	A1-20
+W-A1-0726	Klasse	n	HF09	A1	a	0		v1	A1-20
+W-A1-0727	Ferien	n	HF09	A1	a	0		v1	A1-20
+W-A1-0728	studieren	v	HF09	A1	a	0		v1	A1-20
+W-A1-0729	Studium	n	HF09	A1	p	0		v1	A1-20
+W-A1-0730	Freizeit	n	HF10	A1	a	0		v1	A1-16
+W-A1-0731	Sport	n	HF10	A1	a	0		v1	A1-16
+W-A1-0732	Fußball	n	HF10	A1	a	0		v1	A1-16
+W-A1-0733	schwimmen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0734	spielen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0735	tanzen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0736	singen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0737	Musik	n	HF10	A1	a	0		v1	A1-16
+W-A1-0738	Kino	n	HF10	A1	a	0		v1	A1-16
+W-A1-0739	Film	n	HF10	A1	a	0		v1	A1-16
+W-A1-0740	Fernseher	n	HF10	A1	a	0		v1	A1-16
+W-A1-0741	fernsehen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0742	Park	n	HF10	A1	a	0		v1	A1-16
+W-A1-0743	Party	n	HF10	A1	a	0		v1	A1-16
+W-A1-0744	Fest	n	HF10	A1	a	0		v1	A1-16
+W-A1-0745	Einladung	n	HF10	A1	a	0		v1	A1-16
+W-A1-0746	einladen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0747	besuchen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0748	treffen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0749	Spaß	n	HF10	A1	a	0		v1	A1-16
+W-A1-0750	Lust haben	phr	HF10	A1	a	0		v1	A1-16
+W-A1-0751	spazieren gehen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0752	Urlaub	n	HF10	A1	a	0		v1	A1-18
+W-A1-0753	Hotel	n	HF10	A1	a	0		v1	A1-18
+W-A1-0754	übernachten	v	HF10	A1	p	0		v1	A1-18
+W-A1-0755	Ausflug	n	HF10	A1	a	0		v1	A1-18
+W-A1-0756	Meer	n	HF10	A1	a	0		v1	A1-18
+W-A1-0757	See	n	HF10	A1	a	0		v1	A1-18
+W-A1-0758	Berg	n	HF10	A1	a	0		v1	A1-18
+W-A1-0759	wandern	v	HF10	A1	a	0		v1	A1-18
+W-A1-0760	Schwimmbad	n	HF10	A1	a	0		v1	A1-16
+W-A1-0761	Bad (Schwimmbad)	n	HF10	A1	p	1		v1	A1-16
+W-A1-0762	laufen	v	HF10	A1	a	0		v1	A1-16
+W-A1-0763	Rad fahren	v	HF10	A1	a	0		v1	A1-18
+W-A1-0764	Foto	n	HF10	A1	a	0		v1	A1-18
+W-A1-0765	Bild	n	HF10	A1	a	0		v1	A1-18
+W-A1-0766	Verein	n	HF10	A1	a	0		v1	A1-18
+W-A1-0767	Gruppe	n	HF10	A1	a	0		v1	A1-18
+W-A1-0768	mitmachen	v	HF10	A1	a	0		v1	A1-18
+W-A1-0769	Gast	n	HF10	A1	a	0		v1	A1-18
+W-A1-0770	Hund	n	HF10	A1	a	0		v1	A1-18
+W-A1-0771	Katze	n	HF10	A1	a	0		v1	A1-18
+W-A1-0772	Blume	n	HF10	A1	a	0		v1	A1-18
+W-A1-0773	Baum	n	HF10	A1	a	0		v1	A1-18
+W-A1-0774	gewinnen	v	HF10	A1	p	0		v1	A1-18
+W-A1-0775	Lied	n	HF10	A1	a	0		v1	A1-18
+W-A1-0776	Telefon	n	HF11	A1	a	0		v1	A1-10
+W-A1-0777	Handy	n	HF11	A1	a	0		v1	A1-10
+W-A1-0778	anrufen	v	HF11	A1	a	0		v1	A1-10
+W-A1-0779	telefonieren	v	HF11	A1	a	0		v1	A1-10
+W-A1-0780	Nachricht	n	HF11	A1	a	0		v1	A1-10
+W-A1-0781	Mobilbox	n	HF11	A1	a	1		v1	A1-10
+W-A1-0782	Anrufbeantworter	n	HF11	A1	p	0		v1	A1-10
+W-A1-0783	SMS	n	HF11	A1	a	1		v1	A1-10
+W-A1-0784	zurückrufen	v	HF11	A1	a	0		v1	A1-10
+W-A1-0785	absagen	v	HF11	A1	a	0		v1	A1-10
+W-A1-0786	Uhrzeit	n	HF11	A1	a	0		v1	A1-06
+W-A1-0787	pünktlich	adj	HF11	A1	a	0		v1	A1-06
+W-A1-0788	Ansage	n	HF11	A1	a	0		v1	A1-10
+W-A1-0789	besetzt	adj	HF11	A1	a	0		v1	A1-10
+W-A1-0790	Anruf	n	HF11	A1	a	0		v1	A1-10
+W-A1-0791	Vorwahl	n	HF11	A1	p	0		v1	A1-10
+W-A1-0792	Gruß	n	HF11	A1	a	0		v1	A1-10
+W-A1-0793	liebe/lieber (Anrede)	adj	HF11	A1	a	0		v1	A1-16
+W-A1-0794	null	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0795	eins	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0796	zwei	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0797	drei	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0798	vier	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0799	fünf	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0800	sechs	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0801	sieben	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0802	acht	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0803	neun	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0804	zehn	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0805	elf	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0806	zwölf	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0807	dreizehn	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0808	zwanzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0809	dreißig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0810	vierzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0811	fünfzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0812	sechzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0813	siebzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0814	achtzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0815	neunzig	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0816	hundert	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0817	tausend	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-02
+W-A1-0818	Million	num	HF12	A1	p	0	SET-ZAHLEN	v1	A1-02
+W-A1-0819	Zahl	n	HF12	A1	a	0		v1	A1-02
+W-A1-0820	Nummer	n	HF12	A1	a	0		v1	A1-02
+W-A1-0821	erst-	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-15
+W-A1-0822	zweit-	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-15
+W-A1-0823	dritt-	num	HF12	A1	a	0	SET-ZAHLEN	v1	A1-15
+W-A1-0824	Montag	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0825	Dienstag	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0826	Mittwoch	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0827	Donnerstag	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0828	Freitag	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0829	Samstag	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0830	Sonntag	n	HF12	A1	a	0	SET-WOCHENTAGE	v1	A1-06
+W-A1-0831	Jänner	n	HF12	A1	a	1	SET-MONATE	v1	A1-15
+W-A1-0832	Februar	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0833	März	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0834	April	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0835	Mai	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0836	Juni	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0837	Juli	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0838	August	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0839	September	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0840	Oktober	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0841	November	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0842	Dezember	n	HF12	A1	a	0	SET-MONATE	v1	A1-15
+W-A1-0843	Frühling	n	HF12	A1	a	0	SET-JAHRESZEITEN	v1	A1-17
+W-A1-0844	Sommer	n	HF12	A1	a	0	SET-JAHRESZEITEN	v1	A1-17
+W-A1-0845	Herbst	n	HF12	A1	a	0	SET-JAHRESZEITEN	v1	A1-17
+W-A1-0846	Winter	n	HF12	A1	a	0	SET-JAHRESZEITEN	v1	A1-17
+W-A1-0847	Uhr	n	HF12	A1	a	0		v1	A1-06
+W-A1-0848	Stunde	n	HF12	A1	a	0		v1	A1-06
+W-A1-0849	Minute	n	HF12	A1	a	0		v1	A1-06
+W-A1-0850	Sekunde	n	HF12	A1	p	0		v1	A1-06
+W-A1-0851	halb	adj	HF12	A1	a	0		v1	A1-06
+W-A1-0852	Viertel	n	HF12	A1	a	0		v1	A1-06
+W-A1-0853	Tag	n	HF12	A1	a	0		v1	A1-06
+W-A1-0854	Woche	n	HF12	A1	a	0		v1	A1-06
+W-A1-0855	Monat	n	HF12	A1	a	0		v1	A1-06
+W-A1-0856	Jahr	n	HF12	A1	a	0		v1	A1-06
+W-A1-0857	Wochenende	n	HF12	A1	a	0		v1	A1-06
+W-A1-0858	Morgen	n	HF12	A1	a	0		v1	A1-06
+W-A1-0859	Vormittag	n	HF12	A1	a	0		v1	A1-06
+W-A1-0860	Mittag	n	HF12	A1	a	0		v1	A1-06
+W-A1-0861	Nachmittag	n	HF12	A1	a	0		v1	A1-06
+W-A1-0862	Abend	n	HF12	A1	a	0		v1	A1-06
+W-A1-0863	Nacht	n	HF12	A1	a	0		v1	A1-06
+W-A1-0864	Datum	n	HF12	A1	a	0		v1	A1-15
+W-A1-0865	Zeit	n	HF12	A1	a	0		v1	A1-06
+W-A1-0866	Wetter	n	HF12	A1	a	0		v1	A1-17
+W-A1-0867	Sonne	n	HF12	A1	a	0		v1	A1-17
+W-A1-0868	Regen	n	HF12	A1	a	0		v1	A1-17
+W-A1-0869	regnen	v	HF12	A1	a	0		v1	A1-17
+W-A1-0870	Schnee	n	HF12	A1	a	0		v1	A1-17
+W-A1-0871	schneien	v	HF12	A1	p	0		v1	A1-17
+W-A1-0872	Wind	n	HF12	A1	a	0		v1	A1-17
+W-A1-0873	warm	adj	HF12	A1	a	0		v1	A1-17
+W-A1-0874	kalt	adj	HF12	A1	a	0		v1	A1-17
+W-A1-0875	heiß	adj	HF12	A1	a	0		v1	A1-17
+W-A1-0876	Grad	n	HF12	A1	a	0		v1	A1-17
+W-A1-0877	scheinen	v	HF12	A1	a	0		v1	A1-17
+W-A1-0878	Feiertag	n	HF13	A1	a	0		v1	A1-17
+W-A1-0879	Weihnachten	n	HF13	A1	a	0		v1	A1-17
+W-A1-0880	Ostern	n	HF13	A1	a	0		v1	A1-17
+W-A1-0881	Neujahr	n	HF13	A1	a	0		v1	A1-17
+W-A1-0882	Silvester	n	HF13	A1	a	0		v1	A1-17
+W-A1-0883	Geschenk	n	HF13	A1	a	0		v1	A1-17
+W-A1-0884	gratulieren	v	HF13	A1	a	0		v1	A1-17
+W-A1-0885	alles Gute	phr	HF13	A1	a	0		v1	A1-17
+W-A1-0886	feiern	v	HF13	A1	a	0		v1	A1-17
+W-A1-0887	Feier	n	HF13	A1	a	0		v1	A1-17
+W-A1-0888	Hochzeit	n	HF13	A1	a	0		v1	A1-17
+W-A1-0889	Glückwunsch	n	HF13	A1	a	0		v1	A1-17
+W-A1-0890	herzlich	adj	HF13	A1	a	0		v1	A1-17
+W-A1-0891	Notruf	n	HF14	A1	a	0		v1	A1-19
+W-A1-0892	Notfall	n	HF14	A1	a	0		v1	A1-19
+W-A1-0893	Hilfe	n	HF14	A1	a	0		v1	A1-19
+W-A1-0894	Polizei	n	HF14	A1	a	0		v1	A1-19
+W-A1-0895	Feuerwehr	n	HF14	A1	a	0		v1	A1-19
+W-A1-0896	Rettung	n	HF14	A1	a	1		v1	A1-19
+W-A1-0897	Unfall	n	HF14	A1	a	0		v1	A1-19
+W-A1-0898	Feuer	n	HF14	A1	a	0		v1	A1-19
+W-A1-0899	verletzt	adj	HF14	A1	a	0		v1	A1-19
+W-A1-0900	passieren	v	HF14	A1	a	0		v1	A1-19
+W-A1-0901	Zeitung	n	HF15	A1	a	0		v1	A1-20
+W-A1-0902	Computer	n	HF15	A1	a	0		v1	A1-20
+W-A1-0903	Internet	n	HF15	A1	a	0		v1	A1-20
+W-A1-0904	anklicken	v	HF15	A1	p	0		v1	A1-20
+W-A1-0905	drucken	v	HF15	A1	p	0		v1	A1-20
+W-A1-0906	Drucker	n	HF15	A1	p	0		v1	A1-20
+W-A2-0001	dass	konj	GW	A2	a	0		v1	A2-07
+W-A2-0002	ob	konj	GW	A2	a	0		v1	A2-09
+W-A2-0003	wenn	konj	GW	A2	a	0		v1	A2-08
+W-A2-0004	als	konj	GW	A2	a	0		v1	A2-17
+W-A2-0005	damit	konj	GW	A2	p	0		v1	A2-14
+W-A2-0006	deshalb	adv	GW	A2	a	0		v1	A2-06
+W-A2-0007	trotzdem	adv	GW	A2	a	0		v1	A2-06
+W-A2-0008	sondern	konj	GW	A2	a	0		v1	A2-15
+W-A2-0009	sowohl … als auch	konj	GW	A2	p	0		v1	A2-15
+W-A2-0010	entweder … oder	konj	GW	A2	p	0		v1	A2-15
+W-A2-0011	zuerst … dann … danach … zum Schluss	phr	GW	A2	a	0		v1	A2-06
+W-A2-0012	danach	adv	GW	A2	a	0		v1	A2-06
+W-A2-0013	vorher	adv	GW	A2	a	0		v1	A2-06
+W-A2-0014	nachher	adv	GW	A2	a	0		v1	A2-06
+W-A2-0015	inzwischen	adv	GW	A2	p	0		v1	A2-01
+W-A2-0016	endlich	adv	GW	A2	a	0		v1	A2-01
+W-A2-0017	plötzlich	adv	GW	A2	a	0		v1	A2-06
+W-A2-0018	sicher	adj	GW	A2	a	0		v1	A2-01
+W-A2-0019	wahrscheinlich	adv	GW	A2	a	0		v1	A2-01
+W-A2-0020	natürlich	adv	GW	A2	a	0		v1	A2-01
+W-A2-0021	eigentlich	adv	GW	A2	a	0		v1	A2-01
+W-A2-0022	besonders	adv	GW	A2	a	0		v1	A2-01
+W-A2-0023	ziemlich	adv	GW	A2	a	0		v1	A2-01
+W-A2-0024	fast	adv	GW	A2	a	0		v1	A2-01
+W-A2-0025	ganz	adv	GW	A2	a	0		v1	A2-01
+W-A2-0026	genau	adj	GW	A2	a	0		v1	A2-09
+W-A2-0027	selten	adv	GW	A2	a	0		v1	A2-01
+W-A2-0028	meistens	adv	GW	A2	a	0		v1	A2-01
+W-A2-0029	täglich	adj	GW	A2	a	0		v1	A2-01
+W-A2-0030	wöchentlich	adj	GW	A2	p	0		v1	A2-01
+W-A2-0031	monatlich	adj	GW	A2	a	0		v1	A2-01
+W-A2-0032	jährlich	adj	GW	A2	p	0		v1	A2-01
+W-A2-0033	pro	prep	GW	A2	a	0		v1	A2-04
+W-A2-0034	etwa	adv	GW	A2	a	0		v1	A2-01
+W-A2-0035	ungefähr	adv	GW	A2	a	0		v1	A2-01
+W-A2-0036	mindestens	adv	GW	A2	a	0		v1	A2-01
+W-A2-0037	höchstens	adv	GW	A2	p	0		v1	A2-02
+W-A2-0038	außerdem	adv	GW	A2	a	0		v1	A2-01
+W-A2-0039	zum Beispiel	phr	GW	A2	a	0		v1	A2-01
+W-A2-0040	irgendwann	adv	GW	A2	p	0		v1	A2-02
+W-A2-0041	überall	adv	GW	A2	a	0		v1	A2-01
+W-A2-0042	nirgends	adv	GW	A2	p	0		v1	A2-02
+W-A2-0043	drinnen	adv	GW	A2	a	0		v1	A2-02
+W-A2-0044	vorne	adv	GW	A2	a	0		v1	A2-02
+W-A2-0045	hinten	adv	GW	A2	a	0		v1	A2-02
+W-A2-0046	weg	adv	GW	A2	a	0		v1	A2-02
+W-A2-0047	während	prep	GW	A2	p	0		v1	A2-03
+W-A2-0048	wegen	prep	GW	A2	a	0		v1	A2-02
+W-A2-0049	gegen	prep	GW	A2	a	0		v1	A2-03
+W-A2-0050	durch	prep	GW	A2	a	0		v1	A2-12
+W-A2-0051	entlang	prep	GW	A2	p	0		v1	A2-12
+W-A2-0052	außer	prep	GW	A2	p	0		v1	A2-03
+W-A2-0053	innerhalb	prep	GW	A2	p	0		v1	A2-03
+W-A2-0054	selbst	pron	GW	A2	a	0		v1	A2-15
+W-A2-0055	einander	pron	GW	A2	p	0		v1	A2-15
+W-A2-0056	niemand	pron	GW	A2	a	0		v1	A2-15
+W-A2-0057	mancher	pron	GW	A2	p	0		v1	A2-15
+W-A2-0058	wessen	pron	GW	A2	p	0		v1	A2-04
+W-A2-0059	worüber	adv	GW	A2	p	0		v1	A2-08
+W-A2-0060	wofür	adv	GW	A2	p	0		v1	A2-08
+W-A2-0061	darüber	adv	GW	A2	a	0		v1	A2-08
+W-A2-0062	dafür	adv	GW	A2	a	0		v1	A2-08
+W-A2-0063	dabei	adv	GW	A2	p	0		v1	A2-08
+W-A2-0064	denken an	v	GW	A2	a	0		v1	A2-08
+W-A2-0065	warten auf	v	GW	A2	a	0		v1	A2-08
+W-A2-0066	sprechen über	v	GW	A2	a	0		v1	A2-08
+W-A2-0067	fragen nach	v	GW	A2	a	0		v1	A2-08
+W-A2-0068	freuen (sich) auf	v	GW	A2	a	0		v1	A2-08
+W-A2-0069	freuen (sich) über	v	GW	A2	a	0		v1	A2-08
+W-A2-0070	ärgern (sich) über	v	GW	A2	a	0		v1	A2-03
+W-A2-0071	interessieren (sich) für	v	GW	A2	a	0		v1	A2-08
+W-A2-0072	kümmern (sich) um	v	GW	A2	a	0		v1	A2-08
+W-A2-0073	erinnern (sich) an	v	GW	A2	a	0		v1	A2-08
+W-A2-0074	beschweren (sich) über	v	GW	A2	a	0		v1	A2-03
+W-A2-0075	entscheiden (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0076	fühlen (sich)	v	GW	A2	a	0		v1	A2-05
+W-A2-0077	setzen (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0078	treffen (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0079	beeilen (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0080	ausruhen (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0081	verabreden (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0082	verabschieden (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0083	unterhalten (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0084	gewöhnen (sich) an	v	GW	A2	a	0		v1	A2-08
+W-A2-0085	langweilen (sich)	v	GW	A2	p	0		v1	A2-04
+W-A2-0086	informieren (sich)	v	GW	A2	a	0		v1	A2-03
+W-A2-0087	vorstellen (sich etwas)	v	GW	A2	p	0		v1	A2-04
+W-A2-0088	ändern	v	GW	A2	a	0		v1	A2-03
+W-A2-0089	wechseln	v	GW	A2	a	0		v1	A2-03
+W-A2-0090	verändern (sich)	v	GW	A2	p	0		v1	A2-05
+W-A2-0091	entdecken	v	GW	A2	p	0		v1	A2-05
+W-A2-0092	erleben	v	GW	A2	a	0		v1	A2-01
+W-A2-0093	vergessen	v	GW	A2	a	0		v1	A2-04
+W-A2-0094	verlieren	v	GW	A2	a	0		v1	A2-03
+W-A2-0095	verpassen	v	GW	A2	a	0		v1	A2-04
+W-A2-0096	versuchen	v	GW	A2	a	0		v1	A2-03
+W-A2-0097	vorschlagen	v	GW	A2	a	0		v1	A2-03
+W-A2-0098	Vorschlag	n	GW	A2	a	0		v1	A2-03
+W-A2-0099	meinen	v	GW	A2	a	0		v1	A2-14
+W-A2-0100	Meinung	n	GW	A2	a	0		v1	A2-14
+W-A2-0101	hoffen	v	GW	A2	a	0		v1	A2-03
+W-A2-0102	wünschen	v	GW	A2	a	0		v1	A2-03
+W-A2-0103	Wunsch	n	GW	A2	a	0		v1	A2-04
+W-A2-0104	planen	v	GW	A2	a	0		v1	A2-04
+W-A2-0105	Plan	n	GW	A2	a	0		v1	A2-04
+W-A2-0106	Ziel	n	GW	A2	a	0		v1	A2-07
+W-A2-0107	erreichen	v	GW	A2	a	0		v1	A2-04
+W-A2-0108	schaffen	v	GW	A2	a	0		v1	A2-07
+W-A2-0109	klappen	v	GW	A2	a	0		v1	A2-04
+W-A2-0110	funktionieren	v	GW	A2	a	0		v1	A2-04
+W-A2-0111	stimmen	v	GW	A2	a	0		v1	A2-04
+W-A2-0112	dürfen nicht	phr	GW	A2	a	0		v1	A2-04
+W-A2-0113	berichten	v	GW	A2	p	0		v1	A2-14
+W-A2-0114	diskutieren	v	GW	A2	p	0		v1	A2-14
+W-A2-0115	bestätigen	v	GW	A2	a	0		v1	A2-04
+W-A2-0116	Bestätigung	n	GW	A2	a	0		v1	A2-04
+W-A2-0117	Bescheid geben	phr	GW	A2	a	0		v1	A2-04
+W-A2-0118	Bescheid wissen	phr	GW	A2	p	0		v1	A2-04
+W-A2-0119	kennen lernen	v	GW	A2	p	0		v1	A2-05
+W-A2-0120	teilnehmen	v	GW	A2	a	0		v1	A2-04
+W-A2-0121	stattfinden	v	GW	A2	a	0		v1	A2-04
+W-A2-0122	aufpassen	v	GW	A2	a	0		v1	A2-04
+W-A2-0123	ausgeben	v	GW	A2	a	0		v1	A2-04
+W-A2-0124	leihen	v	GW	A2	a	0		v1	A2-04
+W-A2-0125	borgen	v	GW	A2	p	0		v1	A2-06
+W-A2-0126	tragen	v	GW	A2	a	0		v1	A2-04
+W-A2-0127	ziehen	v	GW	A2	a	0		v1	A2-04
+W-A2-0128	drücken	v	GW	A2	a	0		v1	A2-04
+W-A2-0129	werfen	v	GW	A2	a	0		v1	A2-04
+W-A2-0130	fallen	v	GW	A2	a	0		v1	A2-06
+W-A2-0131	steigen	v	GW	A2	p	0		v1	A2-06
+W-A2-0132	sinken	v	GW	A2	p	0		v1	A2-06
+W-A2-0133	wachsen	v	GW	A2	p	0		v1	A2-07
+W-A2-0134	sterben	v	GW	A2	a	0		v1	A2-06
+W-A2-0135	riechen	v	GW	A2	a	0		v1	A2-05
+W-A2-0136	füllen	v	GW	A2	p	0		v1	A2-07
+W-A2-0137	schneiden	v	GW	A2	a	0		v1	A2-04
+W-A2-0138	verstecken	v	GW	A2	p	0		v1	A2-08
+W-A2-0139	weinen	v	GW	A2	a	0		v1	A2-04
+W-A2-0140	lächeln	v	GW	A2	p	0		v1	A2-08
+W-A2-0141	streiten	v	GW	A2	a	0		v1	A2-04
+W-A2-0142	Streit	n	GW	A2	a	0		v1	A2-05
+W-A2-0143	Angst	n	GW	A2	a	0		v1	A2-01
+W-A2-0144	Sorge	n	GW	A2	a	0		v1	A2-01
+W-A2-0145	Gefühl	n	GW	A2	a	0		v1	A2-01
+W-A2-0146	Liebe	n	GW	A2	a	0		v1	A2-01
+W-A2-0147	Freude	n	GW	A2	a	0		v1	A2-01
+W-A2-0148	Erfahrung	n	GW	A2	a	0		v1	A2-01
+W-A2-0149	Erfolg	n	GW	A2	a	0		v1	A2-07
+W-A2-0150	Möglichkeit	n	GW	A2	a	0		v1	A2-07
+W-A2-0151	Grund	n	GW	A2	a	0		v1	A2-05
+W-A2-0152	Ursache	n	GW	A2	p	0		v1	A2-08
+W-A2-0153	Ergebnis	n	GW	A2	a	0		v1	A2-14
+W-A2-0154	Unterschied	n	GW	A2	a	0		v1	A2-05
+W-A2-0155	Situation	n	GW	A2	a	0		v1	A2-05
+W-A2-0156	Sache	n	GW	A2	a	0		v1	A2-05
+W-A2-0157	Ding	n	GW	A2	a	0		v1	A2-05
+W-A2-0158	Art	n	GW	A2	p	0		v1	A2-09
+W-A2-0159	Form	n	GW	A2	p	0		v1	A2-09
+W-A2-0160	Mal	n	GW	A2	a	0		v1	A2-05
+W-A2-0161	Hälfte	n	GW	A2	a	0		v1	A2-14
+W-A2-0162	Prozent	n	GW	A2	a	0		v1	A2-14
+W-A2-0163	Meter	n	GW	A2	a	0		v1	A2-12
+W-A2-0164	Kilometer	n	GW	A2	a	0		v1	A2-12
+W-A2-0165	Zentimeter	n	GW	A2	p	0		v1	A2-12
+W-A2-0166	ähnlich	adj	GW	A2	p	0		v1	A2-02
+W-A2-0167	anders	adj	GW	A2	a	0		v1	A2-02
+W-A2-0168	verschieden	adj	GW	A2	a	0		v1	A2-02
+W-A2-0169	gleich (identisch)	adj	GW	A2	a	0		v1	A2-02
+W-A2-0170	bequem	adj	GW	A2	a	0		v1	A2-02
+W-A2-0171	praktisch	adj	GW	A2	a	0		v1	A2-02
+W-A2-0172	sauber	adj	GW	A2	a	0		v1	A2-03
+W-A2-0173	schmutzig	adj	GW	A2	a	0		v1	A2-03
+W-A2-0174	voll	adj	GW	A2	a	0		v1	A2-05
+W-A2-0175	leer	adj	GW	A2	a	0		v1	A2-06
+W-A2-0176	dick	adj	GW	A2	a	0		v1	A2-06
+W-A2-0177	dünn	adj	GW	A2	a	0		v1	A2-06
+W-A2-0178	schlank	adj	GW	A2	p	0		v1	A2-09
+W-A2-0179	hübsch	adj	GW	A2	a	0		v1	A2-06
+W-A2-0180	hässlich	adj	GW	A2	p	0		v1	A2-10
+W-A2-0181	stark	adj	GW	A2	a	0		v1	A2-06
+W-A2-0182	schwach	adj	GW	A2	a	0		v1	A2-06
+W-A2-0183	nett	adj	GW	A2	a	0		v1	A2-06
+W-A2-0184	freundlich	adj	GW	A2	a	0		v1	A2-06
+W-A2-0185	unfreundlich	adj	GW	A2	a	0		v1	A2-06
+W-A2-0186	höflich	adj	GW	A2	a	0		v1	A2-07
+W-A2-0187	ehrlich	adj	GW	A2	p	0		v1	A2-10
+W-A2-0188	fleißig	adj	GW	A2	a	0		v1	A2-07
+W-A2-0189	faul	adj	GW	A2	p	0		v1	A2-10
+W-A2-0190	nervös	adj	GW	A2	a	0		v1	A2-01
+W-A2-0191	ruhig (Person)	adj	GW	A2	a	0		v1	A2-07
+W-A2-0192	böse	adj	GW	A2	a	0		v1	A2-01
+W-A2-0193	wütend	adj	GW	A2	p	0		v1	A2-01
+W-A2-0194	unzufrieden	adj	GW	A2	p	0		v1	A2-01
+W-A2-0195	überrascht	adj	GW	A2	p	0		v1	A2-01
+W-A2-0196	interessant	adj	GW	A2	a	0		v1	A2-07
+W-A2-0197	langweilig	adj	GW	A2	a	0		v1	A2-07
+W-A2-0198	gefährlich	adj	GW	A2	a	0		v1	A2-06
+W-A2-0199	notwendig	adj	GW	A2	p	0		v1	A2-11
+W-A2-0200	nötig	adj	GW	A2	a	0		v1	A2-07
+W-A2-0201	unbedingt	adv	GW	A2	a	0		v1	A2-07
+W-A2-0202	fremdsprachig	adj	GW	A2	p	0		v1	A2-11
+W-A2-0203	privat	adj	GW	A2	a	0		v1	A2-07
+W-A2-0204	öffentlich	adj	GW	A2	a	0		v1	A2-07
+W-A2-0205	persönlich	adj	GW	A2	a	0		v1	A2-09
+W-A2-0206	kostenlos	adj	GW	A2	a	0		v1	A2-07
+W-A2-0207	gratis	adj	GW	A2	a	0		v1	A2-07
+W-A2-0208	fertig machen	v	GW	A2	p	0		v1	A2-11
+W-A2-0209	zuletzt	adv	GW	A2	p	0		v1	A2-12
+W-A2-0210	erste/r/s Mal	phr	GW	A2	a	0		v1	A2-07
+W-A2-0211	bisher	adv	GW	A2	p	0		v1	A2-01
+W-A2-0212	seitdem	adv	GW	A2	p	0		v1	A2-01
+W-A2-0213	Vergangenheit	n	GW	A2	p	0		v1	A2-01
+W-A2-0214	Zukunft	n	GW	A2	a	0		v1	A2-01
+W-A2-0215	Gegenwart	n	GW	A2	p	0		v1	A2-01
+W-A2-0216	Norden	n	GW	A2	a	0	SET-HIMMELSRICHTUNGEN	v1	A2-12
+W-A2-0217	Süden	n	GW	A2	a	0	SET-HIMMELSRICHTUNGEN	v1	A2-12
+W-A2-0218	Osten	n	GW	A2	a	0	SET-HIMMELSRICHTUNGEN	v1	A2-12
+W-A2-0219	Westen	n	GW	A2	a	0	SET-HIMMELSRICHTUNGEN	v1	A2-12
+W-A2-0220	Idee	n	GW	A2	a	0		v1	A2-07
+W-A2-0221	Ahnung	n	GW	A2	a	0		v1	A2-07
+W-A2-0222	Tipp	n	GW	A2	a	0		v1	A2-07
+W-A2-0223	Interesse	n	GW	A2	a	0		v1	A2-15
+W-A2-0224	Person	n	GW	A2	a	0		v1	A2-07
+W-A2-0225	Menge	n	GW	A2	a	0		v1	A2-07
+W-A2-0226	Rest	n	GW	A2	a	0		v1	A2-07
+W-A2-0227	Gegenteil	n	GW	A2	a	0		v1	A2-07
+W-A2-0228	Stress	n	GW	A2	a	0		v1	A2-07
+W-A2-0229	stressig	adj	GW	A2	a	0		v1	A2-07
+W-A2-0230	Traum	n	GW	A2	a	0		v1	A2-09
+W-A2-0231	träumen	v	GW	A2	a	0		v1	A2-09
+W-A2-0232	Witz	n	GW	A2	a	0		v1	A2-09
+W-A2-0233	witzig	adj	GW	A2	a	0		v1	A2-09
+W-A2-0234	komisch	adj	GW	A2	a	0		v1	A2-09
+W-A2-0235	klug	adj	GW	A2	a	0		v1	A2-09
+W-A2-0236	intelligent	adj	GW	A2	p	0		v1	A2-12
+W-A2-0237	sympathisch	adj	GW	A2	a	0		v1	A2-09
+W-A2-0238	typisch	adj	GW	A2	a	0		v1	A2-09
+W-A2-0239	berühmt	adj	GW	A2	a	0		v1	A2-09
+W-A2-0240	beliebt	adj	GW	A2	a	0		v1	A2-09
+W-A2-0241	spannend	adj	GW	A2	a	0		v1	A2-09
+W-A2-0242	furchtbar	adj	GW	A2	a	0		v1	A2-10
+W-A2-0243	schrecklich	adj	GW	A2	a	0		v1	A2-10
+W-A2-0244	schlimm	adj	GW	A2	a	0		v1	A2-10
+W-A2-0245	fantastisch	adj	GW	A2	p	0		v1	A2-12
+W-A2-0246	schade	adj	GW	A2	a	0		v1	A2-10
+W-A2-0247	egal	adj	GW	A2	a	0		v1	A2-10
+W-A2-0248	einverstanden	adj	GW	A2	a	0		v1	A2-10
+W-A2-0249	schwierig	adj	GW	A2	a	0		v1	A2-10
+W-A2-0250	dringend	adj	GW	A2	a	0		v1	A2-06
+W-A2-0251	deutlich	adj	GW	A2	a	0		v1	A2-09
+W-A2-0252	direkt	adj	GW	A2	a	0		v1	A2-10
+W-A2-0253	modern	adj	GW	A2	a	0		v1	A2-10
+W-A2-0254	nützlich	adj	GW	A2	p	0		v1	A2-13
+W-A2-0255	streng	adj	GW	A2	p	0		v1	A2-13
+W-A2-0256	vorsichtig	adj	GW	A2	a	0		v1	A2-06
+W-A2-0257	wach	adj	GW	A2	a	0		v1	A2-10
+W-A2-0258	nass	adj	GW	A2	a	0		v1	A2-10
+W-A2-0259	trocken	adj	GW	A2	a	0		v1	A2-10
+W-A2-0260	hart	adj	GW	A2	a	0		v1	A2-10
+W-A2-0261	weich	adj	GW	A2	a	0		v1	A2-10
+W-A2-0262	tief	adj	GW	A2	p	0		v1	A2-14
+W-A2-0263	eng	adj	GW	A2	a	0		v1	A2-10
+W-A2-0264	bunt	adj	GW	A2	a	0		v1	A2-10
+W-A2-0265	reich	adj	GW	A2	p	0		v1	A2-14
+W-A2-0266	arm	adj	GW	A2	a	0		v1	A2-10
+W-A2-0267	tot	adj	GW	A2	p	0		v1	A2-14
+W-A2-0268	wahr	adj	GW	A2	a	0		v1	A2-10
+W-A2-0269	wirklich	adv	GW	A2	a	0		v1	A2-10
+W-A2-0270	sogar	adv	GW	A2	a	0		v1	A2-10
+W-A2-0271	sonst	adv	GW	A2	a	0		v1	A2-10
+W-A2-0272	hoffentlich	adv	GW	A2	a	0		v1	A2-11
+W-A2-0273	damals	adv	GW	A2	a	0		v1	A2-01
+W-A2-0274	wenigstens	adv	GW	A2	p	0		v1	A2-15
+W-A2-0275	echt	adj	GW	A2	a	0		v1	A2-11
+W-A2-0276	total	adv	GW	A2	p	0		v1	A2-15
+W-A2-0277	vorbei	adv	GW	A2	a	0		v1	A2-11
+W-A2-0278	unterwegs	adv	GW	A2	a	0		v1	A2-12
+W-A2-0279	drüben	adv	GW	A2	p	0		v1	A2-15
+W-A2-0280	Nähe	n	GW	A2	a	0		v1	A2-12
+W-A2-0281	außerhalb	prep	GW	A2	p	0		v1	A2-16
+W-A2-0282	lassen	v	GW	A2	a	0		v1	A2-12
+W-A2-0283	nennen	v	GW	A2	a	0		v1	A2-12
+W-A2-0284	rufen	v	GW	A2	a	0		v1	A2-12
+W-A2-0285	reden	v	GW	A2	a	0		v1	A2-12
+W-A2-0286	rechnen	v	GW	A2	a	0		v1	A2-13
+W-A2-0287	prüfen	v	GW	A2	a	0		v1	A2-13
+W-A2-0288	kontrollieren	v	GW	A2	a	0		v1	A2-13
+W-A2-0289	probieren	v	GW	A2	a	0		v1	A2-13
+W-A2-0290	merken (sich)	v	GW	A2	a	0		v1	A2-13
+W-A2-0291	aufmachen	v	GW	A2	a	0		v1	A2-13
+W-A2-0292	zumachen	v	GW	A2	a	0		v1	A2-13
+W-A2-0293	hängen	v	GW	A2	a	0		v1	A2-03
+W-A2-0294	einpacken	v	GW	A2	a	0		v1	A2-13
+W-A2-0295	auspacken	v	GW	A2	p	0		v1	A2-16
+W-A2-0296	organisieren	v	GW	A2	a	0		v1	A2-13
+W-A2-0297	lügen	v	GW	A2	p	0		v1	A2-16
+W-A2-0298	schimpfen	v	GW	A2	p	0		v1	A2-17
+W-A2-0299	anmelden (sich) für	v	HF00	A2	a	0		v1	A2-14
+W-A2-0300	vorbereiten (sich) auf	v	HF00	A2	a	0		v1	A2-14
+W-A2-0301	beschreiben	v	HF00	A2	a	0		v1	A2-14
+W-A2-0302	vergleichen	v	HF00	A2	a	0		v1	A2-14
+W-A2-0303	Teilnehmer, Teilnehmerin	n	HF00	A2	a	0		v1	A2-14
+W-A2-0304	Anmeldung	n	HF00	A2	a	0		v1	A2-14
+W-A2-0305	Kursbeginn	n	HF00	A2	a	0		v1	A2-14
+W-A2-0306	Kursgebühr	n	HF00	A2	a	0		v1	A2-14
+W-A2-0307	Stufe	n	HF00	A2	p	0		v1	A2-19
+W-A2-0308	Niveau	n	HF00	A2	a	0		v1	A2-19
+W-A2-0309	Zertifikat	n	HF00	A2	a	0		v1	A2-19
+W-A2-0310	Zeugnis	n	HF00	A2	a	0		v1	A2-14
+W-A2-0311	bestehen	v	HF00	A2	a	0		v1	A2-19
+W-A2-0312	durchfallen	v	HF00	A2	p	0		v1	A2-19
+W-A2-0313	Punkt	n	HF00	A2	a	0		v1	A2-19
+W-A2-0314	Leitpunkt	n	HF00	A2	a	0		v1	A2-14
+W-A2-0315	Lückentext	n	HF00	A2	p	0		v1	A2-14
+W-A2-0316	Lücke	n	HF00	A2	a	0		v1	A2-14
+W-A2-0317	passend	adj	HF00	A2	a	0		v1	A2-14
+W-A2-0318	Wörterbuch	n	HF00	A2	a	0		v1	A2-14
+W-A2-0319	Bedeutung	n	HF00	A2	a	0		v1	A2-14
+W-A2-0320	Aussprache	n	HF00	A2	a	0		v1	A2-14
+W-A2-0321	Grammatik	n	HF00	A2	p	0		v1	A2-14
+W-A2-0322	Weiterbildung	n	HF00	A2	a	0		v1	A2-14
+W-A2-0323	Volkshochschule	n	HF00	A2	a	0		v1	A2-14
+W-A2-0324	Trainer, Trainerin	n	HF00	A2	a	0		v1	A2-14
+W-A2-0325	Kursleiter, Kursleiterin	n	HF00	A2	a	0		v1	A2-14
+W-A2-0326	Integrationsprüfung	n	HF00	A2	a	0		v1	A2-19
+W-A2-0327	notieren	v	HF00	A2	a	0		v1	A2-14
+W-A2-0328	Notiz	n	HF00	A2	a	0		v1	A2-14
+W-A2-0329	Zettel	n	HF00	A2	a	0		v1	A2-14
+W-A2-0330	beantworten	v	HF00	A2	a	0		v1	A2-14
+W-A2-0331	begründen	v	HF00	A2	a	0		v1	A2-19
+W-A2-0332	aussprechen	v	HF00	A2	a	0		v1	A2-14
+W-A2-0333	übersetzen	v	HF00	A2	a	0		v1	A2-14
+W-A2-0334	Übersetzung	n	HF00	A2	a	0		v1	A2-14
+W-A2-0335	schriftlich	adj	HF00	A2	a	0		v1	A2-09
+W-A2-0336	mündlich	adj	HF00	A2	a	0		v1	A2-09
+W-A2-0337	Workshop	n	HF00	A2	p	0		v1	A2-14
+W-A2-0338	Jugend	n	HF01	A2	p	0		v1	A2-01
+W-A2-0339	Kindheit	n	HF01	A2	a	0		v1	A2-01
+W-A2-0340	Leben	n	HF01	A2	a	0		v1	A2-01
+W-A2-0341	verlieben (sich)	v	HF01	A2	a	0		v1	A2-01
+W-A2-0342	Ehepartner, Ehepartnerin	n	HF01	A2	a	0		v1	A2-01
+W-A2-0343	Großmutter	n	HF01	A2	a	0		v1	A2-01
+W-A2-0344	Großvater	n	HF01	A2	a	0		v1	A2-01
+W-A2-0345	Enkel, Enkelin	n	HF01	A2	a	0		v1	A2-01
+W-A2-0346	Onkel	n	HF01	A2	a	0		v1	A2-01
+W-A2-0347	Tante	n	HF01	A2	a	0		v1	A2-01
+W-A2-0348	Cousin, Cousine	n	HF01	A2	p	0		v1	A2-01
+W-A2-0349	Schwiegereltern	n	HF01	A2	p	0		v1	A2-01
+W-A2-0350	Umwelt	n	HF02	A2	a	0		v1	A2-02
+W-A2-0351	Land (ländlich)	n	HF02	A2	a	0		v1	A2-02
+W-A2-0352	Gegend	n	HF02	A2	a	0		v1	A2-02
+W-A2-0353	Zentrum	n	HF02	A2	a	0		v1	A2-02
+W-A2-0354	Stadtteil	n	HF02	A2	a	0		v1	A2-02
+W-A2-0355	Mietvertrag	n	HF02	A2	a	0		v1	A2-02
+W-A2-0356	Kaution	n	HF02	A2	a	0		v1	A2-02
+W-A2-0357	Betriebskosten	n	HF02	A2	a	1		v1	A2-02
+W-A2-0358	Hausverwaltung	n	HF02	A2	a	0		v1	A2-02
+W-A2-0359	Hausbesorger, Hausbesorgerin	n	HF02	A2	p	1		v1	A2-02
+W-A2-0360	Hausmeister, Hausmeisterin	n	HF02	A2	a	0		v1	A2-02
+W-A2-0361	Mieter, Mieterin	n	HF02	A2	a	0		v1	A2-02
+W-A2-0362	Eigentum	n	HF02	A2	a	0		v1	A2-02
+W-A2-0363	Eigentumswohnung	n	HF02	A2	p	0		v1	A2-02
+W-A2-0364	Gemeindewohnung	n	HF02	A2	p	1		v1	A2-02
+W-A2-0365	Wohngemeinschaft (WG)	n	HF02	A2	p	0		v1	A2-02
+W-A2-0366	Altbau	n	HF02	A2	p	0		v1	A2-02
+W-A2-0367	Neubau	n	HF02	A2	p	0		v1	A2-02
+W-A2-0368	möbliert	adj	HF02	A2	a	0		v1	A2-02
+W-A2-0369	inklusive	prep	HF02	A2	a	0		v1	A2-02
+W-A2-0370	Heizung	n	HF02	A2	a	0		v1	A2-02
+W-A2-0371	heizen	v	HF02	A2	a	0		v1	A2-02
+W-A2-0372	Strom	n	HF02	A2	a	0		v1	A2-02
+W-A2-0373	Gas	n	HF02	A2	a	0		v1	A2-02
+W-A2-0374	Keller	n	HF02	A2	a	0		v1	A2-02
+W-A2-0375	Dachboden	n	HF02	A2	p	0		v1	A2-02
+W-A2-0376	Gang	n	HF02	A2	a	1		v1	A2-02
+W-A2-0377	Vorzimmer	n	HF02	A2	a	1		v1	A2-02
+W-A2-0378	Hof	n	HF02	A2	a	0		v1	A2-02
+W-A2-0379	Stiegenhaus	n	HF02	A2	a	1		v1	A2-02
+W-A2-0380	Garage	n	HF02	A2	a	0		v1	A2-02
+W-A2-0381	Parkplatz	n	HF02	A2	a	0		v1	A2-02
+W-A2-0382	Klingel	n	HF02	A2	a	0		v1	A2-02
+W-A2-0383	läuten	v	HF02	A2	a	1		v1	A2-02
+W-A2-0384	Briefkasten	n	HF02	A2	a	0		v1	A2-02
+W-A2-0385	Steckdose	n	HF02	A2	p	0		v1	A2-02
+W-A2-0386	Wasserhahn	n	HF02	A2	p	0		v1	A2-02
+W-A2-0387	Dusche (kaputt)	phr	HF02	A2	p	0		v1	A2-02
+W-A2-0388	Schimmel	n	HF02	A2	p	0		v1	A2-02
+W-A2-0389	Lärm	n	HF02	A2	a	0		v1	A2-03
+W-A2-0390	stören	v	HF02	A2	a	0		v1	A2-03
+W-A2-0391	Nachtruhe	n	HF02	A2	a	0		v1	A2-03
+W-A2-0392	Rücksicht	n	HF02	A2	a	0		v1	A2-03
+W-A2-0393	Mülltrennung	n	HF02	A2	a	0		v1	A2-03
+W-A2-0394	trennen	v	HF02	A2	a	0		v1	A2-03
+W-A2-0395	Restmüll	n	HF02	A2	a	0	SET-MUELL	v1	A2-03
+W-A2-0396	Biomüll	n	HF02	A2	a	0	SET-MUELL	v1	A2-03
+W-A2-0397	Altpapier	n	HF02	A2	a	0	SET-MUELL	v1	A2-03
+W-A2-0398	Altglas	n	HF02	A2	a	0	SET-MUELL	v1	A2-03
+W-A2-0399	Plastik	n	HF02	A2	a	0	SET-MUELL	v1	A2-03
+W-A2-0400	Sperrmüll	n	HF02	A2	a	0	SET-MUELL	v1	A2-03
+W-A2-0401	Mistplatz	n	HF02	A2	a	1		v1	A2-03
+W-A2-0402	Container	n	HF02	A2	a	0		v1	A2-03
+W-A2-0403	Wohnungsanzeige	n	HF02	A2	a	0		v1	A2-02
+W-A2-0404	Besichtigung	n	HF02	A2	a	0		v1	A2-02
+W-A2-0405	besichtigen	v	HF02	A2	a	0		v1	A2-02
+W-A2-0406	Umzug	n	HF02	A2	a	0		v1	A2-02
+W-A2-0407	Nachbarschaft	n	HF02	A2	a	0		v1	A2-03
+W-A2-0408	nebenan	adv	HF02	A2	a	0		v1	A2-03
+W-A2-0409	Geschirr	n	HF02	A2	a	0		v1	A2-03
+W-A2-0410	Geschirrspüler	n	HF02	A2	p	0		v1	A2-03
+W-A2-0411	abwaschen	v	HF02	A2	a	0		v1	A2-03
+W-A2-0412	Wäsche	n	HF02	A2	a	0		v1	A2-03
+W-A2-0413	Haushalt	n	HF02	A2	a	0		v1	A2-03
+W-A2-0414	aufräumen	v	HF02	A2	a	0		v1	A2-03
+W-A2-0415	wecken	v	HF02	A2	a	0		v1	A2-03
+W-A2-0416	Wecker	n	HF02	A2	a	0		v1	A2-03
+W-A2-0417	renovieren	v	HF02	A2	p	0		v1	A2-03
+W-A2-0418	Stockwerk	n	HF02	A2	a	0		v1	A2-03
+W-A2-0419	Lebensmittel	n	HF03	A2	a	0		v1	A2-11
+W-A2-0420	Bio-	pref	HF03	A2	a	0		v1	A2-11
+W-A2-0421	Fleischhauer	n	HF03	A2	a	1		v1	A2-11
+W-A2-0422	Konditorei	n	HF03	A2	p	0		v1	A2-11
+W-A2-0423	Trafik	n	HF03	A2	a	1		v1	A2-11
+W-A2-0424	Drogerie	n	HF03	A2	a	0		v1	A2-11
+W-A2-0425	Kaufhaus	n	HF03	A2	a	0		v1	A2-11
+W-A2-0426	Einkaufszentrum	n	HF03	A2	a	0		v1	A2-11
+W-A2-0427	Rabatt	n	HF03	A2	a	0		v1	A2-11
+W-A2-0428	Aktion	n	HF03	A2	a	1		v1	A2-11
+W-A2-0429	Kassabon	n	HF03	A2	a	1		v1	A2-11
+W-A2-0430	Garantie	n	HF03	A2	a	0		v1	A2-11
+W-A2-0431	umtauschen	v	HF03	A2	a	0		v1	A2-11
+W-A2-0432	zurückgeben	v	HF03	A2	a	0		v1	A2-11
+W-A2-0433	reklamieren	v	HF03	A2	a	0		v1	A2-11
+W-A2-0434	Reklamation	n	HF03	A2	p	0		v1	A2-11
+W-A2-0435	anprobieren	v	HF03	A2	a	0		v1	A2-11
+W-A2-0436	Umkleidekabine	n	HF03	A2	p	0		v1	A2-11
+W-A2-0437	Farbe (Kleidung)	n	HF03	A2	p	0		v1	A2-11
+W-A2-0438	Pullover	n	HF03	A2	a	0		v1	A2-11
+W-A2-0439	Mantel	n	HF03	A2	a	0		v1	A2-11
+W-A2-0440	Rock	n	HF03	A2	a	0		v1	A2-11
+W-A2-0441	Bluse	n	HF03	A2	a	0		v1	A2-11
+W-A2-0442	Socke	n	HF03	A2	a	0		v1	A2-11
+W-A2-0443	Stiefel	n	HF03	A2	p	0		v1	A2-11
+W-A2-0444	Mütze	n	HF03	A2	a	0		v1	A2-11
+W-A2-0445	Haube	n	HF03	A2	p	1		v1	A2-11
+W-A2-0446	Handschuh	n	HF03	A2	p	0		v1	A2-11
+W-A2-0447	Brille	n	HF03	A2	a	0		v1	A2-11
+W-A2-0448	Kosmetik	n	HF03	A2	p	0		v1	A2-11
+W-A2-0449	Seife	n	HF03	A2	a	0		v1	A2-11
+W-A2-0450	Zahnbürste	n	HF03	A2	a	0		v1	A2-11
+W-A2-0451	Handtuch	n	HF03	A2	a	0		v1	A2-11
+W-A2-0452	Kartoffel	n	HF03	A2	p	0		v1	A2-17
+W-A2-0453	Karfiol	n	HF03	A2	p	1		v1	A2-17
+W-A2-0454	Fisolen	n	HF03	A2	p	1		v1	A2-17
+W-A2-0455	Kraut	n	HF03	A2	p	1		v1	A2-17
+W-A2-0456	Kren	n	HF03	A2	p	1		v1	A2-17
+W-A2-0457	Schwammerl	n	HF03	A2	p	1		v1	A2-17
+W-A2-0458	Zwetschke	n	HF03	A2	p	1		v1	A2-17
+W-A2-0459	Ribisel	n	HF03	A2	p	1		v1	A2-17
+W-A2-0460	Weichsel	n	HF03	A2	p	1		v1	A2-17
+W-A2-0461	Melanzani	n	HF03	A2	p	1		v1	A2-17
+W-A2-0462	Kohlsprossen	n	HF03	A2	p	1		v1	A2-17
+W-A2-0463	Vogerlsalat	n	HF03	A2	p	1		v1	A2-17
+W-A2-0464	Häuptelsalat	n	HF03	A2	p	1		v1	A2-17
+W-A2-0465	Schlagobers	n	HF03	A2	p	1		v1	A2-17
+W-A2-0466	Sauerrahm	n	HF03	A2	p	1		v1	A2-17
+W-A2-0467	Palatschinke	n	HF03	A2	p	1		v1	A2-17
+W-A2-0468	Kipferl	n	HF03	A2	p	1		v1	A2-17
+W-A2-0469	Krapfen	n	HF03	A2	p	1		v1	A2-17
+W-A2-0470	Eierspeise	n	HF03	A2	p	1		v1	A2-17
+W-A2-0471	Zuckerl	n	HF03	A2	p	1		v1	A2-17
+W-A2-0472	Germ	n	HF03	A2	p	1		v1	A2-17
+W-A2-0473	Staubzucker	n	HF03	A2	p	1		v1	A2-17
+W-A2-0474	Semmelbrösel	n	HF03	A2	p	1		v1	A2-17
+W-A2-0475	Gewürz	n	HF03	A2	a	0		v1	A2-17
+W-A2-0476	Pfeffer	n	HF03	A2	a	0		v1	A2-17
+W-A2-0477	Essig	n	HF03	A2	p	0		v1	A2-17
+W-A2-0478	Mehl	n	HF03	A2	a	0		v1	A2-17
+W-A2-0479	Suppe	n	HF03	A2	a	0		v1	A2-17
+W-A2-0480	Schnitzel	n	HF03	A2	a	0		v1	A2-17
+W-A2-0481	Vorspeise	n	HF03	A2	a	0		v1	A2-11
+W-A2-0482	Hauptspeise	n	HF03	A2	a	1		v1	A2-11
+W-A2-0483	Nachspeise	n	HF03	A2	a	1		v1	A2-11
+W-A2-0484	Mehlspeise	n	HF03	A2	p	1		v1	A2-11
+W-A2-0485	Jause	n	HF03	A2	a	1		v1	A2-11
+W-A2-0486	Gabel	n	HF03	A2	a	0		v1	A2-17
+W-A2-0487	Messer	n	HF03	A2	a	0		v1	A2-17
+W-A2-0488	Löffel	n	HF03	A2	a	0		v1	A2-17
+W-A2-0489	Topf	n	HF03	A2	a	0		v1	A2-17
+W-A2-0490	Pfanne	n	HF03	A2	a	0		v1	A2-17
+W-A2-0491	braten	v	HF03	A2	a	0		v1	A2-17
+W-A2-0492	backen	v	HF03	A2	a	0		v1	A2-17
+W-A2-0493	Rezept (Kochen)	n	HF03	A2	p	0		v1	A2-17
+W-A2-0494	satt	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0495	scharf	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0496	süß	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0497	sauer	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0498	salzig	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0499	frisch	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0500	vegetarisch	adj	HF03	A2	a	0		v1	A2-17
+W-A2-0501	Trinkgeld	n	HF03	A2	a	0		v1	A2-11
+W-A2-0502	reservieren	v	HF03	A2	a	0		v1	A2-11
+W-A2-0503	Reservierung	n	HF03	A2	a	0		v1	A2-11
+W-A2-0504	Qualität	n	HF03	A2	p	0		v1	A2-11
+W-A2-0505	Produkt	n	HF03	A2	p	0		v1	A2-11
+W-A2-0506	Geldbörse	n	HF03	A2	a	1		v1	A2-11
+W-A2-0507	Schirm	n	HF03	A2	a	0		v1	A2-11
+W-A2-0508	Mineralwasser	n	HF03	A2	a	0		v1	A2-17
+W-A2-0509	Torte	n	HF03	A2	a	0		v1	A2-17
+W-A2-0510	Schokolade	n	HF03	A2	a	0		v1	A2-17
+W-A2-0511	Süßigkeiten	n	HF03	A2	a	0		v1	A2-17
+W-A2-0512	Zitrone	n	HF03	A2	a	0		v1	A2-17
+W-A2-0513	Eis	n	HF03	A2	a	0		v1	A2-17
+W-A2-0514	Pizza	n	HF03	A2	a	0		v1	A2-17
+W-A2-0515	Portion	n	HF03	A2	a	0		v1	A2-17
+W-A2-0516	Reinigung	n	HF03	A2	p	0		v1	A2-17
+W-A2-0517	liefern	v	HF03	A2	a	0		v1	A2-11
+W-A2-0518	Lieferung	n	HF03	A2	a	0		v1	A2-11
+W-A2-0519	preiswert	adj	HF03	A2	a	0		v1	A2-11
+W-A2-0520	Schwein	n	HF03	A2	p	0		v1	A2-11
+W-A2-0521	Rind	n	HF03	A2	p	0		v1	A2-11
+W-A2-0522	Jeans	n	HF03	A2	a	0		v1	A2-11
+W-A2-0523	T-Shirt	n	HF03	A2	a	0		v1	A2-11
+W-A2-0524	Anzug	n	HF03	A2	p	0		v1	A2-11
+W-A2-0525	Kette	n	HF03	A2	p	0		v1	A2-11
+W-A2-0526	Ring	n	HF03	A2	p	0		v1	A2-11
+W-A2-0527	Mode	n	HF03	A2	p	0		v1	A2-11
+W-A2-0528	Krankenkasse	n	HF04	A2	a	0		v1	A2-05
+W-A2-0529	ÖGK (Österreichische Gesundheitskasse)	n	HF04	A2	a	1		v1	A2-05
+W-A2-0530	versichert	adj	HF04	A2	a	0		v1	A2-05
+W-A2-0531	Facharzt, Fachärztin	n	HF04	A2	a	0		v1	A2-05
+W-A2-0532	Überweisung (ärztlich)	n	HF04	A2	a	0		v1	A2-05
+W-A2-0533	Krankenstand	n	HF04	A2	a	1		v1	A2-06
+W-A2-0534	Krankmeldung	n	HF04	A2	a	0		v1	A2-06
+W-A2-0535	krankmelden (sich)	v	HF04	A2	a	0		v1	A2-06
+W-A2-0536	Bestätigung (ärztlich)	n	HF04	A2	a	0		v1	A2-06
+W-A2-0537	untersuchen	v	HF04	A2	a	0		v1	A2-05
+W-A2-0538	Untersuchung	n	HF04	A2	a	0		v1	A2-05
+W-A2-0539	Vorsorgeuntersuchung	n	HF04	A2	a	0		v1	A2-05
+W-A2-0540	Gesundenuntersuchung	n	HF04	A2	p	1		v1	A2-05
+W-A2-0541	Eltern-Kind-Pass	n	HF04	A2	a	1		v1	A2-05
+W-A2-0542	Impfung	n	HF04	A2	a	0		v1	A2-05
+W-A2-0543	impfen	v	HF04	A2	a	0		v1	A2-05
+W-A2-0544	Allergie	n	HF04	A2	a	0		v1	A2-05
+W-A2-0545	Blut	n	HF04	A2	a	0		v1	A2-05
+W-A2-0546	Blutdruck	n	HF04	A2	p	0		v1	A2-05
+W-A2-0547	Herz	n	HF04	A2	a	0		v1	A2-05
+W-A2-0548	Magen	n	HF04	A2	a	0		v1	A2-05
+W-A2-0549	Haut	n	HF04	A2	a	0		v1	A2-05
+W-A2-0550	Knie	n	HF04	A2	a	0		v1	A2-05
+W-A2-0551	Finger	n	HF04	A2	a	0		v1	A2-05
+W-A2-0552	Gesicht	n	HF04	A2	a	0		v1	A2-05
+W-A2-0553	Grippe	n	HF04	A2	a	0		v1	A2-05
+W-A2-0554	Erkältung	n	HF04	A2	a	0		v1	A2-05
+W-A2-0555	verkühlt	adj	HF04	A2	p	1		v1	A2-05
+W-A2-0556	Durchfall	n	HF04	A2	a	0		v1	A2-05
+W-A2-0557	schwanger	adj	HF04	A2	a	0		v1	A2-05
+W-A2-0558	Schwangerschaft	n	HF04	A2	p	0		v1	A2-05
+W-A2-0559	Verletzung	n	HF04	A2	a	0		v1	A2-06
+W-A2-0560	Wunde	n	HF04	A2	p	0		v1	A2-06
+W-A2-0561	Pflaster	n	HF04	A2	a	0		v1	A2-06
+W-A2-0562	Salbe	n	HF04	A2	a	0		v1	A2-06
+W-A2-0563	Tropfen	n	HF04	A2	a	0		v1	A2-06
+W-A2-0564	einnehmen	v	HF04	A2	a	0		v1	A2-05
+W-A2-0565	verschreiben	v	HF04	A2	a	0		v1	A2-05
+W-A2-0566	Rezeptgebühr	n	HF04	A2	p	1		v1	A2-05
+W-A2-0567	Nebenwirkung	n	HF04	A2	p	0		v1	A2-05
+W-A2-0568	Pflege	n	HF04	A2	p	0		v1	A2-05
+W-A2-0569	Pfleger, Pflegerin	n	HF04	A2	a	0		v1	A2-05
+W-A2-0570	Ambulanz	n	HF04	A2	a	1		v1	A2-05
+W-A2-0571	Besuchszeit	n	HF04	A2	a	0		v1	A2-05
+W-A2-0572	Gesundheitshotline 1450	n	HF04	A2	a	1		v1	A2-05
+W-A2-0573	Krankheit	n	HF04	A2	a	0		v1	A2-05
+W-A2-0574	erkältet	adj	HF04	A2	a	0		v1	A2-05
+W-A2-0575	verletzen (sich)	v	HF04	A2	a	0		v1	A2-06
+W-A2-0576	Creme	n	HF04	A2	p	0		v1	A2-05
+W-A2-0577	bewerben (sich) um	v	HF05	A2	a	0		v1	A2-07
+W-A2-0578	Lebenslauf	n	HF05	A2	a	0		v1	A2-07
+W-A2-0579	Bewerbung	n	HF05	A2	a	0		v1	A2-07
+W-A2-0580	Bewerbungsgespräch	n	HF05	A2	a	0		v1	A2-07
+W-A2-0581	Stellenanzeige	n	HF05	A2	a	0		v1	A2-07
+W-A2-0582	Stelleninserat	n	HF05	A2	a	1		v1	A2-07
+W-A2-0583	Arbeitsvertrag	n	HF05	A2	a	0		v1	A2-08
+W-A2-0584	Dienstplan	n	HF05	A2	a	0		v1	A2-08
+W-A2-0585	Schicht	n	HF05	A2	a	0		v1	A2-08
+W-A2-0586	Nachtdienst	n	HF05	A2	a	0		v1	A2-08
+W-A2-0587	Überstunde	n	HF05	A2	a	0		v1	A2-08
+W-A2-0588	Vollzeit	n	HF05	A2	a	0		v1	A2-08
+W-A2-0589	Teilzeit	n	HF05	A2	a	0		v1	A2-08
+W-A2-0590	Gehalt	n	HF05	A2	a	0		v1	A2-08
+W-A2-0591	Lohn	n	HF05	A2	a	0		v1	A2-08
+W-A2-0592	brutto	adv	HF05	A2	a	0		v1	A2-08
+W-A2-0593	netto	adv	HF05	A2	a	0		v1	A2-08
+W-A2-0594	Steuer	n	HF05	A2	a	0		v1	A2-08
+W-A2-0595	Lohnzettel	n	HF05	A2	a	1		v1	A2-08
+W-A2-0596	Dienstgeber, Dienstgeberin	n	HF05	A2	a	1		v1	A2-08
+W-A2-0597	Dienstnehmer, Dienstnehmerin	n	HF05	A2	a	1		v1	A2-08
+W-A2-0598	Arbeitgeber, Arbeitgeberin	n	HF05	A2	a	0		v1	A2-08
+W-A2-0599	Arbeitnehmer, Arbeitnehmerin	n	HF05	A2	a	0		v1	A2-08
+W-A2-0600	Mitarbeiter, Mitarbeiterin	n	HF05	A2	a	0		v1	A2-08
+W-A2-0601	Team	n	HF05	A2	a	0		v1	A2-08
+W-A2-0602	Abteilung	n	HF05	A2	a	0		v1	A2-08
+W-A2-0603	Betrieb	n	HF05	A2	a	0		v1	A2-08
+W-A2-0604	Fabrik	n	HF05	A2	a	0		v1	A2-08
+W-A2-0605	Lager	n	HF05	A2	a	0		v1	A2-08
+W-A2-0606	Baustelle	n	HF05	A2	a	0		v1	A2-08
+W-A2-0607	Werkstatt	n	HF05	A2	p	0		v1	A2-08
+W-A2-0608	Kündigung	n	HF05	A2	a	0		v1	A2-08
+W-A2-0609	kündigen	v	HF05	A2	a	0		v1	A2-08
+W-A2-0610	Arbeitslosengeld	n	HF05	A2	a	0		v1	A2-07
+W-A2-0611	Arbeitssuche	n	HF05	A2	a	0		v1	A2-07
+W-A2-0612	Berufserfahrung	n	HF05	A2	a	0		v1	A2-07
+W-A2-0613	Kenntnis	n	HF05	A2	a	0		v1	A2-07
+W-A2-0614	Qualifikation	n	HF05	A2	p	0		v1	A2-07
+W-A2-0615	Führerschein	n	HF05	A2	a	0		v1	A2-07
+W-A2-0616	Pension	n	HF05	A2	a	1		v1	A2-08
+W-A2-0617	in Pension gehen	phr	HF05	A2	a	1		v1	A2-08
+W-A2-0618	Sozialversicherung	n	HF05	A2	a	0		v1	A2-08
+W-A2-0619	Gewerkschaft	n	HF05	A2	p	0		v1	A2-08
+W-A2-0620	Betriebsrat	n	HF05	A2	p	0		v1	A2-08
+W-A2-0621	Urlaubsantrag	n	HF05	A2	p	0		v1	A2-08
+W-A2-0622	Pflegefachkraft	n	HF05	A2	a	0		v1	A2-07
+W-A2-0623	Elektriker, Elektrikerin	n	HF05	A2	a	0		v1	A2-07
+W-A2-0624	Friseur, Friseurin	n	HF05	A2	a	0		v1	A2-07
+W-A2-0625	Mechaniker, Mechanikerin	n	HF05	A2	a	0		v1	A2-07
+W-A2-0626	Kassier, Kassierin	n	HF05	A2	a	1		v1	A2-07
+W-A2-0627	Kinderbetreuer, Kinderbetreuerin	n	HF05	A2	p	0		v1	A2-07
+W-A2-0628	Besprechung	n	HF05	A2	a	0		v1	A2-08
+W-A2-0629	Sitzung	n	HF05	A2	p	0		v1	A2-08
+W-A2-0630	Projekt	n	HF05	A2	p	0		v1	A2-08
+W-A2-0631	Pensionist, Pensionistin	n	HF05	A2	a	1		v1	A2-08
+W-A2-0632	Unternehmen	n	HF05	A2	p	0		v1	A2-08
+W-A2-0633	herstellen	v	HF05	A2	p	0		v1	A2-08
+W-A2-0634	Bezirk	n	HF06	A2	a	1		v1	A2-09
+W-A2-0635	abmelden (sich)	v	HF06	A2	a	0		v1	A2-09
+W-A2-0636	Behörde	n	HF06	A2	a	0		v1	A2-09
+W-A2-0637	Bezirkshauptmannschaft (BH)	n	HF06	A2	a	1		v1	A2-09
+W-A2-0638	Rathaus	n	HF06	A2	a	0		v1	A2-09
+W-A2-0639	Antrag	n	HF06	A2	a	0		v1	A2-09
+W-A2-0640	beantragen	v	HF06	A2	a	0		v1	A2-09
+W-A2-0641	Bescheid	n	HF06	A2	a	0		v1	A2-09
+W-A2-0642	Unterlagen	n	HF06	A2	a	0		v1	A2-09
+W-A2-0643	Dokument	n	HF06	A2	a	0		v1	A2-09
+W-A2-0644	Kopie	n	HF06	A2	a	0		v1	A2-09
+W-A2-0645	Gebühr	n	HF06	A2	a	0		v1	A2-09
+W-A2-0646	Frist	n	HF06	A2	a	0		v1	A2-09
+W-A2-0647	Termin (Amt)	n	HF06	A2	p	0		v1	A2-09
+W-A2-0648	Wartenummer	n	HF06	A2	a	0		v1	A2-09
+W-A2-0649	Staatsbürgerschaft	n	HF06	A2	a	1		v1	A2-09
+W-A2-0650	Aufenthaltstitel	n	HF06	A2	a	0		v1	A2-09
+W-A2-0651	Visum	n	HF06	A2	p	0		v1	A2-09
+W-A2-0652	Geburtsurkunde	n	HF06	A2	a	0		v1	A2-09
+W-A2-0653	Heiratsurkunde	n	HF06	A2	p	0		v1	A2-09
+W-A2-0654	Meldeamt	n	HF06	A2	a	0		v1	A2-09
+W-A2-0655	Lichtbildausweis	n	HF06	A2	a	1		v1	A2-09
+W-A2-0656	Familienbeihilfe	n	HF06	A2	a	1		v1	A2-09
+W-A2-0657	Integrationsvereinbarung	n	HF06	A2	p	0		v1	A2-09
+W-A2-0658	Finanzamt	n	HF06	A2	a	0		v1	A2-09
+W-A2-0659	Staat	n	HF06	A2	a	0		v1	A2-01
+W-A2-0660	Republik	n	HF06	A2	a	0		v1	A2-01
+W-A2-0661	Bundesland	n	HF06	A2	a	0		v1	A2-18
+W-A2-0662	Hauptstadt	n	HF06	A2	a	0		v1	A2-18
+W-A2-0663	Landeshauptstadt	n	HF06	A2	a	0		v1	A2-18
+W-A2-0664	Grenze	n	HF06	A2	a	0		v1	A2-18
+W-A2-0665	Nachbarland	n	HF06	A2	a	0		v1	A2-18
+W-A2-0666	Europäische Union (EU)	n	HF06	A2	a	0		v1	A2-18
+W-A2-0667	Währung	n	HF06	A2	a	0		v1	A2-18
+W-A2-0668	Demokratie	n	HF06	A2	a	0		v1	A2-18
+W-A2-0669	Parlament	n	HF06	A2	a	0		v1	A2-18
+W-A2-0670	Nationalrat	n	HF06	A2	a	0		v1	A2-18
+W-A2-0671	Regierung	n	HF06	A2	a	0		v1	A2-18
+W-A2-0672	Bundespräsident, Bundespräsidentin	n	HF06	A2	a	0		v1	A2-18
+W-A2-0673	Bundeskanzler, Bundeskanzlerin	n	HF06	A2	a	0		v1	A2-18
+W-A2-0674	Landeshauptmann, Landeshauptfrau	n	HF06	A2	p	1		v1	A2-18
+W-A2-0675	Bürgermeister, Bürgermeisterin	n	HF06	A2	a	0		v1	A2-18
+W-A2-0676	Wahl	n	HF06	A2	a	0		v1	A2-18
+W-A2-0677	wählen	v	HF06	A2	a	0		v1	A2-18
+W-A2-0678	Partei	n	HF06	A2	a	0		v1	A2-18
+W-A2-0679	Gesetz	n	HF06	A2	a	0		v1	A2-18
+W-A2-0680	Recht	n	HF06	A2	a	0		v1	A2-18
+W-A2-0681	Pflicht	n	HF06	A2	a	0		v1	A2-18
+W-A2-0682	erlaubt	adj	HF06	A2	a	0		v1	A2-18
+W-A2-0683	Gericht	n	HF06	A2	a	0		v1	A2-18
+W-A2-0684	Rechtsstaat	n	HF06	A2	p	0		v1	A2-18
+W-A2-0685	Freiheit	n	HF06	A2	a	0		v1	A2-18
+W-A2-0686	Meinungsfreiheit	n	HF06	A2	a	0		v1	A2-18
+W-A2-0687	Religionsfreiheit	n	HF06	A2	a	0		v1	A2-18
+W-A2-0688	Religion	n	HF06	A2	a	0		v1	A2-18
+W-A2-0689	Glaube	n	HF06	A2	p	0		v1	A2-18
+W-A2-0690	Kirche	n	HF06	A2	a	0		v1	A2-18
+W-A2-0691	Moschee	n	HF06	A2	p	0		v1	A2-18
+W-A2-0692	Gleichberechtigung	n	HF06	A2	a	0		v1	A2-18
+W-A2-0693	gleichberechtigt	adj	HF06	A2	a	0		v1	A2-18
+W-A2-0694	Menschenrecht	n	HF06	A2	a	0		v1	A2-18
+W-A2-0695	Diskriminierung	n	HF06	A2	a	0		v1	A2-18
+W-A2-0696	Toleranz	n	HF06	A2	a	0		v1	A2-18
+W-A2-0697	Respekt	n	HF06	A2	a	0		v1	A2-18
+W-A2-0698	Neutralität	n	HF06	A2	a	0		v1	A2-18
+W-A2-0699	Geschichte	n	HF06	A2	a	0		v1	A2-18
+W-A2-0700	Krieg	n	HF06	A2	a	0		v1	A2-18
+W-A2-0701	Frieden	n	HF06	A2	a	0		v1	A2-18
+W-A2-0702	Bürger, Bürgerin	n	HF06	A2	a	0		v1	A2-18
+W-A2-0703	Gesellschaft	n	HF06	A2	a	0		v1	A2-18
+W-A2-0704	Zusammenleben	n	HF06	A2	a	0		v1	A2-18
+W-A2-0705	Integration	n	HF06	A2	a	0		v1	A2-18
+W-A2-0706	Sozialsystem	n	HF06	A2	p	0		v1	A2-18
+W-A2-0707	Solidarität	n	HF06	A2	p	0		v1	A2-18
+W-A2-0708	Wien	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0709	Niederösterreich	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0710	Oberösterreich	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0711	Steiermark	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0712	Kärnten	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0713	Tirol	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0714	Vorarlberg	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0715	Salzburg	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0716	Burgenland	n	HF06	A2	a	0	SET-BUNDESLAENDER	v1	A2-12
+W-A2-0717	Italien	n	HF06	A2	a	0	SET-NACHBARLAENDER	v1	A2-12
+W-A2-0718	Ungarn	n	HF06	A2	a	0	SET-NACHBARLAENDER	v1	A2-12
+W-A2-0719	Tschechien	n	HF06	A2	a	0	SET-NACHBARLAENDER	v1	A2-12
+W-A2-0720	Slowakei	n	HF06	A2	a	0	SET-NACHBARLAENDER	v1	A2-12
+W-A2-0721	Slowenien	n	HF06	A2	a	0	SET-NACHBARLAENDER	v1	A2-12
+W-A2-0722	Liechtenstein	n	HF06	A2	a	0	SET-NACHBARLAENDER	v1	A2-12
+W-A2-0723	eintragen	v	HF06	A2	a	0		v1	A2-09
+W-A2-0724	Erlaubnis	n	HF06	A2	a	0		v1	A2-09
+W-A2-0725	Vertrag	n	HF06	A2	a	0		v1	A2-09
+W-A2-0726	Kultur	n	HF06	A2	a	0		v1	A2-15
+W-A2-0727	Fundsachen	n	HF06	A2	p	0		v1	A2-09
+W-A2-0728	Fundamt	n	HF06	A2	p	1		v1	A2-09
+W-A2-0729	sparen	v	HF07	A2	a	0		v1	A2-10
+W-A2-0730	Konto eröffnen	phr	HF07	A2	a	0		v1	A2-10
+W-A2-0731	Kontonummer	n	HF07	A2	p	0		v1	A2-10
+W-A2-0732	IBAN	n	HF07	A2	a	0		v1	A2-10
+W-A2-0733	Überweisung	n	HF07	A2	a	0		v1	A2-10
+W-A2-0734	Zahlschein	n	HF07	A2	a	1		v1	A2-10
+W-A2-0735	Erlagschein	n	HF07	A2	a	1		v1	A2-10
+W-A2-0736	Dauerauftrag	n	HF07	A2	p	0		v1	A2-10
+W-A2-0737	abheben	v	HF07	A2	a	0		v1	A2-10
+W-A2-0738	einzahlen	v	HF07	A2	a	0		v1	A2-10
+W-A2-0739	Kontoauszug	n	HF07	A2	p	0		v1	A2-10
+W-A2-0740	Kreditkarte	n	HF07	A2	a	0		v1	A2-10
+W-A2-0741	Online-Banking	n	HF07	A2	a	0		v1	A2-10
+W-A2-0742	PIN-Code	n	HF07	A2	a	0		v1	A2-10
+W-A2-0743	Bankomatgebühr	n	HF07	A2	p	1		v1	A2-10
+W-A2-0744	Kredit	n	HF07	A2	p	0		v1	A2-10
+W-A2-0745	Schalter (Bank)	n	HF07	A2	p	0		v1	A2-10
+W-A2-0746	Einschreiben	n	HF07	A2	a	0		v1	A2-10
+W-A2-0747	Abholschein	n	HF07	A2	a	1		v1	A2-10
+W-A2-0748	Postamt	n	HF07	A2	a	0		v1	A2-10
+W-A2-0749	Postkasten	n	HF07	A2	a	1		v1	A2-10
+W-A2-0750	Kuvert	n	HF07	A2	a	1		v1	A2-10
+W-A2-0751	Postkarte	n	HF07	A2	a	0		v1	A2-10
+W-A2-0752	Ansichtskarte	n	HF07	A2	p	0		v1	A2-10
+W-A2-0753	Handyvertrag	n	HF07	A2	a	0		v1	A2-10
+W-A2-0754	Wertkarte	n	HF07	A2	a	1		v1	A2-10
+W-A2-0755	aufladen	v	HF07	A2	a	0		v1	A2-10
+W-A2-0756	Akku	n	HF07	A2	a	0		v1	A2-10
+W-A2-0757	Ladekabel	n	HF07	A2	p	0		v1	A2-10
+W-A2-0758	Versicherung abschließen	phr	HF07	A2	p	0		v1	A2-10
+W-A2-0759	Haushaltsversicherung	n	HF07	A2	p	1		v1	A2-10
+W-A2-0760	Öffis	n	HF08	A2	a	1		v1	A2-12
+W-A2-0761	öffentliche Verkehrsmittel	n	HF08	A2	a	0		v1	A2-12
+W-A2-0762	Jahreskarte	n	HF08	A2	a	0		v1	A2-12
+W-A2-0763	Monatskarte	n	HF08	A2	a	0		v1	A2-12
+W-A2-0764	Klimaticket	n	HF08	A2	p	1		v1	A2-12
+W-A2-0765	Verbindung	n	HF08	A2	a	0		v1	A2-12
+W-A2-0766	Anschluss	n	HF08	A2	a	0		v1	A2-12
+W-A2-0767	Richtung	n	HF08	A2	a	0		v1	A2-12
+W-A2-0768	Endstation	n	HF08	A2	a	0		v1	A2-12
+W-A2-0769	Station	n	HF08	A2	a	0		v1	A2-12
+W-A2-0770	Zugverspätung	n	HF08	A2	p	0		v1	A2-12
+W-A2-0771	ausfallen	v	HF08	A2	a	0		v1	A2-12
+W-A2-0772	Ersatzverkehr	n	HF08	A2	p	0		v1	A2-12
+W-A2-0773	Durchsage (Bahnhof)	n	HF08	A2	p	0		v1	A2-12
+W-A2-0774	Fahrgast	n	HF08	A2	a	0		v1	A2-12
+W-A2-0775	Schaffner, Schaffnerin	n	HF08	A2	p	0		v1	A2-12
+W-A2-0776	Kontrolle	n	HF08	A2	a	0		v1	A2-12
+W-A2-0777	Strafe	n	HF08	A2	a	0		v1	A2-12
+W-A2-0778	entwerten	v	HF08	A2	a	0		v1	A2-12
+W-A2-0779	Sitzplatz	n	HF08	A2	a	0		v1	A2-12
+W-A2-0780	Rückfahrkarte	n	HF08	A2	a	0		v1	A2-12
+W-A2-0781	einfache Fahrt	phr	HF08	A2	a	0		v1	A2-12
+W-A2-0782	Hin- und Rückfahrt	phr	HF08	A2	a	0		v1	A2-12
+W-A2-0783	Verkehr	n	HF08	A2	a	0		v1	A2-12
+W-A2-0784	Stau	n	HF08	A2	a	0		v1	A2-12
+W-A2-0785	Parkschein	n	HF08	A2	p	0		v1	A2-12
+W-A2-0786	parken	v	HF08	A2	a	0		v1	A2-12
+W-A2-0787	tanken	v	HF08	A2	p	0		v1	A2-12
+W-A2-0788	Tankstelle	n	HF08	A2	a	0		v1	A2-12
+W-A2-0789	Benzin	n	HF08	A2	p	0		v1	A2-12
+W-A2-0790	Radweg	n	HF08	A2	p	0		v1	A2-12
+W-A2-0791	Fußgänger, Fußgängerin	n	HF08	A2	p	0		v1	A2-12
+W-A2-0792	Schutzweg	n	HF08	A2	a	1		v1	A2-12
+W-A2-0793	Vorrang	n	HF08	A2	p	1		v1	A2-12
+W-A2-0794	Brücke	n	HF08	A2	a	0		v1	A2-12
+W-A2-0795	Kreisverkehr	n	HF08	A2	p	0		v1	A2-12
+W-A2-0796	Taxistand	n	HF08	A2	p	0		v1	A2-12
+W-A2-0797	Fahrrad (Leihrad)	n	HF08	A2	p	0		v1	A2-12
+W-A2-0798	Ermäßigung	n	HF08	A2	a	0		v1	A2-12
+W-A2-0799	buchen	v	HF08	A2	a	0		v1	A2-12
+W-A2-0800	Flug	n	HF08	A2	a	0		v1	A2-12
+W-A2-0801	Reisebüro	n	HF08	A2	p	0		v1	A2-12
+W-A2-0802	Stadtplan	n	HF08	A2	a	0		v1	A2-12
+W-A2-0803	Schiff	n	HF08	A2	p	0		v1	A2-12
+W-A2-0804	packen	v	HF08	A2	a	0		v1	A2-12
+W-A2-0805	Bahn	n	HF08	A2	a	0		v1	A2-12
+W-A2-0806	Wagen	n	HF08	A2	p	0		v1	A2-12
+W-A2-0807	Motorrad	n	HF08	A2	p	0		v1	A2-12
+W-A2-0808	Note	n	HF09	A2	a	0		v1	A2-13
+W-A2-0809	Ausbildung	n	HF09	A2	a	0		v1	A2-13
+W-A2-0810	Lehre	n	HF09	A2	a	0		v1	A2-13
+W-A2-0811	Lehrling	n	HF09	A2	a	1		v1	A2-13
+W-A2-0812	Matura	n	HF09	A2	a	1		v1	A2-13
+W-A2-0813	Universität	n	HF09	A2	a	0		v1	A2-13
+W-A2-0814	Schulpflicht	n	HF09	A2	a	0		v1	A2-13
+W-A2-0815	Kindergartenpflicht	n	HF09	A2	a	0		v1	A2-13
+W-A2-0816	Elternsprechtag	n	HF09	A2	a	0		v1	A2-13
+W-A2-0817	Sprechstunde	n	HF09	A2	a	0		v1	A2-13
+W-A2-0818	Klassenvorstand	n	HF09	A2	a	1		v1	A2-13
+W-A2-0819	Direktor, Direktorin	n	HF09	A2	a	0		v1	A2-13
+W-A2-0820	Schularbeit	n	HF09	A2	a	1		v1	A2-13
+W-A2-0821	Mitteilungsheft	n	HF09	A2	a	1		v1	A2-13
+W-A2-0822	Schultasche	n	HF09	A2	a	1		v1	A2-13
+W-A2-0823	Fach	n	HF09	A2	a	0		v1	A2-13
+W-A2-0824	Mathematik	n	HF09	A2	a	0		v1	A2-13
+W-A2-0825	Turnen	n	HF09	A2	a	1		v1	A2-13
+W-A2-0826	Hort	n	HF09	A2	a	0		v1	A2-13
+W-A2-0827	Krippe	n	HF09	A2	a	0		v1	A2-13
+W-A2-0828	Kindergartenpädagoge, Kindergartenpädagogin	n	HF09	A2	p	1		v1	A2-13
+W-A2-0829	Schulbeginn	n	HF09	A2	a	0		v1	A2-13
+W-A2-0830	Schulschluss	n	HF09	A2	a	0		v1	A2-13
+W-A2-0831	fehlen (in der Schule)	v	HF09	A2	a	0		v1	A2-13
+W-A2-0832	entschuldigen (Kind)	v	HF09	A2	a	0		v1	A2-13
+W-A2-0833	Entschuldigung (Schule)	n	HF09	A2	a	0		v1	A2-13
+W-A2-0834	erziehen	v	HF09	A2	p	0		v1	A2-13
+W-A2-0835	Erziehung	n	HF09	A2	p	0		v1	A2-13
+W-A2-0836	Taschengeld	n	HF09	A2	p	0		v1	A2-13
+W-A2-0837	Babysitter, Babysitterin	n	HF09	A2	p	0		v1	A2-13
+W-A2-0838	Stipendium	n	HF09	A2	p	0		v1	A2-13
+W-A2-0839	Natur	n	HF10	A2	a	0		v1	A2-15
+W-A2-0840	Tier	n	HF10	A2	a	0		v1	A2-15
+W-A2-0841	Pflanze	n	HF10	A2	p	0		v1	A2-15
+W-A2-0842	Wald	n	HF10	A2	a	0		v1	A2-15
+W-A2-0843	Fluss	n	HF10	A2	a	0		v1	A2-15
+W-A2-0844	Insel	n	HF10	A2	p	0		v1	A2-15
+W-A2-0845	Strand	n	HF10	A2	p	0		v1	A2-15
+W-A2-0846	Veranstaltung	n	HF10	A2	a	0		v1	A2-15
+W-A2-0847	Konzert	n	HF10	A2	a	0		v1	A2-15
+W-A2-0848	Theater	n	HF10	A2	a	0		v1	A2-15
+W-A2-0849	Museum	n	HF10	A2	a	0		v1	A2-15
+W-A2-0850	Ausstellung	n	HF10	A2	a	0		v1	A2-15
+W-A2-0851	Eintritt	n	HF10	A2	a	0		v1	A2-15
+W-A2-0852	Eintrittskarte	n	HF10	A2	a	0		v1	A2-15
+W-A2-0853	Mitglied	n	HF10	A2	a	0		v1	A2-15
+W-A2-0854	Mitgliedsbeitrag	n	HF10	A2	p	0		v1	A2-15
+W-A2-0855	Training	n	HF10	A2	a	0		v1	A2-15
+W-A2-0856	trainieren	v	HF10	A2	a	0		v1	A2-15
+W-A2-0857	Mannschaft	n	HF10	A2	a	0		v1	A2-15
+W-A2-0858	Spiel	n	HF10	A2	a	0		v1	A2-15
+W-A2-0859	Fitnesscenter	n	HF10	A2	a	0		v1	A2-15
+W-A2-0860	Rad	n	HF10	A2	a	0		v1	A2-15
+W-A2-0861	Ski fahren	v	HF10	A2	p	0		v1	A2-15
+W-A2-0862	Bibliothek	n	HF10	A2	a	0		v1	A2-15
+W-A2-0863	Bücherei	n	HF10	A2	p	0		v1	A2-15
+W-A2-0864	ausleihen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0865	Ehrenamt	n	HF10	A2	a	0		v1	A2-15
+W-A2-0866	ehrenamtlich	adj	HF10	A2	a	0		v1	A2-15
+W-A2-0867	freiwillig	adj	HF10	A2	a	0		v1	A2-15
+W-A2-0868	Kontakt	n	HF10	A2	a	0		v1	A2-15
+W-A2-0869	zusagen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0870	ablehnen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0871	Unterkunft	n	HF10	A2	p	0		v1	A2-15
+W-A2-0872	Sehenswürdigkeit	n	HF10	A2	a	0		v1	A2-15
+W-A2-0873	Tourist, Touristin	n	HF10	A2	p	0		v1	A2-15
+W-A2-0874	verreisen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0875	Schloss	n	HF10	A2	p	0		v1	A2-15
+W-A2-0876	Landschaft	n	HF10	A2	p	0		v1	A2-15
+W-A2-0877	Kunst	n	HF10	A2	p	0		v1	A2-15
+W-A2-0878	Rucksack	n	HF10	A2	a	0		v1	A2-15
+W-A2-0879	Hobby (A2)	n	HF10	A2	p	0		v1	A2-15
+W-A2-0880	joggen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0881	Tennis	n	HF10	A2	p	0		v1	A2-15
+W-A2-0882	Volleyball	n	HF10	A2	p	0		v1	A2-15
+W-A2-0883	Basketball	n	HF10	A2	p	0		v1	A2-15
+W-A2-0884	Ball	n	HF10	A2	a	0		v1	A2-15
+W-A2-0885	Sportplatz	n	HF10	A2	p	0		v1	A2-15
+W-A2-0886	sportlich	adj	HF10	A2	a	0		v1	A2-15
+W-A2-0887	Gitarre	n	HF10	A2	p	0		v1	A2-15
+W-A2-0888	Klavier	n	HF10	A2	p	0		v1	A2-15
+W-A2-0889	Instrument	n	HF10	A2	p	0		v1	A2-15
+W-A2-0890	malen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0891	zeichnen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0892	fotografieren	v	HF10	A2	a	0		v1	A2-15
+W-A2-0893	grillen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0894	ausgehen	v	HF10	A2	a	0		v1	A2-15
+W-A2-0895	Spaziergang	n	HF10	A2	a	0		v1	A2-15
+W-A2-0896	Flohmarkt	n	HF10	A2	p	0		v1	A2-15
+W-A2-0897	Festival	n	HF10	A2	p	0		v1	A2-15
+W-A2-0898	Zoo	n	HF10	A2	p	0		v1	A2-15
+W-A2-0899	Pferd	n	HF10	A2	p	0		v1	A2-15
+W-A2-0900	Vogel	n	HF10	A2	p	0		v1	A2-15
+W-A2-0901	Fan	n	HF10	A2	p	0		v1	A2-15
+W-A2-0902	Wettbewerb	n	HF10	A2	p	0		v1	A2-15
+W-A2-0903	verschieben	v	HF11	A2	a	0		v1	A2-04
+W-A2-0904	vereinbaren	v	HF11	A2	a	0		v1	A2-04
+W-A2-0905	ausrichten	v	HF11	A2	a	0		v1	A2-04
+W-A2-0906	erreichen (telefonisch)	v	HF11	A2	a	0		v1	A2-04
+W-A2-0907	Termin verschieben	phr	HF11	A2	a	0		v1	A2-04
+W-A2-0908	Terminkalender	n	HF11	A2	a	0		v1	A2-04
+W-A2-0909	Verabredung	n	HF11	A2	a	0		v1	A2-04
+W-A2-0910	Rückruf	n	HF11	A2	a	0		v1	A2-04
+W-A2-0911	erreichbar	adj	HF11	A2	a	0		v1	A2-04
+W-A2-0912	Durchwahl	n	HF11	A2	p	0		v1	A2-04
+W-A2-0913	Taste	n	HF11	A2	a	0		v1	A2-04
+W-A2-0914	drücken (Taste)	v	HF11	A2	p	0		v1	A2-04
+W-A2-0915	Warteschleife	n	HF11	A2	a	0		v1	A2-04
+W-A2-0916	verbinden	v	HF11	A2	a	0		v1	A2-04
+W-A2-0917	Gesprächspartner, Gesprächspartnerin	n	HF11	A2	p	0		v1	A2-04
+W-A2-0918	vorgestern	adv	HF12	A2	a	0		v1	A2-04
+W-A2-0919	übermorgen	adv	HF12	A2	a	0		v1	A2-04
+W-A2-0920	Jahrhundert	n	HF12	A2	p	0		v1	A2-16
+W-A2-0921	Feber	n	HF12	A2	p	1	SET-MONATE	v1	A2-16
+W-A2-0922	Temperatur	n	HF12	A2	a	0		v1	A2-16
+W-A2-0923	Grad Celsius	phr	HF12	A2	a	0		v1	A2-16
+W-A2-0924	minus	adv	HF12	A2	a	0		v1	A2-16
+W-A2-0925	Wolke	n	HF12	A2	a	0		v1	A2-16
+W-A2-0926	bewölkt	adj	HF12	A2	a	0		v1	A2-16
+W-A2-0927	sonnig	adj	HF12	A2	a	0		v1	A2-16
+W-A2-0928	regnerisch	adj	HF12	A2	p	0		v1	A2-16
+W-A2-0929	windig	adj	HF12	A2	a	0		v1	A2-16
+W-A2-0930	Gewitter	n	HF12	A2	a	0		v1	A2-16
+W-A2-0931	Nebel	n	HF12	A2	p	0		v1	A2-16
+W-A2-0932	Glatteis	n	HF12	A2	p	0		v1	A2-16
+W-A2-0933	Wetterbericht	n	HF12	A2	a	0		v1	A2-16
+W-A2-0934	Klima	n	HF12	A2	p	0		v1	A2-16
+W-A2-0935	Kalender	n	HF12	A2	a	0		v1	A2-04
+W-A2-0936	kühl	adj	HF12	A2	a	0		v1	A2-16
+W-A2-0937	Himmel	n	HF12	A2	a	0		v1	A2-16
+W-A2-0938	schenken	v	HF13	A2	a	0		v1	A2-17
+W-A2-0939	Glückwunschkarte	n	HF13	A2	p	0		v1	A2-17
+W-A2-0940	Heiliger Abend	n	HF13	A2	a	0		v1	A2-17
+W-A2-0941	Christkind	n	HF13	A2	a	1		v1	A2-17
+W-A2-0942	Nikolaus	n	HF13	A2	a	0		v1	A2-17
+W-A2-0943	Fasching	n	HF13	A2	a	1		v1	A2-17
+W-A2-0944	Nationalfeiertag	n	HF13	A2	a	0		v1	A2-17
+W-A2-0945	Staatsfeiertag	n	HF13	A2	a	0		v1	A2-17
+W-A2-0946	Allerheiligen	n	HF13	A2	a	0		v1	A2-17
+W-A2-0947	Pfingsten	n	HF13	A2	a	0		v1	A2-17
+W-A2-0948	Advent	n	HF13	A2	a	0		v1	A2-17
+W-A2-0949	Brauch	n	HF13	A2	a	0		v1	A2-17
+W-A2-0950	Tradition	n	HF13	A2	a	0		v1	A2-17
+W-A2-0951	Ramadan	n	HF13	A2	p	0		v1	A2-17
+W-A2-0952	Ärztenotdienst	n	HF14	A2	a	0		v1	A2-06
+W-A2-0953	Euronotruf 112	n	HF14	A2	a	0		v1	A2-06
+W-A2-0954	Rettungswagen	n	HF14	A2	a	0		v1	A2-06
+W-A2-0955	Brand	n	HF14	A2	a	0		v1	A2-06
+W-A2-0956	brennen	v	HF14	A2	a	0		v1	A2-06
+W-A2-0957	Diebstahl	n	HF14	A2	a	0		v1	A2-06
+W-A2-0958	stehlen	v	HF14	A2	a	0		v1	A2-06
+W-A2-0959	Anzeige (Polizei)	n	HF14	A2	p	0		v1	A2-06
+W-A2-0960	anzeigen	v	HF14	A2	p	0		v1	A2-06
+W-A2-0961	Zeuge, Zeugin	n	HF14	A2	p	0		v1	A2-06
+W-A2-0962	Erste Hilfe	n	HF14	A2	a	0		v1	A2-06
+W-A2-0963	bewusstlos	adj	HF14	A2	a	0		v1	A2-06
+W-A2-0964	bluten	v	HF14	A2	a	0		v1	A2-06
+W-A2-0965	Gewalt	n	HF14	A2	a	0		v1	A2-06
+W-A2-0966	Frauenhelpline	n	HF14	A2	p	0		v1	A2-06
+W-A2-0967	Zivilcourage	n	HF14	A2	a	0		v1	A2-06
+W-A2-0968	Radio	n	HF15	A2	a	0		v1	A2-16
+W-A2-0969	Nachrichten	n	HF15	A2	a	0		v1	A2-16
+W-A2-0970	Sendung	n	HF15	A2	a	0		v1	A2-16
+W-A2-0971	Programm	n	HF15	A2	a	0		v1	A2-16
+W-A2-0972	Meldung	n	HF15	A2	a	0		v1	A2-16
+W-A2-0973	Bericht	n	HF15	A2	a	0		v1	A2-16
+W-A2-0974	Artikel	n	HF15	A2	a	0		v1	A2-16
+W-A2-0975	Zeitschrift	n	HF15	A2	a	0		v1	A2-16
+W-A2-0976	Werbung	n	HF15	A2	a	0		v1	A2-16
+W-A2-0977	Information (online)	n	HF15	A2	p	0		v1	A2-16
+W-A2-0978	Webseite	n	HF15	A2	a	0		v1	A2-16
+W-A2-0979	App	n	HF15	A2	a	0		v1	A2-16
+W-A2-0980	herunterladen	v	HF15	A2	a	0		v1	A2-16
+W-A2-0981	hochladen	v	HF15	A2	p	0		v1	A2-16
+W-A2-0982	Passwort	n	HF15	A2	a	0		v1	A2-16
+W-A2-0983	Benutzername	n	HF15	A2	a	0		v1	A2-16
+W-A2-0984	einloggen (sich)	v	HF15	A2	a	0		v1	A2-16
+W-A2-0985	registrieren (sich)	v	HF15	A2	a	0		v1	A2-16
+W-A2-0986	Pflichtfeld	n	HF15	A2	p	0		v1	A2-16
+W-A2-0987	zustimmen	v	HF15	A2	a	0		v1	A2-16
+W-A2-0988	Datenschutz	n	HF15	A2	p	0		v1	A2-16
+W-A2-0989	Bildschirm	n	HF15	A2	a	0		v1	A2-16
+W-A2-0990	Laptop	n	HF15	A2	a	0		v1	A2-16
+W-A2-0991	Datei	n	HF15	A2	a	0		v1	A2-16
+W-A2-0992	Anhang	n	HF15	A2	a	0		v1	A2-16
+W-A2-0993	senden	v	HF15	A2	a	0		v1	A2-16
+W-A2-0994	Videoanruf	n	HF15	A2	a	0		v1	A2-16
+W-A2-0995	soziale Medien	n	HF15	A2	a	0		v1	A2-16
+W-A2-0996	online	adv	HF15	A2	a	0		v1	A2-16
+W-A2-0997	bestellen (online)	v	HF15	A2	p	0		v1	A2-16
+W-A2-0998	Star	n	HF15	A2	p	0		v1	A2-16
+W-A2-0999	Kamera	n	HF15	A2	p	0		v1	A2-16
+W-A2-1000	Tablet	n	HF15	A2	a	0		v1	A2-16
+W-A2-1001	Link	n	HF15	A2	a	0		v1	A2-16
+W-A2-1002	Homepage	n	HF15	A2	p	0		v1	A2-16
+W-A2-1003	speichern	v	HF15	A2	a	0		v1	A2-16
+W-A2-1004	chatten	v	HF15	A2	a	0		v1	A2-16
+W-A2-1005	surfen	v	HF15	A2	p	0		v1	A2-16
+W-A2-1006	Blog	n	HF15	A2	p	0		v1	A2-16
+W-A2-1007	Interview	n	HF15	A2	p	0		v1	A2-16
+W-A1-0907	abfliegen	v	HF08	A1	a	0		neu	A1-18
+W-A1-0908	Abflug	n	HF08	A1	a	0		neu	A1-18
+W-A2-1008	aktiv	adj	GW	A2	p	0		neu	A2-17
+W-A2-1009	aktuell	adj	GW	A2	a	0		neu	A2-16
+W-A1-0909	an sein / aus sein / auf sein / zu sein	phr	HF02	A1	a	0		set	A1-09
+W-A2-1010	ansehen	v	GW	A2	a	0		neu	A2-13
+W-A2-1011	Apparat	n	HF11	A2	p	0		neu	A2-04
+W-A2-1012	auf jeden Fall	phr	GW	A2	a	0		neu	A2-13
+W-A2-1013	aufregend	adj	GW	A2	p	0		neu	A2-17
+W-A1-0910	ausländisch	adj	HF01	A1	p	0		neu	A1-03
+W-A1-0911	Aussage	n	HF00	A1	a	0		neu	A1-05
+W-A2-1014	austragen	v	HF07	A2	p	0		neu	A2-10
+W-A1-0912	automatisch	adj	GW	A1	p	0		neu	A1-17
+W-A2-1015	Band	n	HF10	A2	p	0		neu	A2-15
+W-A2-1016	basteln	v	HF10	A2	p	0		neu	A2-15
+W-A2-1017	bauen	v	GW	A2	a	0		neu	A2-13
+W-A1-0913	Beamte, Beamtin	n	HF06	A1	a	0		neu	A1-15
+W-A2-1018	bedanken (sich)	v	GW	A2	a	0		neu	A2-13
+W-A2-1019	beenden	v	GW	A2	a	0		neu	A2-13
+W-A2-1020	beraten	v	HF05	A2	a	0		neu	A2-08
+W-A2-1021	Besuch	n	HF10	A2	a	0		neu	A2-15
+W-A1-0914	bitter	adj	HF03	A1	p	0		neu	A1-08
+W-A1-0915	Blatt	n	HF00	A1	a	0		neu	A1-05
+W-A1-0916	Blick	n	HF02	A1	p	0		neu	A1-09
+W-A2-1022	blond	adj	HF01	A2	a	0		neu	A2-01
+W-A2-1023	blöd	adj	GW	A2	a	0		neu	A2-13
+W-A1-0917	Bogen	n	HF00	A1	p	0		neu	A1-05
+W-A2-1024	Bohne	n	HF03	A2	p	0		neu	A2-11
+W-A2-1025	Cafeteria	n	HF03	A2	p	0		neu	A2-11
+W-A1-0918	CD	n	HF10	A1	p	0		neu	A1-16
+W-A1-0919	circa (ca.)	adv	GW	A1	a	0		neu	A1-20
+W-A2-1026	Club	n	HF10	A2	p	0		neu	A2-15
+W-A1-0920	daneben	adv	GW	A1	a	0		neu	A1-13
+W-A1-0921	Disco	n	HF10	A1	p	0		neu	A1-16
+W-A1-0922	Doktor, Doktorin	n	HF04	A1	a	0		neu	A1-11
+W-A1-0923	Doppelzimmer	n	HF10	A1	p	0		neu	A1-18
+W-A2-1027	dumm	adj	GW	A2	a	0		neu	A2-13
+W-A2-1028	E-Book	n	HF15	A2	p	0		neu	A2-16
+W-A2-1029	eigen	adj	GW	A2	a	0		neu	A2-13
+W-A1-0924	eilig	adj	GW	A1	a	0		neu	A1-20
+W-A2-1030	einige	pron	GW	A2	a	0		neu	A2-14
+W-A1-0925	Einzelzimmer	n	HF10	A1	p	0		neu	A1-18
+W-A1-0926	enden	v	GW	A1	a	0		neu	A1-20
+W-A1-0927	erst	adv	GW	A1	a	0		neu	A1-06
+W-A1-0928	Fax	n	HF15	A1	p	0		neu	A1-20
+W-A2-1031	fett	adj	HF03	A2	p	0		neu	A2-11
+W-A2-1032	fit	adj	HF04	A2	a	0		neu	A2-05
+W-A2-1033	Fotoapparat	n	HF10	A2	p	0		neu	A2-15
+W-A1-0929	Führung	n	HF10	A1	p	0		neu	A1-18
+W-A2-1034	geehrt (Sehr geehrte/r …)	adj	HF11	A2	a	0		neu	A2-04
+W-A2-1035	Gerät	n	GW	A2	a	0		neu	A2-14
+W-A1-0930	Gewicht	n	HF04	A1	p	0		neu	A1-11
+W-A1-0931	Halbpension	n	HF10	A1	p	0		neu	A1-18
+W-A1-0932	Halle	n	HF10	A1	p	0		neu	A1-16
+W-A2-1036	Hamburger	n	HF03	A2	p	0		neu	A2-11
+W-A2-1037	her	adv	GW	A2	p	0		neu	A2-18
+W-A2-1038	heraus	adv	GW	A2	p	0		neu	A2-18
+W-A1-0933	herein	adv	GW	A1	a	0		neu	A1-05
+W-A2-1039	hin	adv	GW	A2	p	0		neu	A2-18
+W-A2-1040	Jugendherberge	n	HF10	A2	p	0		neu	A2-15
+W-A1-0934	kriegen	v	GW	A1	p	0		neu	A1-19
+W-A2-1041	Krimi	n	HF10	A2	p	0		neu	A2-15
+W-A1-0935	kulturell	adj	HF06	A1	p	0		neu	A1-15
+W-A1-0936	Laden	n	HF03	A1	a	0		neu	A1-17
+W-A1-0937	leidtun	v	GW	A1	a	0		neu	A1-08
+W-A1-0938	Lkw	n	HF08	A1	p	0		neu	A1-18
+W-A1-0939	Lokal	n	HF03	A1	a	0		neu	A1-08
+W-A2-1042	Lüge	n	GW	A2	p	0		neu	A2-19
+W-A1-0940	Maschine	n	HF05	A1	a	0		neu	A1-14
+W-A2-1043	Messe	n	HF10	A2	p	0		neu	A2-15
+W-A2-1044	Mittel	n	HF04	A2	p	0		neu	A2-05
+W-A2-1045	Mobiltelefon	n	HF11	A2	p	0		neu	A2-04
+W-A2-1046	Motor	n	HF08	A2	p	0		neu	A2-12
+W-A2-1047	Motorroller	n	HF08	A2	p	0		neu	A2-12
+W-A2-1048	neblig	adj	HF12	A2	a	0		neu	A2-16
+W-A2-1049	Parfüm	n	HF03	A2	p	0		neu	A2-11
+W-A2-1050	Plakat	n	HF15	A2	p	0		neu	A2-16
+W-A2-1051	Poster	n	HF02	A2	p	0		neu	A2-03
+W-A1-0941	Prospekt	n	HF15	A1	a	0		neu	A1-20
+W-A2-1052	Quiz	n	HF10	A2	p	0		neu	A2-15
+W-A2-1053	raten	v	GW	A2	a	0		neu	A2-14
+W-A2-1054	recht haben	phr	GW	A2	a	0		neu	A2-14
+W-A2-1055	Reifen	n	HF08	A2	p	0		neu	A2-12
+W-A2-1056	Reihe	n	GW	A2	a	0		neu	A2-14
+W-A1-0942	Reiseführer	n	HF10	A1	p	0		neu	A1-18
+W-A2-1057	reiten	v	HF10	A2	p	0		neu	A2-15
+W-A1-0943	Rezeption	n	HF10	A1	p	0		neu	A1-18
+W-A2-1058	romantisch	adj	HF10	A2	p	0		neu	A2-15
+W-A2-1059	Rose	n	HF10	A2	p	0		neu	A2-15
+W-A2-1060	rund	adj	GW	A2	a	0		neu	A2-14
+W-A2-1061	Rundgang	n	HF10	A2	p	0		neu	A2-15
+W-A2-1062	Rätsel	n	HF10	A2	p	0		neu	A2-15
+W-A2-1063	sammeln	v	GW	A2	a	0		neu	A2-14
+W-A2-1064	Schere	n	GW	A2	a	0		neu	A2-14
+W-A2-1065	schädlich	adj	HF04	A2	p	0		neu	A2-05
+W-A2-1066	Service	n	HF03	A2	p	0		neu	A2-11
+W-A1-0944	Stift	n	HF00	A1	a	0		neu	A1-05
+W-A2-1067	tauschen	v	GW	A2	a	0		neu	A2-14
+W-A2-1068	teilen	v	GW	A2	a	0		neu	A2-14
+W-A2-1069	Titel	n	HF15	A2	p	0		neu	A2-16
+W-A2-1070	Tour	n	HF10	A2	p	0		neu	A2-15
+W-A2-1071	verbieten	v	HF06	A2	a	0		neu	A2-09
+W-A2-1072	vorwärts	adv	GW	A2	p	0		neu	A2-19
+W-A1-0945	weiter	adv	GW	A1	a	0		neu	A1-20
+W-A1-0946	was für ein	phr	GW	A1	a	0		neu	A1-20
+W-A2-1073	Zelt	n	HF10	A2	p	0		neu	A2-15
+W-A2-1074	Zirkus	n	HF10	A2	p	0		neu	A2-15
+W-A1-0947	zuhören	v	HF00	A1	a	0		neu	A1-05
+W-A1-0948	Aufzug	n	HF02	A1	p	0		dvar	A1-09
+W-A1-0949	Brötchen	n	HF03	A1	p	0		dvar	A1-07
+W-A2-1075	Erdgeschoss	n	HF02	A2	p	0		dvar	A2-03
+W-A1-0950	Hausaufgabe	n	HF00	A1	p	0		dvar	A1-05
+W-A1-0951	Hähnchen	n	HF03	A1	p	0		dvar	A1-07
+W-A1-0952	Junge	n	HF01	A1	p	0		dvar	A1-20
+W-A1-0953	Kasse	n	HF03	A1	p	0		dvar	A1-07
+W-A1-0954	Kiosk	n	HF03	A1	p	0		dvar	A1-07
+W-A2-1076	Mailbox	n	HF11	A2	p	0		dvar	A2-04
+W-A1-0955	Schrank	n	HF02	A1	p	0		dvar	A1-09
+W-A1-0956	Tomate	n	HF03	A1	p	0		dvar	A1-07
+W-A1-0957	Treppe	n	HF02	A1	p	0		dvar	A1-09
+W-A2-1077	Rentner, Rentnerin	n	HF05	A2	p	0		dvar	A2-08
+W-A1-0958	Praxis	n	HF04	A1	p	0		dvar	A1-11

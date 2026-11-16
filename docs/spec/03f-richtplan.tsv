@@ -1,0 +1,655 @@
+pensum_min	plantag	typ	inhalt	leitner_min	arbeit_min
+60	1	CH	A1-01 60 min	0	60
+60	2	CH	A1-01 58 min	2	58
+60	3	CH	A1-01 58 min	2	58
+60	4	CH	A1-01 51 min + A1-02 5 min	4	56
+60	5	CH	A1-02 55 min	5	55
+60	6	CH	A1-02 54 min	6	54
+60	7	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	6	54
+60	8	CH	A1-02 56 min	4	56
+60	9	CH	A1-02 64 min	5	64
+60	10	CH	A1-03 56 min	4	56
+60	11	CH	A1-03 53 min	7	53
+60	12	CH	A1-03 51 min	9	51
+60	13	CH	A1-03 64 min	10	64
+60	14	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	12	48
+60	15	CH	A1-04 53 min	7	53
+60	16	CH	A1-04 50 min	10	50
+60	17	CH	A1-04 53 min	7	53
+60	18	CH	A1-04 33 min + A1-05 18 min	8	52
+60	19	CH	A1-05 52 min	8	52
+60	20	CH	A1-05 50 min	10	50
+60	21	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	12	48
+60	22	CH	A1-05 52 min	8	52
+60	23	CH	A1-05 31 min + A1-06 18 min	11	49
+60	24	CH	A1-06 52 min	8	52
+60	25	CH	A1-06 50 min	10	50
+60	26	CH	A1-06 46 min	14	46
+60	27	CH	A1-06 52 min	14	52
+60	28	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	15	45
+60	29	CH	A1-07 48 min	12	48
+60	30	CH	A1-07 45 min	15	45
+60	31	CH	A1-07 51 min	9	51
+60	32	CH	A1-07 49 min	11	49
+60	33	CH	A1-07 38 min + A1-08 8 min	13	47
+60	34	CH	A1-08 47 min	13	47
+60	35	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	42
+60	36	CH	A1-08 48 min	12	48
+60	37	CH	A1-08 42 min	18	42
+60	38	CH	A1-08 47 min	13	47
+60	39	CH	A1-08 31 min + A1-09 19 min	10	50
+60	40	CH	A1-09 48 min	12	48
+60	41	CH	A1-09 44 min	16	44
+60	42	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	15	45
+60	43	CH	A1-09 49 min	11	49
+60	44	CH	A1-09 46 min	14	46
+60	45	CH	A1-09 24 min + A1-10 24 min	12	48
+60	46	CH	A1-10 48 min	12	48
+60	47	CH	A1-10 45 min	15	45
+60	48	CH	A1-10 44 min	16	44
+60	49	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	15	45
+60	50	CH	A1-10 48 min	12	48
+60	51	CH	A1-10 26 min + A1-11 18 min	16	44
+60	52	CH	A1-11 52 min	8	52
+60	53	CH	A1-11 51 min	9	51
+60	54	CH	A1-11 46 min	14	46
+60	55	CH	A1-11 47 min	16	47
+60	56	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	19	41
+60	57	CH	A1-12 46 min	14	46
+60	58	CH	A1-12 43 min	17	43
+60	59	CH	A1-12 44 min	16	44
+60	60	CH	A1-12 59 min	15	59
+60	61	CH	A1-13 46 min	14	46
+60	62	CH	A1-13 39 min	21	39
+60	63	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	17	43
+60	64	CH	A1-13 47 min	13	47
+60	65	CH	A1-13 45 min	15	45
+60	66	CH	A1-13 15 min + A1-14 33 min	11	49
+60	67	CH	A1-14 45 min	15	45
+60	68	CH	A1-14 43 min	17	43
+60	69	CH	A1-14 41 min	19	41
+60	70	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	19	41
+60	71	CH	A1-14 41 min	19	41
+60	72	CH	A1-14 30 min + A1-15 14 min	16	44
+60	73	CH	A1-15 48 min	12	48
+60	74	CH	A1-15 47 min	13	47
+60	75	CH	A1-15 45 min	15	45
+60	76	CH	A1-15 43 min	17	43
+60	77	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	17	43
+60	78	CH	A1-15 29 min + A1-16 15 min	16	44
+60	79	CH	A1-16 44 min	16	44
+60	80	CH	A1-16 45 min	15	45
+60	81	CH	A1-16 45 min	15	45
+60	82	CH	A1-16 45 min	15	45
+60	83	CH	A1-16 36 min + A1-17 8 min	16	44
+60	84	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	19	41
+60	85	CH	A1-17 45 min	15	45
+60	86	CH	A1-17 41 min	19	41
+60	87	CH	A1-17 47 min	13	47
+60	88	CH	A1-17 46 min	14	46
+60	89	CH	A1-17 37 min + A1-18 6 min	17	43
+60	90	CH	A1-18 43 min	17	43
+60	91	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	16	44
+60	92	CH	A1-18 40 min	20	40
+60	93	CH	A1-18 43 min	17	43
+60	94	CH	A1-18 50 min	10	50
+60	95	CH	A1-18 31 min + A1-19 15 min	13	47
+60	96	CH	A1-19 41 min	19	41
+60	97	CH	A1-19 43 min	17	43
+60	98	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	16	44
+60	99	CH	A1-19 46 min	14	46
+60	100	CH	A1-19 41 min	19	41
+60	101	CH	A1-19 39 min + A1-20 7 min	14	46
+60	102	CH	A1-20 47 min	13	47
+60	103	CH	A1-20 46 min	14	46
+60	104	CH	A1-20 45 min	15	45
+60	105	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	15	45
+60	106	CH	A1-20 47 min	13	47
+60	107	CH	A1-20 50 min	17	50
+60	108	PUF	Puffer vor A1-Meilenstein: gezielte Review schwacher Lernziele	11	49
+60	109	SIM	A1-Meilenstein schriftlich (SB, Hören, HuA, Lesen, Schreiben; 70 min) + Auswertung	0	85
+60	110	SIM	A1-Meilenstein WOW (40 min) + Sprechen (ca. 20 min) + Auswertung	0	80
+60	111	PUF	Puffer nach A1-Meilenstein: Fehler-Review bzw. Vorbereitung 2. Versuch	35	25
+60	112	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	12	48
+60	113	CH	A2-01 51 min	9	51
+60	114	CH	A2-01 47 min	13	47
+60	115	CH	A2-01 50 min	10	50
+60	116	CH	A2-01 50 min	10	50
+60	117	CH	A2-01 17 min + A2-02 33 min	10	50
+60	118	CH	A2-02 41 min	19	41
+60	119	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	11	49
+60	120	CH	A2-02 49 min	11	49
+60	121	CH	A2-02 46 min	14	46
+60	122	CH	A2-02 47 min	13	47
+60	123	CH	A2-02 16 min + A2-03 33 min	11	49
+60	124	CH	A2-03 49 min	11	49
+60	125	CH	A2-03 37 min	23	37
+60	126	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	42
+60	127	CH	A2-03 47 min	13	47
+60	128	CH	A2-03 43 min	17	43
+60	129	CH	A2-03 37 min + A2-04 12 min	11	49
+60	130	CH	A2-04 49 min	11	49
+60	131	CH	A2-04 48 min	12	48
+60	132	CH	A2-04 40 min	20	40
+60	133	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	13	47
+60	134	CH	A2-04 49 min	11	49
+60	135	CH	A2-04 53 min	14	53
+60	136	CH	A2-05 48 min	12	48
+60	137	CH	A2-05 47 min	13	47
+60	138	CH	A2-05 46 min	14	46
+60	139	CH	A2-05 45 min	15	45
+60	140	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	14	46
+60	141	CH	A2-05 49 min	20	49
+60	142	CH	A2-06 42 min	18	42
+60	143	CH	A2-06 46 min	14	46
+60	144	CH	A2-06 48 min	12	48
+60	145	CH	A2-06 46 min	14	46
+60	146	CH	A2-06 37 min + A2-07 8 min	16	44
+60	147	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	19	41
+60	148	CH	A2-07 44 min	16	44
+60	149	CH	A2-07 44 min	16	44
+60	150	CH	A2-07 46 min	14	46
+60	151	CH	A2-07 43 min	17	43
+60	152	CH	A2-07 37 min + A2-08 7 min	15	45
+60	153	CH	A2-08 48 min	12	48
+60	154	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	14	46
+60	155	CH	A2-08 39 min	21	39
+60	156	CH	A2-08 43 min	17	43
+60	157	CH	A2-08 47 min	13	47
+60	158	CH	A2-08 46 min	14	46
+60	159	CH	A2-08 23 min + A2-09 22 min	15	45
+60	160	CH	A2-09 46 min	14	46
+60	161	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	14	46
+60	162	CH	A2-09 42 min	18	42
+60	163	CH	A2-09 47 min	13	47
+60	164	CH	A2-09 52 min	8	52
+60	165	CH	A2-09 43 min + A2-10 8 min	10	50
+60	166	CH	A2-10 45 min	15	45
+60	167	CH	A2-10 44 min	16	44
+60	168	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	15	45
+60	169	CH	A2-10 46 min	14	46
+60	170	CH	A2-10 46 min	14	46
+60	171	CH	A2-10 40 min	11	40
+60	172	SIM	A2-Simulation 1 schriftlich (Lesen 40, Hören ca. 12, Schreiben 25) + Auswertung	0	92
+60	173	SIM	A2-Simulation 1 WOW (40) + Sprechen (ca. 10) + Auswertung	0	70
+60	174	CH	A2-11 22 min	38	22
+60	175	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	15	45
+60	176	CH	A2-11 50 min	10	50
+60	177	CH	A2-11 47 min	13	47
+60	178	CH	A2-11 45 min	15	45
+60	179	CH	A2-11 51 min	13	51
+60	180	CH	A2-12 47 min	13	47
+60	181	CH	A2-12 36 min	24	36
+60	182	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	16	44
+60	183	CH	A2-12 48 min	12	48
+60	184	CH	A2-12 47 min	13	47
+60	185	CH	A2-12 53 min	14	53
+60	186	CH	A2-13 44 min	16	44
+60	187	CH	A2-13 48 min	12	48
+60	188	CH	A2-13 42 min	18	42
+60	189	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	20	40
+60	190	CH	A2-13 43 min	17	43
+60	191	CH	A2-13 54 min	16	54
+60	192	CH	A2-14 46 min	14	46
+60	193	CH	A2-14 46 min	14	46
+60	194	CH	A2-14 48 min	12	48
+60	195	CH	A2-14 44 min	16	44
+60	196	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	14	46
+60	197	CH	A2-14 37 min + A2-15 8 min	14	46
+60	198	CH	A2-15 47 min	13	47
+60	199	CH	A2-15 44 min	16	44
+60	200	CH	A2-15 43 min	17	43
+60	201	CH	A2-15 46 min	14	46
+60	202	CH	A2-15 39 min + A2-16 6 min	14	46
+60	203	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	13	47
+60	204	CH	A2-16 38 min	22	38
+60	205	CH	A2-16 44 min	16	44
+60	206	CH	A2-16 48 min	12	48
+60	207	CH	A2-16 48 min	12	48
+60	208	CH	A2-16 22 min + A2-17 23 min	15	45
+60	209	CH	A2-17 45 min	15	45
+60	210	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	42
+60	211	CH	A2-17 42 min	18	42
+60	212	CH	A2-17 43 min	17	43
+60	213	CH	A2-17 48 min	12	48
+60	214	CH	A2-17 31 min + A2-18 14 min	16	44
+60	215	CH	A2-18 42 min	18	42
+60	216	CH	A2-18 46 min	14	46
+60	217	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	11	49
+60	218	CH	A2-18 40 min	20	40
+60	219	CH	A2-18 43 min	17	43
+60	220	CH	A2-18 22 min + A2-19 28 min	11	49
+60	221	CH	A2-19 46 min	14	46
+60	222	CH	A2-19 44 min	16	44
+60	223	CH	A2-19 48 min	12	48
+60	224	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	10	50
+60	225	CH	A2-19 42 min	18	42
+60	226	CH	A2-19 60 min	13	60
+60	227	PUF	Puffer vor A2-Simulation 2	8	52
+60	228	SIM	A2-Simulation 2 schriftlich + Auswertung	0	92
+60	229	SIM	A2-Simulation 2 WOW + Sprechen + Auswertung	0	70
+60	230	PUF	Puffer: gezielte Review nach Simulation 2	36	24
+60	231	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	10	50
+60	232	SIM	A2-Generalprobe am Stück (schriftlich 77 + Pause 15 + WOW 40 + Sprechen 10) + Auswertung	0	162
+60	233	PUF	Puffer: Review nach Generalprobe	21	39
+60	234	SIM	Offizieller ÖIF-Modelltest A2 am Stück (Link) + Selbstauswertung	0	160
+90	1	CH	A1-01 90 min	0	90
+90	2	CH	A1-01 87 min	3	87
+90	3	CH	A1-01 50 min + A1-02 38 min	2	88
+90	4	CH	A1-02 84 min	6	84
+90	5	CH	A1-02 81 min	9	81
+90	6	CH	A1-02 31 min + A1-03 51 min	8	82
+90	7	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	9	81
+90	8	CH	A1-03 83 min	7	83
+90	9	CH	A1-03 90 min	10	90
+90	10	CH	A1-04 84 min	6	84
+90	11	CH	A1-04 80 min	10	80
+90	12	CH	A1-04 25 min + A1-05 51 min	14	76
+90	13	CH	A1-05 77 min	13	77
+90	14	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	13	77
+90	15	CH	A1-05 76 min + A1-06 4 min	10	80
+90	16	CH	A1-06 74 min	16	74
+90	17	CH	A1-06 79 min	11	79
+90	18	CH	A1-06 60 min + A1-07 18 min	12	78
+90	19	CH	A1-07 76 min	14	76
+90	20	CH	A1-07 73 min	17	73
+90	21	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	17	73
+90	22	CH	A1-07 65 min + A1-08 11 min	14	76
+90	23	CH	A1-08 74 min	16	74
+90	24	CH	A1-08 79 min	11	79
+90	25	CH	A1-08 61 min + A1-09 13 min	16	74
+90	26	CH	A1-09 71 min	19	71
+90	27	CH	A1-09 68 min	22	68
+90	28	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	22	68
+90	29	CH	A1-09 78 min	20	78
+90	30	CH	A1-10 70 min	20	70
+90	31	CH	A1-10 77 min	13	77
+90	32	CH	A1-10 72 min	18	72
+90	33	CH	A1-10 16 min + A1-11 55 min	18	72
+90	34	CH	A1-11 68 min	22	68
+90	35	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	22	68
+90	36	CH	A1-11 73 min	17	73
+90	37	CH	A1-11 18 min + A1-12 50 min	23	67
+90	38	CH	A1-12 72 min	18	72
+90	39	CH	A1-12 70 min + A1-13 1 min	19	71
+90	40	CH	A1-13 75 min	15	75
+90	41	CH	A1-13 65 min	25	65
+90	42	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	19	71
+90	43	CH	A1-13 51 min + A1-14 20 min	19	71
+90	44	CH	A1-14 69 min	21	69
+90	45	CH	A1-14 75 min	15	75
+90	46	CH	A1-14 70 min + A1-15 6 min	14	76
+90	47	CH	A1-15 72 min	18	72
+90	48	CH	A1-15 67 min	23	67
+90	49	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	72
+90	50	CH	A1-15 80 min	19	80
+90	51	CH	A1-16 69 min	21	69
+90	52	CH	A1-16 77 min	13	77
+90	53	CH	A1-16 84 min	20	84
+90	54	CH	A1-17 71 min	19	71
+90	55	CH	A1-17 66 min	24	66
+90	56	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	23	67
+90	57	CH	A1-17 66 min	24	66
+90	58	CH	A1-17 19 min + A1-18 45 min	26	64
+90	59	CH	A1-18 71 min	19	71
+90	60	CH	A1-18 68 min	22	68
+90	61	CH	A1-18 29 min + A1-19 38 min	22	68
+90	62	CH	A1-19 62 min	28	62
+90	63	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	21	69
+90	64	CH	A1-19 68 min	22	68
+90	65	CH	A1-19 57 min + A1-20 8 min	26	64
+90	66	CH	A1-20 72 min	18	72
+90	67	CH	A1-20 73 min	17	73
+90	68	CH	A1-20 67 min	23	67
+90	69	CH	A1-20 23 min	25	23
+90	70	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	19	71
+90	71	PUF	Puffer vor A1-Meilenstein: gezielte Review schwacher Lernziele	22	68
+90	72	SIM	A1-Meilenstein schriftlich (SB, Hören, HuA, Lesen, Schreiben; 70 min) + Auswertung	0	85
+90	73	SIM	A1-Meilenstein WOW (40 min) + Sprechen (ca. 20 min) + Auswertung	0	80
+90	74	PUF	Puffer nach A1-Meilenstein: Fehler-Review bzw. Vorbereitung 2. Versuch	44	46
+90	75	CH	A2-01 72 min	18	72
+90	76	CH	A2-01 75 min	15	75
+90	77	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	13	77
+90	78	CH	A2-01 67 min	25	67
+90	79	CH	A2-02 72 min	18	72
+90	80	CH	A2-02 77 min	13	77
+90	81	CH	A2-02 83 min	21	83
+90	82	CH	A2-03 70 min	20	70
+90	83	CH	A2-03 67 min	23	67
+90	84	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	72
+90	85	CH	A2-03 64 min	26	64
+90	86	CH	A2-03 45 min + A2-04 28 min	17	73
+90	87	CH	A2-04 74 min	16	74
+90	88	CH	A2-04 67 min	23	67
+90	89	CH	A2-04 81 min	23	81
+90	90	CH	A2-05 65 min	25	65
+90	91	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	20	70
+90	92	CH	A2-05 65 min	25	65
+90	93	CH	A2-05 70 min	20	70
+90	94	CH	A2-05 35 min + A2-06 39 min	16	74
+90	95	CH	A2-06 70 min	20	70
+90	96	CH	A2-06 73 min	17	73
+90	97	CH	A2-06 37 min + A2-07 36 min	17	73
+90	98	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	17	73
+90	99	CH	A2-07 64 min	26	64
+90	100	CH	A2-07 67 min	23	67
+90	101	CH	A2-07 56 min + A2-08 17 min	17	73
+90	102	CH	A2-08 75 min	15	75
+90	103	CH	A2-08 68 min	22	68
+90	104	CH	A2-08 59 min	31	59
+90	105	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	23	67
+90	106	CH	A2-08 34 min + A2-09 31 min	25	65
+90	107	CH	A2-09 69 min	21	69
+90	108	CH	A2-09 72 min	18	72
+90	109	CH	A2-09 80 min	19	80
+90	110	CH	A2-10 68 min	22	68
+90	111	CH	A2-10 66 min	24	66
+90	112	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	24	66
+90	113	CH	A2-10 65 min	25	65
+90	114	CH	A2-10 29 min	24	29
+90	115	SIM	A2-Simulation 1 schriftlich (Lesen 40, Hören ca. 12, Schreiben 25) + Auswertung	0	92
+90	116	SIM	A2-Simulation 1 WOW (40) + Sprechen (ca. 10) + Auswertung	0	70
+90	117	CH	A2-11 45 min	45	45
+90	118	CH	A2-11 65 min	25	65
+90	119	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	17	73
+90	120	CH	A2-11 70 min	20	70
+90	121	CH	A2-11 35 min + A2-12 33 min	22	68
+90	122	CH	A2-12 77 min	13	77
+90	123	CH	A2-12 79 min	11	79
+90	124	CH	A2-12 43 min + A2-13 24 min	23	67
+90	125	CH	A2-13 69 min	21	69
+90	126	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	12	78
+90	127	CH	A2-13 72 min	18	72
+90	128	CH	A2-13 67 min + A2-14 2 min	22	68
+90	129	CH	A2-14 73 min	17	73
+90	130	CH	A2-14 74 min	16	74
+90	131	CH	A2-14 73 min	28	73
+90	132	CH	A2-15 64 min	26	64
+90	133	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	25	65
+90	134	CH	A2-15 68 min	22	68
+90	135	CH	A2-15 65 min	25	65
+90	136	CH	A2-15 30 min + A2-16 40 min	20	70
+90	137	CH	A2-16 74 min	16	74
+90	138	CH	A2-16 61 min	29	61
+90	139	CH	A2-16 32 min + A2-17 36 min	22	68
+90	140	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	72
+90	141	CH	A2-17 64 min	26	64
+90	142	CH	A2-17 66 min	24	66
+90	143	CH	A2-17 65 min + A2-18 6 min	19	71
+90	144	CH	A2-18 67 min	23	67
+90	145	CH	A2-18 71 min	19	71
+90	146	CH	A2-18 62 min + A2-19 4 min	24	66
+90	147	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	28	62
+90	148	CH	A2-19 66 min	24	66
+90	149	CH	A2-19 66 min	24	66
+90	150	CH	A2-19 76 min	14	76
+90	151	CH	A2-19 57 min	17	57
+90	152	PUF	Puffer vor A2-Simulation 2	20	70
+90	153	SIM	A2-Simulation 2 schriftlich + Auswertung	0	92
+90	154	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	37	53
+90	155	SIM	A2-Simulation 2 WOW + Sprechen + Auswertung	0	70
+90	156	PUF	Puffer: gezielte Review nach Simulation 2	37	53
+90	157	SIM	A2-Generalprobe am Stück (schriftlich 77 + Pause 15 + WOW 40 + Sprechen 10) + Auswertung	0	162
+90	158	PUF	Puffer: Review nach Generalprobe	29	61
+90	159	SIM	Offizieller ÖIF-Modelltest A2 am Stück (Link) + Selbstauswertung	0	160
+105	1	CH	A1-01 105 min	0	105
+105	2	CH	A1-01 102 min	3	102
+105	3	CH	A1-01 20 min + A1-02 80 min	4	101
+105	4	CH	A1-02 99 min	6	99
+105	5	CH	A1-02 55 min + A1-03 42 min	8	97
+105	6	CH	A1-03 92 min	13	92
+105	7	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	12	93
+105	8	CH	A1-03 88 min + A1-04 8 min	9	96
+105	9	CH	A1-04 95 min	10	95
+105	10	CH	A1-04 86 min + A1-05 11 min	8	97
+105	11	CH	A1-05 94 min	11	94
+105	12	CH	A1-05 98 min	15	98
+105	13	CH	A1-06 86 min	19	86
+105	14	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	16	89
+105	15	CH	A1-06 89 min	16	89
+105	16	CH	A1-06 42 min + A1-07 47 min	16	89
+105	17	CH	A1-07 94 min	11	94
+105	18	CH	A1-07 90 min	15	90
+105	19	CH	A1-08 84 min	21	84
+105	20	CH	A1-08 84 min	21	84
+105	21	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	16	89
+105	22	CH	A1-08 58 min + A1-09 29 min	18	86
+105	23	CH	A1-09 86 min	18	86
+105	24	CH	A1-09 93 min	12	93
+105	25	CH	A1-09 22 min + A1-10 65 min	18	87
+105	26	CH	A1-10 82 min	23	82
+105	27	CH	A1-10 88 min	28	88
+105	28	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	21	84
+105	29	CH	A1-11 80 min	25	80
+105	30	CH	A1-11 80 min	25	80
+105	31	CH	A1-11 53 min + A1-12 36 min	16	89
+105	32	CH	A1-12 88 min	17	88
+105	33	CH	A1-12 68 min + A1-13 13 min	24	81
+105	34	CH	A1-13 73 min	32	73
+105	35	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	25	80
+105	36	CH	A1-13 82 min	23	82
+105	37	CH	A1-13 23 min + A1-14 57 min	25	80
+105	38	CH	A1-14 89 min	16	89
+105	39	CH	A1-14 86 min + A1-15 1 min	18	87
+105	40	CH	A1-15 80 min	25	80
+105	41	CH	A1-15 77 min	28	77
+105	42	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	23	82
+105	43	CH	A1-15 68 min + A1-16 17 min	20	85
+105	44	CH	A1-16 78 min	27	78
+105	45	CH	A1-16 89 min	16	89
+105	46	CH	A1-16 46 min + A1-17 42 min	17	88
+105	47	CH	A1-17 83 min	22	83
+105	48	CH	A1-17 80 min	25	80
+105	49	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	25	80
+105	50	CH	A1-17 18 min + A1-18 61 min	26	79
+105	51	CH	A1-18 82 min	23	82
+105	52	CH	A1-18 70 min + A1-19 19 min	16	89
+105	53	CH	A1-19 88 min	17	88
+105	54	CH	A1-19 79 min	26	79
+105	55	CH	A1-19 39 min + A1-20 37 min	29	76
+105	56	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	28	77
+105	57	CH	A1-20 78 min	27	78
+105	58	CH	A1-20 77 min	28	77
+105	59	CH	A1-20 50 min	19	50
+105	60	PUF	Puffer vor A1-Meilenstein: gezielte Review schwacher Lernziele	20	85
+105	61	SIM	A1-Meilenstein schriftlich (SB, Hören, HuA, Lesen, Schreiben; 70 min) + Auswertung	0	85
+105	62	SIM	A1-Meilenstein WOW (40 min) + Sprechen (ca. 20 min) + Auswertung	0	80
+105	63	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	63	42
+105	64	PUF	Puffer nach A1-Meilenstein: Fehler-Review bzw. Vorbereitung 2. Versuch	21	84
+105	65	CH	A2-01 87 min	18	87
+105	66	CH	A2-01 87 min	18	87
+105	67	CH	A2-01 41 min + A2-02 42 min	22	83
+105	68	CH	A2-02 91 min	14	91
+105	69	CH	A2-02 99 min	20	99
+105	70	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	37	68
+105	71	CH	A2-03 82 min	23	82
+105	72	CH	A2-03 85 min	20	85
+105	73	CH	A2-03 79 min + A2-04 6 min	20	85
+105	74	CH	A2-04 78 min	27	78
+105	75	CH	A2-04 86 min	19	86
+105	76	CH	A2-04 81 min + A2-05 3 min	21	84
+105	77	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	39	66
+105	78	CH	A2-05 78 min	27	78
+105	79	CH	A2-05 80 min	25	80
+105	80	CH	A2-05 74 min + A2-06 12 min	19	86
+105	81	CH	A2-06 84 min	21	84
+105	82	CH	A2-06 81 min	24	81
+105	83	CH	A2-06 42 min + A2-07 44 min	19	86
+105	84	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	32	73
+105	85	CH	A2-07 81 min	24	81
+105	86	CH	A2-07 83 min	22	83
+105	87	CH	A2-07 15 min + A2-08 74 min	16	89
+105	88	CH	A2-08 80 min	25	80
+105	89	CH	A2-08 81 min	24	81
+105	90	CH	A2-08 18 min + A2-09 59 min	28	77
+105	91	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	27	78
+105	92	CH	A2-09 82 min	23	82
+105	93	CH	A2-09 68 min	37	68
+105	94	CH	A2-09 43 min + A2-10 42 min	20	85
+105	95	CH	A2-10 81 min	24	81
+105	96	CH	A2-10 80 min	25	80
+105	97	CH	A2-10 25 min	27	25
+105	98	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	28	77
+105	99	SIM	A2-Simulation 1 schriftlich (Lesen 40, Hören ca. 12, Schreiben 25) + Auswertung	0	92
+105	100	SIM	A2-Simulation 1 WOW (40) + Sprechen (ca. 10) + Auswertung	0	70
+105	101	CH	A2-11 45 min	60	45
+105	102	CH	A2-11 83 min	22	83
+105	103	CH	A2-11 87 min	21	87
+105	104	CH	A2-12 82 min	23	82
+105	105	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	27	78
+105	106	CH	A2-12 87 min	18	87
+105	107	CH	A2-12 63 min + A2-13 12 min	30	75
+105	108	CH	A2-13 78 min	27	78
+105	109	CH	A2-13 87 min	18	87
+105	110	CH	A2-13 55 min + A2-14 33 min	17	88
+105	111	CH	A2-14 79 min	26	79
+105	112	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	28	77
+105	113	CH	A2-14 86 min	19	86
+105	114	CH	A2-14 23 min + A2-15 54 min	28	77
+105	115	CH	A2-15 80 min	25	80
+105	116	CH	A2-15 93 min	22	93
+105	117	CH	A2-16 80 min	25	80
+105	118	CH	A2-16 77 min	28	77
+105	119	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	29	76
+105	120	CH	A2-16 48 min + A2-17 34 min	23	82
+105	121	CH	A2-17 80 min	25	80
+105	122	CH	A2-17 76 min	29	76
+105	123	CH	A2-17 41 min + A2-18 43 min	21	84
+105	124	CH	A2-18 81 min	24	81
+105	125	CH	A2-18 82 min	24	82
+105	126	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	36	69
+105	127	CH	A2-19 75 min	30	75
+105	128	CH	A2-19 81 min	24	81
+105	129	CH	A2-19 88 min	17	88
+105	130	CH	A2-19 23 min	17	23
+105	131	PUF	Puffer vor A2-Simulation 2	33	72
+105	132	SIM	A2-Simulation 2 schriftlich + Auswertung	0	92
+105	133	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	41	64
+105	134	SIM	A2-Simulation 2 WOW + Sprechen + Auswertung	0	70
+105	135	PUF	Puffer: gezielte Review nach Simulation 2	35	70
+105	136	SIM	A2-Generalprobe am Stück (schriftlich 77 + Pause 15 + WOW 40 + Sprechen 10) + Auswertung	0	162
+105	137	PUF	Puffer: Review nach Generalprobe	36	69
+105	138	SIM	Offizieller ÖIF-Modelltest A2 am Stück (Link) + Selbstauswertung	0	160
+120	1	CH	A1-01 120 min	0	120
+120	2	CH	A1-01 107 min + A1-02 9 min	4	116
+120	3	CH	A1-02 116 min	4	116
+120	4	CH	A1-02 109 min + A1-03 3 min	8	112
+120	5	CH	A1-03 109 min	11	109
+120	6	CH	A1-03 111 min	13	111
+120	7	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	13	107
+120	8	CH	A1-04 110 min	10	110
+120	9	CH	A1-04 79 min + A1-05 29 min	12	108
+120	10	CH	A1-05 112 min	8	112
+120	11	CH	A1-05 62 min + A1-06 44 min	14	106
+120	12	CH	A1-06 100 min	20	100
+120	13	CH	A1-06 73 min + A1-07 28 min	19	101
+120	14	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	21	99
+120	15	CH	A1-07 104 min	16	104
+120	16	CH	A1-07 100 min + A1-08 1 min	20	100
+120	17	CH	A1-08 104 min	16	104
+120	18	CH	A1-08 103 min	17	103
+120	19	CH	A1-08 18 min + A1-09 81 min	21	99
+120	20	CH	A1-09 98 min	22	98
+120	21	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	22	98
+120	22	CH	A1-09 51 min + A1-10 49 min	20	100
+120	23	CH	A1-10 101 min	19	101
+120	24	CH	A1-10 85 min + A1-11 21 min	14	106
+120	25	CH	A1-11 101 min	19	101
+120	26	CH	A1-11 92 min + A1-12 4 min	23	97
+120	27	CH	A1-12 91 min	29	91
+120	28	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	28	92
+120	29	CH	A1-12 97 min	25	97
+120	30	CH	A1-13 95 min	25	95
+120	31	CH	A1-13 97 min + A1-14 2 min	21	99
+120	32	CH	A1-14 96 min	24	96
+120	33	CH	A1-14 97 min	23	97
+120	34	CH	A1-14 37 min + A1-15 54 min	29	91
+120	35	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	26	94
+120	36	CH	A1-15 94 min	26	94
+120	37	CH	A1-15 77 min + A1-16 20 min	24	96
+120	38	CH	A1-16 101 min	19	101
+120	39	CH	A1-16 110 min	22	110
+120	40	CH	A1-17 95 min	25	95
+120	41	CH	A1-17 91 min	29	91
+120	42	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	27	93
+120	43	CH	A1-17 37 min + A1-18 53 min	29	91
+120	44	CH	A1-18 93 min	27	93
+120	45	CH	A1-18 68 min + A1-19 36 min	17	103
+120	46	CH	A1-19 95 min	25	95
+120	47	CH	A1-19 94 min + A1-20 1 min	25	95
+120	48	CH	A1-20 93 min	27	93
+120	49	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	24	96
+120	50	CH	A1-20 93 min	27	93
+120	51	CH	A1-20 56 min	22	56
+120	52	PUF	Puffer vor A1-Meilenstein: gezielte Review schwacher Lernziele	18	102
+120	53	SIM	A1-Meilenstein schriftlich (SB, Hören, HuA, Lesen, Schreiben; 70 min) + Auswertung	0	85
+120	54	SIM	A1-Meilenstein WOW (40 min) + Sprechen (ca. 20 min) + Auswertung	0	80
+120	55	PUF	Puffer nach A1-Meilenstein: Fehler-Review bzw. Vorbereitung 2. Versuch	54	66
+120	56	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	26	94
+120	57	CH	A2-01 97 min	23	97
+120	58	CH	A2-01 99 min	21	99
+120	59	CH	A2-01 19 min + A2-02 79 min	22	98
+120	60	CH	A2-02 99 min	21	99
+120	61	CH	A2-02 54 min + A2-03 44 min	22	98
+120	62	CH	A2-03 84 min	36	84
+120	63	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	23	97
+120	64	CH	A2-03 96 min	24	96
+120	65	CH	A2-03 22 min + A2-04 72 min	27	93
+120	66	CH	A2-04 93 min	27	93
+120	67	CH	A2-04 86 min + A2-05 12 min	22	98
+120	68	CH	A2-05 98 min	22	98
+120	69	CH	A2-05 80 min	40	80
+120	70	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	30	90
+120	71	CH	A2-05 44 min + A2-06 43 min	33	87
+120	72	CH	A2-06 91 min	29	91
+120	73	CH	A2-06 86 min + A2-07 9 min	25	95
+120	74	CH	A2-07 101 min	19	101
+120	75	CH	A2-07 98 min	22	98
+120	76	CH	A2-07 15 min + A2-08 68 min	37	83
+120	77	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	22	98
+120	78	CH	A2-08 92 min	28	92
+120	79	CH	A2-08 94 min + A2-09 2 min	24	96
+120	80	CH	A2-09 95 min	25	95
+120	81	CH	A2-09 96 min	24	96
+120	82	CH	A2-09 59 min + A2-10 30 min	31	89
+120	83	CH	A2-10 90 min	30	90
+120	84	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	24	96
+120	85	CH	A2-10 78 min	42	78
+120	86	CH	A2-10 29 min	32	29
+120	87	SIM	A2-Simulation 1 schriftlich (Lesen 40, Hören ca. 12, Schreiben 25) + Auswertung	0	92
+120	88	SIM	A2-Simulation 1 WOW (40) + Sprechen (ca. 10) + Auswertung	0	70
+120	89	CH	A2-11 56 min	64	56
+120	90	CH	A2-11 93 min	27	93
+120	91	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	22	98
+120	92	CH	A2-11 65 min + A2-12 25 min	30	90
+120	93	CH	A2-12 84 min	36	84
+120	94	CH	A2-12 96 min	24	96
+120	95	CH	A2-12 26 min + A2-13 77 min	17	103
+120	96	CH	A2-13 83 min	37	83
+120	97	CH	A2-13 72 min + A2-14 24 min	24	96
+120	98	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	18	102
+120	99	CH	A2-14 84 min	36	84
+120	100	CH	A2-14 87 min	33	87
+120	101	CH	A2-14 27 min + A2-15 73 min	20	100
+120	102	CH	A2-15 104 min	16	104
+120	103	CH	A2-15 50 min + A2-16 32 min	38	82
+120	104	CH	A2-16 89 min	31	89
+120	105	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	24	96
+120	106	CH	A2-16 85 min + A2-17 1 min	34	86
+120	107	CH	A2-17 91 min	29	91
+120	108	CH	A2-17 105 min	15	105
+120	109	CH	A2-17 35 min + A2-18 69 min	16	104
+120	110	CH	A2-18 83 min	37	83
+120	111	CH	A2-18 54 min + A2-19 38 min	29	91
+120	112	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	22	98
+120	113	CH	A2-19 91 min	29	91
+120	114	CH	A2-19 88 min	32	88
+120	115	CH	A2-19 51 min	24	51
+120	116	PUF	Puffer vor A2-Simulation 2	23	97
+120	117	SIM	A2-Simulation 2 schriftlich + Auswertung	0	92
+120	118	SIM	A2-Simulation 2 WOW + Sprechen + Auswertung	0	70
+120	119	WOCHE	Wochenreview (Interleaving aller bisherigen Kapitel)	72	48
+120	120	PUF	Puffer: gezielte Review nach Simulation 2	30	90
+120	121	SIM	A2-Generalprobe am Stück (schriftlich 77 + Pause 15 + WOW 40 + Sprechen 10) + Auswertung	0	162
+120	122	PUF	Puffer: Review nach Generalprobe	40	80
+120	123	SIM	Offizieller ÖIF-Modelltest A2 am Stück (Link) + Selbstauswertung	0	160
