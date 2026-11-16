@@ -64,8 +64,16 @@ export type CoursePhase = z.infer<typeof CoursePhase>;
 export const AttemptState = z.discriminatedUnion('kind', [
 	z.object({ kind: z.literal('LESSONS'), repeatMode: z.boolean(), done: z.array(z.string()) }),
 	z.object({ kind: z.literal('PRACTICE'), answered: z.number(), total: z.number() }),
-	z.object({ kind: z.literal('GATE'), block: z.number(), items: z.array(z.string()), correct: z.number(), answered: z.number() }),
-	z.object({ kind: z.literal('TARGETED_PRACTICE'), goalIds: z.array(z.string()), done: z.boolean() }),
+	// `wrong` is not in the 04a sketch: the goals for targeted practice (R-G2) are derived from it (G-008).
+	z.object({
+		kind: z.literal('GATE'),
+		block: z.number(),
+		items: z.array(z.string()),
+		wrong: z.array(z.string()).default([]),
+		correct: z.number(),
+		answered: z.number()
+	}),
+	z.object({ kind: z.literal('TARGETED_PRACTICE'), block: z.number().default(1), goalIds: z.array(z.string()), done: z.boolean() }),
 	z.object({ kind: z.literal('TEST_READY') }),
 	z.object({
 		kind: z.literal('TEST'),

@@ -1,6 +1,6 @@
 import type { RulePolicy } from './policy';
-import { addCards, answerCard, type Direction, type Introduced } from './review';
-import { initialState, type ChapterId, type ChapterRun, type CoursePhase, type GameState, type LocalDate, type OverrideEffect, type OverrideGrant, type PensumMin } from './state';
+import { addCards, addErrorCard, answerCard, errorCardId, type Direction, type Introduced } from './review';
+import { initialState, type AttemptState, type ChapterId, type ChapterRun, type CoursePhase, type GameState, type LocalDate, type OverrideEffect, type OverrideGrant, type PensumMin, type RecoveryPlan } from './state';
 
 // Pure core (docs/spec/04a §1): no I/O, no Date.now(). Time comes only from the event.
 type EventBase = { id: string; at: string; tzOffsetMin: number };
@@ -11,9 +11,27 @@ export type GameEvent = EventBase &
 		| { type: 'PENSUM_CHANGED'; pensumMin: PensumMin }
 		| { type: 'APP_OPENED' }
 		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string; introduced?: Introduced[] }
+		| { type: 'PRACTICE_ANSWERED'; itemId: string; correct: boolean }
+		| { type: 'GATE_ANSWERED'; itemId: string; correct: boolean }
+		| { type: 'TARGETED_PRACTICE_DONE'; goalIds: string[] }
+		| { type: 'TEST_STARTED'; attemptId: string; itemIds: string[] }
+		| { type: 'TEST_ANSWERED'; attemptId: string; itemId: string; correct: boolean }
+		| { type: 'CORRECTION_ANSWERED'; attemptId: string; twinId: string; correct: boolean }
+		| { type: 'ERROR_REVIEW_ANSWERED'; cardId: string; correct: boolean }
 		| { type: 'REVIEW_ANSWERED'; cardId: string; direction: Direction; correct: boolean }
 		| { type: 'OVERRIDE_GRANTED'; grant: OverrideGrant }
 	);
+
+// What the mechanics need to know about the content. The core never imports content itself.
+export type ContentInfo = {
+	// undefined = the chapter has no practice/test pools yet; its attempt then stays in the lessons.
+	chapter(c: ChapterId): { lessonIds: readonly string[]; practiceTotal: number } | undefined;
+	baseOf(itemId: string): string;
+	// All other items of the same twin family.
+	twinsOf(itemId: string): readonly string[];
+	goalsOf(itemId: string): readonly string[];
+};
+export const noContent: ContentInfo = { chapter: () => undefined, baseOf: (id) => id, twinsOf: () => [], goalsOf: () => [] };
 
 export type Reducer = (state: GameState, event: GameEvent) => GameState;
 
@@ -48,6 +66,49 @@ const enterPhase = (policy: RulePolicy, s: GameState, phase: CoursePhase): GameS
 	course: { ...s.course, phase, chapter: phase.kind === 'CHAPTER' ? newRun(policy, s, phase.id) : null }
 });
 
+// Deterministic shuffle from a string seed, so the correction round is reproducible from the events.
+const seeded = (seed: string): (() => number) => {
+	let h = [...seed].reduce((acc, ch) => Math.imul(acc ^ ch.charCodeAt(0), 16777619), 2166136261) >>> 0;
+	return () => {
+		h = (h + 0x6d2b79f5) >>> 0;
+		const t = Math.imul(h ^ (h >>> 15), 1 | h);
+		const u = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+		return ((u ^ (u >>> 14)) >>> 0) / 4294967296;
+	};
+};
+const shuffle = <T>(list: readonly T[], random: () => number): T[] =>
+	list
+		.map((value) => ({ value, key: random() }))
+		.sort((a, b) => a.key - b.key)
+		.map((x) => x.value);
+
+// R-K1, R-K3: one twin per wrong item, preferably one not used in this test, else the least recently seen.
+const pickTwins = (content: ContentInfo, run: ChapterRun, wrong: readonly string[], inTest: readonly string[], seed: string): string[] => {
+	const lastSeen = (id: string) => run.seenTestItemIds.lastIndexOf(id);
+	const twins = wrong.flatMap((item) => {
+		const family = content.twinsOf(item);
+		const unused = family.filter((t) => !inTest.includes(t));
+		const pool = unused.length > 0 ? unused : family;
+		return [...pool].sort((a, b) => lastSeen(a) - lastSeen(b)).slice(0, 1);
+	});
+	return shuffle(twins, seeded(seed));
+};
+
+const gateBlock = (block: number): AttemptState => ({ kind: 'GATE', block, items: [], wrong: [], correct: 0, answered: 0 });
+
+const entryState = (content: ContentInfo, id: ChapterId, plan: Pick<RecoveryPlan, 'entry' | 'repeatMode'>): AttemptState => {
+	switch (plan.entry) {
+		case 'LESSONS':
+			return { kind: 'LESSONS', repeatMode: plan.repeatMode, done: [] };
+		case 'PRACTICE':
+			return { kind: 'PRACTICE', answered: 0, total: content.chapter(id)?.practiceTotal ?? 0 };
+		case 'GATE':
+			return gateBlock(1);
+		case 'TEST_READY':
+			return { kind: 'TEST_READY' };
+	}
+};
+
 // R-PL3: effects of an accepted override run through the normal mechanics.
 const applyEffect = (policy: RulePolicy, order: readonly ChapterId[], s: GameState, effect: OverrideEffect): GameState => {
 	if (effect.kind !== 'COMPLETE_CHAPTER') return s; // recovery effects follow with the chapter test step
@@ -59,12 +120,47 @@ const applyEffect = (policy: RulePolicy, order: readonly ChapterId[], s: GameSta
 	return isCurrent ? enterPhase(policy, withCompletion, phaseAfter(order, effect.chapterId)) : withCompletion;
 };
 
-export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[]): Reducer => (state, event) => {
+export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[], content: ContentInfo = noContent): Reducer => (state, event) => {
 	const s: GameState = {
 		...state,
 		clock: { ...state.clock, lastEventAt: event.at, lastLocalDate: localDate(event.at, event.tzOffsetMin) }
 	};
 	const today = localDate(event.at, event.tzOffsetMin);
+	const run = s.course.chapter;
+	const withRun = (base: GameState, next: ChapterRun): GameState => ({ ...base, course: { ...base.course, chapter: next } });
+	const withAttempt = (base: GameState, attempt: AttemptState): GameState => (run ? withRun(base, { ...run, attempt }) : base);
+	const withError = (base: GameState, itemId: string): GameState => ({
+		...base,
+		review: { ...base.review, cards: addErrorCard(base.review.cards, content.baseOf(itemId), today) }
+	});
+	// R-F2: book the completion, the bonus and the perfect streak, then let the course automaton move on.
+	const pass = (base: GameState, current: ChapterRun, perfectFirst: boolean): GameState => {
+		const streak = perfectFirst ? base.course.perfectStreak.current + 1 : 0;
+		const booked: GameState = {
+			...base,
+			course: {
+				...base.course,
+				completed: { ...base.course.completed, [current.id]: policy.completionOnPass(base, current.id, current, event.at) },
+				nextChapterBonus: policy.bonusForNext(base, current, perfectFirst),
+				perfectStreak: { current: streak, best: Math.max(base.course.perfectStreak.best, streak) }
+			}
+		};
+		return enterPhase(policy, booked, phaseAfter(chapterOrder, current.id));
+	};
+	// R-K4/R-K5 as data: the plan of the policy says where the next attempt starts.
+	const nextAttempt = (base: GameState, current: ChapterRun, plan: RecoveryPlan): GameState =>
+		withRun(base, {
+			...current,
+			attemptNo: current.attemptNo + 1,
+			startLives: plan.resetLives ? policy.startLives(base, current.id) : current.startLives,
+			attempt: entryState(content, current.id, plan)
+		});
+	const fail = (base: GameState, current: ChapterRun, wrong: readonly string[]): GameState => {
+		const plan = policy.recoveryAfterFail(base, current);
+		if (!plan.errorReview) return nextAttempt(base, current, plan);
+		const cardIds = [...new Set(wrong.map((item) => errorCardId(content.baseOf(item))))];
+		return withRun(base, { ...current, attempt: { kind: 'ERROR_REVIEW', cardIds, done: [] } });
+	};
 	switch (event.type) {
 		case 'PROFILE_CREATED': {
 			if (s.profile || event.name.trim() === '' || chapterOrder.length === 0) return s;
@@ -77,14 +173,93 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 		case 'PENSUM_CHANGED':
 			return s.profile ? { ...s, profile: { ...s.profile, pensumMin: event.pensumMin } } : s;
 		case 'LESSON_COMPLETED': {
-			const run = s.course.chapter;
 			// Only lessons of the chapter in work count; re-reading passed chapters changes nothing (R-F1).
 			if (!run || run.id !== event.chapterId || run.attempt.kind !== 'LESSONS') return s;
 			if (run.attempt.done.includes(event.lessonId)) return s;
-			const attempt = { ...run.attempt, done: [...run.attempt.done, event.lessonId] };
+			const done = [...run.attempt.done, event.lessonId];
+			const info = content.chapter(run.id);
+			const attempt: AttemptState =
+				info && info.lessonIds.every((l) => done.includes(l)) ? entryState(content, run.id, { entry: 'PRACTICE', repeatMode: false }) : { ...run.attempt, done };
 			// R-W2: review cards for what the lesson introduced.
 			const cards = addCards(s.review.cards, event.introduced ?? [], today);
 			return { ...s, course: { ...s.course, chapter: { ...run, attempt } }, review: { ...s.review, cards } };
+		}
+		case 'PRACTICE_ANSWERED': {
+			if (!run || run.attempt.kind !== 'PRACTICE') return s;
+			const answered = run.attempt.answered + 1;
+			const booked = event.correct ? s : withError(s, event.itemId);
+			return withAttempt(booked, answered >= run.attempt.total ? gateBlock(1) : { ...run.attempt, answered });
+		}
+		case 'GATE_ANSWERED': {
+			const g = run?.attempt;
+			if (!g || g.kind !== 'GATE' || g.items.includes(event.itemId)) return s;
+			const gate = {
+				...g,
+				items: [...g.items, event.itemId],
+				wrong: event.correct ? g.wrong : [...g.wrong, event.itemId],
+				correct: g.correct + Number(event.correct),
+				answered: g.answered + 1
+			};
+			// R-G3: only errors touch the cards.
+			const booked = event.correct ? s : withError(s, event.itemId);
+			if (gate.answered < policy.config.GATE_ITEMS) return withAttempt(booked, gate);
+			if (policy.isTestReady(gate)) return withAttempt(booked, { kind: 'TEST_READY' });
+			const goalIds = [...new Set(gate.wrong.flatMap((item) => content.goalsOf(item)))];
+			return withAttempt(booked, { kind: 'TARGETED_PRACTICE', block: gate.block, goalIds, done: false });
+		}
+		case 'TARGETED_PRACTICE_DONE': {
+			if (!run || run.attempt.kind !== 'TARGETED_PRACTICE') return s;
+			return withAttempt(s, gateBlock(run.attempt.block + 1));
+		}
+		case 'TEST_STARTED': {
+			if (!run || run.attempt.kind !== 'TEST_READY' || event.itemIds.length === 0) return s;
+			return withRun(s, {
+				...run,
+				seenTestItemIds: [...run.seenTestItemIds.filter((id) => !event.itemIds.includes(id)), ...event.itemIds],
+				attempt: { kind: 'TEST', attemptId: event.attemptId, items: event.itemIds, idx: 0, lives: run.startLives, wrong: [], audioPlays: {} }
+			});
+		}
+		case 'TEST_ANSWERED': {
+			const t = run?.attempt;
+			if (!run || !t || t.kind !== 'TEST' || t.attemptId !== event.attemptId || t.items[t.idx] !== event.itemId) return s;
+			const test = {
+				...t,
+				idx: t.idx + 1,
+				lives: t.lives - Number(!event.correct),
+				wrong: event.correct ? t.wrong : [...t.wrong, event.itemId]
+			};
+			const booked = event.correct ? s : withError(s, event.itemId);
+			const current: ChapterRun = { ...run, attempt: test };
+			switch (policy.outcomeAfterTest(current)) {
+				case 'CONTINUE':
+					return withRun(booked, current);
+				case 'PASSED':
+					return pass(booked, current, run.attemptNo === 1);
+				case 'FAILED':
+					return fail(booked, current, test.wrong);
+				case 'CORRECTION': {
+					// R-K2 (T-K02): the correction round follows at once, no state in between.
+					const twins = pickTwins(content, run, test.wrong, test.items, test.attemptId);
+					return withRun(booked, { ...run, attempt: { kind: 'CORRECTION', attemptId: test.attemptId, twins, idx: 0, livesLeft: test.lives } });
+				}
+			}
+			return s;
+		}
+		case 'CORRECTION_ANSWERED': {
+			const c = run?.attempt;
+			if (!run || !c || c.kind !== 'CORRECTION' || c.attemptId !== event.attemptId || c.twins[c.idx] !== event.twinId) return s;
+			const booked = event.correct ? s : withError(s, event.twinId);
+			const current: ChapterRun = { ...run, attempt: { ...c, idx: c.idx + 1 } };
+			if (event.correct && c.idx + 1 < c.twins.length) return withRun(booked, current);
+			return policy.outcomeAfterCorrection(current, event.correct) === 'PASSED' ? pass(booked, current, false) : fail(booked, current, c.twins);
+		}
+		case 'ERROR_REVIEW_ANSWERED': {
+			const r = run?.attempt;
+			// R-K4: every error card of the attempt once right; a wrong answer just comes again.
+			if (!run || !r || r.kind !== 'ERROR_REVIEW' || !event.correct || !r.cardIds.includes(event.cardId) || r.done.includes(event.cardId)) return s;
+			const done = [...r.done, event.cardId];
+			if (done.length < r.cardIds.length) return withAttempt(s, { ...r, done });
+			return nextAttempt(s, run, policy.recoveryAfterFail(s, run));
 		}
 		case 'REVIEW_ANSWERED': {
 			const card = s.review.cards[event.cardId];

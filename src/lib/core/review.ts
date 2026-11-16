@@ -33,6 +33,26 @@ export const addCards = (cards: GameState['review']['cards'], introduced: readon
 		return card.id in acc ? acc : { ...acc, [card.id]: card };
 	}, cards);
 
+// R-W3: a wrong task creates an error card for its base item (box 1, due tomorrow); an existing one falls back.
+export const errorCardId = (baseItemId: string): string => `err-${baseItemId}`;
+export const addErrorCard = (cards: GameState['review']['cards'], baseItemId: string, today: LocalDate): GameState['review']['cards'] => {
+	const id = errorCardId(baseItemId);
+	const fresh: Card = {
+		id,
+		kind: 'error',
+		refId: baseItemId,
+		box: 1,
+		due: addDays(today, 1),
+		mastered: false,
+		archived: false,
+		directions: ['recognize'],
+		nextDirection: 'recognize',
+		lastWrongDirection: null,
+		isNoun: false
+	};
+	return { ...cards, [id]: id in cards ? { ...cards[id], box: 1, due: fresh.due, mastered: false } : fresh };
+};
+
 // R-W5 + R-W7: right -> next box, due after that box's interval, direction rotates (box 5 noun: produce);
 // right in box 5 -> mastered; wrong -> box 1, due tomorrow, same direction first again.
 export const answerCard = (card: Card, correct: boolean, today: LocalDate, config: RuleConfig): Card => {
