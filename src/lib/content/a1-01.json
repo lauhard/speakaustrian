@@ -206,6 +206,72 @@
 			"lemma": "und",
 			"en": "and",
 			"tl": "at"
+		},
+		{
+			"id": "W-A1-0008",
+			"lemma": "er",
+			"en": "he",
+			"tl": "siya (lalaki)"
+		},
+		{
+			"id": "W-A1-0009",
+			"lemma": "sie",
+			"en": "she",
+			"tl": "siya (babae)"
+		},
+		{
+			"id": "W-A1-0010",
+			"lemma": "es",
+			"en": "it",
+			"tl": "ito"
+		},
+		{
+			"id": "W-A1-0051",
+			"lemma": "ja",
+			"en": "yes",
+			"tl": "oo"
+		},
+		{
+			"id": "W-A1-0052",
+			"lemma": "nein",
+			"en": "no",
+			"tl": "hindi"
+		},
+		{
+			"id": "W-A1-0055",
+			"lemma": "auch",
+			"en": "also, too",
+			"tl": "din / rin"
+		},
+		{
+			"id": "W-A1-0036",
+			"lemma": "was",
+			"en": "what",
+			"tl": "ano"
+		},
+		{
+			"id": "W-A1-0011",
+			"lemma": "wir",
+			"en": "we",
+			"tl": "kami / tayo"
+		},
+		{
+			"id": "W-A1-0012",
+			"lemma": "ihr",
+			"en": "you (several friends)",
+			"tl": "kayo (mga kaibigan)"
+		},
+		{
+			"id": "W-A1-0016",
+			"lemma": "mir",
+			"en": "(to) me",
+			"tl": "sa akin"
+		},
+		{
+			"id": "W-A1-0389",
+			"lemma": "sich vorstellen",
+			"en": "to introduce oneself",
+			"tl": "magpakilala"
 		}
 	],
 	"lessons": [
@@ -1114,6 +1180,633 @@
 				"W-A1-0386",
 				"W-A1-0017",
 				"W-A1-0046"
+			]
+		},
+		{
+			"id": "A1-01-L05",
+			"title": {
+				"de": "Wer ist das? – er und sie",
+				"en": "Who is that? – he and she",
+				"tl": "Sino iyan? – siya (lalaki/babae)"
+			},
+			"introduces": [
+				"W-A1-0008",
+				"W-A1-0009",
+				"W-A1-0010"
+			],
+			"cards": [
+				{
+					"phrase": "Wer ist das? – Das ist Herr Huber.",
+					"note": {
+						"de": "So stellt man eine andere Person vor.",
+						"en": "This is how you introduce another person.",
+						"tl": "Ganito ipakilala ang ibang tao."
+					}
+				},
+				{
+					"phrase": "Er heißt Jonas. Er kommt aus Österreich.",
+					"note": {
+						"de": "„er“ steht für einen Mann.",
+						"en": "“er” stands for a man.",
+						"tl": "Ang “er” ay para sa lalaki."
+					}
+				},
+				{
+					"phrase": "Sie heißt Anna. Sie ist Frau Gruber.",
+					"note": {
+						"de": "„sie“ steht für eine Frau. Klein geschrieben – „Sie“ mit großem S ist die höfliche Anrede.",
+						"en": "“sie” stands for a woman. Lower case – “Sie” with a capital S is the polite “you”.",
+						"tl": "Ang “sie” ay para sa babae. Maliit na titik – ang “Sie” na malaki ang S ay magalang na “ikaw”."
+					}
+				},
+				{
+					"phrase": "Wie geht es Maria? – Es geht gut.",
+					"note": {
+						"de": "„es“ braucht man in festen Sätzen wie „Es geht gut“.",
+						"en": "“es” is used in fixed phrases like “Es geht gut”.",
+						"tl": "Ginagamit ang “es” sa mga nakapirming pangungusap gaya ng “Es geht gut”."
+					}
+				},
+				{
+					"phrase": "er heißt – sie kommt – er ist",
+					"note": {
+						"de": "Bei „er“ und „sie“ endet das Verb auf -t. Besonders: er ist, sie ist.",
+						"en": "With “er” and “sie” the verb ends in -t. Special: er ist, sie ist.",
+						"tl": "Kapag “er” at “sie”, -t ang dulo ng pandiwa. Espesyal: er ist, sie ist."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L05-I1",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie das fehlende Wort.",
+						"en": "Write the missing word.",
+						"tl": "Isulat ang nawawalang salita."
+					},
+					"text": "Das ist Herr Huber. {{1}} heißt Jonas.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Er"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Herr Huber ist ein Mann: „er“. Am Satzanfang groß: Er.",
+						"en": "Mr Huber is a man: “er”. Capital letter at the start of the sentence: Er.",
+						"tl": "Lalaki si Herr Huber: “er”. Malaking titik sa simula ng pangungusap: Er."
+					}
+				},
+				{
+					"id": "A1-01-L05-I2",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie das fehlende Wort.",
+						"en": "Write the missing word.",
+						"tl": "Isulat ang nawawalang salita."
+					},
+					"text": "Das ist Frau Gruber. {{1}} kommt aus Österreich.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Sie"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Frau Gruber ist eine Frau: „sie“.",
+						"en": "Ms Gruber is a woman: “sie”.",
+						"tl": "Babae si Frau Gruber: “sie”."
+					}
+				},
+				{
+					"id": "A1-01-L05-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Was passt?",
+						"en": "What fits?",
+						"tl": "Alin ang bagay?"
+					},
+					"options": [
+						"heiße",
+						"heißt",
+						"heißen"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Bei „er“ endet das Verb auf -t: er heißt.",
+						"en": "With “er” the verb ends in -t: er heißt.",
+						"tl": "Kapag “er”, -t ang dulo: er heißt."
+					},
+					"prompt": "Er … Jonas."
+				},
+				{
+					"id": "A1-01-L05-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Wer {{1}} das? – Das {{2}} Frau Gruber.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"ist"
+							]
+						},
+						"2": {
+							"accept": [
+								"ist"
+							]
+						}
+					},
+					"explanation": {
+						"de": "sein: ich bin, du bist, er ist, sie ist.",
+						"en": "sein: ich bin, du bist, er ist, sie ist.",
+						"tl": "sein: ich bin, du bist, er ist, sie ist."
+					}
+				},
+				{
+					"id": "A1-01-L05-B1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Wer ist das im Büro?",
+						"en": "Look at the picture. Who is that in the office?",
+						"tl": "Tingnan ang larawan. Sino ang nasa opisina?"
+					},
+					"options": [
+						"Sie heißt Anna Gruber. Er heißt Jonas Huber.",
+						"Er heißt Anna Gruber. Sie heißt Jonas Huber.",
+						"Sie heißt Anna Huber. Er heißt Jonas Gruber."
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Die Frau ist Anna Gruber („sie“), der Mann ist Jonas Huber („er“) – so steht es auf den Schildern.",
+						"en": "The woman is Anna Gruber (“sie”), the man is Jonas Huber (“er”) – as the signs say.",
+						"tl": "Ang babae ay si Anna Gruber (“sie”), ang lalaki ay si Jonas Huber (“er”) – gaya ng nasa mga karatula."
+					},
+					"image": {
+						"src": "/img/a1-01-amt.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					}
+				},
+				{
+					"id": "A1-01-L05-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wer kommt aus Österreich?",
+						"en": "Listen. Who is from Austria?",
+						"tl": "Makinig. Sino ang galing sa Austria?"
+					},
+					"options": [
+						"Herr Huber",
+						"Frau Gruber",
+						"Maria"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Sie hören: „Das ist Frau Gruber. Sie kommt aus Österreich.“",
+						"en": "You hear: “Das ist Frau Gruber. Sie kommt aus Österreich.”",
+						"tl": "Narinig mo: “Das ist Frau Gruber. Sie kommt aus Österreich.”"
+					},
+					"audioText": "Das ist Frau Gruber. Sie kommt aus Österreich.",
+					"audioOnly": true
+				}
+			]
+		},
+		{
+			"id": "A1-01-L06",
+			"title": {
+				"de": "Ja, nein, ich auch",
+				"en": "Yes, no, me too",
+				"tl": "Oo, hindi, ako rin"
+			},
+			"introduces": [
+				"W-A1-0051",
+				"W-A1-0052",
+				"W-A1-0055",
+				"W-A1-0036"
+			],
+			"cards": [
+				{
+					"phrase": "Heißen Sie Huber? – Ja, ich heiße Huber.",
+					"note": {
+						"de": "Bei einer Frage ohne Fragewort steht das Verb vorne. Antwort: ja oder nein.",
+						"en": "In a question without a question word the verb comes first. Answer: ja or nein.",
+						"tl": "Sa tanong na walang salitang pananong, nauuna ang pandiwa. Sagot: ja o nein."
+					}
+				},
+				{
+					"phrase": "Kommen Sie aus Österreich? – Nein, ich komme von den Philippinen.",
+					"note": {
+						"de": "Nach „nein“ sagt man, was richtig ist.",
+						"en": "After “nein” you say what is right.",
+						"tl": "Pagkatapos ng “nein”, sabihin kung ano ang tama."
+					}
+				},
+				{
+					"phrase": "Ich komme aus Österreich. – Ich auch!",
+					"note": {
+						"de": "„auch“ heißt: bei mir ist es gleich.",
+						"en": "“auch” means: it is the same for me.",
+						"tl": "Ang “auch” ay: ganoon din ako."
+					}
+				},
+				{
+					"phrase": "Was ist das? – Das ist ein Name.",
+					"note": {
+						"de": "„was“ fragt nach Dingen, „wer“ fragt nach Personen.",
+						"en": "“was” asks about things, “wer” asks about people.",
+						"tl": "Ang “was” ay tanong tungkol sa bagay, ang “wer” ay tungkol sa tao."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L06-I1",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie heißen Maria Santos. Was antworten Sie?",
+						"en": "Your name is Maria Santos. What do you answer?",
+						"tl": "Maria Santos ang pangalan mo. Ano ang isasagot mo?"
+					},
+					"options": [
+						"Ja, ich heiße Huber.",
+						"Nein, ich heiße Santos.",
+						"Ich auch."
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Der Name stimmt nicht. Darum: „Nein, ich heiße Santos.“",
+						"en": "The name is not right. So: “Nein, ich heiße Santos.”",
+						"tl": "Hindi tama ang pangalan. Kaya: “Nein, ich heiße Santos.”"
+					},
+					"prompt": "Heißen Sie Huber?",
+					"audioText": "Heißen Sie Huber?"
+				},
+				{
+					"id": "A1-01-L06-I2",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie das fehlende Wort.",
+						"en": "Write the missing word.",
+						"tl": "Isulat ang nawawalang salita."
+					},
+					"text": "Kommst du aus Österreich? – {{1}}, ich komme aus Österreich.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Ja"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Es stimmt, darum „Ja“.",
+						"en": "It is true, so “Ja”.",
+						"tl": "Totoo, kaya “Ja”."
+					}
+				},
+				{
+					"id": "A1-01-L06-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie das fehlende Wort.",
+						"en": "Write the missing word.",
+						"tl": "Isulat ang nawawalang salita."
+					},
+					"text": "Mir geht's gut. Und dir? – Mir {{1}}, danke!",
+					"gaps": {
+						"1": {
+							"accept": [
+								"auch"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Es ist gleich: „Mir auch.“",
+						"en": "It is the same: “Mir auch.”",
+						"tl": "Ganoon din: “Mir auch.”"
+					}
+				},
+				{
+					"id": "A1-01-L06-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "„Wer“ oder „was“?",
+						"en": "“Wer” or “was”?",
+						"tl": "“Wer” o “was”?"
+					},
+					"options": [
+						"Wer",
+						"Was",
+						"Wie"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Frau Gruber ist eine Person. Nach Personen fragt man mit „wer“.",
+						"en": "Ms Gruber is a person. You ask about people with “wer”.",
+						"tl": "Tao si Frau Gruber. “wer” ang tanong para sa tao."
+					},
+					"prompt": "… ist das? – Das ist Frau Gruber."
+				},
+				{
+					"id": "A1-01-L06-B1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Ist der Satz richtig?",
+						"en": "Look at the picture. Is the sentence correct?",
+						"tl": "Tingnan ang larawan. Tama ba ang pangungusap?"
+					},
+					"options": [
+						"Ja.",
+						"Nein."
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Nein. Auf dem Schild steht: Er heißt Jonas Huber.",
+						"en": "No. The badge says: his name is Jonas Huber.",
+						"tl": "Hindi. Nasa karatula: Jonas Huber ang pangalan niya."
+					},
+					"prompt": "Er heißt Jonas Gruber.",
+					"image": {
+						"src": "/img/a1-01-amt.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					}
+				},
+				{
+					"id": "A1-01-L06-B2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Ist der Satz richtig?",
+						"en": "Look at the picture. Is the sentence correct?",
+						"tl": "Tingnan ang larawan. Tama ba ang pangungusap?"
+					},
+					"options": [
+						"Ja.",
+						"Nein."
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Ja. Es ist Nacht, das Kind schläft – man sagt „Gute Nacht“.",
+						"en": "Yes. It is night, the child is asleep – you say “Gute Nacht”.",
+						"tl": "Oo. Gabi na at tulog ang bata – “Gute Nacht” ang sinasabi."
+					},
+					"prompt": "Sie sagt: „Gute Nacht!“",
+					"image": {
+						"src": "/img/a1-01-nacht.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-01-L07",
+			"title": {
+				"de": "Wir stellen uns vor",
+				"en": "We introduce ourselves",
+				"tl": "Nagpapakilala kami"
+			},
+			"introduces": [
+				"W-A1-0011",
+				"W-A1-0012",
+				"W-A1-0016",
+				"W-A1-0389"
+			],
+			"cards": [
+				{
+					"phrase": "Ich stelle mich vor: Ich heiße Maria Santos.",
+					"note": {
+						"de": "So beginnt man, wenn man sich vorstellt – zum Beispiel im Kurs oder in der Prüfung.",
+						"en": "This is how you start introducing yourself – for example in class or in the exam.",
+						"tl": "Ganito magsimula kapag nagpapakilala – halimbawa sa klase o sa exam."
+					}
+				},
+				{
+					"phrase": "Wir kommen von den Philippinen.",
+					"note": {
+						"de": "„wir“ = ich und andere. Das Verb endet auf -en: wir kommen.",
+						"en": "“wir” = I and others. The verb ends in -en: wir kommen.",
+						"tl": "“wir” = ako at iba pa. -en ang dulo ng pandiwa: wir kommen."
+					}
+				},
+				{
+					"phrase": "Woher kommt ihr? Wie heißt ihr?",
+					"note": {
+						"de": "„ihr“ sagt man zu zwei oder mehr Freunden. Das Verb endet auf -t: ihr kommt.",
+						"en": "Use “ihr” for two or more friends. The verb ends in -t: ihr kommt.",
+						"tl": "“ihr” ang gamit sa dalawa o higit pang kaibigan. -t ang dulo: ihr kommt."
+					}
+				},
+				{
+					"phrase": "Wie geht's? – Mir geht's gut.",
+					"note": {
+						"de": "„mir“ gehört zu „ich“: Mir geht's gut. Und dir?",
+						"en": "“mir” belongs to “ich”: Mir geht's gut. Und dir?",
+						"tl": "Ang “mir” ay para sa “ich”: Mir geht's gut. Und dir?"
+					}
+				},
+				{
+					"phrase": "wir sind – ihr seid",
+					"note": {
+						"de": "sein: wir sind, ihr seid, Sie sind.",
+						"en": "sein: wir sind, ihr seid, Sie sind.",
+						"tl": "sein: wir sind, ihr seid, Sie sind."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L07-I1",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Wir {{1}} Anna und Jonas. Wir {{2}} aus Österreich.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"sind",
+								"heißen"
+							]
+						},
+						"2": {
+							"accept": [
+								"kommen"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Bei „wir“ endet das Verb auf -en: wir heißen, wir kommen. Besonders: wir sind.",
+						"en": "With “wir” the verb ends in -en: wir heißen, wir kommen. Special: wir sind.",
+						"tl": "Kapag “wir”, -en ang dulo: wir heißen, wir kommen. Espesyal: wir sind."
+					}
+				},
+				{
+					"id": "A1-01-L07-I2",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie fragen zwei Freunde. Was passt?",
+						"en": "You ask two friends. What fits?",
+						"tl": "Tinatanong mo ang dalawang kaibigan. Alin ang bagay?"
+					},
+					"options": [
+						"Woher kommt ihr?",
+						"Woher kommst du?",
+						"Woher kommen wir?"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Zu zwei Freunden sagt man „ihr“: Woher kommt ihr?",
+						"en": "With two friends you use “ihr”: Woher kommt ihr?",
+						"tl": "Sa dalawang kaibigan, “ihr”: Woher kommt ihr?"
+					}
+				},
+				{
+					"id": "A1-01-L07-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie das fehlende Wort.",
+						"en": "Write the missing word.",
+						"tl": "Isulat ang nawawalang salita."
+					},
+					"text": "Wie geht's? – Danke, {{1}} geht's gut. Und dir?",
+					"gaps": {
+						"1": {
+							"accept": [
+								"mir"
+							]
+						}
+					},
+					"explanation": {
+						"de": "„mir“ gehört zu „ich“, „dir“ gehört zu „du“.",
+						"en": "“mir” belongs to “ich”, “dir” belongs to “du”.",
+						"tl": "Ang “mir” ay para sa “ich”, ang “dir” ay para sa “du”."
+					}
+				},
+				{
+					"id": "A1-01-L07-I4",
+					"type": "cloze",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Ich stelle mich {{1}}: Ich {{2}} Maria Santos. Ich {{3}} von den Philippinen.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"vor"
+							]
+						},
+						"2": {
+							"accept": [
+								"heiße",
+								"bin"
+							]
+						},
+						"3": {
+							"accept": [
+								"komme"
+							]
+						}
+					},
+					"explanation": {
+						"de": "So stellt man sich vor: Name, dann Herkunft. „vorstellen“ teilt sich: Ich stelle mich vor.",
+						"en": "This is how you introduce yourself: name, then origin. “vorstellen” splits: Ich stelle mich vor.",
+						"tl": "Ganito magpakilala: pangalan, tapos pinagmulan. Nahahati ang “vorstellen”: Ich stelle mich vor."
+					}
+				},
+				{
+					"id": "A1-01-L07-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Woher kommen sie?",
+						"en": "Listen. Where are they from?",
+						"tl": "Makinig. Taga-saan sila?"
+					},
+					"options": [
+						"aus Österreich",
+						"von den Philippinen"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Sie hören: „Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.“",
+						"en": "You hear: “Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.”",
+						"tl": "Narinig mo: “Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.”"
+					},
+					"audioText": "Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L07-B1",
+					"type": "cloze",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Stellen Sie die zwei Personen vor.",
+						"en": "Look at the picture. Introduce the two people.",
+						"tl": "Tingnan ang larawan. Ipakilala ang dalawang tao."
+					},
+					"text": "{{1}} heißt Anna Gruber. {{2}} heißt Jonas Huber.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Sie"
+							]
+						},
+						"2": {
+							"accept": [
+								"Er"
+							]
+						}
+					},
+					"explanation": {
+						"de": "„sie“ für die Frau, „er“ für den Mann. Am Satzanfang groß.",
+						"en": "“sie” for the woman, “er” for the man. Capital letter at the start of a sentence.",
+						"tl": "“sie” para sa babae, “er” para sa lalaki. Malaking titik sa simula."
+					},
+					"image": {
+						"src": "/img/a1-01-amt.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					}
+				}
 			]
 		}
 	]

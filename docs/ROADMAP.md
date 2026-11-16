@@ -10,7 +10,8 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [x] 004a UI/UX: design system (bundled font, tokens, component classes), home with smart continue, sticky action bar, result ring; free practice covers all chapters (D25); richer pictures for A1-01
 
 ## Next (in this order)
-- [ ] 004 A1-01 complete: micro lessons 5–14 (remaining A1-01 words: er, sie, es, wir, ihr, mir, was, ja, nein, auch, vorstellen), error cards (R-W3), practice pool, test pool ≥ 60 with twins (needs `02g`, `03` Q1–Q11, `02a` Can-Do, WOW facts with sources)
+- [x] 004b A1-01 micro lessons 5–7: all 44 active A1-01 words now have a lesson and a card
+- [ ] 004 A1-01 complete: remaining micro lessons (WOW topics A1-WOW-18/-01 with sourced facts, speaking pre-stages, form filling), error cards (R-W3), practice pool, test pool ≥ 60 with twins (needs `02g`, `03` Q1–Q11, `02a` Can-Do, WOW facts with sources)
 - [ ] 005 Chapter flow: practice → readiness round 18/20 (R-G) → chapter test with lives (R-T, R-L) → correction round (R-K) → unlock next chapter (R-F)
 - [ ] 006 Day view: plan day, streak, freeze, daily goal (R-E, R-S, R-D)
 - [ ] 007 Export/import incl. old prototype format (`prototyp-erkenntnisse.md` §0)
