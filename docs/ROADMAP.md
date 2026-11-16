@@ -15,7 +15,7 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [x] 005a Chapter attempt automaton in the core (04a §4.2): events `PRACTICE_ANSWERED`, `GATE_ANSWERED`, `TARGETED_PRACTICE_DONE`, `TEST_STARTED`, `TEST_ANSWERED`, `CORRECTION_ANSWERED`, `ERROR_REVIEW_ANSWERED`; policy points `outcomeAfterTest`, `outcomeAfterCorrection`, `recoveryAfterFail`, `bonusForNext`; error cards (R-W3); `ContentInfo` seam (not wired into the app yet)
 - [x] 005b Draws as pure functions with seed (`core/draw.ts`): `testComposition` + `drawTest` (R-T1, R-T2, R-T4), `drawGate` (R-G1); card promotion by the test (R-W4), answer streak (R-E1), override effects `SET_RECOVERY`/`GRANT_ATTEMPT` (T-PL04)
 - [x] 005c-1 DEMO sandbox + wiring: `ContentInfo` wired into the stores, `pools` (practice/test, `family`/`goals`/`refs`) in the content schema, DEMO pool (9 practice, 12 test items with twins), `demoConfig` (3 items per test/gate, 2 lives), own `demo` store (`storeFor(id)`), pure helpers in `core/flow.ts` (gate/test draws, targeted practice), loop test on the real pool
-- [ ] 005c-2 Chapter flow UI: practice → readiness round → test with lives → correction round → error review → next chapter on DEMO; review page must show error cards (also of the `demo` store); R-K6 hint; e2e. Real chapters join as soon as 004 delivers their pools.
+- [x] 005c-2 Chapter flow UI on DEMO: `ChapterFlow` (practice → readiness round → targeted practice → test with lives → correction round → error review → passed/restart), exam-mode instructions (German, translation on demand, V5), R-K6 hint from the 2nd failed attempt (names goals with most error cards; the question chat is only mentioned, it does not exist yet), review page shows error cards as tasks (`/review?store=demo` for the sandbox), e2e of all paths. Real chapters join as soon as 004 delivers their pools (then `storeFor` runs them in the course state).
 - [ ] 006 Day view: plan day, streak, freeze, daily goal (R-E, R-S, R-D)
 - [ ] 007 Export/import incl. old prototype format (`prototyp-erkenntnisse.md` §0)
 - [ ] 008 Settings: daily workload, speech rate, voice, TTS diagnostics; device checklist Android/iOS
@@ -24,5 +24,5 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 
 ## Notes for the next steps
 - Policy decision points not yet in `RulePolicy`: `examPassed`, `retakeUnlock`, `isExamReady` (step 010). Add each with its tests from `04b`.
-- Not yet in the mechanics: mandatory speaking recording in the test (R-T7, with step 009), weekly-review guard on `TEST_STARTED` (R-W8, with the weekly review), R-K6 hint (UI, 005c).
+- Not yet in the mechanics: mandatory speaking recording in the test (R-T7, with step 009), weekly-review guard on `TEST_STARTED` (R-W8, with the weekly review).
 - Ship with `scripts/ship.sh "title" "body"` (push → PR → checks → merge → deploy).

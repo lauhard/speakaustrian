@@ -9,10 +9,11 @@
 	import Runner from '#lib/components/Runner.svelte';
 	import { chapterContent, findLesson, introducedBy } from '#lib/content/index.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
-	import { game } from '#lib/game.svelte.ts';
+	import { game, storeFor } from '#lib/game.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const id = $derived(page.params.id ?? '');
+	const store = $derived(storeFor(id));
 	const lesson = $derived(findLesson(id, page.params.lesson ?? ''));
 	const tlMachine = $derived(chapterContent(id)?.tlReviewStatus === 'machine');
 	const cards = $derived(lesson?.cards ?? []);
@@ -24,6 +25,7 @@
 
 	onMount(() => {
 		game.init();
+		store.init();
 		if (!game.state.profile) {
 			goto(resolve('/'));
 			return;
@@ -38,7 +40,7 @@
 	};
 
 	const finish = () => {
-		if (lesson) game.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson) });
+		if (lesson) store.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson) });
 	};
 </script>
 

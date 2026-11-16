@@ -96,6 +96,8 @@ export const ChapterContent = z
 		vocab: z.array(Vocab).optional(),
 		lessons: z.array(Lesson).min(1),
 		// Practice pool (incl. the readiness round, R-G1) and test pool (R-T2). Without pools the chapter stays in its lessons.
+		// Titles of the learning goals used by pool items (shown in targeted practice and the R-K6 hint).
+		goals: z.record(z.string(), Localized).optional(),
 		pools: z.object({ practice: z.array(Item).min(1), test: z.array(Item).min(1) }).optional()
 	})
 	.superRefine((c, ctx) => {
@@ -113,6 +115,7 @@ export const ChapterContent = z
 			const ids = new Set(pool.map((i) => i.id));
 			for (const i of pool) {
 				if (!i.goals?.length) ctx.addIssue({ code: 'custom', message: `${i.id}: pool items need goals` });
+				for (const g of i.goals ?? []) if (!c.goals?.[g]) ctx.addIssue({ code: 'custom', message: `${i.id}: goal ${g} has no title in the chapter goals` });
 				if (i.family && (!ids.has(i.family) || pool.find((p) => p.id === i.family)?.family)) {
 					ctx.addIssue({ code: 'custom', message: `${i.id}: family must be the id of a base item of the same pool` });
 				}

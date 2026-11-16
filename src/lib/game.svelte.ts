@@ -32,6 +32,7 @@ const createStore = (o: StoreOptions) => {
 	};
 
 	return {
+		policy: o.policy,
 		get state() {
 			return state;
 		},

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, type Snippet } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
 	import { createDeviceTts } from '#lib/adapters/web/device-tts.ts';
@@ -13,8 +13,17 @@
 		backHref: string;
 		backLabel: string;
 		onfinish?: (correct: number, total: number) => void;
+		// Chapter flow (005c): the parent shows its own header and result, so the runner only asks and grades.
+		bare?: boolean;
+		// Exam mode: the instruction is German only, the translation is behind a button (04 V5); feedback keeps it.
+		examMode?: boolean;
+		// Extra header, e.g. phase label and lives.
+		top?: Snippet;
+		// Called when an answer is checked (before "next"), so the parent can show lives and similar.
+		onchecked?: (item: Item, correct: boolean) => void;
+		nextLabel?: string;
 	};
-	let { items, tlMachine, backHref, backLabel, onfinish }: Props = $props();
+	let { items, tlMachine, backHref, backLabel, onfinish, bare = false, examMode = false, top, onchecked, nextLabel }: Props = $props();
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 
@@ -49,12 +58,13 @@
 		if (!response || grade) return;
 		grade = gradeItem(item, response);
 		if (passes(grade.verdict)) correctCount += 1;
+		onchecked?.(item, passes(grade.verdict));
 	};
 
 	const next = () => {
 		tts?.stop();
 		if (isLast) {
-			finished = true;
+			finished = !bare;
 			onfinish?.(correctCount, items.length);
 			return;
 		}
@@ -98,7 +108,7 @@
 	{/if}
 {/snippet}
 
-{#if finished}
+{#if finished && !bare}
 	<section class="space-y-6 pt-10 text-center" data-testid="result">
 		<div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-8 {percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'} bg-white text-3xl font-black">
 			{percent}%
@@ -111,7 +121,9 @@
 		<a href={backHref} data-testid="back" class="btn-primary">{backLabel}</a>
 	</section>
 {:else}
-	<form class="space-y-5" onsubmit={check}>
+	<form class="space-y-5" data-item={item.id} onsubmit={check}>
+		{#if top}{@render top()}{/if}
+		{#if !bare}
 		<div>
 			<div class="mb-2 flex items-center justify-between">
 				<a href={backHref} class="backlink" aria-label={backLabel}>✕</a>
@@ -121,8 +133,21 @@
 				<span style="width: {((index + (grade ? 1 : 0)) / items.length) * 100}%"></span>
 			</div>
 		</div>
+		{/if}
 
-		<div class="card">{@render help(item.instruction)}</div>
+		<div class="card">
+			{#if examMode}
+				<p class="font-bold">{item.instruction.de}</p>
+				{#if helpLocale !== 'de' && !grade}
+					<details class="mt-2 text-sm text-muted">
+						<summary>{m.flow_show_translation()}</summary>
+						<p lang={helpLocale}>{item.instruction[helpLocale]}</p>
+					</details>
+				{/if}
+			{:else}
+				{@render help(item.instruction)}
+			{/if}
+		</div>
 
 		{#if item.image}
 			<img
@@ -223,7 +248,7 @@
 				class="btn-primary"
 				onclick={next}
 			>
-				{isLast ? m.finish() : m.next()}
+				{nextLabel ?? (isLast ? m.finish() : m.next())}
 			</button>
 			</div>
 		{:else}
