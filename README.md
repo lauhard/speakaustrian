@@ -1,54 +1,13 @@
-# sv
+# speakaustrian – „Weg zur A2“
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+Learning game for the Austrian ÖIF integration exam (A1 → A2). SvelteKit on Cloudflare Workers.
 
 ```sh
-# create a new project
-npx sv create my-app
+pnpm install
+pnpm dev        # local dev server
+pnpm test       # unit tests (core logic)
+pnpm check      # type check
+pnpm test:e2e   # Playwright flow test
 ```
 
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-pnpm dlx sv@1.3.0 create --template minimal --types ts --add playwright="demo:yes" tailwindcss="plugins:typography,forms" drizzle="database:sqlite+sqlite:better-sqlite3" experimental="features:async,remoteFunctions" ai-tools="ide:claude-code,opencode,vscode+delivery:plugin+tools:mcp,svelte-code-writer,svelte-core-bestpractices,svelte-file-editor+mcpSetup:remote+optInSkills:none" paraglide="languageTags:en, de+demo:yes" sveltekit-adapter="adapter:cloudflare+cfTarget:workers" --install pnpm speakaustrian
-```
-
-## Adding features
-
-Add features to your project with `sv add`:
-
-```sh
-npx sv add
-```
-
-For example, to add Tailwind CSS:
-
-```sh
-npx sv add tailwindcss
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
+Docs: `docs/INDEX.md` · Deploy: `docs/DEPLOY.md` · Working rules for Claude Code: `CLAUDE.md`.

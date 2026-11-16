@@ -1,7 +1,7 @@
 # 00 – Kurzfassung: Arbeitsstand für jeden Chat
 
-> **Projekt:** „Weg zur A2“ · **Stand:** 06.11.2026 (Phase 4 abgeschlossen, D14–D17)
-> **Abgeleitet aus:** `00-masterprompt.md` (Rev. 4.1, 06.11.2026) · `01-ressourcen.md` Abschn. 7 (E1–E4) · `02-aufbereitung.md` Abschn. 5.1 (D1–D6) · `03-curriculum.md` (Rev. 3R, D7–D11) · `04-spielregeln.md` (Phase 4, D14–D16)
+> **Projekt:** „Weg zur A2“ · **Stand:** 16.11.2026 (Phase 4 abgeschlossen, D14–D21; erster Prototyp im Repo)
+> **Abgeleitet aus:** `00-masterprompt.md` (Rev. 4.2, 16.11.2026) · `01-ressourcen.md` Abschn. 7 (E1–E4) · `02-aufbereitung.md` Abschn. 5.1 (D1–D6) · `03-curriculum.md` (Rev. 3R, D7–D11) · `04-spielregeln.md` (Phase 4, D14–D16)
 > **Vorrang:** Bei Widerspruch gilt `00-masterprompt.md`. Jede neue Entscheidung wird hier **und** im Phasen-Dokument nachgetragen.
 > **Den vollen Masterprompt lesen nur:** bei Unklarheit, bei Änderungen an der Spezifikation oder in Phasen 5–7 (Claude Code, `docs/`).
 > **Prüfungsfakten:** stehen verifiziert in `00-quellen.md` – dort nachschlagen, nicht neu recherchieren.
@@ -16,7 +16,7 @@
 - **Bestehenssicherheit (D11):** voller Umfang, 100 % Abdeckung, kein Kürzen. Austrittskriterien „prüfungsreif“ (`03` Abschn. 4.2, Zustand `READY_FOR_EXAM` in `04a` 4.4): alle Kapitel + A1-Meilenstein + **zwei aufeinanderfolgende A2-Simulationen ≥ 75 % je Teil** (zweite am Stück) + offizieller Modelltest + Wiederholung im Griff; Sprechpraxis im ÖIF-Kursraum als feste Empfehlung. Keine Garantie behaupten.
 - **Meilenstein 1:** Prüfungsreife A1 (Format Integrationsprüfung A1). **Jedes Kapitel ist ein Sub-Goal.**
 - **Produkt:** interaktives Lernspiel, per Link für Dritte, **ohne Login**, nur Namenseingabe; Fortschritt **nur lokal** + Export/Import (JSON); Upload von Content-Packs; Hilfe mit Frage-Chat.
-- **Auslieferung:** Stufe 1 Claude-Artifact (Start) · Stufe 2 optional eigene Web-App auf Cloudflare – derselbe Code (Ports & Adapters).
+- **Auslieferung (D18):** Web-App auf Cloudflare Workers, Deploy aus dem Git-Repo. Claude-Artifacts nur noch für schnelle Feature-Tests.
 - **Startdatum relativ:** Tag 1 = Profilanlage (`startDate`). Plantag = Kalendertage seit `startDate` + 1, **ohne festes Ende**. Tool zeigt „Tag X“, Etappe, Tempo gegen das gewählte Pensum und Prognose „prüfungsreif ab ca. Tag Y“ – nie einen Rückstand gegenüber einem Enddatum.
 - **Sprachen:** jede Anweisung, Vokabel, Erklärung, jedes Feedback hat `de` (einfach), `en`, `tl`. Prüfungsmodus **nur Deutsch**, Übersetzung erst im Feedback (Ausnahme V5: Kapiteltest-Anweisungen A1-01–A1-04 mit einblendbarer Übersetzung).
 - **Österreichisches Deutsch ist Lernziel (D10):** AT-Form = Hauptform; bundesdeutsche Formen **immer gekennzeichnet** („in Deutschland: Tomate“), nie unmarkiert in Lerntexten, im Prüfungsmodus nie in Stimulus/Optionen. Nuancen: Lexik, Genus, Perfekt mit *sein*, Aussprache. Konzept `03` Abschn. 6, Inventar-Prüfung `03g`.
@@ -59,6 +59,10 @@
 | **D15** | **Prognose aus Phase 4 ist Planwert:** ≈ 260 h, 1,5 h → 172 Plantage (159–185); Pilot (Phase 7) kalibriert. | 5–7 |
 | **D16** | **Regeln lose gekoppelt:** Reducer = Mechanik, Regeln = austauschbare `RulePolicy` (`makeReducer(policy)`), heutige Regeln = `defaultPolicy`. Datenmodell offen für spätere **Spezial-Retries** und **Kapitel-Skip** (`completed` mit Grund, `RecoveryPlan` als Daten, Event `OVERRIDE_GRANTED`, `ruleset`-Version). Logik der Features erst bei Bedarf; Skip würde D11 berühren → eigene Entscheidung nötig (`04a` 1a). | 5–7 |
 | **D17** | **Umsetzung:** Repo `github.com/lauhard/speakaustrian` · Audio **vorerst nur Geräte-TTS** (Android/iOS/Web zuverlässig; Hördateien aus D13 zurückgestellt, R6 offen) · WOW-Belege je Batch · **Claude-Chat nur Architektur/Design/Spec**, Rest in Claude Code: Backlog → Plan-Agent (1 Ticket) → Branch → Test-Agent (Vitest/Playwright/Geräte-Checkliste) → manuelle Implementierung → Push; minimale CI früh, MR-CI später · Spec-Lücken über `docs/spec-gaps.md` zurück in den Chat · Phasen 5+6 verschränkt · token-effizient (`CLAUDE.md`, `docs/INDEX.md`). | 5–7 |
+| **D18** | **Hosting Cloudflare Workers** (`adapter-cloudflare`, Deploy aus Git). **Artifact-Auslieferung entfällt**, Artifacts nur für schnelle Feature-Tests. Artifact-Regeln und „Claude im Viewer“ entfallen (KI-Hilfe offen: G-007). | 6, 7 |
+| **D19** | **Fortschritt nur lokal** (localStorage + Export/Import); Datenbank-Gerüst entfernt; Server-Speicher nur per eigener Entscheidung. | 6 |
+| **D20** | **paraglide nur für UI-Texte** (de/en/tl); Content-Übersetzungen im Content-JSON. | 5, 6 |
+| **D21** | **Lückentext je Lücke ausgewertet** · **Bildaufgaben:** jedes Item kann ein Bild tragen, Fragen dazu (Auswahl, Lücke, Kurzantwort); Bilder vordefiniert und geprüft, nicht zur Laufzeit generiert. Offen: Fast-Treffer (G-006), Umfang (G-008). | 5, 6 |
 
 ### 3.1 Phase 4 – Vorschläge und Auslegungen im Detail (bestätigt als D14)
 
@@ -102,7 +106,7 @@
 | 3R Revision (D7–D11) | Projekt | ✅ 06.11.2026 | `03` (Rev. 3R), `03a`, `03b` (Rev. 3R), `03e2`, `03f`, `03g` |
 | 4 Spielregeln | Projekt | ✅ 06.11.2026 (D14–D16 bestätigt) | `04`, `04a` (Automat, Policy-Schicht, Regeln), `04b` (174 Testfälle), `04c` (Skript) |
 | **5 Content** | Claude Code | **nächste Phase**, verschränkt mit 6 (D17e) | `content/*.json` |
-| **6 App** | Claude Code | **gestartet:** Repo vorbereitet (D17), Backlog folgt | `speakaustrian` |
+| **6 App** | Claude Code | **gestartet:** Prototyp läuft (Namenseingabe, Lückentext, Bildaufgaben, Geräte-TTS, Tests, CI); Backlog folgt | `speakaustrian` |
 | 7 Test & Abnahme | Claude Code | offen | Repo |
 
 ## 6. Dokumentenkarte – was pro Phase lesen (in **einem** Aufruf)

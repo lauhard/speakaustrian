@@ -7,6 +7,8 @@
 > **Revision 4 (06.11.2026):** Ergebnis Phase 4 eingearbeitet – Entscheidungen **D14–D16** (Abschn. 3b). Geändert: Parameter Zeitbudget (2, Prognose ≈ 260 h statt 240 h), Konsequenzen Unterstützungssprachen (2), Phase 4 (Status, 4.2, 4.3, 4.8, DoD), Phase 5.2/5.11, Phase 6.2/6.8, Phase 7.1. **Widerspruch zu Rev. 3R (benannt):** Die Wiederholungsquote von 15 % je Kapitel war zu optimistisch; die Bestehens-Simulation ersetzt sie (`04-spielregeln.md` Abschn. 2). Maßgebliche Spielregeln: `04a-zustandsautomat.md`.
 >
 > **Revision 4.1 (06.11.2026):** Entscheidung **D17** (Repo, Audio vorerst nur Geräte-TTS, Ticket-Workflow) eingearbeitet (Abschn. 3c). Geändert: Phase 6 (Einleitung, 6.8 Repo-Name `speakaustrian`). **Widerspruch zu D13 (benannt):** Selbst erzeugte Hördateien sind zurückgestellt; Risiko R6 (Hörtexte im Prüfungsformat nur mit Geräte-TTS) bleibt offen. **Repo-Abweichungen** zur Spezifikation (Adapter, Speicher, i18n, Testwerkzeug) sind nicht entschieden, sondern in `docs/spec-gaps.md` gelistet.
+>
+> **Revision 4.2 (16.11.2026):** Entscheidungen **D18–D21** eingearbeitet (Abschn. 3d): Hosting auf Cloudflare statt Artifact, Fortschritt nur lokal ohne Datenbank, paraglide nur für UI, Aufgabentypen Lückentext und Bild. Phase 6.1 (Artifact-Stufe) ist dadurch überholt.
 
 ---
 
@@ -100,6 +102,15 @@ Das Endprodukt ist ein **interaktives Lernspiel**, das über einen **Link für D
 - **D17d – Workflow:** **Claude-Chat (Projekt) nur für Architektur, Design und Spezifikation.** Alles andere in Claude Code: Backlog (Titel + Abhängigkeiten) → **Plan-Agent** arbeitet **ein Ticket nach dem anderen** aus → eigene Branch je Ticket → **Test-Agent** schreibt Tests aus den Akzeptanzkriterien (Vitest für Logik, Playwright für wenige Kern-Flows, manuelle Geräte-Checkliste für TTS) → Andi implementiert manuell → Tests grün → Push. Früh eine **minimale CI** (Typecheck + Vitest), Merge-Request- und Deploy-CI später, sobald es sich lohnt. **Spec-Lücken** gehen über `docs/spec-gaps.md` zurück in den Projekt-Chat; Agenten erfinden keine Regeln.
 - **D17e – Phasen 5 und 6 laufen verschränkt** (Kern und Content-Schema zuerst, Content-Batches parallel zur App).
 - **D17f – Token-Effizienz** in Claude Code: gezieltes Lesen über `docs/INDEX.md`, Spec-IDs (R-…, T-…) per Grep statt ganzer Dokumente, kurze Ausgaben (Regeln in `CLAUDE.md`).
+
+---
+
+## 3d. Entscheidungen D18–D21 (bestätigt am 16.11.2026)
+
+- **D18 – Hosting: Cloudflare Workers.** Die App wird als SvelteKit-App mit `adapter-cloudflare` auf Cloudflare gehostet, Deploy automatisch aus dem Git-Repo. **Die Auslieferung als Claude-Artifact entfällt;** Artifacts dienen nur noch dazu, einzelne Features schnell zu testen. Damit entfallen die Artifact-Regeln (Größenlimit, kein Mikrofon, erlaubte CDNs) und der Weg „Claude im Viewer“ für Tutor und Feedback (offen: `docs/spec-gaps.md` G-007). **Widerspruch zu Abschn. 6.1 (benannt):** Die dort beschriebene Stufe 1 gilt nicht mehr.
+- **D19 – Speicher:** Fortschritt bleibt **nur lokal** auf dem Gerät (localStorage, Export/Import). Das Datenbank-Gerüst (drizzle, better-sqlite3) ist entfernt; es lief auf Workers ohnehin nicht. Serverseitiger Speicher (KV/D1) braucht eine eigene Entscheidung.
+- **D20 – Übersetzungen:** paraglide nur für UI-Texte (de/en/tl); Inhalte tragen ihre Übersetzungen als `{de,en,tl}` im Content-JSON.
+- **D21 – Aufgabentypen Lückentext und Bild:** Lückentexte werden **je Lücke ausgewertet** (mehrere akzeptierte Antworten möglich). **Bildaufgaben:** Jeder Aufgabentyp (Auswahl, Lückentext, Kurzantwort) kann ein Bild als Stimulus tragen, aus dem Fragen abgeleitet werden („Welche Jahreszeit ist auf dem Bild?“ → „Sommer“). Bilder sind **vordefinierte, geprüfte Dateien**, die bei der Content-Erstellung entstehen (auch KI-generiert), nicht zur Laufzeit – so bleiben Aufgaben prüfbar, kostenlos und identisch für alle. Offen: Umgang mit Fast-Treffern (G-006), Umfang der Bildaufgaben (G-008).
 
 ---
 
@@ -241,6 +252,8 @@ Formuliere die Regeln als **Zustandsautomat** (Zustände, Events, Übergänge) u
 > Diese Phase läuft in **Claude Code** im Repo `lauhard/speakaustrian` mit dem Ticket-Workflow aus D17d. Entwickelt wird immer im Repo (TypeScript, Tests, Schema-Validierung); **ausgeliefert** wird ein statischer Build – zuerst als **Claude-Artifact**, später optional als **eigene Web-App**. Es ist derselbe Code.
 
 ### 6.1 Auslieferungsstufen (Entscheidung vom 05.11.2026)
+
+> **Überholt durch D18 (16.11.2026):** Auslieferung nur noch über Cloudflare; die Artifact-Stufe unten gilt nicht mehr.
 
 | | **Stufe 1: Artifact (Start)** | **Stufe 2: eigene Web-App (optional, später)** |
 |---|---|---|
