@@ -22,7 +22,12 @@ const ItemBase = z.object({
 	// German text read aloud by the speech port (never the answer of the item).
 	audioText: z.string().min(1).optional(),
 	// Listening task: the text is only heard, not shown (transcript appears in the feedback).
-	audioOnly: z.boolean().optional()
+	audioOnly: z.boolean().optional(),
+	// Twin family (R-K1): id of the base item this item is a twin of. Items without it are their own family.
+	family: z.string().regex(/^[A-Z0-9-]+$/).optional(),
+	// Learning goals the item trains (R-G2 targeted practice, R-T2 draw) and vocabulary ids it tests (R-W4).
+	goals: z.array(z.string().min(1)).optional(),
+	refs: z.array(z.string().regex(/^W-A[12]-\d{4}$/)).optional()
 });
 
 export const ChoiceItem = ItemBase.extend({
@@ -89,10 +94,12 @@ export const ChapterContent = z
 		// Tagalog texts are machine-made until a native speaker reviewed them (E2).
 		tlReviewStatus: z.enum(['machine', 'reviewed']),
 		vocab: z.array(Vocab).optional(),
-		lessons: z.array(Lesson).min(1)
+		lessons: z.array(Lesson).min(1),
+		// Practice pool (incl. the readiness round, R-G1) and test pool (R-T2). Without pools the chapter stays in its lessons.
+		pools: z.object({ practice: z.array(Item).min(1), test: z.array(Item).min(1) }).optional()
 	})
 	.superRefine((c, ctx) => {
-		const items = c.lessons.flatMap((l) => l.items);
+		const items = [...c.lessons.flatMap((l) => l.items), ...(c.pools?.practice ?? []), ...(c.pools?.test ?? [])];
 		if (new Set(items.map((i) => i.id)).size !== items.length) ctx.addIssue({ code: 'custom', message: 'item ids must be unique' });
 		if (new Set(c.lessons.map((l) => l.id)).size !== c.lessons.length) ctx.addIssue({ code: 'custom', message: 'lesson ids must be unique' });
 		const vocabIds = new Set((c.vocab ?? []).map((v) => v.id));
@@ -100,6 +107,21 @@ export const ChapterContent = z
 			for (const ref of l.introduces ?? []) {
 				if (!vocabIds.has(ref)) ctx.addIssue({ code: 'custom', message: `${l.id}: unknown vocabulary id ${ref}` });
 			}
+		}
+		for (const kind of ['practice', 'test'] as const) {
+			const pool = c.pools?.[kind] ?? [];
+			const ids = new Set(pool.map((i) => i.id));
+			for (const i of pool) {
+				if (!i.goals?.length) ctx.addIssue({ code: 'custom', message: `${i.id}: pool items need goals` });
+				if (i.family && (!ids.has(i.family) || pool.find((p) => p.id === i.family)?.family)) {
+					ctx.addIssue({ code: 'custom', message: `${i.id}: family must be the id of a base item of the same pool` });
+				}
+			}
+		}
+		// Masterprompt: every test item has at least one twin (the QA target for real chapters is 2, R-K3).
+		const test = c.pools?.test ?? [];
+		for (const i of test) {
+			if (test.filter((t) => (t.family ?? t.id) === (i.family ?? i.id)).length < 2) ctx.addIssue({ code: 'custom', message: `${i.id}: test item without a twin` });
 		}
 		for (const i of items) {
 			if (i.audioOnly && !i.audioText) ctx.addIssue({ code: 'custom', message: `${i.id}: audioOnly needs audioText` });

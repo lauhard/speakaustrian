@@ -6,7 +6,8 @@ import { Discipline } from './content/schema';
 
 export const LocalDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 export type LocalDate = z.infer<typeof LocalDate>;
-export const ChapterId = z.string().regex(/^A[12]-\d{2}$/);
+// 'DEMO' is the sandbox chapter of the preview (005c); the course itself only has A1-01 … A2-19.
+export const ChapterId = z.string().regex(/^(A[12]-\d{2}|DEMO)$/);
 export type ChapterId = z.infer<typeof ChapterId>;
 export const PensumMin = z.union([z.literal(60), z.literal(90), z.literal(105), z.literal(120)]);
 export type PensumMin = z.infer<typeof PensumMin>;

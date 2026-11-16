@@ -1,3 +1,4 @@
+import { makeContentInfo, poolOf, type PoolKind } from '../core/content/info';
 import { ChapterContent, Course, type Discipline, type Item, type Lesson, type Vocab } from '../core/content/schema';
 import a101 from './a1-01.json';
 import courseRaw from './course.json';
@@ -8,6 +9,13 @@ export const course: Course = Course.parse(courseRaw);
 export const chapters: ChapterContent[] = [a101, demo].map((raw) => ChapterContent.parse(raw));
 
 export const PREVIEW_CHAPTER = 'DEMO';
+
+export const contentInfo = makeContentInfo(chapters);
+export const poolItems = (chapterId: string, kind: PoolKind) => poolOf(chapterContent(chapterId), kind);
+
+// Any item by id: lessons and pools (error cards and test lists only keep ids).
+export const findItem = (itemId: string): Item | undefined =>
+	chapters.flatMap((c) => [...c.lessons.flatMap((l) => l.items), ...(c.pools?.practice ?? []), ...(c.pools?.test ?? [])]).find((i) => i.id === itemId);
 
 export const chapterContent = (chapterId: string): ChapterContent | undefined =>
 	chapters.find((c) => c.chapterId === chapterId);

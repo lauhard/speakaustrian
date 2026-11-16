@@ -56,6 +56,10 @@ export const defaultConfig: RuleConfig = {
 	LEITNER_INTERVALS_DAYS: [1, 3, 7, 14, 30]
 };
 
+// Rule constants of the DEMO sandbox chapter (005c): a tiny pool, so a whole attempt takes a few minutes.
+// Test = 1 item per discipline that has pool items, readiness round = the same size, 2 lives.
+export const demoConfig: RuleConfig = { ...defaultConfig, LIVES_BASE: 2, TEST_PER_DISCIPLINE: 1, TEST_FOCUS_EXTRA: 0, TEST_EXAM_EXTRA: 0, GATE_ITEMS: 3, GATE_MIN_CORRECT: 2 };
+
 const examDone = (s: GameState, kind: string, mustPass: boolean): boolean =>
 	s.course.examHistory.some((e) => e.kind === kind && (!mustPass || e.passed));
 

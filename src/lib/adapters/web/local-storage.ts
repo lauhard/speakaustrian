@@ -15,27 +15,29 @@ const read = (store: Storage, key: string): unknown => {
 	}
 };
 
-export const createLocalStorage = (store: Storage): StoragePort => ({
+// `key` lets the DEMO sandbox keep its own state next to the course (no legacy profile there).
+export const createLocalStorage = (store: Storage, key: string = KEY): StoragePort => ({
 	load: () => {
-		const parsed = GameState.safeParse(read(store, KEY));
+		const parsed = GameState.safeParse(read(store, key));
 		return parsed.success ? parsed.data : null;
 	},
 	save: (state) => {
 		try {
-			store.setItem(KEY, JSON.stringify(state));
+			store.setItem(key, JSON.stringify(state));
 		} catch {
 			// Storage full or blocked: the app keeps working for this session.
 		}
 	},
 	clear: () => {
 		try {
-			store.removeItem(KEY);
-			store.removeItem(LEGACY_KEY);
+			store.removeItem(key);
+			if (key === KEY) store.removeItem(LEGACY_KEY);
 		} catch {
 			// ignore
 		}
 	},
 	loadLegacy: (): LegacyProfile | null => {
+		if (key !== KEY) return null;
 		const parsed = Legacy.safeParse(read(store, LEGACY_KEY));
 		return parsed.success ? parsed.data : null;
 	}
