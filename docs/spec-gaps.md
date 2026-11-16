@@ -69,3 +69,11 @@ Format:
 - Note 16.11.: `03a` names picture topics (Q05) for A2 speaking: bank, mobile shop, market, parents' evening, German course (A2-10, A2-11, A2-13, A2-14).
 - Open: which exam parts picture tasks train (check `00-quellen.md` A/B for picture-based speaking/writing parts), how many per chapter, style guide for the pictures, free-text picture description (needs G-007).
 - Blocks: content schema ticket, first content batch.
+
+## G-008 – Small additions to the 04a type sketch for the chapter attempt   (status: open – implemented as described, needs Andi's OK)
+- Found in: step 005a (`core/state.ts`, `core/policy.ts`)
+- Spec says: `04a` §1a `outcomeAfterTest(run): 'PASSED' | 'CORRECTION' | 'FAILED'`, `outcomeAfterCorrection(run)`, `bonusForNext(s, run)`; §2 `GATE { block, items, correct, answered }`, `TARGETED_PRACTICE { goalIds, done }`.
+- Problem: (1) R-PL1 forbids `if (lives === 0)` in the core, but the sketch has no result for "test goes on". (2) The goals for targeted practice (R-G2) need the wrong gate items, which the sketch does not keep. (3) The next gate block number is lost in `TARGETED_PRACTICE`. (4) The policy cannot see from the run whether the last twin was right or whether the pass was a perfect first attempt.
+- Implemented: (1) extra result `'CONTINUE'`, policy asked after every test answer · (2) `GATE.wrong: string[]` · (3) `TARGETED_PRACTICE.block` · (4) extra parameters `outcomeAfterCorrection(run, allCorrect)`, `bonusForNext(s, run, perfectFirst)`. No rule changed; both new fields have schema defaults.
+- Also open: does a right answer in the error review (R-K4) move the Leitner box of the error card? Implemented: no (card stays in box 1, due tomorrow).
+- Blocks: nothing.
