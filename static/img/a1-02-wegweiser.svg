@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif"><rect width="400" height="260" fill="#f3ead9"/>
+<rect y="210" width="400" height="50" fill="#8a8f98"/>
+<path d="M0 210q100-40 200-20t200 0v20H0z" fill="#7cc36a"/>
+<rect x="100" y="150" width="8" height="64" fill="#6b7280"/><rect x="292" y="150" width="8" height="64" fill="#6b7280"/>
+<rect x="60" y="30" width="280" height="126" rx="8" fill="#1d4e89" stroke="#fff" stroke-width="4"/>
+<g font-size="28" font-weight="bold" fill="#fff">
+<text x="84" y="80">Graz</text><text x="316" y="80" text-anchor="end">47 km</text>
+<text x="84" y="132">Linz</text><text x="316" y="132" text-anchor="end">74 km</text>
+</g><path d="M80 98h240" stroke="#fff" stroke-width="2"/>
+</svg>

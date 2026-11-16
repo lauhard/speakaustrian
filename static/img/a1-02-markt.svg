@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif">
+<rect width="400" height="260" fill="#f3ead9"/>
+<!-- awning -->
+<g><rect x="20" y="16" width="360" height="34" fill="#c8102e"/>
+<g fill="#fff"><rect x="56" y="16" width="36" height="34"/><rect x="128" y="16" width="36" height="34"/><rect x="200" y="16" width="36" height="34"/><rect x="272" y="16" width="36" height="34"/><rect x="344" y="16" width="36" height="34"/></g></g>
+<rect x="30" y="50" width="8" height="120" fill="#7a4e2d"/><rect x="362" y="50" width="8" height="120" fill="#7a4e2d"/>
+<!-- counter -->
+<rect x="20" y="160" width="360" height="80" rx="6" fill="#a8743f"/>
+<!-- apples in a crate -->
+<rect x="44" y="128" width="96" height="36" rx="4" fill="#d9a066"/>
+<g fill="#d62828"><circle cx="62" cy="122" r="13"/><circle cx="88" cy="118" r="13"/><circle cx="114" cy="122" r="13"/><circle cx="75" cy="104" r="12"/><circle cx="101" cy="104" r="12"/></g>
+<g stroke="#4a2f1c" stroke-width="3"><path d="M62 109v-5M88 105v-5M114 109v-5"/></g>
+<g fill="#4c9a2a"><path d="M63 105q8-8 14-2-8 6-14 2z"/><path d="M89 101q8-8 14-2-8 6-14 2z"/><path d="M115 105q8-8 14-2-8 6-14 2z"/></g>
+<circle cx="101" cy="104" r="12" fill="#7cc36a"/>
+<!-- bread -->
+<ellipse cx="200" cy="138" rx="46" ry="24" fill="#d4943a"/><g stroke="#a86b1f" stroke-width="4" stroke-linecap="round"><path d="M180 128l-8 18M200 126l-8 20M220 128l-8 18"/></g>
+<!-- milk carton -->
+<path d="M290 92h40v72h-40z" fill="#fff" stroke="#3a3a3a" stroke-width="3"/><path d="M290 92l8-18h24l8 18z" fill="#e8f1fb" stroke="#3a3a3a" stroke-width="3"/>
+<path d="M290 120h40v24h-40z" fill="#4a90d9"/>
+<!-- price tags -->
+<g font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">
+<rect x="56" y="180" width="72" height="34" rx="5" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="92" y="204">2,40 €</text>
+<rect x="164" y="180" width="72" height="34" rx="5" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="200" y="204">3,10 €</text>
+<rect x="274" y="180" width="72" height="34" rx="5" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="310" y="204">1,19 €</text>
+</g>
+</svg>

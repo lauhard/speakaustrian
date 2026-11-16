@@ -55,7 +55,7 @@
 		<ul class="space-y-3">
 			{#each cards as card (card.phrase)}
 				<li class="card">
-					<button type="button" class="flex w-full items-start gap-3 text-left" onclick={() => listen(card.phrase)}>
+					<button type="button" class="flex w-full items-start gap-3 text-left" onclick={() => listen(card.audioText ?? card.phrase)}>
 						<span aria-hidden="true" class="badge">🔊</span>
 						<span class="text-xl font-extrabold" lang="de">{card.phrase}</span>
 					</button>

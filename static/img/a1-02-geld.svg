@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif"><rect width="400" height="260" fill="#f3ead9"/>
+<rect width="400" height="260" fill="#a8743f"/>
+<rect x="30" y="50" width="170" height="92" rx="6" fill="#b9b2a5" stroke="#6b6458" stroke-width="3" transform="rotate(-6 115 96)"/>
+<text x="70" y="112" font-size="44" font-weight="bold" fill="#4b4538" transform="rotate(-6 115 96)">5</text><text x="140" y="112" font-size="20" fill="#4b4538" transform="rotate(-6 115 96)">EURO</text>
+<g font-weight="bold" text-anchor="middle">
+<circle cx="250" cy="90" r="32" fill="#c9ced3" stroke="#d9a441" stroke-width="10"/><text x="250" y="100" font-size="26" fill="#374151">1 €</text>
+<circle cx="330" cy="120" r="32" fill="#c9ced3" stroke="#d9a441" stroke-width="10"/><text x="330" y="130" font-size="26" fill="#374151">1 €</text>
+<circle cx="270" cy="190" r="28" fill="#e2b84a" stroke="#c29a33" stroke-width="3"/><text x="270" y="198" font-size="20" fill="#5b4a1c">50 c</text>
+</g></svg>

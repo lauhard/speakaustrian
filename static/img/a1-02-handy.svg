@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif"><rect width="400" height="260" fill="#f3ead9"/>
+<rect x="130" y="12" width="140" height="236" rx="20" fill="#1f2937"/><rect x="140" y="30" width="120" height="200" rx="8" fill="#fff"/>
+<circle cx="200" cy="74" r="26" fill="#e0ebf8"/><circle cx="200" cy="66" r="10" fill="#1d4e89"/><path d="M182 92q18-22 36 0" fill="#1d4e89"/>
+<text x="200" y="124" font-size="15" font-weight="bold" fill="#1f2937" text-anchor="middle">Sofia Berger</text>
+<text x="200" y="146" font-size="10" fill="#6b7280" text-anchor="middle">Handy</text>
+<text x="200" y="168" font-size="15" fill="#1f2937" text-anchor="middle">0676 384 21 50</text>
+<circle cx="200" cy="204" r="16" fill="#2a9d8f"/><path d="M193 198q2 10 12 14l3-4-5-3-2 2q-4-2-5-6l2-2-3-5z" fill="#fff"/>
+</svg>

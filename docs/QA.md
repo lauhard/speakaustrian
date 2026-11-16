@@ -25,7 +25,7 @@ Pools of a real chapter go into `src/lib/content/<chapter>-pools.json` = `{ "cha
 | `i18n.blank` · `image.missing` | error | blank `de`/`en`/`tl` · picture file missing |
 | `practice.twins` | warning | practice item without a twin in its family (masterprompt: every item ≥ 1 twin) |
 | `recycling` | error | < 20 % of practice items with `refs`/goals of earlier chapters (first chapter: info, G-011) |
-| `vocab.unknown` | warning | word neither in lessons/inventory up to this chapter nor on `src/lib/content/qa-allowlist.json` |
+| `vocab.unknown` | warning | word neither in lessons/inventory up to this chapter nor on `src/lib/content/qa-allowlist.json`; regular number words (siebenundvierzig, hundertzwanzig) count as known once the number set is introduced |
 | `variety.de` · `i18n.untranslated` · `pool.family-skill` | warning | German-German form of `03g` · `en`/`tl` equals `de` · twins with different disciplines |
 
 Sandbox chapters (DEMO) get quantity rules and `vocab.unknown` as info only.

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif"><rect width="400" height="260" fill="#f3ead9"/>
+<rect y="180" width="400" height="80" fill="#d9c3a3"/><rect x="150" y="150" width="250" height="40" fill="#a8743f"/>
+<!-- woman (left) -->
+<path d="M40 200q0-46 40-46t40 46v60H40z" fill="#c8102e"/><circle cx="80" cy="122" r="22" fill="#c68a5c"/>
+<path d="M58 122q-2-30 22-30t22 30q-6-14-22-14t-22 14z" fill="#222"/>
+<!-- man behind counter (right) -->
+<path d="M300 150q0-34 34-34t34 34z" fill="#34506b"/><circle cx="334" cy="92" r="20" fill="#f1c9a5"/><path d="M314 90q2-22 20-22t20 22q-6-10-20-10t-20 10z" fill="#7a4e2d"/>
+<!-- speech bubbles -->
+<rect x="210" y="16" width="176" height="40" rx="12" fill="#fff" stroke="#34506b" stroke-width="2"/><path d="M330 56l6 12 6-12z" fill="#fff" stroke="#34506b" stroke-width="2"/>
+<text x="298" y="42" font-size="15" fill="#1f2937" text-anchor="middle">Wie schreibt man das?</text>
+<rect x="14" y="40" width="176" height="40" rx="12" fill="#fff" stroke="#c8102e" stroke-width="2"/><path d="M72 80l6 12 6-12z" fill="#fff" stroke="#c8102e" stroke-width="2"/>
+<text x="102" y="67" font-size="19" font-weight="bold" fill="#c8102e" text-anchor="middle">H – U – B – E – R</text>
+<!-- form on the counter -->
+<rect x="166" y="96" width="120" height="70" rx="4" fill="#fff" stroke="#1f2937" stroke-width="2" transform="rotate(-4 226 131)"/>
+<text x="176" y="122" font-size="11" fill="#555" transform="rotate(-4 226 131)">Familienname:</text>
+<text x="180" y="150" font-size="22" font-weight="bold" fill="#1d4e89" transform="rotate(-4 226 131)">HU_ER</text>
+</svg>

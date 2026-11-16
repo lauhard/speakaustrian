@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif"><rect width="400" height="260" fill="#f3ead9"/>
+<rect y="200" width="400" height="60" fill="#8a8f98"/><path d="M0 228h400" stroke="#fff" stroke-width="4" stroke-dasharray="24 18"/>
+<path d="M0 200q60-40 130-20t140-10 130 10v20H0z" fill="#7cc36a"/>
+<rect x="196" y="120" width="8" height="84" fill="#6b7280"/>
+<rect x="60" y="30" width="280" height="100" rx="8" fill="#fff" stroke="#1f2937" stroke-width="3"/>
+<g><rect x="78" y="46" width="60" height="22" fill="#c8102e"/><rect x="78" y="68" width="60" height="22" fill="#fff" stroke="#ddd"/><rect x="78" y="90" width="60" height="22" fill="#c8102e"/></g>
+<text x="238" y="72" font-size="16" font-weight="bold" fill="#1f2937" text-anchor="middle">REPUBLIK</text>
+<text x="238" y="102" font-size="24" font-weight="bold" fill="#1f2937" text-anchor="middle">ÖSTERREICH</text>
+</svg>

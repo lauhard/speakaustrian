@@ -116,3 +116,19 @@ Format:
 - Options: A chapters 1–4 may use simple formats (as now), exam formats from A1-05 on, speaking pre-stages with step 009 · B exam formats from A1-01 (needs 009 first) · C add `distractorType` to the schema now.
 - Blocks: nothing for A1-01 as built; decide before 009/010.
 
+
+## G-014 – One review card for the number set (SET-ZAHLEN)   (status: open)
+- Found in: 010a A1-02 content
+- Spec says: `04a` R-W1/R-W2: a set gets **one** card (row drill), passive entries get no card; cards are created at `LESSON_COMPLETED` of the introducing lesson.
+- Problem: the app only knows vocabulary cards (one per `introduces` id). Introducing the 24 numbers of SET-ZAHLEN would create 24 cards and break the Leitner load the plan assumes (S2: set = 1 card).
+- Implemented for now: numbers of the set and passive entries (Million, möglich) are in the chapter `vocab` (free practice) but not in `introduces`, so they get no card. Numbers are trained in the lessons, both pools, and come back through error cards.
+- Options: A build the set card (card kind `set`, drill = random numbers of the set in both directions) and add the set id to the introducing lesson · B one vocabulary card per number (more load than planned) · C leave as is.
+- Blocks: nothing for A1-02; settle before the review load is calibrated (pilot, phase 7).
+
+## G-015 – Words of later chapters in A1-02 (picture nouns, emergency services)   (status: open)
+- Found in: 010a review of A1-02 (fresh-context reviewer)
+- Spec says: CLAUDE.md / `03`: only vocabulary of the chapter and earlier chapters; situations go into the translated instruction. `03c` tags Feuerwehr, Polizei, Rettung, Notruf as A1-19, but `03a` puts A1-WOW-09 (emergency numbers) into A1-02 and A1-19.
+- Problem: emergency-number tasks need the service names; the market picture tasks name Brot, Milch, Äpfel (A1-07).
+- Implemented: service names are taught on the A1-02 cards (no review cards); the picture nouns appear only with picture support and are presented on one L12 card as "words from the picture" (no review cards).
+- Options: A keep as is (picture/situation support) · B move the service names to A1-02 in `03c` · C remove the nouns from A1-02 tasks.
+- Blocks: nothing.

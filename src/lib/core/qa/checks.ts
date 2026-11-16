@@ -94,9 +94,16 @@ export const makeLexicon = (lemmas: readonly string[], texts: readonly string[],
 
 const ENDINGS = ['est', 'et', 'en', 'es', 'er', 'em', 'st', 'e', 't', 'n', 's'];
 
+// Number words are built regularly from the number set (SET-ZAHLEN, D4): siebenundvierzig, hundertzwanzig.
+const NUMBER_PARTS = ['tausend', 'hundert', 'und', 'zwanzig', 'dreißig', 'dreissig', 'vierzig', 'fünfzig', 'sechzig', 'siebzig', 'achtzig', 'neunzig',
+	'zwölf', 'elf', 'zehn', 'eins', 'ein', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sech', 'sieben', 'sieb', 'acht', 'neun'];
+const splitsIntoNumber = (t: string): boolean => t === '' || NUMBER_PARTS.some((p) => t.startsWith(p) && splitsIntoNumber(t.slice(p.length)));
+export const isNumberWord = (t: string): boolean => /und|hundert|tausend/.test(t) && splitsIntoNumber(t);
+
 export const isKnownWord = (token: string, lex: Lexicon): boolean => {
 	const t = token.toLowerCase();
 	if (lex.forms.has(t) || lex.stems.has(t)) return true;
+	if ((lex.forms.has('zwanzig') || lex.stems.has('zwanzig')) && isNumberWord(t)) return true;
 	if (t.includes("'") && t.split("'").every((part, i) => i > 0 || isKnownWord(part, lex))) return true;
 	return ENDINGS.some((e) => t.endsWith(e) && lex.stems.has(t.slice(0, -e.length)));
 };
