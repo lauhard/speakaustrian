@@ -14,6 +14,7 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [ ] 004 A1-01 complete, in three steps:
   - [x] 004a QA script for content pools: `pnpm qa` (`docs/QA.md`), pools file `<chapter>-pools.json` merged by `content/index.ts`, ≥ 2 twins for real chapters as content test, runs in CI; gaps G-009–G-011
   - [x] 004b A1-01 pools (`src/lib/content/a1-01-pools.json`): 30 twin families = 90 test items (quota R-T1 with focus speaking: 5 + 5 × 3), 90 practice items in families of 3, 7 chapter goals, all with `de`/`en`/`tl` (Tagalog `machine`). `pnpm qa A1-01 --require-pools`: 0 errors. Built from a small set of task patterns; more variety (patterns, texts, pictures, real speaking recordings with 009) comes in a later content pass. Open: A1-WOW-01 and `sourceIds` (G-012)
+  - [x] 004d `sourceIds` (optional, `Q…` ids) on items; `pnpm qa` check `werte.sources` (error for real chapters); all A1-01 Werte items carry `Q36` (A1-WOW-18). A1-WOW-01 tasks move to A1-03 (word “Deutsch”)
   - [ ] 004c Sample review of the A1-01 pools by a strong model in a fresh context – done 16.11. (62 of 180 items, 9 “should fix” corrected, open points in G-012/G-013); **Andi's approval is still open**; **A1-01 micro lessons 8–14** (WOW topics A1-WOW-18/-01 with sourced facts, speaking pre-stages, form filling) are still missing – the chapter flow starts after lessons 1–7 until they exist
 - [x] 005a Chapter attempt automaton in the core (04a §4.2): events `PRACTICE_ANSWERED`, `GATE_ANSWERED`, `TARGETED_PRACTICE_DONE`, `TEST_STARTED`, `TEST_ANSWERED`, `CORRECTION_ANSWERED`, `ERROR_REVIEW_ANSWERED`; policy points `outcomeAfterTest`, `outcomeAfterCorrection`, `recoveryAfterFail`, `bonusForNext`; error cards (R-W3); `ContentInfo` seam (not wired into the app yet)
 - [x] 005b Draws as pure functions with seed (`core/draw.ts`): `testComposition` + `drawTest` (R-T1, R-T2, R-T4), `drawGate` (R-G1); card promotion by the test (R-W4), answer streak (R-E1), override effects `SET_RECOVERY`/`GRANT_ATTEMPT` (T-PL04)
@@ -26,6 +27,8 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [ ] 010 Chapters A1-02 … (two per batch), then milestone MS-A1 (R-M)
 
 ## Notes for the next steps
+- Content run 2 (after all A1-01 lessons exist): raise variety of the A1-01 pools (more task patterns, texts, pictures, listening dialogues), grow the test pool beyond 30 families if needed (G-009). Speaking pre-stages are choice-only until 009 (recordings).
+- Werte items (WE1–WE4) put the situation only in the en/tl instruction, the German text stays short (CLAUDE.md, V5: test instructions of A1-01–A1-04 have a translation). German-only readers get less context in these items.
 - Policy decision points not yet in `RulePolicy`: `examPassed`, `retakeUnlock`, `isExamReady` (step 010). Add each with its tests from `04b`.
 - Not yet in the mechanics: mandatory speaking recording in the test (R-T7, with step 009), weekly-review guard on `TEST_STARTED` (R-W8, with the weekly review).
 - Ship with `scripts/ship.sh "title" "body"` (push → PR → checks → merge → deploy).

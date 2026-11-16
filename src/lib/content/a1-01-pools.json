@@ -2629,6 +2629,9 @@
 					"W-A1-0147",
 					"W-A1-0128"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Ein Herr kommt. Was sagen Sie?"
 			},
 			{
@@ -2659,6 +2662,9 @@
 					"W-A1-0007",
 					"W-A1-0147",
 					"W-A1-0128"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Herr Huber. Was sagen Sie?",
 				"family": "A1-01-P-WE1-1"
@@ -2691,6 +2697,9 @@
 					"W-A1-0007",
 					"W-A1-0147",
 					"W-A1-0128"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Frau Berger. Was sagen Sie?",
 				"family": "A1-01-P-WE1-1"
@@ -2727,6 +2736,9 @@
 					"W-A1-0327",
 					"W-A1-0328"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Es ist Morgen. Herr Mayer kommt. Was sagen Sie?"
 			},
 			{
@@ -2760,6 +2772,9 @@
 					"W-A1-0383",
 					"W-A1-0327",
 					"W-A1-0328"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Es ist Abend. Frau Santos kommt. Was sagen Sie?",
 				"family": "A1-01-P-WE2-1"
@@ -2796,6 +2811,9 @@
 					"W-A1-0327",
 					"W-A1-0328"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Es ist Tag. Herr Bauer kommt. Was sagen Sie?",
 				"family": "A1-01-P-WE2-1"
 			},
@@ -2829,6 +2847,9 @@
 					"W-A1-0325",
 					"W-A1-0376"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Lukas Bauer. Was sagen Sie?"
 			},
 			{
@@ -2860,6 +2881,9 @@
 					"W-A1-0326",
 					"W-A1-0325",
 					"W-A1-0376"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Maria Santos. Was sagen Sie?",
 				"family": "A1-01-P-WE3-1"
@@ -2894,6 +2918,9 @@
 					"W-A1-0325",
 					"W-A1-0376"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Ali Mayer. Was sagen Sie?",
 				"family": "A1-01-P-WE3-1"
 			},
@@ -2927,6 +2954,9 @@
 					"W-A1-0387",
 					"W-A1-0017"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Jonas und Maria. Was sagt Jonas?"
 			},
 			{
@@ -2958,6 +2988,9 @@
 					"W-A1-0007",
 					"W-A1-0387",
 					"W-A1-0017"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Ali und Lukas. Was sagt Ali?",
 				"family": "A1-01-P-WE4-1"
@@ -2991,6 +3024,9 @@
 					"W-A1-0007",
 					"W-A1-0387",
 					"W-A1-0017"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Maria und Sofia. Was sagt Maria?",
 				"family": "A1-01-P-WE4-1"
@@ -5587,6 +5623,9 @@
 					"W-A1-0147",
 					"W-A1-0128"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Herr Bauer. Was sagen Sie?"
 			},
 			{
@@ -5617,6 +5656,9 @@
 					"W-A1-0007",
 					"W-A1-0147",
 					"W-A1-0128"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Eine Frau kommt. Was sagen Sie?",
 				"family": "A1-01-T-WE1-1"
@@ -5649,6 +5691,9 @@
 					"W-A1-0007",
 					"W-A1-0147",
 					"W-A1-0128"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Frau Gruber. Was sagen Sie?",
 				"family": "A1-01-T-WE1-1"
@@ -5685,6 +5730,9 @@
 					"W-A1-0327",
 					"W-A1-0328"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Es ist Morgen. Frau Gruber kommt. Was sagen Sie?"
 			},
 			{
@@ -5718,6 +5766,9 @@
 					"W-A1-0383",
 					"W-A1-0327",
 					"W-A1-0328"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Es ist Abend. Herr Huber kommt. Was sagen Sie?",
 				"family": "A1-01-T-WE2-1"
@@ -5754,6 +5805,9 @@
 					"W-A1-0327",
 					"W-A1-0328"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Es ist Tag. Frau Berger kommt. Was sagen Sie?",
 				"family": "A1-01-T-WE2-1"
 			},
@@ -5787,6 +5841,9 @@
 					"W-A1-0325",
 					"W-A1-0376"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Sofia Berger. Was sagen Sie?"
 			},
 			{
@@ -5818,6 +5875,9 @@
 					"W-A1-0326",
 					"W-A1-0325",
 					"W-A1-0376"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Jonas Huber. Was sagen Sie?",
 				"family": "A1-01-T-WE3-1"
@@ -5852,6 +5912,9 @@
 					"W-A1-0325",
 					"W-A1-0376"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Anna Gruber. Was sagen Sie?",
 				"family": "A1-01-T-WE3-1"
 			},
@@ -5885,6 +5948,9 @@
 					"W-A1-0387",
 					"W-A1-0017"
 				],
+				"sourceIds": [
+					"Q36"
+				],
 				"prompt": "Lukas und Anna. Was sagt Lukas?"
 			},
 			{
@@ -5916,6 +5982,9 @@
 					"W-A1-0007",
 					"W-A1-0387",
 					"W-A1-0017"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Anna und Jonas. Was sagt Anna?",
 				"family": "A1-01-T-WE4-1"
@@ -5949,6 +6018,9 @@
 					"W-A1-0007",
 					"W-A1-0387",
 					"W-A1-0017"
+				],
+				"sourceIds": [
+					"Q36"
 				],
 				"prompt": "Sofia und Ali. Was sagt Sofia?",
 				"family": "A1-01-T-WE4-1"

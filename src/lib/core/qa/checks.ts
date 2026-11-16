@@ -222,6 +222,8 @@ export const checkChapter = (raw: unknown, ctx: QaContext): Finding[] => {
 		...test
 			.filter((i) => i.type === 'cloze' && Object.keys(i.gaps).length > C.TEST_PARTS_MAX)
 			.map((i) => f('error', 'test.parts', `test task has more than ${C.TEST_PARTS_MAX} parts (R-T3)`, i.id)),
+		// Q11: facts of Werte items need a source (`sourceIds`).
+		...pool.filter((i) => i.skill === 'werte' && !i.sourceIds?.length).map((i) => f(sizeLevel, 'werte.sources', 'Werte item without sourceIds (Q11)', i.id)),
 		// 8. Vocabulary within the chapter scope (design note at the top of this file).
 		...pool.flatMap((i) => {
 			const unknown = [...new Set(germanTexts(i).flatMap(tokenize).filter((t) => !isKnownWord(t, lex)))];

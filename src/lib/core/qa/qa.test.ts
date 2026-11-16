@@ -13,7 +13,7 @@ const inventory = parseInventory(
 const ctx: QaContext = { quota, real: true, position: 1, knownChapters: [], earlierChapterIds: ['A1-01'], inventory, allowlist: ['Anna', 'Huber'], fileExists: () => false };
 
 const item = (id: string, skill: Discipline, n: number, extra: object = {}) => ({
-	id, skill, type: 'choice', instruction: L('Wählen Sie.'), explanation: L('Warum.'), prompt: `Wie heißen Sie? ${n}`, options: ['Ich heiße Anna.', 'Danke.'], answer: 0, goals: ['G1'], ...extra
+	id, skill, type: 'choice', instruction: L('Wählen Sie.'), explanation: L('Warum.'), prompt: `Wie heißen Sie? ${n}`, options: ['Ich heiße Anna.', 'Danke.'], answer: 0, goals: ['G1'], ...(skill === 'werte' ? { sourceIds: ['Q36'] } : {}), ...extra
 });
 // A chapter that meets every rule: 20 twin families of 3 (= 60 test items), 80 practice items, 20 % recycling.
 const good = () => {
@@ -47,7 +47,8 @@ describe('qa on the broken fixture: one finding per check', () => {
 		['pool.family-skill', 'warning', 'FX-T2'],
 		['practice.gate', 'error', undefined],
 		['practice.size', 'error', undefined],
-		['practice.twins', 'warning', 'FX-P1'],
+		['practice.twins', 'warning', 'FX-P2'],
+		['werte.sources', 'error', 'FX-P4'],
 		['pool.duplicate', 'error', 'FX-T3'],
 		['choice.options', 'error', 'FX-T1'],
 		['goals.uncovered', 'error', undefined],
