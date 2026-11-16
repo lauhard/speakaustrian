@@ -47,5 +47,8 @@
 	"you_hear": "Narinig mo: {text}",
 	"preview": "Pasilip",
 	"course": "Kurso",
-	"not_found": "Walang ganitong pahina."
+	"not_found": "Walang ganitong pahina.",
+	"pensum_label": "Gaano katagal ang oras mo bawat araw?",
+	"day_x": "Araw {day}",
+	"chapter_locked": "Naka-lock – tapusin muna ang naunang kabanata"
 }

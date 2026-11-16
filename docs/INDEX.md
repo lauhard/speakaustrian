@@ -15,9 +15,8 @@
 | `tickets/README.md` | Ticket workflow | Once per session | – |
 | `tickets/BACKLOG.md` | Ticket list + dependencies (written by `/backlog`) | Picking next ticket | – |
 
-## Not yet in the repo (still in the Claude project)
-Request via `docs/spec-gaps.md` when a ticket needs them – don't guess their content.
-- `02a` Can-Do matrix · `02b` Handlungsfelder · `02c` vocab inventory (`.tsv`, 2,035 entries) · `02d` grammar progression · `02e` Redemittel/Textsorten · `02f` WOW topics · `02g` task types
-- `03-curriculum.md` (incl. Q1–Q11 quality criteria, D10 concept) · `03a` chapter spec · `03b` coverage matrix · `03c` chapter vocab (`.tsv`) · `03d` vocab additions · `03e`/`03e2` planning scripts · `03f` daily plan (`.tsv`) · `03g` AT/DE varieties
-- `01-ressourcen.md` (source register) · `geraetecheck.md` (not written yet, E4)
-Content tickets (phase 5) will need `02c`, `02g`, `03`, `03a`, `03c`, `03g` → sync them before the first content ticket.
+## Also in `spec/` (synced 16.11.2026)
+`02a` Can-Do matrix · `02c-wortschatz-inventar.md` · `02d` grammar progression · `02f` WOW topics · `02g` task types + correction rules · `03-curriculum.md` (Q1–Q11, D10) · `03a` chapter spec · `03b` coverage · `03c-kapitel-wortschatz.tsv` (grep by chapter, never read whole) · `03d` · `03e` · `03f` · `03g` AT/DE varieties
+
+## Not in the repo
+`02b` Handlungsfelder · `02e` Redemittel/Textsorten · `02c` inventory `.tsv` · `01-ressourcen.md` · `geraetecheck.md` (not written yet)

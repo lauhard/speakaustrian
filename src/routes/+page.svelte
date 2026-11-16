@@ -2,36 +2,42 @@
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
-	import { newProfile, storage } from '#lib/profile.ts';
-	import type { Profile } from '#lib/ports/storage.ts';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { chapterContent, course, PREVIEW_CHAPTER } from '#lib/content/index.ts';
+	import { planDay } from '#lib/core/reducer.ts';
+	import type { PensumMin } from '#lib/core/state.ts';
+	import { game, policy } from '#lib/game.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const levels = ['A1', 'A2'] as const;
-	const doneCount = (chapterId: string) =>
-		chapterContent(chapterId)?.lessons.filter((l) => profile?.lessonsDone.includes(l.id)).length ?? 0;
+	const pensumOptions: { value: PensumMin; label: string }[] = [
+		{ value: 60, label: '1 h' },
+		{ value: 90, label: '1,5 h' },
+		{ value: 105, label: '1,75 h' },
+		{ value: 120, label: '2 h' }
+	];
 
-	let profile = $state<Profile | null>(null);
-	let ready = $state(false);
 	let name = $state('');
+	let pensumMin = $state<PensumMin>(90);
 
+	const profile = $derived(game.state.profile);
+	const run = $derived(game.state.course.chapter);
+	const doneCount = (chapterId: string) => {
+		const attempt = run?.id === chapterId ? run.attempt : null;
+		const done = attempt?.kind === 'LESSONS' ? attempt.done : [];
+		return chapterContent(chapterId)?.lessons.filter((l) => done.includes(l.id)).length ?? 0;
+	};
 
-	onMount(() => {
-		profile = storage()?.load() ?? null;
-		ready = true;
-	});
+	onMount(() => game.init());
 
 	const start = (event: SubmitEvent) => {
 		event.preventDefault();
 		if (name.trim() === '') return;
-		profile = newProfile(name, new Date());
-		storage()?.save(profile);
+		game.dispatch({ type: 'PROFILE_CREATED', name, pensumMin });
 	};
 
 	const reset = () => {
-		storage()?.clear();
-		profile = null;
+		game.reset();
 		name = '';
 	};
 </script>
@@ -39,10 +45,11 @@
 <section class="space-y-6 pt-6">
 	<p class="text-stone-700">{m.home_intro()}</p>
 
-	{#if !ready}
+	{#if !game.ready}
 		<p aria-busy="true" class="text-stone-500">…</p>
 	{:else if profile}
 		<h1 class="text-2xl font-bold">{m.welcome_back({ name: profile.name })}</h1>
+		<p class="text-stone-600" data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</p>
 		<a
 			href={resolve('/practice')}
 			data-testid="free-practice"
@@ -56,8 +63,9 @@
 			<ol class="space-y-2">
 				{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter (chapter.id)}
 					{@const content = chapterContent(chapter.id)}
+					{@const access = policy.canAccessChapter(game.state, chapter.id)}
 					<li>
-						{#if content}
+						{#if content && access.allowed}
 							<a
 								href={resolve('/chapter/[id]', { id: chapter.id })}
 								data-testid="chapter-{chapter.id}"
@@ -69,7 +77,7 @@
 							</a>
 						{:else}
 							<div class="rounded-xl border border-stone-200 px-4 py-3 text-stone-500">
-								<span class="text-sm">{chapter.id} · {m.chapter_soon()}</span>
+								<span class="text-sm">{chapter.id} · {content ? m.chapter_locked() : m.chapter_soon()}</span>
 								<span class="block" lang="de">{chapter.title.de}</span>
 							</div>
 						{/if}
@@ -100,6 +108,21 @@
 					maxlength="40"
 				/>
 			</label>
+			<fieldset class="space-y-2">
+				<legend class="font-semibold">{m.pensum_label()}</legend>
+				<div class="grid grid-cols-4 gap-2">
+					{#each pensumOptions as option (option.value)}
+						<label
+							class="rounded-xl border px-2 py-3 text-center {pensumMin === option.value
+								? 'border-red-700 bg-red-50 font-semibold'
+								: 'border-stone-300 bg-white'}"
+						>
+							<input type="radio" class="sr-only" name="pensum" value={option.value} bind:group={pensumMin} />
+							{option.label}
+						</label>
+					{/each}
+				</div>
+			</fieldset>
 			<button
 				data-testid="start"
 				class="w-full rounded-xl bg-red-700 px-4 py-4 text-lg font-semibold text-white disabled:opacity-40"

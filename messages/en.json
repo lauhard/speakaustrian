@@ -47,5 +47,8 @@
 	"you_hear": "You hear: {text}",
 	"preview": "Preview",
 	"course": "Course",
-	"not_found": "This page does not exist."
+	"not_found": "This page does not exist.",
+	"pensum_label": "How much time do you have per day?",
+	"day_x": "Day {day}",
+	"chapter_locked": "Locked – finish the chapter before first"
 }
