@@ -1,6 +1,6 @@
 # 00 – Kurzfassung: Arbeitsstand für jeden Chat
 
-> **Projekt:** „Weg zur A2“ · **Stand:** 16.11.2026 (Phase 4 abgeschlossen, D14–D21; erster Prototyp im Repo)
+> **Projekt:** „Weg zur A2“ · **Stand:** 16.11.2026 (Phase 4 abgeschlossen, D14–D23; App live auf speakaustrian.lauhard.workers.dev)
 > **Abgeleitet aus:** `00-masterprompt.md` (Rev. 4.2, 16.11.2026) · `01-ressourcen.md` Abschn. 7 (E1–E4) · `02-aufbereitung.md` Abschn. 5.1 (D1–D6) · `03-curriculum.md` (Rev. 3R, D7–D11) · `04-spielregeln.md` (Phase 4, D14–D16)
 > **Vorrang:** Bei Widerspruch gilt `00-masterprompt.md`. Jede neue Entscheidung wird hier **und** im Phasen-Dokument nachgetragen.
 > **Den vollen Masterprompt lesen nur:** bei Unklarheit, bei Änderungen an der Spezifikation oder in Phasen 5–7 (Claude Code, `docs/`).
@@ -63,6 +63,8 @@
 | **D19** | **Fortschritt nur lokal** (localStorage + Export/Import); Datenbank-Gerüst entfernt; Server-Speicher nur per eigener Entscheidung. | 6 |
 | **D20** | **paraglide nur für UI-Texte** (de/en/tl); Content-Übersetzungen im Content-JSON. | 5, 6 |
 | **D21** | **Lückentext je Lücke ausgewertet** · **Bildaufgaben:** jedes Item kann ein Bild tragen, Fragen dazu (Auswahl, Lücke, Kurzantwort); Bilder vordefiniert und geprüft, nicht zur Laufzeit generiert. Offen: Fast-Treffer (G-006), Umfang (G-008). | 5, 6 |
+| **D22** | **Frei üben:** Disziplin oder „Bilder“ wählen, Aufgaben aus zugänglichen Kapiteln, ohne Leben und ohne Einfluss auf den Kursfortschritt; Kurs bleibt gemischt, R-F1 unberührt. | 5, 6 |
+| **D23** | **Claude implementiert selbst**, kleine Schritte, nach grüner CI auf `main` → sofort live auf `speakaustrian.lauhard.workers.dev`. Ersetzt D17d („Andi implementiert manuell“). Reihenfolge: `docs/ROADMAP.md`. | 5–7 |
 
 ### 3.1 Phase 4 – Vorschläge und Auslegungen im Detail (bestätigt als D14)
 
@@ -106,7 +108,7 @@
 | 3R Revision (D7–D11) | Projekt | ✅ 06.11.2026 | `03` (Rev. 3R), `03a`, `03b` (Rev. 3R), `03e2`, `03f`, `03g` |
 | 4 Spielregeln | Projekt | ✅ 06.11.2026 (D14–D16 bestätigt) | `04`, `04a` (Automat, Policy-Schicht, Regeln), `04b` (174 Testfälle), `04c` (Skript) |
 | **5 Content** | Claude Code | **nächste Phase**, verschränkt mit 6 (D17e) | `content/*.json` |
-| **6 App** | Claude Code | **gestartet:** Prototyp läuft (Namenseingabe, Lückentext, Bildaufgaben, Geräte-TTS, Tests, CI); Backlog folgt | `speakaustrian` |
+| **6 App** | Claude Code | **läuft, live:** Kursübersicht (39 Kapitel), A1-01 mit 4 Mikro-Lektionen, Frei üben, Lückentext, Bild- und Höraufgaben; weiter nach `docs/ROADMAP.md` | `speakaustrian` |
 | 7 Test & Abnahme | Claude Code | offen | Repo |
 
 ## 6. Dokumentenkarte – was pro Phase lesen (in **einem** Aufruf)

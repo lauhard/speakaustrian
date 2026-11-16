@@ -1,0 +1,357 @@
+{
+	"schemaVersion": 1,
+	"tlReviewStatus": "machine",
+	"chapters": [
+		{
+			"id": "A1-01",
+			"title": {
+				"de": "Grüß Gott! – sich begrüßen und vorstellen",
+				"en": "Hello! – greeting and introducing yourself",
+				"tl": "Pagbati at pagpapakilala"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A1-02",
+			"title": {
+				"de": "Buchstaben, Zahlen, Preise",
+				"en": "Letters, numbers, prices",
+				"tl": "Mga titik, numero, presyo"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-03",
+			"title": {
+				"de": "Woher kommen Sie? – Herkunft, Wohnort, Sprachen",
+				"en": "Where are you from? – origin, home, languages",
+				"tl": "Taga-saan ka? – pinagmulan, tirahan, wika"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A1-04",
+			"title": {
+				"de": "Meine Familie",
+				"en": "My family",
+				"tl": "Ang pamilya ko"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A1-05",
+			"title": {
+				"de": "Im Deutschkurs",
+				"en": "In the German course",
+				"tl": "Sa kursong German"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A1-06",
+			"title": {
+				"de": "Uhrzeit und Tagesablauf",
+				"en": "Time and daily routine",
+				"tl": "Oras at araw-araw na gawain"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-07",
+			"title": {
+				"de": "Auf dem Markt und im Supermarkt",
+				"en": "At the market and the supermarket",
+				"tl": "Sa palengke at supermarket"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-08",
+			"title": {
+				"de": "Essen, Trinken, Gasthaus",
+				"en": "Food, drink, restaurant",
+				"tl": "Pagkain, inumin, kainan"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A1-09",
+			"title": {
+				"de": "Meine Wohnung und das Haus",
+				"en": "My flat and the building",
+				"tl": "Ang tirahan ko at ang gusali"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A1-10",
+			"title": {
+				"de": "Telefon, Mobilbox und Termine",
+				"en": "Phone, voicemail and appointments",
+				"tl": "Telepono, voicemail at appointment"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-11",
+			"title": {
+				"de": "Beim Hausarzt und in der Apotheke",
+				"en": "At the doctor's and the pharmacy",
+				"tl": "Sa doktor at sa botika"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-12",
+			"title": {
+				"de": "Mit Bus und Bahn",
+				"en": "By bus and train",
+				"tl": "Sakay ng bus at tren"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-13",
+			"title": {
+				"de": "Wo ist …? – in der Stadt und in der Wohnung",
+				"en": "Where is …? – in town and at home",
+				"tl": "Nasaan ang …? – sa lungsod at sa bahay"
+			},
+			"focus": "grammatikWortschatz"
+		},
+		{
+			"id": "A1-14",
+			"title": {
+				"de": "Arbeit und Beruf",
+				"en": "Work and jobs",
+				"tl": "Trabaho at propesyon"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A1-15",
+			"title": {
+				"de": "Ämter und Formulare",
+				"en": "Offices and forms",
+				"tl": "Mga opisina at form"
+			},
+			"focus": "schreiben"
+		},
+		{
+			"id": "A1-16",
+			"title": {
+				"de": "Freizeit und Einladungen",
+				"en": "Free time and invitations",
+				"tl": "Libreng oras at imbitasyon"
+			},
+			"focus": "schreiben"
+		},
+		{
+			"id": "A1-17",
+			"title": {
+				"de": "Wetter, Kleidung und Feste",
+				"en": "Weather, clothes and celebrations",
+				"tl": "Panahon, damit at pagdiriwang"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A1-18",
+			"title": {
+				"de": "Was hast du am Wochenende gemacht?",
+				"en": "What did you do at the weekend?",
+				"tl": "Ano ang ginawa mo noong weekend?"
+			},
+			"focus": "grammatikWortschatz"
+		},
+		{
+			"id": "A1-19",
+			"title": {
+				"de": "Bank, Post und Notfall",
+				"en": "Bank, post office and emergencies",
+				"tl": "Bangko, koreo at emergency"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A1-20",
+			"title": {
+				"de": "Kinder, Kindergarten, Schule – und A1-Prüfungsfit",
+				"en": "Children, kindergarten, school – and A1 exam training",
+				"tl": "Mga bata, kindergarten, paaralan – at paghahanda sa A1 exam"
+			},
+			"focus": "pruefung"
+		},
+		{
+			"id": "A2-01",
+			"title": {
+				"de": "Mein Leben in Österreich",
+				"en": "My life in Austria",
+				"tl": "Ang buhay ko sa Austria"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A2-02",
+			"title": {
+				"de": "Wohnungssuche",
+				"en": "Looking for a flat",
+				"tl": "Paghahanap ng tirahan"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A2-03",
+			"title": {
+				"de": "Hausordnung, Nachbarn, Mülltrennung",
+				"en": "House rules, neighbours, waste separation",
+				"tl": "Patakaran sa gusali, kapitbahay, paghihiwalay ng basura"
+			},
+			"focus": "schreiben"
+		},
+		{
+			"id": "A2-04",
+			"title": {
+				"de": "Termine vereinbaren, verschieben, absagen",
+				"en": "Making, moving and cancelling appointments",
+				"tl": "Pag-set, paglipat at pagkansela ng appointment"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A2-05",
+			"title": {
+				"de": "Beim Arzt, Facharzt und in der Apotheke",
+				"en": "At the doctor's, the specialist's and the pharmacy",
+				"tl": "Sa doktor, espesyalista at botika"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A2-06",
+			"title": {
+				"de": "Notfall, Unfall, Krankenstand",
+				"en": "Emergency, accident, sick leave",
+				"tl": "Emergency, aksidente, sick leave"
+			},
+			"focus": "schreiben"
+		},
+		{
+			"id": "A2-07",
+			"title": {
+				"de": "Arbeit suchen: AMS, Inserat, Bewerbung",
+				"en": "Looking for work: AMS, job ads, applications",
+				"tl": "Paghahanap ng trabaho: AMS, anunsyo, aplikasyon"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A2-08",
+			"title": {
+				"de": "Am Arbeitsplatz",
+				"en": "At work",
+				"tl": "Sa trabaho"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A2-09",
+			"title": {
+				"de": "Ämter, Anträge, Formulare",
+				"en": "Offices, applications, forms",
+				"tl": "Mga opisina, aplikasyon, form"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A2-10",
+			"title": {
+				"de": "Bank, Post, Handyvertrag",
+				"en": "Bank, post office, mobile contract",
+				"tl": "Bangko, koreo, kontrata sa cellphone"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A2-11",
+			"title": {
+				"de": "Einkaufen, umtauschen, reklamieren",
+				"en": "Shopping, exchanging, complaining",
+				"tl": "Pamimili, pagpapalit, pagrereklamo"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A2-12",
+			"title": {
+				"de": "Öffis, Bahn und Reisen",
+				"en": "Public transport, trains and travel",
+				"tl": "Pampublikong sasakyan, tren at paglalakbay"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A2-13",
+			"title": {
+				"de": "Kinder: Kindergarten, Schule, Elternsprechtag",
+				"en": "Children: kindergarten, school, parents' evening",
+				"tl": "Mga bata: kindergarten, paaralan, pulong ng magulang"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A2-14",
+			"title": {
+				"de": "Deutschkurs und Weiterbildung",
+				"en": "German course and further training",
+				"tl": "Kursong German at karagdagang pagsasanay"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A2-15",
+			"title": {
+				"de": "Freizeit, Vereine, Ehrenamt",
+				"en": "Free time, clubs, volunteering",
+				"tl": "Libreng oras, samahan, boluntaryong gawain"
+			},
+			"focus": "lesen"
+		},
+		{
+			"id": "A2-16",
+			"title": {
+				"de": "Medien, Internet, Online-Formulare",
+				"en": "Media, internet, online forms",
+				"tl": "Media, internet, online form"
+			},
+			"focus": "hoeren"
+		},
+		{
+			"id": "A2-17",
+			"title": {
+				"de": "Feste, Feiertage und Vielfalt",
+				"en": "Celebrations, holidays and diversity",
+				"tl": "Pagdiriwang, pista opisyal at pagkakaiba-iba"
+			},
+			"focus": "sprechen"
+		},
+		{
+			"id": "A2-18",
+			"title": {
+				"de": "Staat, Demokratie und Rechte",
+				"en": "State, democracy and rights",
+				"tl": "Estado, demokrasya at karapatan"
+			},
+			"focus": "werte"
+		},
+		{
+			"id": "A2-19",
+			"title": {
+				"de": "Prüfungsfit A2",
+				"en": "A2 exam training",
+				"tl": "Paghahanda sa A2 exam"
+			},
+			"focus": "pruefung"
+		}
+	]
+}

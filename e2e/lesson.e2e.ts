@@ -1,37 +1,53 @@
 import { expect, test } from '@playwright/test';
 
-test('name entry, cloze grading and picture question', async ({ page }) => {
+const signIn = async (page: import('@playwright/test').Page) => {
 	await page.goto('/');
 	await page.getByTestId('name-input').fill('Maria');
 	await page.getByTestId('start').click();
-	await page.getByTestId('start-lesson').click();
+};
 
-	// Task 1: multiple choice
-	await page.getByRole('radio', { name: 'Grüß Gott!' }).check();
+test('chapter A1-01: learn cards, tasks, lesson marked as done', async ({ page }) => {
+	await signIn(page);
+	await page.getByTestId('chapter-A1-01').click();
+	await page.getByTestId('lesson-A1-01-L02').click();
+	await page.getByTestId('to-tasks').click();
+
+	// Cloze with an accepted alternative
+	await page.getByTestId('gap-1').fill('bin');
 	await page.getByTestId('check').click();
 	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'correct');
 	await page.getByTestId('next').click();
 
-	// Task 2: cloze with a wrong second gap
-	await page.getByTestId('gap-1').fill('heiße');
-	await page.getByTestId('gap-2').fill('von');
+	// Reading task
+	await page.getByRole('radio', { name: 'Santos' }).check();
+	await page.getByTestId('check').click();
+	await page.getByTestId('next').click();
+
+	await page.getByRole('radio', { name: 'Grüß Gott, Herr Huber!' }).check();
+	await page.getByTestId('check').click();
+	await page.getByTestId('next').click();
+
+	// Cloze: one gap wrong, one with a spelling detail
+	await page.getByTestId('gap-1').fill('heißt');
+	await page.getByTestId('gap-2').fill('heisse');
 	await page.getByTestId('check').click();
 	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'wrong');
 	await page.getByTestId('next').click();
 
-	// Task 3: cloze, spelling detail only
-	await page.getByTestId('gap-1').fill('heissen');
+	// Listening task (no speech engine in the test browser: answer directly)
+	await page.getByRole('radio', { name: 'Anna' }).check();
 	await page.getByTestId('check').click();
-	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'near');
+	await expect(page.getByTestId('feedback')).toContainText('Ich heiße Anna Gruber.');
 	await page.getByTestId('next').click();
 
-	// Task 4: picture question
-	await expect(page.getByTestId('item-image')).toBeVisible();
-	await page.getByTestId('short-input').fill('Sommer');
-	await page.getByTestId('check').click();
-	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'correct');
+	await expect(page.getByTestId('result')).toBeVisible();
+	await page.getByTestId('back').click();
+	await expect(page.getByTestId('lesson-A1-01-L02')).toContainText('✓');
+});
 
-	// Progress survives a reload (stored on the device)
-	await page.goto('/');
-	await expect(page.getByTestId('start-lesson')).toBeVisible();
+test('free practice: picture tasks only', async ({ page }) => {
+	await signIn(page);
+	await page.getByTestId('free-practice').click();
+	await page.getByTestId('practice-bild').click();
+	await expect(page.getByTestId('item-image')).toBeVisible();
 });
