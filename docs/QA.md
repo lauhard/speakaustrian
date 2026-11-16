@@ -21,6 +21,7 @@ Pools of a real chapter go into `src/lib/content/<chapter>-pools.json` = `{ "cha
 | `practice.size` | error | practice part 40 + 2 blocks = 80 (G-010, decided) |
 | `pool.duplicate` | error | same task text twice (practice/test overlap, twin without a new surface) |
 | `choice.options` · `test.parts` · `goals.uncovered` | error | duplicate options · test task > 3 parts · chapter goal without item |
+| `werte.sources` | error | `werte` item without `sourceIds` (Q11) |
 | `i18n.blank` · `image.missing` | error | blank `de`/`en`/`tl` · picture file missing |
 | `practice.twins` | warning | practice item without a twin in its family (masterprompt: every item ≥ 1 twin) |
 | `recycling` | error | < 20 % of practice items with `refs`/goals of earlier chapters (first chapter: info, G-011) |
@@ -32,4 +33,4 @@ Sandbox chapters (DEMO) get quantity rules and `vocab.unknown` as info only.
 ## Expected result today (16.11.2026)
 - `pnpm qa`: `0 error(s), 4 warning(s), 28 info` (27 of them DEMO sandbox, 1 recycling), exit 0. The 4 warnings are `i18n.untranslated` in A1-01 lessons (verb paradigms repeated in all three languages). Info: recycling not measured in the first chapter.
 - A1-01 pools (`a1-01-pools.json`): 90 test items in 30 families (twins ≥ 2), 90 practice items, no pool warnings. DEMO (sandbox) only gets quantity and vocabulary findings as info.
-- Fixture `--file src/lib/core/qa/fixtures/broken.json`: 24 errors, 7 warnings, exit 1.
+- Fixture `--file src/lib/core/qa/fixtures/broken.json`: 25 errors, 6 warnings, exit 1.

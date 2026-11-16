@@ -27,7 +27,9 @@ const ItemBase = z.object({
 	family: z.string().regex(/^[A-Z0-9-]+$/).optional(),
 	// Learning goals the item trains (R-G2 targeted practice, R-T2 draw) and vocabulary ids it tests (R-W4).
 	goals: z.array(z.string().min(1)).optional(),
-	refs: z.array(z.string().regex(/^W-A[12]-\d{4}$/)).optional()
+	refs: z.array(z.string().regex(/^W-A[12]-\d{4}$/)).optional(),
+	// Sources of facts (Q ids of docs/spec/01-ressourcen, 00-quellen). Required for `werte` items by `pnpm qa` (Q11).
+	sourceIds: z.array(z.string().regex(/^Q\d+$/)).min(1).optional()
 });
 
 export const ChoiceItem = ItemBase.extend({

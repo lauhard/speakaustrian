@@ -123,6 +123,31 @@
 						]
 					}
 				}
+			},
+			{
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie.",
+					"en": "Wählen Sie. (en)",
+					"tl": "Wählen Sie. (tl)"
+				},
+				"explanation": {
+					"de": "So grüßt man.",
+					"en": "So grüßt man. (en)",
+					"tl": "So grüßt man. (tl)"
+				},
+				"goals": [
+					"G1"
+				],
+				"type": "choice",
+				"prompt": "Wer kommt? 4",
+				"options": [
+					"Frau Huber.",
+					"Nein."
+				],
+				"answer": 0,
+				"id": "FX-P4",
+				"family": "FX-P1"
 			}
 		],
 		"test": [
