@@ -70,7 +70,7 @@ Format:
 - Open: which exam parts picture tasks train (check `00-quellen.md` A/B for picture-based speaking/writing parts), how many per chapter, style guide for the pictures, free-text picture description (needs G-007).
 - Blocks: content schema ticket, first content batch.
 
-## G-008 – Small additions to the 04a type sketch for the chapter attempt   (status: open – implemented as described, needs Andi's OK)
+## G-008 – Small additions to the 04a type sketch for the chapter attempt   (status: decided 16.11.2026 – Andi: keep as implemented; error review does not move the error card)
 - Found in: step 005a (`core/state.ts`, `core/policy.ts`)
 - Spec says: `04a` §1a `outcomeAfterTest(run): 'PASSED' | 'CORRECTION' | 'FAILED'`, `outcomeAfterCorrection(run)`, `bonusForNext(s, run)`; §2 `GATE { block, items, correct, answered }`, `TARGETED_PRACTICE { goalIds, done }`.
 - Problem: (1) R-PL1 forbids `if (lives === 0)` in the core, but the sketch has no result for "test goes on". (2) The goals for targeted practice (R-G2) need the wrong gate items, which the sketch does not keep. (3) The next gate block number is lost in `TARGETED_PRACTICE`. (4) The policy cannot see from the run whether the last twin was right or whether the pass was a perfect first attempt.
