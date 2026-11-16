@@ -78,25 +78,40 @@ Format:
 - Also open: does a right answer in the error review (R-K4) move the Leitner box of the error card? Implemented: no (card stays in box 1, due tomorrow).
 - Blocks: nothing.
 
-## G-009 – Does “test pool ≥ 60” count twins?   (status: open)
+## G-009 – Does “test pool ≥ 60” count twins?   (status: working assumption A, 16.11. – Andi did not answer explicitly; confirm in the project chat)
 - Found in: 004a QA script (`src/lib/core/qa/checks.ts`, `pool.size`, `pool.twins`, `pool.quota`)
 - Spec says: `03` Q6 / `04a` POOL_MIN: pool ≥ 60 items and ≥ 2.5 × test; R-K3: test items ≥ 2 twins; R-T2: never two twins in one test; R-T4: a new attempt prefers unseen items.
 - Problem: 60 items with 2 twins each are only 20 families = exactly one test of 20. A second attempt can only show twins of the same 20 tasks, and a correction round uses them up as well.
 - Options: A 60 counts items incl. twins (QA today: ≥ 60 items, family ≥ 3, quota reachable with families) · B 60 counts families (≥ 180 items) · C in between; recommendation for A1-01: about 30 families / ≈ 90 items.
 - Blocks: 004b (size of the A1-01 test pool). Decision in the project chat.
 
-## G-010 – Size of the practice part   (status: open)
+## G-010 – Size of the practice part   (status: decided A – Andi, 16.11.2026: 80 is a hard minimum; content to be extended later for more variety)
 - Found in: 004a QA script (`practice.size`, `practice.gate`)
 - Spec says: masterprompt Phase 5 no. 2: practice pool for the practice part (“≈ 40”) and several readiness blocks of 20; no. 11: practice part + ≥ 2 readiness blocks without overlap with the test pool. R-G1: readiness round = last block of the practice part, drawn from the practice pool.
 - Problem: “≈ 40” is no hard number, and the spec does not say whether the practice part and the readiness blocks may share items. The app walks the whole practice pool as practice part and then draws the blocks from the same pool.
-- Implemented: error if a discipline has fewer than 2 × quota practice items (2 blocks without repeats, R-G1); only a warning below 40 + 2 × 20 = 80 items.
+- Implemented (decision A): error if a discipline has fewer than 2 × quota practice items (R-G1) or the pool has fewer than 40 + 2 × 20 = 80 items. A1-01 has 90, built from the same task patterns as the test; more variety (new task patterns, texts, pictures) comes in a later content pass.
 - Options: A 80 is a hard minimum, practice part = 40 fixed items, blocks from the rest · B as implemented (blocks may reuse practice-part items) · C other number.
 - Blocks: nothing (004b can aim at ≥ 80).
 
-## G-011 – Measuring “≥ 20 % recycling”   (status: open)
+## G-011 – Measuring “≥ 20 % recycling”   (status: decided A – Andi, 16.11.2026: as implemented, A1-01 exempt; can be improved later)
 - Found in: 004a QA script (`recycling`)
 - Spec says: `03` Q8: ≥ 20 % of the practice items recycle earlier chapters, “QA über `learningGoalIds` und Wortschatz-Index”.
 - Problem: A1-01 has no earlier chapter, and the spec does not say whether earlier lessons of the same chapter count. Item goals are chapter-local ids so far.
 - Implemented: a practice item counts as recycled if a `refs` id belongs to an earlier chapter in `03c` or a goal id is a goal of an earlier chapter; first chapter: not measured (info).
 - Options: A as implemented, A1-01 exempt · B in A1-01 earlier lessons count (needs lesson ids on pool items) · C measure by the words in the text instead of `refs`.
 - Blocks: nothing for A1-01; settle before 010 (A1-02).
+
+## G-012 – A1-WOW-01 and `sourceIds` for the A1-01 Werte items   (status: open)
+- Found in: 004b A1-01 pools (`a1-01-pools.json`, family WE1–WE4)
+- Spec says: `03a` A1-01 Werte-Thema = A1-WOW-18 + A1-WOW-01 (“Deutsch ist Staatssprache; Deutschkenntnisse erleichtern Arbeit und Kontakt”, `02f`, F-001). Masterprompt Phase 5 no. 11 / `03` Q11: Werte items have `sourceIds`.
+- Problem: (1) a task on A1-WOW-01 needs the word “Deutsch”, which is vocabulary of A1-03, so it cannot be written in A1-01 German; (2) the content schema has no `sourceIds` field, so the check cannot exist yet. The WE items only state customs that the A1-01 lessons already teach (A1-WOW-18, F-018 has no hard fact, source Q36).
+- Options: A A1-WOW-01 tasks move to A1-03 (add the topic there), A1-01 keeps A1-WOW-18 only · B a short A1-WOW-01 task with the instruction in en/tl and only “Österreich” in German · for (2): add optional `sourceIds` to Item + check “werte items have sourceIds” in `pnpm qa`.
+- Blocks: nothing now; before the A1-01 sign-off (004c).
+
+## G-013 – Exam-format closeness of reading/listening pool items, distractor type, speaking pre-stages   (status: open)
+- Found in: 004c review of `a1-01-pools.json` (fresh-context reviewer)
+- Spec says: `02g` §1.1 (A1 formats: true/false with situation, reaction matching with 4 options, headlines …) and §2.1 (distractors must be mentioned in the text or audio; a field for the distractor type); masterprompt Q4 “exact exam format”. `02g` names “build the question” (UE-SATZBAU) as a pre-stage of A1-SPR-T2.
+- Problem: the A1-01 pools use plain choice/cloze/short tasks. The schema has no distractor-type field, no true/false or matching type (step 009), and speaking pre-stages are only “choose what to say, then say it aloud”. It is not specified from which chapter the test pool has to follow the exam formats.
+- Options: A chapters 1–4 may use simple formats (as now), exam formats from A1-05 on, speaking pre-stages with step 009 · B exam formats from A1-01 (needs 009 first) · C add `distractorType` to the schema now.
+- Blocks: nothing for A1-01 as built; decide before 009/010.
+
