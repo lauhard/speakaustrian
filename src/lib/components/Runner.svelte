@@ -48,8 +48,7 @@
 		event.preventDefault();
 		if (!response || grade) return;
 		grade = gradeItem(item, response);
-		// Practice mode: a near miss counts, with a spelling hint.
-		if (passes(grade.verdict, { nearCounts: true })) correctCount += 1;
+		if (passes(grade.verdict)) correctCount += 1;
 	};
 
 	const next = () => {

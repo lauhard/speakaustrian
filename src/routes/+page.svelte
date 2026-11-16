@@ -5,6 +5,7 @@
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { chapterContent, course, PREVIEW_CHAPTER } from '#lib/content/index.ts';
 	import { planDay } from '#lib/core/reducer.ts';
+	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
 	import { game, policy } from '#lib/game.svelte.ts';
 
@@ -22,6 +23,7 @@
 
 	const profile = $derived(game.state.profile);
 	const run = $derived(game.state.course.chapter);
+	const dueCount = $derived(game.ready ? dueQueue(game.state, game.today).length : 0);
 	const doneCount = (chapterId: string) => {
 		const attempt = run?.id === chapterId ? run.attempt : null;
 		const done = attempt?.kind === 'LESSONS' ? attempt.done : [];
@@ -50,6 +52,15 @@
 	{:else if profile}
 		<h1 class="text-2xl font-bold">{m.welcome_back({ name: profile.name })}</h1>
 		<p class="text-stone-600" data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</p>
+		{#if dueCount > 0}
+			<a
+				href={resolve('/review')}
+				data-testid="review-due"
+				class="block rounded-xl bg-red-700 px-4 py-4 text-center text-lg font-semibold text-white no-underline"
+			>
+				{m.review_due({ count: dueCount })}
+			</a>
+		{/if}
 		<a
 			href={resolve('/practice')}
 			data-testid="free-practice"

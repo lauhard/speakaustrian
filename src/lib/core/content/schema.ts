@@ -62,9 +62,21 @@ export type ShortItem = z.infer<typeof ShortItem>;
 export const Card = z.object({ phrase: z.string().min(1), note: Localized });
 export type Card = z.infer<typeof Card>;
 
+// Vocabulary entry; `id` is the stable inventory id (02c/03c). Nouns with one article get a genus card.
+export const Vocab = z.object({
+	id: z.string().regex(/^W-A[12]-\d{4}$/),
+	lemma: z.string().min(1),
+	article: z.enum(['der', 'die', 'das']).optional(),
+	en: z.string().min(1),
+	tl: z.string().min(1)
+});
+export type Vocab = z.infer<typeof Vocab>;
+
 export const Lesson = z.object({
 	id: z.string().min(1),
 	title: Localized,
+	// Vocabulary ids introduced by this lesson (review cards are created when it is finished, R-W2).
+	introduces: z.array(z.string()).optional(),
 	cards: z.array(Card).optional(),
 	items: z.array(Item).min(1)
 });
@@ -76,12 +88,19 @@ export const ChapterContent = z
 		chapterId: z.string().min(1),
 		// Tagalog texts are machine-made until a native speaker reviewed them (E2).
 		tlReviewStatus: z.enum(['machine', 'reviewed']),
+		vocab: z.array(Vocab).optional(),
 		lessons: z.array(Lesson).min(1)
 	})
 	.superRefine((c, ctx) => {
 		const items = c.lessons.flatMap((l) => l.items);
 		if (new Set(items.map((i) => i.id)).size !== items.length) ctx.addIssue({ code: 'custom', message: 'item ids must be unique' });
 		if (new Set(c.lessons.map((l) => l.id)).size !== c.lessons.length) ctx.addIssue({ code: 'custom', message: 'lesson ids must be unique' });
+		const vocabIds = new Set((c.vocab ?? []).map((v) => v.id));
+		for (const l of c.lessons) {
+			for (const ref of l.introduces ?? []) {
+				if (!vocabIds.has(ref)) ctx.addIssue({ code: 'custom', message: `${l.id}: unknown vocabulary id ${ref}` });
+			}
+		}
 		for (const i of items) {
 			if (i.audioOnly && !i.audioText) ctx.addIssue({ code: 'custom', message: `${i.id}: audioOnly needs audioText` });
 		}

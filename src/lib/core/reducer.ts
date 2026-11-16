@@ -1,4 +1,5 @@
 import type { RulePolicy } from './policy';
+import { addCards, answerCard, type Direction, type Introduced } from './review';
 import { initialState, type ChapterId, type ChapterRun, type CoursePhase, type GameState, type LocalDate, type OverrideEffect, type OverrideGrant, type PensumMin } from './state';
 
 // Pure core (docs/spec/04a §1): no I/O, no Date.now(). Time comes only from the event.
@@ -9,7 +10,8 @@ export type GameEvent = EventBase &
 		| { type: 'PROFILE_CREATED'; name: string; pensumMin: PensumMin }
 		| { type: 'PENSUM_CHANGED'; pensumMin: PensumMin }
 		| { type: 'APP_OPENED' }
-		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string }
+		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string; introduced?: Introduced[] }
+		| { type: 'REVIEW_ANSWERED'; cardId: string; direction: Direction; correct: boolean }
 		| { type: 'OVERRIDE_GRANTED'; grant: OverrideGrant }
 	);
 
@@ -62,6 +64,7 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 		...state,
 		clock: { ...state.clock, lastEventAt: event.at, lastLocalDate: localDate(event.at, event.tzOffsetMin) }
 	};
+	const today = localDate(event.at, event.tzOffsetMin);
 	switch (event.type) {
 		case 'PROFILE_CREATED': {
 			if (s.profile || event.name.trim() === '' || chapterOrder.length === 0) return s;
@@ -79,7 +82,16 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 			if (!run || run.id !== event.chapterId || run.attempt.kind !== 'LESSONS') return s;
 			if (run.attempt.done.includes(event.lessonId)) return s;
 			const attempt = { ...run.attempt, done: [...run.attempt.done, event.lessonId] };
-			return { ...s, course: { ...s.course, chapter: { ...run, attempt } } };
+			// R-W2: review cards for what the lesson introduced.
+			const cards = addCards(s.review.cards, event.introduced ?? [], today);
+			return { ...s, course: { ...s.course, chapter: { ...run, attempt } }, review: { ...s.review, cards } };
+		}
+		case 'REVIEW_ANSWERED': {
+			const card = s.review.cards[event.cardId];
+			// Only a due card in its current direction is booked (idempotent against double taps).
+			if (!card || card.mastered || card.due > today || card.nextDirection !== event.direction) return s;
+			const next = answerCard(card, event.correct, today, policy.config);
+			return { ...s, review: { ...s.review, cards: { ...s.review.cards, [card.id]: next } } };
 		}
 		case 'OVERRIDE_GRANTED': {
 			if (s.overrides.some((o) => o.grant.grantId === event.grant.grantId)) return s;

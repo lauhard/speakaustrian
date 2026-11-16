@@ -50,5 +50,16 @@
 	"not_found": "Walang ganitong pahina.",
 	"pensum_label": "Gaano katagal ang oras mo bawat araw?",
 	"day_x": "Araw {day}",
-	"chapter_locked": "Naka-lock – tapusin muna ang naunang kabanata"
+	"chapter_locked": "Naka-lock – tapusin muna ang naunang kabanata",
+	"review_due": "Balik-aral: {count} card ang dapat sagutin",
+	"review_title": "Balik-aral",
+	"review_none": "Walang dapat balikan ngayon. Lalabas ang mga bagong card isang araw matapos ang aralin.",
+	"review_first": "Balik-aral muna, saka matuto ng bago.",
+	"review_done": "Tapos na ang lahat ng card!",
+	"q_meaning": "Ano ang ibig sabihin nito?",
+	"q_produce": "Ano ito sa German?",
+	"q_genus": "der, die o das?",
+	"article_hint": "Laging isulat ang pangngalan kasama ang artikulo: der, die o das.",
+	"skill_woerter": "Mga salita",
+	"cards_left": "{count} card pa"
 }
