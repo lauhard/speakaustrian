@@ -105,3 +105,11 @@ describe('vocabulary and variety helpers', () => {
 		expect(germanGermanForms('Ein Paradeiser und eine Semmel im Jänner.')).toEqual([]);
 	});
 });
+
+describe('number words (SET-ZAHLEN)', () => {
+	it('accepts regular compounds and rejects other words', async () => {
+		const { isNumberWord } = await import('./checks');
+		for (const w of ['siebenundvierzig', 'einundzwanzig', 'hundertzwanzig', 'sechsunddreißig', 'einhundert', 'tausendzehn']) expect(isNumberWord(w), w).toBe(true);
+		for (const w of ['undank', 'acht', 'achtung', 'zehner']) expect(isNumberWord(w), w).toBe(false);
+	});
+});

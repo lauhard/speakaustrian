@@ -66,7 +66,8 @@ export type ClozeItem = z.infer<typeof ClozeItem>;
 export type ShortItem = z.infer<typeof ShortItem>;
 
 // One teaching card of a micro lesson: a German phrase to hear and a short note on its use.
-export const Card = z.object({ phrase: z.string().min(1), note: Localized });
+// `audioText` overrides what the speech port reads (e.g. digits one by one, letters, prices in words).
+export const Card = z.object({ phrase: z.string().min(1), note: Localized, audioText: z.string().min(1).optional() });
 export type Card = z.infer<typeof Card>;
 
 // Vocabulary entry; `id` is the stable inventory id (02c/03c). Nouns with one article get a genus card.

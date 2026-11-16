@@ -47,6 +47,10 @@ describe('content rules per chapter', () => {
 		expect(items.some((i) => i.type === 'cloze')).toBe(true);
 		expect(items.filter((i) => i.image).length).toBeGreaterThanOrEqual(2);
 	});
+	// Andi, 16.11.2026: every lesson has at least one meaningful picture task (A1-01 gets its pictures in content run 2).
+	it.each(real.filter((c) => c.chapterId !== 'A1-01').map((c) => [c.chapterId, c] as const))('%s: every lesson has a picture task', (_id, chapter) => {
+		for (const l of chapter.lessons) expect(l.items.some((i) => i.image), l.id).toBe(true);
+	});
 	// R-K3: real chapters need ≥ 2 twins per test item (the schema only asks for 1, the DEMO sandbox uses that).
 	it.each(real.map((c) => [c.chapterId, c] as const))('%s: every test item has at least 2 twins', (_id, chapter) => {
 		const test = chapter.pools?.test ?? [];
@@ -58,11 +62,11 @@ describe('content rules per chapter', () => {
 	});
 });
 
-describe('practice part of A1-01 (G-010 A)', () => {
-	const { part, rest } = practiceParts('A1-01');
+describe.each(chapters.filter((c) => /^A[12]-\d{2}$/.test(c.chapterId) && c.pools).map((c) => c.chapterId))('practice part of %s (G-010 A)', (id) => {
+	const { part, rest } = practiceParts(id);
 	it('has 40 items, the readiness blocks get the rest', () => {
 		expect(part).toHaveLength(40);
-		expect(rest).toHaveLength(poolItems('A1-01', 'practice').length - 40);
+		expect(rest).toHaveLength(poolItems(id, 'practice').length - 40);
 		expect(rest.some((r) => part.some((p) => p.id === r.id))).toBe(false);
 	});
 	it('never asks the same discipline or twin family twice in a row', () => {

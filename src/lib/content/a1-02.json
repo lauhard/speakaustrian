@@ -1,0 +1,4011 @@
+{
+	"schemaVersion": 1,
+	"chapterId": "A1-02",
+	"tlReviewStatus": "machine",
+	"vocab": [
+		{
+			"id": "W-A1-0030",
+			"lemma": "alle",
+			"en": "all, everybody",
+			"tl": "lahat"
+		},
+		{
+			"id": "W-A1-0031",
+			"lemma": "etwas",
+			"en": "something",
+			"tl": "kaunti / isang bagay"
+		},
+		{
+			"id": "W-A1-0032",
+			"lemma": "nichts",
+			"en": "nothing",
+			"tl": "wala"
+		},
+		{
+			"id": "W-A1-0034",
+			"lemma": "dieser",
+			"en": "this (one)",
+			"tl": "ito / itong"
+		},
+		{
+			"id": "W-A1-0042",
+			"lemma": "wie viel",
+			"en": "how much",
+			"tl": "magkano / gaano karami"
+		},
+		{
+			"id": "W-A1-0043",
+			"lemma": "wie viele",
+			"en": "how many",
+			"tl": "ilan"
+		},
+		{
+			"id": "W-A1-0056",
+			"lemma": "nur",
+			"en": "only",
+			"tl": "lang / lamang"
+		},
+		{
+			"id": "W-A1-0059",
+			"lemma": "noch",
+			"en": "still, another",
+			"tl": "pa"
+		},
+		{
+			"id": "W-A1-0060",
+			"lemma": "schon",
+			"en": "already",
+			"tl": "na"
+		},
+		{
+			"id": "W-A1-0069",
+			"lemma": "bald",
+			"en": "soon",
+			"tl": "malapit na"
+		},
+		{
+			"id": "W-A1-0082",
+			"lemma": "viel",
+			"en": "much, a lot",
+			"tl": "marami"
+		},
+		{
+			"id": "W-A1-0083",
+			"lemma": "wenig",
+			"en": "little, few",
+			"tl": "kaunti"
+		},
+		{
+			"id": "W-A1-0084",
+			"lemma": "mehr",
+			"en": "more",
+			"tl": "mas marami"
+		},
+		{
+			"id": "W-A1-0085",
+			"lemma": "genug",
+			"en": "enough",
+			"tl": "sapat"
+		},
+		{
+			"id": "W-A1-0086",
+			"lemma": "zusammen",
+			"en": "together, in total",
+			"tl": "magkasama / lahat-lahat"
+		},
+		{
+			"id": "W-A1-0087",
+			"lemma": "allein",
+			"en": "alone",
+			"tl": "mag-isa"
+		},
+		{
+			"id": "W-A1-0088",
+			"lemma": "vielleicht",
+			"en": "maybe",
+			"tl": "siguro"
+		},
+		{
+			"id": "W-A1-0089",
+			"lemma": "wieder",
+			"en": "again",
+			"tl": "ulit"
+		},
+		{
+			"id": "W-A1-0090",
+			"lemma": "zurück",
+			"en": "back",
+			"tl": "pabalik / sukli"
+		},
+		{
+			"id": "W-A1-0117",
+			"lemma": "haben",
+			"en": "to have",
+			"tl": "magkaroon / mayroon"
+		},
+		{
+			"id": "W-A1-0118",
+			"lemma": "werden",
+			"en": "to become",
+			"tl": "maging"
+		},
+		{
+			"id": "W-A1-0126",
+			"lemma": "machen",
+			"en": "to do, to make",
+			"tl": "gumawa"
+		},
+		{
+			"id": "W-A1-0130",
+			"lemma": "sagen",
+			"en": "to say",
+			"tl": "sabihin"
+		},
+		{
+			"id": "W-A1-0132",
+			"lemma": "fragen",
+			"en": "to ask",
+			"tl": "magtanong"
+		},
+		{
+			"id": "W-A1-0133",
+			"lemma": "antworten",
+			"en": "to answer",
+			"tl": "sumagot"
+		},
+		{
+			"id": "W-A1-0135",
+			"lemma": "wissen",
+			"en": "to know (a fact)",
+			"tl": "malaman (alam)"
+		},
+		{
+			"id": "W-A1-0136",
+			"lemma": "kennen",
+			"en": "to know (a person, a thing)",
+			"tl": "kilala"
+		},
+		{
+			"id": "W-A1-0195",
+			"lemma": "möglich",
+			"en": "possible",
+			"tl": "posible"
+		},
+		{
+			"id": "W-A1-0312",
+			"lemma": "buchstabieren",
+			"en": "to spell",
+			"tl": "i-spell"
+		},
+		{
+			"id": "W-A1-0322",
+			"lemma": "Buchstabe",
+			"en": "letter (of the alphabet)",
+			"tl": "titik",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0351",
+			"lemma": "Alter",
+			"en": "age",
+			"tl": "edad",
+			"article": "das"
+		},
+		{
+			"id": "W-A1-0352",
+			"lemma": "Jahre alt",
+			"en": "… years old",
+			"tl": "… taong gulang"
+		},
+		{
+			"id": "W-A1-0370",
+			"lemma": "Hausnummer",
+			"en": "house number",
+			"tl": "numero ng bahay",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0371",
+			"lemma": "Postleitzahl",
+			"en": "postcode",
+			"tl": "postal code",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0372",
+			"lemma": "Telefonnummer",
+			"en": "phone number",
+			"tl": "numero ng telepono",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0534",
+			"lemma": "Euro",
+			"en": "euro",
+			"tl": "euro",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0535",
+			"lemma": "Cent",
+			"en": "cent",
+			"tl": "cent (sentimo)",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0536",
+			"lemma": "Preis",
+			"en": "price",
+			"tl": "presyo",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0537",
+			"lemma": "kosten",
+			"en": "to cost",
+			"tl": "magkahalaga"
+		},
+		{
+			"id": "W-A1-0794",
+			"lemma": "null",
+			"en": "zero (0)",
+			"tl": "sero (0)"
+		},
+		{
+			"id": "W-A1-0795",
+			"lemma": "eins",
+			"en": "one (1)",
+			"tl": "isa (1)"
+		},
+		{
+			"id": "W-A1-0796",
+			"lemma": "zwei",
+			"en": "two (2)",
+			"tl": "dalawa (2)"
+		},
+		{
+			"id": "W-A1-0797",
+			"lemma": "drei",
+			"en": "three (3)",
+			"tl": "tatlo (3)"
+		},
+		{
+			"id": "W-A1-0798",
+			"lemma": "vier",
+			"en": "four (4)",
+			"tl": "apat (4)"
+		},
+		{
+			"id": "W-A1-0799",
+			"lemma": "fünf",
+			"en": "five (5)",
+			"tl": "lima (5)"
+		},
+		{
+			"id": "W-A1-0800",
+			"lemma": "sechs",
+			"en": "six (6)",
+			"tl": "anim (6)"
+		},
+		{
+			"id": "W-A1-0801",
+			"lemma": "sieben",
+			"en": "seven (7)",
+			"tl": "pito (7)"
+		},
+		{
+			"id": "W-A1-0802",
+			"lemma": "acht",
+			"en": "eight (8)",
+			"tl": "walo (8)"
+		},
+		{
+			"id": "W-A1-0803",
+			"lemma": "neun",
+			"en": "nine (9)",
+			"tl": "siyam (9)"
+		},
+		{
+			"id": "W-A1-0804",
+			"lemma": "zehn",
+			"en": "ten (10)",
+			"tl": "sampu (10)"
+		},
+		{
+			"id": "W-A1-0805",
+			"lemma": "elf",
+			"en": "eleven (11)",
+			"tl": "labing-isa (11)"
+		},
+		{
+			"id": "W-A1-0806",
+			"lemma": "zwölf",
+			"en": "twelve (12)",
+			"tl": "labindalawa (12)"
+		},
+		{
+			"id": "W-A1-0807",
+			"lemma": "dreizehn",
+			"en": "thirteen (13)",
+			"tl": "labintatlo (13)"
+		},
+		{
+			"id": "W-A1-0808",
+			"lemma": "zwanzig",
+			"en": "twenty (20)",
+			"tl": "dalawampu (20)"
+		},
+		{
+			"id": "W-A1-0809",
+			"lemma": "dreißig",
+			"en": "thirty (30)",
+			"tl": "tatlumpu (30)"
+		},
+		{
+			"id": "W-A1-0810",
+			"lemma": "vierzig",
+			"en": "forty (40)",
+			"tl": "apatnapu (40)"
+		},
+		{
+			"id": "W-A1-0811",
+			"lemma": "fünfzig",
+			"en": "fifty (50)",
+			"tl": "limampu (50)"
+		},
+		{
+			"id": "W-A1-0812",
+			"lemma": "sechzig",
+			"en": "sixty (60)",
+			"tl": "animnapu (60)"
+		},
+		{
+			"id": "W-A1-0813",
+			"lemma": "siebzig",
+			"en": "seventy (70)",
+			"tl": "pitumpu (70)"
+		},
+		{
+			"id": "W-A1-0814",
+			"lemma": "achtzig",
+			"en": "eighty (80)",
+			"tl": "walumpu (80)"
+		},
+		{
+			"id": "W-A1-0815",
+			"lemma": "neunzig",
+			"en": "ninety (90)",
+			"tl": "siyamnapu (90)"
+		},
+		{
+			"id": "W-A1-0816",
+			"lemma": "hundert",
+			"en": "hundred (100)",
+			"tl": "sandaan (100)"
+		},
+		{
+			"id": "W-A1-0817",
+			"lemma": "tausend",
+			"en": "thousand (1000)",
+			"tl": "sanlibo (1000)"
+		},
+		{
+			"id": "W-A1-0818",
+			"lemma": "Million",
+			"en": "million",
+			"tl": "milyon",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0819",
+			"lemma": "Zahl",
+			"en": "number (figure)",
+			"tl": "numero (bilang)",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0820",
+			"lemma": "Nummer",
+			"en": "number (phone, house)",
+			"tl": "numero",
+			"article": "die"
+		}
+	],
+	"lessons": [
+		{
+			"id": "A1-02-L01",
+			"title": {
+				"de": "Das Alphabet: A bis M",
+				"en": "The alphabet: A to M",
+				"tl": "Ang alpabeto: A hanggang M"
+			},
+			"introduces": [
+				"W-A1-0322"
+			],
+			"cards": [
+				{
+					"phrase": "A, B, C, D",
+					"note": {
+						"de": "A sagt man „a“ wie in „Name“. B, C, D sagt man „be“, „ze“, „de“.",
+						"en": "A sounds like “ah”. B, C, D sound like “bay”, “tsay”, “day”.",
+						"tl": "Ang A ay parang “ah”. Ang B, C, D ay parang “bey”, “tsey”, “dey”."
+					}
+				},
+				{
+					"phrase": "E, F, G",
+					"note": {
+						"de": "E sagt man „e“ wie in „sehr“. Achtung: nicht „i“!",
+						"en": "German E sounds like “ay” in “say” – not like English “ee”.",
+						"tl": "Ang E sa German ay parang “ey” sa “say” – hindi “i”."
+					}
+				},
+				{
+					"phrase": "H, I, J",
+					"note": {
+						"de": "I sagt man „i“ wie in „Sie“. J heißt „jot“.",
+						"en": "German I sounds like “ee”. J is called “yot”.",
+						"tl": "Ang I ay parang “i” (ee). Ang J ay “yot”."
+					}
+				},
+				{
+					"phrase": "K, L, M",
+					"note": {
+						"de": "K sagt man „ka“, L „el“, M „em“.",
+						"en": "K is “kah”, L is “el”, M is “em”.",
+						"tl": "Ang K ay “ka”, L ay “el”, M ay “em”."
+					}
+				},
+				{
+					"phrase": "der Buchstabe – die Buchstaben",
+					"note": {
+						"de": "A, B, C sind Buchstaben.",
+						"en": "A, B, C are letters (Buchstaben).",
+						"tl": "Ang A, B, C ay mga titik (Buchstaben)."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L01-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Welchen Buchstaben hören Sie?",
+						"en": "Listen. Which letter do you hear?",
+						"tl": "Makinig. Anong titik ang naririnig mo?"
+					},
+					"explanation": {
+						"de": "Sie hören „e“ wie in „sehr“. Das ist E.",
+						"en": "You hear “ay” as in “sehr”. That is E.",
+						"tl": "Naririnig mo ang “ey” gaya sa “sehr”. Iyan ay E."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"E",
+						"I",
+						"A"
+					],
+					"answer": 0,
+					"audioText": "e",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L01-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Welchen Buchstaben hören Sie?",
+						"en": "Listen. Which letter do you hear?",
+						"tl": "Makinig. Anong titik ang naririnig mo?"
+					},
+					"explanation": {
+						"de": "Sie hören „i“ wie in „Sie“. Das ist I.",
+						"en": "You hear “ee” as in “Sie”. That is I.",
+						"tl": "Naririnig mo ang “i” gaya sa “Sie”. Iyan ay I."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"I",
+						"E",
+						"J"
+					],
+					"answer": 0,
+					"audioText": "i",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L01-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Welchen Buchstaben hören Sie?",
+						"en": "Listen. Which letter do you hear?",
+						"tl": "Makinig. Anong titik ang naririnig mo?"
+					},
+					"explanation": {
+						"de": "„Jot“ ist J.",
+						"en": "“Yot” is J.",
+						"tl": "Ang “yot” ay J."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"J",
+						"G",
+						"I"
+					],
+					"answer": 0,
+					"audioText": "j",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L01-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "G, H, I – H kommt nach G.",
+						"en": "G, H, I – H comes after G.",
+						"tl": "G, H, I – ang H ay pagkatapos ng G."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"G",
+						"H",
+						"K"
+					],
+					"answer": 1,
+					"prompt": "Welcher Buchstabe fehlt?",
+					"image": {
+						"src": "/img/a1-02-alphabet.svg",
+						"alt": {
+							"de": "Ein Plakat mit dem Alphabet von A bis M. Ein Buchstabe fehlt.",
+							"en": "A poster with the alphabet from A to M. One letter is missing.",
+							"tl": "Poster ng alpabeto mula A hanggang M. May isang titik na kulang."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L01-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "Das Alphabet: A, B, C, D, E, F, G, H, I, J, K, L, M.",
+						"en": "The alphabet: A, B, C, D, E, F, G, H, I, J, K, L, M.",
+						"tl": "Ang alpabeto: A, B, C, D, E, F, G, H, I, J, K, L, M."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"text": "A, B, C, D, {{1}}, F, G, H, {{2}}, J, K, L, M",
+					"gaps": {
+						"1": {
+							"accept": [
+								"E"
+							]
+						},
+						"2": {
+							"accept": [
+								"I"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L02",
+			"title": {
+				"de": "Das Alphabet: N bis Z, Ä, Ö, Ü und ß",
+				"en": "The alphabet: N to Z, Ä, Ö, Ü and ß",
+				"tl": "Ang alpabeto: N hanggang Z, Ä, Ö, Ü at ß"
+			},
+			"introduces": [
+				"W-A1-0034"
+			],
+			"cards": [
+				{
+					"phrase": "N, O, P, Q, R",
+					"note": {
+						"de": "Q sagt man „ku“. R sagt man „er“.",
+						"en": "Q is “koo”. R is “air”.",
+						"tl": "Ang Q ay “ku”. Ang R ay “er”."
+					}
+				},
+				{
+					"phrase": "S, T, U, V",
+					"note": {
+						"de": "U sagt man „u“ wie in „gut“. V heißt „fau“.",
+						"en": "U sounds like “oo” in “gut”. V is called “fow”.",
+						"tl": "Ang U ay “u” gaya sa “gut”. Ang V ay “fau”."
+					}
+				},
+				{
+					"phrase": "W, X, Y, Z",
+					"note": {
+						"de": "W heißt „we“. Y heißt „üpsilon“. Z heißt „zett“.",
+						"en": "W is “vay”. Y is “üpsilon”. Z is “tset”.",
+						"tl": "Ang W ay “vey”. Ang Y ay “üpsilon”. Ang Z ay “tset”."
+					}
+				},
+				{
+					"phrase": "Ä, Ö, Ü",
+					"note": {
+						"de": "Umlaute: Ä wie in „Universität“, Ö wie in „Österreich“, Ü wie in „grüß Gott“.",
+						"en": "Umlauts: Ä, Ö (as in “Österreich”), Ü (as in “grüß Gott”).",
+						"tl": "Mga umlaut: Ä, Ö (gaya sa “Österreich”), Ü (gaya sa “grüß Gott”)."
+					}
+				},
+				{
+					"phrase": "ß – „scharfes S“",
+					"note": {
+						"de": "ß heißt „scharfes S“, z. B. in „heißen“ und „grüß Gott“.",
+						"en": "ß is called “sharp S”, e.g. in “heißen” and “grüß Gott”.",
+						"tl": "Ang ß ay “matalim na S”, hal. sa “heißen” at “grüß Gott”."
+					}
+				},
+				{
+					"phrase": "Wie heißt dieser Buchstabe?",
+					"note": {
+						"de": "So fragen Sie nach einem Buchstaben.",
+						"en": "This is how you ask what a letter is called.",
+						"tl": "Ganito magtanong tungkol sa isang titik."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L02-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Welchen Buchstaben hören Sie?",
+						"en": "Listen. Which letter do you hear?",
+						"tl": "Makinig. Anong titik ang naririnig mo?"
+					},
+					"explanation": {
+						"de": "„Fau“ ist V. W heißt „we“.",
+						"en": "“Fow” is V. W is “vay”.",
+						"tl": "Ang “fau” ay V. Ang W ay “we”."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"V",
+						"W",
+						"F"
+					],
+					"answer": 0,
+					"audioText": "v",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L02-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Welchen Buchstaben hören Sie?",
+						"en": "Listen. Which letter do you hear?",
+						"tl": "Makinig. Anong titik ang naririnig mo?"
+					},
+					"explanation": {
+						"de": "„We“ ist W.",
+						"en": "“Vay” is W.",
+						"tl": "Ang “we” ay W."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"V",
+						"W",
+						"B"
+					],
+					"answer": 1,
+					"audioText": "w",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L02-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Welchen Buchstaben hören Sie?",
+						"en": "Listen. Which letter do you hear?",
+						"tl": "Makinig. Anong titik ang naririnig mo?"
+					},
+					"explanation": {
+						"de": "„Zett“ ist Z.",
+						"en": "“Tset” is Z.",
+						"tl": "Ang “tset” ay Z."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"options": [
+						"S",
+						"Z",
+						"C"
+					],
+					"answer": 1,
+					"audioText": "z",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L02-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„heißen“ schreibt man mit ß.",
+						"en": "“heißen” is written with ß.",
+						"tl": "Ang “heißen” ay may ß."
+					},
+					"refs": [
+						"W-A1-0322",
+						"W-A1-0147"
+					],
+					"options": [
+						"heißen",
+						"Name",
+						"Österreich"
+					],
+					"answer": 0,
+					"prompt": "Was schreibt man mit ß?"
+				},
+				{
+					"id": "A1-02-L02-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Ö ist ein Umlaut, wie in „Österreich“.",
+						"en": "Ö is an umlaut, as in “Österreich”.",
+						"tl": "Ang Ö ay umlaut, gaya sa “Österreich”."
+					},
+					"refs": [
+						"W-A1-0034",
+						"W-A1-0322"
+					],
+					"options": [
+						"O wie in „Woher?“",
+						"Ö wie in „Österreich“",
+						"Ü wie in „grüß Gott“"
+					],
+					"answer": 1,
+					"prompt": "Wie heißt dieser Buchstabe? – Ö"
+				},
+				{
+					"id": "A1-02-L02-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "Das Alphabet: N, O, P, Q, R, S, T, U, V, W, X, Y, Z.",
+						"en": "The alphabet: N, O, P, Q, R, S, T, U, V, W, X, Y, Z.",
+						"tl": "Ang alpabeto: N, O, P, Q, R, S, T, U, V, W, X, Y, Z."
+					},
+					"refs": [
+						"W-A1-0322"
+					],
+					"text": "N, O, P, Q, {{1}}, S, T, {{2}}, V, W, X, Y, Z",
+					"gaps": {
+						"1": {
+							"accept": [
+								"R"
+							]
+						},
+						"2": {
+							"accept": [
+								"U"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L02-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„ÖSTERREICH“ beginnt mit Ö.",
+						"en": "“ÖSTERREICH” starts with Ö.",
+						"tl": "Nagsisimula sa Ö ang “ÖSTERREICH”."
+					},
+					"refs": [
+						"W-A1-0322",
+						"W-A1-0357"
+					],
+					"options": [
+						"Ö",
+						"Ü",
+						"Ä"
+					],
+					"answer": 0,
+					"prompt": "Welchen Umlaut sehen Sie auf dem Schild?",
+					"image": {
+						"src": "/img/a1-02-grenze.svg",
+						"alt": {
+							"de": "Ein Schild an der Grenze mit der Flagge von Österreich.",
+							"en": "A sign at the border with the Austrian flag.",
+							"tl": "Karatula sa border na may bandila ng Austria."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L03",
+			"title": {
+				"de": "Wie schreibt man das? – Buchstabieren",
+				"en": "How do you write that? – Spelling",
+				"tl": "Paano isulat iyan? – Pag-spell"
+			},
+			"introduces": [
+				"W-A1-0312",
+				"W-A1-0135",
+				"W-A1-0059"
+			],
+			"cards": [
+				{
+					"phrase": "Wie schreibt man das?",
+					"note": {
+						"de": "So fragen Sie: Welche Buchstaben hat das Wort?",
+						"en": "This is how you ask how a word is written.",
+						"tl": "Ganito magtanong kung paano isinusulat ang salita."
+					}
+				},
+				{
+					"phrase": "Buchstabieren Sie, bitte.",
+					"note": {
+						"de": "Höflich mit „Sie“. Mit „du“: „Buchstabier bitte.“",
+						"en": "Polite with “Sie”. With “du”: “Buchstabier bitte.”",
+						"tl": "Magalang gamit ang “Sie”. Sa “du”: “Buchstabier bitte.”"
+					}
+				},
+				{
+					"phrase": "B – A – U – E – R",
+					"note": {
+						"de": "So buchstabiert man den Namen „Bauer“.",
+						"en": "This is how you spell the name “Bauer”.",
+						"tl": "Ganito i-spell ang pangalang “Bauer”."
+					},
+					"audioText": "b, a, u, e, r"
+				},
+				{
+					"phrase": "Noch einmal, bitte.",
+					"note": {
+						"de": "Sie verstehen nicht? Sagen Sie: „Noch einmal, bitte.“",
+						"en": "You didn’t understand? Say: “Noch einmal, bitte.” (once more, please)",
+						"tl": "Hindi mo naintindihan? Sabihin: “Noch einmal, bitte.” (isa pa, please)"
+					}
+				},
+				{
+					"phrase": "Ich weiß es nicht.",
+					"note": {
+						"de": "„wissen“: ich weiß, du weißt, er/sie weiß, Sie wissen.",
+						"en": "“wissen” (to know): ich weiß, du weißt, er/sie weiß, Sie wissen.",
+						"tl": "“wissen” (alam): ich weiß, du weißt, er/sie weiß, Sie wissen."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L03-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Jemand buchstabiert. Welches Wort ist das?",
+						"en": "Listen. Someone spells. Which word is it?",
+						"tl": "Makinig. May nag-i-spell. Anong salita ito?"
+					},
+					"explanation": {
+						"de": "Sie hören: B, A, U, E, R. Das ist „Bauer“.",
+						"en": "You hear: B, A, U, E, R. That is “Bauer”.",
+						"tl": "Naririnig mo: B, A, U, E, R. Iyan ay “Bauer”."
+					},
+					"goals": [
+						"A1-02-G1"
+					],
+					"refs": [
+						"W-A1-0312"
+					],
+					"options": [
+						"Baur",
+						"Bauer",
+						"Bauar"
+					],
+					"answer": 1,
+					"audioText": "b, a, u, e, r",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L03-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Jemand buchstabiert. Welches Wort ist das?",
+						"en": "Listen. Someone spells. Which word is it?",
+						"tl": "Makinig. May nag-i-spell. Anong salita ito?"
+					},
+					"explanation": {
+						"de": "M, E, I, E, R – mit „ei“. Der Name klingt gleich, aber man schreibt ihn anders. Darum buchstabiert man.",
+						"en": "M, E, I, E, R – with “ei”. The names sound the same but are written differently. That is why people spell.",
+						"tl": "M, E, I, E, R – may “ei”. Pareho ang tunog pero iba ang sulat. Kaya nag-i-spell."
+					},
+					"goals": [
+						"A1-02-G1"
+					],
+					"refs": [
+						"W-A1-0312"
+					],
+					"options": [
+						"Meier",
+						"Mayer",
+						"Maier"
+					],
+					"answer": 0,
+					"audioText": "m, e, i, e, r",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L03-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„Wie schreibt man das?“ – Dann buchstabiert man.",
+						"en": "“Wie schreibt man das?” – then you spell.",
+						"tl": "“Wie schreibt man das?” – tapos mag-i-spell."
+					},
+					"goals": [
+						"A1-02-G1",
+						"A1-02-G7"
+					],
+					"refs": [
+						"W-A1-0041",
+						"W-A1-0312"
+					],
+					"text": "{{1}} schreibt man das? – B, A, U, E, R.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Wie"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L03-I4",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Sie verstehen den Namen nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You don’t understand the name. What do you say? Choose, then say it aloud.",
+						"tl": "Hindi mo naintindihan ang pangalan. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "„Noch einmal, bitte.“ – dann sagt die Person den Namen noch einmal.",
+						"en": "“Noch einmal, bitte.” – then the person says the name again.",
+						"tl": "“Noch einmal, bitte.” – uulitin ng tao ang pangalan."
+					},
+					"goals": [
+						"A1-02-G1"
+					],
+					"refs": [
+						"W-A1-0059",
+						"W-A1-0091"
+					],
+					"options": [
+						"Noch einmal, bitte.",
+						"Danke, gut.",
+						"Ich heiße Bauer."
+					],
+					"answer": 0
+				},
+				{
+					"id": "A1-02-L03-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„wissen“: ich weiß. „Ich weiß es nicht.“ = I don’t know.",
+						"en": "“wissen”: ich weiß. “Ich weiß es nicht.” = I don’t know.",
+						"tl": "“wissen”: ich weiß. “Ich weiß es nicht.” = Hindi ko alam."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0135"
+					],
+					"text": "Wie heißt er? – Ich {{1}} es nicht.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"weiß",
+								"weiss"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L03-I6",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Hören Sie. Jemand buchstabiert. Schreiben Sie das Wort.",
+						"en": "Listen. Someone spells a word. Write the word.",
+						"tl": "Makinig. May nag-i-spell. Isulat ang salita."
+					},
+					"explanation": {
+						"de": "N, A, M, E: „Name“. Nomen schreibt man groß.",
+						"en": "N, A, M, E: “Name”. Nouns start with a capital letter.",
+						"tl": "N, A, M, E: “Name”. Malaking titik ang simula ng noun."
+					},
+					"goals": [
+						"A1-02-G1"
+					],
+					"refs": [
+						"W-A1-0324",
+						"W-A1-0312"
+					],
+					"prompt": "Das Wort:",
+					"accept": [
+						"Name"
+					],
+					"audioText": "n, a, m, e",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L03-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Die Frau buchstabiert H – U – B – E – R. Im Formular fehlt das B.",
+						"en": "The woman spells H – U – B – E – R. The B is missing in the form.",
+						"tl": "Nag-spell ang babae: H – U – B – E – R. Kulang ang B sa form."
+					},
+					"goals": [
+						"A1-02-G1"
+					],
+					"refs": [
+						"W-A1-0312",
+						"W-A1-0322"
+					],
+					"options": [
+						"B",
+						"P",
+						"D"
+					],
+					"answer": 0,
+					"prompt": "Welcher Buchstabe fehlt im Formular?",
+					"image": {
+						"src": "/img/a1-02-buchstabieren.svg",
+						"alt": {
+							"de": "Eine Frau buchstabiert ihren Namen am Schalter. Ein Mann schreibt ihn in ein Formular.",
+							"en": "A woman spells her name at a counter. A man writes it on a form.",
+							"tl": "Nag-i-spell ang babae ng pangalan niya sa counter. Isinusulat ito ng lalaki sa form."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L04",
+			"title": {
+				"de": "Zahlen von 0 bis 12",
+				"en": "Numbers from 0 to 12",
+				"tl": "Mga numero mula 0 hanggang 12"
+			},
+			"introduces": [
+				"W-A1-0819"
+			],
+			"cards": [
+				{
+					"phrase": "null, eins, zwei, drei",
+					"note": {
+						"de": "0, 1, 2, 3",
+						"en": "0, 1, 2, 3 – zero, one, two, three",
+						"tl": "0, 1, 2, 3 – sero, isa, dalawa, tatlo"
+					}
+				},
+				{
+					"phrase": "vier, fünf, sechs",
+					"note": {
+						"de": "4, 5, 6 – „fünf“ mit ü.",
+						"en": "4, 5, 6 – “fünf” has an ü.",
+						"tl": "4, 5, 6 – may ü ang “fünf”."
+					}
+				},
+				{
+					"phrase": "sieben, acht, neun",
+					"note": {
+						"de": "7, 8, 9",
+						"en": "7, 8, 9 – seven, eight, nine",
+						"tl": "7, 8, 9 – pito, walo, siyam"
+					}
+				},
+				{
+					"phrase": "zehn, elf, zwölf",
+					"note": {
+						"de": "10, 11, 12",
+						"en": "10, 11, 12 – ten, eleven, twelve",
+						"tl": "10, 11, 12 – sampu, labing-isa, labindalawa"
+					}
+				},
+				{
+					"phrase": "die Zahl – die Zahlen",
+					"note": {
+						"de": "1, 2, 3 sind Zahlen.",
+						"en": "1, 2, 3 are numbers (Zahlen).",
+						"tl": "Ang 1, 2, 3 ay mga numero (Zahlen)."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L04-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "Sie hören „sieben“ = 7.",
+						"en": "You hear “sieben” = 7.",
+						"tl": "Naririnig mo ang “sieben” = 7."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0801"
+					],
+					"options": [
+						"8",
+						"11",
+						"7"
+					],
+					"answer": 2,
+					"audioText": "sieben",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L04-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "Sie hören „zwölf“ = 12.",
+						"en": "You hear “zwölf” = 12.",
+						"tl": "Naririnig mo ang “zwölf” = 12."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0806"
+					],
+					"options": [
+						"2",
+						"12",
+						"11"
+					],
+					"answer": 1,
+					"audioText": "zwölf",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L04-I3",
+					"type": "short",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Schreiben Sie die Zahl in Ziffern (z. B. 25).",
+						"en": "Listen. Write the number in digits (e.g. 25).",
+						"tl": "Makinig. Isulat ang numero gamit ang digits (hal. 25)."
+					},
+					"explanation": {
+						"de": "Sie hören „drei“ = 3.",
+						"en": "You hear “drei” = 3.",
+						"tl": "Naririnig mo ang “drei” = 3."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0797"
+					],
+					"prompt": "Die Zahl:",
+					"accept": [
+						"3"
+					],
+					"audioText": "drei",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L04-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„acht“ = 8.",
+						"en": "“acht” = 8.",
+						"tl": "“acht” = 8."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0802"
+					],
+					"options": [
+						"6",
+						"8",
+						"3"
+					],
+					"answer": 1,
+					"prompt": "acht"
+				},
+				{
+					"id": "A1-02-L04-I5",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Zahl in Worten.",
+						"en": "Write the number in words.",
+						"tl": "Isulat ang numero sa salita."
+					},
+					"explanation": {
+						"de": "5 = „fünf“ (mit ü).",
+						"en": "5 = “fünf” (with ü).",
+						"tl": "5 = “fünf” (may ü)."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0799"
+					],
+					"prompt": "5",
+					"accept": [
+						"fünf",
+						"fuenf"
+					]
+				},
+				{
+					"id": "A1-02-L04-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "eins, zwei, drei, vier, fünf, sechs, sieben.",
+						"en": "one, two, three, four, five, six, seven.",
+						"tl": "isa, dalawa, tatlo, apat, lima, anim, pito."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0797",
+						"W-A1-0800"
+					],
+					"text": "eins, zwei, {{1}}, vier, fünf, {{2}}, sieben",
+					"gaps": {
+						"1": {
+							"accept": [
+								"drei"
+							]
+						},
+						"2": {
+							"accept": [
+								"sechs"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L04-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Vorne steht 12 = zwölf.",
+						"en": "The front of the tram shows 12 = zwölf.",
+						"tl": "Nakasulat sa harap ng tram ang 12 = zwölf."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0806"
+					],
+					"options": [
+						"zwei",
+						"elf",
+						"zwölf"
+					],
+					"answer": 2,
+					"prompt": "Welche Zahl sehen Sie vorne?",
+					"image": {
+						"src": "/img/a1-02-bim.svg",
+						"alt": {
+							"de": "Eine rote Bim an der Haltestelle. Vorne steht eine Zahl.",
+							"en": "A red tram at the stop. There is a number on the front.",
+							"tl": "Pulang tram sa hintuan. May numero sa harap."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L05",
+			"title": {
+				"de": "Zahlen von 13 bis 19",
+				"en": "Numbers from 13 to 19",
+				"tl": "Mga numero mula 13 hanggang 19"
+			},
+			"introduces": [],
+			"cards": [
+				{
+					"phrase": "dreizehn, vierzehn, fünfzehn",
+					"note": {
+						"de": "Zahl + „zehn“: drei + zehn = dreizehn (13).",
+						"en": "Number + “zehn”: drei + zehn = dreizehn (13).",
+						"tl": "Numero + “zehn”: drei + zehn = dreizehn (13)."
+					}
+				},
+				{
+					"phrase": "sechzehn, siebzehn",
+					"note": {
+						"de": "Achtung: sechzehn (nicht „sechszehn“), siebzehn (nicht „siebenzehn“).",
+						"en": "Careful: sechzehn (not “sechszehn”), siebzehn (not “siebenzehn”).",
+						"tl": "Ingat: sechzehn (hindi “sechszehn”), siebzehn (hindi “siebenzehn”)."
+					}
+				},
+				{
+					"phrase": "achtzehn, neunzehn",
+					"note": {
+						"de": "18, 19",
+						"en": "18, 19 – eighteen, nineteen",
+						"tl": "18, 19 – labingwalo, labinsiyam"
+					}
+				},
+				{
+					"phrase": "dreizehn – dreißig",
+					"note": {
+						"de": "Gut hören: 13 = dreizehn, 30 = dreißig.",
+						"en": "Listen carefully: 13 = dreizehn, 30 = dreißig.",
+						"tl": "Makinig mabuti: 13 = dreizehn, 30 = dreißig."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L05-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "„sechzehn“ endet auf „-zehn“: 16.",
+						"en": "“sechzehn” ends in “-zehn”: 16.",
+						"tl": "Nagtatapos sa “-zehn” ang “sechzehn”: 16."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0807"
+					],
+					"options": [
+						"60",
+						"16",
+						"6"
+					],
+					"answer": 1,
+					"audioText": "sechzehn",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L05-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "„dreizehn“ = 13. 30 ist „dreißig“.",
+						"en": "“dreizehn” = 13. 30 is “dreißig”.",
+						"tl": "“dreizehn” = 13. Ang 30 ay “dreißig”."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0807"
+					],
+					"options": [
+						"30",
+						"13",
+						"3"
+					],
+					"answer": 1,
+					"audioText": "dreizehn",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L05-I3",
+					"type": "short",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Schreiben Sie die Zahl in Ziffern (z. B. 25).",
+						"en": "Listen. Write the number in digits (e.g. 25).",
+						"tl": "Makinig. Isulat ang numero gamit ang digits (hal. 25)."
+					},
+					"explanation": {
+						"de": "„siebzehn“ = 17.",
+						"en": "“siebzehn” = 17.",
+						"tl": "“siebzehn” = 17."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0807"
+					],
+					"prompt": "Die Zahl:",
+					"accept": [
+						"17"
+					],
+					"audioText": "siebzehn",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L05-I4",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Zahl in Worten.",
+						"en": "Write the number in words.",
+						"tl": "Isulat ang numero sa salita."
+					},
+					"explanation": {
+						"de": "16 = „sechzehn“ – ohne s vor „zehn“.",
+						"en": "16 = “sechzehn” – no s before “zehn”.",
+						"tl": "16 = “sechzehn” – walang s bago ang “zehn”."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0807"
+					],
+					"prompt": "16",
+					"accept": [
+						"sechzehn"
+					]
+				},
+				{
+					"id": "A1-02-L05-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "17 = „siebzehn“. „siebzig“ ist 70.",
+						"en": "17 = “siebzehn”. “siebzig” is 70.",
+						"tl": "17 = “siebzehn”. Ang “siebzig” ay 70."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0807"
+					],
+					"options": [
+						"siebenzehn",
+						"siebzig",
+						"siebzehn"
+					],
+					"answer": 2,
+					"prompt": "7 + 10 = ?"
+				},
+				{
+					"id": "A1-02-L05-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf dem T-Shirt steht 18 = achtzehn.",
+						"en": "The shirt shows 18 = achtzehn.",
+						"tl": "Nakasulat sa shirt ang 18 = achtzehn."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0807"
+					],
+					"options": [
+						"achtzehn",
+						"achtzig",
+						"acht"
+					],
+					"answer": 0,
+					"prompt": "Welche Zahl hat der Spieler?",
+					"image": {
+						"src": "/img/a1-02-trikot.svg",
+						"alt": {
+							"de": "Ein Fußballspieler von hinten. Auf dem T-Shirt steht eine Zahl.",
+							"en": "A football player from behind. There is a number on the shirt.",
+							"tl": "Isang manlalaro ng football mula sa likod. May numero sa shirt."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L06",
+			"title": {
+				"de": "20, 30, 40 … 100",
+				"en": "20, 30, 40 … 100",
+				"tl": "20, 30, 40 … 100"
+			},
+			"introduces": [],
+			"cards": [
+				{
+					"phrase": "zwanzig, dreißig, vierzig",
+					"note": {
+						"de": "Zehner enden auf „-zig“. Aber: dreißig mit ß!",
+						"en": "Tens end in “-zig”. But: dreißig with ß!",
+						"tl": "Nagtatapos sa “-zig” ang tens. Pero: dreißig may ß!"
+					}
+				},
+				{
+					"phrase": "fünfzig, sechzig, siebzig",
+					"note": {
+						"de": "sechzig (nicht „sechszig“), siebzig (nicht „siebenzig“).",
+						"en": "sechzig (not “sechszig”), siebzig (not “siebenzig”).",
+						"tl": "sechzig (hindi “sechszig”), siebzig (hindi “siebenzig”)."
+					}
+				},
+				{
+					"phrase": "achtzig, neunzig, hundert",
+					"note": {
+						"de": "80, 90, 100",
+						"en": "80, 90, 100",
+						"tl": "80, 90, 100"
+					}
+				},
+				{
+					"phrase": "tausend – eine Million",
+					"note": {
+						"de": "1000 = tausend. 1 000 000 = eine Million.",
+						"en": "1000 = tausend. 1,000,000 = eine Million.",
+						"tl": "1000 = tausend. 1,000,000 = eine Million."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L06-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "„dreißig“ = 30.",
+						"en": "“dreißig” = 30.",
+						"tl": "“dreißig” = 30."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0809"
+					],
+					"options": [
+						"30",
+						"13",
+						"3"
+					],
+					"answer": 0,
+					"audioText": "dreißig",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L06-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "„siebzig“ = 70. 17 ist „siebzehn“.",
+						"en": "“siebzig” = 70. 17 is “siebzehn”.",
+						"tl": "“siebzig” = 70. Ang 17 ay “siebzehn”."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0813"
+					],
+					"options": [
+						"17",
+						"60",
+						"70"
+					],
+					"answer": 2,
+					"audioText": "siebzig",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L06-I3",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„sechzig“ = 60.",
+						"en": "“sechzig” = 60.",
+						"tl": "“sechzig” = 60."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0812"
+					],
+					"options": [
+						"16",
+						"70",
+						"60"
+					],
+					"answer": 2,
+					"prompt": "sechzig"
+				},
+				{
+					"id": "A1-02-L06-I4",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Zahl in Worten.",
+						"en": "Write the number in words.",
+						"tl": "Isulat ang numero sa salita."
+					},
+					"explanation": {
+						"de": "30 = „dreißig“ – mit ß, nicht „dreizig“.",
+						"en": "30 = “dreißig” – with ß, not “dreizig”.",
+						"tl": "30 = “dreißig” – may ß, hindi “dreizig”."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0809"
+					],
+					"prompt": "30",
+					"accept": [
+						"dreißig",
+						"dreissig"
+					]
+				},
+				{
+					"id": "A1-02-L06-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "10, 20, 30, 40, 50, 60, 70.",
+						"en": "10, 20, 30, 40, 50, 60, 70.",
+						"tl": "10, 20, 30, 40, 50, 60, 70."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0809",
+						"W-A1-0812"
+					],
+					"text": "zehn, zwanzig, {{1}}, vierzig, fünfzig, {{2}}, siebzig",
+					"gaps": {
+						"1": {
+							"accept": [
+								"dreißig",
+								"dreissig"
+							]
+						},
+						"2": {
+							"accept": [
+								"sechzig"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L06-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf dem Schild steht 50 = fünfzig. Im Ort fährt man in Österreich meist 50 km/h.",
+						"en": "The sign shows 50 = fünfzig. In towns in Austria the limit is usually 50 km/h.",
+						"tl": "Nakasulat sa karatula ang 50 = fünfzig. Sa bayan sa Austria, kadalasang 50 km/h."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0811"
+					],
+					"options": [
+						"fünfzehn",
+						"fünfzig",
+						"fünf"
+					],
+					"answer": 1,
+					"prompt": "Auf dem Schild steht …",
+					"image": {
+						"src": "/img/a1-02-tempo.svg",
+						"alt": {
+							"de": "Ein Verkehrsschild am Ortsanfang. Daneben stehen Häuser.",
+							"en": "A traffic sign at the entrance to a town. There are houses next to it.",
+							"tl": "Isang traffic sign sa pasukan ng bayan. May mga bahay sa tabi."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L07",
+			"title": {
+				"de": "21 bis 99: zuerst die Einer",
+				"en": "21 to 99: the ones come first",
+				"tl": "21 hanggang 99: una ang ones"
+			},
+			"introduces": [],
+			"cards": [
+				{
+					"phrase": "einundzwanzig",
+					"note": {
+						"de": "21 = ein + und + zwanzig. Zuerst die 1, dann die 20.",
+						"en": "21 = ein + und + zwanzig: first the 1, then the 20 (“one-and-twenty”).",
+						"tl": "21 = ein + und + zwanzig: una ang 1, tapos ang 20."
+					}
+				},
+				{
+					"phrase": "siebenundvierzig",
+					"note": {
+						"de": "47 = sieben + und + vierzig.",
+						"en": "47 = sieben + und + vierzig (“seven-and-forty”).",
+						"tl": "47 = sieben + und + vierzig (pito at apatnapu)."
+					}
+				},
+				{
+					"phrase": "vierundsiebzig",
+					"note": {
+						"de": "74 = vier + und + siebzig. 47 und 74: gut hören!",
+						"en": "74 = vier + und + siebzig. 47 and 74: listen carefully!",
+						"tl": "74 = vier + und + siebzig. 47 at 74: makinig mabuti!"
+					}
+				},
+				{
+					"phrase": "hundertzwanzig",
+					"note": {
+						"de": "120 = hundert + zwanzig.",
+						"en": "120 = hundert + zwanzig.",
+						"tl": "120 = hundert + zwanzig."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L07-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "„siebenundvierzig“: zuerst 7, dann 40 = 47.",
+						"en": "“siebenundvierzig”: first 7, then 40 = 47.",
+						"tl": "“siebenundvierzig”: una 7, tapos 40 = 47."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0810"
+					],
+					"options": [
+						"74",
+						"47",
+						"40"
+					],
+					"answer": 1,
+					"audioText": "siebenundvierzig",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L07-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "„fünfundzwanzig“ = 5 + 20 = 25.",
+						"en": "“fünfundzwanzig” = 5 + 20 = 25.",
+						"tl": "“fünfundzwanzig” = 5 + 20 = 25."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0799",
+						"W-A1-0808"
+					],
+					"options": [
+						"52",
+						"25",
+						"35"
+					],
+					"answer": 1,
+					"audioText": "fünfundzwanzig",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L07-I3",
+					"type": "short",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Schreiben Sie die Zahl in Ziffern (z. B. 25).",
+						"en": "Listen. Write the number in digits (e.g. 25).",
+						"tl": "Makinig. Isulat ang numero gamit ang digits (hal. 25)."
+					},
+					"explanation": {
+						"de": "„achtundsechzig“ = 8 + 60 = 68.",
+						"en": "“achtundsechzig” = 8 + 60 = 68.",
+						"tl": "“achtundsechzig” = 8 + 60 = 68."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0802",
+						"W-A1-0812"
+					],
+					"prompt": "Die Zahl:",
+					"accept": [
+						"68"
+					],
+					"audioText": "achtundsechzig",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L07-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„dreiundneunzig“ = 3 + 90 = 93.",
+						"en": "“dreiundneunzig” = 3 + 90 = 93.",
+						"tl": "“dreiundneunzig” = 3 + 90 = 93."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0797",
+						"W-A1-0815"
+					],
+					"options": [
+						"93",
+						"39",
+						"903"
+					],
+					"answer": 0,
+					"prompt": "dreiundneunzig"
+				},
+				{
+					"id": "A1-02-L07-I5",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Zahl in Worten.",
+						"en": "Write the number in words.",
+						"tl": "Isulat ang numero sa salita."
+					},
+					"explanation": {
+						"de": "21 = „einundzwanzig“ – „ein“, nicht „eins“.",
+						"en": "21 = “einundzwanzig” – “ein”, not “eins”.",
+						"tl": "21 = “einundzwanzig” – “ein”, hindi “eins”."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0808"
+					],
+					"prompt": "21",
+					"accept": [
+						"einundzwanzig"
+					]
+				},
+				{
+					"id": "A1-02-L07-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "Zwischen Einer und Zehner steht „und“: vierunddreißig.",
+						"en": "Between ones and tens comes “und”: vierunddreißig.",
+						"tl": "Sa pagitan ng ones at tens: “und” – vierunddreißig."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0809",
+						"W-A1-0046"
+					],
+					"text": "34 = vier{{1}}dreißig",
+					"gaps": {
+						"1": {
+							"accept": [
+								"und"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L07-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Graz: 47 km = siebenundvierzig. Linz: 74 km = vierundsiebzig.",
+						"en": "Graz: 47 km = siebenundvierzig (seven-and-forty). Linz: 74 km = vierundsiebzig.",
+						"tl": "Graz: 47 km = siebenundvierzig (pito at apatnapu). Linz: 74 km = vierundsiebzig."
+					},
+					"goals": [
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0810",
+						"W-A1-0043"
+					],
+					"options": [
+						"vierundsiebzig",
+						"vierzig",
+						"siebenundvierzig"
+					],
+					"answer": 2,
+					"prompt": "Graz: wie viele Kilometer?",
+					"image": {
+						"src": "/img/a1-02-wegweiser.svg",
+						"alt": {
+							"de": "Ein blaues Straßenschild mit zwei Städten und Kilometern.",
+							"en": "A blue road sign with two cities and distances.",
+							"tl": "Asul na karatula sa kalsada na may dalawang lungsod at kilometro."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L08",
+			"title": {
+				"de": "Wie alt sind Sie?",
+				"en": "How old are you?",
+				"tl": "Ilang taon ka na?"
+			},
+			"introduces": [
+				"W-A1-0351",
+				"W-A1-0352",
+				"W-A1-0118",
+				"W-A1-0069"
+			],
+			"cards": [
+				{
+					"phrase": "Wie alt sind Sie?",
+					"note": {
+						"de": "So fragen Sie nach dem Alter. Mit „du“: „Wie alt bist du?“",
+						"en": "This is how you ask about age. With “du”: “Wie alt bist du?”",
+						"tl": "Ganito itanong ang edad. Sa “du”: “Wie alt bist du?”"
+					}
+				},
+				{
+					"phrase": "Ich bin 35 Jahre alt.",
+					"note": {
+						"de": "Im Deutschen: „Ich bin … Jahre alt“ – mit „sein“, nicht mit „haben“!",
+						"en": "In German: “Ich bin … Jahre alt” – with “sein” (to be), not “haben” (to have)!",
+						"tl": "Sa German: “Ich bin … Jahre alt” – gamit ang “sein”, hindi “haben”!"
+					}
+				},
+				{
+					"phrase": "Ich bin 35.",
+					"note": {
+						"de": "Kurz und auch richtig.",
+						"en": "Short and also correct.",
+						"tl": "Maikli at tama rin."
+					}
+				},
+				{
+					"phrase": "das Alter",
+					"note": {
+						"de": "Im Formular: „Alter: 35“.",
+						"en": "In a form: “Alter (age): 35”.",
+						"tl": "Sa form: “Alter (edad): 35”."
+					}
+				},
+				{
+					"phrase": "Ich werde bald 40.",
+					"note": {
+						"de": "„werden“: ich werde, du wirst, er/sie wird. Bald = nicht lange.",
+						"en": "“werden” (to become): ich werde, du wirst, er/sie wird. “bald” = soon.",
+						"tl": "“werden” (maging): ich werde, du wirst, er/sie wird. “bald” = malapit na."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L08-I1",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Richtig ist: „Ich bin 42 Jahre alt.“ Mit „sein“ und mit „alt“.",
+						"en": "Correct: “Ich bin 42 Jahre alt.” With “sein” and with “alt”.",
+						"tl": "Tama: “Ich bin 42 Jahre alt.” Gamit ang “sein” at “alt”."
+					},
+					"goals": [
+						"A1-02-G3",
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0352",
+						"W-A1-0116"
+					],
+					"options": [
+						"Ich bin 42 Jahre alt.",
+						"Ich habe 42 Jahre.",
+						"Ich habe 42."
+					],
+					"answer": 0,
+					"prompt": "Wie alt sind Sie?"
+				},
+				{
+					"id": "A1-02-L08-I2",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wie alt ist die Person?",
+						"en": "Listen. How old is the person?",
+						"tl": "Makinig. Ilang taon na ang tao?"
+					},
+					"explanation": {
+						"de": "„neunundzwanzig“ = 9 + 20 = 29.",
+						"en": "“neunundzwanzig” = 9 + 20 = 29.",
+						"tl": "“neunundzwanzig” = 9 + 20 = 29."
+					},
+					"goals": [
+						"A1-02-G3",
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0352"
+					],
+					"options": [
+						"92",
+						"29"
+					],
+					"answer": 1,
+					"audioText": "Ich bin neunundzwanzig Jahre alt.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L08-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "du bist, ich bin – das Verb „sein“.",
+						"en": "du bist, ich bin – the verb “sein”.",
+						"tl": "du bist, ich bin – ang verb na “sein”."
+					},
+					"goals": [
+						"A1-02-G3",
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0116",
+						"W-A1-0352"
+					],
+					"text": "Wie alt {{1}} du? – Ich {{2}} zwanzig.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"bist"
+							]
+						},
+						"2": {
+							"accept": [
+								"bin"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L08-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Im Text steht: „Frau Bauer ist 61.“",
+						"en": "The text says: “Frau Bauer ist 61.”",
+						"tl": "Sabi sa teksto: “Frau Bauer ist 61.”"
+					},
+					"goals": [
+						"A1-02-G3"
+					],
+					"refs": [
+						"W-A1-0352"
+					],
+					"options": [
+						"64",
+						"16",
+						"61"
+					],
+					"answer": 2,
+					"prompt": "Herr Bauer ist 64 Jahre alt. Frau Bauer ist 61. Wie alt ist Frau Bauer?"
+				},
+				{
+					"id": "A1-02-L08-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„werden“: er wird. „Er wird bald 40“ = er ist bald 40 Jahre alt.",
+						"en": "“werden”: er wird. “Er wird bald 40” = he will soon be 40.",
+						"tl": "“werden”: er wird. “Er wird bald 40” = malapit na siyang mag-40."
+					},
+					"goals": [
+						"A1-02-G3"
+					],
+					"refs": [
+						"W-A1-0118",
+						"W-A1-0069"
+					],
+					"text": "Er ist 39. Er {{1}} bald 40.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"wird"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L08-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf der Torte steht 40: Lukas wird vierzig.",
+						"en": "The cake shows 40: Lukas turns forty (vierzig).",
+						"tl": "Nakasulat sa cake ang 40: magiging apatnapu (vierzig) si Lukas."
+					},
+					"goals": [
+						"A1-02-G3"
+					],
+					"refs": [
+						"W-A1-0118",
+						"W-A1-0810"
+					],
+					"options": [
+						"vierzehn",
+						"vierzig",
+						"vier"
+					],
+					"answer": 1,
+					"prompt": "Wie alt wird Lukas?",
+					"image": {
+						"src": "/img/a1-02-geburtstag.svg",
+						"alt": {
+							"de": "Eine Geburtstagstorte mit Kerzen und einem Schild für Lukas.",
+							"en": "A birthday cake with candles and a sign for Lukas.",
+							"tl": "Birthday cake na may kandila at karatula para kay Lukas."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L09",
+			"title": {
+				"de": "haben: ich habe, du hast",
+				"en": "haben: I have, you have",
+				"tl": "haben: mayroon ako, mayroon ka"
+			},
+			"introduces": [
+				"W-A1-0117"
+			],
+			"cards": [
+				{
+					"phrase": "ich habe, du hast",
+					"note": {
+						"de": "„haben“ ist unregelmäßig: du hast (nicht „du habst“).",
+						"en": "“haben” (to have) is irregular: du hast (not “du habst”).",
+						"tl": "Irregular ang “haben”: du hast (hindi “du habst”)."
+					}
+				},
+				{
+					"phrase": "er hat, sie hat",
+					"note": {
+						"de": "er/sie/es hat",
+						"en": "er/sie/es hat – he/she/it has",
+						"tl": "er/sie/es hat – siya ay may"
+					}
+				},
+				{
+					"phrase": "wir haben, ihr habt, Sie haben",
+					"note": {
+						"de": "wir haben · ihr habt · sie/Sie haben",
+						"en": "we have: wir haben · you (several): ihr habt · they / you (polite): sie/Sie haben",
+						"tl": "tayo: wir haben · kayo: ihr habt · sila / kayo (magalang): sie/Sie haben"
+					}
+				},
+				{
+					"phrase": "Ich bin 30. – Ich habe zwei Namen.",
+					"note": {
+						"de": "Alter mit „sein“! „haben“ für Dinge: Ich habe einen Vornamen und einen Familiennamen.",
+						"en": "Age with “sein”! “haben” for things: I have a first name and a family name.",
+						"tl": "Edad gamit ang “sein”! “haben” para sa bagay: may pangalan at apelyido ako."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L09-I1",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„haben“: du hast (nicht „du habst“).",
+						"en": "“haben”: du hast (not “du habst”).",
+						"tl": "“haben”: du hast (hindi “du habst”)."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0117",
+						"W-A1-0325",
+						"W-A1-0326"
+					],
+					"text": "Du {{1}} zwei Namen: Vorname und Familienname.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"hast"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L09-I2",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„haben“: er hat.",
+						"en": "“haben”: er hat.",
+						"tl": "“haben”: er hat."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0117",
+						"W-A1-0322"
+					],
+					"text": "Der Name „Anna“ {{1}} vier Buchstaben.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"hat"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L09-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Herr und Frau Bauer = sie (mehrere): sie haben.",
+						"en": "Mr and Mrs Bauer = sie (several people): sie haben.",
+						"tl": "Si Herr at Frau Bauer = sie (marami): sie haben."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0117"
+					],
+					"options": [
+						"habt",
+						"hat",
+						"haben"
+					],
+					"answer": 2,
+					"prompt": "Herr und Frau Bauer … vier Namen."
+				},
+				{
+					"id": "A1-02-L09-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„haben“: ihr habt.",
+						"en": "“haben”: ihr habt.",
+						"tl": "“haben”: ihr habt."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0117"
+					],
+					"options": [
+						"haben",
+						"hast",
+						"habt"
+					],
+					"answer": 2,
+					"prompt": "Ihr … zwei Namen?"
+				},
+				{
+					"id": "A1-02-L09-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Alter immer mit „sein“: Sie ist 25 Jahre alt.",
+						"en": "Age always with “sein”: Sie ist 25 Jahre alt.",
+						"tl": "Edad laging may “sein”: Sie ist 25 Jahre alt."
+					},
+					"goals": [
+						"A1-02-G6",
+						"A1-02-G3"
+					],
+					"refs": [
+						"W-A1-0116",
+						"W-A1-0352"
+					],
+					"options": [
+						"Sie hat 25 Jahre alt.",
+						"Sie hat 25 Jahre.",
+						"Sie ist 25 Jahre alt."
+					],
+					"answer": 2,
+					"prompt": "Was ist richtig?"
+				},
+				{
+					"id": "A1-02-L09-I6",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "M – A – R – I – A: Der Name hat fünf Buchstaben. ANNA hat vier, KATHARINA hat neun.",
+						"en": "M – A – R – I – A: the name has five letters. ANNA has four, KATHARINA has nine.",
+						"tl": "M – A – R – I – A: limang titik. Apat ang ANNA, siyam ang KATHARINA."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0117",
+						"W-A1-0322",
+						"W-A1-0799"
+					],
+					"options": [
+						"MARIA",
+						"ANNA",
+						"KATHARINA"
+					],
+					"answer": 0,
+					"prompt": "Welcher Name hat fünf Buchstaben?",
+					"image": {
+						"src": "/img/a1-02-namensschilder.svg",
+						"alt": {
+							"de": "Drei Namensschilder mit Namen.",
+							"en": "Three name badges with names.",
+							"tl": "Tatlong name badge na may pangalan."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L10",
+			"title": {
+				"de": "Die Telefonnummer",
+				"en": "The phone number",
+				"tl": "Ang numero ng telepono"
+			},
+			"introduces": [
+				"W-A1-0372",
+				"W-A1-0820",
+				"W-A1-0136"
+			],
+			"cards": [
+				{
+					"phrase": "Wie ist Ihre Telefonnummer?",
+					"note": {
+						"de": "So fragen Sie höflich. Mit „du“: „Wie ist deine Telefonnummer?“",
+						"en": "Polite question. With “du”: “Wie ist deine Telefonnummer?”",
+						"tl": "Magalang na tanong. Sa “du”: “Wie ist deine Telefonnummer?”"
+					}
+				},
+				{
+					"phrase": "null – sechs – sechs – vier …",
+					"note": {
+						"de": "Telefonnummern sagt man oft Zahl für Zahl.",
+						"en": "Phone numbers are often said digit by digit.",
+						"tl": "Kadalasang sinasabi ang numero ng telepono isa-isa."
+					},
+					"audioText": "null, sechs, sechs, vier"
+				},
+				{
+					"phrase": "Die Nummer ist 0664 123 45 67.",
+					"note": {
+						"de": "Handynummern in Österreich beginnen oft mit 0664, 0676, 0650 oder 0699.",
+						"en": "Mobile numbers in Austria often start with 0664, 0676, 0650 or 0699.",
+						"tl": "Ang mobile number sa Austria ay kadalasang nagsisimula sa 0664, 0676, 0650 o 0699."
+					},
+					"audioText": "Die Nummer ist null, sechs, sechs, vier, eins, zwei, drei, vier, fünf, sechs, sieben."
+				},
+				{
+					"phrase": "Kennen Sie die Nummer?",
+					"note": {
+						"de": "„kennen“: ich kenne, du kennst, er/sie kennt, Sie kennen.",
+						"en": "“kennen” (to know): ich kenne, du kennst, er/sie kennt, Sie kennen.",
+						"tl": "“kennen” (kilala/alam): ich kenne, du kennst, er/sie kennt, Sie kennen."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L10-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wie ist die Telefonnummer?",
+						"en": "Listen. What is the phone number?",
+						"tl": "Makinig. Ano ang numero ng telepono?"
+					},
+					"explanation": {
+						"de": "Sie hören: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins.",
+						"en": "You hear: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins.",
+						"tl": "Naririnig mo: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins."
+					},
+					"goals": [
+						"A1-02-G4",
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0372"
+					],
+					"options": [
+						"0676 384 21",
+						"0676 348 21"
+					],
+					"answer": 0,
+					"audioText": "Meine Nummer ist null, sechs, sieben, sechs, drei, acht, vier, zwei, eins.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L10-I2",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Hören Sie. Schreiben Sie die Telefonnummer in Ziffern.",
+						"en": "Listen. Write the phone number in digits.",
+						"tl": "Makinig. Isulat ang numero ng telepono gamit ang digits."
+					},
+					"explanation": {
+						"de": "Sie hören: null, sechs, fünf, null, sieben, eins, neun, drei.",
+						"en": "You hear: null, sechs, fünf, null, sieben, eins, neun, drei.",
+						"tl": "Naririnig mo: null, sechs, fünf, null, sieben, eins, neun, drei."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0372"
+					],
+					"prompt": "Telefonnummer:",
+					"accept": [
+						"0650 7193",
+						"06507193",
+						"0650 71 93",
+						"0650/7193",
+						"0650-7193",
+						"0650 / 7193"
+					],
+					"audioText": "null, sechs, fünf, null, sieben, eins, neun, drei",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L10-I3",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "What do you say? Choose, then say it aloud.",
+						"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Sie sagen einfach die Zahlen: „Null, sechs, neun, neun …“ oder: „Meine Nummer ist …“",
+						"en": "You just say the digits: “Null, sechs, neun, neun …” or: “Meine Nummer ist …”",
+						"tl": "Sabihin lang ang mga numero: “Null, sechs, neun, neun …” o: “Meine Nummer ist …”"
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0372"
+					],
+					"options": [
+						"Ich bin null sechs neun neun.",
+						"Ich heiße null sechs neun neun.",
+						"Null, sechs, neun, neun …"
+					],
+					"answer": 2,
+					"prompt": "Wie ist Ihre Telefonnummer?"
+				},
+				{
+					"id": "A1-02-L10-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„kennen“: Sie kennen. Die Frage beginnt mit dem Verb.",
+						"en": "“kennen”: Sie kennen. The question starts with the verb.",
+						"tl": "“kennen”: Sie kennen. Nagsisimula sa verb ang tanong."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0136",
+						"W-A1-0820"
+					],
+					"text": "{{1}} Sie die Nummer? – Nein, ich kenne die Nummer nicht.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Kennen"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L10-I5",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf dem Handy steht: 0676 384 21 50.",
+						"en": "The phone shows: 0676 384 21 50.",
+						"tl": "Nakalagay sa cellphone: 0676 384 21 50."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0372"
+					],
+					"options": [
+						"0676 348 21 50",
+						"0676 384 21 50",
+						"0667 384 21 50"
+					],
+					"answer": 1,
+					"prompt": "Wie ist die Telefonnummer von Sofia Berger?",
+					"image": {
+						"src": "/img/a1-02-handy.svg",
+						"alt": {
+							"de": "Ein Handy mit einem Kontakt.",
+							"en": "A mobile phone showing a contact.",
+							"tl": "Cellphone na may contact."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L11",
+			"title": {
+				"de": "Hausnummer und Postleitzahl",
+				"en": "House number and postcode",
+				"tl": "Numero ng bahay at postal code"
+			},
+			"introduces": [
+				"W-A1-0370",
+				"W-A1-0371"
+			],
+			"cards": [
+				{
+					"phrase": "die Hausnummer: 17",
+					"note": {
+						"de": "Die Hausnummer steht am Haus.",
+						"en": "The house number is on the house.",
+						"tl": "Nasa bahay ang numero ng bahay."
+					}
+				},
+				{
+					"phrase": "die Postleitzahl: 9020 Klagenfurt",
+					"note": {
+						"de": "Postleitzahlen in Österreich haben vier Zahlen: 1010 Wien, 8010 Graz, 4020 Linz, 5020 Salzburg.",
+						"en": "Postcodes in Austria have four digits: 1010 Vienna, 8010 Graz, 4020 Linz, 5020 Salzburg.",
+						"tl": "Apat na digit ang postal code sa Austria: 1010 Vienna, 8010 Graz, 4020 Linz, 5020 Salzburg."
+					},
+					"audioText": "die Postleitzahl: neun, null, zwei, null, Klagenfurt"
+				},
+				{
+					"phrase": "neun – null – zwei – null",
+					"note": {
+						"de": "Die Postleitzahl sagt man meist Zahl für Zahl.",
+						"en": "The postcode is usually said digit by digit.",
+						"tl": "Kadalasang sinasabi ang postal code isa-isa."
+					}
+				},
+				{
+					"phrase": "Top 3",
+					"note": {
+						"de": "In Österreich hat die Wohnung im Haus eine Nummer: „Top 3“. (in Deutschland: „Wohnung 3“)",
+						"en": "In Austria the flat in a building has a number: “Top 3” (in Germany: “Wohnung 3”).",
+						"tl": "Sa Austria may numero ang apartment: “Top 3” (sa Germany: “Wohnung 3”)."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L11-I1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Am Haus steht 17.",
+						"en": "The house shows 17.",
+						"tl": "Nakasulat sa bahay ang 17."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0370"
+					],
+					"options": [
+						"17",
+						"71",
+						"3"
+					],
+					"answer": 0,
+					"prompt": "Was ist die Hausnummer?",
+					"image": {
+						"src": "/img/a1-02-klingel.svg",
+						"alt": {
+							"de": "Ein Hauseingang mit Hausnummer und Klingeln mit Namen.",
+							"en": "A house entrance with a house number and doorbells with names.",
+							"tl": "Pasukan ng bahay na may numero ng bahay at mga doorbell na may pangalan."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L11-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf der Klingel steht: Top 2 – Santos.",
+						"en": "The doorbell says: Top 2 – Santos.",
+						"tl": "Sa doorbell: Top 2 – Santos."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0820"
+					],
+					"options": [
+						"1",
+						"4",
+						"2"
+					],
+					"answer": 2,
+					"prompt": "Santos: Top …",
+					"image": {
+						"src": "/img/a1-02-klingel.svg",
+						"alt": {
+							"de": "Ein Hauseingang mit Hausnummer und Klingeln mit Namen.",
+							"en": "A house entrance with a house number and doorbells with names.",
+							"tl": "Pasukan ng bahay na may numero ng bahay at mga doorbell na may pangalan."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L11-I3",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf der Klingel steht: Top 4 – Mayer.",
+						"en": "The doorbell says: Top 4 – Mayer.",
+						"tl": "Sa doorbell: Top 4 – Mayer."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0820"
+					],
+					"options": [
+						"Mayer",
+						"Huber",
+						"Berger"
+					],
+					"answer": 0,
+					"prompt": "Top 4: Wer ist das?",
+					"image": {
+						"src": "/img/a1-02-klingel.svg",
+						"alt": {
+							"de": "Ein Hauseingang mit Hausnummer und Klingeln mit Namen.",
+							"en": "A house entrance with a house number and doorbells with names.",
+							"tl": "Pasukan ng bahay na may numero ng bahay at mga doorbell na may pangalan."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L11-I4",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wie ist die Postleitzahl?",
+						"en": "Listen. What is the postcode?",
+						"tl": "Makinig. Ano ang postal code?"
+					},
+					"explanation": {
+						"de": "Sie hören: acht, null, eins, null = 8010 (Graz).",
+						"en": "You hear: acht, null, eins, null = 8010 (Graz).",
+						"tl": "Naririnig mo: acht, null, eins, null = 8010 (Graz)."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0371"
+					],
+					"options": [
+						"8010",
+						"8100"
+					],
+					"answer": 0,
+					"audioText": "Die Postleitzahl ist acht, null, eins, null.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L11-I5",
+					"type": "cloze",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Lesen Sie und schreiben Sie die Zahlen.",
+						"en": "Read and write the numbers.",
+						"tl": "Basahin at isulat ang mga numero."
+					},
+					"explanation": {
+						"de": "zwölf = 12; eins, null, eins, null = 1010 (Wien).",
+						"en": "zwölf = 12; eins, null, eins, null = 1010 (Vienna).",
+						"tl": "zwölf = 12; eins, null, eins, null = 1010 (Vienna)."
+					},
+					"goals": [
+						"A1-02-G4"
+					],
+					"refs": [
+						"W-A1-0370",
+						"W-A1-0371"
+					],
+					"text": "Ich bin Anna Huber. Hausnummer: zwölf. Postleitzahl: eins, null, eins, null.\nHausnummer: {{1}} · Postleitzahl: {{2}}",
+					"gaps": {
+						"1": {
+							"accept": [
+								"12"
+							]
+						},
+						"2": {
+							"accept": [
+								"1010"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L12",
+			"title": {
+				"de": "Was kostet das? – Euro und Cent",
+				"en": "How much is it? – Euros and cents",
+				"tl": "Magkano? – Euro at cent"
+			},
+			"introduces": [
+				"W-A1-0534",
+				"W-A1-0535",
+				"W-A1-0536",
+				"W-A1-0537"
+			],
+			"cards": [
+				{
+					"phrase": "Was kostet das?",
+					"note": {
+						"de": "So fragen Sie nach dem Preis. Auch: „Wie viel kostet das?“",
+						"en": "This is how you ask the price. Also: “Wie viel kostet das?”",
+						"tl": "Ganito magtanong ng presyo. Puwede rin: “Wie viel kostet das?”"
+					}
+				},
+				{
+					"phrase": "Das kostet 2,50 €.",
+					"note": {
+						"de": "Man sagt: „zwei Euro fünfzig“. Das Komma sagt man nicht.",
+						"en": "You say: “zwei Euro fünfzig”. You don’t say the comma.",
+						"tl": "Sinasabi: “zwei Euro fünfzig”. Hindi sinasabi ang comma."
+					},
+					"audioText": "Das kostet zwei Euro fünfzig."
+				},
+				{
+					"phrase": "Das kostet 1,20 €.",
+					"note": {
+						"de": "„ein Euro zwanzig“ – „ein“, nicht „eins“.",
+						"en": "“ein Euro zwanzig” – “ein”, not “eins”.",
+						"tl": "“ein Euro zwanzig” – “ein”, hindi “eins”."
+					},
+					"audioText": "Das kostet ein Euro zwanzig."
+				},
+				{
+					"phrase": "Das kostet 90 Cent.",
+					"note": {
+						"de": "Unter einem Euro: Cent. 100 Cent = 1 Euro.",
+						"en": "Below one euro: cents. 100 cents = 1 euro.",
+						"tl": "Kulang sa isang euro: cent. 100 cent = 1 euro."
+					},
+					"audioText": "Das kostet neunzig Cent."
+				},
+				{
+					"phrase": "die Äpfel · das Brot · die Milch",
+					"note": {
+						"de": "Wörter aus dem Bild. Sie lernen sie später genau.",
+						"en": "Words from the picture: apples, bread, milk. You will learn them properly later.",
+						"tl": "Mga salita sa larawan: mansanas, tinapay, gatas. Matututunan mo ito nang maayos mamaya."
+					}
+				},
+				{
+					"phrase": "der Preis",
+					"note": {
+						"de": "Der Preis ist 3,10 €.",
+						"en": "The price (Preis) is €3.10.",
+						"tl": "Ang presyo (Preis) ay €3.10."
+					},
+					"audioText": "der Preis. Der Preis ist drei Euro zehn."
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L12-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wie viel kostet das?",
+						"en": "Listen. How much does it cost?",
+						"tl": "Makinig. Magkano ito?"
+					},
+					"explanation": {
+						"de": "Sie hören: „vier Euro achtzig“ = 4,80 €.",
+						"en": "You hear: “vier Euro achtzig” = €4.80.",
+						"tl": "Naririnig mo: “vier Euro achtzig” = €4.80."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0537",
+						"W-A1-0534"
+					],
+					"options": [
+						"4,80 €",
+						"8,40 €"
+					],
+					"answer": 0,
+					"audioText": "Das kostet vier Euro achtzig.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L12-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Am Brot steht 3,10 €.",
+						"en": "The bread shows €3.10.",
+						"tl": "Nakalagay sa tinapay: €3.10."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0537",
+						"W-A1-0536"
+					],
+					"options": [
+						"3,10 €",
+						"2,40 €",
+						"1,19 €"
+					],
+					"answer": 0,
+					"prompt": "Wie viel kostet das Brot?",
+					"image": {
+						"src": "/img/a1-02-markt.svg",
+						"alt": {
+							"de": "Ein Marktstand mit Äpfeln, Brot und Milch. Auf jedem Produkt steht ein Preis.",
+							"en": "A market stall with apples, bread and milk. Each product has a price.",
+							"tl": "Isang puwesto sa palengke na may mansanas, tinapay at gatas. May presyo ang bawat produkto."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L12-I3",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "An der Milch steht 1,19 € – ein Euro neunzehn.",
+						"en": "The milk shows €1.19 – ein Euro neunzehn.",
+						"tl": "Nakalagay sa gatas: €1.19 – ein Euro neunzehn."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0537",
+						"W-A1-0535"
+					],
+					"options": [
+						"1,19 €",
+						"3,10 €",
+						"1,91 €"
+					],
+					"answer": 0,
+					"prompt": "Wie viel kostet die Milch?",
+					"image": {
+						"src": "/img/a1-02-markt.svg",
+						"alt": {
+							"de": "Ein Marktstand mit Äpfeln, Brot und Milch. Auf jedem Produkt steht ein Preis.",
+							"en": "A market stall with apples, bread and milk. Each product has a price.",
+							"tl": "Isang puwesto sa palengke na may mansanas, tinapay at gatas. May presyo ang bawat produkto."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L12-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "An den Äpfeln steht 2,40 € – zwei Euro vierzig.",
+						"en": "The apples show €2.40 – zwei Euro vierzig.",
+						"tl": "Nakalagay sa mansanas: €2.40 – zwei Euro vierzig."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0537",
+						"W-A1-0536"
+					],
+					"options": [
+						"4,20 €",
+						"3,10 €",
+						"2,40 €"
+					],
+					"answer": 2,
+					"prompt": "Wie viel kosten die Äpfel?",
+					"image": {
+						"src": "/img/a1-02-markt.svg",
+						"alt": {
+							"de": "Ein Marktstand mit Äpfeln, Brot und Milch. Auf jedem Produkt steht ein Preis.",
+							"en": "A market stall with apples, bread and milk. Each product has a price.",
+							"tl": "Isang puwesto sa palengke na may mansanas, tinapay at gatas. May presyo ang bawat produkto."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L12-I5",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Wie sagt man den Preis? Wählen Sie, dann sagen Sie es laut.",
+						"en": "How do you say the price? Choose, then say it aloud.",
+						"tl": "Paano sabihin ang presyo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Zuerst die Euro, dann die Cent: „zwei Euro fünfzig“.",
+						"en": "First the euros, then the cents: “zwei Euro fünfzig”.",
+						"tl": "Una ang euro, tapos ang cent: “zwei Euro fünfzig”."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0534"
+					],
+					"options": [
+						"zwei Euro fünfzig",
+						"zwei Komma fünf Euro",
+						"fünfzig Euro zwei"
+					],
+					"answer": 0,
+					"prompt": "2,50 €"
+				},
+				{
+					"id": "A1-02-L12-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "„Was kostet das?“ – unter einem Euro sagt man „Cent“.",
+						"en": "“Was kostet das?” – below one euro you say “Cent”.",
+						"tl": "“Was kostet das?” – kulang sa isang euro, “Cent”."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0537",
+						"W-A1-0535"
+					],
+					"text": "Was {{1}} das? – Das kostet neunzig {{2}}.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"kostet"
+							]
+						},
+						"2": {
+							"accept": [
+								"Cent"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L13",
+			"title": {
+				"de": "Wie viel? Wie viele?",
+				"en": "How much? How many?",
+				"tl": "Magkano? Ilan?"
+			},
+			"introduces": [
+				"W-A1-0042",
+				"W-A1-0043",
+				"W-A1-0082",
+				"W-A1-0083",
+				"W-A1-0084",
+				"W-A1-0085",
+				"W-A1-0056",
+				"W-A1-0030",
+				"W-A1-0031",
+				"W-A1-0032"
+			],
+			"cards": [
+				{
+					"phrase": "Wie viel kostet das?",
+					"note": {
+						"de": "„wie viel“ für Geld und für Dinge ohne Plural.",
+						"en": "“wie viel” for money and things you can’t count.",
+						"tl": "“wie viel” para sa pera at bagay na hindi binibilang."
+					}
+				},
+				{
+					"phrase": "Wie viele Buchstaben hat „Euro“?",
+					"note": {
+						"de": "„wie viele“ für Dinge im Plural, die man zählt.",
+						"en": "“wie viele” for plural things you count.",
+						"tl": "“wie viele” para sa mga bagay na binibilang (plural)."
+					}
+				},
+				{
+					"phrase": "Wie viel? – Wort auf Platz 1, Verb auf Platz 2",
+					"note": {
+						"de": "Bei W-Fragen: Fragewort zuerst, dann das Verb: „Wie viel kostet das?“",
+						"en": "In W-questions: question word first, then the verb: “Wie viel kostet das?”",
+						"tl": "Sa W-question: una ang tanong na salita, tapos ang verb: “Wie viel kostet das?”"
+					}
+				},
+				{
+					"phrase": "viel – wenig – mehr – genug",
+					"note": {
+						"de": "100 € – das ist viel. 1 € – das ist wenig. 5 € ist mehr als 2 €. 5 € für 5 € – das ist genug.",
+						"en": "viel = much, wenig = little, mehr = more, genug = enough.",
+						"tl": "viel = marami, wenig = kaunti, mehr = mas marami, genug = sapat."
+					}
+				},
+				{
+					"phrase": "alle – etwas – nichts – nur",
+					"note": {
+						"de": "Alle sind da. Ich habe etwas. Ich habe nichts. Nur 2 Euro!",
+						"en": "alle = all, etwas = something, nichts = nothing, nur = only.",
+						"tl": "alle = lahat, etwas = kaunti/isang bagay, nichts = wala, nur = lang."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L13-I1",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "Für den Preis fragt man: „Wie viel kostet das?“ oder „Was kostet das?“",
+						"en": "For the price you ask: “Wie viel kostet das?” or “Was kostet das?”",
+						"tl": "Para sa presyo: “Wie viel kostet das?” o “Was kostet das?”"
+					},
+					"goals": [
+						"A1-02-G7"
+					],
+					"refs": [
+						"W-A1-0042"
+					],
+					"text": "{{1}} kostet das? – Drei Euro.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Wie viel",
+								"Wieviel",
+								"Was"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L13-I2",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "Buchstaben zählt man: „Wie viele Buchstaben …?“",
+						"en": "You count letters: “Wie viele Buchstaben …?”",
+						"tl": "Binibilang ang titik: “Wie viele Buchstaben …?”"
+					},
+					"goals": [
+						"A1-02-G7"
+					],
+					"refs": [
+						"W-A1-0043",
+						"W-A1-0322"
+					],
+					"text": "{{1}} Buchstaben hat „Preis“? – Fünf.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Wie viele",
+								"Wieviele"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L13-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
+						"en": "W-question: question word in position 1, verb in position 2.",
+						"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					},
+					"goals": [
+						"A1-02-G7"
+					],
+					"refs": [
+						"W-A1-0042",
+						"W-A1-0537"
+					],
+					"options": [
+						"Wie viel kostet das?",
+						"Wie viel das kostet?",
+						"Kostet wie viel das?"
+					],
+					"answer": 0,
+					"prompt": "Welche Frage ist richtig?"
+				},
+				{
+					"id": "A1-02-L13-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "2 Euro ist weniger als 5 Euro. Sie hat nicht genug, nur 2 Euro.",
+						"en": "2 euros is less than 5 euros. She doesn’t have enough, only 2 euros.",
+						"tl": "Mas kaunti ang 2 euro kaysa 5 euro. Hindi sapat, 2 euro lang."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0085",
+						"W-A1-0056",
+						"W-A1-0084"
+					],
+					"options": [
+						"Nein, sie hat nur 2 Euro.",
+						"Ja, sie hat mehr.",
+						"Ja, sie hat genug."
+					],
+					"answer": 0,
+					"prompt": "Maria hat 2 Euro. Das kostet 5 Euro. Hat Maria genug?"
+				},
+				{
+					"id": "A1-02-L13-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "0 Euro = „nichts“.",
+						"en": "0 euros = “nichts” (nothing).",
+						"tl": "0 euro = “nichts” (wala)."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0032"
+					],
+					"options": [
+						"nichts",
+						"alle",
+						"viel"
+					],
+					"answer": 0,
+					"prompt": "Herr Bauer hat null Euro. Er hat …"
+				},
+				{
+					"id": "A1-02-L13-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "5 € + 1 € + 1 € + 50 Cent = 7,50 € – sieben Euro fünfzig.",
+						"en": "€5 + €1 + €1 + 50 cents = €7.50 – sieben Euro fünfzig.",
+						"tl": "€5 + €1 + €1 + 50 cent = €7.50 – sieben Euro fünfzig."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0042",
+						"W-A1-0534",
+						"W-A1-0535"
+					],
+					"options": [
+						"6,50 €",
+						"7,50 €",
+						"5,52 €"
+					],
+					"answer": 1,
+					"prompt": "Wie viel Euro sind das?",
+					"image": {
+						"src": "/img/a1-02-geld.svg",
+						"alt": {
+							"de": "Geld auf einem Tisch: ein Geldschein und Münzen.",
+							"en": "Money on a table: a banknote and coins.",
+							"tl": "Pera sa mesa: isang perang papel at mga barya."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L14",
+			"title": {
+				"de": "Zusammen, bitte!",
+				"en": "Together, please!",
+				"tl": "Lahat-lahat na, please!"
+			},
+			"introduces": [
+				"W-A1-0086",
+				"W-A1-0087",
+				"W-A1-0090",
+				"W-A1-0060",
+				"W-A1-0088",
+				"W-A1-0126",
+				"W-A1-0130",
+				"W-A1-0132",
+				"W-A1-0133",
+				"W-A1-0089"
+			],
+			"cards": [
+				{
+					"phrase": "Das macht zusammen 7 Euro.",
+					"note": {
+						"de": "So sagt man den Preis für alles: „zusammen“.",
+						"en": "This is how you say the price for everything: “zusammen” (in total).",
+						"tl": "Ganito sabihin ang kabuuang presyo: “zusammen”."
+					}
+				},
+				{
+					"phrase": "10 Euro, bitte. – 3 Euro zurück.",
+					"note": {
+						"de": "Sie zahlen 10 €. Das kostet 7 €. Sie bekommen 3 € zurück.",
+						"en": "You pay €10. It costs €7. You get €3 back (zurück).",
+						"tl": "Nagbayad ka ng €10. €7 ang presyo. May €3 kang sukli (zurück)."
+					}
+				},
+				{
+					"phrase": "Ich frage, Sie antworten.",
+					"note": {
+						"de": "„fragen“ und „antworten“: ich frage, du fragst … ich antworte, du antwortest …",
+						"en": "“fragen” (ask) and “antworten” (answer): ich frage, du fragst … ich antworte, du antwortest …",
+						"tl": "“fragen” (magtanong) at “antworten” (sumagot)."
+					}
+				},
+				{
+					"phrase": "Was sagen Sie? Noch einmal, bitte – wieder!",
+					"note": {
+						"de": "„sagen“: ich sage, du sagst. „wieder“ = noch einmal.",
+						"en": "“sagen” (to say): ich sage, du sagst. “wieder” = again.",
+						"tl": "“sagen” (sabihin): ich sage, du sagst. “wieder” = ulit."
+					}
+				},
+				{
+					"phrase": "Vielleicht. – Ist das möglich?",
+					"note": {
+						"de": "vielleicht = nicht sicher.",
+						"en": "vielleicht = maybe. möglich = possible.",
+						"tl": "vielleicht = siguro. möglich = posible."
+					}
+				},
+				{
+					"phrase": "Ich bin schon da. – Ich bin allein.",
+					"note": {
+						"de": "schon = früher als gedacht. allein = ohne andere Personen.",
+						"en": "schon = already. allein = alone.",
+						"tl": "schon = na. allein = mag-isa."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L14-I1",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wie viel kostet das zusammen?",
+						"en": "Listen. How much is it in total?",
+						"tl": "Makinig. Magkano lahat-lahat?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Das macht zusammen zwölf Euro.“",
+						"en": "You hear: “Das macht zusammen zwölf Euro.”",
+						"tl": "Naririnig mo: “Das macht zusammen zwölf Euro.”"
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0086",
+						"W-A1-0126"
+					],
+					"options": [
+						"12 €",
+						"20 €"
+					],
+					"answer": 0,
+					"audioText": "Das macht zusammen zwölf Euro.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-02-L14-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+						"en": "Read. Choose the correct answer.",
+						"tl": "Basahin. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "10 € – 6 € = 4 € zurück.",
+						"en": "€10 – €6 = €4 back.",
+						"tl": "€10 – €6 = €4 na sukli."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0090"
+					],
+					"options": [
+						"4 Euro",
+						"6 Euro",
+						"16 Euro"
+					],
+					"answer": 0,
+					"prompt": "Das kostet 6 Euro. Sie zahlen 10 Euro. Wie viel bekommen Sie zurück?"
+				},
+				{
+					"id": "A1-02-L14-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"explanation": {
+						"de": "ich frage, du antwortest.",
+						"en": "ich frage (I ask), du antwortest (you answer).",
+						"tl": "ich frage (nagtatanong ako), du antwortest (sumasagot ka)."
+					},
+					"goals": [
+						"A1-02-G6"
+					],
+					"refs": [
+						"W-A1-0132",
+						"W-A1-0133"
+					],
+					"text": "Ich {{1}}: „Wie alt bist du?“ – Du {{2}}: „Ich bin zwanzig.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"frage"
+							]
+						},
+						"2": {
+							"accept": [
+								"antwortest"
+							]
+						}
+					}
+				},
+				{
+					"id": "A1-02-L14-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "„wieder“ = noch einmal.",
+						"en": "“wieder” = again.",
+						"tl": "“wieder” = ulit."
+					},
+					"refs": [
+						"W-A1-0089"
+					],
+					"options": [
+						"allein",
+						"schon",
+						"wieder"
+					],
+					"answer": 2,
+					"prompt": "Sie verstehen nicht. Die Person sagt es …"
+				},
+				{
+					"id": "A1-02-L14-I5",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "What do you say? Choose, then say it aloud.",
+						"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Für alles zusammen sagen Sie: „Zusammen, bitte.“",
+						"en": "For everything at once you say: “Zusammen, bitte.”",
+						"tl": "Para sa lahat: “Zusammen, bitte.”"
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0086"
+					],
+					"options": [
+						"Allein, bitte.",
+						"Zusammen, bitte.",
+						"Nichts, bitte."
+					],
+					"answer": 1,
+					"prompt": "Das kostet 3 Euro und das kostet 2 Euro. Sie möchten alles zahlen."
+				},
+				{
+					"id": "A1-02-L14-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Auf der Rechnung: zusammen 6,69 €, bar 10,00 €, zurück 3,31 €.",
+						"en": "On the receipt: total €6.69, cash €10.00, back (change) €3.31.",
+						"tl": "Sa resibo: kabuuan €6.69, cash €10.00, sukli €3.31."
+					},
+					"goals": [
+						"A1-02-G5"
+					],
+					"refs": [
+						"W-A1-0090",
+						"W-A1-0086"
+					],
+					"options": [
+						"6,69 €",
+						"3,31 €",
+						"10,00 €"
+					],
+					"answer": 1,
+					"prompt": "Wie viel Geld bekommt man zurück?",
+					"image": {
+						"src": "/img/a1-02-rechnung.svg",
+						"alt": {
+							"de": "Eine Rechnung aus einem Geschäft.",
+							"en": "A receipt from a shop.",
+							"tl": "Resibo mula sa tindahan."
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "A1-02-L15",
+			"title": {
+				"de": "Notruf: 112, 122, 133, 144",
+				"en": "Emergency: 112, 122, 133, 144",
+				"tl": "Emergency: 112, 122, 133, 144"
+			},
+			"introduces": [],
+			"cards": [
+				{
+					"phrase": "122 – Feuerwehr",
+					"note": {
+						"de": "Es brennt? Rufen Sie 122 an: hundertzweiundzwanzig, oder: eins – zwei – zwei.",
+						"en": "Fire? Call 122 (fire brigade).",
+						"tl": "May sunog? Tumawag sa 122 (bumbero)."
+					}
+				},
+				{
+					"phrase": "133 – Polizei",
+					"note": {
+						"de": "Ein Diebstahl, Gewalt, Gefahr durch Menschen? Polizei: 133.",
+						"en": "Theft, violence, danger from people? Police: 133.",
+						"tl": "Nakawan, karahasan, panganib mula sa tao? Pulis: 133."
+					}
+				},
+				{
+					"phrase": "144 – Rettung",
+					"note": {
+						"de": "Eine Person ist schwer krank oder verletzt? Rettung: 144.",
+						"en": "Someone is seriously ill or injured? Ambulance (Rettung): 144.",
+						"tl": "May taong malubhang may sakit o sugatan? Ambulansya (Rettung): 144."
+					}
+				},
+				{
+					"phrase": "112 – Euro-Notruf",
+					"note": {
+						"de": "112 funktioniert in ganz Europa, auch mit dem Handy.",
+						"en": "112 works all over Europe, also from a mobile.",
+						"tl": "Gumagana ang 112 sa buong Europe, pati sa cellphone."
+					}
+				},
+				{
+					"phrase": "141 und 1450",
+					"note": {
+						"de": "141: Ärztenotdienst (nachts, am Wochenende). 1450: Gesundheitsberatung am Telefon.",
+						"en": "141: doctor on call (at night, weekends). 1450: health advice by phone.",
+						"tl": "141: doktor na naka-duty (gabi, weekend). 1450: payo sa kalusugan sa telepono."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-02-L15-I1",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Notrufe in Österreich: 122 Feuerwehr, 133 Polizei, 144 Rettung, 112 Euro-Notruf.",
+						"en": "Emergency numbers in Austria: 122 fire brigade, 133 police, 144 ambulance, 112 European emergency number.",
+						"tl": "Mga emergency number sa Austria: 122 bumbero, 133 pulis, 144 ambulansya, 112 European emergency number."
+					},
+					"goals": [
+						"A1-02-G8"
+					],
+					"refs": [
+						"W-A1-0820"
+					],
+					"sourceIds": [
+						"Q101"
+					],
+					"options": [
+						"122",
+						"144",
+						"133"
+					],
+					"answer": 2,
+					"prompt": "Polizei: Welche Nummer?",
+					"image": {
+						"src": "/img/a1-02-notruf.svg",
+						"alt": {
+							"de": "Ein Aufkleber mit vier Notrufnummern und Bildern.",
+							"en": "A sticker with four emergency numbers and pictures.",
+							"tl": "Sticker na may apat na emergency number at mga larawan."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L15-I2",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture. Choose the correct answer.",
+						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Notrufe in Österreich: 122 Feuerwehr, 133 Polizei, 144 Rettung, 112 Euro-Notruf.",
+						"en": "Emergency numbers in Austria: 122 fire brigade, 133 police, 144 ambulance, 112 European emergency number.",
+						"tl": "Mga emergency number sa Austria: 122 bumbero, 133 pulis, 144 ambulansya, 112 European emergency number."
+					},
+					"goals": [
+						"A1-02-G8"
+					],
+					"refs": [
+						"W-A1-0820"
+					],
+					"sourceIds": [
+						"Q101"
+					],
+					"options": [
+						"133",
+						"122",
+						"144"
+					],
+					"answer": 2,
+					"prompt": "Rettung: Welche Nummer?",
+					"image": {
+						"src": "/img/a1-02-notruf.svg",
+						"alt": {
+							"de": "Ein Aufkleber mit vier Notrufnummern und Bildern.",
+							"en": "A sticker with four emergency numbers and pictures.",
+							"tl": "Sticker na may apat na emergency number at mga larawan."
+						}
+					}
+				},
+				{
+					"id": "A1-02-L15-I3",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Ein Haus brennt. Welche Nummer rufen Sie an?",
+						"en": "A house is on fire. Which number do you call?",
+						"tl": "May nasusunog na bahay. Anong numero ang tatawagan mo?"
+					},
+					"explanation": {
+						"de": "Notrufe in Österreich: 122 Feuerwehr, 133 Polizei, 144 Rettung, 112 Euro-Notruf.",
+						"en": "Emergency numbers in Austria: 122 fire brigade, 133 police, 144 ambulance, 112 European emergency number.",
+						"tl": "Mga emergency number sa Austria: 122 bumbero, 133 pulis, 144 ambulansya, 112 European emergency number."
+					},
+					"goals": [
+						"A1-02-G8"
+					],
+					"refs": [
+						"W-A1-0820"
+					],
+					"sourceIds": [
+						"Q101"
+					],
+					"options": [
+						"133",
+						"1450",
+						"122"
+					],
+					"answer": 2
+				},
+				{
+					"id": "A1-02-L15-I4",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Welche Nummer funktioniert in ganz Europa?",
+						"en": "Which number works all over Europe?",
+						"tl": "Anong numero ang gumagana sa buong Europe?"
+					},
+					"explanation": {
+						"de": "Notrufe in Österreich: 122 Feuerwehr, 133 Polizei, 144 Rettung, 112 Euro-Notruf.",
+						"en": "Emergency numbers in Austria: 122 fire brigade, 133 police, 144 ambulance, 112 European emergency number.",
+						"tl": "Mga emergency number sa Austria: 122 bumbero, 133 pulis, 144 ambulansya, 112 European emergency number."
+					},
+					"goals": [
+						"A1-02-G8"
+					],
+					"refs": [
+						"W-A1-0820"
+					],
+					"sourceIds": [
+						"Q101"
+					],
+					"options": [
+						"112",
+						"141",
+						"133"
+					],
+					"answer": 0
+				},
+				{
+					"id": "A1-02-L15-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Listen. What is correct?",
+						"tl": "Makinig. Alin ang tama?"
+					},
+					"explanation": {
+						"de": "Sie hören „hundertvierundvierzig“ = 144: Rettung.",
+						"en": "You hear “hundertvierundvierzig” = 144: ambulance.",
+						"tl": "Naririnig mo ang “hundertvierundvierzig” = 144: ambulansya."
+					},
+					"goals": [
+						"A1-02-G8",
+						"A1-02-G2"
+					],
+					"refs": [
+						"W-A1-0816"
+					],
+					"options": [
+						"14",
+						"144"
+					],
+					"answer": 1,
+					"audioText": "Die Nummer ist hundertvierundvierzig.",
+					"audioOnly": true
+				}
+			]
+		}
+	]
+}

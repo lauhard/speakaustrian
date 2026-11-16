@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" font-family="Arial, sans-serif"><rect width="400" height="260" fill="#f3ead9"/>
+<g font-size="22" font-weight="bold" fill="#1f2937" text-anchor="middle">
+<rect x="20" y="70" width="112" height="120" rx="10" fill="#fff" stroke="#c8102e" stroke-width="4"/><rect x="20" y="70" width="112" height="30" rx="10" fill="#c8102e"/><text x="76" y="150">ANNA</text>
+<rect x="144" y="70" width="112" height="120" rx="10" fill="#fff" stroke="#2a9d8f" stroke-width="4"/><rect x="144" y="70" width="112" height="30" rx="10" fill="#2a9d8f"/><text x="200" y="150">MARIA</text>
+<rect x="268" y="70" width="112" height="120" rx="10" fill="#fff" stroke="#1d4e89" stroke-width="4"/><rect x="268" y="70" width="112" height="30" rx="10" fill="#1d4e89"/><text x="324" y="150" font-size="17">KATHARINA</text>
+</g>
+<g fill="#fff" font-size="12" text-anchor="middle"><text x="76" y="90">Hallo!</text><text x="200" y="90">Hallo!</text><text x="324" y="90">Hallo!</text></g>
+<g stroke="#6b7280" stroke-width="3" fill="none"><path d="M76 70V40M200 70V40M324 70V40"/></g>
+</svg>
