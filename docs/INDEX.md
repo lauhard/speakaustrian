@@ -11,6 +11,7 @@
 | `spec/00-quellen.md` | Verified exam facts with sources | Exam format/WOW facts | A A2 · B A1 · D WOW · G open gaps |
 | `spec/prototyp-erkenntnisse.md` | TTS findings (Android), genus, prototype export format | TTS/`SpeechOutPort`, import of prototype progress | E-P1, E-P3 (v4 TTS pattern), §0 export format |
 | `spec-gaps.md` | Open spec questions / repo-vs-spec deviations | Before starting a ticket that touches them | – |
+| `DEPLOY.md` | Cloudflare hosting, one-time setup | Deploy/CI tickets | – |
 | `tickets/README.md` | Ticket workflow | Once per session | – |
 | `tickets/BACKLOG.md` | Ticket list + dependencies (written by `/backlog`) | Picking next ticket | – |
 

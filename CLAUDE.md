@@ -26,4 +26,7 @@ Commands: `/backlog`, `/ticket-plan NNN`, `/ticket-test NNN`, `/ticket-done NNN`
 **Do not write production code in `src/` unless Andi explicitly asks** – he implements. Tests, ticket docs, configs on request are fine.
 
 ## Commands
-`pnpm install` · `pnpm dev` · `pnpm check` · `pnpm test` · `pnpm test:e2e` (vitest not yet installed → see ticket backlog / `docs/spec-gaps.md`).
+`pnpm install` · `pnpm dev` · `pnpm check` · `pnpm test` (Vitest, core) · `pnpm test:e2e` (Playwright; set `PW_CHROMIUM` to reuse an installed browser) · `pnpm build` · `pnpm deploy`.
+
+## Architecture (as built)
+`src/lib/core` pure logic (content schema, grading) · `src/lib/ports` interfaces · `src/lib/adapters/web` device TTS, localStorage · `src/lib/content` lesson JSON · `src/routes` UI · `messages/` UI strings (paraglide, de/en/tl). Hosting: Cloudflare Workers (D18), see `docs/DEPLOY.md`. Imports of own TS files use `#lib/….ts`.
