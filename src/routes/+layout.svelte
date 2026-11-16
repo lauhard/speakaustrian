@@ -25,6 +25,8 @@
 			</span>
 			<span class="text-xl font-black tracking-tight text-ink">{m.app_title()}</span>
 		</a>
+		<div class="flex items-center gap-2">
+		<a href={resolve('/settings')} class="grid h-9 w-9 place-items-center rounded-full bg-white text-lg ring-1 ring-line no-underline" aria-label={m.settings()} data-testid="settings-link">⚙️</a>
 		<nav aria-label={m.language()} class="flex rounded-full bg-white p-1 ring-1 ring-line">
 			{#each locales as locale (locale)}
 				<button
@@ -37,6 +39,7 @@
 				</button>
 			{/each}
 		</nav>
+		</div>
 	</header>
 	<main class="flex-1 pb-6">
 		{@render children()}

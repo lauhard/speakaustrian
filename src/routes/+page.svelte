@@ -7,7 +7,9 @@
 	import { planDay } from '#lib/core/reducer.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
-	import { game, policy } from '#lib/game.svelte.ts';
+	import { game, isFreeMode, policy, storeFor } from '#lib/game.svelte.ts';
+	import { chapterStatus, type ChapterStatus } from '#lib/core/status.ts';
+	import { settings } from '#lib/settings.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const levels = ['A1', 'A2'] as const;
@@ -25,22 +27,35 @@
 	const run = $derived(game.state.course.chapter);
 	const dueCount = $derived(game.ready ? dueQueue(game.state, game.today).length : 0);
 	const pensumLabel = $derived(pensumOptions.find((o) => o.value === profile?.pensumMin)?.label ?? '');
-	// Smart continue: the first lesson of the chapter in work that is not finished yet.
+	const showTr = $derived(helpLocale !== 'de' && settings.value.showTranslations);
+	const statusOf = (chapterId: string): ChapterStatus =>
+		chapterStatus(storeFor(chapterId).state, chapterId, chapterContent(chapterId)?.lessons.map((l) => l.id) ?? []);
+	const phaseLabel = (st: ChapterStatus) =>
+		({
+			new: m.phase_new(),
+			lessons: m.phase_lessons({ done: st.lessonsDone, total: st.lessonsTotal }),
+			practice: m.phase_practice(),
+			gate: m.phase_gate(),
+			test: m.phase_test(),
+			review: m.phase_review(),
+			passed: m.phase_passed()
+		})[st.phase];
+	// Smart continue: the next open lesson, or the chapter page once the lessons are done (practice, test …).
 	const current = $derived.by(() => {
 		const content = run ? chapterContent(run.id) : undefined;
 		const meta = course.chapters.find((c) => c.id === run?.id);
 		if (!run || !content || !meta) return null;
 		const done = run.attempt.kind === 'LESSONS' ? run.attempt.done : [];
-		const next = content.lessons.find((l) => !done.includes(l.id));
-		return { meta, total: content.lessons.length, done: content.lessons.filter((l) => done.includes(l.id)).length, next };
+		const next = run.attempt.kind === 'LESSONS' ? content.lessons.find((l) => !done.includes(l.id)) : undefined;
+		return { meta, status: statusOf(run.id), next };
 	});
-	const doneCount = (chapterId: string) => {
-		const attempt = run?.id === chapterId ? run.attempt : null;
-		const done = attempt?.kind === 'LESSONS' ? attempt.done : [];
-		return chapterContent(chapterId)?.lessons.filter((l) => done.includes(l.id)).length ?? 0;
-	};
 
 	onMount(() => game.init());
+	// Free-mode chapters keep their own state; load it so the list shows their progress.
+	$effect(() => {
+		if (!game.ready) return;
+		for (const c of course.chapters) if (chapterContent(c.id) && isFreeMode(c.id)) storeFor(c.id).init();
+	});
 
 	const start = (event: SubmitEvent) => {
 		event.preventDefault();
@@ -74,10 +89,11 @@
 			<div class="card space-y-3 !border-brand/30">
 				<p class="text-sm font-bold text-muted">{m.your_chapter()} · {current.meta.id}</p>
 				<p class="text-xl leading-tight font-black" lang="de">{current.meta.title.de}</p>
-				{#if helpLocale !== 'de'}<p class="text-sm text-muted">{current.meta.title[helpLocale]}</p>{/if}
+				{#if showTr}<p class="text-sm text-muted">{current.meta.title[helpLocale]}</p>{/if}
+				<p><span class="chip" data-testid="current-phase">{phaseLabel(current.status)}</span></p>
 				<div class="flex items-center gap-3">
-					<div class="bar"><span style="width: {(current.done / current.total) * 100}%"></span></div>
-					<span class="text-sm font-bold text-muted">{current.done}/{current.total}</span>
+					<div class="bar"><span style="width: {(current.status.lessonsDone / Math.max(1, current.status.lessonsTotal)) * 100}%"></span></div>
+					<span class="text-sm font-bold text-muted">{current.status.lessonsDone}/{current.status.lessonsTotal}</span>
 				</div>
 				<a
 					href={current.next
@@ -104,18 +120,20 @@
 					{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter, i (chapter.id)}
 						{@const content = chapterContent(chapter.id)}
 						{@const access = policy.canAccessChapter(game.state, chapter.id)}
-						{@const passed = chapter.id in game.state.course.completed}
+						{@const free = content && isFreeMode(chapter.id)}
+						{@const st = content ? statusOf(chapter.id) : null}
+						{@const passed = st?.phase === 'passed'}
 						<li>
-							{#if content && access.allowed}
+							{#if content && st && (access.allowed || free)}
 								<a href={resolve('/chapter/[id]', { id: chapter.id })} data-testid="chapter-{chapter.id}" class="card-link flex items-center gap-3">
-									<span class="badge {passed ? '!bg-ok-soft !text-ok' : ''}">{passed ? '✓' : i + 1}</span>
-									<span class="flex-1">
+									<span class="badge {passed ? '!bg-ok-soft !text-ok' : ''}">{passed ? '✓' : free ? '🔓' : i + 1}</span>
+									<span class="flex-1 space-y-1">
 										<span class="block leading-tight font-extrabold" lang="de">{chapter.title.de}</span>
-										{#if passed}
-											<span class="text-sm font-bold text-ok" data-testid="chapter-passed">{m.flow_passed_title()}</span>
-										{:else}
-											<span class="text-sm text-muted">{doneCount(chapter.id)}/{content.lessons.length} {m.lessons()}</span>
-										{/if}
+										{#if showTr}<span class="block text-xs text-muted">{chapter.title[helpLocale]}</span>{/if}
+										<span class="flex items-center gap-2">
+											<span class="text-sm font-bold {passed ? 'text-ok' : 'text-muted'}" data-testid={passed ? 'chapter-passed' : 'chapter-phase'}>{phaseLabel(st)}</span>
+											{#if !passed && st.phase !== 'new'}<span class="bar !h-1.5 max-w-24"><span style="width: {(st.lessonsDone / Math.max(1, st.lessonsTotal)) * 100}%"></span></span>{/if}
+										</span>
 									</span>
 									<span class="text-muted">›</span>
 								</a>

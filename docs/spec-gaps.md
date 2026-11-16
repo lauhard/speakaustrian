@@ -132,3 +132,7 @@ Format:
 - Implemented: service names are taught on the A1-02 cards (no review cards); the picture nouns appear only with picture support and are presented on one L12 card as "words from the picture" (no review cards).
 - Options: A keep as is (picture/situation support) · B move the service names to A1-02 in `03c` · C remove the nouns from A1-02 tasks.
 - Blocks: nothing.
+
+## G-016 – Unlocking chapters (D16 "Kapitel-Skip")   (status: decided – Andi, 16.11.2026: setting "unlock all chapters")
+- Spec says: D16 / `04a` 1a: skipping chapters touches D11 and needs its own decision.
+- Implemented: device setting; chapters that are not yet due run in **free mode** (own state per chapter, real rules), the course progress and order stay untouched (no `OVERRIDE_GRANTED`). Free-mode progress does not merge into the course later.

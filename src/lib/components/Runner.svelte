@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, type Snippet } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
@@ -51,7 +52,7 @@
 	});
 
 	onMount(() => {
-		tts = createDeviceTts(window);
+		tts = createDeviceTts(window, ttsRate);
 		return () => tts?.stop();
 	});
 

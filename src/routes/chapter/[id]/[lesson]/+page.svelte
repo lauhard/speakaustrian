@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
@@ -30,7 +31,7 @@
 			goto(resolve('/'));
 			return;
 		}
-		tts = createDeviceTts(window);
+		tts = createDeviceTts(window, ttsRate);
 		return () => tts?.stop();
 	});
 

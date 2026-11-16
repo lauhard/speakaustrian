@@ -5,6 +5,7 @@ import { defaultConfig, demoConfig, makeDefaultPolicy, type RulePolicy } from '.
 import { localDate, makeReducer, newGame, settleChapter, type GameEvent } from './core/reducer.ts';
 import type { GameState } from './core/state.ts';
 import type { StoragePort } from './ports/storage.ts';
+import { settings } from './settings.svelte.ts';
 
 // Composition root: the only place that touches clock, random ids and storage.
 // Everything below `dispatch` is the pure core.
@@ -67,5 +68,18 @@ const createStore = (o: StoreOptions) => {
 export const game = createStore({ policy, order, legacy: true });
 export const demo = createStore({ policy: demoPolicy, order: [PREVIEW_CHAPTER], storageKey: 'speakaustrian.demo.v1', autoProfile: () => game.state.profile?.name ?? 'Demo' });
 
-// The store a chapter runs in: the DEMO sandbox for the preview chapter, else the course.
-export const storeFor = (chapterId: string) => (chapterId === PREVIEW_CHAPTER ? demo : game);
+// Free mode (setting "unlock all chapters"): a chapter that is not yet due runs with the real rules in its own state,
+// so the course progress (D11: full scope in order) stays untouched.
+const free = new Map<string, ReturnType<typeof createStore>>();
+const freeStore = (chapterId: string) => {
+	if (!free.has(chapterId)) {
+		const p: RulePolicy = { ...makeDefaultPolicy([chapterId], defaultConfig, (c) => course.chapters.find((ch) => ch.id === c)?.focus), id: 'free' };
+		free.set(chapterId, createStore({ policy: p, order: [chapterId], storageKey: `speakaustrian.free.${chapterId}.v1`, autoProfile: () => game.state.profile?.name ?? 'Free' }));
+	}
+	return free.get(chapterId)!;
+};
+export const isFreeMode = (chapterId: string) =>
+	chapterId !== PREVIEW_CHAPTER && settings.value.unlockAll && !policy.canAccessChapter(game.state, chapterId).allowed;
+
+// The store a chapter runs in: the DEMO sandbox for the preview chapter, free mode for unlocked chapters, else the course.
+export const storeFor = (chapterId: string) => (chapterId === PREVIEW_CHAPTER ? demo : isFreeMode(chapterId) ? freeStore(chapterId) : game);
