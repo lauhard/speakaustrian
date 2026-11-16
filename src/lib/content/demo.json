@@ -186,6 +186,38 @@
 			]
 		}
 	],
+	"goals": {
+		"DEMO-G1": {
+			"de": "Grüßen und sich verabschieden",
+			"en": "Greeting and saying goodbye",
+			"tl": "Bumati at magpaalam"
+		},
+		"DEMO-G2": {
+			"de": "Sich vorstellen",
+			"en": "Introducing yourself",
+			"tl": "Magpakilala"
+		},
+		"DEMO-G3": {
+			"de": "Kurze Texte über Personen lesen",
+			"en": "Reading short texts about people",
+			"tl": "Magbasa ng maikling teksto tungkol sa tao"
+		},
+		"DEMO-G4": {
+			"de": "Öffnungszeiten lesen",
+			"en": "Reading opening hours",
+			"tl": "Magbasa ng oras ng bukas"
+		},
+		"DEMO-G5": {
+			"de": "Den eigenen Namen schreiben",
+			"en": "Writing your own name",
+			"tl": "Isulat ang sariling pangalan"
+		},
+		"DEMO-G6": {
+			"de": "Herkunft und Wohnort schreiben",
+			"en": "Writing where you come from and live",
+			"tl": "Isulat kung taga-saan at saan nakatira"
+		}
+	},
 	"pools": {
 		"practice": [
 			{

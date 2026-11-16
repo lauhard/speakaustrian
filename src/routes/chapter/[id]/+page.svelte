@@ -6,20 +6,30 @@
 	import { m } from '#lib/paraglide/messages.js';
 	import { chapterContent, course } from '#lib/content/index.ts';
 	import { dueQueue } from '#lib/core/review.ts';
-	import { game } from '#lib/game.svelte.ts';
+	import ChapterFlow from '#lib/components/ChapterFlow.svelte';
+	import { game, storeFor } from '#lib/game.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const id = $derived(page.params.id ?? '');
 	const content = $derived(chapterContent(id));
 	const meta = $derived(course.chapters.find((c) => c.id === id));
 
+	// The preview chapter runs in its own sandbox state, the course chapters in the course state.
+	const store = $derived(storeFor(id));
+	const run = $derived(store.state.course.chapter?.id === id ? store.state.course.chapter : null);
+	const inFlow = $derived(run !== null && run.attempt.kind !== 'LESSONS');
+	const passed = $derived(id in store.state.course.completed);
+
 	const done = $derived.by(() => {
-		const run = game.state.course.chapter;
+		const run = store.state.course.chapter;
 		return run?.id === id && run.attempt.kind === 'LESSONS' ? run.attempt.done : [];
 	});
 	// R-W8: the due queue comes before new material.
-	const dueCount = $derived(game.ready ? dueQueue(game.state, game.today).length : 0);
-	onMount(() => game.init());
+	const dueCount = $derived(store.ready ? dueQueue(store.state, store.today).length : 0);
+	onMount(() => {
+		game.init();
+		store.init();
+	});
 </script>
 
 <a href={resolve('/')} class="backlink">‹ {m.course()}</a>
@@ -30,15 +40,20 @@
 		<h1 class="h1" lang="de">{meta ? meta.title.de : m.preview()}</h1>
 		{#if meta && helpLocale !== 'de'}<p class="text-muted">{meta.title[helpLocale]}</p>{/if}
 
-		{#if dueCount > 0 && meta}
-			<a href={resolve('/review')} class="btn-primary">
+		{#if dueCount > 0}
+			<a href={meta ? resolve('/review') : `${resolve('/review')}?store=demo`} class="btn-primary">
 				{m.review_first()} {m.review_due({ count: dueCount })}
 			</a>
 		{/if}
 
-		{#if content.lessons.length > 0}
+		{#if inFlow || passed}
+			<ChapterFlow {store} chapterId={id} />
+		{/if}
+
+		{#if !inFlow && content.lessons.length > 0}
 			<div class="bar"><span style="width: {(done.length / content.lessons.length) * 100}%"></span></div>
 		{/if}
+		{#if !inFlow}
 		<h2 class="h2">{m.lessons()}</h2>
 		<ol class="space-y-2">
 			{#each content.lessons as lesson, i (lesson.id)}
@@ -59,6 +74,7 @@
 				</li>
 			{/each}
 		</ol>
+		{/if}
 		{#if meta}<p class="text-sm text-muted">{m.chapter_more_soon()}</p>{/if}
 	</section>
 {:else}
