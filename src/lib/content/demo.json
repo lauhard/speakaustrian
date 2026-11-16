@@ -185,5 +185,570 @@
 				}
 			]
 		}
-	]
+	],
+	"pools": {
+		"practice": [
+			{
+				"id": "DEMO-P-G1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Sie treffen am Morgen eine Nachbarin. Was sagen Sie?",
+				"options": [
+					"Guten Morgen!",
+					"Gute Nacht!",
+					"Auf Wiedersehen!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Am Morgen sagt man „Guten Morgen“. „Gute Nacht“ sagt man vor dem Schlafen.",
+					"en": "In the morning you say “Guten Morgen”. You say “Gute Nacht” before sleeping.",
+					"tl": "Sa umaga, sinasabi mo ang “Guten Morgen”. Ang “Gute Nacht” ay sinasabi bago matulog."
+				},
+				"goals": [
+					"DEMO-G1"
+				]
+			},
+			{
+				"id": "DEMO-P-G2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Grüß Gott! Ich {{1}} Maria. Ich {{2}} aus Kärnten.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heiße",
+							"bin"
+						]
+					},
+					"2": {
+						"accept": [
+							"komme"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Name: „Ich heiße …“ oder „Ich bin …“. Land oder Ort: „Ich komme aus …“.",
+					"en": "Name: “Ich heiße …” or “Ich bin …”. Country or place: “Ich komme aus …”.",
+					"tl": "Pangalan: “Ich heiße …” o “Ich bin …”. Bansa o lugar: “Ich komme aus …”."
+				},
+				"goals": [
+					"DEMO-G2"
+				]
+			},
+			{
+				"id": "DEMO-P-G3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Sie gehen am Abend nach Hause. Was sagen Sie zu Ihrer Nachbarin?",
+				"options": [
+					"Auf Wiedersehen!",
+					"Guten Morgen!",
+					"Grüß Gott!"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Beim Weggehen sagt man „Auf Wiedersehen“. „Grüß Gott“ sagt man beim Kommen.",
+					"en": "When you leave you say “Auf Wiedersehen”. You say “Grüß Gott” when you arrive.",
+					"tl": "Kapag aalis ka, sinasabi mo ang “Auf Wiedersehen”. Ang “Grüß Gott” ay sinasabi pagdating mo."
+				},
+				"goals": [
+					"DEMO-G1"
+				]
+			},
+			{
+				"id": "DEMO-P-R1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Anna: „Ich komme aus Wien. Ich wohne in Graz.“ Wo wohnt Anna?",
+				"options": [
+					"in Wien",
+					"in Graz",
+					"in Linz"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„wohnen“ heißt: dort leben. Anna wohnt in Graz. Sie kommt aus Wien.",
+					"en": "“wohnen” means to live somewhere. Anna lives in Graz. She comes from Vienna.",
+					"tl": "Ang “wohnen” ay nangangahulugang tumira. Sa Graz nakatira si Anna. Taga-Vienna siya."
+				},
+				"goals": [
+					"DEMO-G3"
+				]
+			},
+			{
+				"id": "DEMO-P-R2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Das Geschäft ist von 8 bis 18 Uhr offen. Es ist 7 Uhr. Ist das Geschäft offen?",
+				"options": [
+					"Ja",
+					"Nein"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Um 7 Uhr ist das Geschäft noch zu. Es ist erst ab 8 Uhr offen.",
+					"en": "At 7 o’clock the shop is still closed. It is only open from 8 o’clock.",
+					"tl": "Sa alas-7, sarado pa ang tindahan. Bukas lang ito mula alas-8."
+				},
+				"goals": [
+					"DEMO-G4"
+				]
+			},
+			{
+				"id": "DEMO-P-R3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Tom: „Ich habe Hunger. Ich esse einen Apfel.“ Was isst Tom?",
+				"options": [
+					"einen Apfel",
+					"ein Brot",
+					"eine Suppe"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Tom sagt: „Ich esse einen Apfel.“ Das Wort „Apfel“ steht im Text.",
+					"en": "Tom says: “Ich esse einen Apfel.” The word “Apfel” is in the text.",
+					"tl": "Sabi ni Tom: “Ich esse einen Apfel.” Nasa teksto ang salitang “Apfel”."
+				},
+				"goals": [
+					"DEMO-G3"
+				]
+			},
+			{
+				"id": "DEMO-P-S1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Sehen Sie das Bild an. Antworten Sie mit einem Wort.",
+					"en": "Look at the picture. Answer with one word.",
+					"tl": "Tingnan ang larawan. Sumagot gamit ang isang salita."
+				},
+				"prompt": "Sie heißen Anna. Schreiben Sie einen Satz: „Ich …“",
+				"accept": [
+					"Ich heiße Anna",
+					"Ich bin Anna"
+				],
+				"explanation": {
+					"de": "Name: „Ich heiße Anna.“ oder „Ich bin Anna.“",
+					"en": "Name: “Ich heiße Anna.” or “Ich bin Anna.”",
+					"tl": "Pangalan: “Ich heiße Anna.” o “Ich bin Anna.”"
+				},
+				"goals": [
+					"DEMO-G5"
+				]
+			},
+			{
+				"id": "DEMO-P-S2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Ich komme {{1}} Österreich. Ich wohne {{2}} Villach.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"aus"
+						]
+					},
+					"2": {
+						"accept": [
+							"in"
+						]
+					}
+				},
+				"explanation": {
+					"de": "„kommen“ + „aus“ (woher?). „wohnen“ + „in“ (wo?).",
+					"en": "“kommen” + “aus” (where from?). “wohnen” + “in” (where?).",
+					"tl": "“kommen” + “aus” (galing saan?). “wohnen” + “in” (saan?)."
+				},
+				"goals": [
+					"DEMO-G6"
+				]
+			},
+			{
+				"id": "DEMO-P-S3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Sehen Sie das Bild an. Antworten Sie mit einem Wort.",
+					"en": "Look at the picture. Answer with one word.",
+					"tl": "Tingnan ang larawan. Sumagot gamit ang isang salita."
+				},
+				"prompt": "Es ist Abend. Sie gehen schlafen. Schreiben Sie: „Gute …“",
+				"accept": [
+					"Nacht",
+					"Gute Nacht"
+				],
+				"explanation": {
+					"de": "Vor dem Schlafen sagt man „Gute Nacht“.",
+					"en": "Before sleeping you say “Gute Nacht”.",
+					"tl": "Bago matulog, sinasabi mo ang “Gute Nacht”."
+				},
+				"goals": [
+					"DEMO-G1"
+				]
+			}
+		],
+		"test": [
+			{
+				"id": "DEMO-T-G1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Sie gehen am Abend ins Bett. Was sagen Sie?",
+				"options": [
+					"Guten Morgen!",
+					"Gute Nacht!",
+					"Grüß Gott!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Vor dem Schlafen sagt man „Gute Nacht“.",
+					"en": "Before sleeping you say “Gute Nacht”.",
+					"tl": "Bago matulog, sinasabi mo ang “Gute Nacht”."
+				},
+				"goals": [
+					"DEMO-G1"
+				]
+			},
+			{
+				"id": "DEMO-T-G1B",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Sie sehen am Morgen Ihren Lehrer. Was sagen Sie?",
+				"options": [
+					"Gute Nacht!",
+					"Guten Morgen!",
+					"Auf Wiedersehen!"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Am Morgen sagt man „Guten Morgen“.",
+					"en": "In the morning you say “Guten Morgen”.",
+					"tl": "Sa umaga, sinasabi mo ang “Guten Morgen”."
+				},
+				"goals": [
+					"DEMO-G1"
+				],
+				"family": "DEMO-T-G1"
+			},
+			{
+				"id": "DEMO-T-G2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Ich {{1}} Tom. Ich {{2}} aus Salzburg.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heiße",
+							"bin"
+						]
+					},
+					"2": {
+						"accept": [
+							"komme"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Name: „Ich heiße …“ oder „Ich bin …“. Ort: „Ich komme aus …“.",
+					"en": "Name: “Ich heiße …” or “Ich bin …”. Place: “Ich komme aus …”.",
+					"tl": "Pangalan: “Ich heiße …” o “Ich bin …”. Lugar: “Ich komme aus …”."
+				},
+				"goals": [
+					"DEMO-G2"
+				]
+			},
+			{
+				"id": "DEMO-T-G2B",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Guten Tag! Ich {{1}} Lena. Ich {{2}} aus Linz.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"heiße",
+							"bin"
+						]
+					},
+					"2": {
+						"accept": [
+							"komme"
+						]
+					}
+				},
+				"explanation": {
+					"de": "Name: „Ich heiße …“ oder „Ich bin …“. Ort: „Ich komme aus …“.",
+					"en": "Name: “Ich heiße …” or “Ich bin …”. Place: “Ich komme aus …”.",
+					"tl": "Pangalan: “Ich heiße …” o “Ich bin …”. Lugar: “Ich komme aus …”."
+				},
+				"goals": [
+					"DEMO-G2"
+				],
+				"family": "DEMO-T-G2"
+			},
+			{
+				"id": "DEMO-T-R1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Lena: „Ich wohne in Linz. Ich arbeite in Wels.“ Wo arbeitet Lena?",
+				"options": [
+					"in Linz",
+					"in Wels",
+					"in Graz"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„arbeiten“ heißt: im Beruf tätig sein. Lena arbeitet in Wels. Sie wohnt in Linz.",
+					"en": "“arbeiten” means to work. Lena works in Wels. She lives in Linz.",
+					"tl": "Ang “arbeiten” ay nangangahulugang magtrabaho. Sa Wels nagtatrabaho si Lena. Sa Linz siya nakatira."
+				},
+				"goals": [
+					"DEMO-G3"
+				]
+			},
+			{
+				"id": "DEMO-T-R1B",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Max: „Ich wohne in Villach. Ich lerne in Klagenfurt.“ Wo lernt Max?",
+				"options": [
+					"in Villach",
+					"in Klagenfurt",
+					"in Wien"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "„lernen“ heißt: Wissen bekommen. Max lernt in Klagenfurt. Er wohnt in Villach.",
+					"en": "“lernen” means to study. Max studies in Klagenfurt. He lives in Villach.",
+					"tl": "Ang “lernen” ay nangangahulugang mag-aral. Sa Klagenfurt nag-aaral si Max. Sa Villach siya nakatira."
+				},
+				"goals": [
+					"DEMO-G3"
+				],
+				"family": "DEMO-T-R1"
+			},
+			{
+				"id": "DEMO-T-R2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Das Geschäft ist von 9 bis 17 Uhr offen. Es ist 8 Uhr. Ist das Geschäft offen?",
+				"options": [
+					"Ja",
+					"Nein"
+				],
+				"answer": 1,
+				"explanation": {
+					"de": "Um 8 Uhr ist das Geschäft noch zu. Es ist erst ab 9 Uhr offen.",
+					"en": "At 8 o’clock the shop is still closed. It is only open from 9 o’clock.",
+					"tl": "Sa alas-8, sarado pa ang tindahan. Bukas lang ito mula alas-9."
+				},
+				"goals": [
+					"DEMO-G4"
+				]
+			},
+			{
+				"id": "DEMO-T-R2B",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"prompt": "Das Geschäft ist von 10 bis 16 Uhr offen. Es ist 12 Uhr. Ist das Geschäft offen?",
+				"options": [
+					"Ja",
+					"Nein"
+				],
+				"answer": 0,
+				"explanation": {
+					"de": "Um 12 Uhr ist das Geschäft offen. Es ist von 10 bis 16 Uhr offen.",
+					"en": "At 12 o’clock the shop is open. It is open from 10 to 16 o’clock.",
+					"tl": "Sa alas-12, bukas ang tindahan. Bukas ito mula alas-10 hanggang alas-4 ng hapon."
+				},
+				"goals": [
+					"DEMO-G4"
+				],
+				"family": "DEMO-T-R2"
+			},
+			{
+				"id": "DEMO-T-S1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Sehen Sie das Bild an. Antworten Sie mit einem Wort.",
+					"en": "Look at the picture. Answer with one word.",
+					"tl": "Tingnan ang larawan. Sumagot gamit ang isang salita."
+				},
+				"prompt": "Sie heißen Max. Schreiben Sie einen Satz: „Ich …“",
+				"accept": [
+					"Ich heiße Max",
+					"Ich bin Max"
+				],
+				"explanation": {
+					"de": "Name: „Ich heiße Max.“ oder „Ich bin Max.“",
+					"en": "Name: “Ich heiße Max.” or “Ich bin Max.”",
+					"tl": "Pangalan: “Ich heiße Max.” o “Ich bin Max.”"
+				},
+				"goals": [
+					"DEMO-G5"
+				]
+			},
+			{
+				"id": "DEMO-T-S1B",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Sehen Sie das Bild an. Antworten Sie mit einem Wort.",
+					"en": "Look at the picture. Answer with one word.",
+					"tl": "Tingnan ang larawan. Sumagot gamit ang isang salita."
+				},
+				"prompt": "Sie heißen Eva. Schreiben Sie einen Satz: „Ich …“",
+				"accept": [
+					"Ich heiße Eva",
+					"Ich bin Eva"
+				],
+				"explanation": {
+					"de": "Name: „Ich heiße Eva.“ oder „Ich bin Eva.“",
+					"en": "Name: “Ich heiße Eva.” or “Ich bin Eva.”",
+					"tl": "Pangalan: “Ich heiße Eva.” o “Ich bin Eva.”"
+				},
+				"goals": [
+					"DEMO-G5"
+				],
+				"family": "DEMO-T-S1"
+			},
+			{
+				"id": "DEMO-T-S2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Ich komme {{1}} Wien. Ich wohne {{2}} Graz.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"aus"
+						]
+					},
+					"2": {
+						"accept": [
+							"in"
+						]
+					}
+				},
+				"explanation": {
+					"de": "„kommen“ + „aus“ (woher?). „wohnen“ + „in“ (wo?).",
+					"en": "“kommen” + “aus” (where from?). “wohnen” + “in” (where?).",
+					"tl": "“kommen” + “aus” (galing saan?). “wohnen” + “in” (saan?)."
+				},
+				"goals": [
+					"DEMO-G6"
+				]
+			},
+			{
+				"id": "DEMO-T-S2B",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"text": "Sie kommt {{1}} Linz. Sie wohnt {{2}} Villach.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"aus"
+						]
+					},
+					"2": {
+						"accept": [
+							"in"
+						]
+					}
+				},
+				"explanation": {
+					"de": "„kommen“ + „aus“ (woher?). „wohnen“ + „in“ (wo?).",
+					"en": "“kommen” + “aus” (where from?). “wohnen” + “in” (where?).",
+					"tl": "“kommen” + “aus” (galing saan?). “wohnen” + “in” (saan?)."
+				},
+				"goals": [
+					"DEMO-G6"
+				],
+				"family": "DEMO-T-S2"
+			}
+		]
+	}
 }
