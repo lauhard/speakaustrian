@@ -9,6 +9,17 @@ describe('course', () => {
 	});
 });
 
+describe('free practice items', () => {
+	it('include practice pool items of every chapter but never test pool items', () => {
+		const ids = new Set(allItems().map((i) => i.id));
+		for (const c of chapters) {
+			for (const i of c.pools?.practice ?? []) expect(ids.has(i.id), i.id).toBe(true);
+			for (const i of c.pools?.test ?? []) expect(ids.has(i.id), i.id).toBe(false);
+		}
+		expect(ids.has('A1-01-P-SP1-1')).toBe(true);
+	});
+});
+
 describe('pickPractice', () => {
 	const items = allItems();
 	it('returns only items of the chosen filter, without duplicates', () => {
