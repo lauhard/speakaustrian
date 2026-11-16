@@ -96,6 +96,8 @@ export const ChapterRun = z.object({
 	startLives: z.number().int().positive(),
 	attempt: AttemptState,
 	seenTestItemIds: z.array(z.string()),
+	// Plan of an accepted override (SET_RECOVERY/GRANT_ATTEMPT); used once instead of the policy's plan.
+	recovery: RecoveryPlan.optional(),
 	minutesSpent: z.number()
 });
 export type ChapterRun = z.infer<typeof ChapterRun>;

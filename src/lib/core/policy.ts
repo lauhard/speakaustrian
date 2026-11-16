@@ -1,3 +1,4 @@
+import type { Discipline } from './content/schema';
 import type { ChapterId, ChapterRun, Completion, GameState, OverrideDecision, OverrideGrant, RecoveryPlan } from './state';
 
 // Rule policy (D16, docs/spec/04a §1a): the reducer does the mechanics, every rule decision is
@@ -11,10 +12,18 @@ export type RuleConfig = {
 	LIVES_BASE: number;
 	LIVES_MAX: number;
 	BONUS_MAX: number;
+	TEST_PER_DISCIPLINE: number;
+	TEST_FOCUS_EXTRA: number;
+	TEST_EXAM_EXTRA: number;
 	GATE_ITEMS: number;
 	GATE_MIN_CORRECT: number;
 	LEITNER_INTERVALS_DAYS: readonly number[];
 };
+
+// How many items per discipline a chapter test draws (R-T1).
+export type TestSpec = { quota: Partial<Record<Discipline, number>> };
+export type Focus = Discipline | 'pruefung';
+const DISCIPLINES: readonly Discipline[] = ['lesen', 'hoeren', 'schreiben', 'sprechen', 'grammatikWortschatz', 'werte'];
 
 export interface RulePolicy {
 	id: string;
@@ -22,6 +31,7 @@ export interface RulePolicy {
 	config: RuleConfig;
 	canAccessChapter(s: GameState, c: ChapterId): Access;
 	completionOnPass(s: GameState, c: ChapterId, run: ChapterRun, at: string): Completion;
+	testComposition(s: GameState, c: ChapterId): TestSpec;
 	startLives(s: GameState, c: ChapterId): number;
 	isTestReady(gate: { correct: number; answered: number }): boolean;
 	// Asked after every test answer; 'CONTINUE' (not in the 04a sketch, G-008) keeps the lives rule out of the core.
@@ -37,6 +47,10 @@ export const defaultConfig: RuleConfig = {
 	LIVES_BASE: 3,
 	LIVES_MAX: 5,
 	BONUS_MAX: 2,
+	// TEST_ITEMS = 20 of 04a §7, split as in R-T1.
+	TEST_PER_DISCIPLINE: 3,
+	TEST_FOCUS_EXTRA: 2,
+	TEST_EXAM_EXTRA: 1,
 	GATE_ITEMS: 20,
 	GATE_MIN_CORRECT: 18,
 	LEITNER_INTERVALS_DAYS: [1, 3, 7, 14, 30]
@@ -46,7 +60,11 @@ const examDone = (s: GameState, kind: string, mustPass: boolean): boolean =>
 	s.course.examHistory.some((e) => e.kind === kind && (!mustPass || e.passed));
 
 // The chapter order comes from the course content, so the policy stays free of content knowledge.
-export const makeDefaultPolicy = (chapterOrder: readonly ChapterId[], config: RuleConfig = defaultConfig): RulePolicy => ({
+export const makeDefaultPolicy = (
+	chapterOrder: readonly ChapterId[],
+	config: RuleConfig = defaultConfig,
+	focusOf: (c: ChapterId) => Focus | undefined = () => undefined
+): RulePolicy => ({
 	id: 'default',
 	version: 1,
 	config,
@@ -61,6 +79,13 @@ export const makeDefaultPolicy = (chapterOrder: readonly ChapterId[], config: Ru
 		return { allowed: true };
 	},
 	completionOnPass: (_s, _c, _run, at) => ({ reason: 'passed', at }),
+	// R-T1: 3 per discipline, +2 for the chapter focus; exam training: reading and listening 4 each.
+	testComposition: (_s, c) => {
+		const focus = focusOf(c);
+		const extra = (d: Discipline) =>
+			focus === 'pruefung' ? (d === 'lesen' || d === 'hoeren' ? config.TEST_EXAM_EXTRA : 0) : d === focus ? config.TEST_FOCUS_EXTRA : 0;
+		return { quota: Object.fromEntries(DISCIPLINES.map((d) => [d, config.TEST_PER_DISCIPLINE + extra(d)])) };
+	},
 	// R-L1, R-L3: base lives plus the bonus earned in the previous chapter, capped.
 	startLives: (s) => Math.min(config.LIVES_MAX, config.LIVES_BASE + s.course.nextChapterBonus),
 	// R-G2

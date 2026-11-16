@@ -12,7 +12,8 @@ const content: ContentInfo = {
 	chapter: () => ({ lessonIds: ['L1', 'L2'], practiceTotal: 2 }),
 	baseOf: base,
 	twinsOf: (id) => [base(id), `${base(id)}a`, `${base(id)}b`].filter((t) => t !== id),
-	goalsOf: (id) => [`goal-${base(id)}`]
+	goalsOf: (id) => [`goal-${base(id)}`],
+	refsOf: (id) => (id === 't1' ? ['W-A1-0001'] : [])
 };
 let n = 0;
 const ev = <T extends object>(e: T, at = '2026-11-16T10:00:00Z') => ({ id: `e${n++}`, at, tzOffsetMin: 60, ...e }) as unknown as GameEvent;
@@ -172,5 +173,36 @@ describe('policy seam (R-PL1, R-PL3)', () => {
 		const stub: RulePolicy = { ...policy, startLives: () => 1, outcomeAfterTest: () => 'CONTINUE' };
 		const s = play([profile, ...toTestReady('A1-01'), start('a1'), ...answers('a1', [0, 1], 2)], stub);
 		expect(attempt(s)).toMatchObject({ kind: 'TEST', idx: 2, lives: -1 });
+	});
+});
+
+describe('cards and answer streak (R-W4, R-E1)', () => {
+	const intro = ev({ type: 'LESSON_COMPLETED', chapterId: 'A1-01', lessonId: 'L0', introduced: [{ refId: 'W-A1-0001', isNoun: false }] });
+	it('R-W4: content answered right in the test moves its box-1 cards to box 2, due in 3 days', () => {
+		const s = play([profile, intro, ...toTestReady('A1-01'), start('a1'), ...answers('a1', [], 1)]);
+		expect(s.review.cards['card-W-A1-0001']).toMatchObject({ box: 2, due: '2026-11-19' });
+	});
+	it('R-W4: a wrong test answer leaves the cards where they are', () => {
+		const s = play([profile, intro, ...toTestReady('A1-01'), start('a1'), ...answers('a1', [0], 1)]);
+		expect(s.review.cards['card-W-A1-0001']).toMatchObject({ box: 1 });
+	});
+	it('T-E01/T-E02: right answers count up, a wrong one resets, the record stays', () => {
+		const s1 = play([profile, ...lessons('A1-01'), ...practice, ...gate(0)]);
+		expect(s1.answerStreak).toEqual({ current: 22, best: 22 });
+		const s2 = run(policy, s1, [start('a1'), ...answers('a1', [1], 3)]);
+		expect(s2.answerStreak).toEqual({ current: 1, best: 23 });
+	});
+});
+
+describe('override effects (T-PL04)', () => {
+	it('a granted attempt replaces the default recovery plan once', () => {
+		const plan = { errorReview: true, entry: 'TEST_READY' as const, repeatMode: false, resetLives: true, newSelection: true };
+		const stub: RulePolicy = { ...policy, acceptOverride: (_s, o) => ({ accepted: true, effects: [{ kind: 'GRANT_ATTEMPT', chapterId: o.target, plan }] }) };
+		const grant = ev({ type: 'OVERRIDE_GRANTED', grant: { grantId: 'g9', kind: 'EXTRA_RETRY', target: 'A1-01', source: 'teacher' } });
+		const s1 = play([profile, ...toTestReady('A1-01'), start('a1'), ...answers('a1', [0, 1, 2], 3), grant], stub);
+		expect(s1.overrides).toHaveLength(1);
+		const s2 = run(stub, s1, review(s1));
+		expect(s2.course.chapter).toMatchObject({ attemptNo: 2, attempt: { kind: 'TEST_READY' } });
+		expect(s2.course.chapter!.recovery).toBeUndefined();
 	});
 });

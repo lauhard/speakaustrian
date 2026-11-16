@@ -1,5 +1,6 @@
 import type { RulePolicy } from './policy';
-import { addCards, addErrorCard, answerCard, errorCardId, type Direction, type Introduced } from './review';
+import { seeded, shuffle } from './random';
+import { addCards, addDays, addErrorCard, answerCard, errorCardId, type Direction, type Introduced } from './review';
 import { initialState, type AttemptState, type ChapterId, type ChapterRun, type CoursePhase, type GameState, type LocalDate, type OverrideEffect, type OverrideGrant, type PensumMin, type RecoveryPlan } from './state';
 
 // Pure core (docs/spec/04a §1): no I/O, no Date.now(). Time comes only from the event.
@@ -30,8 +31,10 @@ export type ContentInfo = {
 	// All other items of the same twin family.
 	twinsOf(itemId: string): readonly string[];
 	goalsOf(itemId: string): readonly string[];
+	// Review card refs (vocabulary ids) an item tests (R-W4).
+	refsOf(itemId: string): readonly string[];
 };
-export const noContent: ContentInfo = { chapter: () => undefined, baseOf: (id) => id, twinsOf: () => [], goalsOf: () => [] };
+export const noContent: ContentInfo = { chapter: () => undefined, baseOf: (id) => id, twinsOf: () => [], goalsOf: () => [], refsOf: () => [] };
 
 export type Reducer = (state: GameState, event: GameEvent) => GameState;
 
@@ -66,22 +69,6 @@ const enterPhase = (policy: RulePolicy, s: GameState, phase: CoursePhase): GameS
 	course: { ...s.course, phase, chapter: phase.kind === 'CHAPTER' ? newRun(policy, s, phase.id) : null }
 });
 
-// Deterministic shuffle from a string seed, so the correction round is reproducible from the events.
-const seeded = (seed: string): (() => number) => {
-	let h = [...seed].reduce((acc, ch) => Math.imul(acc ^ ch.charCodeAt(0), 16777619), 2166136261) >>> 0;
-	return () => {
-		h = (h + 0x6d2b79f5) >>> 0;
-		const t = Math.imul(h ^ (h >>> 15), 1 | h);
-		const u = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-		return ((u ^ (u >>> 14)) >>> 0) / 4294967296;
-	};
-};
-const shuffle = <T>(list: readonly T[], random: () => number): T[] =>
-	list
-		.map((value) => ({ value, key: random() }))
-		.sort((a, b) => a.key - b.key)
-		.map((x) => x.value);
-
 // R-K1, R-K3: one twin per wrong item, preferably one not used in this test, else the least recently seen.
 const pickTwins = (content: ContentInfo, run: ChapterRun, wrong: readonly string[], inTest: readonly string[], seed: string): string[] => {
 	const lastSeen = (id: string) => run.seenTestItemIds.lastIndexOf(id);
@@ -111,7 +98,11 @@ const entryState = (content: ContentInfo, id: ChapterId, plan: Pick<RecoveryPlan
 
 // R-PL3: effects of an accepted override run through the normal mechanics.
 const applyEffect = (policy: RulePolicy, order: readonly ChapterId[], s: GameState, effect: OverrideEffect): GameState => {
-	if (effect.kind !== 'COMPLETE_CHAPTER') return s; // recovery effects follow with the chapter test step
+	if (effect.kind !== 'COMPLETE_CHAPTER') {
+		// SET_RECOVERY / GRANT_ATTEMPT: the plan waits in the run and replaces the policy's plan once (T-PL04).
+		const run = s.course.chapter;
+		return run && run.id === effect.chapterId ? { ...s, course: { ...s.course, chapter: { ...run, recovery: effect.plan } } } : s;
+	}
 	const withCompletion: GameState = {
 		...s,
 		course: { ...s.course, completed: { ...s.course.completed, [effect.chapterId]: effect.completion } }
@@ -133,6 +124,23 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 		...base,
 		review: { ...base.review, cards: addErrorCard(base.review.cards, content.baseOf(itemId), today) }
 	});
+	// R-E1: consecutive right, automatically graded answers; a wrong one resets, the record stays.
+	const counted = (base: GameState, correct: boolean): GameState => {
+		const current = correct ? base.answerStreak.current + 1 : 0;
+		return { ...base, answerStreak: { current, best: Math.max(base.answerStreak.best, current) } };
+	};
+	const graded = (base: GameState, itemId: string, correct: boolean): GameState => counted(correct ? base : withError(base, itemId), correct);
+	// R-W4: content answered right in the chapter test lifts its cards from box 1 to box 2.
+	const promote = (base: GameState, itemId: string): GameState => {
+		const refs = content.refsOf(itemId);
+		const cards = Object.fromEntries(
+			Object.entries(base.review.cards).map(([id, c]) => [
+				id,
+				c.box === 1 && c.kind !== 'error' && refs.includes(c.refId) ? { ...c, box: 2 as const, due: addDays(today, policy.config.LEITNER_INTERVALS_DAYS[1]) } : c
+			])
+		);
+		return { ...base, review: { ...base.review, cards } };
+	};
 	// R-F2: book the completion, the bonus and the perfect streak, then let the course automaton move on.
 	const pass = (base: GameState, current: ChapterRun, perfectFirst: boolean): GameState => {
 		const streak = perfectFirst ? base.course.perfectStreak.current + 1 : 0;
@@ -151,12 +159,13 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 	const nextAttempt = (base: GameState, current: ChapterRun, plan: RecoveryPlan): GameState =>
 		withRun(base, {
 			...current,
+			recovery: undefined,
 			attemptNo: current.attemptNo + 1,
 			startLives: plan.resetLives ? policy.startLives(base, current.id) : current.startLives,
 			attempt: entryState(content, current.id, plan)
 		});
 	const fail = (base: GameState, current: ChapterRun, wrong: readonly string[]): GameState => {
-		const plan = policy.recoveryAfterFail(base, current);
+		const plan = current.recovery ?? policy.recoveryAfterFail(base, current);
 		if (!plan.errorReview) return nextAttempt(base, current, plan);
 		const cardIds = [...new Set(wrong.map((item) => errorCardId(content.baseOf(item))))];
 		return withRun(base, { ...current, attempt: { kind: 'ERROR_REVIEW', cardIds, done: [] } });
@@ -187,7 +196,7 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 		case 'PRACTICE_ANSWERED': {
 			if (!run || run.attempt.kind !== 'PRACTICE') return s;
 			const answered = run.attempt.answered + 1;
-			const booked = event.correct ? s : withError(s, event.itemId);
+			const booked = graded(s, event.itemId, event.correct);
 			return withAttempt(booked, answered >= run.attempt.total ? gateBlock(1) : { ...run.attempt, answered });
 		}
 		case 'GATE_ANSWERED': {
@@ -201,7 +210,7 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 				answered: g.answered + 1
 			};
 			// R-G3: only errors touch the cards.
-			const booked = event.correct ? s : withError(s, event.itemId);
+			const booked = graded(s, event.itemId, event.correct);
 			if (gate.answered < policy.config.GATE_ITEMS) return withAttempt(booked, gate);
 			if (policy.isTestReady(gate)) return withAttempt(booked, { kind: 'TEST_READY' });
 			const goalIds = [...new Set(gate.wrong.flatMap((item) => content.goalsOf(item)))];
@@ -228,7 +237,7 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 				lives: t.lives - Number(!event.correct),
 				wrong: event.correct ? t.wrong : [...t.wrong, event.itemId]
 			};
-			const booked = event.correct ? s : withError(s, event.itemId);
+			const booked = event.correct ? promote(counted(s, true), event.itemId) : graded(s, event.itemId, false);
 			const current: ChapterRun = { ...run, attempt: test };
 			switch (policy.outcomeAfterTest(current)) {
 				case 'CONTINUE':
@@ -248,7 +257,7 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 		case 'CORRECTION_ANSWERED': {
 			const c = run?.attempt;
 			if (!run || !c || c.kind !== 'CORRECTION' || c.attemptId !== event.attemptId || c.twins[c.idx] !== event.twinId) return s;
-			const booked = event.correct ? s : withError(s, event.twinId);
+			const booked = graded(s, event.twinId, event.correct);
 			const current: ChapterRun = { ...run, attempt: { ...c, idx: c.idx + 1 } };
 			if (event.correct && c.idx + 1 < c.twins.length) return withRun(booked, current);
 			return policy.outcomeAfterCorrection(current, event.correct) === 'PASSED' ? pass(booked, current, false) : fail(booked, current, c.twins);
@@ -259,14 +268,14 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 			if (!run || !r || r.kind !== 'ERROR_REVIEW' || !event.correct || !r.cardIds.includes(event.cardId) || r.done.includes(event.cardId)) return s;
 			const done = [...r.done, event.cardId];
 			if (done.length < r.cardIds.length) return withAttempt(s, { ...r, done });
-			return nextAttempt(s, run, policy.recoveryAfterFail(s, run));
+			return nextAttempt(s, run, run.recovery ?? policy.recoveryAfterFail(s, run));
 		}
 		case 'REVIEW_ANSWERED': {
 			const card = s.review.cards[event.cardId];
 			// Only a due card in its current direction is booked (idempotent against double taps).
 			if (!card || card.mastered || card.due > today || card.nextDirection !== event.direction) return s;
 			const next = answerCard(card, event.correct, today, policy.config);
-			return { ...s, review: { ...s.review, cards: { ...s.review.cards, [card.id]: next } } };
+			return counted({ ...s, review: { ...s.review, cards: { ...s.review.cards, [card.id]: next } } }, event.correct);
 		}
 		case 'OVERRIDE_GRANTED': {
 			if (s.overrides.some((o) => o.grant.grantId === event.grant.grantId)) return s;

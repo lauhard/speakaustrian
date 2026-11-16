@@ -9,7 +9,7 @@ import type { StoragePort } from './ports/storage.ts';
 // Composition root: the only place that touches clock, random ids and storage.
 // Everything below `dispatch` is the pure core.
 const order = course.chapters.map((c) => c.id);
-export const policy = makeDefaultPolicy(order);
+export const policy = makeDefaultPolicy(order, undefined, (c) => course.chapters.find((ch) => ch.id === c)?.focus);
 const reduce = makeReducer(policy, order);
 
 type Input = GameEvent extends infer E ? (E extends GameEvent ? Omit<E, 'id' | 'at' | 'tzOffsetMin'> : never) : never;
