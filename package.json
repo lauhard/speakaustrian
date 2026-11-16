@@ -12,13 +12,14 @@
 		"build": "wrangler types && vite build",
 		"preview": "wrangler dev .svelte-kit/cloudflare/_worker.js --port 4173",
 		"prepare": "svelte-kit sync || echo ''",
-		"check": "wrangler types && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check": "pnpm i18n && wrangler types && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:e2e": "playwright test",
 		"test": "vitest run",
 		"gen": "wrangler types",
 		"test:watch": "vitest",
-		"deploy": "pnpm build && wrangler deploy"
+		"deploy": "pnpm build && wrangler deploy",
+		"i18n": "paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide --emit-ts-declarations --silent"
 	},
 	"devDependencies": {
 		"@inlang/paraglide-js": "^2.18.2",
