@@ -20,10 +20,8 @@ Learning game for the Austrian ÖIF integration exam A2 (A1 → A2). Spec is ~80
 - **Agents never invent rules, numbers or exam facts.** If the spec is silent, ambiguous or contradicts the repo: append an entry to `docs/spec-gaps.md` (format inside) and **stop** that part. Gaps are resolved in the Claude project chat (architecture/design/spec only), then synced back into `docs/spec/`.
 - Exam facts only from `00-quellen.md`. Austrian German (D10) is the main form; German-German forms always marked.
 
-## Workflow (D17)
-`docs/tickets/README.md` – backlog → plan one ticket → branch `t/NNN-slug` → tests from acceptance criteria → Andi implements manually → tests green → push.
-Commands: `/backlog`, `/ticket-plan NNN`, `/ticket-test NNN`, `/ticket-done NNN`. Agents: `planner`, `tester` (`.claude/agents/`).
-**Do not write production code in `src/` unless Andi explicitly asks** – he implements. Tests, ticket docs, configs on request are fine.
+## Workflow (D23)
+Claude implements. Small vertical steps from `docs/ROADMAP.md`: branch `t/NNN-slug` → code + tests → `pnpm check && pnpm test` (+ e2e for UI flows) → PR → CI green → squash-merge to `main` → Cloudflare deploys to https://speakaustrian.lauhard.workers.dev. Update `docs/ROADMAP.md` in the same PR. Never push straight to `main`. Ticket files (`docs/tickets/`) only for steps that need a written plan.
 
 ## Commands
 `pnpm install` · `pnpm dev` · `pnpm check` · `pnpm test` (Vitest, core) · `pnpm test:e2e` (Playwright; set `PW_CHROMIUM` to reuse an installed browser) · `pnpm build` · `pnpm deploy`.

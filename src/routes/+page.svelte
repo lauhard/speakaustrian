@@ -4,12 +4,18 @@
 	import { m } from '#lib/paraglide/messages.js';
 	import { newProfile, storage } from '#lib/profile.ts';
 	import type { Profile } from '#lib/ports/storage.ts';
+	import { getLocale } from '#lib/paraglide/runtime.js';
+	import { chapterContent, course, PREVIEW_CHAPTER } from '#lib/content/index.ts';
+
+	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
+	const levels = ['A1', 'A2'] as const;
+	const doneCount = (chapterId: string) =>
+		chapterContent(chapterId)?.lessons.filter((l) => profile?.lessonsDone.includes(l.id)).length ?? 0;
 
 	let profile = $state<Profile | null>(null);
 	let ready = $state(false);
 	let name = $state('');
 
-	const last = $derived(profile?.results.at(-1));
 
 	onMount(() => {
 		profile = storage()?.load() ?? null;
@@ -37,17 +43,48 @@
 		<p aria-busy="true" class="text-stone-500">…</p>
 	{:else if profile}
 		<h1 class="text-2xl font-bold">{m.welcome_back({ name: profile.name })}</h1>
-		{#if last}
-			<p class="text-stone-700" data-testid="last-result">
-				{m.last_result({ correct: last.correct, total: last.total })}
-			</p>
-		{/if}
 		<a
-			href={resolve('/lesson')}
-			data-testid="start-lesson"
-			class="block rounded-xl bg-red-700 px-4 py-4 text-center text-lg font-semibold text-white no-underline"
+			href={resolve('/practice')}
+			data-testid="free-practice"
+			class="block rounded-xl border-2 border-red-700 px-4 py-3 text-center text-lg font-semibold text-red-700 no-underline"
 		>
-			{m.start_lesson()}
+			{m.free_practice()}
+		</a>
+
+		{#each levels as level (level)}
+			<h2 class="pt-2 text-xl font-bold">{level}</h2>
+			<ol class="space-y-2">
+				{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter (chapter.id)}
+					{@const content = chapterContent(chapter.id)}
+					<li>
+						{#if content}
+							<a
+								href={resolve('/chapter/[id]', { id: chapter.id })}
+								data-testid="chapter-{chapter.id}"
+								class="block rounded-xl border border-stone-300 bg-white px-4 py-3 no-underline"
+							>
+								<span class="text-sm text-stone-500">{chapter.id} · {doneCount(chapter.id)}/{content.lessons.length} {m.lessons()}</span>
+								<span class="block font-semibold" lang="de">{chapter.title.de}</span>
+								{#if helpLocale !== 'de'}<span class="block text-sm text-stone-600">{chapter.title[helpLocale]}</span>{/if}
+							</a>
+						{:else}
+							<div class="rounded-xl border border-stone-200 px-4 py-3 text-stone-500">
+								<span class="text-sm">{chapter.id} · {m.chapter_soon()}</span>
+								<span class="block" lang="de">{chapter.title.de}</span>
+							</div>
+						{/if}
+					</li>
+				{/each}
+			</ol>
+		{/each}
+
+		<h2 class="pt-2 text-xl font-bold">{m.preview()}</h2>
+		<a
+			href={resolve('/chapter/[id]', { id: PREVIEW_CHAPTER })}
+			data-testid="chapter-preview"
+			class="block rounded-xl border border-stone-300 bg-white px-4 py-3 no-underline"
+		>
+			<span class="block font-semibold" lang="de">{chapterContent(PREVIEW_CHAPTER)?.lessons[0].title.de}</span>
 		</a>
 		<button type="button" class="text-sm text-stone-600 underline" onclick={reset}>{m.change_name()}</button>
 	{:else}

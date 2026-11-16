@@ -1,10 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { demoLesson } from '../content/demo';
-import { Lesson, type Item } from './content/schema';
+import { allItems, chapters } from '../content/index';
+import { ChapterContent, type Item } from './content/schema';
 import { fold, gradeItem, gradeText, parseCloze, passes } from './grading';
 
 const cloze: Item = {
 	id: 'T-1',
+	skill: 'grammatikWortschatz',
 	type: 'cloze',
 	instruction: { de: 'a', en: 'a', tl: 'a' },
 	explanation: { de: 'a', en: 'a', tl: 'a' },
@@ -68,8 +69,9 @@ describe('parseCloze', () => {
 });
 
 describe('content schema', () => {
-	it('accepts the demo lesson and every item is solvable with its first accepted answer', () => {
-		for (const item of demoLesson.items) {
+	it('every item of every chapter is solvable with its first accepted answer', () => {
+		expect(chapters.length).toBeGreaterThan(0);
+		for (const item of allItems()) {
 			const response =
 				item.type === 'choice'
 					? { type: 'choice' as const, selected: item.answer }
@@ -83,7 +85,8 @@ describe('content schema', () => {
 		}
 	});
 	it('rejects a cloze whose gaps do not match the text', () => {
-		const broken = { schemaVersion: 1, id: 'x', title: cloze.instruction, tlReviewStatus: 'machine', items: [{ ...cloze, gaps: { '1': { accept: ['a'] } } }] };
-		expect(Lesson.safeParse(broken).success).toBe(false);
+		const lesson = { id: 'x', title: cloze.instruction, items: [{ ...cloze, gaps: { '1': { accept: ['a'] } } }] };
+		const broken = { schemaVersion: 1, chapterId: 'X', tlReviewStatus: 'machine', lessons: [lesson] };
+		expect(ChapterContent.safeParse(broken).success).toBe(false);
 	});
 });

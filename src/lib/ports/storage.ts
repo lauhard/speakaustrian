@@ -11,7 +11,9 @@ export const Profile = z.object({
 	schema: z.literal(1),
 	name: z.string().min(1),
 	createdAt: z.string(),
-	results: z.array(LessonResult)
+	results: z.array(LessonResult),
+	// Ids of micro lessons finished at least once.
+	lessonsDone: z.array(z.string()).default([])
 });
 export type Profile = z.infer<typeof Profile>;
 

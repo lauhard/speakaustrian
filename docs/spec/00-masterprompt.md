@@ -8,7 +8,7 @@
 >
 > **Revision 4.1 (06.11.2026):** Entscheidung **D17** (Repo, Audio vorerst nur Geräte-TTS, Ticket-Workflow) eingearbeitet (Abschn. 3c). Geändert: Phase 6 (Einleitung, 6.8 Repo-Name `speakaustrian`). **Widerspruch zu D13 (benannt):** Selbst erzeugte Hördateien sind zurückgestellt; Risiko R6 (Hörtexte im Prüfungsformat nur mit Geräte-TTS) bleibt offen. **Repo-Abweichungen** zur Spezifikation (Adapter, Speicher, i18n, Testwerkzeug) sind nicht entschieden, sondern in `docs/spec-gaps.md` gelistet.
 >
-> **Revision 4.2 (16.11.2026):** Entscheidungen **D18–D21** eingearbeitet (Abschn. 3d): Hosting auf Cloudflare statt Artifact, Fortschritt nur lokal ohne Datenbank, paraglide nur für UI, Aufgabentypen Lückentext und Bild. Phase 6.1 (Artifact-Stufe) ist dadurch überholt.
+> **Revision 4.2 (16.11.2026):** Entscheidungen **D18–D23** eingearbeitet (Abschn. 3d; D22 Frei üben, D23 Umsetzung durch Claude mit laufender Veröffentlichung – ersetzt D17d teilweise): Hosting auf Cloudflare statt Artifact, Fortschritt nur lokal ohne Datenbank, paraglide nur für UI, Aufgabentypen Lückentext und Bild. Phase 6.1 (Artifact-Stufe) ist dadurch überholt.
 
 ---
 
@@ -105,12 +105,14 @@ Das Endprodukt ist ein **interaktives Lernspiel**, das über einen **Link für D
 
 ---
 
-## 3d. Entscheidungen D18–D21 (bestätigt am 16.11.2026)
+## 3d. Entscheidungen D18–D23 (bestätigt am 16.11.2026)
 
 - **D18 – Hosting: Cloudflare Workers.** Die App wird als SvelteKit-App mit `adapter-cloudflare` auf Cloudflare gehostet, Deploy automatisch aus dem Git-Repo. **Die Auslieferung als Claude-Artifact entfällt;** Artifacts dienen nur noch dazu, einzelne Features schnell zu testen. Damit entfallen die Artifact-Regeln (Größenlimit, kein Mikrofon, erlaubte CDNs) und der Weg „Claude im Viewer“ für Tutor und Feedback (offen: `docs/spec-gaps.md` G-007). **Widerspruch zu Abschn. 6.1 (benannt):** Die dort beschriebene Stufe 1 gilt nicht mehr.
 - **D19 – Speicher:** Fortschritt bleibt **nur lokal** auf dem Gerät (localStorage, Export/Import). Das Datenbank-Gerüst (drizzle, better-sqlite3) ist entfernt; es lief auf Workers ohnehin nicht. Serverseitiger Speicher (KV/D1) braucht eine eigene Entscheidung.
 - **D20 – Übersetzungen:** paraglide nur für UI-Texte (de/en/tl); Inhalte tragen ihre Übersetzungen als `{de,en,tl}` im Content-JSON.
 - **D21 – Aufgabentypen Lückentext und Bild:** Lückentexte werden **je Lücke ausgewertet** (mehrere akzeptierte Antworten möglich). **Bildaufgaben:** Jeder Aufgabentyp (Auswahl, Lückentext, Kurzantwort) kann ein Bild als Stimulus tragen, aus dem Fragen abgeleitet werden („Welche Jahreszeit ist auf dem Bild?“ → „Sommer“). Bilder sind **vordefinierte, geprüfte Dateien**, die bei der Content-Erstellung entstehen (auch KI-generiert), nicht zur Laufzeit – so bleiben Aufgaben prüfbar, kostenlos und identisch für alle. Offen: Umgang mit Fast-Treffern (G-006), Umfang der Bildaufgaben (G-008).
+- **D22 – Frei üben:** Zusätzlich zum Kurs gibt es einen Bereich „Frei üben“: Die Lernende wählt eine Disziplin (Lesen, Hören, Schreiben, Sprechen, Grammatik und Wörter, Werte) oder „Bilder“ und bekommt Aufgaben aus den zugänglichen Kapiteln – ohne Leben, ohne Einfluss auf Kapitelfortschritt, Testreife oder Streak-Regeln. Der Kurs selbst bleibt gemischt (Interleaving, die Prüfung verlangt alle Teile); R-F1 (lineare Freischaltung) bleibt unberührt.
+- **D23 – Umsetzung durch Claude, laufend veröffentlicht:** Claude implementiert selbst, in kleinen Schritten; jeder Schritt geht nach grüner CI auf `main` und ist damit sofort auf `speakaustrian.lauhard.workers.dev` nutzbar. **Ersetzt D17d**, soweit dort „Andi implementiert manuell“ steht; die Reihenfolge der Schritte steht in `docs/ROADMAP.md`. Spec-Lücken gehen weiter über `docs/spec-gaps.md`.
 
 ---
 

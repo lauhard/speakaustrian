@@ -1,0 +1,720 @@
+{
+	"schemaVersion": 1,
+	"chapterId": "A1-01",
+	"tlReviewStatus": "machine",
+	"lessons": [
+		{
+			"id": "A1-01-L01",
+			"title": {
+				"de": "Grüß Gott und Servus",
+				"en": "Hello and goodbye",
+				"tl": "Pagbati at pagpapaalam"
+			},
+			"cards": [
+				{
+					"phrase": "Grüß Gott!",
+					"note": {
+						"de": "So grüßt man in Österreich – den ganzen Tag, bei allen Leuten.",
+						"en": "The standard greeting in Austria – all day, with everyone.",
+						"tl": "Karaniwang pagbati sa Austria – buong araw, sa lahat ng tao."
+					}
+				},
+				{
+					"phrase": "Guten Morgen! Guten Tag! Guten Abend!",
+					"note": {
+						"de": "Morgen – Tag – Abend: Der Gruß passt zur Tageszeit.",
+						"en": "Morning – day – evening: the greeting matches the time of day.",
+						"tl": "Umaga – araw – gabi: bagay ang pagbati sa oras."
+					}
+				},
+				{
+					"phrase": "Gute Nacht!",
+					"note": {
+						"de": "Nur, wenn man schlafen geht.",
+						"en": "Only when someone is going to bed.",
+						"tl": "Kapag matutulog na lang."
+					}
+				},
+				{
+					"phrase": "Servus! Hallo!",
+					"note": {
+						"de": "Für Freunde und Familie. „Servus“ sagt man beim Kommen und beim Gehen.",
+						"en": "For friends and family. “Servus” works for hello and for goodbye.",
+						"tl": "Para sa kaibigan at pamilya. Ang “Servus” ay pambati at pamamaalam."
+					}
+				},
+				{
+					"phrase": "Auf Wiedersehen! Tschüss!",
+					"note": {
+						"de": "Beim Gehen. „Auf Wiedersehen“ ist höflich, „Tschüss“ ist für Freunde.",
+						"en": "When you leave. “Auf Wiedersehen” is polite, “Tschüss” is for friends.",
+						"tl": "Kapag aalis. Magalang ang “Auf Wiedersehen”, pangkaibigan ang “Tschüss”."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L01-I1",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Es ist Abend. Sie kommen. Was sagen Sie?",
+						"en": "It is evening. You arrive. What do you say?",
+						"tl": "Gabi na. Dumating ka. Ano ang sasabihin mo?"
+					},
+					"options": [
+						"Guten Abend!",
+						"Gute Nacht!",
+						"Auf Wiedersehen!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Am Abend sagt man „Guten Abend“. „Gute Nacht“ sagt man nur, wenn man schlafen geht.",
+						"en": "In the evening you say “Guten Abend”. “Gute Nacht” is only for going to bed.",
+						"tl": "Sa gabi, “Guten Abend”. Ang “Gute Nacht” ay kapag matutulog na."
+					}
+				},
+				{
+					"id": "A1-01-L01-I2",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie gehen. Was sagen Sie zu Frau Huber?",
+						"en": "You are leaving. What do you say to Ms Huber?",
+						"tl": "Aalis ka na. Ano ang sasabihin mo kay Gng. Huber?"
+					},
+					"options": [
+						"Auf Wiedersehen!",
+						"Grüß Gott!",
+						"Guten Morgen!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Beim Gehen sagt man höflich „Auf Wiedersehen“. „Grüß Gott“ sagt man beim Kommen.",
+						"en": "When leaving you politely say “Auf Wiedersehen”. “Grüß Gott” is for arriving.",
+						"tl": "Kapag aalis, magalang na “Auf Wiedersehen”. Ang “Grüß Gott” ay pagdating."
+					}
+				},
+				{
+					"id": "A1-01-L01-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was hören Sie?",
+						"en": "Listen. What do you hear?",
+						"tl": "Makinig. Ano ang naririnig mo?"
+					},
+					"options": [
+						"Servus!",
+						"Tschüss!",
+						"Hallo!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Sie hören: „Servus!“ – ein Gruß für Freunde, typisch für Österreich.",
+						"en": "You hear “Servus!” – a greeting for friends, typical for Austria.",
+						"tl": "Narinig mo: “Servus!” – pagbati sa kaibigan, tipikal sa Austria."
+					},
+					"audioText": "Servus!",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L01-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ein Freund kommt. Was passt?",
+						"en": "A friend arrives. What fits?",
+						"tl": "Dumating ang kaibigan. Alin ang bagay?"
+					},
+					"options": [
+						"Servus!",
+						"Auf Wiedersehen!",
+						"Gute Nacht!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Zu Freunden sagt man „Servus“ oder „Hallo“.",
+						"en": "With friends you say “Servus” or “Hallo”.",
+						"tl": "Sa kaibigan, “Servus” o “Hallo”."
+					}
+				},
+				{
+					"id": "A1-01-L01-I5",
+					"type": "cloze",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Sie kommen: Grüß {{1}}! Sie gehen: Auf {{2}}!",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Gott"
+							]
+						},
+						"2": {
+							"accept": [
+								"Wiedersehen"
+							]
+						}
+					},
+					"explanation": {
+						"de": "„Grüß Gott“ beim Kommen, „Auf Wiedersehen“ beim Gehen. „Gott“ und „Wiedersehen“ schreibt man groß.",
+						"en": "“Grüß Gott” when arriving, “Auf Wiedersehen” when leaving. “Gott” and “Wiedersehen” start with a capital letter.",
+						"tl": "“Grüß Gott” pagdating, “Auf Wiedersehen” pag-alis. Malaking titik ang simula ng “Gott” at “Wiedersehen”."
+					}
+				},
+				{
+					"id": "A1-01-L01-I6",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was hören Sie?",
+						"en": "Listen. What do you hear?",
+						"tl": "Makinig. Ano ang naririnig mo?"
+					},
+					"options": [
+						"Guten Abend!",
+						"Guten Morgen!",
+						"Gute Nacht!"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Sie hören: „Guten Morgen!“",
+						"en": "You hear: “Guten Morgen!”",
+						"tl": "Narinig mo: “Guten Morgen!”"
+					},
+					"audioText": "Guten Morgen!",
+					"audioOnly": true
+				}
+			]
+		},
+		{
+			"id": "A1-01-L02",
+			"title": {
+				"de": "Ich heiße …",
+				"en": "My name is …",
+				"tl": "Ang pangalan ko ay …"
+			},
+			"cards": [
+				{
+					"phrase": "Ich heiße Maria Santos.",
+					"note": {
+						"de": "So sagen Sie Ihren Namen.",
+						"en": "This is how you say your name.",
+						"tl": "Ganito sabihin ang pangalan mo."
+					}
+				},
+				{
+					"phrase": "Ich bin Maria.",
+					"note": {
+						"de": "Kürzer und auch richtig.",
+						"en": "Shorter and also correct.",
+						"tl": "Mas maikli at tama rin."
+					}
+				},
+				{
+					"phrase": "Wie heißen Sie?",
+					"note": {
+						"de": "So fragen Sie höflich nach dem Namen.",
+						"en": "The polite way to ask for a name.",
+						"tl": "Magalang na pagtatanong ng pangalan."
+					}
+				},
+				{
+					"phrase": "Vorname: Maria. Familienname: Santos.",
+					"note": {
+						"de": "Der Vorname steht vorne, der Familienname hinten.",
+						"en": "The first name comes first, the family name last.",
+						"tl": "Nauuna ang Vorname (pangalan), kasunod ang Familienname (apelyido)."
+					}
+				},
+				{
+					"phrase": "Grüß Gott, Frau Santos! Grüß Gott, Herr Huber!",
+					"note": {
+						"de": "„Frau“ und „Herr“ stehen immer mit dem Familiennamen.",
+						"en": "“Frau” and “Herr” always go with the family name.",
+						"tl": "Laging kasama ng apelyido ang “Frau” at “Herr”."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L02-I1",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie das fehlende Wort.",
+						"en": "Write the missing word.",
+						"tl": "Isulat ang nawawalang salita."
+					},
+					"text": "Grüß Gott! Ich {{1}} Jonas Huber.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"heiße",
+								"bin"
+							]
+						}
+					},
+					"explanation": {
+						"de": "„Ich heiße …“ oder „Ich bin …“ – beides ist richtig. Bei „ich“ endet das Verb auf -e: ich heiße.",
+						"en": "“Ich heiße …” or “Ich bin …” – both are correct. With “ich” the verb ends in -e: ich heiße.",
+						"tl": "“Ich heiße …” o “Ich bin …” – parehong tama. Kapag “ich”, -e ang dulo ng pandiwa: ich heiße."
+					}
+				},
+				{
+					"id": "A1-01-L02-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Was ist der Familienname?",
+						"en": "Read. What is the family name?",
+						"tl": "Basahin. Alin ang apelyido?"
+					},
+					"options": [
+						"Santos",
+						"Maria",
+						"Frau"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Maria ist der Vorname, Santos ist der Familienname.",
+						"en": "Maria is the first name, Santos is the family name.",
+						"tl": "Maria ang pangalan, Santos ang apelyido."
+					},
+					"prompt": "„Ich heiße Maria Santos.“"
+				},
+				{
+					"id": "A1-01-L02-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Jonas Huber kommt. Was passt?",
+						"en": "Jonas Huber arrives. What fits?",
+						"tl": "Dumating si Jonas Huber. Alin ang bagay?"
+					},
+					"options": [
+						"Grüß Gott, Herr Huber!",
+						"Grüß Gott, Frau Huber!",
+						"Grüß Gott, Herr Jonas!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Jonas ist ein Mann: „Herr“. Nach „Herr“ steht der Familienname, nicht der Vorname.",
+						"en": "Jonas is a man: “Herr”. After “Herr” comes the family name, not the first name.",
+						"tl": "Lalaki si Jonas: “Herr”. Apelyido ang kasunod ng “Herr”, hindi pangalan."
+					}
+				},
+				{
+					"id": "A1-01-L02-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Wie {{1}} Sie? – Ich {{2}} Anna Gruber.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"heißen"
+							]
+						},
+						"2": {
+							"accept": [
+								"heiße",
+								"bin"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Bei „Sie“ endet das Verb auf -en: Sie heißen. Bei „ich“ auf -e: ich heiße.",
+						"en": "With “Sie” the verb ends in -en: Sie heißen. With “ich” in -e: ich heiße.",
+						"tl": "Kapag “Sie”, -en ang dulo: Sie heißen. Kapag “ich”, -e: ich heiße."
+					}
+				},
+				{
+					"id": "A1-01-L02-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist der Vorname?",
+						"en": "Listen. What is the first name?",
+						"tl": "Makinig. Alin ang pangalan (Vorname)?"
+					},
+					"options": [
+						"Gruber",
+						"Anna",
+						"Frau"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Sie hören: „Ich heiße Anna Gruber.“ Anna ist der Vorname.",
+						"en": "You hear: “Ich heiße Anna Gruber.” Anna is the first name.",
+						"tl": "Narinig mo: “Ich heiße Anna Gruber.” Anna ang pangalan."
+					},
+					"audioText": "Ich heiße Anna Gruber.",
+					"audioOnly": true
+				}
+			]
+		},
+		{
+			"id": "A1-01-L03",
+			"title": {
+				"de": "du oder Sie?",
+				"en": "du or Sie?",
+				"tl": "du o Sie?"
+			},
+			"cards": [
+				{
+					"phrase": "Wie heißen Sie?",
+					"note": {
+						"de": "„Sie“ sagt man zu Erwachsenen, die man nicht gut kennt: im Amt, beim Arzt, in der Arbeit. „Sie“ schreibt man immer groß.",
+						"en": "Use “Sie” with adults you do not know well: at an office, at the doctor's, at work. “Sie” always has a capital S.",
+						"tl": "“Sie” ang gamit sa mga nasa hustong gulang na hindi mo gaanong kilala: sa opisina, sa doktor, sa trabaho. Laging malaking S."
+					}
+				},
+				{
+					"phrase": "Wie heißt du?",
+					"note": {
+						"de": "„du“ sagt man zu Freunden, zur Familie und zu Kindern.",
+						"en": "Use “du” with friends, family and children.",
+						"tl": "“du” ang gamit sa kaibigan, pamilya at mga bata."
+					}
+				},
+				{
+					"phrase": "Woher kommen Sie? – Ich komme aus Österreich.",
+					"note": {
+						"de": "So fragt und sagt man, aus welchem Land man kommt.",
+						"en": "How to ask and say which country you are from.",
+						"tl": "Ganito itanong at sabihin kung saang bansa ka galing."
+					}
+				},
+				{
+					"phrase": "Woher kommst du? – Ich komme von den Philippinen.",
+					"note": {
+						"de": "Bei den Philippinen sagt man „von den“.",
+						"en": "With the Philippines you say “von den”.",
+						"tl": "Para sa Pilipinas, “von den” ang ginagamit."
+					}
+				},
+				{
+					"phrase": "Wer sind Sie? – Ich bin Frau Huber.",
+					"note": {
+						"de": "sein: ich bin – du bist – Sie sind.",
+						"en": "sein (to be): ich bin – du bist – Sie sind.",
+						"tl": "sein: ich bin – du bist – Sie sind."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L03-I1",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie sind bei einer Ärztin. Was fragen Sie?",
+						"en": "You are at a doctor's. What do you ask?",
+						"tl": "Nasa doktor ka. Ano ang itatanong mo?"
+					},
+					"options": [
+						"Wie heißen Sie?",
+						"Wie heißt du?"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Zu einer Ärztin sagt man „Sie“.",
+						"en": "You say “Sie” to a doctor.",
+						"tl": "“Sie” ang gamit sa doktor."
+					}
+				},
+				{
+					"id": "A1-01-L03-I2",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie sprechen mit einem Kind. Was fragen Sie?",
+						"en": "You are talking to a child. What do you ask?",
+						"tl": "Kausap mo ang isang bata. Ano ang itatanong mo?"
+					},
+					"options": [
+						"Wie heißen Sie?",
+						"Wie heißt du?"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Zu Kindern sagt man „du“.",
+						"en": "You say “du” to children.",
+						"tl": "“du” ang gamit sa mga bata."
+					}
+				},
+				{
+					"id": "A1-01-L03-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Woher {{1}} du? – Ich {{2}} aus Österreich.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"kommst"
+							]
+						},
+						"2": {
+							"accept": [
+								"komme"
+							]
+						}
+					},
+					"explanation": {
+						"de": "du kommst (-st), ich komme (-e).",
+						"en": "du kommst (-st), ich komme (-e).",
+						"tl": "du kommst (-st), ich komme (-e)."
+					}
+				},
+				{
+					"id": "A1-01-L03-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Wer {{1}} Sie? – Ich {{2}} Herr Huber.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"sind"
+							]
+						},
+						"2": {
+							"accept": [
+								"bin"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Das Verb „sein“ ist besonders: ich bin, du bist, Sie sind.",
+						"en": "The verb “sein” is special: ich bin, du bist, Sie sind.",
+						"tl": "Espesyal ang pandiwang “sein”: ich bin, du bist, Sie sind."
+					}
+				},
+				{
+					"id": "A1-01-L03-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Was passt?",
+						"en": "What fits?",
+						"tl": "Alin ang bagay?"
+					},
+					"options": [
+						"Sie",
+						"du",
+						"ich"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "„kommen“ endet auf -en. Das passt zu „Sie“: Woher kommen Sie?",
+						"en": "“kommen” ends in -en. That fits “Sie”: Woher kommen Sie?",
+						"tl": "-en ang dulo ng “kommen”. Bagay ito sa “Sie”: Woher kommen Sie?"
+					},
+					"prompt": "Woher kommen …?"
+				},
+				{
+					"id": "A1-01-L03-I6",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. „du“ oder „Sie“?",
+						"en": "Listen. “du” or “Sie”?",
+						"tl": "Makinig. “du” o “Sie”?"
+					},
+					"options": [
+						"du",
+						"Sie"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Sie hören: „Woher kommst du?“",
+						"en": "You hear: “Woher kommst du?”",
+						"tl": "Narinig mo: “Woher kommst du?”"
+					},
+					"audioText": "Woher kommst du?",
+					"audioOnly": true
+				}
+			]
+		},
+		{
+			"id": "A1-01-L04",
+			"title": {
+				"de": "Wie geht's?",
+				"en": "How are you?",
+				"tl": "Kumusta?"
+			},
+			"cards": [
+				{
+					"phrase": "Wie geht's? – Danke, gut. Und dir?",
+					"note": {
+						"de": "Eine freundliche Frage unter Freunden. Man antwortet kurz und fragt zurück.",
+						"en": "A friendly question among friends. You answer briefly and ask back.",
+						"tl": "Magiliw na tanong sa magkaibigan. Maikli ang sagot, tapos magtanong pabalik."
+					}
+				},
+				{
+					"phrase": "Sehr gut, danke!",
+					"note": {
+						"de": "„sehr“ macht „gut“ stärker.",
+						"en": "“sehr” makes “gut” stronger.",
+						"tl": "Pinalalakas ng “sehr” ang “gut”."
+					}
+				},
+				{
+					"phrase": "Bitte! – Danke!",
+					"note": {
+						"de": "„Danke“ sagt man für etwas. Die Antwort ist „Bitte“.",
+						"en": "You say “Danke” for something. The reply is “Bitte”.",
+						"tl": "“Danke” ang pasasalamat. “Bitte” ang sagot."
+					}
+				},
+				{
+					"phrase": "Entschuldigung!",
+					"note": {
+						"de": "Das sagt man bei einem Fehler oder wenn man jemanden etwas fragen will.",
+						"en": "You say this after a mistake or when you want to ask someone something.",
+						"tl": "Sinasabi kapag nagkamali o kapag may itatanong ka sa isang tao."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L04-I1",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Was antworten Sie?",
+						"en": "What do you answer?",
+						"tl": "Ano ang isasagot mo?"
+					},
+					"options": [
+						"Danke, gut. Und dir?",
+						"Ich heiße Anna.",
+						"Auf Wiedersehen!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Auf „Wie geht's?“ antwortet man: „Danke, gut.“ Dann fragt man zurück: „Und dir?“",
+						"en": "You answer “Wie geht's?” with “Danke, gut.” Then you ask back: “Und dir?”",
+						"tl": "Sagot sa “Wie geht's?”: “Danke, gut.” Tapos tanong pabalik: “Und dir?”"
+					},
+					"prompt": "Wie geht's?",
+					"audioText": "Wie geht's?"
+				},
+				{
+					"id": "A1-01-L04-I2",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Schreiben Sie die fehlenden Wörter.",
+						"en": "Write the missing words.",
+						"tl": "Isulat ang mga nawawalang salita."
+					},
+					"text": "Wie geht's? – {{1}}, gut. Und {{2}}?",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Danke"
+							]
+						},
+						"2": {
+							"accept": [
+								"dir"
+							]
+						}
+					},
+					"explanation": {
+						"de": "„Danke, gut. Und dir?“ – „dir“ gehört zu „du“.",
+						"en": "“Danke, gut. Und dir?” – “dir” belongs to “du”.",
+						"tl": "“Danke, gut. Und dir?” – ang “dir” ay para sa “du”."
+					}
+				},
+				{
+					"id": "A1-01-L04-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie machen einen Fehler. Was sagen Sie?",
+						"en": "You make a mistake. What do you say?",
+						"tl": "Nagkamali ka. Ano ang sasabihin mo?"
+					},
+					"options": [
+						"Bitte!",
+						"Entschuldigung!",
+						"Servus!"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Bei einem Fehler sagt man „Entschuldigung“.",
+						"en": "After a mistake you say “Entschuldigung”.",
+						"tl": "Kapag nagkamali, “Entschuldigung”."
+					}
+				},
+				{
+					"id": "A1-01-L04-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Was antworten Sie?",
+						"en": "What do you answer?",
+						"tl": "Ano ang isasagot mo?"
+					},
+					"options": [
+						"Bitte!",
+						"Entschuldigung!",
+						"Nein!"
+					],
+					"answer": 0,
+					"explanation": {
+						"de": "Auf „Danke“ antwortet man „Bitte“.",
+						"en": "The reply to “Danke” is “Bitte”.",
+						"tl": "“Bitte” ang sagot sa “Danke”."
+					},
+					"prompt": "Danke!"
+				},
+				{
+					"id": "A1-01-L04-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was antworten Sie?",
+						"en": "Listen. What do you answer?",
+						"tl": "Makinig. Ano ang isasagot mo?"
+					},
+					"options": [
+						"Grüß Gott, Herr Huber!",
+						"Sehr gut, danke!",
+						"Ich komme aus Österreich."
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Sie hören: „Wie geht's?“ Die Antwort: „Sehr gut, danke!“",
+						"en": "You hear: “Wie geht's?” The answer: “Sehr gut, danke!”",
+						"tl": "Narinig mo: “Wie geht's?” Sagot: “Sehr gut, danke!”"
+					},
+					"audioText": "Wie geht's?",
+					"audioOnly": true
+				}
+			]
+		}
+	]
+}

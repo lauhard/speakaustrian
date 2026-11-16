@@ -8,19 +8,26 @@ export const Localized = z.object({
 });
 export type Localized = z.infer<typeof Localized>;
 
+// Disciplines as in docs/spec/04a §2.
+export const Discipline = z.enum(['lesen', 'hoeren', 'schreiben', 'sprechen', 'grammatikWortschatz', 'werte']);
+export type Discipline = z.infer<typeof Discipline>;
+
 const ItemBase = z.object({
 	id: z.string().regex(/^[A-Z0-9-]+$/),
+	skill: Discipline,
 	instruction: Localized,
 	explanation: Localized,
 	// Optional picture stimulus. `alt` must not give the answer away.
 	image: z.object({ src: z.string().min(1), alt: Localized }).optional(),
 	// German text read aloud by the speech port (never the answer of the item).
-	audioText: z.string().min(1).optional()
+	audioText: z.string().min(1).optional(),
+	// Listening task: the text is only heard, not shown (transcript appears in the feedback).
+	audioOnly: z.boolean().optional()
 });
 
 export const ChoiceItem = ItemBase.extend({
 	type: z.literal('choice'),
-	prompt: z.string().min(1),
+	prompt: z.string().min(1).optional(),
 	options: z.array(z.string().min(1)).min(2),
 	answer: z.number().int().nonnegative()
 }).refine((i) => i.answer < i.options.length, { message: 'answer index out of range' });
@@ -51,16 +58,48 @@ export type ChoiceItem = z.infer<typeof ChoiceItem>;
 export type ClozeItem = z.infer<typeof ClozeItem>;
 export type ShortItem = z.infer<typeof ShortItem>;
 
-export const Lesson = z
+// One teaching card of a micro lesson: a German phrase to hear and a short note on its use.
+export const Card = z.object({ phrase: z.string().min(1), note: Localized });
+export type Card = z.infer<typeof Card>;
+
+export const Lesson = z.object({
+	id: z.string().min(1),
+	title: Localized,
+	cards: z.array(Card).optional(),
+	items: z.array(Item).min(1)
+});
+export type Lesson = z.infer<typeof Lesson>;
+
+export const ChapterContent = z
 	.object({
 		schemaVersion: z.literal(1),
-		id: z.string().min(1),
-		title: Localized,
+		chapterId: z.string().min(1),
 		// Tagalog texts are machine-made until a native speaker reviewed them (E2).
 		tlReviewStatus: z.enum(['machine', 'reviewed']),
-		items: z.array(Item).min(1)
+		lessons: z.array(Lesson).min(1)
 	})
-	.refine((l) => new Set(l.items.map((i) => i.id)).size === l.items.length, {
-		message: 'item ids must be unique'
+	.superRefine((c, ctx) => {
+		const items = c.lessons.flatMap((l) => l.items);
+		if (new Set(items.map((i) => i.id)).size !== items.length) ctx.addIssue({ code: 'custom', message: 'item ids must be unique' });
+		if (new Set(c.lessons.map((l) => l.id)).size !== c.lessons.length) ctx.addIssue({ code: 'custom', message: 'lesson ids must be unique' });
+		for (const i of items) {
+			if (i.audioOnly && !i.audioText) ctx.addIssue({ code: 'custom', message: `${i.id}: audioOnly needs audioText` });
+		}
 	});
-export type Lesson = z.infer<typeof Lesson>;
+export type ChapterContent = z.infer<typeof ChapterContent>;
+
+export const Course = z.object({
+	schemaVersion: z.literal(1),
+	tlReviewStatus: z.enum(['machine', 'reviewed']),
+	chapters: z
+		.array(
+			z.object({
+				id: z.string().regex(/^A[12]-\d{2}$/),
+				title: Localized,
+				// Focus of the chapter test (03a); 'pruefung' = exam training chapter.
+				focus: z.union([Discipline, z.literal('pruefung')])
+			})
+		)
+		.min(1)
+});
+export type Course = z.infer<typeof Course>;

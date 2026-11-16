@@ -55,6 +55,7 @@ Format:
 - Problem: does "sommer" for "Sommer" or "heisse" for "heiße" cost a life in the chapter test?
 - Options: A near counts everywhere, with a spelling hint (prototype default in practice) · B near counts in practice, is an error in chapter test/simulation · C noun capitalisation is always an error (it is graded in the exam's writing part), umlaut transliteration is tolerated.
 - Blocks: chapter-test ticket (R-T), content authoring of `accept` lists.
+- Note 16.11.: masterprompt Phase 2 says `02g` defines tolerances per task type (case per learning goal, ae/oe/ue/ss, typo distance). `02g` is not in the repo yet → sync it, then close this gap from `02g`.
 
 ## G-007 – AI help and writing feedback without the Artifact viewer   (status: open)
 - Found in: D18 (no Artifact delivery)
@@ -65,5 +66,6 @@ Format:
 
 ## G-008 – Picture tasks: scope and image production   (status: partly decided D21)
 - Decided: any item type may carry an optional picture; pictures are static, reviewed assets made at authoring time (no runtime generation).
+- Note 16.11.: `03a` names picture topics (Q05) for A2 speaking: bank, mobile shop, market, parents' evening, German course (A2-10, A2-11, A2-13, A2-14).
 - Open: which exam parts picture tasks train (check `00-quellen.md` A/B for picture-based speaking/writing parts), how many per chapter, style guide for the pictures, free-text picture description (needs G-007).
 - Blocks: content schema ticket, first content batch.

@@ -1,21 +1,23 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { goto } from '$app/navigation';
-	import { resolve } from '$app/paths';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
 	import { createDeviceTts } from '#lib/adapters/web/device-tts.ts';
-	import { demoLesson } from '#lib/content/demo.ts';
-	import type { Localized } from '#lib/core/content/schema.ts';
+	import type { Item, Localized } from '#lib/core/content/schema.ts';
 	import { gradeItem, parseCloze, passes, type Grade, type Response } from '#lib/core/grading.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
-	import type { Profile } from '#lib/ports/storage.ts';
-	import { storage, withResult } from '#lib/profile.ts';
 
-	const lesson = demoLesson;
+	type Props = {
+		items: Item[];
+		tlMachine: boolean;
+		backHref: string;
+		backLabel: string;
+		onfinish?: (correct: number, total: number) => void;
+	};
+	let { items, tlMachine, backHref, backLabel, onfinish }: Props = $props();
+
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 
-	let profile = $state<Profile | null>(null);
 	let tts = $state<SpeechOutPort | null>(null);
 	let ttsFailed = $state(false);
 
@@ -27,9 +29,9 @@
 	let correctCount = $state(0);
 	let finished = $state(false);
 
-	const item = $derived(lesson.items[index]);
+	const item = $derived(items[index]);
 	const segments = $derived(item.type === 'cloze' ? parseCloze(item.text) : []);
-	const isLast = $derived(index === lesson.items.length - 1);
+	const isLast = $derived(index === items.length - 1);
 
 	const response = $derived.by((): Response | null => {
 		if (item.type === 'choice') return selected === null ? null : { type: 'choice', selected };
@@ -38,11 +40,6 @@
 	});
 
 	onMount(() => {
-		profile = storage()?.load() ?? null;
-		if (!profile) {
-			goto(resolve('/'));
-			return;
-		}
 		tts = createDeviceTts(window);
 		return () => tts?.stop();
 	});
@@ -59,10 +56,7 @@
 		tts?.stop();
 		if (isLast) {
 			finished = true;
-			if (profile) {
-				profile = withResult(profile, lesson.id, correctCount, lesson.items.length, new Date());
-				storage()?.save(profile);
-			}
+			onfinish?.(correctCount, items.length);
 			return;
 		}
 		index += 1;
@@ -113,17 +107,17 @@
 {#if finished}
 	<section class="space-y-6 pt-10 text-center" data-testid="result">
 		<h1 class="text-3xl font-bold">{m.result_title()}</h1>
-		<p class="text-xl">{m.result_score({ correct: correctCount, total: lesson.items.length })}</p>
+		<p class="text-xl">{m.result_score({ correct: correctCount, total: items.length })}</p>
 		<button type="button" class="w-full rounded-xl bg-red-700 px-4 py-4 text-lg font-semibold text-white" onclick={restart}>
 			{m.again()}
 		</button>
-		<a href={resolve('/')} class="block text-stone-700 underline">{m.home()}</a>
+		<a href={backHref} data-testid="back" class="block text-stone-700 underline">{backLabel}</a>
 	</section>
-{:else if profile}
+{:else}
 	<form class="space-y-5" onsubmit={check}>
 		<div>
-			<p class="text-sm text-stone-600">{m.task_count({ current: index + 1, total: lesson.items.length })}</p>
-			<progress class="h-2 w-full" max={lesson.items.length} value={index + (grade ? 1 : 0)}></progress>
+			<p class="text-sm text-stone-600">{m.task_count({ current: index + 1, total: items.length })}</p>
+			<progress class="h-2 w-full" max={items.length} value={index + (grade ? 1 : 0)}></progress>
 		</div>
 
 		<div>{@render help(item.instruction)}</div>
@@ -142,17 +136,22 @@
 		{#if item.audioText}
 			<button
 				type="button"
-				class="rounded-full bg-stone-200 px-4 py-2 text-sm font-medium"
+				data-testid="listen"
+				class="rounded-full bg-stone-200 font-medium {item.audioOnly ? 'w-full px-4 py-4 text-lg' : 'px-4 py-2 text-sm'}"
 				onclick={() => listen(item.audioText ?? '')}
 			>
 				🔊 {m.listen()}
 			</button>
-			{#if ttsFailed}<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>{/if}
+			{#if ttsFailed}
+				<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>
+				<!-- Transcript fallback so a listening task stays solvable without speech output. -->
+				{#if item.audioOnly}<p class="text-lg" lang="de" data-testid="transcript">{item.audioText}</p>{/if}
+			{/if}
 		{/if}
 
 		{#if item.type === 'choice'}
 			<fieldset class="space-y-2" disabled={grade !== null}>
-				<legend class="mb-2 text-lg" lang="de">{item.prompt}</legend>
+				{#if item.prompt && !item.audioOnly}<legend class="mb-2 text-lg" lang="de">{item.prompt}</legend>{/if}
 				{#each item.options as option, i (option)}
 					<label
 						class="flex items-center gap-3 rounded-xl border bg-white px-4 py-3 text-lg {grade && i === item.answer
@@ -217,8 +216,9 @@
 				{#if grade.verdict !== 'correct'}
 					<p lang="de">{m.expected({ answer: Object.values(grade.expected).join(' · ') })}</p>
 				{/if}
+				{#if item.audioOnly && item.audioText}<p lang="de">{m.you_hear({ text: item.audioText })}</p>{/if}
 				{@render help(item.explanation)}
-				{#if helpLocale === 'tl' && lesson.tlReviewStatus === 'machine'}
+				{#if helpLocale === 'tl' && tlMachine}
 					<p class="text-xs text-stone-500">{m.tl_machine_note()}</p>
 				{/if}
 			</div>

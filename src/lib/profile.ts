@@ -8,10 +8,12 @@ export const newProfile = (name: string, now: Date): Profile => ({
 	schema: 1,
 	name: name.trim(),
 	createdAt: now.toISOString(),
-	results: []
+	results: [],
+	lessonsDone: []
 });
 
 export const withResult = (profile: Profile, lessonId: string, correct: number, total: number, now: Date): Profile => ({
 	...profile,
-	results: [...profile.results, { lessonId, at: now.toISOString(), correct, total }]
+	results: [...profile.results, { lessonId, at: now.toISOString(), correct, total }],
+	lessonsDone: profile.lessonsDone.includes(lessonId) ? profile.lessonsDone : [...profile.lessonsDone, lessonId]
 });
