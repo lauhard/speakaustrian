@@ -5,6 +5,7 @@
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
 	import { chapterContent, course } from '#lib/content/index.ts';
+	import { dueQueue } from '#lib/core/review.ts';
 	import { game } from '#lib/game.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
@@ -16,6 +17,8 @@
 		const run = game.state.course.chapter;
 		return run?.id === id && run.attempt.kind === 'LESSONS' ? run.attempt.done : [];
 	});
+	// R-W8: the due queue comes before new material.
+	const dueCount = $derived(game.ready ? dueQueue(game.state, game.today).length : 0);
 	onMount(() => game.init());
 </script>
 
@@ -25,6 +28,12 @@
 	<section class="space-y-4 pt-4">
 		<h1 class="text-2xl font-bold" lang="de">{meta ? `${meta.id} · ${meta.title.de}` : m.preview()}</h1>
 		{#if meta && helpLocale !== 'de'}<p class="text-stone-600">{meta.title[helpLocale]}</p>{/if}
+
+		{#if dueCount > 0 && meta}
+			<a href={resolve('/review')} class="block rounded-xl bg-red-700 px-4 py-3 text-center font-semibold text-white no-underline">
+				{m.review_first()} {m.review_due({ count: dueCount })}
+			</a>
+		{/if}
 
 		<h2 class="text-lg font-semibold">{m.lessons()}</h2>
 		<ol class="space-y-2">

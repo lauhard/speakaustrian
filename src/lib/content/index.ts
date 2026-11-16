@@ -1,4 +1,4 @@
-import { ChapterContent, Course, type Discipline, type Item, type Lesson } from '../core/content/schema';
+import { ChapterContent, Course, type Discipline, type Item, type Lesson, type Vocab } from '../core/content/schema';
 import a101 from './a1-01.json';
 import courseRaw from './course.json';
 import demo from './demo.json';
@@ -14,6 +14,14 @@ export const chapterContent = (chapterId: string): ChapterContent | undefined =>
 
 export const findLesson = (chapterId: string, lessonId: string): Lesson | undefined =>
 	chapterContent(chapterId)?.lessons.find((l) => l.id === lessonId);
+
+export const allVocab = (): Vocab[] => chapters.flatMap((c) => c.vocab ?? []);
+
+export const vocabByRef = (refId: string): Vocab | undefined => allVocab().find((v) => v.id === refId);
+
+// What a lesson introduces, in the shape the LESSON_COMPLETED event needs (R-W2, R-W7).
+export const introducedBy = (lesson: Lesson) =>
+	(lesson.introduces ?? []).map((refId) => ({ refId, isNoun: vocabByRef(refId)?.article !== undefined }));
 
 export const allItems = (): Item[] => chapters.flatMap((c) => c.lessons.flatMap((l) => l.items));
 

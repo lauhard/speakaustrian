@@ -50,5 +50,16 @@
 	"not_found": "This page does not exist.",
 	"pensum_label": "How much time do you have per day?",
 	"day_x": "Day {day}",
-	"chapter_locked": "Locked – finish the chapter before first"
+	"chapter_locked": "Locked – finish the chapter before first",
+	"review_due": "Review: {count} cards due",
+	"review_title": "Review",
+	"review_none": "Nothing is due today. New cards appear one day after the lesson.",
+	"review_first": "Review first, then learn new things.",
+	"review_done": "All cards done!",
+	"q_meaning": "What does this mean?",
+	"q_produce": "What is this in German?",
+	"q_genus": "der, die or das?",
+	"article_hint": "Always write nouns with their article: der, die or das.",
+	"skill_woerter": "Words",
+	"cards_left": "{count} cards left"
 }

@@ -50,5 +50,16 @@
 	"not_found": "Diese Seite gibt es nicht.",
 	"pensum_label": "Wie viel Zeit haben Sie pro Tag?",
 	"day_x": "Tag {day}",
-	"chapter_locked": "Gesperrt – zuerst das Kapitel davor abschließen"
+	"chapter_locked": "Gesperrt – zuerst das Kapitel davor abschließen",
+	"review_due": "Wiederholen: {count} Karten fällig",
+	"review_title": "Wiederholung",
+	"review_none": "Heute ist nichts fällig. Neue Karten kommen einen Tag nach der Lektion.",
+	"review_first": "Zuerst wiederholen, dann Neues lernen.",
+	"review_done": "Alle Karten erledigt!",
+	"q_meaning": "Was bedeutet das?",
+	"q_produce": "Wie heißt das auf Deutsch?",
+	"q_genus": "der, die oder das?",
+	"article_hint": "Nomen immer mit Artikel schreiben: der, die oder das.",
+	"skill_woerter": "Wörter",
+	"cards_left": "Noch {count} Karten"
 }

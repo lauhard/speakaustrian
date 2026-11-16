@@ -7,7 +7,7 @@
 	import { m } from '#lib/paraglide/messages.js';
 	import { createDeviceTts } from '#lib/adapters/web/device-tts.ts';
 	import Runner from '#lib/components/Runner.svelte';
-	import { chapterContent, findLesson } from '#lib/content/index.ts';
+	import { chapterContent, findLesson, introducedBy } from '#lib/content/index.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
 	import { game } from '#lib/game.svelte.ts';
 
@@ -38,7 +38,7 @@
 	};
 
 	const finish = () => {
-		if (lesson) game.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id });
+		if (lesson) game.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson) });
 	};
 </script>
 

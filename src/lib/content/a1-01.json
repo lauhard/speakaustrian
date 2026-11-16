@@ -2,6 +2,212 @@
 	"schemaVersion": 1,
 	"chapterId": "A1-01",
 	"tlReviewStatus": "machine",
+	"vocab": [
+		{
+			"id": "W-A1-0376",
+			"lemma": "grüß Gott",
+			"en": "hello (standard greeting in Austria)",
+			"tl": "kumusta po (karaniwang pagbati sa Austria)"
+		},
+		{
+			"id": "W-A1-0377",
+			"lemma": "servus",
+			"en": "hi / bye (among friends)",
+			"tl": "hi / paalam (sa kaibigan)"
+		},
+		{
+			"id": "W-A1-0378",
+			"lemma": "hallo",
+			"en": "hello (informal)",
+			"tl": "hello (di-pormal)"
+		},
+		{
+			"id": "W-A1-0379",
+			"lemma": "guten Morgen",
+			"en": "good morning",
+			"tl": "magandang umaga"
+		},
+		{
+			"id": "W-A1-0380",
+			"lemma": "guten Tag",
+			"en": "good day",
+			"tl": "magandang araw"
+		},
+		{
+			"id": "W-A1-0381",
+			"lemma": "guten Abend",
+			"en": "good evening",
+			"tl": "magandang gabi (pagdating)"
+		},
+		{
+			"id": "W-A1-0382",
+			"lemma": "gute Nacht",
+			"en": "good night (going to bed)",
+			"tl": "magandang gabi (bago matulog)"
+		},
+		{
+			"id": "W-A1-0383",
+			"lemma": "auf Wiedersehen",
+			"en": "goodbye (polite)",
+			"tl": "paalam (magalang)"
+		},
+		{
+			"id": "W-A1-0385",
+			"lemma": "tschüss",
+			"en": "bye (informal)",
+			"tl": "paalam (di-pormal)"
+		},
+		{
+			"id": "W-A1-0006",
+			"lemma": "ich",
+			"en": "I",
+			"tl": "ako"
+		},
+		{
+			"id": "W-A1-0147",
+			"lemma": "heißen",
+			"en": "to be called",
+			"tl": "tawagin / pangalan ay"
+		},
+		{
+			"id": "W-A1-0324",
+			"lemma": "Name",
+			"en": "name",
+			"tl": "pangalan",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0325",
+			"lemma": "Vorname",
+			"en": "first name",
+			"tl": "pangalan (unang pangalan)",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0326",
+			"lemma": "Familienname",
+			"en": "family name",
+			"tl": "apelyido",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0327",
+			"lemma": "Herr",
+			"en": "Mr / gentleman",
+			"tl": "Ginoo",
+			"article": "der"
+		},
+		{
+			"id": "W-A1-0328",
+			"lemma": "Frau",
+			"en": "Ms / woman",
+			"tl": "Ginang / babae",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0041",
+			"lemma": "wie",
+			"en": "how",
+			"tl": "paano"
+		},
+		{
+			"id": "W-A1-0013",
+			"lemma": "Sie",
+			"en": "you (polite)",
+			"tl": "kayo / ikaw (magalang)"
+		},
+		{
+			"id": "W-A1-0007",
+			"lemma": "du",
+			"en": "you (informal)",
+			"tl": "ikaw (di-pormal)"
+		},
+		{
+			"id": "W-A1-0038",
+			"lemma": "woher",
+			"en": "where … from",
+			"tl": "taga-saan"
+		},
+		{
+			"id": "W-A1-0128",
+			"lemma": "kommen",
+			"en": "to come",
+			"tl": "pumunta / manggaling"
+		},
+		{
+			"id": "W-A1-0116",
+			"lemma": "sein",
+			"en": "to be",
+			"tl": "maging (ay)"
+		},
+		{
+			"id": "W-A1-0035",
+			"lemma": "wer",
+			"en": "who",
+			"tl": "sino"
+		},
+		{
+			"id": "W-A1-0357",
+			"lemma": "Österreich",
+			"en": "Austria",
+			"tl": "Austria"
+		},
+		{
+			"id": "W-A1-0362",
+			"lemma": "Philippinen",
+			"en": "Philippines",
+			"tl": "Pilipinas"
+		},
+		{
+			"id": "W-A1-0387",
+			"lemma": "Wie geht's?",
+			"en": "How are you?",
+			"tl": "Kumusta?"
+		},
+		{
+			"id": "W-A1-0092",
+			"lemma": "danke",
+			"en": "thank you",
+			"tl": "salamat"
+		},
+		{
+			"id": "W-A1-0091",
+			"lemma": "bitte",
+			"en": "please / you're welcome",
+			"tl": "pakiusap / walang anuman"
+		},
+		{
+			"id": "W-A1-0173",
+			"lemma": "gut",
+			"en": "good, well",
+			"tl": "mabuti"
+		},
+		{
+			"id": "W-A1-0057",
+			"lemma": "sehr",
+			"en": "very",
+			"tl": "napaka- / sobra"
+		},
+		{
+			"id": "W-A1-0386",
+			"lemma": "Entschuldigung",
+			"en": "sorry / excuse me",
+			"tl": "paumanhin",
+			"article": "die"
+		},
+		{
+			"id": "W-A1-0017",
+			"lemma": "dir",
+			"en": "(to) you (informal)",
+			"tl": "sa iyo"
+		},
+		{
+			"id": "W-A1-0046",
+			"lemma": "und",
+			"en": "and",
+			"tl": "at"
+		}
+	],
 	"lessons": [
 		{
 			"id": "A1-01-L01",
@@ -189,7 +395,47 @@
 					},
 					"audioText": "Guten Morgen!",
 					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L01-B1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Die Frau kommt. Was sagt sie?",
+						"en": "Look at the picture. The woman arrives. What does she say?",
+						"tl": "Tingnan ang larawan. Dumating ang babae. Ano ang sinasabi niya?"
+					},
+					"image": {
+						"src": "/img/a1-01-morgen.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					},
+					"options": [
+						"Guten Abend!",
+						"Guten Morgen!",
+						"Gute Nacht!"
+					],
+					"answer": 1,
+					"explanation": {
+						"de": "Die Sonne geht auf, es ist 7 Uhr: Es ist Morgen. Man sagt „Guten Morgen“.",
+						"en": "The sun is rising, it is 7 o'clock: it is morning. You say “Guten Morgen”.",
+						"tl": "Sumisikat ang araw, alas-7: umaga na. “Guten Morgen” ang sinasabi."
+					}
 				}
+			],
+			"introduces": [
+				"W-A1-0376",
+				"W-A1-0377",
+				"W-A1-0378",
+				"W-A1-0379",
+				"W-A1-0380",
+				"W-A1-0381",
+				"W-A1-0382",
+				"W-A1-0383",
+				"W-A1-0385"
 			]
 		},
 		{
@@ -360,7 +606,84 @@
 					},
 					"audioText": "Ich heiße Anna Gruber.",
 					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L02-B1",
+					"type": "cloze",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Schreiben Sie den Vornamen und den Familiennamen.",
+						"en": "Look at the picture. Write the first name and the family name.",
+						"tl": "Tingnan ang larawan. Isulat ang pangalan at ang apelyido."
+					},
+					"image": {
+						"src": "/img/a1-01-ausweis.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					},
+					"text": "Vorname: {{1}} · Familienname: {{2}}",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Anna"
+							]
+						},
+						"2": {
+							"accept": [
+								"Gruber"
+							]
+						}
+					},
+					"explanation": {
+						"de": "Der Vorname steht vorne: Anna. Der Familienname steht hinten: Gruber.",
+						"en": "The first name comes first: Anna. The family name comes last: Gruber.",
+						"tl": "Nauuna ang pangalan: Anna. Kasunod ang apelyido: Gruber."
+					}
+				},
+				{
+					"id": "A1-01-L02-B2",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Sehen Sie das Bild an. Antworten Sie mit einem Satz.",
+						"en": "Look at the picture. Answer with one sentence.",
+						"tl": "Tingnan ang larawan. Sumagot gamit ang isang pangungusap."
+					},
+					"image": {
+						"src": "/img/a1-01-ausweis.svg",
+						"alt": {
+							"de": "Bild zur Aufgabe",
+							"en": "Picture for the task",
+							"tl": "Larawan para sa gawain"
+						}
+					},
+					"prompt": "Wie heißt sie?",
+					"accept": [
+						"Sie heißt Anna Gruber.",
+						"Sie heißt Anna.",
+						"Anna Gruber",
+						"Sie heißt Frau Gruber."
+					],
+					"explanation": {
+						"de": "„Sie heißt Anna Gruber.“ Bei „sie“ (eine Frau) endet das Verb auf -t: sie heißt.",
+						"en": "“Sie heißt Anna Gruber.” With “sie” (a woman) the verb ends in -t: sie heißt.",
+						"tl": "“Sie heißt Anna Gruber.” Kapag “sie” (isang babae), -t ang dulo ng pandiwa: sie heißt."
+					}
 				}
+			],
+			"introduces": [
+				"W-A1-0006",
+				"W-A1-0147",
+				"W-A1-0324",
+				"W-A1-0325",
+				"W-A1-0326",
+				"W-A1-0327",
+				"W-A1-0328",
+				"W-A1-0041",
+				"W-A1-0013"
 			]
 		},
 		{
@@ -553,6 +876,15 @@
 					"audioText": "Woher kommst du?",
 					"audioOnly": true
 				}
+			],
+			"introduces": [
+				"W-A1-0007",
+				"W-A1-0038",
+				"W-A1-0128",
+				"W-A1-0116",
+				"W-A1-0035",
+				"W-A1-0357",
+				"W-A1-0362"
 			]
 		},
 		{
@@ -714,6 +1046,16 @@
 					"audioText": "Wie geht's?",
 					"audioOnly": true
 				}
+			],
+			"introduces": [
+				"W-A1-0387",
+				"W-A1-0092",
+				"W-A1-0091",
+				"W-A1-0173",
+				"W-A1-0057",
+				"W-A1-0386",
+				"W-A1-0017",
+				"W-A1-0046"
 			]
 		}
 	]

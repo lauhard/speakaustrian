@@ -1,6 +1,7 @@
 import type { Item } from './content/schema';
+import { collapse, GRAMMAR, isCorrect, type Tolerance } from './tolerance';
 
-// 'near' = right word, but wrong case, missing umlaut (ae/oe/ue/ss) or stray punctuation.
+// 'near' = right, but only through a tolerance (case, ae/oe/ue/ss, typo, stray punctuation).
 export type Verdict = 'correct' | 'near' | 'wrong';
 
 export type Response =
@@ -16,24 +17,13 @@ export type Grade = {
 	expected: Record<string, string>;
 };
 
-export const normalizeStrict = (s: string): string => s.normalize('NFC').trim().replace(/\s+/g, ' ');
-
-export const fold = (s: string): string =>
-	normalizeStrict(s)
-		.toLowerCase()
-		.replace(/ä/g, 'ae')
-		.replace(/ö/g, 'oe')
-		.replace(/ü/g, 'ue')
-		.replace(/ß/g, 'ss')
-		.replace(/[.!?,;:]+$/g, '')
-		.trim();
-
-export const gradeText = (input: string, accept: readonly string[]): Verdict => {
-	const strict = normalizeStrict(input);
+// Exact answer -> 'correct'. Accepted only through a tolerance of 02g §3.1 -> 'near':
+// it counts as right and the feedback points at the spelling.
+export const gradeText = (input: string, accept: readonly string[], tolerance: Tolerance = GRAMMAR): Verdict => {
+	const strict = collapse(input);
 	if (strict === '') return 'wrong';
-	if (accept.some((a) => normalizeStrict(a) === strict)) return 'correct';
-	const folded = fold(input);
-	return accept.some((a) => fold(a) === folded) ? 'near' : 'wrong';
+	if (accept.some((a) => collapse(a) === strict)) return 'correct';
+	return isCorrect(tolerance, accept, input) ? 'near' : 'wrong';
 };
 
 const worst = (verdicts: readonly Verdict[]): Verdict =>
@@ -59,9 +49,8 @@ export const gradeItem = (item: Item, response: Response): Grade => {
 	throw new Error(`response type ${response.type} does not match item type ${item.type}`);
 };
 
-// Rule decision kept outside the grader (D16): does a near miss count as passed?
-export const passes = (verdict: Verdict, opts: { nearCounts: boolean }): boolean =>
-	verdict === 'correct' || (verdict === 'near' && opts.nearCounts);
+// 02g: an answer accepted through a tolerance counts as right.
+export const passes = (verdict: Verdict): boolean => verdict !== 'wrong';
 
 export type ClozeSegment = { kind: 'text'; value: string } | { kind: 'gap'; id: string };
 

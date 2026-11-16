@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { allItems, chapters } from '../content/index';
 import { ChapterContent, type Item } from './content/schema';
-import { fold, gradeItem, gradeText, parseCloze, passes } from './grading';
+import { gradeItem, gradeText, parseCloze, passes } from './grading';
+import { damerauLevenshtein, isCorrect, VOCAB } from './tolerance';
 
 const cloze: Item = {
 	id: 'T-1',
@@ -27,8 +28,12 @@ describe('gradeText', () => {
 		expect(gradeText('heißt', ['heiße'])).toBe('wrong');
 		expect(gradeText('   ', ['heiße'])).toBe('wrong');
 	});
-	it('folds consistently', () => {
-		expect(fold('Grüß  Gott!')).toBe('gruess gott');
+	it('02g T3: typo tolerance by word length, only where allowed', () => {
+		expect(damerauLevenshtein('Familienname', 'Familiennmae')).toBe(1);
+		expect(isCorrect(VOCAB, ['Entschuldigung'], 'Entschuldigugn')).toBe(true);
+		expect(isCorrect(VOCAB, ['danke'], 'dnake')).toBe(true);
+		expect(isCorrect(VOCAB, ['gut'], 'gat')).toBe(false);
+		expect(gradeText('kommts', ['kommst'])).toBe('wrong');
 	});
 });
 
@@ -51,10 +56,9 @@ describe('gradeItem', () => {
 });
 
 describe('passes', () => {
-	it('lets the policy decide about near misses', () => {
-		expect(passes('near', { nearCounts: true })).toBe(true);
-		expect(passes('near', { nearCounts: false })).toBe(false);
-		expect(passes('wrong', { nearCounts: true })).toBe(false);
+	it('counts answers accepted through a tolerance', () => {
+		expect(passes('near')).toBe(true);
+		expect(passes('wrong')).toBe(false);
 	});
 });
 
