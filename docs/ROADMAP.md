@@ -11,7 +11,10 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 
 ## Next (in this order)
 - [x] 004b A1-01 micro lessons 5–7: all 44 active A1-01 words now have a lesson and a card
-- [ ] 004 A1-01 complete: remaining micro lessons (WOW topics A1-WOW-18/-01 with sourced facts, speaking pre-stages, form filling), error cards (R-W3), practice pool, test pool ≥ 60 with twins (needs `02g`, `03` Q1–Q11, `02a` Can-Do, WOW facts with sources)
+- [ ] 004 A1-01 complete, split into three steps (not the finished UI/lesson steps 004a/004b above):
+  - [x] 004a QA script for content pools: `pnpm qa` (`docs/QA.md`), pools file `<chapter>-pools.json` merged by `content/index.ts`, ≥ 2 twins for real chapters as content test, runs in CI; gaps G-009–G-011
+  - [ ] 004b A1-01 pools in batches (Sonnet): remaining micro lessons (WOW topics A1-WOW-18/-01 with sourced facts, speaking pre-stages, form filling), practice pool, test pool with twins into `a1-01-pools.json`; done = `pnpm qa A1-01 --require-pools` without errors, warnings looked at (needs `02g`, `03` Q1–Q11, `02a` Can-Do, WOW facts with sources; G-009 decided first)
+  - [ ] 004c Sample review of the A1-01 pools by a strong model in a fresh chat (≥ 20 % of the items), then Andi's approval
 - [x] 005a Chapter attempt automaton in the core (04a §4.2): events `PRACTICE_ANSWERED`, `GATE_ANSWERED`, `TARGETED_PRACTICE_DONE`, `TEST_STARTED`, `TEST_ANSWERED`, `CORRECTION_ANSWERED`, `ERROR_REVIEW_ANSWERED`; policy points `outcomeAfterTest`, `outcomeAfterCorrection`, `recoveryAfterFail`, `bonusForNext`; error cards (R-W3); `ContentInfo` seam (not wired into the app yet)
 - [x] 005b Draws as pure functions with seed (`core/draw.ts`): `testComposition` + `drawTest` (R-T1, R-T2, R-T4), `drawGate` (R-G1); card promotion by the test (R-W4), answer streak (R-E1), override effects `SET_RECOVERY`/`GRANT_ATTEMPT` (T-PL04)
 - [x] 005c-1 DEMO sandbox + wiring: `ContentInfo` wired into the stores, `pools` (practice/test, `family`/`goals`/`refs`) in the content schema, DEMO pool (9 practice, 12 test items with twins), `demoConfig` (3 items per test/gate, 2 lives), own `demo` store (`storeFor(id)`), pure helpers in `core/flow.ts` (gate/test draws, targeted practice), loop test on the real pool

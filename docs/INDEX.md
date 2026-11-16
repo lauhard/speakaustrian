@@ -12,6 +12,7 @@
 | `spec/prototyp-erkenntnisse.md` | TTS findings (Android), genus, prototype export format | TTS/`SpeechOutPort`, import of prototype progress | E-P1, E-P3 (v4 TTS pattern), §0 export format |
 | `spec-gaps.md` | Open spec questions / repo-vs-spec deviations | Before starting a ticket that touches them | – |
 | `DEPLOY.md` | Cloudflare hosting, one-time setup | Deploy/CI tickets | – |
+| `QA.md` | `pnpm qa`: checks, levels, expected result, pools file | Content batches (004b, 010) | – |
 | `tickets/README.md` | Ticket workflow | Once per session | – |
 | `tickets/BACKLOG.md` | Ticket list + dependencies (written by `/backlog`) | Picking next ticket | – |
 

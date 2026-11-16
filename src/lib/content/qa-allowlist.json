@@ -1,0 +1,4 @@
+{
+	"_comment": "Words the vocabulary check of `pnpm qa` accepts without an inventory entry: proper names, places, brand names. Add a word only after a person checked it; never course vocabulary of later chapters.",
+	"words": ["Maria", "Anna", "Jose", "Santos", "Huber", "Gruber", "Wien", "Graz", "Linz", "Salzburg", "Klagenfurt", "Manila"]
+}
