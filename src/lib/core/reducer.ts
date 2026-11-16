@@ -115,11 +115,16 @@ const applyEffect = (policy: RulePolicy, order: readonly ChapterId[], s: GameSta
 // LESSONS with every lesson done and no event would move it on. Settling is pure and runs after loading a saved state.
 export const settleChapter = (content: ContentInfo) => (state: GameState): GameState => {
 	const run = state.course.chapter;
-	const info = run && run.attempt.kind === 'LESSONS' ? content.chapter(run.id) : undefined;
-	if (!run || run.attempt.kind !== 'LESSONS' || !info) return state;
+	const info = run ? content.chapter(run.id) : undefined;
+	if (!run || !info) return state;
+	const to = (attempt: AttemptState): GameState => ({ ...state, course: { ...state.course, chapter: { ...run, attempt } } });
+	// The size of the practice part can change with the content (G-010): keep the count, move on if it is already reached.
+	if (run.attempt.kind === 'PRACTICE' && run.attempt.total !== info.practiceTotal)
+		return to(run.attempt.answered >= info.practiceTotal ? gateBlock(1) : { ...run.attempt, total: info.practiceTotal });
+	if (run.attempt.kind !== 'LESSONS') return state;
 	const done = run.attempt.done;
 	if (!info.lessonIds.every((l) => done.includes(l))) return state;
-	return { ...state, course: { ...state.course, chapter: { ...run, attempt: entryState(content, run.id, { entry: 'PRACTICE', repeatMode: run.attempt.repeatMode }) } } };
+	return to(entryState(content, run.id, { entry: 'PRACTICE', repeatMode: run.attempt.repeatMode }));
 };
 
 export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[], content: ContentInfo = noContent): Reducer => (state, event) => {

@@ -48,3 +48,28 @@ export const drawGate = (pool: readonly PoolItem[], spec: TestSpec, block: numbe
 		return Array.from({ length: Math.min(quota, ordered.length) }, (_, i) => ordered[((block - 1) * quota + i) % ordered.length].id);
 	});
 };
+
+// Round-robin over groups: a1, b1, c1, a2, b2 …
+const interleave = <T>(groups: readonly (readonly T[])[]): T[] =>
+	Array.from({ length: Math.max(0, ...groups.map((g) => g.length)) }, (_, i) => groups.flatMap((g) => (i < g.length ? [g[i]] : []))).flat();
+
+const groupBy = <T>(list: readonly T[], key: (t: T) => string): T[][] =>
+	[...list.reduce((acc, t) => acc.set(key(t), [...(acc.get(key(t)) ?? []), t]), new Map<string, T[]>()).values()];
+
+// Interleaving (04 §didactics): neighbours differ in discipline, and a twin family only comes again after all other families.
+export const practiceOrder = (pool: readonly PoolItem[]): PoolItem[] => {
+	const families = interleave(groupBy(groupBy(pool, (p) => p.family), (family) => family[0].skill));
+	return interleave(families.map((family) => family.map((p) => [p]))).flat();
+};
+
+// G-010 (decision A): the practice part is a fixed set of `partSize` items, the readiness blocks draw from the rest.
+// A pool that is too small for that (sandbox chapter) is walked whole and shared.
+export const splitPractice = (pool: readonly PoolItem[], partSize: number, gateNeed: number): { part: readonly PoolItem[]; rest: readonly PoolItem[] } => {
+	if (pool.length < partSize + gateNeed) return { part: pool, rest: pool };
+	const ordered = practiceOrder(pool);
+	return { part: ordered.slice(0, partSize), rest: ordered.slice(partSize) };
+};
+
+// Same idea for a drawn block: mix the disciplines instead of asking them one after the other.
+export const mixSkills = (ids: readonly string[], pool: readonly PoolItem[]): string[] =>
+	interleave(groupBy(ids, (id) => pool.find((p) => p.id === id)?.skill ?? '')).flat();

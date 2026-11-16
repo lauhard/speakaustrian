@@ -77,6 +77,12 @@
 		{/if}
 		{#if meta}<p class="text-sm text-muted">{m.chapter_more_soon()}</p>{/if}
 	</section>
+{:else if meta}
+	<section class="space-y-4 pt-4">
+		<span class="chip">{meta.id}</span>
+		<h1 class="h1" lang="de">{meta.title.de}</h1>
+		<p class="card text-muted" data-testid="chapter-soon">{m.flow_next_soon()}</p>
+	</section>
 {:else}
 	<p class="pt-6">{m.not_found()}</p>
 {/if}

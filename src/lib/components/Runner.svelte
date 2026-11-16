@@ -12,6 +12,8 @@
 		tlMachine: boolean;
 		backHref: string;
 		backLabel: string;
+		// Set when "back" stays on the same page (free practice): called instead of following the link.
+		onback?: () => void;
 		onfinish?: (correct: number, total: number) => void;
 		// Chapter flow (005c): the parent shows its own header and result, so the runner only asks and grades.
 		bare?: boolean;
@@ -23,7 +25,7 @@
 		onchecked?: (item: Item, correct: boolean) => void;
 		nextLabel?: string;
 	};
-	let { items, tlMachine, backHref, backLabel, onfinish, bare = false, examMode = false, top, onchecked, nextLabel }: Props = $props();
+	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel }: Props = $props();
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 
@@ -99,6 +101,12 @@
 	const gapClass = (id: string) =>
 		!grade ? '' : grade.parts[id] === 'correct' ? 'is-right' : grade.parts[id] === 'near' ? 'is-near' : 'is-wrong';
 	const percent = $derived(Math.round((correctCount / items.length) * 100));
+
+	const back = (event: MouseEvent) => {
+		if (!onback) return;
+		event.preventDefault();
+		onback();
+	};
 </script>
 
 {#snippet help(text: Localized)}
@@ -118,7 +126,7 @@
 		<button type="button" class="btn-secondary" onclick={restart}>
 			{m.again()}
 		</button>
-		<a href={backHref} data-testid="back" class="btn-primary">{backLabel}</a>
+		<a href={backHref} onclick={back} data-testid="back" class="btn-primary">{backLabel}</a>
 	</section>
 {:else}
 	<form class="space-y-5" data-item={item.id} onsubmit={check}>
@@ -126,7 +134,7 @@
 		{#if !bare}
 		<div>
 			<div class="mb-2 flex items-center justify-between">
-				<a href={backHref} class="backlink" aria-label={backLabel}>✕</a>
+				<a href={backHref} onclick={back} class="backlink" aria-label={backLabel}>✕</a>
 				<p class="text-sm font-bold text-muted">{m.task_count({ current: index + 1, total: items.length })}</p>
 			</div>
 			<div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax={items.length} aria-valuenow={index + (grade ? 1 : 0)}>

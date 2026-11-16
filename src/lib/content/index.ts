@@ -1,4 +1,4 @@
-import { makeContentInfo, poolOf, type PoolKind } from '../core/content/info';
+import { makeContentInfo, poolOf, practiceSplit, type PoolKind } from '../core/content/info';
 import { withPools } from '../core/content/merge';
 import { ChapterContent, Course, type Discipline, type Item, type Lesson, type Vocab } from '../core/content/schema';
 import a101 from './a1-01.json';
@@ -14,6 +14,7 @@ export const chapters: ChapterContent[] = [a101, demo].map((raw) => ChapterConte
 export const PREVIEW_CHAPTER = 'DEMO';
 
 export const contentInfo = makeContentInfo(chapters);
+export const practiceParts = (chapterId: string) => practiceSplit(chapterContent(chapterId));
 export const poolItems = (chapterId: string, kind: PoolKind) => poolOf(chapterContent(chapterId), kind);
 
 // Any item by id: lessons and pools (error cards and test lists only keep ids).

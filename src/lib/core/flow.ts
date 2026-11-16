@@ -1,4 +1,4 @@
-import { drawGate, drawTest, type PoolItem } from './draw';
+import { drawGate, drawTest, mixSkills, type PoolItem } from './draw';
 import type { RulePolicy } from './policy';
 import type { ChapterRun, GameState } from './state';
 
@@ -6,7 +6,7 @@ import type { ChapterRun, GameState } from './state';
 
 // R-G1: the items of readiness block `block`, in a fixed order per attempt (reload-safe).
 export const gateDraw = (policy: RulePolicy, s: GameState, run: ChapterRun, practicePool: readonly PoolItem[], block: number): string[] =>
-	drawGate(practicePool, policy.testComposition(s, run.id), block, `${run.id}:${run.attemptNo}:gate`);
+	mixSkills(drawGate(practicePool, policy.testComposition(s, run.id), block, `${run.id}:${run.attemptNo}:gate`), practicePool);
 
 // The next unanswered item of the running readiness block, or undefined when the draw is used up.
 export const nextGateItem = (draw: readonly string[], answered: readonly string[]): string | undefined => draw.find((id) => !answered.includes(id));

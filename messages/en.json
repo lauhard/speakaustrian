@@ -89,6 +89,7 @@
 	"flow_rk6_text": "Get help: in the ÖIF course room and, once available, in the question chat.",
 	"flow_passed_title": "Chapter passed!",
 	"flow_bonus": "Perfect! You start the next chapter with {count} bonus lives.",
+	"flow_next_soon": "This chapter is still being written. Until then: review and free practice.",
 	"flow_next_chapter": "Next chapter",
 	"flow_demo_note": "This is the demo: a small version of the flow. Your course progress stays untouched.",
 	"flow_demo_restart": "Restart the demo",

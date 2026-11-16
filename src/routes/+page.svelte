@@ -104,13 +104,18 @@
 					{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter, i (chapter.id)}
 						{@const content = chapterContent(chapter.id)}
 						{@const access = policy.canAccessChapter(game.state, chapter.id)}
+						{@const passed = chapter.id in game.state.course.completed}
 						<li>
 							{#if content && access.allowed}
 								<a href={resolve('/chapter/[id]', { id: chapter.id })} data-testid="chapter-{chapter.id}" class="card-link flex items-center gap-3">
-									<span class="badge">{i + 1}</span>
+									<span class="badge {passed ? '!bg-ok-soft !text-ok' : ''}">{passed ? '✓' : i + 1}</span>
 									<span class="flex-1">
 										<span class="block leading-tight font-extrabold" lang="de">{chapter.title.de}</span>
-										<span class="text-sm text-muted">{doneCount(chapter.id)}/{content.lessons.length} {m.lessons()}</span>
+										{#if passed}
+											<span class="text-sm font-bold text-ok" data-testid="chapter-passed">{m.flow_passed_title()}</span>
+										{:else}
+											<span class="text-sm text-muted">{doneCount(chapter.id)}/{content.lessons.length} {m.lessons()}</span>
+										{/if}
 									</span>
 									<span class="text-muted">›</span>
 								</a>

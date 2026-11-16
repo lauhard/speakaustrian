@@ -1,5 +1,6 @@
 import type { ContentInfo } from '../reducer';
-import type { PoolItem } from '../draw';
+import { splitPractice, type PoolItem } from '../draw';
+import { defaultConfig } from '../policy';
 import type { ChapterContent, Item } from './schema';
 
 export type PoolKind = 'practice' | 'test';
@@ -7,6 +8,10 @@ export type PoolKind = 'practice' | 'test';
 // The pool of a chapter as the draw functions need it (R-G1, R-T2). Items without `family` are their own family.
 export const poolOf = (chapter: ChapterContent | undefined, kind: PoolKind): PoolItem[] =>
 	(chapter?.pools?.[kind] ?? []).map((i) => ({ id: i.id, skill: i.skill, family: i.family ?? i.id, goals: i.goals ?? [] }));
+
+// Practice part and the pool for the readiness blocks (≥ 2 blocks, masterprompt phase 5 no. 11).
+export const practiceSplit = (chapter: ChapterContent | undefined) =>
+	splitPractice(poolOf(chapter, 'practice'), defaultConfig.PRACTICE_PART_ITEMS, 2 * defaultConfig.GATE_ITEMS);
 
 const itemsOf = (c: ChapterContent): Item[] => [...c.lessons.flatMap((l) => l.items), ...(c.pools?.practice ?? []), ...(c.pools?.test ?? [])];
 
@@ -18,7 +23,7 @@ export const makeContentInfo = (chapters: readonly ChapterContent[]): ContentInf
 		// A chapter without pools has no practice/test yet, so its attempt stays in the lessons.
 		chapter: (id) => {
 			const c = chapters.find((ch) => ch.chapterId === id);
-			return c?.pools ? { lessonIds: c.lessons.map((l) => l.id), practiceTotal: c.pools.practice.length } : undefined;
+			return c?.pools ? { lessonIds: c.lessons.map((l) => l.id), practiceTotal: practiceSplit(c).part.length } : undefined;
 		},
 		baseOf: familyOf,
 		twinsOf: (id) => {

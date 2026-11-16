@@ -14,10 +14,12 @@
 		pool: Vocab[];
 		backHref: string;
 		backLabel: string;
+		// Set when "back" stays on the same page (free practice): called instead of following the link.
+		onback?: () => void;
 		// Called for the first answer of each card only; repeats in the same round have no box effect (R-W5).
 		onanswer?: (task: Task, correct: boolean) => void;
 	};
-	let { tasks, pool, backHref, backLabel, onanswer }: Props = $props();
+	let { tasks, pool, backHref, backLabel, onback, onanswer }: Props = $props();
 
 	const locale = getLocale();
 	const meaning = (v: Vocab) => (locale === 'tl' ? v.tl : v.en);
@@ -71,13 +73,19 @@
 		text = '';
 		verdict = null;
 	};
+
+	const back = (event: MouseEvent) => {
+		if (!onback) return;
+		event.preventDefault();
+		onback();
+	};
 </script>
 
 {#if !task || !question}
 	<section class="space-y-6 pt-10 text-center" data-testid="cards-done">
 		<p class="text-6xl">🎉</p>
 		<h1 class="text-3xl font-black">{m.review_done()}</h1>
-		<a href={backHref} class="btn-primary">{backLabel}</a>
+		<a href={backHref} onclick={back} class="btn-primary">{backLabel}</a>
 	</section>
 {:else}
 	<form class="space-y-5" onsubmit={check}>

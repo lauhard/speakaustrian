@@ -220,4 +220,11 @@ describe('settleChapter (content arrives after the lessons were finished)', () =
 		expect(settleChapter(content)(half)).toBe(half);
 		expect(settleChapter(noPools)(stale())).toEqual(stale());
 	});
+	it('adapts a running practice part to a new size', () => {
+		const big: ContentInfo = { ...content, chapter: () => ({ lessonIds: ['L1', 'L2'], practiceTotal: 90 }) };
+		const s = [profile, ...lessons('A1-01'), ...practice].reduce(makeReducer(policy, order, big), newGame(policy));
+		expect(attempt(s)).toMatchObject({ kind: 'PRACTICE', answered: 2, total: 90 });
+		expect(attempt(settleChapter({ ...content, chapter: () => ({ lessonIds: ['L1', 'L2'], practiceTotal: 40 }) })(s))).toMatchObject({ kind: 'PRACTICE', answered: 2, total: 40 });
+		expect(attempt(settleChapter(content)(s)).kind).toBe('GATE');
+	});
 });

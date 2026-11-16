@@ -52,14 +52,14 @@
 
 {#if words}
 	{#key roundNo}
-		<CardRunner tasks={words} pool={allVocab()} backHref={resolve('/practice')} backLabel={m.free_practice()} />
+		<CardRunner tasks={words} pool={allVocab()} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (words = null)} />
 	{/key}
 	<button type="button" class="backlink mt-6" onclick={() => (words = null)}>
 		‹ {m.free_practice()}
 	</button>
 {:else if round}
 	{#key roundNo}
-		<Runner items={round} {tlMachine} backHref={resolve('/practice')} backLabel={m.free_practice()} />
+		<Runner items={round} {tlMachine} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (round = null)} />
 	{/key}
 	<button type="button" class="backlink mt-6" onclick={() => (round = null)}>
 		‹ {m.free_practice()}

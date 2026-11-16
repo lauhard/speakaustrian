@@ -89,6 +89,7 @@
 	"flow_rk6_text": "Hol dir Hilfe: im ÖIF-Kursraum und – sobald verfügbar – im Frage-Chat.",
 	"flow_passed_title": "Kapitel geschafft!",
 	"flow_bonus": "Perfekt! Im nächsten Kapitel startest du mit {count} Bonusleben.",
+	"flow_next_soon": "Dieses Kapitel ist noch in Arbeit. Bis dahin: Wiederholung und freies Üben.",
 	"flow_next_chapter": "Nächstes Kapitel",
 	"flow_demo_note": "Das ist die Demo: eine kleine Version des Ablaufs. Dein Kursfortschritt bleibt unberührt.",
 	"flow_demo_restart": "Demo neu starten",
