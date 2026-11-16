@@ -1,25 +1,12 @@
-import { z } from 'zod';
+import type { GameState } from '../core/state';
 
-export const LessonResult = z.object({
-	lessonId: z.string(),
-	at: z.string(),
-	correct: z.number().int().nonnegative(),
-	total: z.number().int().positive()
-});
-
-export const Profile = z.object({
-	schema: z.literal(1),
-	name: z.string().min(1),
-	createdAt: z.string(),
-	results: z.array(LessonResult),
-	// Ids of micro lessons finished at least once.
-	lessonsDone: z.array(z.string()).default([])
-});
-export type Profile = z.infer<typeof Profile>;
-
-// Progress lives on the device only (no login). Export/import comes with its own ticket.
+// Progress lives on the device only (D19). Export/import comes with its own step.
 export interface StoragePort {
-	load(): Profile | null;
-	save(profile: Profile): void;
+	load(): GameState | null;
+	save(state: GameState): void;
 	clear(): void;
+	// Profile of the first prototype (storage v1), if one is still on the device.
+	loadLegacy(): LegacyProfile | null;
 }
+
+export type LegacyProfile = { name: string; createdAt: string; lessonsDone: string[] };

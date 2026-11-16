@@ -21,10 +21,10 @@ Learning game for the Austrian ÖIF integration exam A2 (A1 → A2). Spec is ~80
 - Exam facts only from `00-quellen.md`. Austrian German (D10) is the main form; German-German forms always marked.
 
 ## Workflow (D23)
-Claude implements. Small vertical steps from `docs/ROADMAP.md`: branch `t/NNN-slug` → code + tests → `pnpm check && pnpm test` (+ e2e for UI flows) → PR → CI green → squash-merge to `main` → Cloudflare deploys to https://speakaustrian.lauhard.workers.dev. Update `docs/ROADMAP.md` in the same PR. Never push straight to `main`. Ticket files (`docs/tickets/`) only for steps that need a written plan.
+Claude implements. Small vertical steps from `docs/ROADMAP.md`: branch `t/NNN-slug` → code + tests → `pnpm check && pnpm test` (+ e2e for UI flows) → `scripts/ship.sh "title" "body"` (PR → CI green → squash-merge to `main`) → Cloudflare deploys to https://speakaustrian.lauhard.workers.dev. Update `docs/ROADMAP.md` in the same PR. Never push straight to `main`. Ticket files (`docs/tickets/`) only for steps that need a written plan.
 
 ## Commands
 `pnpm install` · `pnpm dev` · `pnpm check` · `pnpm test` (Vitest, core) · `pnpm test:e2e` (Playwright; set `PW_CHROMIUM` to reuse an installed browser) · `pnpm build` · `pnpm deploy`.
 
 ## Architecture (as built)
-`src/lib/core` pure logic (content schema, grading) · `src/lib/ports` interfaces · `src/lib/adapters/web` device TTS, localStorage · `src/lib/content` lesson JSON · `src/routes` UI · `messages/` UI strings (paraglide, de/en/tl). Hosting: Cloudflare Workers (D18), see `docs/DEPLOY.md`. Imports of own TS files use `#lib/….ts`.
+`src/lib/core` pure logic (content schema, grading, `state.ts`, `policy.ts`, `reducer.ts`) · `src/lib/game.svelte.ts` composition root (clock, ids, storage → `dispatch`) · `src/lib/ports` interfaces · `src/lib/adapters/web` device TTS, localStorage · `src/lib/content` lesson JSON · `src/routes` UI · `messages/` UI strings (paraglide, de/en/tl). Hosting: Cloudflare Workers (D18), see `docs/DEPLOY.md`. Imports of own TS files use `#lib/….ts`.

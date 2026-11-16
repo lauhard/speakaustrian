@@ -47,5 +47,8 @@
 	"you_hear": "Sie hören: {text}",
 	"preview": "Vorschau",
 	"course": "Kurs",
-	"not_found": "Diese Seite gibt es nicht."
+	"not_found": "Diese Seite gibt es nicht.",
+	"pensum_label": "Wie viel Zeit haben Sie pro Tag?",
+	"day_x": "Tag {day}",
+	"chapter_locked": "Gesperrt – zuerst das Kapitel davor abschließen"
 }

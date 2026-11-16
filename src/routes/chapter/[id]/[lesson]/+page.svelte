@@ -9,7 +9,7 @@
 	import Runner from '#lib/components/Runner.svelte';
 	import { chapterContent, findLesson } from '#lib/content/index.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
-	import { storage, withResult } from '#lib/profile.ts';
+	import { game } from '#lib/game.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const id = $derived(page.params.id ?? '');
@@ -23,7 +23,8 @@
 	let ttsFailed = $state(false);
 
 	onMount(() => {
-		if (!storage()?.load()) {
+		game.init();
+		if (!game.state.profile) {
 			goto(resolve('/'));
 			return;
 		}
@@ -36,10 +37,8 @@
 		ttsFailed = !(await tts.speak(text)).ok;
 	};
 
-	const finish = (correct: number, total: number) => {
-		const store = storage();
-		const profile = store?.load();
-		if (store && profile && lesson) store.save(withResult(profile, lesson.id, correct, total, new Date()));
+	const finish = () => {
+		if (lesson) game.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id });
 	};
 </script>
 

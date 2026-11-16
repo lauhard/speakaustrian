@@ -8,6 +8,7 @@ const signIn = async (page: import('@playwright/test').Page) => {
 
 test('chapter A1-01: learn cards, tasks, lesson marked as done', async ({ page }) => {
 	await signIn(page);
+	await expect(page.getByTestId('plan-day')).toContainText('1');
 	await page.getByTestId('chapter-A1-01').click();
 	await page.getByTestId('lesson-A1-01-L02').click();
 	await page.getByTestId('to-tasks').click();
@@ -42,6 +43,10 @@ test('chapter A1-01: learn cards, tasks, lesson marked as done', async ({ page }
 
 	await expect(page.getByTestId('result')).toBeVisible();
 	await page.getByTestId('back').click();
+	await expect(page.getByTestId('lesson-A1-01-L02')).toContainText('✓');
+
+	// Progress survives a reload (stored on the device)
+	await page.reload();
 	await expect(page.getByTestId('lesson-A1-01-L02')).toContainText('✓');
 });
 
