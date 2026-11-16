@@ -34,7 +34,8 @@ export const vocabByRef = (refId: string): Vocab | undefined => allVocab().find(
 export const introducedBy = (lesson: Lesson) =>
 	(lesson.introduces ?? []).map((refId) => ({ refId, isNoun: vocabByRef(refId)?.article !== undefined }));
 
-export const allItems = (): Item[] => chapters.flatMap((c) => c.lessons.flatMap((l) => l.items));
+// Free practice (D22): lesson tasks plus the practice pool. The test pool stays out, so chapter tests keep fresh tasks.
+export const allItems = (): Item[] => chapters.flatMap((c) => [...c.lessons.flatMap((l) => l.items), ...(c.pools?.practice ?? [])]);
 
 export type PracticeFilter = Discipline | 'bild';
 
