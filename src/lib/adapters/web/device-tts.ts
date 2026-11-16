@@ -13,7 +13,8 @@ const pickVoice = (voices: SpeechSynthesisVoice[], lang: 'de-AT' | 'de'): Speech
 		: (voices.find((v) => norm(v) === 'de-de') ?? voices.find((v) => norm(v).startsWith('de')));
 };
 
-export const createDeviceTts = (win: Window): SpeechOutPort => {
+// `defaultRate` is read on every call, so a changed setting applies at once.
+export const createDeviceTts = (win: Window, defaultRate: () => number = () => 0.75): SpeechOutPort => {
 	const synth: SpeechSynthesis | undefined = win.speechSynthesis;
 	const lines: string[] = [];
 	const note = (line: string) => {
@@ -82,7 +83,7 @@ export const createDeviceTts = (win: Window): SpeechOutPort => {
 		log: () => lines,
 		speak: async (text, options) => {
 			if (!synth) return { ok: false, reason: 'unsupported' };
-			const rate = options?.rate ?? 0.75;
+			const rate = options?.rate ?? defaultRate();
 			stop();
 			const first = await attempt(text, rate, 'de-AT');
 			if (first.ok || first.reason === 'unsupported') return first;

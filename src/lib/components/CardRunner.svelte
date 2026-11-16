@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, untrack } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
@@ -41,7 +42,7 @@
 	const hasAnswer = $derived(question?.direction === 'produce' ? text.trim() !== '' : selected !== null);
 
 	onMount(() => {
-		tts = createDeviceTts(window);
+		tts = createDeviceTts(window, ttsRate);
 		return () => tts?.stop();
 	});
 
