@@ -5,6 +5,11 @@
 	"compatibility_flags": [
 		"nodejs_als"
 	],
+	// Runs before every `wrangler deploy`, so the Cloudflare build needs no extra build command.
+	// Must not call wrangler itself (wrangler runs this command, that would loop).
+	"build": {
+		"command": "pnpm exec vite build"
+	},
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"assets": {
 		"binding": "ASSETS",
