@@ -162,7 +162,7 @@
 {:else}
 	<section class="space-y-6 pt-6">
 		<div class="space-y-3 text-center">
-			<img src="/icons/logo.svg" alt="" width="88" height="88" class="splash-logo mx-auto h-22 w-22 rounded-3xl shadow-lg" />
+			<img src="/icons/logo.svg" alt="" width="88" height="88" class="splash-logo mx-auto h-24 w-24 drop-shadow-md" />
 			<h1 class="display text-4xl rise" style:animation-delay="120ms" lang="de">Grüß Gott!</h1>
 			<p class="text-muted rise" style:animation-delay="180ms">{m.home_intro()}</p>
 		</div>
