@@ -13,7 +13,8 @@ export type GameEvent = EventBase &
 		| { type: 'PENSUM_CHANGED'; pensumMin: PensumMin }
 		| { type: 'APP_OPENED' }
 		| { type: 'ACTIVITY'; sec: number }
-		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string; introduced?: Introduced[] }
+		// correct/total since K1; events without a score (older logs, migration) stay valid as passed.
+		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string; introduced?: Introduced[]; correct?: number; total?: number }
 		| { type: 'PRACTICE_ANSWERED'; itemId: string; correct: boolean }
 		| { type: 'GATE_ANSWERED'; itemId: string; correct: boolean }
 		| { type: 'TARGETED_PRACTICE_DONE'; goalIds: string[] }
@@ -203,6 +204,8 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 			// Only lessons of the chapter in work count; re-reading passed chapters changes nothing (R-F1).
 			if (!run || run.id !== event.chapterId || run.attempt.kind !== 'LESSONS') return s;
 			if (run.attempt.done.includes(event.lessonId)) return s;
+			// K1, K2: a failed lesson stays open, so practice and readiness stay locked until every lesson is passed.
+			if (event.total !== undefined && !policy.isLessonPassed({ correct: event.correct ?? 0, total: event.total })) return s;
 			const done = [...run.attempt.done, event.lessonId];
 			const info = content.chapter(run.id);
 			const attempt: AttemptState =

@@ -12,6 +12,7 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 ## Next (in this order)
 
 - [ ] 025–031 Chapter flow, flames v2, XP, hearts – concept and order: `docs/concepts/xp-flammen-kapitelfluss.md` (decisions K1–K10, Andi 17.11.2026)
+  - [x] 025 Lesson pass + lock (K1, K2, K10): lesson counts from 51 % (`LESSON_PASS_PCT`, `policy.isLessonPassed`, rounded like the result screen); `LESSON_COMPLETED` carries correct/total, a failed lesson stays open so practice/readiness stay locked; events without a score stay valid. Result screen: red ✗ + "Nicht bestanden – nochmal" with retry as primary action, "Geschafft!" removed, "Richtige Lösung:" instead of green ✓, ring/stars centred, first star = passed (51 %); red score badge in the lesson list
 - [x] 004b A1-01 micro lessons 5–7: all 44 active A1-01 words now have a lesson and a card
 - [ ] 004 A1-01 complete, in three steps:
   - [x] 004a QA script for content pools: `pnpm qa` (`docs/QA.md`), pools file `<chapter>-pools.json` merged by `content/index.ts`, ≥ 2 twins for real chapters as content test, runs in CI; gaps G-009–G-011

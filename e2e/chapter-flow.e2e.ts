@@ -139,3 +139,30 @@ test('review page: error cards of the DEMO test come back the next day and are a
 	}
 	await expect(page.getByTestId('review-none')).toBeVisible();
 });
+
+test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked (K1, K2, K10)', async ({ page }) => {
+	await signIn(page);
+	await page.goto('/chapter/DEMO');
+	await page.getByTestId('lesson-DEMO-01').click();
+	for (let i = 0; i < 6; i++) {
+		await answer(page, i < 3);
+		await page.getByTestId('next').click();
+	}
+	// 3 of 6 = 50 %: not passed, no stars, solutions without a green tick.
+	await expect(page.getByTestId('result')).toHaveAttribute('data-passed', 'false');
+	await expect(page.getByTestId('result-heading')).toBeVisible();
+	await expect(page.getByTestId('misses')).not.toContainText('✓');
+	await page.getByTestId('back').click();
+	await expect(page.getByTestId('lesson-DEMO-01')).toHaveAttribute('data-done', 'false');
+	await expect(page.getByTestId('chapter-flow')).toHaveCount(0);
+
+	// Second try with 4 of 6 (67 %) passes and opens practice.
+	await page.getByTestId('lesson-DEMO-01').click();
+	for (let i = 0; i < 6; i++) {
+		await answer(page, i < 4);
+		await page.getByTestId('next').click();
+	}
+	await expect(page.getByTestId('result')).toHaveAttribute('data-passed', 'true');
+	await page.getByTestId('back').click();
+	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'PRACTICE');
+});

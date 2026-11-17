@@ -2,7 +2,7 @@
 	import { untrack } from 'svelte';
 	import { toast } from '#lib/toast.svelte.ts';
 	import { Check, ChevronLeft, ChevronRight, LockOpen, Star } from '@lucide/svelte';
-	import { lessonScores } from '#lib/lesson-scores.svelte.ts';
+	import { lessonScores, STARS } from '#lib/lesson-scores.svelte.ts';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
@@ -110,8 +110,8 @@
 						</span>
 						{#if pct !== undefined}
 							<span class="flex shrink-0 flex-col items-end gap-0.5" data-testid="lesson-score">
-								<span class="flex gap-px" aria-hidden="true">{#each [50, 70, 90] as min (min)}<Star size={13} strokeWidth={2.25} class={pct >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</span>
-								<span class="rounded-full px-2 py-0.5 text-xs font-extrabold {pct === 100 ? 'bg-amber-100 text-amber-700' : pct >= 70 ? 'bg-ok-soft text-ok' : 'bg-warn-soft text-warn'}">{pct}%</span>
+								<span class="flex gap-px" aria-hidden="true">{#each STARS as min (min)}<Star size={13} strokeWidth={2.25} class={pct >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</span>
+								<span class="rounded-full px-2 py-0.5 text-xs font-extrabold {pct === 100 ? 'bg-amber-100 text-amber-700' : pct >= 70 ? 'bg-ok-soft text-ok' : pct >= STARS[0] ? 'bg-warn-soft text-warn' : 'bg-bad-soft text-bad'}">{pct}%</span>
 							</span>
 						{:else}<ChevronRight size={18} class="text-muted" />{/if}
 					</a>
