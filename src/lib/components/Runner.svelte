@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
-	import { Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
+	import { AudioLines, Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
+	import { skills } from '#lib/skills.ts';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, type Snippet } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -48,6 +49,7 @@
 	let finished = $state(false);
 
 	const item = $derived(items[index]);
+	const sk = $derived(skills[item.skill]);
 	const segments = $derived(item.type === 'cloze' ? parseCloze(item.text) : []);
 	const isLast = $derived(index === items.length - 1);
 
@@ -104,9 +106,12 @@
 	};
 
 	// Called directly from the tap so the browser accepts it as a user gesture.
+	let playing = $state(false);
 	const listen = async (text: string) => {
 		if (!tts) return;
+		playing = true;
 		const status = await tts.speak(text);
+		playing = false;
 		ttsFailed = !status.ok;
 	};
 
@@ -158,22 +163,24 @@
 	<form class="space-y-5" data-item={item.id} onsubmit={check}>
 		{#if top}{@render top()}{/if}
 		{#if !bare}
-		<div>
-			<div class="mb-2 flex items-center justify-between">
-				<a href={backHref} onclick={back} class="burger" aria-label={backLabel}><X size={20} strokeWidth={2.5} /></a>
-				<p class="flex items-center gap-3 text-sm font-bold text-muted">
-					<span class="flex items-center gap-1 text-ok" data-testid="run-correct"><Check size={16} strokeWidth={3} />{correctCount}</span>
-					{#if streak >= 3}<span class="pop flex items-center gap-1 text-orange-500" data-testid="streak"><Flame size={16} strokeWidth={2.5} class="fill-orange-400" />{streak}</span>{/if}
-					<span>{m.task_count({ current: index + 1, total: items.length })}</span>
-				</p>
-			</div>
-			<div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax={items.length} aria-valuenow={index + (grade ? 1 : 0)}>
+		<div class="flex items-center gap-3">
+			<a href={backHref} onclick={back} class="burger shrink-0" aria-label={backLabel}><X size={20} strokeWidth={2.5} /></a>
+			<div class="bar !h-2.5 flex-1" role="progressbar" aria-valuemin="0" aria-valuemax={items.length} aria-valuenow={index + (grade ? 1 : 0)}>
 				<span style="width: {((index + (grade ? 1 : 0)) / items.length) * 100}%"></span>
 			</div>
+			<p class="flex shrink-0 items-center gap-2 text-sm font-extrabold">
+				{#if streak >= 3}<span class="pop flex items-center gap-0.5 text-orange-500" data-testid="streak"><Flame size={16} strokeWidth={2.5} class="fill-orange-400" />{streak}</span>{/if}
+				<span class="flex items-center gap-0.5 text-ok" data-testid="run-correct"><Check size={16} strokeWidth={3} />{correctCount}</span>
+				<span class="text-muted" aria-label={m.task_count({ current: index + 1, total: items.length })}>{index + 1}/{items.length}</span>
+			</p>
 		</div>
 		{/if}
 
-		<div class="card">
+		<div class="card space-y-2 !p-5">
+			<p class="flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase">
+				<span class="grid h-7 w-7 place-items-center rounded-lg {sk.tile}"><sk.icon size={16} strokeWidth={2.5} /></span>
+				<span class="text-muted">{sk.label()}</span>
+			</p>
 			{#if examMode}
 				<p class="font-bold">{item.instruction.de}</p>
 				{#if helpLocale !== 'de' && !grade}
@@ -199,13 +206,13 @@
 		{/if}
 
 		{#if item.audioText}
-			<button
-				type="button"
-				data-testid="listen"
-				class={item.audioOnly ? 'btn-secondary' : 'btn-ghost'}
-				onclick={() => listen(item.audioText ?? '')}
-			>
-				<Volume2 size={20} strokeWidth={2.25} />{m.listen()}
+			<button type="button" data-testid="listen" class="listen" onclick={() => listen(item.audioText ?? '')}>
+				<span class="listen-btn {sk.solid}" class:is-playing={playing}>
+					{#if playing}<AudioLines size={26} strokeWidth={2.5} />{:else}<Volume2 size={26} strokeWidth={2.5} />{/if}
+				</span>
+				<span class="text-left">
+					<span class="block font-extrabold">{playing ? m.playing() : m.listen()}</span>
+				</span>
 			</button>
 			{#if ttsFailed}
 				<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>
@@ -221,7 +228,8 @@
 					<label
 						class="option {grade && i === item.answer ? 'is-right' : grade && i === selected ? 'is-wrong' : ''}"
 					>
-						<input type="radio" name="choice" value={i} bind:group={selected} />
+						<input type="radio" name="choice" class="absolute inset-0 cursor-pointer opacity-0" value={i} bind:group={selected} />
+						<span class="letter" aria-hidden="true">{'ABCDEFGH'[i]}</span>
 						<span lang="de">{option}</span>
 					</label>
 				{/each}

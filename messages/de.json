@@ -34,8 +34,8 @@
 	"skill_hoeren": "Hören",
 	"skill_schreiben": "Schreiben",
 	"skill_sprechen": "Sprechen",
-	"skill_grammatikWortschatz": "Grammatik und Wörter",
-	"skill_werte": "Werte und Orientierung",
+	"skill_grammatikWortschatz": "Wortschatz & Grammatik",
+	"skill_werte": "Werte & Zusammenleben",
 	"skill_bild": "Bilder",
 	"tasks_available": "{count} Aufgaben",
 	"lessons": "Lektionen",
@@ -145,5 +145,10 @@
 	"set_group_app": "App",
 	"set_group_data": "Daten",
 	"free_label": "Frei",
-	"nav_chapter": "Kapitel"
+	"nav_chapter": "Kapitel",
+	"goal_title": "Tagesziel",
+	"goal_progress": "{done} von {goal} min",
+	"goal_met": "Tagesziel erreicht",
+	"goal_due": "Noch {count} Wiederholungen offen",
+	"playing": "Läuft …"
 }

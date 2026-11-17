@@ -198,7 +198,33 @@ body {
 		@apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-soft text-sm font-extrabold text-brand;
 	}
 	.option {
-		@apply flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border-2 border-line bg-white px-4 py-3 text-lg font-semibold transition has-[:checked]:border-brand has-[:checked]:bg-brand-soft;
+		@apply relative flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border-2 border-line bg-white px-4 py-3 text-lg font-semibold transition has-[:checked]:border-brand has-[:checked]:bg-brand-soft;
+	}
+	.letter {
+		@apply grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-paper text-sm font-extrabold text-muted ring-1 ring-line transition;
+	}
+	.option:has(:checked) .letter {
+		@apply bg-brand text-white ring-brand;
+	}
+	.option.is-right .letter {
+		@apply bg-ok text-white ring-ok;
+	}
+	.option.is-wrong .letter {
+		@apply bg-bad text-white ring-bad;
+	}
+	.option:not(:has(:disabled)):hover {
+		@apply border-brand/40;
+	}
+	.listen {
+		@apply flex items-center gap-3 rounded-2xl text-ink;
+	}
+	.listen-btn {
+		@apply relative grid h-14 w-14 place-items-center rounded-full shadow-lg transition active:scale-95;
+	}
+	.listen-btn.is-playing::after {
+		content: '';
+		@apply absolute inset-0 rounded-full ring-4 ring-current opacity-40;
+		animation: ring-pulse 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
 	}
 	.option.is-right {
 		@apply border-ok bg-ok-soft;
@@ -403,5 +429,12 @@ body {
 	::view-transition-old(page),
 	::view-transition-new(page) {
 		animation: none;
+	}
+}
+@keyframes ring-pulse {
+	75%,
+	100% {
+		transform: scale(1.5);
+		opacity: 0;
 	}
 }

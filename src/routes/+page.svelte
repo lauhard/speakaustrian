@@ -4,7 +4,8 @@
 	import { m } from '#lib/paraglide/messages.js';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { chapterContent, course } from '#lib/content/index.ts';
-	import { ArrowRight, CalendarDays, Check, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw } from '@lucide/svelte';
+	import { DAY_GOAL_SEC } from '#lib/core/day.ts';
+	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw } from '@lucide/svelte';
 	import { planDay } from '#lib/core/reducer.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
@@ -57,6 +58,14 @@
 	const levelChapters = $derived(course.chapters.filter((c) => c.id.startsWith(level)));
 	const passedCount = $derived(levelChapters.filter((c) => chapterContent(c.id) && statusOf(c.id).phase === 'passed').length);
 
+	// R-S1 day goal: active minutes today; the bar fills to 20 min (due reviews are named in the sub line).
+	const streak = $derived(game.state.streak.current);
+	const goal = $derived.by(() => {
+		const day = game.state.days[game.today];
+		const min = Math.floor((day?.activeSec ?? 0) / 60);
+		return { min, met: day?.goalMet ?? false, pct: Math.min(100, (min / (DAY_GOAL_SEC / 60)) * 100) };
+	});
+
 	onMount(() => game.init());
 	// Free-mode chapters keep their own state; load it so the list shows their progress.
 	$effect(() => {
@@ -84,6 +93,20 @@
 				<span aria-hidden="true">·</span>
 				<Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}
 			</p>
+		</div>
+
+		<div class="tile !flex-row !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
+			<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl {streak > 0 ? 'bg-orange-100 text-orange-500' : 'bg-stone-100 text-stone-400'}">
+				<Flame size={26} strokeWidth={2.25} class={streak > 0 ? 'flame fill-orange-400' : ''} />
+			</span>
+			<span class="min-w-0 flex-1 space-y-1.5">
+				<span class="flex items-baseline justify-between gap-2">
+					<span class="tile-title">{streak} {m.stat_streak()}</span>
+					<span class="text-xs font-extrabold tracking-wider text-muted uppercase">{m.goal_title()}</span>
+				</span>
+				<span class="bar !h-2 block"><span class={goal.met ? '!bg-ok' : '!bg-orange-400'} style="width: {goal.pct}%"></span></span>
+				<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
+			</span>
 		</div>
 
 		{#if current}

@@ -5,7 +5,9 @@
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
 	import { ChevronLeft } from '@lucide/svelte';
+	import { onMount } from 'svelte';
 	import { page } from '$app/state';
+	import { game, startActivityClock } from '#lib/game.svelte.ts';
 	import Menu from '#lib/components/Menu.svelte';
 	import Toaster from '#lib/components/Toaster.svelte';
 	import Splash from '#lib/components/Splash.svelte';
@@ -21,6 +23,11 @@
 		if (parts.length === 0) return null;
 		if (parts[0] === 'chapter' && parts.length === 3) return { href: resolve('/chapter/[id]', { id: parts[1] }), label: m.nav_chapter };
 		return { href: resolve('/'), label: m.course };
+	});
+
+	onMount(() => {
+		game.init();
+		startActivityClock();
 	});
 
 	// Page fades via the View Transitions API (CSS in layout.css); browsers without it just navigate.
@@ -71,7 +78,7 @@
 				<Menu />
 			</div>
 		</header>
-		<main class="page flex-1 pb-8">
+		<main class="page flex-1 pt-3 pb-8">
 			{@render children()}
 		</main>
 	</div>
