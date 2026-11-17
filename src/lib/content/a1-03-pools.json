@@ -272,7 +272,7 @@
 					"in Wien"
 				],
 				"answer": 0,
-				"audioText": "Ich komme aus Wien, aber ich wohne in St. Pölten.",
+				"audioText": "Ich komme aus Wien, aber ich wohne in Sankt Pölten.",
 				"audioOnly": true,
 				"family": "A1-03-P-HO2-3"
 			},
@@ -374,9 +374,9 @@
 					"tl": "Makinig. Anong mga wika ang alam ng tao?"
 				},
 				"explanation": {
-					"de": "Sie hören: „Ich spreche nur Englisch.“",
-					"en": "You hear: “Ich spreche nur Englisch.”",
-					"tl": "Naririnig mo: “Ich spreche nur Englisch.”"
+					"de": "Sie hören: „Ich spreche nur Tagalog und ein bisschen Englisch.“",
+					"en": "You hear: “Ich spreche nur Tagalog und ein bisschen Englisch.”",
+					"tl": "Naririnig mo: “Ich spreche nur Tagalog und ein bisschen Englisch.”"
 				},
 				"goals": [
 					"A1-03-G3"
@@ -386,11 +386,11 @@
 					"W-A1-0303"
 				],
 				"options": [
-					"nur Englisch",
-					"Englisch und Deutsch"
+					"nur Tagalog und ein bisschen Englisch",
+					"nur Tagalog"
 				],
 				"answer": 0,
-				"audioText": "Ich spreche nur Englisch.",
+				"audioText": "Ich spreche nur Tagalog und ein bisschen Englisch.",
 				"audioOnly": true,
 				"family": "A1-03-P-HO3-3"
 			},
@@ -501,9 +501,9 @@
 					"tl": "Makinig. Alin ang angkop na sagot?"
 				},
 				"explanation": {
-					"de": "Sie hören: „Sprechen Sie nicht Deutsch?“ – passend ist: „Doch, ein bisschen.“",
-					"en": "You hear: “Sprechen Sie nicht Deutsch?” – the fitting reply: “Doch, ein bisschen.”",
-					"tl": "Naririnig mo: “Sprechen Sie nicht Deutsch?” – angkop: “Doch, ein bisschen.”"
+					"de": "Sie hören: „Wohnen Sie nicht in Wien?“ – passend ist: „Doch, in Wien.“",
+					"en": "You hear: “Wohnen Sie nicht in Wien?” – the fitting reply: “Doch, in Wien.”",
+					"tl": "Naririnig mo: “Wohnen Sie nicht in Wien?” – angkop: “Doch, in Wien.”"
 				},
 				"goals": [
 					"A1-03-G1",
@@ -517,10 +517,10 @@
 					"In Linz.",
 					"Aus Graz.",
 					"Maria Santos.",
-					"Doch, ein bisschen."
+					"Doch, in Wien."
 				],
 				"answer": 3,
-				"audioText": "Sprechen Sie nicht Deutsch?",
+				"audioText": "Wohnen Sie nicht in Wien?",
 				"audioOnly": true,
 				"family": "A1-03-P-HO4-3"
 			},
@@ -550,7 +550,7 @@
 					"lukas.berger@aon.de"
 				],
 				"answer": 1,
-				"audioText": "Das E-Mail ist: lukas Punkt berger ät a o n Punkt a t",
+				"audioText": "Die E-Mail-Adresse ist: lukas Punkt berger ät a o n Punkt a t",
 				"audioOnly": true
 			},
 			{
@@ -579,7 +579,7 @@
 					"josecruz@gmx.at"
 				],
 				"answer": 0,
-				"audioText": "Das E-Mail ist: jose Punkt cruz ät g m x Punkt a t",
+				"audioText": "Die E-Mail-Adresse ist: jose Punkt cruz ät g m x Punkt a t",
 				"audioOnly": true,
 				"family": "A1-03-P-HO5-1"
 			},
@@ -606,10 +606,9 @@
 				],
 				"prompt": "Die Straße:",
 				"accept": [
-					"Seegasse",
 					"Seegasse"
 				],
-				"audioText": "Die Straße heißt: s, e, e, g, a, s, s, e",
+				"audioText": "Die Straße heißt: Es, E, E, Ge, A, Es, Es, E",
 				"audioOnly": true
 			},
 			{
@@ -635,10 +634,9 @@
 				],
 				"prompt": "Die Straße:",
 				"accept": [
-					"Feldweg",
 					"Feldweg"
 				],
-				"audioText": "Die Straße heißt: f, e, l, d, w, e, g",
+				"audioText": "Die Straße heißt: Ef, E, El, De, We, E, Ge",
 				"audioOnly": true,
 				"family": "A1-03-P-HO6-1"
 			},
@@ -665,10 +663,9 @@
 				],
 				"prompt": "Die Straße:",
 				"accept": [
-					"Kirchplatz",
 					"Kirchplatz"
 				],
-				"audioText": "Die Straße heißt: k, i, r, c, h, p, l, a, t, z",
+				"audioText": "Die Straße heißt: Ka, I, Er, Ze, Ha, Pe, El, A, Te, Zett",
 				"audioOnly": true
 			},
 			{
@@ -697,7 +694,7 @@
 					"Ringstraße",
 					"Ringstrasse"
 				],
-				"audioText": "Die Straße heißt: r, i, n, g, s, t, r, a, s, s, e",
+				"audioText": "Die Straße heißt: Er, I, En, Ge, Es, Te, Er, A, Es, Es, E",
 				"audioOnly": true,
 				"family": "A1-03-P-HO6-3"
 			},
@@ -823,12 +820,12 @@
 					"W-A1-0096"
 				],
 				"options": [
-					"Lukas wohnt in Wien.",
-					"Lukas kommt aus Wien.",
-					"Lukas spricht Englisch."
+					"Tom wohnt in Wien.",
+					"Tom kommt aus Wien.",
+					"Tom spricht Englisch."
 				],
 				"answer": 0,
-				"prompt": "Hallo! Ich heiße Lukas. Ich komme aus Deutschland. Ich wohne in Wien. Ich spreche Deutsch.\nWas ist richtig?",
+				"prompt": "Hallo! Ich heiße Tom. Ich komme aus Deutschland. Ich wohne in Wien. Ich spreche Deutsch.\nWas ist richtig?",
 				"family": "A1-03-P-LE1-3"
 			},
 			{
@@ -963,9 +960,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Auf der Karte sind Deutschland, Österreich und die Schweiz.",
-					"en": "The map shows Germany, Austria and Switzerland.",
-					"tl": "Nasa mapa ang Germany, Austria at Switzerland."
+					"de": "Auf der Karte steht nur eine Stadt: Wien.",
+					"en": "Only one city is on the map: Vienna.",
+					"tl": "Isang lungsod lang ang nasa mapa: Vienna."
 				},
 				"goals": [
 					"A1-03-G1"
@@ -975,12 +972,12 @@
 					"W-A1-0096"
 				],
 				"options": [
-					"Deutschland",
-					"die Schweiz",
-					"die Philippinen"
+					"Ja, Graz und Wien.",
+					"Ja, nur Graz.",
+					"Nein, nur Wien."
 				],
 				"answer": 2,
-				"prompt": "Welches Land ist nicht auf der Karte?",
+				"prompt": "Ist Graz auf der Karte?",
 				"image": {
 					"src": "/img/a1-03-karte.svg",
 					"alt": {
@@ -1097,9 +1094,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "„Doch!“ = ja, B spricht Tagalog.",
-					"en": "“Doch!” = yes, B speaks Tagalog.",
-					"tl": "“Doch!” = oo, marunong ng Tagalog si B."
+					"de": "„Doch!“ = ja, B kommt aus Manila.",
+					"en": "“Doch!” = yes, B comes from Manila.",
+					"tl": "“Doch!” = oo, taga-Manila si B."
 				},
 				"goals": [
 					"A1-03-G5"
@@ -1114,7 +1111,7 @@
 					"Nein."
 				],
 				"answer": 0,
-				"prompt": "A: Sprichst du nicht Tagalog?\nB: Doch!\nSpricht B Tagalog?"
+				"prompt": "A: Kommst du nicht aus Manila?\nB: Doch!\nKommt B aus Manila?"
 			},
 			{
 				"id": "A1-03-P-LE4-4",
@@ -1230,9 +1227,9 @@
 					"tl": "Basahin ang teksto. Kumpletuhin ang form."
 				},
 				"explanation": {
-					"de": "Heimatland = Deutschland, Wohnort = Klagenfurt.",
-					"en": "Home country = Deutschland, place of residence = Klagenfurt.",
-					"tl": "Sariling bansa = Deutschland, tirahan = Klagenfurt."
+					"de": "Heimatland = Österreich, Wohnort = Klagenfurt.",
+					"en": "Home country = Österreich, place of residence = Klagenfurt.",
+					"tl": "Sariling bansa = Österreich, tirahan = Klagenfurt."
 				},
 				"goals": [
 					"A1-03-G1",
@@ -1242,11 +1239,11 @@
 					"W-A1-0356",
 					"W-A1-0148"
 				],
-				"text": "Ich bin Lukas Mayer. Ich komme aus Deutschland und wohne jetzt in Klagenfurt.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"text": "Ich bin Lukas Mayer. Ich komme aus Österreich und wohne jetzt in Klagenfurt.\nHeimatland: {{1}} · Wohnort: {{2}}",
 				"gaps": {
 					"1": {
 						"accept": [
-							"Deutschland"
+							"Österreich"
 						]
 					},
 					"2": {
@@ -1317,7 +1314,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Wo wohnst du?\nIch {{1}} {{2}} Linz.",
+				"text": "Wo wohnst du?\nIch {{1}} (wohnen) {{2}} Linz.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1355,7 +1352,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Woher kommst du?\nIch {{1}} {{2}} Österreich.",
+				"text": "Woher kommst du?\nIch {{1}} (kommen) {{2}} Österreich.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1394,7 +1391,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Sprechen Sie Englisch?\n{{1}}, ich {{2}} Englisch.",
+				"text": "Sprechen Sie Englisch?\n{{1}}, ich {{2}} (sprechen) Englisch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1413,14 +1410,14 @@
 				"type": "cloze",
 				"skill": "schreiben",
 				"instruction": {
-					"de": "Antworten Sie. (Sie sprechen Deutsch)",
-					"en": "Answer. (You do speak German)",
-					"tl": "Sumagot. (Marunong ka ng German)"
+					"de": "Antworten Sie. (Sie wohnen in Graz)",
+					"en": "Answer. (You do live in Graz)",
+					"tl": "Sumagot. (Nakatira ka nga sa Graz)"
 				},
 				"explanation": {
-					"de": "Antwort: „Doch, ich spreche Deutsch.“",
-					"en": "Answer: “Doch, ich spreche Deutsch.”",
-					"tl": "Sagot: “Doch, ich spreche Deutsch.”"
+					"de": "Antwort: „Doch, ich wohne in Graz.“",
+					"en": "Answer: “Doch, ich wohne in Graz.”",
+					"tl": "Sagot: “Doch, ich wohne in Graz.”"
 				},
 				"goals": [
 					"A1-03-G1",
@@ -1432,7 +1429,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Sprechen Sie nicht Deutsch?\n{{1}}, ich spreche Deutsch.",
+				"text": "Wohnen Sie nicht in Graz?\n{{1}}, ich wohne in Graz.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1465,7 +1462,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Jose. Ich {{1}} aus den Philippinen und {{2}} in Linz. Ich {{3}} Tagalog und Deutsch.",
+				"text": "Hallo! Ich heiße Jose. Ich {{1}} (kommen) aus den Philippinen und {{2}} (wohnen) in Linz. Ich {{3}} (sprechen) Tagalog und Deutsch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1507,7 +1504,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Anna. Ich {{1}} aus Österreich und {{2}} in Wien. Ich {{3}} Englisch.",
+				"text": "Hallo! Ich heiße Anna. Ich {{1}} (kommen) aus Österreich und {{2}} (wohnen) in Wien. Ich {{3}} (sprechen) Englisch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1550,7 +1547,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Tom. Ich {{1}} aus Deutschland und {{2}} in Innsbruck. Ich {{3}} Deutsch.",
+				"text": "Hallo! Ich heiße Tom. Ich {{1}} (kommen) aus Deutschland und {{2}} (wohnen) in Innsbruck. Ich {{3}} (sprechen) Deutsch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1592,7 +1589,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Ali. Ich {{1}} aus Österreich und {{2}} in Wels. Ich {{3}} Deutsch und Englisch.",
+				"text": "Hallo! Ich heiße Ali. Ich {{1}} (kommen) aus Österreich und {{2}} (wohnen) in Wels. Ich {{3}} (sprechen) Deutsch und Englisch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1813,9 +1810,9 @@
 					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Zur Wortkarte „E-Mail?“ passt: „Wie ist Ihr E-Mail?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “E-Mail?”: “Wie ist Ihr E-Mail?” (exam: speaking part 2).",
-					"tl": "Para sa word card “E-Mail?”: “Wie ist Ihr E-Mail?” (exam: speaking part 2)."
+					"de": "Zur Wortkarte „E-Mail?“ passt: „Wie ist Ihre E-Mail-Adresse?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “E-Mail?”: “Wie ist Ihre E-Mail-Adresse?” (exam: speaking part 2).",
+					"tl": "Para sa word card “E-Mail?”: “Wie ist Ihre E-Mail-Adresse?” (exam: speaking part 2)."
 				},
 				"goals": [
 					"A1-03-G5",
@@ -1827,7 +1824,7 @@
 				],
 				"options": [
 					"Wie ist Ihre Adresse?",
-					"Wie ist Ihr E-Mail?",
+					"Wie ist Ihre E-Mail-Adresse?",
 					"Wo wohnen Sie?"
 				],
 				"answer": 1,
@@ -1976,7 +1973,7 @@
 				],
 				"options": [
 					"Wie schreibt man das?",
-					"Ich verstehe nicht.",
+					"Auf Wiederhören!",
 					"Langsam, bitte!"
 				],
 				"answer": 2,
@@ -2078,14 +2075,14 @@
 				"type": "choice",
 				"skill": "sprechen",
 				"instruction": {
-					"de": "Stellen Sie sich vor: Lukas – Deutschland – Wien. Wählen Sie, dann sagen Sie es laut.",
-					"en": "Introduce yourself: Lukas – Deutschland – Wien. Choose, then say it aloud.",
-					"tl": "Ipakilala ang sarili: Lukas – Deutschland – Wien. Pumili, tapos sabihin nang malakas."
+					"de": "Stellen Sie sich vor: Tom – Deutschland – Wien. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Tom – Deutschland – Wien. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Tom – Deutschland – Wien. Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Richtig: „Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.“ – komme aus …, wohne in …",
-					"en": "Correct: “Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.” – komme aus …, wohne in …",
-					"tl": "Tama: “Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.” – komme aus …, wohne in …"
+					"de": "Richtig: „Ich heiße Tom. Ich komme aus Deutschland und wohne in Wien.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Tom. Ich komme aus Deutschland und wohne in Wien.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Tom. Ich komme aus Deutschland und wohne in Wien.” – komme aus …, wohne in …"
 				},
 				"goals": [
 					"A1-03-G1",
@@ -2097,9 +2094,9 @@
 					"W-A1-0148"
 				],
 				"options": [
-					"Ich heiße Lukas. Ich komme in Deutschland und wohne aus Wien.",
-					"Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.",
-					"Ich heiße Lukas. Ich komme aus Wien und wohne in Deutschland."
+					"Ich heiße Tom. Ich komme in Deutschland und wohne aus Wien.",
+					"Ich heiße Tom. Ich komme aus Deutschland und wohne in Wien.",
+					"Ich heiße Tom. Ich komme aus Wien und wohne in Deutschland."
 				],
 				"answer": 1,
 				"family": "A1-03-P-SP4-3"
@@ -2468,9 +2465,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "sprechen: du sprichst.",
-					"en": "sprechen: du sprichst. – irregular forms",
-					"tl": "sprechen: du sprichst. – irregular na anyo"
+					"de": "sprechen: du sprichst. – Formen mitlernen.",
+					"en": "sprechen: du sprichst. – learn the forms.",
+					"tl": "sprechen: du sprichst. – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -2478,7 +2475,7 @@
 				"refs": [
 					"W-A1-0131"
 				],
-				"text": "Du {{1}} Deutsch.",
+				"text": "Du {{1}} (sprechen) Deutsch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -2497,9 +2494,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "geben: sie gibt.",
-					"en": "geben: sie gibt. – irregular forms",
-					"tl": "geben: sie gibt. – irregular na anyo"
+					"de": "geben: sie gibt. – Formen mitlernen.",
+					"en": "geben: sie gibt. – learn the forms.",
+					"tl": "geben: sie gibt. – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -2507,7 +2504,7 @@
 				"refs": [
 					"W-A1-0137"
 				],
-				"text": "Maria {{1}} mir die Adresse.",
+				"text": "Maria {{1}} (geben) mir die Telefonnummer.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -2527,9 +2524,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "nehmen: du nimmst.",
-					"en": "nehmen: du nimmst. – irregular forms",
-					"tl": "nehmen: du nimmst. – irregular na anyo"
+					"de": "nehmen: du nimmst. – Formen mitlernen.",
+					"en": "nehmen: du nimmst. – learn the forms.",
+					"tl": "nehmen: du nimmst. – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -2537,7 +2534,7 @@
 				"refs": [
 					"W-A1-0138"
 				],
-				"text": "Du {{1}} das.",
+				"text": "Du {{1}} (nehmen) das.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -2556,9 +2553,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "finden: er findet (mit -et).",
-					"en": "finden: er findet (with -et). – irregular forms",
-					"tl": "finden: er findet (may -et). – irregular na anyo"
+					"de": "finden: er findet (mit -et). – Formen mitlernen.",
+					"en": "finden: er findet (with -et). – learn the forms.",
+					"tl": "finden: er findet (may -et). – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -2566,7 +2563,7 @@
 				"refs": [
 					"W-A1-0140"
 				],
-				"text": "Er {{1}} die Straße nicht.",
+				"text": "Er {{1}} (finden) die Straße nicht.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -2997,9 +2994,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "EU = Europäische Union. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "EU = European Union. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "EU = European Union. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Österreich liegt in Europa. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Austria is in Europe. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Nasa Europa ang Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3011,11 +3008,11 @@
 					"Q36"
 				],
 				"options": [
-					"Europäische Union",
-					"Europäische Stadt"
+					"Europa",
+					"den Philippinen"
 				],
 				"answer": 0,
-				"prompt": "EU heißt …"
+				"prompt": "Österreich ist ein Land in …"
 			},
 			{
 				"id": "A1-03-P-WE2-2",
@@ -3556,9 +3553,9 @@
 					"tl": "Makinig. Anong mga wika ang alam ng tao?"
 				},
 				"explanation": {
-					"de": "Sie hören: „Ich spreche Englisch und Deutsch.“",
-					"en": "You hear: “Ich spreche Englisch und Deutsch.”",
-					"tl": "Naririnig mo: “Ich spreche Englisch und Deutsch.”"
+					"de": "Sie hören: „Ich spreche nur Englisch.“",
+					"en": "You hear: “Ich spreche nur Englisch.”",
+					"tl": "Naririnig mo: “Ich spreche nur Englisch.”"
 				},
 				"goals": [
 					"A1-03-G3"
@@ -3568,11 +3565,11 @@
 					"W-A1-0303"
 				],
 				"options": [
-					"Englisch und Tagalog",
-					"Englisch und Deutsch"
+					"Englisch und Deutsch",
+					"nur Englisch"
 				],
 				"answer": 1,
-				"audioText": "Ich spreche Englisch und Deutsch.",
+				"audioText": "Ich spreche nur Englisch.",
 				"audioOnly": true,
 				"family": "A1-03-T-HO3-1"
 			},
@@ -3891,7 +3888,7 @@
 					"sofia.b@gmx.at"
 				],
 				"answer": 2,
-				"prompt": "Sofia Berger\nBergstraße 21\n5020 Salzburg\nE-Mail: sofia.b@gmx.at\nWie ist das E-Mail?",
+				"prompt": "Sofia Berger\nBergstraße 21\n5020 Salzburg\nE-Mail: sofia.b@gmx.at\nWie ist die E-Mail-Adresse?",
 				"family": "A1-03-T-LE2-1"
 			},
 			{
@@ -3904,9 +3901,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lukas hat die Flagge von Deutschland.",
-					"en": "Lukas has the German flag.",
-					"tl": "May bandila ng Germany si Lukas."
+					"de": "Über Tom steht „Deutschland“, er hat die Flagge von Deutschland.",
+					"en": "Above Tom it says “Deutschland”; he has the German flag.",
+					"tl": "Nakasulat ang “Deutschland” sa itaas ni Tom; may bandila siya ng Germany."
 				},
 				"goals": [
 					"A1-03-G1"
@@ -3921,7 +3918,7 @@
 					"aus den Philippinen"
 				],
 				"answer": 1,
-				"prompt": "Woher kommt Lukas?",
+				"prompt": "Woher kommt Tom?",
 				"image": {
 					"src": "/img/a1-03-herkunft.svg",
 					"alt": {
@@ -3941,9 +3938,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Anna hat die Flagge von Österreich.",
-					"en": "Anna has the Austrian flag.",
-					"tl": "May bandila ng Austria si Anna."
+					"de": "Über Anna steht „Österreich“, sie hat die Flagge von Österreich.",
+					"en": "Above Anna it says “Österreich”; she has the Austrian flag.",
+					"tl": "Nakasulat ang “Österreich” sa itaas ni Anna; may bandila siya ng Austria."
 				},
 				"goals": [
 					"A1-03-G1"
@@ -3979,7 +3976,7 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Jose hat die Flagge der Philippinen.",
+					"de": "Über Jose steht „Philippinen“.",
 					"en": "Jose has the flag of the Philippines.",
 					"tl": "May bandila ng Pilipinas si Jose."
 				},
@@ -3992,7 +3989,7 @@
 				],
 				"options": [
 					"Anna",
-					"Lukas",
+					"Tom",
 					"Jose"
 				],
 				"answer": 2,
@@ -4232,7 +4229,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Wo wohnen Sie?\nIch {{1}} {{2}} Graz.",
+				"text": "Wo wohnen Sie?\nIch {{1}} (wohnen) {{2}} Graz.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -4270,7 +4267,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Woher kommen Sie?\nIch {{1}} {{2}} Deutschland.",
+				"text": "Woher kommen Sie?\nIch {{1}} (kommen) {{2}} Deutschland.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -4309,7 +4306,7 @@
 					"W-A1-0096",
 					"W-A1-0131"
 				],
-				"text": "Welche Sprachen sprechen Sie?\nIch {{1}} Tagalog {{2}} Englisch.",
+				"text": "Welche Sprachen sprechen Sie?\nIch {{1}} (sprechen) Tagalog {{2}} Englisch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -4347,7 +4344,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Maria. Ich {{1}} aus den Philippinen und {{2}} in Wien. Ich {{3}} Tagalog.",
+				"text": "Hallo! Ich heiße Maria. Ich {{1}} (kommen) aus den Philippinen und {{2}} (wohnen) in Wien. Ich {{3}} (sprechen) Tagalog.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -4389,7 +4386,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Lukas. Ich {{1}} aus Deutschland und {{2}} in Graz. Ich {{3}} Deutsch.",
+				"text": "Hallo! Ich heiße Lukas. Ich {{1}} (kommen) aus Österreich und {{2}} (wohnen) in Graz. Ich {{3}} (sprechen) Deutsch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -4432,7 +4429,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Sofia. Ich {{1}} aus der Schweiz und {{2}} in Salzburg. Ich {{3}} Deutsch und Englisch.",
+				"text": "Hallo! Ich heiße Sofia. Ich {{1}} (kommen) aus der Schweiz und {{2}} (wohnen) in Salzburg. Ich {{3}} (sprechen) Deutsch und Englisch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -4828,9 +4825,9 @@
 				"type": "choice",
 				"skill": "sprechen",
 				"instruction": {
-					"de": "Sie sprechen Deutsch. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
-					"en": "You speak German. Answer. Choose, then say it aloud.",
-					"tl": "Marunong ka ng German. Sumagot. Pumili, tapos sabihin nang malakas."
+					"de": "Sie wohnen in Wien. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You live in Vienna. Answer. Choose, then say it aloud.",
+					"tl": "Nakatira ka sa Vienna. Sumagot. Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
 					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
@@ -4846,21 +4843,21 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Ja, ich spreche nicht Deutsch.",
-					"Nein, ich spreche Deutsch.",
-					"Doch, ich spreche Deutsch."
+					"Ja, ich wohne nicht in Wien.",
+					"Nein, ich wohne in Wien.",
+					"Doch, ich wohne in Wien."
 				],
 				"answer": 2,
-				"prompt": "Sprechen Sie nicht Deutsch?"
+				"prompt": "Wohnen Sie nicht in Wien?"
 			},
 			{
 				"id": "A1-03-T-SP5-2",
 				"type": "choice",
 				"skill": "sprechen",
 				"instruction": {
-					"de": "Sie wohnen in Linz. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
-					"en": "You live in Linz. Answer. Choose, then say it aloud.",
-					"tl": "Nakatira ka sa Linz. Sumagot. Pumili, tapos sabihin nang malakas."
+					"de": "Sie kommen aus Linz. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You come from Linz. Answer. Choose, then say it aloud.",
+					"tl": "Taga-Linz ka. Sumagot. Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
 					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
@@ -4876,12 +4873,12 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Doch, ich wohne in Linz.",
-					"Ja, ich wohne in Linz.",
-					"Nein, ich wohne in Linz."
+					"Doch, ich komme aus Linz.",
+					"Ja, ich komme aus Linz.",
+					"Nein, ich komme aus Linz."
 				],
 				"answer": 2,
-				"prompt": "Wohnen Sie in Wien?",
+				"prompt": "Kommen Sie aus Wien?",
 				"family": "A1-03-T-SP5-1"
 			},
 			{
@@ -5100,9 +5097,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "sprechen: er spricht (e → i).",
-					"en": "sprechen: er spricht (e → i). – irregular forms",
-					"tl": "sprechen: er spricht (e → i). – irregular na anyo"
+					"de": "sprechen: er spricht (e → i). – Formen mitlernen.",
+					"en": "sprechen: er spricht (e → i). – learn the forms.",
+					"tl": "sprechen: er spricht (e → i). – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -5110,7 +5107,7 @@
 				"refs": [
 					"W-A1-0131"
 				],
-				"text": "Er {{1}} Tagalog.",
+				"text": "Er {{1}} (sprechen) Tagalog.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -5129,9 +5126,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "geben: du gibst (e → i).",
-					"en": "geben: du gibst (e → i). – irregular forms",
-					"tl": "geben: du gibst (e → i). – irregular na anyo"
+					"de": "geben: du gibst (e → i). – Formen mitlernen.",
+					"en": "geben: du gibst (e → i). – learn the forms.",
+					"tl": "geben: du gibst (e → i). – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -5139,7 +5136,7 @@
 				"refs": [
 					"W-A1-0137"
 				],
-				"text": "Du {{1}} mir das E-Mail.",
+				"text": "Du {{1}} (geben) mir die Adresse.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -5159,9 +5156,9 @@
 					"tl": "Isulat ang mga nawawalang salita."
 				},
 				"explanation": {
-					"de": "nehmen: sie nimmt (e → i).",
-					"en": "nehmen: sie nimmt (e → i). – irregular forms",
-					"tl": "nehmen: sie nimmt (e → i). – irregular na anyo"
+					"de": "nehmen: sie nimmt (e → i). – Formen mitlernen.",
+					"en": "nehmen: sie nimmt (e → i). – learn the forms.",
+					"tl": "nehmen: sie nimmt (e → i). – isaulo ang anyo."
 				},
 				"goals": [
 					"A1-03-G7"
@@ -5169,7 +5166,7 @@
 				"refs": [
 					"W-A1-0138"
 				],
-				"text": "Sie {{1}} die Adresse.",
+				"text": "Sie {{1}} (nehmen) die Adresse.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -5255,9 +5252,9 @@
 					"W-A1-0037"
 				],
 				"options": [
-					"Wo wohnt Maria?",
-					"Wo Maria wohnt?",
-					"Maria wo wohnt?"
+					"Wohnt Maria in Wien?",
+					"Maria in Wien wohnt?",
+					"In Wien Maria wohnt?"
 				],
 				"answer": 0,
 				"family": "A1-03-T-GW4-1"
@@ -5500,11 +5497,11 @@
 					"Q36"
 				],
 				"options": [
-					"der EU",
-					"der Schweiz"
+					"1995",
+					"2005"
 				],
 				"answer": 0,
-				"prompt": "Österreich ist seit 1995 in …",
+				"prompt": "In der EU ist Österreich seit …",
 				"family": "A1-03-T-WE2-1"
 			},
 			{
@@ -5517,9 +5514,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Österreich liegt in Europa. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Austria is in Europe. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Nasa Europa ang Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "EU = Europäische Union. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "EU = European Union. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "EU = European Union. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5531,11 +5528,11 @@
 					"Q36"
 				],
 				"options": [
-					"Europa",
-					"Deutschland"
+					"Europäische Union",
+					"Europäische Stadt"
 				],
 				"answer": 0,
-				"prompt": "Österreich ist ein Land in …",
+				"prompt": "EU heißt …",
 				"family": "A1-03-T-WE2-1"
 			},
 			{

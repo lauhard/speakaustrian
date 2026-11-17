@@ -340,9 +340,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "Jose hat die Flagge der Philippinen.",
-						"en": "Jose has the flag of the Philippines.",
-						"tl": "May bandila ng Pilipinas si Jose."
+						"de": "Über Jose steht „Philippinen“, er hat die Flagge der Philippinen.",
+						"en": "Above Jose it says “Philippinen” and he has the flag of the Philippines.",
+						"tl": "Nakasulat ang “Philippinen” sa itaas ni Jose at may bandila siya ng Pilipinas."
 					},
 					"goals": [
 						"A1-03-G1"
@@ -525,24 +525,24 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "Auf der Karte ist Wien in Österreich. Wien ist die Hauptstadt.",
-						"en": "On the map Vienna is in Austria. Vienna is the capital.",
-						"tl": "Sa mapa, nasa Austria ang Vienna. Ang Vienna ang kabisera."
+						"de": "Auf der Karte sind Deutschland, Österreich und die Schweiz.",
+						"en": "The map shows Germany, Austria and Switzerland.",
+						"tl": "Nasa mapa ang Germany, Austria at Switzerland."
 					},
 					"goals": [
 						"A1-03-G1"
 					],
 					"refs": [
-						"W-A1-0358",
-						"W-A1-0093"
+						"W-A1-0360",
+						"W-A1-0361"
 					],
 					"options": [
-						"Österreich",
+						"die Philippinen",
 						"Deutschland",
-						"der Schweiz"
+						"die Schweiz"
 					],
 					"answer": 0,
-					"prompt": "Wien ist in …",
+					"prompt": "Welches Land ist nicht auf der Karte?",
 					"image": {
 						"src": "/img/a1-03-karte.svg",
 						"alt": {
@@ -828,7 +828,7 @@
 					"refs": [
 						"W-A1-0148"
 					],
-					"text": "Ich {{1}} in Wien. Du {{2}} in Salzburg.",
+					"text": "Ich {{1}} (wohnen) in Wien. Du {{2}} (wohnen) in Salzburg.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -911,7 +911,15 @@
 					}
 				},
 				{
-					"phrase": "maria.santos@gmx.at",
+					"phrase": "die E-Mail-Adresse",
+					"note": {
+						"de": "Das E-Mail ist die Nachricht. Die Adresse dafür heißt „die E-Mail-Adresse“.",
+						"en": "das E-Mail is the message; the address is “die E-Mail-Adresse”.",
+						"tl": "Ang das E-Mail ay mensahe; ang address ay “die E-Mail-Adresse”."
+					}
+				},
+				{
+					"phrase": "die E-Mail-Adresse: maria.santos@gmx.at",
 					"note": {
 						"de": "@ sagt man „ät“, der Punkt heißt „Punkt“: maria Punkt santos ät gmx Punkt at.",
 						"en": "You say @ as “ät” and . as “Punkt”: maria Punkt santos ät gmx Punkt at.",
@@ -1020,7 +1028,7 @@
 						"anna.huber@gmx.at"
 					],
 					"answer": 2,
-					"audioText": "Das E-Mail ist: anna Punkt huber ät g m x Punkt a t.",
+					"audioText": "Die E-Mail-Adresse ist: anna Punkt huber ät g m x Punkt a t.",
 					"audioOnly": true
 				},
 				{
@@ -1169,7 +1177,7 @@
 					"refs": [
 						"W-A1-0131"
 					],
-					"text": "Du {{1}} Englisch. Maria {{2}} Tagalog.",
+					"text": "Du {{1}} (sprechen) Englisch. Maria {{2}} (sprechen) Tagalog.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1399,9 +1407,9 @@
 						"tl": "Makinig. Ano ang gusto ng tao?"
 					},
 					"explanation": {
-						"de": "„Wiederholen Sie, bitte“ = noch einmal sagen.",
-						"en": "“Wiederholen Sie, bitte” = say it again.",
-						"tl": "“Wiederholen Sie, bitte” = sabihin ulit."
+						"de": "„Wiederholen Sie, bitte“ heißt: „Noch einmal, bitte.“",
+						"en": "“Wiederholen Sie, bitte” means: “Noch einmal, bitte.” (again, please)",
+						"tl": "“Wiederholen Sie, bitte” = “Noch einmal, bitte.” (ulit, please)"
 					},
 					"goals": [
 						"A1-03-G4"
@@ -1410,8 +1418,8 @@
 						"W-A1-0311"
 					],
 					"options": [
-						"Sie soll es noch einmal sagen.",
-						"Sie soll schneller sprechen."
+						"Noch einmal, bitte.",
+						"Auf Wiederhören!"
 					],
 					"answer": 0,
 					"audioText": "Wie bitte? Ich verstehe nicht. Wiederholen Sie, bitte.",
@@ -1615,7 +1623,7 @@
 					}
 				},
 				{
-					"phrase": "Sprechen Sie nicht Deutsch? – Doch!",
+					"phrase": "Wohnen Sie nicht in Wien? – Doch!",
 					"note": {
 						"de": "Frage mit „nicht“, aber die Antwort ist positiv → „doch“.",
 						"en": "Question with “nicht” (not), but the answer is positive → “doch”.",
@@ -1642,30 +1650,30 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "Jose sagt: „Ich spreche Deutsch und Tagalog.“ Die Frage hat „nicht“ → „Doch!“",
-						"en": "Jose says: “Ich spreche Deutsch und Tagalog.” The question has “nicht” → “Doch!”",
-						"tl": "Sabi ni Jose: “Ich spreche Deutsch und Tagalog.” May “nicht” ang tanong → “Doch!”"
+						"de": "Jose sagt: „Ich wohne in Wien.“ Die Frage hat „nicht“ → „Doch!“",
+						"en": "Jose says: “Ich wohne in Wien.” The question has “nicht” → “Doch!”",
+						"tl": "Sabi ni Jose: “Ich wohne in Wien.” May “nicht” ang tanong → “Doch!”"
 					},
 					"goals": [
 						"A1-03-G5"
 					],
 					"refs": [
 						"W-A1-0054",
-						"W-A1-0131"
+						"W-A1-0148"
 					],
 					"options": [
-						"Nein, er spricht nicht Deutsch.",
-						"Doch, er spricht Deutsch.",
-						"Ja, er spricht nicht Deutsch."
+						"Nein, er wohnt nicht in Wien.",
+						"Doch, er wohnt in Wien.",
+						"Ja, er wohnt nicht in Wien."
 					],
 					"answer": 1,
-					"prompt": "Spricht Jose nicht Deutsch?",
+					"prompt": "Wohnt Jose nicht in Wien?",
 					"image": {
 						"src": "/img/a1-03-jose.svg",
 						"alt": {
-							"de": "Jose sagt etwas in einer Sprechblase. Daneben zwei Flaggen.",
-							"en": "Jose says something in a speech bubble. Two flags next to it.",
-							"tl": "May sinasabi si Jose sa speech bubble. May dalawang bandila."
+							"de": "Jose sagt etwas in einer Sprechblase. Daneben ein Schild mit einer Stadt.",
+							"en": "Jose says something in a speech bubble. A sign with a city next to it.",
+							"tl": "May sinasabi si Jose sa speech bubble. May karatula ng lungsod."
 						}
 					}
 				},
@@ -1735,9 +1743,9 @@
 						"tl": "Makinig. Alin ang tama?"
 					},
 					"explanation": {
-						"de": "Sie hören: „Sprechen Sie nicht Englisch?“ – „Doch!“ Also spricht sie Englisch.",
-						"en": "You hear: “Sprechen Sie nicht Englisch?” – “Doch!” So she speaks English.",
-						"tl": "Naririnig mo: “Sprechen Sie nicht Englisch?” – “Doch!” Kaya marunong siya ng Ingles."
+						"de": "Sie hören: „Wohnen Sie nicht in Graz?“ – „Doch!“ Also wohnt sie in Graz.",
+						"en": "You hear: “Wohnen Sie nicht in Graz?” – “Doch!” So she lives in Graz.",
+						"tl": "Naririnig mo: “Wohnen Sie nicht in Graz?” – “Doch!” Kaya nakatira siya sa Graz."
 					},
 					"goals": [
 						"A1-03-G5"
@@ -1746,11 +1754,11 @@
 						"W-A1-0054"
 					],
 					"options": [
-						"Die Frau spricht Englisch.",
-						"Die Frau spricht nicht Englisch."
+						"Die Frau wohnt in Graz.",
+						"Die Frau wohnt nicht in Graz."
 					],
 					"answer": 0,
-					"audioText": "Sprechen Sie nicht Englisch? – Doch!",
+					"audioText": "Wohnen Sie nicht in Graz? – Doch!",
 					"audioOnly": true
 				}
 			]
@@ -1812,9 +1820,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "das Land.",
-						"en": "das Land.",
-						"tl": "das Land."
+						"de": "Bild 1 zeigt Österreich – ein Land: das Land.",
+						"en": "Picture 1 shows Austria – a country: das Land.",
+						"tl": "Larawan 1: Austria – isang bansa: das Land."
 					},
 					"goals": [
 						"A1-03-G6"
@@ -1824,12 +1832,12 @@
 						"W-A1-0355"
 					],
 					"options": [
-						"der",
-						"die",
-						"das"
+						"die Land",
+						"die Stadt",
+						"das Land"
 					],
 					"answer": 2,
-					"prompt": "Bild 1: … Land",
+					"prompt": "Bild 1: Was ist das?",
 					"image": {
 						"src": "/img/a1-03-nomen.svg",
 						"alt": {
@@ -1849,9 +1857,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "die Straße.",
-						"en": "die Straße.",
-						"tl": "die Straße."
+						"de": "Bild 2 zeigt ein Straßenschild: die Straße.",
+						"en": "Picture 2 shows a street sign: die Straße.",
+						"tl": "Larawan 2: karatula ng kalye: die Straße."
 					},
 					"goals": [
 						"A1-03-G6"
@@ -1861,12 +1869,12 @@
 						"W-A1-0369"
 					],
 					"options": [
-						"der",
-						"das",
-						"die"
+						"das Straße",
+						"der Mensch",
+						"die Straße"
 					],
 					"answer": 2,
-					"prompt": "Bild 2: … Straße",
+					"prompt": "Bild 2: Was ist das?",
 					"image": {
 						"src": "/img/a1-03-nomen.svg",
 						"alt": {
@@ -1886,9 +1894,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "der Mensch.",
-						"en": "der Mensch.",
-						"tl": "der Mensch."
+						"de": "Bild 3 zeigt eine Person: der Mensch.",
+						"en": "Picture 3 shows a person: der Mensch.",
+						"tl": "Larawan 3: isang tao: der Mensch."
 					},
 					"goals": [
 						"A1-03-G6"
@@ -1898,12 +1906,12 @@
 						"W-A1-0350"
 					],
 					"options": [
-						"der",
-						"die",
-						"das"
+						"der Mensch",
+						"das Mensch",
+						"das Land"
 					],
 					"answer": 0,
-					"prompt": "Bild 3: … Mensch",
+					"prompt": "Bild 3: Was ist das?",
 					"image": {
 						"src": "/img/a1-03-nomen.svg",
 						"alt": {
@@ -1978,9 +1986,9 @@
 				{
 					"phrase": "das Dorf → ein Dorf",
 					"note": {
-						"de": "Seedorf ist ein Dorf.",
-						"en": "Seedorf is a village (ein Dorf).",
-						"tl": "Baryo (ein Dorf) ang Seedorf."
+						"de": "Moosbach ist ein Dorf.",
+						"en": "Moosbach is a village (ein Dorf).",
+						"tl": "Baryo (ein Dorf) ang Moosbach."
 					}
 				},
 				{
@@ -2011,9 +2019,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "Auf dem Schild steht Seedorf, man sieht nur wenige Häuser: ein Dorf. das Dorf → ein Dorf.",
-						"en": "The sign says Seedorf and there are only a few houses: a village. das Dorf → ein Dorf.",
-						"tl": "Seedorf ang nakasulat, kaunti lang ang bahay: baryo. das Dorf → ein Dorf."
+						"de": "Man sieht nur drei Häuser: Moosbach ist ein Dorf. das Dorf → ein Dorf.",
+						"en": "There are only three houses: Moosbach is a village. das Dorf → ein Dorf.",
+						"tl": "Tatlong bahay lang: baryo ang Moosbach. das Dorf → ein Dorf."
 					},
 					"goals": [
 						"A1-03-G6",
@@ -2024,18 +2032,18 @@
 						"W-A1-0367"
 					],
 					"options": [
-						"eine Dorf",
+						"eine Stadt",
 						"ein Dorf",
-						"ein Stadt"
+						"ein Land"
 					],
 					"answer": 1,
-					"prompt": "Seedorf ist …",
+					"prompt": "Moosbach ist …",
 					"image": {
-						"src": "/img/a1-03-seedorf.svg",
+						"src": "/img/a1-03-moosbach.svg",
 						"alt": {
-							"de": "Ein gelbes Ortsschild und ein paar Häuser.",
-							"en": "A yellow town sign and a few houses.",
-							"tl": "Dilaw na karatula ng bayan at ilang bahay."
+							"de": "Ein weißes Ortsschild und ein paar Häuser.",
+							"en": "A white town sign and a few houses.",
+							"tl": "Puting karatula ng bayan at ilang bahay."
 						}
 					}
 				},
@@ -2114,9 +2122,9 @@
 						"tl": "Basahin. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "Im Text steht: „Seedorf ist ein Dorf.“",
-						"en": "The text says: “Seedorf ist ein Dorf.”",
-						"tl": "Sabi sa teksto: “Seedorf ist ein Dorf.”"
+						"de": "Im Text steht: „Wien ist eine Stadt.“",
+						"en": "The text says: “Wien ist eine Stadt.”",
+						"tl": "Sabi sa teksto: “Wien ist eine Stadt.”"
 					},
 					"goals": [
 						"A1-03-G6"
@@ -2125,12 +2133,12 @@
 						"W-A1-0367"
 					],
 					"options": [
-						"ein Dorf",
 						"eine Stadt",
+						"ein Dorf",
 						"ein Land"
 					],
 					"answer": 0,
-					"prompt": "Wien ist eine Stadt. Seedorf ist ein Dorf. Was ist Seedorf?"
+					"prompt": "Wien ist eine Stadt. Moosbach ist ein Dorf. Was ist Wien?"
 				}
 			]
 		},
@@ -2241,7 +2249,7 @@
 						"W-A1-0137",
 						"W-A1-0138"
 					],
-					"text": "Du {{1}} mir die Adresse. Er {{2}} das E-Mail.",
+					"text": "Du {{1}} (geben) mir die Adresse. Er {{2}} (nehmen) das.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -2459,9 +2467,9 @@
 						"tl": "Makinig. Nasaan ang mga tao?"
 					},
 					"explanation": {
-						"de": "Sie hören: „Danke, auf Wiederhören!“ – das sagt man am Telefon.",
-						"en": "You hear: “Danke, auf Wiederhören!” – that is what you say on the phone.",
-						"tl": "Naririnig mo: “Danke, auf Wiederhören!” – sinasabi ito sa telepono."
+						"de": "Sie hören: „Gut, danke. Auf Wiederhören!“ – das sagt man am Telefon.",
+						"en": "You hear: “Gut, danke. Auf Wiederhören!” – that is what you say on the phone.",
+						"tl": "Naririnig mo: “Gut, danke. Auf Wiederhören!” – sinasabi ito sa telepono."
 					},
 					"goals": [
 						"A1-03-G4"
@@ -2546,11 +2554,11 @@
 						"Q36"
 					],
 					"options": [
-						"Wien",
-						"Graz"
+						"die Flagge der Schweiz",
+						"die Flagge der EU"
 					],
 					"answer": 0,
-					"prompt": "Die Hauptstadt von Österreich ist …",
+					"prompt": "Was ist nicht im Bild?",
 					"image": {
 						"src": "/img/a1-03-oesterreich.svg",
 						"alt": {
