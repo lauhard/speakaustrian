@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Check, Heart, Trophy, X } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -122,13 +123,13 @@
 {/snippet}
 {#snippet gateTop()}
 	{@render label(m.flow_gate({ block: gate?.block ?? 1, current: (gate?.answered ?? 0) + 1, total: store.policy.config.GATE_ITEMS }), 'GATE')}
-	<p class="font-bold" data-testid="gate-score"><span class="text-ok">✓ {gate?.correct ?? 0}</span> · <span class="text-warn">✗ {(gate?.answered ?? 0) - (gate?.correct ?? 0)}</span></p>
+	<p class="font-bold" data-testid="gate-score"><span class="inline-flex items-center gap-1 text-ok"><Check size={16} strokeWidth={3} />{gate?.correct ?? 0}</span> · <span class="inline-flex items-center gap-1 text-warn"><X size={16} strokeWidth={3} />{(gate?.answered ?? 0) - (gate?.correct ?? 0)}</span></p>
 	<p class="text-sm text-muted">{m.flow_gate_note({ min: store.policy.config.GATE_MIN_CORRECT, total: store.policy.config.GATE_ITEMS })}</p>
 {/snippet}
 {#snippet testTop()}
 	<div class="flex items-center justify-between gap-3">
 		{@render label(m.flow_test({ current: (test?.idx ?? 0) + 1, total: test?.items.length ?? 0 }), 'TEST')}
-		<p class="text-lg" data-testid="lives" data-lives={test?.lives} aria-label={m.flow_lives({ count: test?.lives ?? 0 })}>{'❤️'.repeat(Math.max(0, (test?.lives ?? 0) - Number(checked === false)))}</p>
+		<p class="flex gap-1" data-testid="lives" data-lives={test?.lives} aria-label={m.flow_lives({ count: test?.lives ?? 0 })}>{#each { length: Math.max(0, (test?.lives ?? 0) - Number(checked === false)) } as _, h (h)}<Heart size={22} strokeWidth={2.25} class="fill-brand text-brand" />{/each}</p>
 	</div>
 	{#if checked === false}<p class="font-bold text-warn" data-testid="life-lost" role="status">{m.flow_life_lost()}</p>{/if}
 {/snippet}
@@ -173,7 +174,7 @@
 		<div class="card space-y-3">
 			<h2 class="h2">{m.flow_ready_title()}</h2>
 			<p>{m.flow_ready_text({ count: testDraw(store.policy, s, run, testPool, 'preview').length, lives })}</p>
-			<p class="text-lg" aria-label={m.flow_lives({ count: lives })}>{'❤️'.repeat(lives)}</p>
+			<p class="flex gap-1" aria-label={m.flow_lives({ count: lives })}>{#each { length: lives } as _, h (h)}<Heart size={22} strokeWidth={2.25} class="fill-brand text-brand" />{/each}</p>
 		</div>
 		<div class="actionbar">
 			<button type="button" class="btn-primary" data-testid="flow-start-test" onclick={startTest}>{m.flow_start_test()}</button>
@@ -210,7 +211,7 @@
 		{/if}
 	{:else if completed}
 		<div class="card space-y-3 text-center" data-testid="flow-passed">
-			<p class="text-5xl">🎉</p>
+			<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-ok-soft text-ok"><Trophy size={40} strokeWidth={2} /></p>
 			<h2 class="h2">{m.flow_passed_title()}</h2>
 			{#if s.course.nextChapterBonus > 0}<p class="font-bold text-ok">{m.flow_bonus({ count: s.course.nextChapterBonus })}</p>{/if}
 			{#if s.course.phase.kind === 'CHAPTER' && !chapterContent(s.course.phase.id)}

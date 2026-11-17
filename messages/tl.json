@@ -134,5 +134,14 @@
 	"stat_streak": "araw na sunod-sunod",
 	"stat_freezes": "streak freeze",
 	"stat_best": "record",
-	"preview_label": "Preview"
+	"tile_review": "Ulitin",
+	"tile_review_due": "{count} card ang dapat ulitin",
+	"tile_review_none": "Tapos na lahat",
+	"tile_practice_sub": "Halo-halo ang lahat ng kabanata",
+	"chapters_passed": "{done} sa {total} ang pasado",
+	"set_group_learn": "Pag-aaral",
+	"set_group_audio": "Audio",
+	"set_group_lang": "Wika",
+	"set_group_app": "App",
+	"set_group_data": "Data"
 }

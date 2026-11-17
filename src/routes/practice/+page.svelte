@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ChevronLeft } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
 	import { onMount } from 'svelte';
@@ -55,17 +56,17 @@
 		<CardRunner tasks={words} pool={allVocab()} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (words = null)} />
 	{/key}
 	<button type="button" class="backlink mt-6" onclick={() => (words = null)}>
-		‹ {m.free_practice()}
+		<ChevronLeft size={18} strokeWidth={2.5} />{m.free_practice()}
 	</button>
 {:else if round}
 	{#key roundNo}
 		<Runner items={round} {tlMachine} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (round = null)} />
 	{/key}
 	<button type="button" class="backlink mt-6" onclick={() => (round = null)}>
-		‹ {m.free_practice()}
+		<ChevronLeft size={18} strokeWidth={2.5} />{m.free_practice()}
 	</button>
 {:else}
-	<a href={resolve('/')} class="backlink">‹ {m.course()}</a>
+	<a href={resolve('/')} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.course()}</a>
 	<section class="space-y-4 pt-4">
 		<h1 class="h1">{m.free_practice()}</h1>
 		<p class="text-muted">{m.free_practice_intro()}</p>

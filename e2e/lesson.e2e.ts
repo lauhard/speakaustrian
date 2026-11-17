@@ -57,11 +57,11 @@ test('chapter A1-01: learn cards, tasks, lesson marked as done', async ({ page }
 
 	await expect(page.getByTestId('result')).toBeVisible();
 	await page.getByTestId('back').click();
-	await expect(page.getByTestId('lesson-A1-01-L02')).toContainText('✓');
+	await expect(page.getByTestId('lesson-A1-01-L02')).toHaveAttribute('data-done', 'true');
 
 	// Progress survives a reload (stored on the device)
 	await page.reload();
-	await expect(page.getByTestId('lesson-A1-01-L02')).toContainText('✓');
+	await expect(page.getByTestId('lesson-A1-01-L02')).toHaveAttribute('data-done', 'true');
 });
 
 test('free practice: picture tasks only', async ({ page }) => {

@@ -134,5 +134,14 @@
 	"stat_streak": "day streak",
 	"stat_freezes": "streak freeze",
 	"stat_best": "best",
-	"preview_label": "Preview"
+	"tile_review": "Review",
+	"tile_review_due": "{count} cards due",
+	"tile_review_none": "All done",
+	"tile_practice_sub": "All chapters mixed",
+	"chapters_passed": "{done} of {total} passed",
+	"set_group_learn": "Learning",
+	"set_group_audio": "Audio",
+	"set_group_lang": "Language",
+	"set_group_app": "App",
+	"set_group_data": "Data"
 }

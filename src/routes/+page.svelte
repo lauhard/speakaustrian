@@ -3,7 +3,8 @@
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
 	import { getLocale } from '#lib/paraglide/runtime.js';
-	import { chapterContent, course, PREVIEW_CHAPTER } from '#lib/content/index.ts';
+	import { chapterContent, course } from '#lib/content/index.ts';
+	import { ArrowRight, CalendarDays, Check, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw } from '@lucide/svelte';
 	import { planDay } from '#lib/core/reducer.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
@@ -50,6 +51,12 @@
 		return { meta, status: statusOf(run.id), next };
 	});
 
+	// Level tab follows the running chapter until the learner picks one.
+	let picked = $state<(typeof levels)[number] | null>(null);
+	const level = $derived(picked ?? (run?.id.startsWith('A2') ? 'A2' : 'A1'));
+	const levelChapters = $derived(course.chapters.filter((c) => c.id.startsWith(level)));
+	const passedCount = $derived(levelChapters.filter((c) => chapterContent(c.id) && statusOf(c.id).phase === 'passed').length);
+
 	onMount(() => game.init());
 	// Free-mode chapters keep their own state; load it so the list shows their progress.
 	$effect(() => {
@@ -68,96 +75,111 @@
 {#if !game.ready}
 	<p aria-busy="true" class="pt-10 text-center text-muted">…</p>
 {:else if profile}
-	<section class="space-y-5">
+	<section class="space-y-6">
 		<div class="rise">
 			<h1 class="h1">{m.welcome_back({ name: profile.name })}</h1>
-			<p class="mt-1 text-sm font-bold text-muted">
-				<span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span> · {m.per_day({ time: pensumLabel })}
+			<p class="mt-1 flex items-center gap-1.5 text-sm font-bold text-muted">
+				<CalendarDays size={16} strokeWidth={2.25} />
+				<span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span>
+				<span aria-hidden="true">·</span>
+				<Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}
 			</p>
 		</div>
 
 		{#if current}
 			<div class="hero rise" style:animation-delay="60ms">
-				<p class="text-sm font-bold text-white/80">{m.your_chapter()} · {current.meta.id}</p>
-				<p class="display text-2xl leading-tight" lang="de">{current.meta.title.de}</p>
-				{#if showTr}<p class="text-sm text-white/80">{current.meta.title[helpLocale]}</p>{/if}
-				<div class="flex items-center gap-3">
-					<div class="bar !bg-white/25"><span class="!bg-white" style="width: {(current.status.lessonsDone / Math.max(1, current.status.lessonsTotal)) * 100}%"></span></div>
-					<span class="text-sm font-bold text-white/90">{current.status.lessonsDone}/{current.status.lessonsTotal}</span>
+				<div class="lg:flex lg:items-end lg:justify-between lg:gap-6">
+					<div class="min-w-0 flex-1 space-y-2">
+						<p class="text-xs font-extrabold tracking-wider text-white/75 uppercase">{m.your_chapter()} · {current.meta.id}</p>
+						<p class="display text-2xl leading-tight" lang="de">{current.meta.title.de}</p>
+						{#if showTr}<p class="text-sm font-semibold text-white/80">{current.meta.title[helpLocale]}</p>{/if}
+						<div class="flex items-center gap-3 pt-1">
+							<div class="bar !h-2 !bg-white/25"><span class="!bg-white" style="width: {(current.status.lessonsDone / Math.max(1, current.status.lessonsTotal)) * 100}%"></span></div>
+							<span class="text-sm font-extrabold whitespace-nowrap text-white/90">{current.status.lessonsDone}/{current.status.lessonsTotal}</span>
+						</div>
+						<p class="text-sm font-bold text-white/85" data-testid="current-phase">{phaseLabel(current.status)}</p>
+					</div>
+					<a
+						href={current.next
+							? resolve('/chapter/[id]/[lesson]', { id: current.meta.id, lesson: current.next.id })
+							: resolve('/chapter/[id]', { id: current.meta.id })}
+						data-testid="continue"
+						class="btn-hero mt-4 lg:mt-0"
+					>
+						{m.continue_learning()}<ArrowRight size={20} strokeWidth={2.5} />
+					</a>
 				</div>
-				<p class="text-sm font-bold text-white/90" data-testid="current-phase">{phaseLabel(current.status)}</p>
-				<a
-					href={current.next
-						? resolve('/chapter/[id]/[lesson]', { id: current.meta.id, lesson: current.next.id })
-						: resolve('/chapter/[id]', { id: current.meta.id })}
-					data-testid="continue"
-					class="btn-hero"
-				>
-					▶ {m.continue_learning()}
-				</a>
 			</div>
 		{/if}
 
 		<div class="grid grid-cols-2 gap-3 rise" style:animation-delay="120ms">
-			{#if dueCount > 0}
-				<a href={resolve('/review')} data-testid="review-due" class="navtile !ring-2 !ring-brand">
-					<span class="text-xl">🔁</span>{m.review_due({ count: dueCount })}
-				</a>
-			{/if}
-			<a href={resolve('/practice')} data-testid="free-practice" class="navtile {dueCount > 0 ? '' : 'col-span-2 !flex-row items-center'}">
-				<span class="text-xl">🎯</span>{m.free_practice()}
+			<a href={resolve('/review')} data-testid={dueCount > 0 ? 'review-due' : 'review-none'} class="tile {dueCount > 0 ? '!ring-2 !ring-brand/60' : ''}">
+				<span class="icon-tile {dueCount > 0 ? '' : '!bg-ok-soft !text-ok'}">
+					{#if dueCount > 0}<RotateCcw size={20} strokeWidth={2.25} />{:else}<CircleCheck size={20} strokeWidth={2.25} />{/if}
+				</span>
+				<span class="min-w-0">
+					<span class="tile-title">{m.tile_review()}</span>
+					<span class="tile-sub">{dueCount > 0 ? m.tile_review_due({ count: dueCount }) : m.tile_review_none()}</span>
+				</span>
+			</a>
+			<a href={resolve('/practice')} data-testid="free-practice" class="tile">
+				<span class="icon-tile"><Dumbbell size={20} strokeWidth={2.25} /></span>
+				<span class="min-w-0">
+					<span class="tile-title">{m.free_practice()}</span>
+					<span class="tile-sub">{m.tile_practice_sub()}</span>
+				</span>
 			</a>
 		</div>
 
-		<h2 class="h2 pt-2 rise" style:animation-delay="180ms">{m.all_chapters()}</h2>
-		{#each levels as level (level)}
-			<details class="group rise" style:animation-delay="220ms" open={level === 'A1'}>
-				<summary class="flex cursor-pointer list-none items-center justify-between rounded-2xl bg-white px-4 py-3 font-black ring-1 ring-line">
-					<span>{level}</span>
-					<span class="text-muted transition group-open:rotate-90">›</span>
-				</summary>
-				<ol class="mt-2 space-y-2">
-					{#each course.chapters.filter((c) => c.id.startsWith(level)) as chapter, i (chapter.id)}
-						{@const content = chapterContent(chapter.id)}
-						{@const access = policy.canAccessChapter(game.state, chapter.id)}
-						{@const free = content && isFreeMode(chapter.id)}
-						{@const st = content ? statusOf(chapter.id) : null}
-						{@const passed = st?.phase === 'passed'}
-						<li class="rise" style:animation-delay="{240 + i * 30}ms">
-							{#if content && st && (access.allowed || free)}
-								<a href={resolve('/chapter/[id]', { id: chapter.id })} data-testid="chapter-{chapter.id}" class="card-link flex items-center gap-3">
-									<span class="badge {passed ? '!bg-ok-soft !text-ok' : ''}">{passed ? '✓' : free ? '🔓' : i + 1}</span>
-									<span class="flex-1 space-y-1">
-										<span class="block leading-tight font-extrabold" lang="de">{chapter.title.de}</span>
-										{#if showTr}<span class="block text-xs text-muted">{chapter.title[helpLocale]}</span>{/if}
-										<span class="flex items-center gap-2">
-											<span class="text-sm font-bold {passed ? 'text-ok' : 'text-muted'}" data-testid={passed ? 'chapter-passed' : 'chapter-phase'}>{phaseLabel(st)}</span>
-											{#if !passed && st.phase !== 'new'}<span class="bar !h-1.5 max-w-24"><span style="width: {(st.lessonsDone / Math.max(1, st.lessonsTotal)) * 100}%"></span></span>{/if}
-										</span>
-									</span>
-									<span class="text-muted">›</span>
-								</a>
-							{:else}
-								<div class="card-muted flex items-center gap-3">
-									<span class="badge !bg-stone-100 !text-stone-400">{content ? '🔒' : i + 1}</span>
-									<span class="flex-1">
-										<span class="block leading-tight font-bold" lang="de">{chapter.title.de}</span>
-										<span class="text-sm">{content ? m.chapter_locked() : m.chapter_soon()}</span>
-									</span>
-								</div>
-							{/if}
-						</li>
+		<div class="space-y-3 rise" style:animation-delay="180ms">
+			<div class="flex items-end justify-between gap-3">
+				<div>
+					<h2 class="h2">{m.all_chapters()}</h2>
+					<p class="text-sm font-semibold text-muted">{m.chapters_passed({ done: passedCount, total: levelChapters.length })}</p>
+				</div>
+				<div class="seg w-32" role="group" aria-label={m.all_chapters()}>
+					{#each levels as l (l)}
+						<button type="button" aria-pressed={level === l} onclick={() => (picked = l)}>{l}</button>
 					{/each}
-				</ol>
-			</details>
-		{/each}
-
-		<a href={resolve('/chapter/[id]', { id: PREVIEW_CHAPTER })} data-testid="chapter-preview" class="card-link flex items-center gap-3">
-			<span class="badge">🧪</span>
-			<span class="flex-1 font-extrabold" lang="de">{chapterContent(PREVIEW_CHAPTER)?.lessons[0].title.de}</span>
-			<span class="text-muted">›</span>
-		</a>
-
+				</div>
+			</div>
+			<ol class="path">
+				{#each levelChapters as chapter, i (chapter.id)}
+					{@const content = chapterContent(chapter.id)}
+					{@const access = policy.canAccessChapter(game.state, chapter.id)}
+					{@const free = content && isFreeMode(chapter.id)}
+					{@const st = content ? statusOf(chapter.id) : null}
+					{@const passed = st?.phase === 'passed'}
+					{@const isCurrent = chapter.id === run?.id && !passed}
+					<li class="rise" style:animation-delay="{200 + i * 25}ms">
+						{#if content && st && (access.allowed || free)}
+							<a href={resolve('/chapter/[id]', { id: chapter.id })} data-testid="chapter-{chapter.id}" class="path-row" class:is-current={isCurrent}>
+								<span class="node" class:is-passed={passed} class:is-current={isCurrent}>
+									{#if passed}<Check size={18} strokeWidth={3} />{:else if free && !isCurrent}<LockOpen size={16} strokeWidth={2.5} />{:else}{i + 1}{/if}
+								</span>
+								<span class="min-w-0 flex-1">
+									<span class="block leading-tight font-extrabold" lang="de">{chapter.title.de}</span>
+									{#if showTr}<span class="block text-sm font-semibold text-muted">{chapter.title[helpLocale]}</span>{/if}
+									<span class="mt-1 flex items-center gap-2">
+										<span class="text-sm font-bold {passed ? 'text-ok' : 'text-muted'}" data-testid={passed ? 'chapter-passed' : 'chapter-phase'}>{phaseLabel(st)}</span>
+										{#if !passed && st.phase !== 'new'}<span class="bar !h-1.5 max-w-20"><span style="width: {(st.lessonsDone / Math.max(1, st.lessonsTotal)) * 100}%"></span></span>{/if}
+									</span>
+								</span>
+								<ChevronRight size={18} class="text-muted" />
+							</a>
+						{:else}
+							<div class="path-row text-muted">
+								<span class="node is-locked">{#if content}<Lock size={15} strokeWidth={2.5} />{:else}{i + 1}{/if}</span>
+								<span class="min-w-0 flex-1">
+									<span class="block leading-tight font-bold" lang="de">{chapter.title.de}</span>
+									<span class="text-sm font-semibold">{content ? m.chapter_locked() : m.chapter_soon()}</span>
+								</span>
+							</div>
+						{/if}
+					</li>
+				{/each}
+			</ol>
+		</div>
 	</section>
 {:else}
 	<section class="space-y-6 pt-6">

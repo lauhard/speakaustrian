@@ -134,5 +134,14 @@
 	"stat_streak": "Tage in Folge",
 	"stat_freezes": "Streak-Schutz",
 	"stat_best": "Rekord",
-	"preview_label": "Vorschau"
+	"tile_review": "Wiederholen",
+	"tile_review_due": "{count} Karten fällig",
+	"tile_review_none": "Alles erledigt",
+	"tile_practice_sub": "Alle Kapitel gemischt",
+	"chapters_passed": "{done} von {total} bestanden",
+	"set_group_learn": "Lernen",
+	"set_group_audio": "Audio",
+	"set_group_lang": "Sprache",
+	"set_group_app": "App",
+	"set_group_data": "Daten"
 }

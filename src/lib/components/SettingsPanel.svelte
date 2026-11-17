@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { Languages, LockOpen, Play, Subtitles, Trash2, Volume2 } from '@lucide/svelte';
 	import InstallButton from '#lib/components/InstallButton.svelte';
 	import { getLocale, locales, setLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
@@ -31,43 +32,77 @@
 	};
 </script>
 
-<div class="space-y-4">
-	<label class="card flex cursor-pointer items-start gap-3">
-		<input type="checkbox" class="mt-1 h-5 w-5 accent-brand" data-testid="setting-unlock" checked={settings.value.unlockAll} onchange={(e) => settings.set('unlockAll', e.currentTarget.checked)} />
-		<span>
-			<span class="block font-extrabold">🔓 {m.settings_unlock()}</span>
-			<span class="block text-sm text-muted">{m.settings_unlock_note()}</span>
-		</span>
-	</label>
-
-	<div class="card space-y-3">
-		<p class="font-extrabold">🔊 {m.settings_tts()}</p>
-		<div class="grid grid-cols-3 gap-2">
-			{#each rates as r (r.value)}
-				<button type="button" class="option justify-center {settings.value.ttsRate === r.value ? '!border-brand !bg-brand-soft' : ''}" aria-pressed={settings.value.ttsRate === r.value} onclick={() => settings.set('ttsRate', r.value)}>{r.label()}</button>
-			{/each}
+<div class="space-y-6">
+	<section>
+		<h3 class="list-label">{m.set_group_learn()}</h3>
+		<div class="list">
+			<label class="list-row cursor-pointer">
+				<span class="icon-tile"><LockOpen size={20} strokeWidth={2.25} /></span>
+				<span class="flex-1">
+					<span class="tile-title">{m.settings_unlock()}</span>
+					<span class="tile-sub">{m.settings_unlock_note()}</span>
+				</span>
+				<input type="checkbox" class="switch" data-testid="setting-unlock" checked={settings.value.unlockAll} onchange={(e) => settings.set('unlockAll', e.currentTarget.checked)} />
+			</label>
 		</div>
-		<button type="button" class="btn-secondary" onclick={() => tts?.speak('Grüß Gott! Das kostet drei Euro fünfzig.')}>▶ {m.settings_test_voice()}</button>
-	</div>
+	</section>
 
-	<div class="card space-y-3">
-		<p class="font-extrabold">🌐 {m.settings_language()}</p>
-		<div class="grid grid-cols-3 gap-2">
-			{#each locales as locale (locale)}
-				<button type="button" class="option justify-center {locale === getLocale() ? '!border-brand !bg-brand-soft' : ''}" aria-pressed={locale === getLocale()} onclick={() => setLocale(locale)}>{names[locale] ?? locale}</button>
-			{/each}
+	<section>
+		<h3 class="list-label">{m.set_group_audio()}</h3>
+		<div class="list">
+			<div class="list-row flex-col !items-stretch">
+				<span class="flex items-center gap-3">
+					<span class="icon-tile"><Volume2 size={20} strokeWidth={2.25} /></span>
+					<span class="tile-title flex-1">{m.settings_tts()}</span>
+				</span>
+				<div class="seg">
+					{#each rates as r (r.value)}
+						<button type="button" aria-pressed={settings.value.ttsRate === r.value} onclick={() => settings.set('ttsRate', r.value)}>{r.label()}</button>
+					{/each}
+				</div>
+			</div>
+			<button type="button" class="list-row" onclick={() => tts?.speak('Grüß Gott! Das kostet drei Euro fünfzig.')}>
+				<span class="icon-tile"><Play size={18} strokeWidth={2.5} class="fill-current" /></span>
+				<span class="tile-title flex-1">{m.settings_test_voice()}</span>
+			</button>
 		</div>
-		<label class="flex cursor-pointer items-center gap-3 text-sm">
-			<input type="checkbox" class="h-5 w-5 accent-brand" checked={settings.value.showTranslations} onchange={(e) => settings.set('showTranslations', e.currentTarget.checked)} />
-			{m.settings_translations()}
-		</label>
-	</div>
+	</section>
+
+	<section>
+		<h3 class="list-label">{m.set_group_lang()}</h3>
+		<div class="list">
+			<div class="list-row flex-col !items-stretch">
+				<span class="flex items-center gap-3">
+					<span class="icon-tile"><Languages size={20} strokeWidth={2.25} /></span>
+					<span class="tile-title flex-1">{m.settings_language()}</span>
+				</span>
+				<div class="seg">
+					{#each locales as locale (locale)}
+						<button type="button" aria-pressed={locale === getLocale()} onclick={() => setLocale(locale)}>{names[locale] ?? locale}</button>
+					{/each}
+				</div>
+			</div>
+			<label class="list-row cursor-pointer">
+				<span class="icon-tile"><Subtitles size={20} strokeWidth={2.25} /></span>
+				<span class="tile-title flex-1">{m.settings_translations()}</span>
+				<input type="checkbox" class="switch" checked={settings.value.showTranslations} onchange={(e) => settings.set('showTranslations', e.currentTarget.checked)} />
+			</label>
+		</div>
+	</section>
 
 	<InstallButton />
 
-	<div class="card space-y-2">
-		<button type="button" class={armed ? 'btn-primary' : 'btn-secondary'} data-testid="setting-reset" onclick={reset}>🗑 {armed ? m.settings_reset_confirm() : m.settings_reset()}</button>
-		<p class="text-sm text-muted">{m.settings_reset_note()}</p>
-	</div>
-	<p class="text-center text-sm text-muted">{m.local_note()}</p>
+	<section>
+		<h3 class="list-label">{m.set_group_data()}</h3>
+		<div class="list">
+			<button type="button" class="list-row {armed ? '!bg-bad-soft' : ''}" data-testid="setting-reset" onclick={reset}>
+				<span class="icon-tile !bg-bad-soft !text-bad"><Trash2 size={20} strokeWidth={2.25} /></span>
+				<span class="flex-1">
+					<span class="tile-title text-bad">{armed ? m.settings_reset_confirm() : m.settings_reset()}</span>
+					<span class="tile-sub">{m.settings_reset_note()}</span>
+				</span>
+			</button>
+		</div>
+		<p class="mt-3 px-1 text-center text-sm font-semibold text-muted">{m.local_note()}</p>
+	</section>
 </div>
