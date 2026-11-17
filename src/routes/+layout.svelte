@@ -74,7 +74,7 @@
 				</a>
 			{/if}
 			<div class="flex items-center gap-2">
-				<span class="lg:hidden"><StatBar /></span>
+				{#if page.url.pathname !== '/'}<span class="lg:hidden"><StatBar /></span>{/if}
 				<Menu />
 			</div>
 		</header>

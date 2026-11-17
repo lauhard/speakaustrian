@@ -68,6 +68,19 @@ const createStore = (o: StoreOptions) => {
 
 export const game = createStore({ policy, order, legacy: true });
 
+// "Delete course progress": the main state, every free-mode chapter, the DEMO sandbox and the correct-in-a-row run.
+// Device settings stay. Reloading drops the in-memory copies of all stores in one go.
+export const resetAll = () => {
+	try {
+		Object.keys(localStorage)
+			.filter((k) => k.startsWith('speakaustrian.') && k !== 'speakaustrian.settings.v1')
+			.forEach((k) => localStorage.removeItem(k));
+	} catch {
+		/* storage unavailable: nothing persisted anyway */
+	}
+	location.assign('/');
+};
+
 // R-D3: an ACTIVITY tick every 15 s while the app is visible and the learner interacted within 90 s.
 let ticking = false;
 export const startActivityClock = () => {

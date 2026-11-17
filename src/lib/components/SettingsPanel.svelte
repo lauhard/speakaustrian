@@ -5,7 +5,7 @@
 	import { getLocale, locales, setLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
 	import { createDeviceTts } from '#lib/adapters/web/device-tts.ts';
-	import { game } from '#lib/game.svelte.ts';
+	import { game, resetAll } from '#lib/game.svelte.ts';
 	import { settings, ttsRate } from '#lib/settings.svelte.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
 
@@ -27,8 +27,7 @@
 	// Two taps instead of confirm(): a stray tap never deletes progress.
 	const reset = () => {
 		if (!armed) return (armed = true);
-		game.reset();
-		armed = false;
+		resetAll();
 	};
 </script>
 
