@@ -136,3 +136,7 @@ Format:
 ## G-016 – Unlocking chapters (D16 "Kapitel-Skip")   (status: decided – Andi, 16.11.2026: setting "unlock all chapters")
 - Spec says: D16 / `04a` 1a: skipping chapters touches D11 and needs its own decision.
 - Implemented: device setting; chapters that are not yet due run in **free mode** (own state per chapter, real rules), the course progress and order stay untouched (no `OVERRIDE_GRANTED`). Free-mode progress does not merge into the course later.
+
+## G-017 – Review agent per content batch   (status: decided – Andi, 17.11.2026: option B "slim")
+- Spec says: masterprompt phase 5: batch of max. 2 chapters → automatic QA → reviewer agent with fresh context (≥ 20 % sample) → human approval.
+- Decided: reviewer runs once per batch of 2 chapters, on Sonnet, exactly 20 % of each pool plus all lesson items, reports only blockers and should-fix (no nits). Human approval stays with Andi.

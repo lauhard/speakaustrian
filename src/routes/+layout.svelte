@@ -1,4 +1,6 @@
 <script lang="ts">
+	// Registers the install-prompt listener early: the browser fires it once, soon after load.
+	import '#lib/install.svelte.ts';
 	import { resolve } from '$app/paths';
 	import { getLocale, locales, setLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';

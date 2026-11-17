@@ -1,0 +1,5070 @@
+{
+	"chapterId": "A1-05",
+	"goals": {
+		"A1-05-G1": {
+			"de": "Dinge im Kurs benennen",
+			"en": "Naming things in the course",
+			"tl": "Pangalanan ang mga gamit sa kurso"
+		},
+		"A1-05-G2": {
+			"de": "Arbeitsanweisungen verstehen (ankreuzen, ergänzen, zuordnen)",
+			"en": "Understanding task instructions (tick, complete, match)",
+			"tl": "Umintindi ng instructions (markahan, kumpletuhin, itugma)"
+		},
+		"A1-05-G3": {
+			"de": "Im Kurs nachfragen: Was bedeutet …? Wie sagt man …?",
+			"en": "Asking in class: what does … mean? how do you say …?",
+			"tl": "Magtanong sa klase: Ano ang ibig sabihin ng …?"
+		},
+		"A1-05-G4": {
+			"de": "Verneinung mit nicht und kein",
+			"en": "Negation with nicht and kein",
+			"tl": "Pagtanggi gamit ang nicht at kein"
+		},
+		"A1-05-G5": {
+			"de": "Kurze Texte lesen: richtig oder falsch?",
+			"en": "Reading short texts: true or false?",
+			"tl": "Magbasa ng maikling teksto: tama o mali?"
+		},
+		"A1-05-G6": {
+			"de": "Lernen in Österreich: Frauen und Männer, Deutsch lernen",
+			"en": "Learning in Austria: women and men, learning German",
+			"tl": "Pag-aaral sa Austria: babae at lalaki, pag-aaral ng German"
+		}
+	},
+	"pools": {
+		"practice": [
+			{
+				"id": "A1-05-P-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Seite 30, Aufgabe 2“.",
+					"en": "Answer: „Seite 30, Aufgabe 2“.",
+					"tl": "Sagot: „Seite 30, Aufgabe 2“."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0002",
+					"W-A1-0349"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Liebe Leute!\nMorgen ist kein Unterricht. Die Lehrerin ist krank. Die Hausübung: Seite 30, Aufgabe 2.\nViele Grüße, Anna Huber\n\nAussage: Die Hausübung ist auf Seite 30."
+			},
+			{
+				"id": "A1-05-P-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Ich habe einen Test in der Arbeit.“",
+					"en": "Answer: „Ich habe einen Test in der Arbeit.“",
+					"tl": "Sagot: „Ich habe einen Test in der Arbeit.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Hallo Maria!\nIch komme heute nicht in den Deutschkurs. Ich habe einen Test in der Arbeit. Bitte bring mir morgen die Hausübung.\nDanke! Tom\n\nAussage: Tom hat heute einen Test in der Arbeit.",
+				"family": "A1-05-P-LE1-1"
+			},
+			{
+				"id": "A1-05-P-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„um 9 Uhr“.",
+					"en": "Answer: „um 9 Uhr“.",
+					"tl": "Sagot: „um 9 Uhr“."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0327",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0012"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 1,
+				"prompt": "Liebe Leute!\nDie Prüfung ist am 12. Mai um 9 Uhr. Bringen Sie bitte einen Kugelschreiber. Schreiben Sie nicht mit Bleistift.\nIhr Lehrer, Herr Bauer\n\nAussage: Die Prüfung beginnt um 9 Uhr."
+			},
+			{
+				"id": "A1-05-P-LE1-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Die Lehrerin ist krank.“",
+					"en": "Answer: „Die Lehrerin ist krank.“",
+					"tl": "Sagot: „Die Lehrerin ist krank.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0002",
+					"W-A1-0349"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Liebe Leute!\nMorgen ist kein Unterricht. Die Lehrerin ist krank. Die Hausübung: Seite 30, Aufgabe 2.\nViele Grüße, Anna Huber\n\nAussage: Die Lehrerin ist krank.",
+				"family": "A1-05-P-LE1-3"
+			},
+			{
+				"id": "A1-05-P-LE1-5",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Tom möchte die Hausübung, nicht die Prüfung.",
+					"en": "Answer: Tom möchte die Hausübung, nicht die Prüfung.",
+					"tl": "Sagot: Tom möchte die Hausübung, nicht die Prüfung."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Hallo Maria!\nIch komme heute nicht in den Deutschkurs. Ich habe einen Test in der Arbeit. Bitte bring mir morgen die Hausübung.\nDanke! Tom\n\nAussage: Maria gibt Tom die Prüfung."
+			},
+			{
+				"id": "A1-05-P-LE1-6",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Bringen Sie bitte einen Kugelschreiber.“",
+					"en": "Answer: „Bringen Sie bitte einen Kugelschreiber.“",
+					"tl": "Sagot: „Bringen Sie bitte einen Kugelschreiber.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0327",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0012"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 1,
+				"prompt": "Liebe Leute!\nDie Prüfung ist am 12. Mai um 9 Uhr. Bringen Sie bitte einen Kugelschreiber. Schreiben Sie nicht mit Bleistift.\nIhr Lehrer, Herr Bauer\n\nAussage: Für die Prüfung bringt man einen Kugelschreiber.",
+				"family": "A1-05-P-LE1-5"
+			},
+			{
+				"id": "A1-05-P-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "einen Kugelschreiber.",
+					"en": "Answer: einen Kugelschreiber.",
+					"tl": "Sagot: einen Kugelschreiber."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0091",
+					"W-A1-0036",
+					"W-A1-0004"
+				],
+				"options": [
+					"ein Heft",
+					"einen Kugelschreiber",
+					"einen Bleistift"
+				],
+				"answer": 1,
+				"prompt": "Im Kursraum steht:\n„Prüfung A1: Bitte einen Kugelschreiber bringen.“\n\nWas bringt man zur Prüfung?"
+			},
+			{
+				"id": "A1-05-P-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Die Hefte nehmen Sie mit.“",
+					"en": "Answer: „Die Hefte nehmen Sie mit.“",
+					"tl": "Sagot: „Die Hefte nehmen Sie mit.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0036",
+					"W-A1-0032",
+					"W-A1-0002"
+				],
+				"options": [
+					"das Heft",
+					"das Buch",
+					"nichts"
+				],
+				"answer": 0,
+				"prompt": "Im Kursraum steht:\n„Die Bücher bleiben hier. Die Hefte nehmen Sie mit.“\n\nWas nehmen Sie mit?",
+				"family": "A1-05-P-LE2-1"
+			},
+			{
+				"id": "A1-05-P-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Kurs A2: Herr Bauer.",
+					"en": "Answer: Kurs A2: Herr Bauer.",
+					"tl": "Sagot: Kurs A2: Herr Bauer."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0035",
+					"W-A1-0001"
+				],
+				"options": [
+					"Frau Huber",
+					"Herr Huber",
+					"Herr Bauer"
+				],
+				"answer": 2,
+				"prompt": "Im Kursraum steht:\n„Kurs A1: Frau Huber · Kurs A2: Herr Bauer“\n\nWer ist der Lehrer im Kurs A2?"
+			},
+			{
+				"id": "A1-05-P-LE2-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Bitte die Lehrerin fragen.“",
+					"en": "Answer: „Bitte die Lehrerin fragen.“",
+					"tl": "Sagot: „Bitte die Lehrerin fragen.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0036",
+					"W-A1-0087"
+				],
+				"options": [
+					"Sie warten allein.",
+					"Sie machen Pause.",
+					"Sie fragen die Lehrerin."
+				],
+				"answer": 2,
+				"prompt": "Im Kursraum steht:\n„Neu im Kurs? Bitte die Lehrerin fragen.“\n\nWas machen neue Leute im Kurs?",
+				"family": "A1-05-P-LE2-3"
+			},
+			{
+				"id": "A1-05-P-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "markieren = farbig machen.",
+					"en": "markieren = highlight.",
+					"tl": "markieren = kulayan."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0310",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0036",
+					"W-A1-0126"
+				],
+				"options": [
+					"Ich schreibe neue Verben.",
+					"Ich mache die Verben farbig.",
+					"Ich lese die Verben nicht."
+				],
+				"answer": 1,
+				"prompt": "Anweisung: „Markieren Sie die Verben im Text.“\nWas machen Sie?"
+			},
+			{
+				"id": "A1-05-P-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "zuhören + ankreuzen.",
+					"en": "listen + tick.",
+					"tl": "makinig + markahan."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0947",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0046",
+					"W-A1-0036"
+				],
+				"options": [
+					"Ich lese und schreibe.",
+					"Ich höre und mache dann ein Kreuz.",
+					"Ich spreche laut."
+				],
+				"answer": 1,
+				"prompt": "Anweisung: „Hören Sie zu und kreuzen Sie an.“\nWas machen Sie?",
+				"family": "A1-05-P-LE3-1"
+			},
+			{
+				"id": "A1-05-P-LE3-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "lesen + Antworten schreiben.",
+					"en": "read + write answers.",
+					"tl": "magbasa + sumulat ng sagot."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0144",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0046",
+					"W-A1-0036"
+				],
+				"options": [
+					"Ich höre und warte.",
+					"Ich lese und schreibe Antworten.",
+					"Ich mache Pause."
+				],
+				"answer": 1,
+				"prompt": "Anweisung: „Lesen Sie den Text. Antworten Sie auf die Fragen.“\nWas machen Sie?"
+			},
+			{
+				"id": "A1-05-P-LE3-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "mit einem Partner = zu zweit.",
+					"en": "with a partner = in pairs.",
+					"tl": "kasama ang partner = dalawahan."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0314",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0036",
+					"W-A1-0086"
+				],
+				"options": [
+					"Ich übe allein.",
+					"Ich übe mit einer Person zusammen.",
+					"Ich mache Pause."
+				],
+				"answer": 1,
+				"prompt": "Anweisung: „Üben Sie mit einem Partner.“\nWas machen Sie?",
+				"family": "A1-05-P-LE3-3"
+			},
+			{
+				"id": "A1-05-P-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Unterricht: 9:00.",
+					"en": "Answer: Unterricht: 9:00.",
+					"tl": "Sagot: Unterricht: 9:00."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0001"
+				],
+				"options": [
+					"um 9:00 Uhr",
+					"um 10:30 Uhr",
+					"um 12:00 Uhr"
+				],
+				"answer": 0,
+				"prompt": "Wann beginnt der Unterricht?",
+				"image": {
+					"src": "/img/a1-05-plan.svg",
+					"alt": {
+						"de": "Ein Plan für den Deutschkurs mit Uhrzeiten und der Hausübung.",
+						"en": "A plan for the German course with times and the homework.",
+						"tl": "Plano ng kursong German na may oras at takdang-aralin."
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "4 = der Bleistift.",
+					"en": "Answer: 4 = der Bleistift.",
+					"tl": "Sagot: 4 = der Bleistift."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0820",
+					"W-A1-0001",
+					"W-A1-0003"
+				],
+				"options": [
+					"der Kugelschreiber",
+					"das Buch",
+					"der Bleistift"
+				],
+				"answer": 2,
+				"prompt": "Nummer 4 ist …",
+				"image": {
+					"src": "/img/a1-05-sachen.svg",
+					"alt": {
+						"de": "Ein Tisch mit vier Dingen mit Nummern: Buch, Heft, Kugelschreiber, Bleistift.",
+						"en": "A desk with four numbered things: book, exercise book, ballpoint pen, pencil.",
+						"tl": "Mesa na may apat na bagay na may numero: libro, kuwaderno, ballpen, lapis."
+					}
+				},
+				"family": "A1-05-P-LE4-1"
+			},
+			{
+				"id": "A1-05-P-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Bei Frage 1 ist ein ✓.",
+					"en": "Answer: Bei Frage 1 ist ein ✓.",
+					"tl": "Sagot: Bei Frage 1 ist ein ✓."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Ist Frage 1 richtig?",
+				"image": {
+					"src": "/img/a1-05-test.svg",
+					"alt": {
+						"de": "Ein Test mit drei Fragen. Bei zwei Fragen ist ein Häkchen, bei einer ein Kreuz.",
+						"en": "A test with three questions: two have a tick, one has a cross.",
+						"tl": "Test na may tatlong tanong: dalawa may tsek, isa may ekis."
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-LE4-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Plan: Deutschkurs A1.",
+					"en": "Answer: Im Plan: Deutschkurs A1.",
+					"tl": "Sagot: Im Plan: Deutschkurs A1."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0041",
+					"W-A1-0001"
+				],
+				"options": [
+					"Deutschkurs A1",
+					"Prüfung A2",
+					"Hausübung"
+				],
+				"answer": 0,
+				"prompt": "Wie heißt der Kurs im Plan?",
+				"image": {
+					"src": "/img/a1-05-plan.svg",
+					"alt": {
+						"de": "Ein Plan für den Deutschkurs mit Uhrzeiten und der Hausübung.",
+						"en": "A plan for the German course with times and the homework.",
+						"tl": "Plano ng kursong German na may oras at takdang-aralin."
+					}
+				},
+				"family": "A1-05-P-LE4-3"
+			},
+			{
+				"id": "A1-05-P-LE5-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„nicht schwer“.",
+					"en": "Answer: „nicht schwer“.",
+					"tl": "Sagot: „nicht schwer“."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 0,
+				"prompt": "Die Hausübung ist nicht schwer. Ich mache sie in der Pause.\n\nAussage: Die Hausübung ist schwer."
+			},
+			{
+				"id": "A1-05-P-LE5-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„zwanzig neue Wörter“.",
+					"en": "Answer: „zwanzig neue Wörter“.",
+					"tl": "Sagot: „zwanzig neue Wörter“."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0808"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Sofia lernt zwanzig neue Wörter.\n\nAussage: Sofia lernt neue Wörter.",
+				"family": "A1-05-P-LE5-1"
+			},
+			{
+				"id": "A1-05-P-LE5-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„keine Pause“.",
+					"en": "Answer: „keine Pause“.",
+					"tl": "Sagot: „keine Pause“."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0001"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 0,
+				"prompt": "Der Kurs hat heute keine Pause.\n\nAussage: Heute ist eine Pause."
+			},
+			{
+				"id": "A1-05-P-LE5-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Die Lehrerin erklärt die Lösung.“",
+					"en": "Answer: „Die Lehrerin erklärt die Lösung.“",
+					"tl": "Sagot: „Die Lehrerin erklärt die Lösung.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0002"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 1,
+				"prompt": "Tom hat einen Fehler im Test. Die Lehrerin erklärt die Lösung.\n\nAussage: Die Lehrerin erklärt die Lösung.",
+				"family": "A1-05-P-LE5-3"
+			},
+			{
+				"id": "A1-05-P-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Lesen Sie den Text auf Seite dreizehn.“",
+					"en": "Answer: Sie hören: „Lesen Sie den Text auf Seite dreizehn.“",
+					"tl": "Sagot: Sie hören: „Lesen Sie den Text auf Seite dreizehn.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0807",
+					"W-A1-0144"
+				],
+				"options": [
+					"Seite 13",
+					"Seite 30"
+				],
+				"answer": 0,
+				"audioText": "Lesen Sie den Text auf Seite dreizehn.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-P-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Kreuzen Sie die richtige Antwort an.“",
+					"en": "Answer: Sie hören: „Kreuzen Sie die richtige Antwort an.“",
+					"tl": "Sagot: Sie hören: „Kreuzen Sie die richtige Antwort an.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0002"
+				],
+				"options": [
+					"ankreuzen",
+					"ergänzen"
+				],
+				"answer": 0,
+				"audioText": "Kreuzen Sie die richtige Antwort an.",
+				"audioOnly": true,
+				"family": "A1-05-P-HO1-1"
+			},
+			{
+				"id": "A1-05-P-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Hören Sie gut zu.“",
+					"en": "Answer: Sie hören: „Hören Sie gut zu.“",
+					"tl": "Sagot: Sie hören: „Hören Sie gut zu.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0173",
+					"W-A1-0143",
+					"W-A1-0145"
+				],
+				"options": [
+					"zuhören",
+					"schreiben"
+				],
+				"answer": 0,
+				"audioText": "Hören Sie gut zu.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-P-HO1-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Holen Sie bitte ein Blatt Papier.“",
+					"en": "Answer: Sie hören: „Holen Sie bitte ein Blatt Papier.“",
+					"tl": "Sagot: Sie hören: „Holen Sie bitte ein Blatt Papier.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0004"
+				],
+				"options": [
+					"Papier bringen",
+					"Papier holen"
+				],
+				"answer": 1,
+				"audioText": "Holen Sie bitte ein Blatt Papier.",
+				"audioOnly": true,
+				"family": "A1-05-P-HO1-3"
+			},
+			{
+				"id": "A1-05-P-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Wo ist Kursraum drei?“ – „Dort, bitte.“",
+					"en": "Answer: „Wo ist Kursraum drei?“ – „Dort, bitte.“",
+					"tl": "Sagot: „Wo ist Kursraum drei?“ – „Dort, bitte.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Dort, bitte.",
+					"Auf Seite zwölf.",
+					"Ja, hier ist sie.",
+					"Nein, bitte erklären Sie das noch einmal."
+				],
+				"answer": 0,
+				"audioText": "Wo ist Kursraum drei?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-P-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Hast du einen Kugelschreiber für mich?“ – „Ja, hier, bitte.“",
+					"en": "Answer: „Hast du einen Kugelschreiber für mich?“ – „Ja, hier, bitte.“",
+					"tl": "Sagot: „Hast du einen Kugelschreiber für mich?“ – „Ja, hier, bitte.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0007",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0806"
+				],
+				"options": [
+					"Dort, bitte.",
+					"Ja, hier, bitte.",
+					"Auf Seite zwölf.",
+					"Pause bedeutet: nicht lernen."
+				],
+				"answer": 1,
+				"audioText": "Hast du einen Kugelschreiber für mich?",
+				"audioOnly": true,
+				"family": "A1-05-P-HO2-1"
+			},
+			{
+				"id": "A1-05-P-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Verstehen Sie die Aufgabe?“ – „Nein, bitte erklären Sie das noch einmal.“",
+					"en": "Answer: „Verstehen Sie die Aufgabe?“ – „Nein, bitte erklären Sie das noch einmal.“",
+					"tl": "Sagot: „Verstehen Sie die Aufgabe?“ – „Nein, bitte erklären Sie das noch einmal.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, bitte erklären Sie das noch einmal.",
+					"Dort, bitte.",
+					"Ja, hier, bitte.",
+					"Auf Seite zwölf."
+				],
+				"answer": 0,
+				"audioText": "Verstehen Sie die Aufgabe?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-P-HO2-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Klopf, klopf!“ – „Herein!“",
+					"en": "Answer: „Klopf, klopf!“ – „Herein!“",
+					"tl": "Sagot: „Klopf, klopf!“ – „Herein!“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0806",
+					"W-A1-0073"
+				],
+				"options": [
+					"Herein!",
+					"Pause bedeutet: nicht lernen.",
+					"Auf Seite zwölf.",
+					"Ja, hier, bitte."
+				],
+				"answer": 0,
+				"audioText": "Klopf, klopf!",
+				"audioOnly": true,
+				"family": "A1-05-P-HO2-3"
+			},
+			{
+				"id": "A1-05-P-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Die Pause ist heute kurz.“",
+					"en": "Answer: Sie hören: „Die Pause ist heute kurz.“",
+					"tl": "Sagot: Sie hören: „Die Pause ist heute kurz.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0002"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 0,
+				"prompt": "Aussage: Die Pause ist heute nicht kurz.",
+				"audioText": "Die Pause ist heute kurz.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-P-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“",
+					"en": "Answer: Sie hören: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“",
+					"tl": "Sagot: Sie hören: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0327",
+					"W-A1-0328"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Aussage: Herr Bauer unterrichtet heute.",
+				"audioText": "Herr Bauer ist krank. Frau Huber macht heute den Unterricht.",
+				"audioOnly": true,
+				"family": "A1-05-P-HO3-1"
+			},
+			{
+				"id": "A1-05-P-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“",
+					"en": "Answer: Sie hören: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“",
+					"tl": "Sagot: Sie hören: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0010",
+					"W-A1-0056",
+					"W-A1-0132",
+					"W-A1-0804"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Aussage: Der Test hat zehn Fragen.",
+				"audioText": "Der Test ist nicht schwer. Es gibt nur zehn Fragen.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-P-HO3-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“",
+					"en": "Answer: Sie hören: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“",
+					"tl": "Sagot: Sie hören: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0011",
+					"W-A1-0796",
+					"W-A1-0798",
+					"W-A1-0001"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Aussage: Der Kurs ist heute in Kursraum zwei.",
+				"audioText": "Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.",
+				"audioOnly": true,
+				"family": "A1-05-P-HO3-3"
+			},
+			{
+				"id": "A1-05-P-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "Ein Satz/Text hat viele Wörter.",
+					"en": "Answer: Ein Satz/Text hat viele Wörter.",
+					"tl": "Sagot: Ein Satz/Text hat viele Wörter."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308",
+					"W-A1-0004"
+				],
+				"text": "Ein {{1}} hat viele Wörter.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Satz",
+							"Text"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "mit dem Kugelschreiber / Bleistift / Stift.",
+					"en": "Answer: mit dem Kugelschreiber / Bleistift / Stift.",
+					"tl": "Sagot: mit dem Kugelschreiber / Bleistift / Stift."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308",
+					"W-A1-0006"
+				],
+				"text": "Ich schreibe mit dem {{1}}.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Kugelschreiber",
+							"Bleistift",
+							"Stift"
+						]
+					}
+				},
+				"family": "A1-05-P-SC1-1"
+			},
+			{
+				"id": "A1-05-P-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "Um 10:30 ist Pause.",
+					"en": "Answer: Um 10:30 ist Pause.",
+					"tl": "Sagot: Um 10:30 ist Pause."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308"
+				],
+				"text": "Um 10:30 ist {{1}}.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Pause"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-SC1-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "die Hausübung.",
+					"en": "Answer: die Hausübung.",
+					"tl": "Sagot: die Hausübung."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308",
+					"W-A1-0002"
+				],
+				"text": "Die Aufgabe für morgen ist die {{1}}.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				},
+				"family": "A1-05-P-SC1-3"
+			},
+			{
+				"id": "A1-05-P-SC2-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A1, Sprachen: Tagalog.",
+					"en": "Answer: Kurs: A1, Sprachen: Tagalog.",
+					"tl": "Sagot: Kurs: A1, Sprachen: Tagalog."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0306"
+				],
+				"text": "Ich bin Jose. Ich bin im Kurs A1. Ich spreche Tagalog.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A1"
+						]
+					},
+					"2": {
+						"accept": [
+							"Tagalog"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-SC2-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A2, Sprachen: Deutsch.",
+					"en": "Answer: Kurs: A2, Sprachen: Deutsch.",
+					"tl": "Sagot: Kurs: A2, Sprachen: Deutsch."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0304"
+				],
+				"text": "Ich heiße Tom. Ich möchte den Kurs A2. Ich spreche Deutsch.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A2"
+						]
+					},
+					"2": {
+						"accept": [
+							"Deutsch"
+						]
+					}
+				},
+				"family": "A1-05-P-SC2-1"
+			},
+			{
+				"id": "A1-05-P-SC2-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A1, Sprachen: Englisch und Tagalog.",
+					"en": "Answer: Kurs: A1, Sprachen: Englisch und Tagalog.",
+					"tl": "Sagot: Kurs: A1, Sprachen: Englisch und Tagalog."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0305",
+					"W-A1-0306"
+				],
+				"text": "Ich bin Anna, Kurs A1, ich spreche Englisch und Tagalog.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A1"
+						]
+					},
+					"2": {
+						"accept": [
+							"Englisch und Tagalog",
+							"Englisch, Tagalog",
+							"Tagalog und Englisch"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-SC2-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A2, Sprachen: Deutsch und Englisch.",
+					"en": "Answer: Kurs: A2, Sprachen: Deutsch und Englisch.",
+					"tl": "Sagot: Kurs: A2, Sprachen: Deutsch und Englisch."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0304",
+					"W-A1-0305"
+				],
+				"text": "Ich heiße Lukas. Kurs: A2. Sprachen: Deutsch und Englisch.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A2"
+						]
+					},
+					"2": {
+						"accept": [
+							"Deutsch und Englisch",
+							"Deutsch, Englisch",
+							"Englisch und Deutsch"
+						]
+					}
+				},
+				"family": "A1-05-P-SC2-3"
+			},
+			{
+				"id": "A1-05-P-SC3-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin krank. Ich mache die {{2}} morgen.\nViele Grüße, Tom",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-SC3-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin bei meiner Tochter. Ich mache die {{2}} morgen.\nViele Grüße, Anna",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				},
+				"family": "A1-05-P-SC3-1"
+			},
+			{
+				"id": "A1-05-P-SC3-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin in Linz. Ich mache die {{2}} morgen.\nViele Grüße, Ali",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-SC3-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin bei meiner Oma. Ich mache die {{2}} morgen.\nViele Grüße, Lukas",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				},
+				"family": "A1-05-P-SC3-3"
+			},
+			{
+				"id": "A1-05-P-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wissen nicht, wie man „Kugelschreiber“ schreibt. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t know how to write “Kugelschreiber”. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo alam isulat ang “Kugelschreiber”. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Wie schreibt man „Kugelschreiber“?“",
+					"en": "Answer: Passend: „Wie schreibt man „Kugelschreiber“?“",
+					"tl": "Sagot: Passend: „Wie schreibt man „Kugelschreiber“?“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0036",
+					"W-A1-0011"
+				],
+				"options": [
+					"Wie schreibt man „Kugelschreiber“?",
+					"Was bedeutet „Blatt“?",
+					"Auf welcher Seite sind wir?"
+				],
+				"answer": 0
+			},
+			{
+				"id": "A1-05-P-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Die Lehrerin spricht zu schnell. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "The teacher speaks too fast. What do you say? Choose, then say it aloud.",
+					"tl": "Masyadong mabilis ang guro. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Langsam, bitte. Noch einmal, bitte.“",
+					"en": "Answer: Passend: „Langsam, bitte. Noch einmal, bitte.“",
+					"tl": "Sagot: Passend: „Langsam, bitte. Noch einmal, bitte.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0091",
+					"W-A1-0036",
+					"W-A1-0059"
+				],
+				"options": [
+					"Langsam, bitte. Noch einmal, bitte.",
+					"Wie schreibt man „Kugelschreiber“?",
+					"Was bedeutet „Blatt“?"
+				],
+				"answer": 0,
+				"family": "A1-05-P-SP1-1"
+			},
+			{
+				"id": "A1-05-P-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wissen die Seite nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t know the page. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo alam ang pahina. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Auf welcher Seite sind wir?“",
+					"en": "Answer: Passend: „Auf welcher Seite sind wir?“",
+					"tl": "Sagot: Passend: „Auf welcher Seite sind wir?“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0091",
+					"W-A1-0011",
+					"W-A1-0059"
+				],
+				"options": [
+					"Wie schreibt man „Kugelschreiber“?",
+					"Auf welcher Seite sind wir?",
+					"Langsam, bitte. Noch einmal, bitte."
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-05-P-SP1-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kennen das Wort „Blatt“ nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t know the word “Blatt”. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo alam ang salitang “Blatt”. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Was bedeutet „Blatt“?“",
+					"en": "Answer: Passend: „Was bedeutet „Blatt“?“",
+					"tl": "Sagot: Passend: „Was bedeutet „Blatt“?“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0091",
+					"W-A1-0036",
+					"W-A1-0059"
+				],
+				"options": [
+					"Was bedeutet „Blatt“?",
+					"Langsam, bitte. Noch einmal, bitte.",
+					"Wie schreibt man „Kugelschreiber“?"
+				],
+				"answer": 0,
+				"family": "A1-05-P-SP1-3"
+			},
+			{
+				"id": "A1-05-P-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben keinen Stift. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You have no pen. What do you say? Choose, then say it aloud.",
+					"tl": "Wala kang panulat. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Entschuldigung, ich habe keinen Stift.“",
+					"en": "Answer: Passend: „Entschuldigung, ich habe keinen Stift.“",
+					"tl": "Sagot: Passend: „Entschuldigung, ich habe keinen Stift.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0386"
+				],
+				"options": [
+					"Entschuldigung, ich habe keinen Stift.",
+					"Entschuldigung, ich habe nicht Stift.",
+					"Ich schreibe kein."
+				],
+				"answer": 0,
+				"prompt": "Schreiben Sie bitte."
+			},
+			{
+				"id": "A1-05-P-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie verstehen das Beispiel nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t understand the example. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo naintindihan ang halimbawa. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Nein, das verstehe ich nicht.“",
+					"en": "Answer: Passend: „Nein, das verstehe ich nicht.“",
+					"tl": "Sagot: Passend: „Nein, das verstehe ich nicht.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, das verstehe ich kein.",
+					"Nein, das verstehe ich nicht.",
+					"Ja, nicht."
+				],
+				"answer": 1,
+				"prompt": "Verstehen Sie das Beispiel?",
+				"family": "A1-05-P-SP2-1"
+			},
+			{
+				"id": "A1-05-P-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben keine Frage. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You have no question. What do you say? Choose, then say it aloud.",
+					"tl": "Wala kang tanong. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Nein, ich habe keine Frage.“",
+					"en": "Answer: Passend: „Nein, ich habe keine Frage.“",
+					"tl": "Sagot: Passend: „Nein, ich habe keine Frage.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, ich habe nicht Frage.",
+					"Ja, keine Frage.",
+					"Nein, ich habe keine Frage."
+				],
+				"answer": 2,
+				"prompt": "Haben Sie eine Frage?"
+			},
+			{
+				"id": "A1-05-P-SP2-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kommen morgen nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You are not coming tomorrow. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi ka darating bukas. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Nein, morgen komme ich nicht.“",
+					"en": "Answer: Passend: „Nein, morgen komme ich nicht.“",
+					"tl": "Sagot: Passend: „Nein, morgen komme ich nicht.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0128",
+					"W-A1-0051"
+				],
+				"options": [
+					"Nein, morgen komme ich kein.",
+					"Nein, morgen komme ich nicht.",
+					"Ja, morgen komme ich nicht."
+				],
+				"answer": 1,
+				"prompt": "Kommen Sie morgen?",
+				"family": "A1-05-P-SP2-3"
+			},
+			{
+				"id": "A1-05-P-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Ich habe eine Frage.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Ich habe eine Frage.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Ich habe eine Frage.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "eine Frage → keine Frage.",
+					"en": "Answer: eine Frage → keine Frage.",
+					"tl": "Sagot: eine Frage → keine Frage."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006"
+				],
+				"options": [
+					"Ich habe nicht eine Frage.",
+					"Ich habe kein Frage.",
+					"Ich habe keine Frage."
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-05-P-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Wir lernen heute.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Wir lernen heute.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Wir lernen heute.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Verb → nicht.",
+					"en": "Answer: Verb → nicht.",
+					"tl": "Sagot: Verb → nicht."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0011"
+				],
+				"options": [
+					"Wir lernen kein heute.",
+					"Wir lernen heute nicht.",
+					"Wir nicht lernen heute."
+				],
+				"answer": 1,
+				"family": "A1-05-P-SP3-1"
+			},
+			{
+				"id": "A1-05-P-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Das ist ein Fehler.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Das ist ein Fehler.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Das ist ein Fehler.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "ein Fehler → kein Fehler.",
+					"en": "Answer: ein Fehler → kein Fehler.",
+					"tl": "Sagot: ein Fehler → kein Fehler."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0003",
+					"W-A1-0004"
+				],
+				"options": [
+					"Das ist nicht ein Fehler.",
+					"Das nicht ist Fehler.",
+					"Das ist kein Fehler."
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-05-P-SP3-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Der Test ist schwer.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Der Test ist schwer.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Der Test ist schwer.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Adjektiv → nicht.",
+					"en": "Answer: Adjektiv → nicht.",
+					"tl": "Sagot: Adjektiv → nicht."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0001"
+				],
+				"options": [
+					"Der Test ist kein schwer.",
+					"Der Test nicht ist schwer.",
+					"Der Test ist nicht schwer."
+				],
+				"answer": 2,
+				"family": "A1-05-P-SP3-3"
+			},
+			{
+				"id": "A1-05-P-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Verb → nicht.",
+					"en": "Answer: Verb → nicht.",
+					"tl": "Sagot: Verb → nicht."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0008"
+				],
+				"options": [
+					"kein",
+					"nicht",
+					"keine"
+				],
+				"answer": 1,
+				"prompt": "Er kommt heute …"
+			},
+			{
+				"id": "A1-05-P-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "die Pause → keine Pause.",
+					"en": "Answer: die Pause → keine Pause.",
+					"tl": "Sagot: die Pause → keine Pause."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0011",
+					"W-A1-0117"
+				],
+				"options": [
+					"keine",
+					"nicht",
+					"kein"
+				],
+				"answer": 0,
+				"prompt": "Wir haben … Pause.",
+				"family": "A1-05-P-GW1-1"
+			},
+			{
+				"id": "A1-05-P-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Adjektiv → nicht.",
+					"en": "Answer: Adjektiv → nicht.",
+					"tl": "Sagot: Adjektiv → nicht."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0003"
+				],
+				"options": [
+					"nicht",
+					"kein",
+					"keine"
+				],
+				"answer": 0,
+				"prompt": "Das ist … richtig."
+			},
+			{
+				"id": "A1-05-P-GW1-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "das Heft → kein Heft.",
+					"en": "Answer: das Heft → kein Heft.",
+					"tl": "Sagot: das Heft → kein Heft."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0003"
+				],
+				"options": [
+					"nicht",
+					"keine",
+					"kein"
+				],
+				"answer": 2,
+				"prompt": "Das ist … Heft.",
+				"family": "A1-05-P-GW1-3"
+			},
+			{
+				"id": "A1-05-P-GW2-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "ein Buch → kein Buch.",
+					"en": "Answer: ein Buch → kein Buch.",
+					"tl": "Sagot: ein Buch → kein Buch."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0007"
+				],
+				"options": [
+					"nicht",
+					"kein"
+				],
+				"answer": 1,
+				"prompt": "Liebe Maria, ich habe ___ Buch. Bringst du deins? Jose"
+			},
+			{
+				"id": "A1-05-P-GW2-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "ich verstehe.",
+					"en": "Answer: ich verstehe.",
+					"tl": "Sagot: ich verstehe."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0327",
+					"W-A1-0002"
+				],
+				"options": [
+					"verstehen",
+					"verstehe"
+				],
+				"answer": 1,
+				"prompt": "Hallo Herr Bauer, ich ___ die Aufgabe nicht. Sofia",
+				"family": "A1-05-P-GW2-1"
+			},
+			{
+				"id": "A1-05-P-GW2-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "auf Seite 20.",
+					"en": "Answer: auf Seite 20.",
+					"tl": "Sagot: auf Seite 20."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0378",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"options": [
+					"auf",
+					"in"
+				],
+				"answer": 0,
+				"prompt": "Hallo! Die Hausübung ist ___ Seite 20. Lukas"
+			},
+			{
+				"id": "A1-05-P-GW2-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "die Pause → keine Pause.",
+					"en": "Answer: die Pause → keine Pause.",
+					"tl": "Sagot: die Pause → keine Pause."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0011",
+					"W-A1-0117",
+					"W-A1-0349"
+				],
+				"options": [
+					"nicht",
+					"keine"
+				],
+				"answer": 1,
+				"prompt": "Liebe Leute, heute haben wir ___ Pause. Ihre Lehrerin",
+				"family": "A1-05-P-GW2-3"
+			},
+			{
+				"id": "A1-05-P-GW3-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Wörter.",
+					"en": "Answer: Plural: die Wörter.",
+					"tl": "Sagot: Plural: die Wörter."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0294",
+					"W-A1-0002",
+					"W-A1-0003"
+				],
+				"options": [
+					"Worts",
+					"Worte",
+					"Wörter"
+				],
+				"answer": 2,
+				"prompt": "das Wort → die …"
+			},
+			{
+				"id": "A1-05-P-GW3-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Sätze.",
+					"en": "Answer: Plural: die Sätze.",
+					"tl": "Sagot: Plural: die Sätze."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0295",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"options": [
+					"Satzen",
+					"Sätze",
+					"Satzs"
+				],
+				"answer": 1,
+				"prompt": "der Satz → die …",
+				"family": "A1-05-P-GW3-1"
+			},
+			{
+				"id": "A1-05-P-GW3-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Aufgaben.",
+					"en": "Answer: Plural: die Aufgaben.",
+					"tl": "Sagot: Plural: die Aufgaben."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0300",
+					"W-A1-0002"
+				],
+				"options": [
+					"Aufgabes",
+					"Aufgaben",
+					"Aufgabe"
+				],
+				"answer": 1,
+				"prompt": "die Aufgabe → die …"
+			},
+			{
+				"id": "A1-05-P-GW3-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Fehler.",
+					"en": "Answer: Plural: die Fehler.",
+					"tl": "Sagot: Plural: die Fehler."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0319",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"options": [
+					"Fehlers",
+					"Fehlern",
+					"Fehler"
+				],
+				"answer": 2,
+				"prompt": "der Fehler → die …",
+				"family": "A1-05-P-GW3-3"
+			},
+			{
+				"id": "A1-05-P-GW4-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "er wartet (mit -et).",
+					"en": "Answer: er wartet (mit -et).",
+					"tl": "Sagot: er wartet (mit -et)."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0152",
+					"W-A1-0008",
+					"W-A1-0002"
+				],
+				"text": "Er {{1}} (warten) auf die Lehrerin.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"wartet"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-GW4-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "ich lerne.",
+					"en": "Answer: ich lerne.",
+					"tl": "Sagot: ich lerne."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0006",
+					"W-A1-0304"
+				],
+				"text": "Ich {{1}} (lernen) Deutsch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"lerne"
+						]
+					}
+				},
+				"family": "A1-05-P-GW4-1"
+			},
+			{
+				"id": "A1-05-P-GW4-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "sie bringt / Sie bringen.",
+					"en": "Answer: sie bringt / Sie bringen.",
+					"tl": "Sagot: sie bringt / Sie bringen."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0154",
+					"W-A1-0009",
+					"W-A1-0003"
+				],
+				"text": "Sie {{1}} (bringen) das Buch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"bringt",
+							"bringen"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-GW4-4",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "das bedeutet.",
+					"en": "Answer: das bedeutet.",
+					"tl": "Sagot: das bedeutet."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0036",
+					"W-A1-0003"
+				],
+				"text": "Was {{1}} (bedeuten) das?",
+				"gaps": {
+					"1": {
+						"accept": [
+							"bedeutet"
+						]
+					}
+				},
+				"family": "A1-05-P-GW4-3"
+			},
+			{
+				"id": "A1-05-P-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0357",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0195"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Ein Mann ist Kindergartenpädagoge. Ist das in Österreich möglich?"
+			},
+			{
+				"id": "A1-05-P-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0328",
+					"W-A1-0357",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Eine Frau ist Elektrikerin. Ist das in Österreich möglich?",
+				"family": "A1-05-P-WE1-1"
+			},
+			{
+				"id": "A1-05-P-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0046",
+					"W-A1-0032",
+					"W-A1-0002",
+					"W-A1-0304"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"nichts",
+					"Briefe vom Amt und die Lehrerin vom Kind"
+				],
+				"answer": 1,
+				"prompt": "Mit Deutsch versteht man …"
+			},
+			{
+				"id": "A1-05-P-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0035",
+					"W-A1-0357",
+					"W-A1-0046",
+					"W-A1-0056"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"nur Männer",
+					"Frauen und Männer"
+				],
+				"answer": 1,
+				"prompt": "Wer lernt in Österreich Deutsch?",
+				"family": "A1-05-P-WE2-1"
+			},
+			{
+				"id": "A1-05-P-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0329",
+					"W-A1-0328",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0056"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein, auch für Frauen.",
+					"Ja."
+				],
+				"answer": 0,
+				"prompt": "Bild 1: Ist das ein Beruf nur für Männer?",
+				"image": {
+					"src": "/img/a1-05-berufe.svg",
+					"alt": {
+						"de": "Bild 1: eine Frau repariert ein Auto. Bild 2: ein Mann arbeitet als Krankenpfleger.",
+						"en": "Picture 1: a woman repairs a car. Picture 2: a man works as a nurse.",
+						"tl": "Larawan 1: babaeng nag-aayos ng kotse. Larawan 2: lalaking nars."
+					}
+				}
+			},
+			{
+				"id": "A1-05-P-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0329",
+					"W-A1-0328",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0056"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein, auch für Männer."
+				],
+				"answer": 1,
+				"prompt": "Bild 2: Ist das ein Beruf nur für Frauen?",
+				"image": {
+					"src": "/img/a1-05-berufe.svg",
+					"alt": {
+						"de": "Bild 1: eine Frau repariert ein Auto. Bild 2: ein Mann arbeitet als Krankenpfleger.",
+						"en": "Picture 1: a woman repairs a car. Picture 2: a man works as a nurse.",
+						"tl": "Larawan 1: babaeng nag-aayos ng kotse. Larawan 2: lalaking nars."
+					}
+				},
+				"family": "A1-05-P-WE3-1"
+			},
+			{
+				"id": "A1-05-P-WE4-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0328",
+					"W-A1-0357",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Kann eine Frau in Österreich Polizistin werden?"
+			},
+			{
+				"id": "A1-05-P-WE4-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0357",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Kann ein Mann in Österreich Friseur werden?",
+				"family": "A1-05-P-WE4-1"
+			},
+			{
+				"id": "A1-05-P-WE4-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0328",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Kann eine Frau Busfahrerin werden?"
+			},
+			{
+				"id": "A1-05-P-WE4-4",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118",
+					"W-A1-0004"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Kann ein Mann Volksschullehrer werden?",
+				"family": "A1-05-P-WE4-3"
+			},
+			{
+				"id": "A1-05-P-WE4-5",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0328",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Kann eine Frau Technikerin werden?"
+			},
+			{
+				"id": "A1-05-P-WE4-6",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118",
+					"W-A1-0004"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Kann ein Mann Kindergärtner werden?",
+				"family": "A1-05-P-WE4-5"
+			}
+		],
+		"test": [
+			{
+				"id": "A1-05-T-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Im Text: „Morgen ist kein Unterricht.“",
+					"en": "Answer: Im Text: „Morgen ist kein Unterricht.“",
+					"tl": "Sagot: Im Text: „Morgen ist kein Unterricht.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0002",
+					"W-A1-0349"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Liebe Leute!\nMorgen ist kein Unterricht. Die Lehrerin ist krank. Die Hausübung: Seite 30, Aufgabe 2.\nViele Grüße, Anna Huber\n\nAussage: Morgen ist Unterricht."
+			},
+			{
+				"id": "A1-05-T-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Ich komme heute nicht in den Deutschkurs.“",
+					"en": "Answer: „Ich komme heute nicht in den Deutschkurs.“",
+					"tl": "Sagot: „Ich komme heute nicht in den Deutschkurs.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0092",
+					"W-A1-0091"
+				],
+				"options": [
+					"falsch",
+					"richtig"
+				],
+				"answer": 1,
+				"prompt": "Hallo Maria!\nIch komme heute nicht in den Deutschkurs. Ich habe einen Test in der Arbeit. Bitte bring mir morgen die Hausübung.\nDanke! Tom\n\nAussage: Tom kommt heute nicht in den Kurs.",
+				"family": "A1-05-T-LE1-1"
+			},
+			{
+				"id": "A1-05-T-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Schreiben Sie nicht mit Bleistift.“",
+					"en": "Answer: „Schreiben Sie nicht mit Bleistift.“",
+					"tl": "Sagot: „Schreiben Sie nicht mit Bleistift.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0327",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0012"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Liebe Leute!\nDie Prüfung ist am 12. Mai um 9 Uhr. Bringen Sie bitte einen Kugelschreiber. Schreiben Sie nicht mit Bleistift.\nIhr Lehrer, Herr Bauer\n\nAussage: In der Prüfung schreibt man mit Bleistift.",
+				"family": "A1-05-T-LE1-1"
+			},
+			{
+				"id": "A1-05-T-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Pause: 10:30.",
+					"en": "Answer: Pause: 10:30.",
+					"tl": "Sagot: Pause: 10:30."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285"
+				],
+				"options": [
+					"um 10:30",
+					"um 9:00",
+					"um 12:00"
+				],
+				"answer": 0,
+				"prompt": "Im Kursraum steht:\n„Deutschkurs A1: 9:00–12:00. Pause: 10:30.“\n\nWann ist Pause?"
+			},
+			{
+				"id": "A1-05-T-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Heute kein Kurs!“",
+					"en": "Answer: „Heute kein Kurs!“",
+					"tl": "Sagot: „Heute kein Kurs!“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0001"
+				],
+				"options": [
+					"Ja.",
+					"Ja, um 9 Uhr.",
+					"Nein."
+				],
+				"answer": 2,
+				"prompt": "Im Kursraum steht:\n„Heute kein Kurs! Der Kurs ist morgen.“\n\nIst heute Kurs?",
+				"family": "A1-05-T-LE2-1"
+			},
+			{
+				"id": "A1-05-T-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„keine Zigaretten im Haus“.",
+					"en": "Answer: „keine Zigaretten im Haus“.",
+					"tl": "Sagot: „keine Zigaretten im Haus“."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0001"
+				],
+				"options": [
+					"Ja.",
+					"Nein.",
+					"Ja, in der Pause."
+				],
+				"answer": 1,
+				"prompt": "Im Kursraum steht:\n„Bitte keine Zigaretten im Haus!“\n\nZigaretten im Haus – ja oder nein?",
+				"family": "A1-05-T-LE2-1"
+			},
+			{
+				"id": "A1-05-T-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "ankreuzen = ein Kreuz machen.",
+					"en": "ankreuzen = make a cross.",
+					"tl": "ankreuzen = lagyan ng ekis."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0307",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0036",
+					"W-A1-0126"
+				],
+				"options": [
+					"Ich schreibe einen Text.",
+					"Ich lese den Text.",
+					"Ich mache ein Kreuz bei der richtigen Antwort."
+				],
+				"answer": 2,
+				"prompt": "Anweisung: „Kreuzen Sie die richtige Antwort an.“\nWas machen Sie?"
+			},
+			{
+				"id": "A1-05-T-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "ergänzen = Lücken füllen.",
+					"en": "ergänzen = fill the gaps.",
+					"tl": "ergänzen = punan ang patlang."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0308",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0036",
+					"W-A1-0126"
+				],
+				"options": [
+					"Ich mache ein Kreuz.",
+					"Ich schreibe die fehlenden Wörter in die Sätze.",
+					"Ich lese laut."
+				],
+				"answer": 1,
+				"prompt": "Anweisung: „Ergänzen Sie die Sätze.“\nWas machen Sie?",
+				"family": "A1-05-T-LE3-1"
+			},
+			{
+				"id": "A1-05-T-LE3-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "zuordnen = verbinden.",
+					"en": "zuordnen = match.",
+					"tl": "zuordnen = itugma."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0309",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0036",
+					"W-A1-0126"
+				],
+				"options": [
+					"Ich schreibe einen Text.",
+					"Ich mache Paare: 1 – b, 2 – a.",
+					"Ich mache ein Kreuz."
+				],
+				"answer": 1,
+				"prompt": "Anweisung: „Ordnen Sie die Wörter zu.“\nWas machen Sie?",
+				"family": "A1-05-T-LE3-1"
+			},
+			{
+				"id": "A1-05-T-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Plan: „Ende: 12:00“.",
+					"en": "Answer: Im Plan: „Ende: 12:00“.",
+					"tl": "Sagot: Im Plan: „Ende: 12:00“."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0001"
+				],
+				"options": [
+					"um 10:30 Uhr",
+					"um 12:00 Uhr",
+					"um 9:00 Uhr"
+				],
+				"answer": 1,
+				"prompt": "Wann endet der Unterricht?",
+				"image": {
+					"src": "/img/a1-05-plan.svg",
+					"alt": {
+						"de": "Ein Plan für den Deutschkurs mit Uhrzeiten und der Hausübung.",
+						"en": "A plan for the German course with times and the homework.",
+						"tl": "Plano ng kursong German na may oras at takdang-aralin."
+					}
+				}
+			},
+			{
+				"id": "A1-05-T-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "2 = das Heft.",
+					"en": "Answer: 2 = das Heft.",
+					"tl": "Sagot: 2 = das Heft."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0820",
+					"W-A1-0001",
+					"W-A1-0003"
+				],
+				"options": [
+					"das Buch",
+					"der Bleistift",
+					"das Heft"
+				],
+				"answer": 2,
+				"prompt": "Nummer 2 ist …",
+				"image": {
+					"src": "/img/a1-05-sachen.svg",
+					"alt": {
+						"de": "Ein Tisch mit vier Dingen mit Nummern: Buch, Heft, Kugelschreiber, Bleistift.",
+						"en": "A desk with four numbered things: book, exercise book, ballpoint pen, pencil.",
+						"tl": "Mesa na may apat na bagay na may numero: libro, kuwaderno, ballpen, lapis."
+					}
+				},
+				"family": "A1-05-T-LE4-1"
+			},
+			{
+				"id": "A1-05-T-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Frage 1 und 3: ✓ – zwei richtig.",
+					"en": "Answer: Frage 1 und 3: ✓ – zwei richtig.",
+					"tl": "Sagot: Frage 1 und 3: ✓ – zwei richtig."
+				},
+				"goals": [
+					"A1-05-G5",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0041",
+					"W-A1-0042",
+					"W-A1-0043",
+					"W-A1-0132"
+				],
+				"options": [
+					"drei",
+					"zwei",
+					"eine"
+				],
+				"answer": 1,
+				"prompt": "Wie viele Fragen sind richtig?",
+				"image": {
+					"src": "/img/a1-05-test.svg",
+					"alt": {
+						"de": "Ein Test mit drei Fragen. Bei zwei Fragen ist ein Häkchen, bei einer ein Kreuz.",
+						"en": "A test with three questions: two have a tick, one has a cross.",
+						"tl": "Test na may tatlong tanong: dalawa may tsek, isa may ekis."
+					}
+				},
+				"family": "A1-05-T-LE4-1"
+			},
+			{
+				"id": "A1-05-T-LE5-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Der Kurs ist am Abend.",
+					"en": "Answer: Der Kurs ist am Abend.",
+					"tl": "Sagot: Der Kurs ist am Abend."
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0006",
+					"W-A1-0173",
+					"W-A1-0057",
+					"W-A1-0796"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Ich heiße Jose. Ich lerne seit zwei Jahren Deutsch. Mein Kurs ist am Abend. Die Lehrerin erklärt sehr gut.\n\nAussage: Jose lernt am Morgen Deutsch."
+			},
+			{
+				"id": "A1-05-T-LE5-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Im Deutschkurs sind zwölf Leute.“",
+					"en": "Answer: „Im Deutschkurs sind zwölf Leute.“",
+					"tl": "Sagot: „Im Deutschkurs sind zwölf Leute.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0009",
+					"W-A1-0030",
+					"W-A1-0806",
+					"W-A1-0131"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Im Deutschkurs sind zwölf Leute. Sie sprechen viele Sprachen. Im Kurs sprechen alle Deutsch.\n\nAussage: Im Kurs sind zwölf Personen.",
+				"family": "A1-05-T-LE5-1"
+			},
+			{
+				"id": "A1-05-T-LE5-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Read. Is the statement right or wrong?",
+					"tl": "Basahin. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "„Maria gibt mir einen.“",
+					"en": "Answer: „Maria gibt mir einen.“",
+					"tl": "Sagot: „Maria gibt mir einen.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0006",
+					"W-A1-0011",
+					"W-A1-0016",
+					"W-A1-0002"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Heute schreiben wir einen Test. Ich habe keinen Kugelschreiber, aber Maria gibt mir einen.\n\nAussage: Die Person hat einen Kugelschreiber von Maria.",
+				"family": "A1-05-T-LE5-1"
+			},
+			{
+				"id": "A1-05-T-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Öffnen Sie das Buch auf Seite vierundzwanzig.“",
+					"en": "Answer: Sie hören: „Öffnen Sie das Buch auf Seite vierundzwanzig.“",
+					"tl": "Sagot: Sie hören: „Öffnen Sie das Buch auf Seite vierundzwanzig.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0003"
+				],
+				"options": [
+					"Seite 42",
+					"Seite 24"
+				],
+				"answer": 1,
+				"audioText": "Öffnen Sie das Buch auf Seite vierundzwanzig.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-T-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Machen Sie bitte Aufgabe sieben.“",
+					"en": "Answer: Sie hören: „Machen Sie bitte Aufgabe sieben.“",
+					"tl": "Sagot: Sie hören: „Machen Sie bitte Aufgabe sieben.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0126",
+					"W-A1-0801"
+				],
+				"options": [
+					"Aufgabe 17",
+					"Aufgabe 7"
+				],
+				"answer": 1,
+				"audioText": "Machen Sie bitte Aufgabe sieben.",
+				"audioOnly": true,
+				"family": "A1-05-T-HO1-1"
+			},
+			{
+				"id": "A1-05-T-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was sollen Sie machen?",
+					"en": "Listen. What should you do?",
+					"tl": "Makinig. Ano ang dapat mong gawin?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Schreiben Sie die Wörter ins Heft.“",
+					"en": "Answer: Sie hören: „Schreiben Sie die Wörter ins Heft.“",
+					"tl": "Sagot: Sie hören: „Schreiben Sie die Wörter ins Heft.“"
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0293",
+					"W-A1-0009",
+					"W-A1-0002",
+					"W-A1-0145"
+				],
+				"options": [
+					"ins Buch schreiben",
+					"ins Heft schreiben"
+				],
+				"answer": 1,
+				"audioText": "Schreiben Sie die Wörter ins Heft.",
+				"audioOnly": true,
+				"family": "A1-05-T-HO1-1"
+			},
+			{
+				"id": "A1-05-T-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Was bedeutet „Pause“?“ – „Pause bedeutet: nicht lernen.“",
+					"en": "Answer: „Was bedeutet „Pause“?“ – „Pause bedeutet: nicht lernen.“",
+					"tl": "Sagot: „Was bedeutet „Pause“?“ – „Pause bedeutet: nicht lernen.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0036"
+				],
+				"options": [
+					"Dort, bitte.",
+					"Ja, hier ist sie.",
+					"Pause bedeutet: nicht lernen.",
+					"Auf Seite zwölf."
+				],
+				"answer": 2,
+				"audioText": "Was bedeutet „Pause“?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-T-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Haben Sie die Hausübung?“ – „Ja, hier ist sie.“",
+					"en": "Answer: „Haben Sie die Hausübung?“ – „Ja, hier ist sie.“",
+					"tl": "Sagot: „Haben Sie die Hausübung?“ – „Ja, hier ist sie.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0051",
+					"W-A1-0117"
+				],
+				"options": [
+					"Ja, hier ist sie.",
+					"Pause bedeutet: nicht lernen.",
+					"Dort, bitte.",
+					"Ja, hier, bitte."
+				],
+				"answer": 0,
+				"audioText": "Haben Sie die Hausübung?",
+				"audioOnly": true,
+				"family": "A1-05-T-HO2-1"
+			},
+			{
+				"id": "A1-05-T-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "„Auf welcher Seite sind wir?“ – „Auf Seite zwölf.“",
+					"en": "Answer: „Auf welcher Seite sind wir?“ – „Auf Seite zwölf.“",
+					"tl": "Sagot: „Auf welcher Seite sind wir?“ – „Auf Seite zwölf.“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0011",
+					"W-A1-0806"
+				],
+				"options": [
+					"Ja, hier ist sie.",
+					"Pause bedeutet: nicht lernen.",
+					"Auf Seite zwölf.",
+					"Herein!"
+				],
+				"answer": 2,
+				"audioText": "Auf welcher Seite sind wir?",
+				"audioOnly": true,
+				"family": "A1-05-T-HO2-1"
+			},
+			{
+				"id": "A1-05-T-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“",
+					"en": "Answer: Sie hören: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“",
+					"tl": "Sagot: Sie hören: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0060",
+					"W-A1-0805",
+					"W-A1-0001"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 0,
+				"prompt": "Aussage: Der Unterricht endet heute um elf.",
+				"audioText": "Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-05-T-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Die Prüfung ist nicht heute, sie ist morgen.“",
+					"en": "Answer: Sie hören: „Die Prüfung ist nicht heute, sie ist morgen.“",
+					"tl": "Sagot: Sie hören: „Die Prüfung ist nicht heute, sie ist morgen.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0009",
+					"W-A1-0002"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Aussage: Die Prüfung ist heute.",
+				"audioText": "Die Prüfung ist nicht heute, sie ist morgen.",
+				"audioOnly": true,
+				"family": "A1-05-T-HO3-1"
+			},
+			{
+				"id": "A1-05-T-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+					"en": "Listen. Is the statement right or wrong?",
+					"tl": "Makinig. Tama o mali ang pahayag?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“",
+					"en": "Answer: Sie hören: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“",
+					"tl": "Sagot: Sie hören: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“"
+				},
+				"goals": [
+					"A1-05-G5"
+				],
+				"refs": [
+					"W-A1-0185",
+					"W-A1-0186",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0046",
+					"W-A1-0012"
+				],
+				"options": [
+					"richtig",
+					"falsch"
+				],
+				"answer": 1,
+				"prompt": "Aussage: Morgen braucht man kein Heft.",
+				"audioText": "Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.",
+				"audioOnly": true,
+				"family": "A1-05-T-HO3-1"
+			},
+			{
+				"id": "A1-05-T-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "Im Buch lese ich, ins Heft schreibe ich.",
+					"en": "Answer: Im Buch lese ich, ins Heft schreibe ich.",
+					"tl": "Sagot: Im Buch lese ich, ins Heft schreibe ich."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308",
+					"W-A1-0006"
+				],
+				"text": "Im {{1}} lese ich, ins {{2}} schreibe ich.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Buch"
+						]
+					},
+					"2": {
+						"accept": [
+							"Heft"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-T-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "Auf eine Frage gibt man eine Antwort.",
+					"en": "Answer: Auf eine Frage gibt man eine Antwort.",
+					"tl": "Sagot: Auf eine Frage gibt man eine Antwort."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308"
+				],
+				"text": "Auf eine {{1}} gibt man eine {{2}}.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Frage"
+						]
+					},
+					"2": {
+						"accept": [
+							"Antwort"
+						]
+					}
+				},
+				"family": "A1-05-T-SC1-1"
+			},
+			{
+				"id": "A1-05-T-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie.",
+					"en": "Complete.",
+					"tl": "Kumpletuhin."
+				},
+				"explanation": {
+					"de": "Lösung – Fehler.",
+					"en": "Answer: Lösung – Fehler.",
+					"tl": "Sagot: Lösung – Fehler."
+				},
+				"goals": [
+					"A1-05-G2",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0308",
+					"W-A1-0002",
+					"W-A1-0004"
+				],
+				"text": "Die richtige Antwort ist die {{1}}. Eine falsche Antwort ist ein {{2}}.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Lösung"
+						]
+					},
+					"2": {
+						"accept": [
+							"Fehler"
+						]
+					}
+				},
+				"family": "A1-05-T-SC1-1"
+			},
+			{
+				"id": "A1-05-T-SC2-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A1, Sprachen: Tagalog und Englisch.",
+					"en": "Answer: Kurs: A1, Sprachen: Tagalog und Englisch.",
+					"tl": "Sagot: Kurs: A1, Sprachen: Tagalog und Englisch."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0305",
+					"W-A1-0306"
+				],
+				"text": "Ich bin Maria. Ich möchte den Kurs A1. Ich spreche Tagalog und Englisch.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A1"
+						]
+					},
+					"2": {
+						"accept": [
+							"Tagalog und Englisch",
+							"Tagalog, Englisch",
+							"Englisch und Tagalog"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-T-SC2-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A2, Sprachen: Deutsch und Englisch.",
+					"en": "Answer: Kurs: A2, Sprachen: Deutsch und Englisch.",
+					"tl": "Sagot: Kurs: A2, Sprachen: Deutsch und Englisch."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0304",
+					"W-A1-0305"
+				],
+				"text": "Ich heiße Ali. Ich mache den Kurs A2. Ich spreche Deutsch und Englisch.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A2"
+						]
+					},
+					"2": {
+						"accept": [
+							"Deutsch und Englisch",
+							"Deutsch, Englisch",
+							"Englisch und Deutsch"
+						]
+					}
+				},
+				"family": "A1-05-T-SC2-1"
+			},
+			{
+				"id": "A1-05-T-SC2-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Anmeldeformular.",
+					"en": "Read. Complete the registration form.",
+					"tl": "Basahin. Kumpletuhin ang registration form."
+				},
+				"explanation": {
+					"de": "Kurs: A1, Sprachen: Englisch.",
+					"en": "Answer: Kurs: A1, Sprachen: Englisch.",
+					"tl": "Sagot: Kurs: A1, Sprachen: Englisch."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0006",
+					"W-A1-0324",
+					"W-A1-0056",
+					"W-A1-0305"
+				],
+				"text": "Mein Name ist Sofia. Kurs: A1. Ich spreche nur Englisch.\nKurs: {{1}} · Sprachen: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"A1"
+						]
+					},
+					"2": {
+						"accept": [
+							"Englisch"
+						]
+					}
+				},
+				"family": "A1-05-T-SC2-1"
+			},
+			{
+				"id": "A1-05-T-SC3-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin krank. Ich mache die {{2}} morgen.\nViele Grüße, Maria",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-T-SC3-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin in der Arbeit. Ich mache die {{2}} morgen.\nViele Grüße, Jose",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				},
+				"family": "A1-05-T-SC3-1"
+			},
+			{
+				"id": "A1-05-T-SC3-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht an die Lehrerin.",
+					"en": "Complete the message to the teacher.",
+					"tl": "Kumpletuhin ang mensahe sa guro."
+				},
+				"explanation": {
+					"de": "nicht (Verb verneinen), die Hausübung.",
+					"en": "Answer: nicht (Verb verneinen), die Hausübung.",
+					"tl": "Sagot: nicht (Verb verneinen), die Hausübung."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0316",
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"text": "Liebe Frau Huber,\nich komme heute {{1}} in den Kurs. Ich bin in Graz. Ich mache die {{2}} morgen.\nViele Grüße, Sofia",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nicht"
+						]
+					},
+					"2": {
+						"accept": [
+							"Hausübung"
+						]
+					}
+				},
+				"family": "A1-05-T-SC3-1"
+			},
+			{
+				"id": "A1-05-T-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kennen das Wort „Blatt“ nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t know the word “Blatt”. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo alam ang salitang “Blatt”. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Was bedeutet „Blatt“?“",
+					"en": "Answer: Passend: „Was bedeutet „Blatt“?“",
+					"tl": "Sagot: Passend: „Was bedeutet „Blatt“?“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0036",
+					"W-A1-0011",
+					"W-A1-0304"
+				],
+				"options": [
+					"Wie sagt man „question“ auf Deutsch?",
+					"Auf welcher Seite sind wir?",
+					"Was bedeutet „Blatt“?"
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-05-T-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wissen das deutsche Wort für „question“ nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t know the German word for “question”. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo alam ang salitang German para sa “question”. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Wie sagt man „question“ auf Deutsch?“",
+					"en": "Answer: Passend: „Wie sagt man „question“ auf Deutsch?“",
+					"tl": "Sagot: Passend: „Wie sagt man „question“ auf Deutsch?“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0036",
+					"W-A1-0304"
+				],
+				"options": [
+					"Wie sagt man „question“ auf Deutsch?",
+					"Was bedeutet „Blatt“?",
+					"Wie schreibt man „Kugelschreiber“?"
+				],
+				"answer": 0,
+				"family": "A1-05-T-SP1-1"
+			},
+			{
+				"id": "A1-05-T-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie verstehen die Aufgabe nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t understand the task. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo naintindihan ang gawain. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Können Sie die Aufgabe bitte erklären?“",
+					"en": "Answer: Passend: „Können Sie die Aufgabe bitte erklären?“",
+					"tl": "Sagot: Passend: „Können Sie die Aufgabe bitte erklären?“"
+				},
+				"goals": [
+					"A1-05-G3"
+				],
+				"refs": [
+					"W-A1-0315",
+					"W-A1-0041",
+					"W-A1-0009",
+					"W-A1-0091",
+					"W-A1-0011"
+				],
+				"options": [
+					"Können Sie die Aufgabe bitte erklären?",
+					"Auf welcher Seite sind wir?",
+					"Wie sagt man „question“ auf Deutsch?"
+				],
+				"answer": 0,
+				"family": "A1-05-T-SP1-1"
+			},
+			{
+				"id": "A1-05-T-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben die Hausübung nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t have the homework. What do you say? Choose, then say it aloud.",
+					"tl": "Wala sa iyo ang takdang-aralin. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Nein, die habe ich nicht.“",
+					"en": "Answer: Passend: „Nein, die habe ich nicht.“",
+					"tl": "Sagot: Passend: „Nein, die habe ich nicht.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, die habe ich nicht.",
+					"Ja, die habe ich nicht.",
+					"Nein, ich bin Hausübung."
+				],
+				"answer": 0,
+				"prompt": "Haben Sie die Hausübung?"
+			},
+			{
+				"id": "A1-05-T-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben kein Buch dabei. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t have a book with you. What do you say? Choose, then say it aloud.",
+					"tl": "Wala kang dalang libro. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich habe heute kein Buch.“",
+					"en": "Answer: Passend: „Ich habe heute kein Buch.“",
+					"tl": "Sagot: Passend: „Ich habe heute kein Buch.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0012",
+					"W-A1-0037",
+					"W-A1-0022"
+				],
+				"options": [
+					"Ich habe heute kein Buch.",
+					"Ich habe heute nicht Buch.",
+					"Mein Buch ist kein."
+				],
+				"answer": 0,
+				"prompt": "Wo ist Ihr Buch?",
+				"family": "A1-05-T-SP2-1"
+			},
+			{
+				"id": "A1-05-T-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie verstehen die Frage nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t understand the question. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo naintindihan ang tanong. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Nein, ich verstehe sie nicht.“",
+					"en": "Answer: Passend: „Nein, ich verstehe sie nicht.“",
+					"tl": "Sagot: Passend: „Nein, ich verstehe sie nicht.“"
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0052",
+					"W-A1-0002"
+				],
+				"options": [
+					"Nein, ich verstehe kein.",
+					"Doch, ich verstehe sie nicht.",
+					"Nein, ich verstehe sie nicht."
+				],
+				"answer": 2,
+				"prompt": "Verstehen Sie die Frage?",
+				"family": "A1-05-T-SP2-1"
+			},
+			{
+				"id": "A1-05-T-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Ich habe ein Heft.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Ich habe ein Heft.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Ich habe ein Heft.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "ein Heft → kein Heft.",
+					"en": "Answer: ein Heft → kein Heft.",
+					"tl": "Sagot: ein Heft → kein Heft."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0004"
+				],
+				"options": [
+					"Ich habe nicht ein Heft.",
+					"Ich nicht habe Heft.",
+					"Ich habe kein Heft."
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-05-T-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Ich komme heute.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Ich komme heute.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Ich komme heute.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Verb → nicht (am Ende).",
+					"en": "Answer: Verb → nicht (am Ende).",
+					"tl": "Sagot: Verb → nicht (am Ende)."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006"
+				],
+				"options": [
+					"Ich komme kein heute.",
+					"Ich komme heute nicht.",
+					"Ich nicht komme heute."
+				],
+				"answer": 1,
+				"family": "A1-05-T-SP3-1"
+			},
+			{
+				"id": "A1-05-T-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Verneinen Sie: „Das ist richtig.“ Wählen Sie, dann sagen Sie es laut.",
+					"en": "Make it negative: “Das ist richtig.” Choose, then say it aloud.",
+					"tl": "Gawing negatibo: “Das ist richtig.” Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Adjektiv → nicht.",
+					"en": "Answer: Adjektiv → nicht.",
+					"tl": "Sagot: Adjektiv → nicht."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist kein richtig.",
+					"Das nicht ist richtig.",
+					"Das ist nicht richtig."
+				],
+				"answer": 2,
+				"family": "A1-05-T-SP3-1"
+			},
+			{
+				"id": "A1-05-T-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Verb → nicht.",
+					"en": "Answer: Verb → nicht.",
+					"tl": "Sagot: Verb → nicht."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006",
+					"W-A1-0003"
+				],
+				"options": [
+					"kein",
+					"nicht",
+					"keine"
+				],
+				"answer": 1,
+				"prompt": "Ich verstehe das …"
+			},
+			{
+				"id": "A1-05-T-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "ein Buch → kein Buch.",
+					"en": "Answer: ein Buch → kein Buch.",
+					"tl": "Sagot: ein Buch → kein Buch."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0003"
+				],
+				"options": [
+					"nicht",
+					"kein",
+					"keine"
+				],
+				"answer": 1,
+				"prompt": "Das ist … Buch.",
+				"family": "A1-05-T-GW1-1"
+			},
+			{
+				"id": "A1-05-T-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "eine Frage → keine Frage.",
+					"en": "Answer: eine Frage → keine Frage.",
+					"tl": "Sagot: eine Frage → keine Frage."
+				},
+				"goals": [
+					"A1-05-G4"
+				],
+				"refs": [
+					"W-A1-0053",
+					"W-A1-0005",
+					"W-A1-0006"
+				],
+				"options": [
+					"nicht",
+					"kein",
+					"keine"
+				],
+				"answer": 2,
+				"prompt": "Ich habe … Frage.",
+				"family": "A1-05-T-GW1-1"
+			},
+			{
+				"id": "A1-05-T-GW2-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "Verb verneinen → nicht.",
+					"en": "Answer: Verb verneinen → nicht.",
+					"tl": "Sagot: Verb verneinen → nicht."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0093"
+				],
+				"options": [
+					"nicht",
+					"kein"
+				],
+				"answer": 0,
+				"prompt": "Hallo Anna! Ich komme heute ___ in den Kurs. Bis morgen! Tom"
+			},
+			{
+				"id": "A1-05-T-GW2-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "Unterricht (Nomen ohne Artikel) → kein.",
+					"en": "Answer: Unterricht (Nomen ohne Artikel) → kein.",
+					"tl": "Sagot: Unterricht (Nomen ohne Artikel) → kein."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0328"
+				],
+				"options": [
+					"kein",
+					"nicht"
+				],
+				"answer": 0,
+				"prompt": "Liebe Kursteilnehmer, morgen ist ___ Unterricht. Frau Huber",
+				"family": "A1-05-T-GW2-1"
+			},
+			{
+				"id": "A1-05-T-GW2-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Lesen Sie die Nachricht. Was passt in die Lücke?",
+					"en": "Read the message. What fits the gap?",
+					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
+				},
+				"explanation": {
+					"de": "der Kugelschreiber → einen (haben + Akkusativ).",
+					"en": "Answer: der Kugelschreiber → einen (haben + Akkusativ).",
+					"tl": "Sagot: der Kugelschreiber → einen (haben + Akkusativ)."
+				},
+				"goals": [
+					"A1-05-G4",
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0285",
+					"W-A1-0378",
+					"W-A1-0007",
+					"W-A1-0092",
+					"W-A1-0004"
+				],
+				"options": [
+					"ein",
+					"einen"
+				],
+				"answer": 1,
+				"prompt": "Hallo! Hast du ___ Kugelschreiber für mich? Danke! Ali",
+				"family": "A1-05-T-GW2-1"
+			},
+			{
+				"id": "A1-05-T-GW3-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Bücher.",
+					"en": "Answer: Plural: die Bücher.",
+					"tl": "Sagot: Plural: die Bücher."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0288",
+					"W-A1-0002",
+					"W-A1-0003"
+				],
+				"options": [
+					"Bücher",
+					"Buchs",
+					"Buchen"
+				],
+				"answer": 0,
+				"prompt": "das Buch → die …"
+			},
+			{
+				"id": "A1-05-T-GW3-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Hefte.",
+					"en": "Answer: Plural: die Hefte.",
+					"tl": "Sagot: Plural: die Hefte."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0289",
+					"W-A1-0002",
+					"W-A1-0003"
+				],
+				"options": [
+					"Hefte",
+					"Hefts",
+					"Heften"
+				],
+				"answer": 0,
+				"prompt": "das Heft → die …",
+				"family": "A1-05-T-GW3-1"
+			},
+			{
+				"id": "A1-05-T-GW3-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: die Fragen.",
+					"en": "Answer: Plural: die Fragen.",
+					"tl": "Sagot: Plural: die Fragen."
+				},
+				"goals": [
+					"A1-05-G1"
+				],
+				"refs": [
+					"W-A1-0297",
+					"W-A1-0132",
+					"W-A1-0002"
+				],
+				"options": [
+					"Frages",
+					"Frage",
+					"Fragen"
+				],
+				"answer": 2,
+				"prompt": "die Frage → die …",
+				"family": "A1-05-T-GW3-1"
+			},
+			{
+				"id": "A1-05-T-GW4-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "sie zeigt.",
+					"en": "Answer: sie zeigt.",
+					"tl": "Sagot: sie zeigt."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0156",
+					"W-A1-0002",
+					"W-A1-0003"
+				],
+				"text": "Die Lehrerin {{1}} (zeigen) das Bild.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"zeigt"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-05-T-GW4-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "du öffnest (mit -est).",
+					"en": "Answer: du öffnest (mit -est).",
+					"tl": "Sagot: du öffnest (mit -est)."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0157",
+					"W-A1-0007",
+					"W-A1-0003"
+				],
+				"text": "Du {{1}} (öffnen) das Buch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"öffnest"
+						]
+					}
+				},
+				"family": "A1-05-T-GW4-1"
+			},
+			{
+				"id": "A1-05-T-GW4-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "wir üben.",
+					"en": "Answer: wir üben.",
+					"tl": "Sagot: wir üben."
+				},
+				"goals": [
+					"A1-05-G2"
+				],
+				"refs": [
+					"W-A1-0314",
+					"W-A1-0011",
+					"W-A1-0086"
+				],
+				"text": "Wir {{1}} (üben) zusammen.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"üben"
+						]
+					}
+				},
+				"family": "A1-05-T-GW4-1"
+			},
+			{
+				"id": "A1-05-T-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0357",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Können Frauen in Österreich Mechanikerin werden?"
+			},
+			{
+				"id": "A1-05-T-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0357",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0118"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Können Männer in Österreich Krankenpfleger werden?",
+				"family": "A1-05-T-WE1-1"
+			},
+			{
+				"id": "A1-05-T-WE1-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0357",
+					"W-A1-0030",
+					"W-A1-0056",
+					"W-A1-0093"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"nur wenige Berufe",
+					"alle Berufe"
+				],
+				"answer": 1,
+				"prompt": "Welche Berufe können Frauen in Österreich lernen?",
+				"family": "A1-05-T-WE1-1"
+			},
+			{
+				"id": "A1-05-T-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0046",
+					"W-A1-0056",
+					"W-A1-0001",
+					"W-A1-0037"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"bei der Arbeit, beim Amt und im Alltag",
+					"nur im Deutschkurs"
+				],
+				"answer": 0,
+				"prompt": "Wo hilft Deutsch?"
+			},
+			{
+				"id": "A1-05-T-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0046",
+					"W-A1-0036",
+					"W-A1-0032",
+					"W-A1-0126"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"nichts machen",
+					"Deutsch lernen und üben"
+				],
+				"answer": 1,
+				"prompt": "Was hilft bei der Integrationsprüfung?",
+				"family": "A1-05-T-WE2-1"
+			},
+			{
+				"id": "A1-05-T-WE2-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0146",
+					"W-A1-0357",
+					"W-A1-0057",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja, sehr."
+				],
+				"answer": 1,
+				"prompt": "Ist Deutsch lernen in Österreich wichtig?",
+				"family": "A1-05-T-WE2-1"
+			},
+			{
+				"id": "A1-05-T-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0329",
+					"W-A1-0328",
+					"W-A1-0035",
+					"W-A1-0003",
+					"W-A1-0004"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"eine Frau",
+					"ein Mann"
+				],
+				"answer": 0,
+				"prompt": "Bild 1: Wer repariert das Auto?",
+				"image": {
+					"src": "/img/a1-05-berufe.svg",
+					"alt": {
+						"de": "Bild 1: eine Frau repariert ein Auto. Bild 2: ein Mann arbeitet als Krankenpfleger.",
+						"en": "Picture 1: a woman repairs a car. Picture 2: a man works as a nurse.",
+						"tl": "Larawan 1: babaeng nag-aayos ng kotse. Larawan 2: lalaking nars."
+					}
+				}
+			},
+			{
+				"id": "A1-05-T-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0329",
+					"W-A1-0328",
+					"W-A1-0035",
+					"W-A1-0004"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"ein Mann",
+					"eine Frau"
+				],
+				"answer": 0,
+				"prompt": "Bild 2: Wer arbeitet als Krankenpfleger?",
+				"image": {
+					"src": "/img/a1-05-berufe.svg",
+					"alt": {
+						"de": "Bild 1: eine Frau repariert ein Auto. Bild 2: ein Mann arbeitet als Krankenpfleger.",
+						"en": "Picture 1: a woman repairs a car. Picture 2: a man works as a nurse.",
+						"tl": "Larawan 1: babaeng nag-aayos ng kotse. Larawan 2: lalaking nars."
+					}
+				},
+				"family": "A1-05-T-WE3-1"
+			},
+			{
+				"id": "A1-05-T-WE3-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
+					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
+					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+				},
+				"goals": [
+					"A1-05-G6"
+				],
+				"refs": [
+					"W-A1-0329",
+					"W-A1-0328",
+					"W-A1-0046",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0003"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Zeigt das Bild: Berufe sind für Frauen und Männer?",
+				"image": {
+					"src": "/img/a1-05-berufe.svg",
+					"alt": {
+						"de": "Bild 1: eine Frau repariert ein Auto. Bild 2: ein Mann arbeitet als Krankenpfleger.",
+						"en": "Picture 1: a woman repairs a car. Picture 2: a man works as a nurse.",
+						"tl": "Larawan 1: babaeng nag-aayos ng kotse. Larawan 2: lalaking nars."
+					}
+				},
+				"family": "A1-05-T-WE3-1"
+			}
+		]
+	}
+}

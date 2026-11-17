@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import InstallButton from '#lib/components/InstallButton.svelte';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -108,6 +109,7 @@
 		{/if}
 
 		<a href={resolve('/practice')} data-testid="free-practice" class="btn-secondary">🎯 {m.free_practice()}</a>
+		<InstallButton />
 
 		<h2 class="h2 pt-2">{m.all_chapters()}</h2>
 		{#each levels as level (level)}

@@ -123,5 +123,7 @@
 	"settings_reset_note": "Deletes profile, chapters and reviews on this device.",
 	"result_great": "Excellent!",
 	"result_good": "Well done!",
-	"result_misses": "Practise these again:"
+	"result_misses": "Practise these again:",
+	"install_app": "Install the app",
+	"install_ios": "Use it as an app: in Safari tap “Share”, then “Add to Home Screen”."
 }

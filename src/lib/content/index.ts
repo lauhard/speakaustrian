@@ -1,9 +1,6 @@
 import { makeContentInfo, poolOf, practiceSplit, type PoolKind } from '../core/content/info';
 import { withPools } from '../core/content/merge';
 import { ChapterContent, Course, type Discipline, type Item, type Lesson, type Vocab } from '../core/content/schema';
-import a101 from './a1-01.json';
-import a102 from './a1-02.json';
-import a103 from './a1-03.json';
 import courseRaw from './course.json';
 import demo from './demo.json';
 
@@ -11,7 +8,11 @@ import demo from './demo.json';
 export const course: Course = Course.parse(courseRaw);
 // Pools of real chapters come from `<chapter>-pools.json`, if the file exists (see core/content/merge.ts).
 const poolFiles = Object.values(import.meta.glob('./*-pools.json', { eager: true, import: 'default' }));
-export const chapters: ChapterContent[] = [a101, a102, a103, demo].map((raw) => ChapterContent.parse(withPools(raw, poolFiles)));
+// Chapter files are picked up by name (a1-01.json … a2-19.json): a new chapter needs no code change.
+const chapterFiles = Object.entries(import.meta.glob(['./a1-*.json', './a2-*.json', '!./*-pools.json'], { eager: true, import: 'default' }))
+	.sort(([a], [b]) => a.localeCompare(b))
+	.map(([, raw]) => raw as typeof demo);
+export const chapters: ChapterContent[] = [...chapterFiles, demo].map((raw) => ChapterContent.parse(withPools(raw, poolFiles)));
 
 export const PREVIEW_CHAPTER = 'DEMO';
 
