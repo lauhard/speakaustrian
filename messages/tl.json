@@ -34,8 +34,8 @@
 	"skill_hoeren": "Pakikinig",
 	"skill_schreiben": "Pagsulat",
 	"skill_sprechen": "Pagsasalita",
-	"skill_grammatikWortschatz": "Balarila at mga salita",
-	"skill_werte": "Mga pagpapahalaga",
+	"skill_grammatikWortschatz": "Bokabularyo at gramatika",
+	"skill_werte": "Pagpapahalaga at pamumuhay",
 	"skill_bild": "Mga larawan",
 	"tasks_available": "{count} gawain",
 	"lessons": "Mga aralin",
@@ -145,5 +145,10 @@
 	"set_group_app": "App",
 	"set_group_data": "Data",
 	"free_label": "Libre",
-	"nav_chapter": "Kabanata"
+	"nav_chapter": "Kabanata",
+	"goal_title": "Layunin ngayong araw",
+	"goal_progress": "{done} sa {goal} min",
+	"goal_met": "Naabot ang layunin ngayon",
+	"goal_due": "{count} pang ulitin",
+	"playing": "Tumutugtog …"
 }

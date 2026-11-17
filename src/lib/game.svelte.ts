@@ -2,6 +2,7 @@ import { createLocalStorage } from './adapters/web/local-storage.ts';
 import { contentInfo, course, PREVIEW_CHAPTER } from './content/index.ts';
 import { legacyEvents } from './core/migrate.ts';
 import { defaultConfig, demoConfig, makeDefaultPolicy, type RulePolicy } from './core/policy.ts';
+import { ACTIVITY_TICK_SEC } from './core/day.ts';
 import { localDate, makeReducer, newGame, settleChapter, type GameEvent } from './core/reducer.ts';
 import type { GameState } from './core/state.ts';
 import type { StoragePort } from './ports/storage.ts';
@@ -66,6 +67,20 @@ const createStore = (o: StoreOptions) => {
 };
 
 export const game = createStore({ policy, order, legacy: true });
+
+// R-D3: an ACTIVITY tick every 15 s while the app is visible and the learner interacted within 90 s.
+let ticking = false;
+export const startActivityClock = () => {
+	if (ticking || typeof window === 'undefined') return;
+	ticking = true;
+	let lastInput = Date.now();
+	const touch = () => (lastInput = Date.now());
+	for (const type of ['pointerdown', 'keydown', 'touchstart', 'scroll']) window.addEventListener(type, touch, { passive: true });
+	setInterval(() => {
+		if (game.ready && game.state.profile && document.visibilityState === 'visible' && Date.now() - lastInput <= 90_000)
+			game.dispatch({ type: 'ACTIVITY', sec: ACTIVITY_TICK_SEC });
+	}, ACTIVITY_TICK_SEC * 1000);
+};
 export const demo = createStore({ policy: demoPolicy, order: [PREVIEW_CHAPTER], storageKey: 'speakaustrian.demo.v1', autoProfile: () => game.state.profile?.name ?? 'Demo' });
 
 // Free mode (setting "unlock all chapters"): a chapter that is not yet due runs with the real rules in its own state,

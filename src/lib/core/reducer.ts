@@ -1,4 +1,5 @@
 import type { RulePolicy } from './policy';
+import { trackDay } from './day';
 import { seeded, shuffle } from './random';
 import { addCards, addDays, addErrorCard, answerCard, errorCardId, type Direction, type Introduced } from './review';
 import { initialState, type AttemptState, type ChapterId, type ChapterRun, type CoursePhase, type GameState, type LocalDate, type OverrideEffect, type OverrideGrant, type PensumMin, type RecoveryPlan } from './state';
@@ -11,6 +12,7 @@ export type GameEvent = EventBase &
 		| { type: 'PROFILE_CREATED'; name: string; pensumMin: PensumMin }
 		| { type: 'PENSUM_CHANGED'; pensumMin: PensumMin }
 		| { type: 'APP_OPENED' }
+		| { type: 'ACTIVITY'; sec: number }
 		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string; introduced?: Introduced[] }
 		| { type: 'PRACTICE_ANSWERED'; itemId: string; correct: boolean }
 		| { type: 'GATE_ANSWERED'; itemId: string; correct: boolean }
@@ -127,7 +129,7 @@ export const settleChapter = (content: ContentInfo) => (state: GameState): GameS
 	return to(entryState(content, run.id, { entry: 'PRACTICE', repeatMode: run.attempt.repeatMode }));
 };
 
-export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[], content: ContentInfo = noContent): Reducer => (state, event) => {
+const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[], content: ContentInfo = noContent): Reducer => (state, event) => {
 	const s: GameState = {
 		...state,
 		clock: { ...state.clock, lastEventAt: event.at, lastLocalDate: localDate(event.at, event.tzOffsetMin) }
@@ -302,8 +304,15 @@ export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId
 				: recorded;
 		}
 		case 'APP_OPENED':
+		case 'ACTIVITY':
 			return s;
 	}
+};
+
+// Every event runs through the day bookkeeping (R-D1, R-S1–R-S5) after the core rules.
+export const makeReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[], content: ContentInfo = noContent): Reducer => {
+	const core = makeCoreReducer(policy, chapterOrder, content);
+	return (state, event) => trackDay(core(state, event), localDate(event.at, event.tzOffsetMin), event.type === 'ACTIVITY' ? event.sec : 0);
 };
 
 export const newGame = (policy: RulePolicy): GameState => initialState({ id: policy.id, version: policy.version });
