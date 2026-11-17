@@ -39,6 +39,9 @@
 	let shortText = $state('');
 	let grade = $state<Grade | null>(null);
 	let correctCount = $state(0);
+	// Current run of correct answers and the misses of this round, for the header and the result screen.
+	let streak = $state(0);
+	let misses = $state<{ id: string; text: string; expected: string }[]>([]);
 	let finished = $state(false);
 
 	const item = $derived(items[index]);
@@ -60,7 +63,13 @@
 		event.preventDefault();
 		if (!response || grade) return;
 		grade = gradeItem(item, response);
-		if (passes(grade.verdict)) correctCount += 1;
+		if (passes(grade.verdict)) {
+			correctCount += 1;
+			streak += 1;
+		} else {
+			streak = 0;
+			misses = [...misses, { id: item.id, text: item.type === 'cloze' ? item.text : (item.prompt ?? item.audioText ?? ''), expected: Object.values(grade.expected).join(' · ') }];
+		}
 		onchecked?.(item, passes(grade.verdict));
 	};
 
@@ -83,6 +92,8 @@
 		index = 0;
 		selected = null;
 		gaps = {};
+		streak = 0;
+		misses = [];
 		shortText = '';
 		grade = null;
 		correctCount = 0;
@@ -122,8 +133,19 @@
 		<div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-8 {percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'} bg-white text-3xl font-black">
 			{percent}%
 		</div>
-		<h1 class="text-3xl font-black">{m.result_title()}</h1>
+		<p class="pop text-4xl" aria-hidden="true">{percent >= 90 ? '⭐⭐⭐' : percent >= 70 ? '⭐⭐☆' : percent >= 50 ? '⭐☆☆' : '☆☆☆'}</p>
+		<h1 class="text-3xl font-black">{percent >= 90 ? m.result_great() : percent >= 70 ? m.result_good() : m.result_title()}</h1>
 		<p class="text-xl font-semibold">{m.result_score({ correct: correctCount, total: items.length })}</p>
+		{#if misses.length > 0}
+			<div class="card space-y-2 text-left" data-testid="misses">
+				<p class="font-extrabold">{m.result_misses()}</p>
+				<ul class="space-y-2 text-sm">
+					{#each misses as miss (miss.id)}
+						<li class="border-t border-line pt-2"><span class="block text-muted" lang="de">{miss.text.replaceAll(/\{\{\d+\}\}/g, '…')}</span><span class="font-bold text-ok" lang="de">✓ {miss.expected}</span></li>
+					{/each}
+				</ul>
+			</div>
+		{/if}
 		<button type="button" class="btn-secondary" onclick={restart}>
 			{m.again()}
 		</button>
@@ -136,7 +158,11 @@
 		<div>
 			<div class="mb-2 flex items-center justify-between">
 				<a href={backHref} onclick={back} class="backlink" aria-label={backLabel}>✕</a>
-				<p class="text-sm font-bold text-muted">{m.task_count({ current: index + 1, total: items.length })}</p>
+				<p class="flex items-center gap-3 text-sm font-bold text-muted">
+					<span class="text-ok" data-testid="run-correct">✓ {correctCount}</span>
+					{#if streak >= 3}<span class="pop text-warn" data-testid="streak">🔥 {streak}</span>{/if}
+					<span>{m.task_count({ current: index + 1, total: items.length })}</span>
+				</p>
 			</div>
 			<div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax={items.length} aria-valuenow={index + (grade ? 1 : 0)}>
 				<span style="width: {((index + (grade ? 1 : 0)) / items.length) * 100}%"></span>
@@ -238,7 +264,7 @@
 				data-testid="feedback"
 				data-verdict={grade.verdict}
 				role="status"
-				class="feedback"
+				class="feedback pop {grade.verdict === 'wrong' ? 'shake' : ''}"
 			>
 				<p class="text-xl font-black">{grade.verdict === 'wrong' ? '✗' : '✓'} {verdictText(grade)}</p>
 				{#if grade.verdict !== 'correct'}

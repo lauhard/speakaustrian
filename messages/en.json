@@ -120,5 +120,8 @@
 	"settings_language": "Help language",
 	"settings_reset": "Delete course progress",
 	"settings_reset_confirm": "Really delete? Tap again.",
-	"settings_reset_note": "Deletes profile, chapters and reviews on this device."
+	"settings_reset_note": "Deletes profile, chapters and reviews on this device.",
+	"result_great": "Excellent!",
+	"result_good": "Well done!",
+	"result_misses": "Practise these again:"
 }
