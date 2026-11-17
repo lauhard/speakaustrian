@@ -76,10 +76,12 @@ test('DEMO chapter: perfect run to the end (bonus life, restart)', async ({ page
 	// K5/K6: the passed chapter shows the trophy step; the other steps stay reachable, one at a time.
 	await expect(page.getByTestId('trophy-test')).toHaveText('100%');
 	await expect(page.getByTestId('trophy-error-rate')).toHaveText('0%');
+	await expect(page.getByTestId('trophy-stars')).toHaveAttribute('data-stars', '3');
+	await expect(page.getByTestId('step-4')).toHaveAttribute('data-state', 'trophy');
 	await page.getByTestId('step-0').click();
 	await expect(page.getByTestId('lesson-DEMO-01')).toBeVisible();
 	await expect(page.getByTestId('flow-passed')).toHaveCount(0);
-	await page.getByTestId('step-3').click();
+	await page.getByTestId('step-4').click();
 	await page.getByTestId('flow-restart').click();
 	await expect(page.getByTestId('lesson-DEMO-01')).toBeVisible();
 });
@@ -155,6 +157,7 @@ test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked, pr
 	// K5: later steps are locked while the lessons are open.
 	await expect(page.getByTestId('step-1')).toBeDisabled();
 	await expect(page.getByTestId('step-3')).toBeDisabled();
+	await expect(page.getByTestId('step-4')).toBeDisabled();
 	await page.getByTestId('lesson-DEMO-01').click();
 	for (let i = 0; i < 6; i++) {
 		await answer(page, i < 3);

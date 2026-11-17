@@ -1,6 +1,7 @@
 <script lang="ts">
 	import BankPoints from './BankPoints.svelte';
-	import { Check, Heart, Trophy, X } from '@lucide/svelte';
+	import { Check, Heart, Star, Trophy, X } from '@lucide/svelte';
+	import { accuracyPct, chapterStars } from '#lib/core/rating.ts';
 	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -27,7 +28,7 @@
 	const completed = $derived(chapterId in s.course.completed);
 	// K6: trophy numbers; chapters passed before K6 have none.
 	const result = $derived(s.course.results[chapterId]);
-	const pct = (correct: number, total: number) => Math.round((correct / Math.max(1, total)) * 100);
+	const stars = $derived(result ? chapterStars(result.chapter) : 0);
 	const tlMachine = $derived(content?.tlReviewStatus === 'machine');
 	// The flow is the chapter page itself, so "close" leads back to the course.
 	const backHref = resolve('/');
@@ -217,20 +218,24 @@
 			{@render ask(reviewItem, reviewTop, (ok) => answerReview(cardId, ok), false)}
 		{/if}
 	{:else if completed}
-		<div class="card space-y-3 text-center" data-testid="flow-passed">
+		<div class="card space-y-4 text-center" data-testid="flow-passed">
 			<BankPoints />
-			<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-ok-soft text-ok"><Trophy size={40} strokeWidth={2} /></p>
+			<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-amber-100 text-amber-600"><Trophy size={40} strokeWidth={2} /></p>
 			<h2 class="h2">{m.flow_passed_title()}</h2>
 			{#if result}
+				<!-- K6, G-019 A: stars from the accuracy over the whole chapter. -->
+				<p class="flex items-center justify-center gap-1.5" data-testid="trophy-stars" data-stars={stars} aria-label={m.trophy_stars({ count: stars })}>
+					{#each [1, 2, 3] as n (n)}<Star size={34} strokeWidth={2} class={n <= stars ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}
+				</p>
 				<div class="grid grid-cols-2 gap-3 text-left" data-testid="trophy">
 					<div class="rounded-2xl bg-ok-soft p-3">
-						<p class="text-xs font-extrabold tracking-wider text-ok uppercase">{m.trophy_test()}</p>
-						<p class="text-3xl font-black text-ok" data-testid="trophy-test">{pct(result.test.correct, result.test.total)}%</p>
+						<p class="text-sm font-bold text-ok">{m.trophy_test()}</p>
+						<p class="text-3xl font-black text-ok" data-testid="trophy-test">{accuracyPct(result.test)}%</p>
 						<p class="text-sm font-semibold">{m.trophy_right_wrong({ correct: result.test.correct, wrong: result.test.total - result.test.correct })}</p>
 					</div>
 					<div class="rounded-2xl bg-paper p-3">
-						<p class="text-xs font-extrabold tracking-wider text-muted uppercase">{m.trophy_error_rate()}</p>
-						<p class="text-3xl font-black" data-testid="trophy-error-rate">{100 - pct(result.chapter.correct, result.chapter.total)}%</p>
+						<p class="text-sm font-bold text-muted">{m.trophy_error_rate()}</p>
+						<p class="text-3xl font-black" data-testid="trophy-error-rate">{100 - accuracyPct(result.chapter)}%</p>
 						<p class="text-sm font-semibold">{m.trophy_error_detail({ wrong: result.chapter.total - result.chapter.correct, total: result.chapter.total })}</p>
 					</div>
 				</div>

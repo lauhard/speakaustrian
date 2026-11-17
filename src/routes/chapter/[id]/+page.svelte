@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { untrack } from 'svelte';
 	import { toast } from '#lib/toast.svelte.ts';
-	import { Check, ChevronRight, Lock, LockOpen, Star, Trophy } from '@lucide/svelte';
+	import { Check, ChevronRight, Lock, LockOpen, RotateCcw, Star, Trophy } from '@lucide/svelte';
 	import { lessonScores, STARS } from '#lib/lesson-scores.svelte.ts';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
@@ -27,19 +27,20 @@
 	const free = $derived(isFreeMode(id));
 	const showTr = $derived(helpLocale !== 'de' && settings.value.showTranslations);
 	const status = $derived(chapterStatus(store.state, id, content?.lessons.map((l) => l.id) ?? []));
-	// The four stages of a chapter attempt (04a §4.2) as a stepper; the test stage includes correction and error review.
+	// The four stages of a chapter attempt (04a §4.2) plus the trophy step (K5, K6); the test stage includes correction and error review.
 	const steps = $derived([
 		{ key: ['new', 'lessons'], label: m.step_lessons() },
 		{ key: ['practice'], label: m.step_practice() },
 		{ key: ['gate'], label: m.step_gate() },
-		{ key: ['test', 'review'], label: m.step_test() }
+		{ key: ['test', 'review'], label: m.step_test() },
+		{ key: ['passed'], label: m.step_result() }
 	]);
-	const stepIndex = $derived(status.phase === 'passed' ? steps.length : steps.findIndex((st) => st.key.includes(status.phase)));
+	const TROPHY = 4;
+	const current = $derived(Math.max(0, steps.findIndex((st) => st.key.includes(status.phase))));
 	// K5: one step at a time. A passed chapter opens on the trophy step; a tapped step holds until the attempt moves on.
-	const current = $derived(Math.min(stepIndex, steps.length - 1));
 	let pick = $state<{ step: number; at: number } | null>(null);
-	const view = $derived(pick && pick.at === stepIndex ? pick.step : current);
-	const stepState = (i: number) => (passed || i < stepIndex ? 'done' : i === stepIndex ? 'current' : 'locked');
+	const view = $derived(pick && pick.at === current ? pick.step : current);
+	const stepState = (i: number) => (i < current ? 'done' : i === current ? (i === TROPHY ? 'trophy' : 'current') : 'locked');
 
 	// Lessons count as done once the attempt is past them (practice, test …) or the chapter is passed.
 	const done = $derived.by(() => {
@@ -60,23 +61,28 @@
 </script>
 
 {#snippet stepper()}
-	<ol class="flex gap-1.5" aria-label={m.chapter_steps()} data-testid="stepper">
+	<!-- K5: a connected track of nodes; done steps lead in green, locked ones stay grey and cannot be opened. -->
+	<ol class="relative grid grid-cols-5 px-1" aria-label={m.chapter_steps()} data-testid="stepper">
+		<span class="absolute top-[1.125rem] right-[10%] left-[10%] h-1 rounded-full bg-line" aria-hidden="true"></span>
+		<span class="absolute top-[1.125rem] left-[10%] h-1 rounded-full bg-ok transition-all duration-500" style="width: {(current / (steps.length - 1)) * 80}%" aria-hidden="true"></span>
 		{#each steps as st, i (st.label)}
 			{@const state = stepState(i)}
-			<li class="flex-1">
+			<li class="flex justify-center">
 				<button
 					type="button"
-					class="w-full text-left disabled:cursor-not-allowed"
+					class="group flex flex-col items-center gap-1.5 rounded-xl px-0.5 pb-1 focus-visible:outline-2 focus-visible:outline-brand disabled:cursor-not-allowed"
 					disabled={state === 'locked'}
 					aria-current={view === i ? 'step' : undefined}
 					data-testid="step-{i}"
 					data-state={state}
-					onclick={() => (pick = { step: i, at: stepIndex })}
+					onclick={() => (pick = { step: i, at: current })}
 				>
-					<span class="block h-2 rounded-full transition {state === 'locked' ? 'bg-white/25' : 'bg-white'} {view === i ? 'ring-2 ring-white ring-offset-2 ring-offset-brand' : state === 'current' ? '' : 'opacity-70'}"></span>
-					<span class="mt-1.5 flex items-center gap-1 text-xs font-bold {state === 'locked' ? 'text-white/50' : 'text-white'} {view === i ? 'underline underline-offset-4' : ''}">
-						{#if state === 'done'}<Check size={12} strokeWidth={3} />{:else if state === 'locked'}<Lock size={11} strokeWidth={2.75} />{/if}{st.label}{#if i === steps.length - 1}<Trophy size={12} strokeWidth={2.75} />{/if}
+					<span
+						class="node transition {state === 'done' ? 'is-passed' : state === 'current' ? 'is-current' : state === 'trophy' ? '!bg-amber-400 !text-white !ring-amber-500' : 'is-locked'} {view === i ? 'scale-110 !shadow-[0_0_0_4px_var(--color-paper),0_0_0_7px_var(--color-line)]' : ''}"
+					>
+						{#if i === TROPHY}<Trophy size={17} strokeWidth={2.5} />{:else if state === 'done'}<Check size={17} strokeWidth={3} />{:else if state === 'locked'}<Lock size={14} strokeWidth={2.5} />{:else}{i + 1}{/if}
 					</span>
+					<span class="text-[0.7rem] leading-tight font-bold sm:text-xs {view === i ? 'text-ink' : state === 'locked' ? 'text-stone-400' : 'text-muted'}">{st.label}</span>
 				</button>
 			</li>
 		{/each}
@@ -85,7 +91,7 @@
 
 {#if content}
 	<section class="space-y-4 pt-1">
-		<header class="hero space-y-4">
+		<header class="hero">
 			<div class="space-y-1">
 				{#if meta}
 					<p class="flex items-center gap-2 text-xs font-extrabold tracking-wider text-white/75 uppercase">
@@ -98,12 +104,17 @@
 					<h1 class="display text-2xl leading-tight">{m.preview()}</h1>
 				{/if}
 			</div>
-			{@render stepper()}
 		</header>
+		{@render stepper()}
 
 		{#if dueCount > 0 && view === current && !passed}
-			<a href={meta ? resolve('/review') : `${resolve('/review')}?store=demo`} class="btn-primary">
-				{m.review_first()} {m.review_due({ count: dueCount })}
+			<a href={meta ? resolve('/review') : `${resolve('/review')}?store=demo`} class="card-link flex items-center gap-3 border-l-4 !border-l-brand" data-testid="review-first">
+				<span class="icon-tile" aria-hidden="true"><RotateCcw size={20} strokeWidth={2.5} /></span>
+				<span class="flex-1">
+					<span class="block font-extrabold">{m.review_first_title()}</span>
+					<span class="block text-sm text-muted">{m.review_first_text({ count: dueCount })}</span>
+				</span>
+				<ChevronRight size={18} class="text-muted" />
 			</a>
 		{/if}
 
@@ -127,9 +138,9 @@
 									{#if showTr}<span class="block text-sm text-muted">{lesson.title[helpLocale]}</span>{/if}
 								</span>
 								{#if pct !== undefined}
-									<span class="flex shrink-0 flex-col items-end gap-0.5" data-testid="lesson-score">
+									<span class="flex w-16 shrink-0 flex-col items-center gap-1" data-testid="lesson-score">
 										<span class="flex gap-px" aria-hidden="true">{#each STARS as min (min)}<Star size={13} strokeWidth={2.25} class={pct >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</span>
-										<span class="rounded-full px-2 py-0.5 text-xs font-extrabold {pct === 100 ? 'bg-amber-100 text-amber-700' : pct >= 70 ? 'bg-ok-soft text-ok' : pct >= STARS[0] ? 'bg-warn-soft text-warn' : 'bg-bad-soft text-bad'}">{pct}%</span>
+										<span class="rounded-full px-2 py-0.5 text-xs font-extrabold {pct >= STARS[0] ? 'bg-ok-soft text-ok' : 'bg-bad-soft text-bad'}">{pct}%</span>
 									</span>
 								{:else}<ChevronRight size={18} class="text-muted" />{/if}
 							</a>
