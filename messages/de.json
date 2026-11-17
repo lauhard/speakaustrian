@@ -150,5 +150,6 @@
 	"goal_progress": "{done} von {goal} min",
 	"goal_met": "Tagesziel erreicht",
 	"goal_due": "Noch {count} Wiederholungen offen",
-	"playing": "Läuft …"
+	"playing": "Läuft …",
+	"stat_flawless": "Richtige in Folge"
 }

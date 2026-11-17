@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { accuracy } from '#lib/accuracy.svelte.ts';
 	import { fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import { AudioLines, Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
@@ -68,6 +69,7 @@
 		event.preventDefault();
 		if (!response || grade) return;
 		grade = gradeItem(item, response);
+		accuracy.record(passes(grade.verdict));
 		if (passes(grade.verdict)) {
 			correctCount += 1;
 			streak += 1;
