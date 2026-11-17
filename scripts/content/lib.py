@@ -41,7 +41,11 @@ def init(ch, seed, sources):
 
 L = lambda de, en, tl: {'de': de, 'en': en, 'tl': tl}
 # Explanation that is only the German answer: label it instead of pretending to translate it.
-same = lambda de: L(de, f'Answer: {de}', f'Sagot: {de}')
+def same(de):
+    for d, en, tl in (('Sie hören: ', 'You hear: ', 'Naririnig mo: '), ('Im Text: ', 'The text says: ', 'Sabi sa teksto: '), ('Im Plan: ', 'The plan says: ', 'Sabi sa plano: ')):
+        if de.startswith(d):
+            return L(de, en + de[len(d):], tl + de[len(d):])
+    return L(de, f'Answer: {de}', f'Sagot: {de}')
 R = lambda *ls: [ID[x] for x in ls]
 
 # ---------------------------------------------------------------- numbers and letters

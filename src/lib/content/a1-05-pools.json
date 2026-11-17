@@ -612,8 +612,8 @@
 				},
 				"explanation": {
 					"de": "Im Plan: Deutschkurs A1.",
-					"en": "Answer: Im Plan: Deutschkurs A1.",
-					"tl": "Sagot: Im Plan: Deutschkurs A1."
+					"en": "The plan says: Deutschkurs A1.",
+					"tl": "Sabi sa plano: Deutschkurs A1."
 				},
 				"goals": [
 					"A1-05-G5",
@@ -773,8 +773,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Lesen Sie den Text auf Seite dreizehn.“",
-					"en": "Answer: Sie hören: „Lesen Sie den Text auf Seite dreizehn.“",
-					"tl": "Sagot: Sie hören: „Lesen Sie den Text auf Seite dreizehn.“"
+					"en": "You hear: „Lesen Sie den Text auf Seite dreizehn.“",
+					"tl": "Naririnig mo: „Lesen Sie den Text auf Seite dreizehn.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -804,8 +804,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Kreuzen Sie die richtige Antwort an.“",
-					"en": "Answer: Sie hören: „Kreuzen Sie die richtige Antwort an.“",
-					"tl": "Sagot: Sie hören: „Kreuzen Sie die richtige Antwort an.“"
+					"en": "You hear: „Kreuzen Sie die richtige Antwort an.“",
+					"tl": "Naririnig mo: „Kreuzen Sie die richtige Antwort an.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -835,8 +835,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Hören Sie gut zu.“",
-					"en": "Answer: Sie hören: „Hören Sie gut zu.“",
-					"tl": "Sagot: Sie hören: „Hören Sie gut zu.“"
+					"en": "You hear: „Hören Sie gut zu.“",
+					"tl": "Naririnig mo: „Hören Sie gut zu.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -867,8 +867,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Holen Sie bitte ein Blatt Papier.“",
-					"en": "Answer: Sie hören: „Holen Sie bitte ein Blatt Papier.“",
-					"tl": "Sagot: Sie hören: „Holen Sie bitte ein Blatt Papier.“"
+					"en": "You hear: „Holen Sie bitte ein Blatt Papier.“",
+					"tl": "Naririnig mo: „Holen Sie bitte ein Blatt Papier.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -1037,8 +1037,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Die Pause ist heute kurz.“",
-					"en": "Answer: Sie hören: „Die Pause ist heute kurz.“",
-					"tl": "Sagot: Sie hören: „Die Pause ist heute kurz.“"
+					"en": "You hear: „Die Pause ist heute kurz.“",
+					"tl": "Naririnig mo: „Die Pause ist heute kurz.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -1068,8 +1068,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“",
-					"en": "Answer: Sie hören: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“",
-					"tl": "Sagot: Sie hören: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“"
+					"en": "You hear: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“",
+					"tl": "Naririnig mo: „Herr Bauer ist krank. Frau Huber macht heute den Unterricht.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -1101,8 +1101,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“",
-					"en": "Answer: Sie hören: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“",
-					"tl": "Sagot: Sie hören: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“"
+					"en": "You hear: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“",
+					"tl": "Naririnig mo: „Der Test ist nicht schwer. Es gibt nur zehn Fragen.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -1135,8 +1135,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“",
-					"en": "Answer: Sie hören: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“",
-					"tl": "Sagot: Sie hören: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“"
+					"en": "You hear: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“",
+					"tl": "Naririnig mo: „Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -1219,7 +1219,8 @@
 						"accept": [
 							"Kugelschreiber",
 							"Bleistift",
-							"Stift"
+							"Stift",
+							"Kuli"
 						]
 					}
 				},
@@ -1395,7 +1396,10 @@
 						"accept": [
 							"Englisch und Tagalog",
 							"Englisch, Tagalog",
-							"Tagalog und Englisch"
+							"Englisch Tagalog",
+							"Tagalog und Englisch",
+							"Tagalog, Englisch",
+							"Tagalog Englisch"
 						]
 					}
 				}
@@ -1435,7 +1439,10 @@
 						"accept": [
 							"Deutsch und Englisch",
 							"Deutsch, Englisch",
-							"Englisch und Deutsch"
+							"Deutsch Englisch",
+							"Englisch und Deutsch",
+							"Englisch, Deutsch",
+							"Englisch Deutsch"
 						]
 					}
 				},
@@ -2498,19 +2505,19 @@
 				"refs": [
 					"W-A1-0146",
 					"W-A1-0357",
+					"W-A1-0010",
 					"W-A1-0051",
-					"W-A1-0052",
-					"W-A1-0195"
+					"W-A1-0052"
 				],
 				"sourceIds": [
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
 				"answer": 1,
-				"prompt": "Ein Mann ist Kindergartenpädagoge. Ist das in Österreich möglich?"
+				"prompt": "Gibt es in Österreich Berufe nur für Männer?"
 			},
 			{
 				"id": "A1-05-P-WE1-2",
@@ -2531,8 +2538,8 @@
 				],
 				"refs": [
 					"W-A1-0146",
-					"W-A1-0328",
 					"W-A1-0357",
+					"W-A1-0010",
 					"W-A1-0051",
 					"W-A1-0052"
 				],
@@ -2540,11 +2547,11 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
 				"answer": 1,
-				"prompt": "Eine Frau ist Elektrikerin. Ist das in Österreich möglich?",
+				"prompt": "Gibt es in Österreich Berufe nur für Frauen?",
 				"family": "A1-05-P-WE1-1"
 			},
 			{
@@ -2722,20 +2729,20 @@
 				],
 				"refs": [
 					"W-A1-0146",
-					"W-A1-0328",
-					"W-A1-0357",
 					"W-A1-0051",
-					"W-A1-0052"
+					"W-A1-0052",
+					"W-A1-0056",
+					"W-A1-0004"
 				],
 				"sourceIds": [
 					"Q36"
 				],
 				"options": [
-					"Ja.",
-					"Nein."
+					"Nein.",
+					"Ja."
 				],
 				"answer": 0,
-				"prompt": "Kann eine Frau in Österreich Polizistin werden?"
+				"prompt": "Ist ein Beruf nur für Männer?"
 			},
 			{
 				"id": "A1-05-P-WE4-2",
@@ -2756,20 +2763,20 @@
 				],
 				"refs": [
 					"W-A1-0146",
-					"W-A1-0357",
 					"W-A1-0051",
 					"W-A1-0052",
-					"W-A1-0118"
+					"W-A1-0056",
+					"W-A1-0004"
 				],
 				"sourceIds": [
 					"Q36"
 				],
 				"options": [
-					"Ja.",
-					"Nein."
+					"Nein.",
+					"Ja."
 				],
 				"answer": 0,
-				"prompt": "Kann ein Mann in Österreich Friseur werden?",
+				"prompt": "Ist ein Beruf nur für Frauen?",
 				"family": "A1-05-P-WE4-1"
 			},
 			{
@@ -2804,7 +2811,7 @@
 					"Nein."
 				],
 				"answer": 0,
-				"prompt": "Kann eine Frau Busfahrerin werden?"
+				"prompt": "Kann eine Frau Lehrerin werden?"
 			},
 			{
 				"id": "A1-05-P-WE4-4",
@@ -2838,7 +2845,7 @@
 					"Ja."
 				],
 				"answer": 1,
-				"prompt": "Kann ein Mann Volksschullehrer werden?",
+				"prompt": "Kann ein Mann Lehrer werden?",
 				"family": "A1-05-P-WE4-3"
 			},
 			{
@@ -2860,20 +2867,20 @@
 				],
 				"refs": [
 					"W-A1-0146",
-					"W-A1-0328",
+					"W-A1-0046",
 					"W-A1-0051",
 					"W-A1-0052",
-					"W-A1-0118"
+					"W-A1-0030"
 				],
 				"sourceIds": [
 					"Q36"
 				],
 				"options": [
-					"Ja.",
-					"Nein."
+					"Ja, alle Berufe.",
+					"Nein, nur Männer."
 				],
 				"answer": 0,
-				"prompt": "Kann eine Frau Technikerin werden?"
+				"prompt": "Lernen Frauen und Männer Berufe?"
 			},
 			{
 				"id": "A1-05-P-WE4-6",
@@ -2894,10 +2901,10 @@
 				],
 				"refs": [
 					"W-A1-0146",
+					"W-A1-0046",
 					"W-A1-0051",
 					"W-A1-0052",
-					"W-A1-0118",
-					"W-A1-0004"
+					"W-A1-0086"
 				],
 				"sourceIds": [
 					"Q36"
@@ -2907,7 +2914,7 @@
 					"Nein."
 				],
 				"answer": 0,
-				"prompt": "Kann ein Mann Kindergärtner werden?",
+				"prompt": "Lernen Frauen und Männer im Deutschkurs zusammen?",
 				"family": "A1-05-P-WE4-5"
 			}
 		],
@@ -2923,8 +2930,8 @@
 				},
 				"explanation": {
 					"de": "Im Text: „Morgen ist kein Unterricht.“",
-					"en": "Answer: Im Text: „Morgen ist kein Unterricht.“",
-					"tl": "Sagot: Im Text: „Morgen ist kein Unterricht.“"
+					"en": "The text says: „Morgen ist kein Unterricht.“",
+					"tl": "Sabi sa teksto: „Morgen ist kein Unterricht.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -3210,8 +3217,8 @@
 				},
 				"explanation": {
 					"de": "Im Plan: „Ende: 12:00“.",
-					"en": "Answer: Im Plan: „Ende: 12:00“.",
-					"tl": "Sagot: Im Plan: „Ende: 12:00“."
+					"en": "The plan says: „Ende: 12:00“.",
+					"tl": "Sabi sa plano: „Ende: 12:00“."
 				},
 				"goals": [
 					"A1-05-G5",
@@ -3395,9 +3402,9 @@
 					"tl": "Basahin. Tama o mali ang pahayag?"
 				},
 				"explanation": {
-					"de": "„Maria gibt mir einen.“",
-					"en": "Answer: „Maria gibt mir einen.“",
-					"tl": "Sagot: „Maria gibt mir einen.“"
+					"de": "„Maria gibt mir ein Blatt.“",
+					"en": "Answer: „Maria gibt mir ein Blatt.“",
+					"tl": "Sagot: „Maria gibt mir ein Blatt.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -3415,7 +3422,7 @@
 					"falsch"
 				],
 				"answer": 0,
-				"prompt": "Heute schreiben wir einen Test. Ich habe keinen Kugelschreiber, aber Maria gibt mir einen.\n\nAussage: Die Person hat einen Kugelschreiber von Maria.",
+				"prompt": "Heute schreiben wir einen Test. Ich habe kein Heft, aber Maria gibt mir ein Blatt.\n\nAussage: Die Person hat ein Blatt von Maria.",
 				"family": "A1-05-T-LE5-1"
 			},
 			{
@@ -3429,8 +3436,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Öffnen Sie das Buch auf Seite vierundzwanzig.“",
-					"en": "Answer: Sie hören: „Öffnen Sie das Buch auf Seite vierundzwanzig.“",
-					"tl": "Sagot: Sie hören: „Öffnen Sie das Buch auf Seite vierundzwanzig.“"
+					"en": "You hear: „Öffnen Sie das Buch auf Seite vierundzwanzig.“",
+					"tl": "Naririnig mo: „Öffnen Sie das Buch auf Seite vierundzwanzig.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -3459,8 +3466,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Machen Sie bitte Aufgabe sieben.“",
-					"en": "Answer: Sie hören: „Machen Sie bitte Aufgabe sieben.“",
-					"tl": "Sagot: Sie hören: „Machen Sie bitte Aufgabe sieben.“"
+					"en": "You hear: „Machen Sie bitte Aufgabe sieben.“",
+					"tl": "Naririnig mo: „Machen Sie bitte Aufgabe sieben.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -3492,8 +3499,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Schreiben Sie die Wörter ins Heft.“",
-					"en": "Answer: Sie hören: „Schreiben Sie die Wörter ins Heft.“",
-					"tl": "Sagot: Sie hören: „Schreiben Sie die Wörter ins Heft.“"
+					"en": "You hear: „Schreiben Sie die Wörter ins Heft.“",
+					"tl": "Naririnig mo: „Schreiben Sie die Wörter ins Heft.“"
 				},
 				"goals": [
 					"A1-05-G2"
@@ -3628,8 +3635,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“",
-					"en": "Answer: Sie hören: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“",
-					"tl": "Sagot: Sie hören: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“"
+					"en": "You hear: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“",
+					"tl": "Naririnig mo: „Liebe Kursteilnehmer, heute ist der Unterricht schon um elf Uhr zu Ende.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -3661,8 +3668,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Die Prüfung ist nicht heute, sie ist morgen.“",
-					"en": "Answer: Sie hören: „Die Prüfung ist nicht heute, sie ist morgen.“",
-					"tl": "Sagot: Sie hören: „Die Prüfung ist nicht heute, sie ist morgen.“"
+					"en": "You hear: „Die Prüfung ist nicht heute, sie ist morgen.“",
+					"tl": "Naririnig mo: „Die Prüfung ist nicht heute, sie ist morgen.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -3694,8 +3701,8 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“",
-					"en": "Answer: Sie hören: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“",
-					"tl": "Sagot: Sie hören: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“"
+					"en": "You hear: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“",
+					"tl": "Naririnig mo: „Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.“"
 				},
 				"goals": [
 					"A1-05-G5"
@@ -3863,7 +3870,10 @@
 						"accept": [
 							"Tagalog und Englisch",
 							"Tagalog, Englisch",
-							"Englisch und Tagalog"
+							"Tagalog Englisch",
+							"Englisch und Tagalog",
+							"Englisch, Tagalog",
+							"Englisch Tagalog"
 						]
 					}
 				}
@@ -3903,7 +3913,10 @@
 						"accept": [
 							"Deutsch und Englisch",
 							"Deutsch, Englisch",
-							"Englisch und Deutsch"
+							"Deutsch Englisch",
+							"Englisch und Deutsch",
+							"Englisch, Deutsch",
+							"Englisch Deutsch"
 						]
 					}
 				},
@@ -4519,9 +4532,9 @@
 					"tl": "Basahin ang mensahe. Ano ang angkop sa patlang?"
 				},
 				"explanation": {
-					"de": "der Kugelschreiber → einen (haben + Akkusativ).",
-					"en": "Answer: der Kugelschreiber → einen (haben + Akkusativ).",
-					"tl": "Sagot: der Kugelschreiber → einen (haben + Akkusativ)."
+					"de": "Verb verneinen → nicht.",
+					"en": "Answer: Verb verneinen → nicht.",
+					"tl": "Sagot: Verb verneinen → nicht."
 				},
 				"goals": [
 					"A1-05-G4",
@@ -4529,17 +4542,16 @@
 				],
 				"refs": [
 					"W-A1-0285",
-					"W-A1-0378",
-					"W-A1-0007",
-					"W-A1-0092",
-					"W-A1-0004"
+					"W-A1-0006",
+					"W-A1-0328",
+					"W-A1-0003"
 				],
 				"options": [
-					"ein",
-					"einen"
+					"kein",
+					"nicht"
 				],
 				"answer": 1,
-				"prompt": "Hallo! Hast du ___ Kugelschreiber für mich? Danke! Ali",
+				"prompt": "Liebe Frau Huber, ich verstehe das Beispiel ___. Ali",
 				"family": "A1-05-T-GW2-1"
 			},
 			{
@@ -4748,10 +4760,10 @@
 				],
 				"refs": [
 					"W-A1-0146",
+					"W-A1-0328",
 					"W-A1-0357",
 					"W-A1-0051",
-					"W-A1-0052",
-					"W-A1-0118"
+					"W-A1-0052"
 				],
 				"sourceIds": [
 					"Q36"
@@ -4761,7 +4773,7 @@
 					"Ja."
 				],
 				"answer": 1,
-				"prompt": "Können Frauen in Österreich Mechanikerin werden?"
+				"prompt": "Kann eine Frau in Österreich alle Berufe lernen?"
 			},
 			{
 				"id": "A1-05-T-WE1-2",
@@ -4785,7 +4797,7 @@
 					"W-A1-0357",
 					"W-A1-0051",
 					"W-A1-0052",
-					"W-A1-0118"
+					"W-A1-0030"
 				],
 				"sourceIds": [
 					"Q36"
@@ -4795,7 +4807,7 @@
 					"Ja."
 				],
 				"answer": 1,
-				"prompt": "Können Männer in Österreich Krankenpfleger werden?",
+				"prompt": "Kann ein Mann in Österreich alle Berufe lernen?",
 				"family": "A1-05-T-WE1-1"
 			},
 			{
@@ -4957,7 +4969,6 @@
 				"refs": [
 					"W-A1-0329",
 					"W-A1-0328",
-					"W-A1-0035",
 					"W-A1-0003",
 					"W-A1-0004"
 				],
@@ -4969,7 +4980,7 @@
 					"ein Mann"
 				],
 				"answer": 0,
-				"prompt": "Bild 1: Wer repariert das Auto?",
+				"prompt": "Bild 1: Ist das eine Frau oder ein Mann?",
 				"image": {
 					"src": "/img/a1-05-berufe.svg",
 					"alt": {
@@ -4999,7 +5010,7 @@
 				"refs": [
 					"W-A1-0329",
 					"W-A1-0328",
-					"W-A1-0035",
+					"W-A1-0003",
 					"W-A1-0004"
 				],
 				"sourceIds": [
@@ -5010,7 +5021,7 @@
 					"eine Frau"
 				],
 				"answer": 0,
-				"prompt": "Bild 2: Wer arbeitet als Krankenpfleger?",
+				"prompt": "Bild 2: Ist das eine Frau oder ein Mann?",
 				"image": {
 					"src": "/img/a1-05-berufe.svg",
 					"alt": {
@@ -5042,19 +5053,19 @@
 					"W-A1-0329",
 					"W-A1-0328",
 					"W-A1-0046",
-					"W-A1-0051",
-					"W-A1-0052",
-					"W-A1-0003"
+					"W-A1-0036",
+					"W-A1-0030",
+					"W-A1-0056"
 				],
 				"sourceIds": [
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Berufe sind nur für Frauen.",
+					"Frauen und Männer können alle Berufe lernen."
 				],
 				"answer": 1,
-				"prompt": "Zeigt das Bild: Berufe sind für Frauen und Männer?",
+				"prompt": "Was zeigen Bild 1 und Bild 2 zusammen?",
 				"image": {
 					"src": "/img/a1-05-berufe.svg",
 					"alt": {

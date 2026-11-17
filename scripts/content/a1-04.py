@@ -69,12 +69,12 @@ PICS['leute'] = ('<rect y="190" width="400" height="70" fill="#d9c3a3"/>'
 PICS['familien'] = (panel(10, 20, 120, 220, 1) + panel(140, 20, 120, 220, 2) + panel(270, 20, 120, 220, 3)
                     + person(60, '#c8102e', 'a', '#7a4e2d', y=-30, s=0.5, long=True) + person(95, '#f77f00', 'a', '#7a4e2d', y=-30, s=0.35)
                     + person(170, '#34506b', 'a', '#4a2f1c', y=-30, s=0.5) + person(205, '#c8102e', 'b', '#222', y=-30, s=0.5, long=True) + person(235, '#2a9d8f', 'b', '#222', y=-30, s=0.35)
-                    + person(300, '#34506b', 'a', '#4a2f1c', y=-30, s=0.5) + person(340, '#1d4e89', 'c', '#222', y=-30, s=0.5) + person(370, '#f77f00', 'b', '#222', y=-30, s=0.33)
+                    + person(315, '#7a4e9a', 'a', '#c9ced3', y=-30, s=0.5, long=True) + person(355, '#f77f00', 'b', '#222', y=-30, s=0.33)
                     + ''.join(f'<rect x="{x}" y="250" width="120" height="0"/>' for x in (10,)))
 
 STAMM = lambda: img('stammbaum', 'Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.', 'A family tree of the Huber family with grandparents, parents and children.', 'Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak.')
 FORM = lambda: img('formular', 'Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.', 'A form with a name and marital status. One box is ticked.', 'Form na may pangalan at civil status. May isang kahong may ekis.')
-FAM = lambda: img('familien', 'Drei Bilder mit drei Familien.', 'Three pictures with three families.', 'Tatlong larawan ng tatlong pamilya.')
+FAM = lambda: img('familien', 'Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.', 'Three pictures with three families: mother with child; father, mother and child; grandma with child.', 'Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata.')
 
 # ---------------------------------------------------------------- lessons (10, A1-04 spec)
 X = ''
@@ -108,7 +108,7 @@ lesson(3, L('Mann, Frau, Kind, Baby', 'Man, woman, child, baby', 'Lalaki, babae,
     choice(X, 'lesen', LOOK, 'Wie viele Kinder sind im Bild?', 'zwei', ['drei', 'eins'], L('Ein Mädchen und ein Baby: zwei Kinder. Mann und Frau sind Erwachsene.', 'A girl and a baby: two children. Man and woman are adults.', 'Isang batang babae at baby: dalawang bata. Nasa hustong gulang ang lalaki at babae.'), [G1], R('Kind', 'Mädchen', 'Baby'),
            img=img('park', 'Eine Familie im Park: Mann, Frau, Mädchen und Baby.', 'A family in the park: man, woman, girl and baby.', 'Pamilya sa park: lalaki, babae, batang babae at baby.')),
     choice(X, 'grammatikWortschatz', CHOOSE, '… Mädchen', 'das', ['die', 'der'], L('Achtung: das Mädchen – mit „das“.', 'Careful: das Mädchen – with “das”.', 'Ingat: das Mädchen – may “das”.'), [G1], R('Mädchen')),
-    choice(X, 'grammatikWortschatz', CHOOSE, '… Bub', 'der', ['die', 'das'], L('der Bub – ein Mann ist er später: der.', 'der Bub (boy) – masculine: der.', 'der Bub (batang lalaki) – panlalaki: der.'), [G1], R('Bub')),
+    choice(X, 'grammatikWortschatz', CHOOSE, '… Bub', 'der', ['die', 'das'], L('der Bub (männlich): der.', 'der Bub (boy) – masculine: der.', 'der Bub (batang lalaki) – panlalaki: der.'), [G1], R('Bub')),
 ])
 lesson(4, L('Ein Kind, zwei Kinder – der Plural', 'One child, two children – the plural', 'Isang anak, dalawang anak – plural'), [], [
     C('das Kind → die Kinder', 'Im Plural ist der Artikel immer „die“.', 'In the plural the article is always “die”.', 'Sa plural, laging “die” ang article.'),
@@ -117,7 +117,7 @@ lesson(4, L('Ein Kind, zwei Kinder – der Plural', 'One child, two children –
     C('die Mutter → die Mütter · der Vater → die Väter', 'Umlaut im Plural: u → ü, a → ä.', 'Umlaut in the plural: u → ü, a → ä.', 'Umlaut sa plural: u → ü, a → ä.'),
     C('das Baby → die Babys · der Bruder → die Brüder', '-s bei Wörtern wie Baby, Opa, Oma.', '-s with words like Baby, Opa, Oma.', '-s sa mga salitang Baby, Opa, Oma.'),
 ], [
-    choice(X, 'grammatikWortschatz', LOOK, 'Bild 1: drei …', 'Kinder', ['Kinds', 'Kind'], L('das Kind → die Kinder.', 'das Kind → die Kinder (one child → children).', 'das Kind → die Kinder (plural).'), [G4], R('Kind'),
+    choice(X, 'grammatikWortschatz', LOOK, 'Bild 1: Wie viele Kinder sind das?', 'drei Kinder', ['zwei Kinder', 'vier Kinder'], L('Drei Kinder: das Kind → die Kinder.', 'Three children: das Kind → die Kinder.', 'Tatlong bata: das Kind → die Kinder.'), [G4], R('Kind'),
            img=img('plural', 'Drei Bilder: Kinder, Männer und Frauen.', 'Three pictures: children, men and women.', 'Tatlong larawan: mga bata, lalaki at babae.')),
     cloze(X, 'grammatikWortschatz', GAPS, 'ein Mann – zwei {{1}} · eine Frau – vier {{2}}', [['Männer'], ['Frauen']], L('der Mann → die Männer, die Frau → die Frauen.', 'der Mann → die Männer, die Frau → die Frauen (plural).', 'der Mann → die Männer, die Frau → die Frauen (plural).'), [G4], R('Mann')),
     choice(X, 'grammatikWortschatz', CHOOSE, 'ein Sohn – zwei …', 'Söhne', ['Sohns', 'Sohnen'], L('der Sohn → die Söhne (mit Umlaut).', 'der Sohn → die Söhne (with umlaut).', 'der Sohn → die Söhne (may umlaut).'), [G4], R('Sohn')),
@@ -177,11 +177,11 @@ lesson(9, L('Freunde, Verwandte, Leute', 'Friends, relatives, people', 'Kaibigan
     choice(X, 'grammatikWortschatz', CHOOSE, 'Die Mutter von meiner Mutter ist meine …', 'Oma', ['Tochter', 'Schwester'], L('Die Mutter der Mutter = die Oma (Großmutter).', 'Mother’s mother = Oma (grandma).', 'Nanay ng nanay = Oma (lola).'), [G1], R('Oma')),
     choice(X, 'hoeren', LISTEN, None, 'Die Eltern leben in Manila.', ['Die Eltern leben in Wien.'], L('Sie hören: „Meine Eltern leben in Manila. Ich bleibe in Wien.“', 'You hear: “Meine Eltern leben in Manila. Ich bleibe in Wien.”', 'Naririnig mo: “Meine Eltern leben in Manila. Ich bleibe in Wien.”'), [G5], R('leben', 'bleiben'), audio='Meine Eltern leben in Manila. Ich bleibe in Wien.'),
 ])
-WOW = L('In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Familien mit zwei Müttern oder zwei Vätern, Patchwork-Familien.',
-        'In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, families with two mothers or two fathers, patchwork families.',
-        'Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, pamilyang may dalawang nanay o dalawang tatay, patchwork.')
+WOW = L('In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.',
+        'In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.',
+        'Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork.')
 lesson(10, L('Familien in Österreich', 'Families in Austria', 'Mga pamilya sa Austria'), [], [
-    C('Es gibt viele Familienformen.', 'Vater, Mutter, Kinder – oder eine Mutter allein mit Kind – oder zwei Väter mit Kind. Alles ist Familie.', 'Father, mother, children – or a mother alone with a child – or two fathers with a child. All of it is family.', 'Tatay, nanay, anak – o nanay na mag-isa kasama ang anak – o dalawang tatay at anak. Lahat ay pamilya.'),
+    C('Es gibt viele Familienformen.', 'Vater, Mutter, Kinder – oder eine Mutter allein mit Kind – oder die Oma mit dem Kind. Alles ist Familie.', 'Father, mother, children – or a mother alone with a child – or grandma with the child. All of it is family.', 'Tatay, nanay, anak – o nanay na mag-isa kasama ang anak – o lola kasama ang bata. Lahat ay pamilya.'),
     C('Familien sind verschieden.', 'verschieden = nicht gleich. Ein Paar = zwei Menschen, z. B. Mann und Frau.', 'verschieden = different. Ein Paar = a couple.', 'verschieden = magkakaiba. Ein Paar = magkapareha.'),
     C('die Patchwork-Familie', 'Eltern mit Kindern aus einer früheren Beziehung.', 'Parents with children from an earlier relationship.', 'Magulang na may anak mula sa naunang relasyon.'),
 ], [
@@ -285,24 +285,24 @@ fam('GW3', VB, [('Der Opa {{1}} (lesen) gern.', ['liest'], 'lesen: er liest (e �
     [('Er {{1}} (sehen) die Kinder.', ['sieht'], 'sehen: er sieht.', 'sehen'), ('Du {{1}} (lesen) viel.', ['liest'], 'lesen: du liest.', 'lesen'), ('Wir {{1}} (bleiben) in Wien.', ['bleiben'], 'bleiben: wir bleiben.', 'bleiben'), ('Meine Eltern {{1}} (leben) in Manila.', ['leben'], 'leben: sie leben.', 'leben')])
 
 RELQ = lambda v, i: choice(i, 'grammatikWortschatz', CHOOSE, v[0], v[1], v[2], same(v[3]), [G1], R('Familie'))
-fam('GW4', RELQ, [('Der Vater von meinem Vater ist mein …', 'Opa', ['Bruder', 'Sohn'], 'Vater vom Vater = Opa.'), ('Die Tochter von meinen Eltern ist meine …', 'Schwester', ['Oma', 'Mutter'], 'Tochter der Eltern = Schwester.'), ('Mein Bruder und meine Schwester sind meine …', 'Geschwister', ['Eltern', 'Großeltern'], 'Bruder + Schwester = Geschwister.')],
-    [('Die Mutter von meinem Vater ist meine …', 'Oma', ['Tochter', 'Schwester'], 'Mutter vom Vater = Oma.'), ('Der Sohn von meinen Eltern ist mein …', 'Bruder', ['Opa', 'Vater'], 'Sohn der Eltern = Bruder.'), ('Oma und Opa sind meine …', 'Großeltern', ['Geschwister', 'Kinder'], 'Oma + Opa = Großeltern.'), ('Mutter und Vater sind meine …', 'Eltern', ['Großeltern', 'Geschwister'], 'Mutter + Vater = Eltern.')])
+fam('GW4', RELQ, [('Der Vater von meinem Vater ist mein …', 'Opa', ['Bruder', 'Sohn'], 'Vater vom Vater = Opa.'), ('Der Vater von meiner Mutter ist mein …', 'Opa', ['Bruder', 'Sohn'], 'Vater der Mutter = Opa.'), ('Mein Bruder und meine Schwester sind meine …', 'Geschwister', ['Eltern', 'Großeltern'], 'Bruder + Schwester = Geschwister.')],
+    [('Die Mutter von meinem Vater ist meine …', 'Oma', ['Tochter', 'Schwester'], 'Mutter vom Vater = Oma.'), ('Die Mutter von meiner Mutter ist meine …', 'Oma', ['Schwester', 'Tochter'], 'Mutter der Mutter = Oma.'), ('Oma und Opa sind meine …', 'Großeltern', ['Geschwister', 'Kinder'], 'Oma + Opa = Großeltern.'), ('Mutter und Vater sind meine …', 'Eltern', ['Großeltern', 'Geschwister'], 'Mutter + Vater = Eltern.')])
 
 WQ = lambda v, i: choice(i, 'werte', CHOOSE, v[0], v[1], [v[2]], WOW, [G6], R('Familie'))
-fam('WE1', WQ, [('Eine Mutter lebt allein mit ihrem Kind. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Zwei Väter leben mit einem Kind. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Ein Paar hat keine Kinder. Ist das eine Familie?', 'Ja, auch ohne Kinder.', 'Nein, nur mit Kindern.')],
-    [('Ein Vater lebt allein mit zwei Kindern. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Zwei Mütter leben mit ihrer Tochter. Ist das eine Familie?', 'Ja.', 'Nein.')])
+fam('WE1', WQ, [('Eine Mutter lebt allein mit ihrem Kind. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Ein Vater lebt mit seinem Kind und der Oma. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Ein Paar hat keine Kinder. Ist das eine Familie?', 'Ja, auch ohne Kinder.', 'Nein, nur mit Kindern.')],
+    [('Ein Vater lebt allein mit zwei Kindern. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Opa und Oma leben mit dem Kind von ihrer Tochter. Ist das eine Familie?', 'Ja.', 'Nein.')])
 fam('WE2', WQ, [('Gibt es in Österreich nur eine Familienform?', 'Nein, es gibt viele Familienformen.', 'Ja, nur eine.'), ('Eine Patchwork-Familie ist …', 'eine Familie mit Kindern aus einer früheren Beziehung', 'eine Familie ohne Eltern'), ('Welcher Satz ist richtig?', 'Familien sind verschieden.', 'Alle Familien sind gleich groß.')],
     [('Hat eine Familie immer Kinder?', 'Nein.', 'Ja.'), ('Leben alle Familien gleich?', 'Nein, Familien leben verschieden.', 'Ja, alle gleich.')])
 fam('WE3', lambda v, i: choice(i, 'werte', LOOK, v[0], v[1], [v[2]], WOW, [G6], R('Familie'), img=FAM()),
-    [('Bild 3: zwei Männer mit Kind. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Bild 2: In welchem Bild sind Vater, Mutter und Kind?', 'Bild 2', 'Bild 1'), ('Wie viele Familien zeigt das Bild?', 'drei', 'zwei')],
-    [('Bild 1: Wie viele Erwachsene sind in Bild 1?', 'eine', 'zwei'), ('In welchem Bild sind zwei Väter?', 'Bild 3', 'Bild 1')])
+    [('Bild 3: Wer ist hier mit dem Kind?', 'die Oma', 'der Vater'), ('In welchem Bild sind Vater, Mutter und Kind?', 'Bild 2', 'Bild 1'), ('Wie viele Familien zeigt das Bild?', 'drei', 'zwei')],
+    [('Bild 1: Wie viele Erwachsene sind in Bild 1?', 'eine', 'zwei'), ('In welchem Bild ist die Oma?', 'Bild 3', 'Bild 1')])
 
 fam('LE4', lambda v, i: choice(i, 'lesen', READ, v[0], v[1], [v[2]], same(v[3]), [G1, G3], R('Familie')),
     [], [('Herr Bauer ist 70. Seine Frau ist gestorben. Er lebt jetzt bei seiner Tochter.\nLebt Herr Bauer allein?', 'Nein, bei seiner Tochter.', 'Ja, allein.', 'Er lebt bei seiner Tochter.'),
          ('Anna und Tom heiraten bald. Sie sind sehr glücklich.\nSind Anna und Tom schon verheiratet?', 'Nein, noch nicht.', 'Ja.', 'Sie heiraten bald.'),
          ('Lena hat einen Bruder und zwei Schwestern.\nWie viele Geschwister hat Lena?', 'drei', 'zwei', '1 Bruder + 2 Schwestern = 3.'),
          ('Meine Großeltern leben in Wien, meine Eltern in Linz.\nWo leben die Eltern?', 'in Linz', 'in Wien', 'meine Eltern in Linz')])
-fam('WE4', WQ, [], [('Ist eine Familie mit zwei Müttern in Österreich eine Familie?', 'Ja.', 'Nein.'), ('Eine Oma lebt mit ihrer Tochter und dem Baby. Ist das eine Familie?', 'Ja.', 'Nein.'),
+fam('WE4', WQ, [], [('Ein Paar ohne Kinder: Ist das eine Familie?', 'Ja.', 'Nein.'), ('Eine Oma lebt mit ihrer Tochter und dem Baby. Ist das eine Familie?', 'Ja.', 'Nein.'),
                     ('Was ist eine Familie?', 'Menschen zusammen – in vielen Familienformen', 'nur Vater, Mutter und zwei Kinder'), ('Patchwork-Familie: Die Kinder kommen …', 'auch aus einer früheren Beziehung', 'immer aus dem Ausland'),
                     ('Eltern, Kinder und Oma wohnen zusammen. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Sind alle Familien gleich groß?', 'Nein.', 'Ja.')])
 

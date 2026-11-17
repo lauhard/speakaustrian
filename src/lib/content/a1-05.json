@@ -481,8 +481,8 @@
 					},
 					"explanation": {
 						"de": "Sie hören: „Der Unterricht beginnt um neun Uhr.“",
-						"en": "Answer: Sie hören: „Der Unterricht beginnt um neun Uhr.“",
-						"tl": "Sagot: Sie hören: „Der Unterricht beginnt um neun Uhr.“"
+						"en": "You hear: „Der Unterricht beginnt um neun Uhr.“",
+						"tl": "Naririnig mo: „Der Unterricht beginnt um neun Uhr.“"
 					},
 					"goals": [
 						"A1-05-G1"
@@ -789,8 +789,8 @@
 					},
 					"explanation": {
 						"de": "Sie hören: „Öffnen Sie das Buch auf Seite fünfzehn.“",
-						"en": "Answer: Sie hören: „Öffnen Sie das Buch auf Seite fünfzehn.“",
-						"tl": "Sagot: Sie hören: „Öffnen Sie das Buch auf Seite fünfzehn.“"
+						"en": "You hear: „Öffnen Sie das Buch auf Seite fünfzehn.“",
+						"tl": "Naririnig mo: „Öffnen Sie das Buch auf Seite fünfzehn.“"
 					},
 					"goals": [
 						"A1-05-G2"
@@ -1267,8 +1267,8 @@
 					},
 					"explanation": {
 						"de": "Sie hören: „Tom kommt heute nicht. Er ist krank.“",
-						"en": "Answer: Sie hören: „Tom kommt heute nicht. Er ist krank.“",
-						"tl": "Sagot: Sie hören: „Tom kommt heute nicht. Er ist krank.“"
+						"en": "You hear: „Tom kommt heute nicht. Er ist krank.“",
+						"tl": "Naririnig mo: „Tom kommt heute nicht. Er ist krank.“"
 					},
 					"goals": [
 						"A1-05-G4"
@@ -1375,9 +1375,9 @@
 						"tl": "Isulat ang mga nawawalang salita."
 					},
 					"explanation": {
-						"de": "die Frage → keine Frage; der Stift → keinen Stift (später: Akkusativ).",
-						"en": "die Frage → keine; der Stift → keinen Stift (accusative, later).",
-						"tl": "die Frage → keine; der Stift → keinen (accusative, mamaya)."
+						"de": "die Frage → keine Frage; das Heft → kein Heft.",
+						"en": "die Frage → keine Frage (no question); das Heft → kein Heft (no exercise book).",
+						"tl": "die Frage → keine Frage (walang tanong); das Heft → kein Heft (walang kuwaderno)."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -1386,7 +1386,7 @@
 						"W-A1-0005",
 						"W-A1-0006"
 					],
-					"text": "Ich habe {{1}} Frage. Ich habe {{2}} Stift.",
+					"text": "Ich habe {{1}} Frage. Ich habe {{2}} Heft.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1395,7 +1395,6 @@
 						},
 						"2": {
 							"accept": [
-								"keinen",
 								"kein"
 							]
 						}
@@ -1461,7 +1460,7 @@
 					}
 				},
 				{
-					"phrase": "Die Lehrerin zeigt an die Tafel und erklärt.",
+					"phrase": "Die Lehrerin zeigt auf die Tafel und erklärt.",
 					"note": {
 						"de": "„zeigen“, „erklären“ – regelmäßig.",
 						"en": "“zeigen” (show), “erklären” (explain) – regular.",
@@ -1517,7 +1516,7 @@
 					"image": {
 						"src": "/img/a1-05-verben.svg",
 						"alt": {
-							"de": "Vier Bilder: ein offenes Buch, eine Hand zeigt an die Tafel, eine Uhr, ein Ohr.",
+							"de": "Vier Bilder: ein offenes Buch, eine Hand zeigt auf die Tafel, eine Uhr, ein Ohr.",
 							"en": "Four pictures: an open book, a hand pointing at the board, a clock, an ear.",
 							"tl": "Apat na larawan: bukas na libro, kamay na nakaturo sa pisara, orasan, tainga."
 						}
@@ -1571,8 +1570,8 @@
 					},
 					"explanation": {
 						"de": "Sie hören: „Bitte hören Sie gut zu.“",
-						"en": "Answer: Sie hören: „Bitte hören Sie gut zu.“",
-						"tl": "Sagot: Sie hören: „Bitte hören Sie gut zu.“"
+						"en": "You hear: „Bitte hören Sie gut zu.“",
+						"tl": "Naririnig mo: „Bitte hören Sie gut zu.“"
 					},
 					"goals": [
 						"A1-05-G2"
@@ -1635,8 +1634,8 @@
 					},
 					"explanation": {
 						"de": "Im Plan: „Hausübung: Seite 20“.",
-						"en": "Answer: Im Plan: „Hausübung: Seite 20“.",
-						"tl": "Sagot: Im Plan: „Hausübung: Seite 20“."
+						"en": "The plan says: „Hausübung: Seite 20“.",
+						"tl": "Sabi sa plano: „Hausübung: Seite 20“."
 					},
 					"goals": [
 						"A1-05-G5"
@@ -1674,8 +1673,8 @@
 					},
 					"explanation": {
 						"de": "Im Plan: „Pause: 10:30“.",
-						"en": "Answer: Im Plan: „Pause: 10:30“.",
-						"tl": "Sagot: Im Plan: „Pause: 10:30“."
+						"en": "The plan says: „Pause: 10:30“.",
+						"tl": "Sabi sa plano: „Pause: 10:30“."
 					},
 					"goals": [
 						"A1-05-G5"
@@ -1897,9 +1896,9 @@
 				{
 					"phrase": "der Beruf – die Berufe",
 					"note": {
-						"de": "Mechanikerin, Krankenpfleger, Polizistin, Elektrikerin, Busfahrerin, Technikerin, Friseur, Volksschullehrer, Kindergärtner, Kindergartenpädagoge.",
-						"en": "Jobs: mechanic, nurse, police officer, electrician, bus driver, technician, hairdresser, primary teacher, kindergarten teacher.",
-						"tl": "Mga trabaho: mekaniko, nars, pulis, elektrisyan, drayber ng bus, technician, barbero, guro sa elementarya, guro sa kindergarten."
+						"de": "Lehrerin, Lehrer – und alle anderen Berufe: für Frauen und für Männer.",
+						"en": "Teacher (woman, man) – and all other jobs: for women and for men.",
+						"tl": "Guro (babae, lalaki) – at lahat ng ibang trabaho: para sa babae at lalaki."
 					}
 				},
 				{
@@ -1931,19 +1930,19 @@
 					],
 					"refs": [
 						"W-A1-0328",
-						"W-A1-0357",
-						"W-A1-0051",
-						"W-A1-0052"
+						"W-A1-0035",
+						"W-A1-0004",
+						"W-A1-0073"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"Nein, das ist nur für Männer.",
-						"Ja, Frauen können alle Berufe lernen."
+						"ein Mann",
+						"eine Frau"
 					],
 					"answer": 1,
-					"prompt": "Bild 1: Eine Frau repariert ein Auto. Ist das in Österreich normal?",
+					"prompt": "Bild 1: Wer arbeitet hier?",
 					"image": {
 						"src": "/img/a1-05-berufe.svg",
 						"alt": {
@@ -1972,20 +1971,20 @@
 					],
 					"refs": [
 						"W-A1-0329",
-						"W-A1-0357",
-						"W-A1-0051",
-						"W-A1-0052",
-						"W-A1-0195"
+						"W-A1-0046",
+						"W-A1-0036",
+						"W-A1-0056",
+						"W-A1-0093"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"Nein.",
-						"Ja."
+						"Berufe sind nur für Männer.",
+						"Frauen und Männer arbeiten in allen Berufen."
 					],
 					"answer": 1,
-					"prompt": "Bild 2: Ein Mann arbeitet als Krankenpfleger. Ist das in Österreich möglich?",
+					"prompt": "Was zeigen Bild 1 und Bild 2?",
 					"image": {
 						"src": "/img/a1-05-berufe.svg",
 						"alt": {

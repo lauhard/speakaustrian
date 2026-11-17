@@ -792,7 +792,7 @@
 						"tl": "Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "der Bub – ein Mann ist er später: der.",
+						"de": "der Bub (männlich): der.",
 						"en": "der Bub (boy) – masculine: der.",
 						"tl": "der Bub (batang lalaki) – panlalaki: der."
 					},
@@ -876,24 +876,27 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "das Kind → die Kinder.",
-						"en": "das Kind → die Kinder (one child → children).",
-						"tl": "das Kind → die Kinder (plural)."
+						"de": "Drei Kinder: das Kind → die Kinder.",
+						"en": "Three children: das Kind → die Kinder.",
+						"tl": "Tatlong bata: das Kind → die Kinder."
 					},
 					"goals": [
 						"A1-04-G4"
 					],
 					"refs": [
 						"W-A1-0330",
-						"W-A1-0797"
+						"W-A1-0041",
+						"W-A1-0042",
+						"W-A1-0043",
+						"W-A1-0796"
 					],
 					"options": [
-						"Kinder",
-						"Kinds",
-						"Kind"
+						"drei Kinder",
+						"zwei Kinder",
+						"vier Kinder"
 					],
 					"answer": 0,
-					"prompt": "Bild 1: drei …",
+					"prompt": "Bild 1: Wie viele Kinder sind das?",
 					"image": {
 						"src": "/img/a1-04-plural.svg",
 						"alt": {
@@ -1840,9 +1843,9 @@
 				{
 					"phrase": "Es gibt viele Familienformen.",
 					"note": {
-						"de": "Vater, Mutter, Kinder – oder eine Mutter allein mit Kind – oder zwei Väter mit Kind. Alles ist Familie.",
-						"en": "Father, mother, children – or a mother alone with a child – or two fathers with a child. All of it is family.",
-						"tl": "Tatay, nanay, anak – o nanay na mag-isa kasama ang anak – o dalawang tatay at anak. Lahat ay pamilya."
+						"de": "Vater, Mutter, Kinder – oder eine Mutter allein mit Kind – oder die Oma mit dem Kind. Alles ist Familie.",
+						"en": "Father, mother, children – or a mother alone with a child – or grandma with the child. All of it is family.",
+						"tl": "Tatay, nanay, anak – o nanay na mag-isa kasama ang anak – o lola kasama ang bata. Lahat ay pamilya."
 					}
 				},
 				{
@@ -1873,9 +1876,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Familien mit zwei Müttern oder zwei Vätern, Patchwork-Familien.",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, families with two mothers or two fathers, patchwork families.",
-						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, pamilyang may dalawang nanay o dalawang tatay, patchwork."
+						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
 					},
 					"goals": [
 						"A1-04-G6"
@@ -1898,9 +1901,9 @@
 					"image": {
 						"src": "/img/a1-04-familien.svg",
 						"alt": {
-							"de": "Drei Bilder mit drei Familien.",
-							"en": "Three pictures with three families.",
-							"tl": "Tatlong larawan ng tatlong pamilya."
+							"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+							"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+							"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
 						}
 					}
 				},
@@ -1914,9 +1917,9 @@
 						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Familien mit zwei Müttern oder zwei Vätern, Patchwork-Familien.",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, families with two mothers or two fathers, patchwork families.",
-						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, pamilyang may dalawang nanay o dalawang tatay, patchwork."
+						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
 					},
 					"goals": [
 						"A1-04-G6"
@@ -1940,9 +1943,9 @@
 					"image": {
 						"src": "/img/a1-04-familien.svg",
 						"alt": {
-							"de": "Drei Bilder mit drei Familien.",
-							"en": "Three pictures with three families.",
-							"tl": "Tatlong larawan ng tatlong pamilya."
+							"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+							"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+							"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
 						}
 					}
 				},
@@ -1956,9 +1959,9 @@
 						"tl": "Piliin ang tamang sagot."
 					},
 					"explanation": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Familien mit zwei Müttern oder zwei Vätern, Patchwork-Familien.",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, families with two mothers or two fathers, patchwork families.",
-						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, pamilyang may dalawang nanay o dalawang tatay, patchwork."
+						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
 					},
 					"goals": [
 						"A1-04-G6"

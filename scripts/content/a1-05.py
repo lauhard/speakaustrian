@@ -150,17 +150,17 @@ lesson(7, L('kein, keine', 'no, not a', 'wala, hindi'), ['kein'], [
 ], [
     choice(X, 'lesen', LOOK, 'Hat Tom ein Buch?', 'Nein, er hat kein Buch.', ['Nein, er hat nicht Buch.', 'Ja, er hat ein Buch.'], L('Auf dem Tisch von Tom ist nur ein Heft: kein Buch.', 'On Tom’s desk there is only an exercise book: no book.', 'Kuwaderno lang ang nasa mesa ni Tom: walang libro.'), [G4], R('kein', 'Buch'),
            img=img('tische', 'Zwei Tische: Maria hat Buch und Heft, Tom hat nur ein Heft.', 'Two desks: Maria has a book and an exercise book, Tom only an exercise book.', 'Dalawang mesa: may libro at kuwaderno si Maria, kuwaderno lang si Tom.')),
-    cloze(X, 'grammatikWortschatz', GAPS, 'Ich habe {{1}} Frage. Ich habe {{2}} Stift.', [['keine'], ['keinen', 'kein']], L('die Frage → keine Frage; der Stift → keinen Stift (später: Akkusativ).', 'die Frage → keine; der Stift → keinen Stift (accusative, later).', 'die Frage → keine; der Stift → keinen (accusative, mamaya).'), [G4], R('kein')),
+    cloze(X, 'grammatikWortschatz', GAPS, 'Ich habe {{1}} Frage. Ich habe {{2}} Heft.', [['keine'], ['kein']], L('die Frage → keine Frage; das Heft → kein Heft.', 'die Frage → keine Frage (no question); das Heft → kein Heft (no exercise book).', 'die Frage → keine Frage (walang tanong); das Heft → kein Heft (walang kuwaderno).'), [G4], R('kein')),
     choice(X, 'grammatikWortschatz', CHOOSE, 'Das ist … Fehler.', 'kein', ['nicht', 'keine'], L('der Fehler → kein Fehler.', 'der Fehler → kein Fehler (no mistake).', 'der Fehler → kein Fehler (walang mali).'), [G4], R('kein', 'Fehler')),
 ])
 lesson(8, L('Verben im Kurs', 'Verbs in class', 'Mga verb sa klase'), ['öffnen', 'zeigen', 'warten', 'zuhören', 'lernen', 'üben', 'erklären', 'bringen', 'holen'], [
     C('Öffnen Sie das Buch.', '„öffnen“: ich öffne, du öffnest, er öffnet.', '“öffnen” (open): ich öffne, du öffnest, er öffnet.', '“öffnen” (buksan): ich öffne, du öffnest, er öffnet.'),
-    C('Die Lehrerin zeigt an die Tafel und erklärt.', '„zeigen“, „erklären“ – regelmäßig.', '“zeigen” (show), “erklären” (explain) – regular.', '“zeigen” (ipakita), “erklären” (ipaliwanag) – regular.'),
+    C('Die Lehrerin zeigt auf die Tafel und erklärt.', '„zeigen“, „erklären“ – regelmäßig.', '“zeigen” (show), “erklären” (explain) – regular.', '“zeigen” (ipakita), “erklären” (ipaliwanag) – regular.'),
     C('Hören Sie zu! – Warten Sie, bitte.', '„zuhören“: Ich höre zu (trennbar). „warten“: er wartet.', '“zuhören” (listen): Ich höre zu (separable). “warten” (wait): er wartet.', '“zuhören”: Ich höre zu (nahahati). “warten”: er wartet.'),
     C('Wir lernen und üben. Bringen Sie das Heft mit. Holen Sie ein Blatt.', 'lernen, üben, bringen, holen.', 'learn, practise, bring, fetch.', 'mag-aral, magsanay, magdala, kumuha.'),
 ], [
     choice(X, 'grammatikWortschatz', LOOK, 'Bild 3: Was macht man?', 'warten', ['öffnen', 'zuhören'], same('Bild 3 zeigt eine Uhr: warten. 1 = öffnen, 2 = zeigen, 4 = zuhören.'), [G2], R('warten'),
-           img=img('verben', 'Vier Bilder: ein offenes Buch, eine Hand zeigt an die Tafel, eine Uhr, ein Ohr.', 'Four pictures: an open book, a hand pointing at the board, a clock, an ear.', 'Apat na larawan: bukas na libro, kamay na nakaturo sa pisara, orasan, tainga.')),
+           img=img('verben', 'Vier Bilder: ein offenes Buch, eine Hand zeigt auf die Tafel, eine Uhr, ein Ohr.', 'Four pictures: an open book, a hand pointing at the board, a clock, an ear.', 'Apat na larawan: bukas na libro, kamay na nakaturo sa pisara, orasan, tainga.')),
     cloze(X, 'grammatikWortschatz', GAPS, 'Die Lehrerin {{1}} (erklären) die Aufgabe. Er {{2}} (warten).', [['erklärt'], ['wartet']], L('sie erklärt, er wartet (mit -et).', 'sie erklärt, er wartet (with -et).', 'sie erklärt, er wartet (may -et).'), [G2], R('erklären', 'warten')),
     choice(X, 'hoeren', LISTEN, None, 'Wir sollen zuhören.', ['Wir sollen schreiben.'], same('Sie hören: „Bitte hören Sie gut zu.“'), [G2], R('zuhören'), audio='Bitte hören Sie gut zu.'),
 ])
@@ -187,11 +187,11 @@ WOW = L('In Österreich können Frauen und Männer alle Berufe lernen und ausüb
         'Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam.')
 lesson(11, L('Lernen für alle', 'Learning for everyone', 'Pag-aaral para sa lahat'), [], [
     C('Frauen und Männer können alle Berufe lernen.', 'Eine Frau kann Mechanikerin sein, ein Mann Krankenpfleger.', 'A woman can be a mechanic, a man a nurse.', 'Puwedeng mekaniko ang babae, nars ang lalaki.'),
-    C('der Beruf – die Berufe', 'Mechanikerin, Krankenpfleger, Polizistin, Elektrikerin, Busfahrerin, Technikerin, Friseur, Volksschullehrer, Kindergärtner, Kindergartenpädagoge.', 'Jobs: mechanic, nurse, police officer, electrician, bus driver, technician, hairdresser, primary teacher, kindergarten teacher.', 'Mga trabaho: mekaniko, nars, pulis, elektrisyan, drayber ng bus, technician, barbero, guro sa elementarya, guro sa kindergarten.'),
+    C('der Beruf – die Berufe', 'Lehrerin, Lehrer – und alle anderen Berufe: für Frauen und für Männer.', 'Teacher (woman, man) – and all other jobs: for women and for men.', 'Guro (babae, lalaki) – at lahat ng ibang trabaho: para sa babae at lalaki.'),
     C('Deutsch lernen hilft.', 'Mit Deutsch verstehen Sie Briefe, Ärztinnen, Lehrer und Kolleginnen.', 'With German you understand letters, doctors, teachers and colleagues.', 'Sa German, maiintindihan mo ang mga sulat, doktor, guro at katrabaho.'),
 ], [
-    choice(X, 'werte', LOOK, 'Bild 1: Eine Frau repariert ein Auto. Ist das in Österreich normal?', 'Ja, Frauen können alle Berufe lernen.', ['Nein, das ist nur für Männer.'], WOW, [G6], R('Frau'), img=BERUFE()),
-    choice(X, 'werte', LOOK, 'Bild 2: Ein Mann arbeitet als Krankenpfleger. Ist das in Österreich möglich?', 'Ja.', ['Nein.'], WOW, [G6], R('Mann'), img=BERUFE()),
+    choice(X, 'werte', LOOK, 'Bild 1: Wer arbeitet hier?', 'eine Frau', ['ein Mann'], WOW, [G6], R('Frau'), img=BERUFE()),
+    choice(X, 'werte', LOOK, 'Was zeigen Bild 1 und Bild 2?', 'Frauen und Männer arbeiten in allen Berufen.', ['Berufe sind nur für Männer.'], WOW, [G6], R('Mann'), img=BERUFE()),
     choice(X, 'werte', CHOOSE, 'Warum ist Deutsch lernen in Österreich wichtig?', 'Es hilft bei der Arbeit und im Alltag.', ['Man braucht es nur im Kurs.'], WOW, [G6], R('Deutsch', 'lernen')),
 ])
 
@@ -226,7 +226,7 @@ fam('LE4', lambda v, i: choice(i, 'lesen', LOOK, v[0], v[1], v[2], same(v[3]), [
 
 fam('LE5', RFQ, [('Ich heiße Jose. Ich lerne seit zwei Jahren Deutsch. Mein Kurs ist am Abend. Die Lehrerin erklärt sehr gut.', 'Jose lernt am Morgen Deutsch.', 'falsch', 'Der Kurs ist am Abend.'),
                  ('Im Deutschkurs sind zwölf Leute. Sie sprechen viele Sprachen. Im Kurs sprechen alle Deutsch.', 'Im Kurs sind zwölf Personen.', 'richtig', '„Im Deutschkurs sind zwölf Leute.“'),
-                 ('Heute schreiben wir einen Test. Ich habe keinen Kugelschreiber, aber Maria gibt mir einen.', 'Die Person hat einen Kugelschreiber von Maria.', 'richtig', '„Maria gibt mir einen.“')],
+                 ('Heute schreiben wir einen Test. Ich habe kein Heft, aber Maria gibt mir ein Blatt.', 'Die Person hat ein Blatt von Maria.', 'richtig', '„Maria gibt mir ein Blatt.“')],
     [('Die Hausübung ist nicht schwer. Ich mache sie in der Pause.', 'Die Hausübung ist schwer.', 'falsch', '„nicht schwer“.'), ('Sofia lernt zwanzig neue Wörter.', 'Sofia lernt neue Wörter.', 'richtig', '„zwanzig neue Wörter“.'),
      ('Der Kurs hat heute keine Pause.', 'Heute ist eine Pause.', 'falsch', '„keine Pause“.'), ('Tom hat einen Fehler im Test. Die Lehrerin erklärt die Lösung.', 'Die Lehrerin erklärt die Lösung.', 'richtig', '„Die Lehrerin erklärt die Lösung.“')])
 
@@ -245,9 +245,17 @@ fam('HO3', lambda v, i: choice(i, 'hoeren', L('Hören Sie. Ist die Aussage richt
 
 ANS = lambda v, i: cloze(i, 'schreiben', L('Ergänzen Sie.', 'Complete.', 'Kumpletuhin.'), v[0], v[1], same(v[2]), [G2, G1], R('ergänzen'))
 fam('SC1', ANS, [('Im {{1}} lese ich, ins {{2}} schreibe ich.', [['Buch'], ['Heft']], 'Im Buch lese ich, ins Heft schreibe ich.'), ('Auf eine {{1}} gibt man eine {{2}}.', [['Frage'], ['Antwort']], 'Auf eine Frage gibt man eine Antwort.'), ('Die richtige Antwort ist die {{1}}. Eine falsche Antwort ist ein {{2}}.', [['Lösung'], ['Fehler']], 'Lösung – Fehler.')],
-    [('Ein {{1}} hat viele Wörter.', [['Satz', 'Text']], 'Ein Satz/Text hat viele Wörter.'), ('Ich schreibe mit dem {{1}}.', [['Kugelschreiber', 'Bleistift', 'Stift']], 'mit dem Kugelschreiber / Bleistift / Stift.'), ('Um 10:30 ist {{1}}.', [['Pause']], 'Um 10:30 ist Pause.'), ('Die Aufgabe für morgen ist die {{1}}.', [['Hausübung']], 'die Hausübung.')])
+    [('Ein {{1}} hat viele Wörter.', [['Satz', 'Text']], 'Ein Satz/Text hat viele Wörter.'), ('Ich schreibe mit dem {{1}}.', [['Kugelschreiber', 'Bleistift', 'Stift', 'Kuli']], 'mit dem Kugelschreiber / Bleistift / Stift.'), ('Um 10:30 ist {{1}}.', [['Pause']], 'Um 10:30 ist Pause.'), ('Die Aufgabe für morgen ist die {{1}}.', [['Hausübung']], 'die Hausübung.')])
 
-REG = lambda v, i: cloze(i, 'schreiben', L('Lesen Sie. Ergänzen Sie das Anmeldeformular.', 'Read. Complete the registration form.', 'Basahin. Kumpletuhin ang registration form.'), f'{v[0]}\nKurs: {{{{1}}}} · Sprachen: {{{{2}}}}', [[v[1]], v[2]], same(f'Kurs: {v[1]}, Sprachen: {v[2][0]}.'), [G1], R('Kurs'))
+def langs(a):
+    # Every order and separator of two languages counts (review G-017: "Englisch, Tagalog", "Tagalog Englisch" …).
+    if ' und ' not in a:
+        return [a]
+    x, y = a.split(' und ')
+    return [f'{p}{sep}{q}' for p, q in ((x, y), (y, x)) for sep in (' und ', ', ', ' ')]
+
+
+REG = lambda v, i: cloze(i, 'schreiben', L('Lesen Sie. Ergänzen Sie das Anmeldeformular.', 'Read. Complete the registration form.', 'Basahin. Kumpletuhin ang registration form.'), f'{v[0]}\nKurs: {{{{1}}}} · Sprachen: {{{{2}}}}', [[v[1]], langs(v[2][0])], same(f'Kurs: {v[1]}, Sprachen: {v[2][0]}.'), [G1], R('Kurs'))
 fam('SC2', REG, [('Ich bin Maria. Ich möchte den Kurs A1. Ich spreche Tagalog und Englisch.', 'A1', ['Tagalog und Englisch', 'Tagalog, Englisch', 'Englisch und Tagalog']), ('Ich heiße Ali. Ich mache den Kurs A2. Ich spreche Deutsch und Englisch.', 'A2', ['Deutsch und Englisch', 'Deutsch, Englisch', 'Englisch und Deutsch']), ('Mein Name ist Sofia. Kurs: A1. Ich spreche nur Englisch.', 'A1', ['Englisch'])],
     [('Ich bin Jose. Ich bin im Kurs A1. Ich spreche Tagalog.', 'A1', ['Tagalog']), ('Ich heiße Tom. Ich möchte den Kurs A2. Ich spreche Deutsch.', 'A2', ['Deutsch']), ('Ich bin Anna, Kurs A1, ich spreche Englisch und Tagalog.', 'A1', ['Englisch und Tagalog', 'Englisch, Tagalog', 'Tagalog und Englisch']), ('Ich heiße Lukas. Kurs: A2. Sprachen: Deutsch und Englisch.', 'A2', ['Deutsch und Englisch', 'Deutsch, Englisch', 'Englisch und Deutsch'])])
 
@@ -282,7 +290,7 @@ fam('GW1', NK, [('Ich verstehe das …', 'nicht', 'Verb → nicht.'), ('Das ist 
     [('Er kommt heute …', 'nicht', 'Verb → nicht.'), ('Wir haben … Pause.', 'keine', 'die Pause → keine Pause.'), ('Das ist … richtig.', 'nicht', 'Adjektiv → nicht.'), ('Das ist … Heft.', 'kein', 'das Heft → kein Heft.')])
 
 SB = lambda v, i: choice(i, 'grammatikWortschatz', L('Lesen Sie die Nachricht. Was passt in die Lücke?', 'Read the message. What fits the gap?', 'Basahin ang mensahe. Ano ang angkop sa patlang?'), v[0], v[1], [v[2]], same(v[3]), [G4, G1], R('Kurs'))
-fam('GW2', SB, [('Hallo Anna! Ich komme heute ___ in den Kurs. Bis morgen! Tom', 'nicht', 'kein', 'Verb verneinen → nicht.'), ('Liebe Kursteilnehmer, morgen ist ___ Unterricht. Frau Huber', 'kein', 'nicht', 'Unterricht (Nomen ohne Artikel) → kein.'), ('Hallo! Hast du ___ Kugelschreiber für mich? Danke! Ali', 'einen', 'ein', 'der Kugelschreiber → einen (haben + Akkusativ).')],
+fam('GW2', SB, [('Hallo Anna! Ich komme heute ___ in den Kurs. Bis morgen! Tom', 'nicht', 'kein', 'Verb verneinen → nicht.'), ('Liebe Kursteilnehmer, morgen ist ___ Unterricht. Frau Huber', 'kein', 'nicht', 'Unterricht (Nomen ohne Artikel) → kein.'), ('Liebe Frau Huber, ich verstehe das Beispiel ___. Ali', 'nicht', 'kein', 'Verb verneinen → nicht.')],
     [('Liebe Maria, ich habe ___ Buch. Bringst du deins? Jose', 'kein', 'nicht', 'ein Buch → kein Buch.'), ('Hallo Herr Bauer, ich ___ die Aufgabe nicht. Sofia', 'verstehe', 'verstehen', 'ich verstehe.'), ('Hallo! Die Hausübung ist ___ Seite 20. Lukas', 'auf', 'in', 'auf Seite 20.'), ('Liebe Leute, heute haben wir ___ Pause. Ihre Lehrerin', 'keine', 'nicht', 'die Pause → keine Pause.')])
 
 PLK = lambda v, i: choice(i, 'grammatikWortschatz', CHOOSE, v[0], v[1], v[2], same(f'Plural: die {v[1]}.'), [G1], R(v[3]))
@@ -294,14 +302,14 @@ fam('GW4', VB, [('Die Lehrerin {{1}} (zeigen) das Bild.', ['zeigt'], 'sie zeigt.
     [('Er {{1}} (warten) auf die Lehrerin.', ['wartet'], 'er wartet (mit -et).', 'warten'), ('Ich {{1}} (lernen) Deutsch.', ['lerne'], 'ich lerne.', 'lernen'), ('Sie {{1}} (bringen) das Buch.', ['bringt', 'bringen'], 'sie bringt / Sie bringen.', 'bringen'), ('Was {{1}} (bedeuten) das?', ['bedeutet'], 'das bedeutet.', 'bedeuten')])
 
 WQ = lambda v, i: choice(i, 'werte', CHOOSE, v[0], v[1], [v[2]], WOW, [G6], R('lernen'))
-fam('WE1', WQ, [('Können Frauen in Österreich Mechanikerin werden?', 'Ja.', 'Nein.'), ('Können Männer in Österreich Krankenpfleger werden?', 'Ja.', 'Nein.'), ('Welche Berufe können Frauen in Österreich lernen?', 'alle Berufe', 'nur wenige Berufe')],
-    [('Ein Mann ist Kindergartenpädagoge. Ist das in Österreich möglich?', 'Ja.', 'Nein.'), ('Eine Frau ist Elektrikerin. Ist das in Österreich möglich?', 'Ja.', 'Nein.')])
+fam('WE1', WQ, [('Kann eine Frau in Österreich alle Berufe lernen?', 'Ja.', 'Nein.'), ('Kann ein Mann in Österreich alle Berufe lernen?', 'Ja.', 'Nein.'), ('Welche Berufe können Frauen in Österreich lernen?', 'alle Berufe', 'nur wenige Berufe')],
+    [('Gibt es in Österreich Berufe nur für Männer?', 'Nein.', 'Ja.'), ('Gibt es in Österreich Berufe nur für Frauen?', 'Nein.', 'Ja.')])
 fam('WE2', WQ, [('Wo hilft Deutsch?', 'bei der Arbeit, beim Amt und im Alltag', 'nur im Deutschkurs'), ('Was hilft bei der Integrationsprüfung?', 'Deutsch lernen und üben', 'nichts machen'), ('Ist Deutsch lernen in Österreich wichtig?', 'Ja, sehr.', 'Nein.')],
     [('Mit Deutsch versteht man …', 'Briefe vom Amt und die Lehrerin vom Kind', 'nichts'), ('Wer lernt in Österreich Deutsch?', 'Frauen und Männer', 'nur Männer')])
 fam('WE3', lambda v, i: choice(i, 'werte', LOOK, v[0], v[1], [v[2]], WOW, [G6], R('Mann', 'Frau'), img=BERUFE()),
-    [('Bild 1: Wer repariert das Auto?', 'eine Frau', 'ein Mann'), ('Bild 2: Wer arbeitet als Krankenpfleger?', 'ein Mann', 'eine Frau'), ('Zeigt das Bild: Berufe sind für Frauen und Männer?', 'Ja.', 'Nein.')],
+    [('Bild 1: Ist das eine Frau oder ein Mann?', 'eine Frau', 'ein Mann'), ('Bild 2: Ist das eine Frau oder ein Mann?', 'ein Mann', 'eine Frau'), ('Was zeigen Bild 1 und Bild 2 zusammen?', 'Frauen und Männer können alle Berufe lernen.', 'Berufe sind nur für Frauen.')],
     [('Bild 1: Ist das ein Beruf nur für Männer?', 'Nein, auch für Frauen.', 'Ja.'), ('Bild 2: Ist das ein Beruf nur für Frauen?', 'Nein, auch für Männer.', 'Ja.')])
-fam('WE4', WQ, [], [('Kann eine Frau in Österreich Polizistin werden?', 'Ja.', 'Nein.'), ('Kann ein Mann in Österreich Friseur werden?', 'Ja.', 'Nein.'), ('Kann eine Frau Busfahrerin werden?', 'Ja.', 'Nein.'), ('Kann ein Mann Volksschullehrer werden?', 'Ja.', 'Nein.'), ('Kann eine Frau Technikerin werden?', 'Ja.', 'Nein.'), ('Kann ein Mann Kindergärtner werden?', 'Ja.', 'Nein.')])
+fam('WE4', WQ, [], [('Ist ein Beruf nur für Männer?', 'Nein.', 'Ja.'), ('Ist ein Beruf nur für Frauen?', 'Nein.', 'Ja.'), ('Kann eine Frau Lehrerin werden?', 'Ja.', 'Nein.'), ('Kann ein Mann Lehrer werden?', 'Ja.', 'Nein.'), ('Lernen Frauen und Männer Berufe?', 'Ja, alle Berufe.', 'Nein, nur Männer.'), ('Lernen Frauen und Männer im Deutschkurs zusammen?', 'Ja.', 'Nein.')])
 
 write_svgs('/tmp/a1-05.png')
 write_all(V, GOALS, {'lesen': 5, 'hoeren': 3, 'schreiben': 3, 'sprechen': 3, 'grammatikWortschatz': 3, 'werte': 3})
