@@ -127,6 +127,15 @@ body {
 	.backpill {
 		@apply flex h-10 items-center gap-1 rounded-full bg-white pr-4 pl-2.5 text-sm font-extrabold text-ink no-underline ring-1 ring-line transition hover:ring-brand active:scale-95;
 	}
+	.side-link {
+		@apply flex items-center gap-3 rounded-xl px-3 py-2.5 font-extrabold text-muted no-underline transition hover:bg-white hover:text-ink aria-[current=page]:bg-white aria-[current=page]:text-brand aria-[current=page]:shadow-sm aria-[current=page]:ring-1 aria-[current=page]:ring-line;
+	}
+	.side-stat {
+		@apply flex items-start gap-3 rounded-2xl bg-white p-3 ring-1 ring-line;
+	}
+	.side-note {
+		@apply mt-0.5 block text-xs leading-snug font-semibold text-muted;
+	}
 	/* Chapter path: nodes on a vertical line. */
 	.path {
 		@apply relative space-y-1.5;

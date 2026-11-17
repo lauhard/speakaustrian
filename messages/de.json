@@ -151,5 +151,10 @@
 	"goal_met": "Tagesziel erreicht",
 	"goal_due": "Noch {count} Wiederholungen offen",
 	"playing": "Läuft …",
-	"stat_flawless": "Richtige in Folge"
+	"stat_flawless": "Punkte",
+	"stat_flames": "Flammen in dieser Runde",
+	"freeze_explain": "Verpasst du einen Tag, wird 1 Schutz verbraucht und dein Tagesstreak bleibt. Alle 7 Streak-Tage gibt es einen neuen, höchstens 2.",
+	"streak_explain": "Tage mit 20 min Lernen und allen Wiederholungen erledigt.",
+	"score_explain": "Alle 3 Richtigen in Folge eine Flamme. Fehler kostet die Flammen der Runde, ein zweiter Fehler die Punkte.",
+	"side_progress": "Dein Fortschritt"
 }

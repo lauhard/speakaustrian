@@ -141,7 +141,7 @@ Format:
 - Spec says: masterprompt phase 5: batch of max. 2 chapters → automatic QA → reviewer agent with fresh context (≥ 20 % sample) → human approval.
 - Decided: reviewer runs once per batch of 2 chapters, on Sonnet, exactly 20 % of each pool plus all lesson items, reports only blockers and should-fix (no nits). Human approval stays with Andi.
 
-## G-018 – Points and highscore   (status: open)
+## G-018 – Points and highscore   (status: decided – Andi, 17.11.2026: flame score, see `core/accuracy.ts`; device-local, no course rule)
 - Found in: 015 brand/UI rework (Andi: "UI ready for points/highscore, streaks, lives").
 - Spec says: streak, freezes and lives are specified (`04a` R-S, R-L); points, XP and a highscore are not specified anywhere. D8: gamification only supportive.
 - Implemented: `core/stats.ts` view model with `points: null`; the header/sidebar slot renders only when points are defined. No rule invented.

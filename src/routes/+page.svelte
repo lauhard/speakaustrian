@@ -97,19 +97,19 @@
 		</div>
 
 		<div class="tile !flex-row !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
-			<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl {streak > 0 ? 'bg-orange-100 text-orange-500' : 'bg-stone-100 text-stone-400'}">
-				<Flame size={26} strokeWidth={2.25} class={streak > 0 ? 'flame fill-orange-400' : ''} />
+			<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl {streak > 0 ? 'bg-amber-100 text-amber-500' : 'bg-stone-100 text-stone-400'}">
+				<Zap size={26} strokeWidth={2.25} class={streak > 0 ? 'fill-amber-400' : ''} />
 			</span>
 			<span class="min-w-0 flex-1 space-y-1.5">
 				<span class="flex items-baseline justify-between gap-2">
 					<span class="tile-title">{streak} {m.stat_streak()} <span class="text-sm font-semibold text-muted">· {m.stat_best()} {game.state.streak.best}</span></span>
 					<span class="text-xs font-extrabold tracking-wider text-muted uppercase">{m.goal_title()}</span>
 				</span>
-				<span class="bar !h-2 block"><span class={goal.met ? '!bg-ok' : '!bg-orange-400'} style="width: {goal.pct}%"></span></span>
+				<span class="bar !h-2 block"><span class={goal.met ? '!bg-ok' : '!bg-amber-400'} style="width: {goal.pct}%"></span></span>
 				<span class="flex items-center justify-between gap-2">
 					<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
 					<span class="flex items-center gap-1 text-sm font-extrabold text-muted" title={m.stat_flawless()} data-testid="flawless-run">
-						<Zap size={15} strokeWidth={2.5} class={accuracy.current > 0 ? 'fill-amber-400 text-amber-500' : ''} />{accuracy.current}<span class="font-semibold">· {m.stat_best()} {accuracy.best}</span>
+						<Flame size={15} strokeWidth={2.5} class={accuracy.score > 0 ? 'fill-orange-400 text-orange-500' : ''} />{accuracy.score}<span class="font-semibold">· {m.stat_best()} {accuracy.best}</span>
 					</span>
 				</span>
 			</span>

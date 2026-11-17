@@ -13,13 +13,16 @@
 {#if game.ready && game.state.profile}
 	<ul class={vertical ? 'space-y-2' : 'flex items-center gap-1.5'} data-testid="stats">
 		<li class="stat" title={m.stat_streak()} data-testid="stat-streak">
-			<Flame size={18} strokeWidth={2.25} class={s.streak > 0 ? 'flame fill-orange-400 text-orange-500' : 'text-stone-400'} />
+			<Zap size={18} strokeWidth={2.25} class={s.streak > 0 ? 'fill-amber-400 text-amber-500' : 'text-stone-400'} />
 			{#key s.streak}<b class="pop">{s.streak}</b>{/key}
 			{#if vertical}<span class="stat-label">{m.stat_streak()} · {m.stat_best()} {s.best}</span>{/if}
 		</li>
-		<li class="stat" title={m.stat_flawless()} data-testid="stat-flawless">
-			<Zap size={18} strokeWidth={2.25} class={accuracy.current > 0 ? 'fill-amber-400 text-amber-500' : 'text-stone-400'} />
-			{#key accuracy.current}<b class="pop">{accuracy.current}</b>{/key}
+		<li class="stat" title={m.stat_flawless()} data-testid="stat-score" data-score-target>
+			{#key accuracy.fx.seq}
+				<span class="flex items-center gap-1.5 {accuracy.fx.kind === 'lostScore' ? 'shake text-bad' : accuracy.fx.kind === 'bank' ? 'pop' : ''}">
+					<Flame size={18} strokeWidth={2.25} class={accuracy.score > 0 ? 'flame fill-orange-400 text-orange-500' : 'text-stone-400'} /><b>{accuracy.score}</b>
+				</span>
+			{/key}
 			{#if vertical}<span class="stat-label">{m.stat_flawless()} · {m.stat_best()} {accuracy.best}</span>{/if}
 		</li>
 		{#if vertical || s.freezes > 0}

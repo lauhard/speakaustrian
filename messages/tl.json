@@ -151,5 +151,10 @@
 	"goal_met": "Naabot ang layunin ngayon",
 	"goal_due": "{count} pang ulitin",
 	"playing": "Tumutugtog …",
-	"stat_flawless": "sunod-sunod na tama"
+	"stat_flawless": "puntos",
+	"stat_flames": "apoy sa round na ito",
+	"freeze_explain": "Kapag may araw kang nalaktawan, 1 freeze ang magagamit at mananatili ang streak mo. May bago tuwing 7 araw ng streak, hanggang 2.",
+	"streak_explain": "Mga araw na may 20 min na pag-aaral at tapos ang lahat ng pag-uulit.",
+	"score_explain": "Isang apoy sa bawat 3 sunod-sunod na tama. Ang mali ay bawas sa apoy ng round, ang pangalawang mali ay sa puntos.",
+	"side_progress": "Ang iyong progreso"
 }
