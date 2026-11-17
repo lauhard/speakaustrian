@@ -9,6 +9,7 @@
 	import { page } from '$app/state';
 	import { game, startActivityClock } from '#lib/game.svelte.ts';
 	import Menu from '#lib/components/Menu.svelte';
+	import UpdateBanner from '#lib/components/UpdateBanner.svelte';
 	import Toaster from '#lib/components/Toaster.svelte';
 	import Sidebar from '#lib/components/Sidebar.svelte';
 	import Splash from '#lib/components/Splash.svelte';
@@ -49,6 +50,7 @@
 
 <Splash />
 <Toaster />
+<UpdateBanner />
 
 <!-- Mobile first: one column. From lg on, a sticky sidebar joins on the left; pages stay unchanged. -->
 <div class="mx-auto min-h-dvh max-w-md px-4 lg:grid lg:max-w-6xl lg:grid-cols-[17rem_minmax(0,40rem)] lg:justify-center lg:gap-14">

@@ -136,6 +136,22 @@ body {
 	.side-note {
 		@apply mt-0.5 block text-xs leading-snug font-semibold text-muted;
 	}
+	/* Gap fill: the sentence on a card, blanks as inline slots sized to the answer. */
+	.cloze {
+		@apply rounded-2xl bg-white px-5 py-4 text-xl leading-[3rem] font-semibold ring-1 ring-line;
+	}
+	.gap {
+		@apply mx-1 inline-block h-10 rounded-lg border-0 border-b-[3px] border-brand/40 bg-brand-soft px-2 text-center align-baseline text-xl font-extrabold text-brand transition outline-none focus:border-brand focus:bg-white focus:ring-2 focus:ring-brand/20;
+	}
+	.gap.is-right {
+		@apply border-ok bg-ok-soft text-ok;
+	}
+	.gap.is-near {
+		@apply border-warn bg-warn-soft text-warn;
+	}
+	.gap.is-wrong {
+		@apply border-bad bg-bad-soft text-bad line-through decoration-2;
+	}
 	/* Chapter path: nodes on a vertical line. */
 	.path {
 		@apply relative space-y-1.5;

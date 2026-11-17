@@ -156,5 +156,7 @@
 	"freeze_explain": "Verpasst du einen Tag, wird 1 Schutz verbraucht und dein Tagesstreak bleibt. Alle 7 Streak-Tage gibt es einen neuen, höchstens 2.",
 	"streak_explain": "Tage mit 20 min Lernen und allen Wiederholungen erledigt.",
 	"score_explain": "Alle 3 Richtigen in Folge eine Flamme. Fehler kostet die Flammen der Runde, ein zweiter Fehler die Punkte.",
-	"side_progress": "Dein Fortschritt"
+	"side_progress": "Dein Fortschritt",
+	"update_available": "Neue Version verfügbar",
+	"update_reload": "Neu laden"
 }

@@ -252,12 +252,13 @@
 				/>
 			</label>
 		{:else}
-			<p class="text-xl leading-[3.4rem] font-semibold" lang="de">
+			<p class="cloze" lang="de">
 				{#each segments as segment, i (i)}
 					{#if segment.kind === 'text'}{segment.value}{:else}
 						<input
 							data-testid="gap-{segment.id}"
-							class="field mx-1 inline-block w-36 px-2 py-1 {gapClass(segment.id)}"
+							class="gap {gapClass(segment.id)}"
+							style:width="{Math.max(4, item.type === 'cloze' ? Math.max(...item.gaps[segment.id].accept.map((a) => a.length)) : 6, (gaps[segment.id] ?? '').length) + 2}ch"
 							bind:value={gaps[segment.id]}
 							aria-label="Lücke {segment.id}"
 							disabled={grade !== null}
