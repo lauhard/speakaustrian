@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ChevronLeft, Headphones, Volume2 } from '@lucide/svelte';
+	import { Headphones, Volume2 } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
@@ -50,7 +50,6 @@
 	<p class="pt-6">{m.not_found()}</p>
 {:else if learning && cards.length > 0}
 	<section class="space-y-4">
-		<a href={resolve('/chapter/[id]', { id })} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.back_chapter()}</a>
 		<h1 class="h1" lang="de">{lesson.title.de}</h1>
 		<p class="chip"><Headphones size={16} strokeWidth={2.5} />{m.learn_title()}</p>
 		{#if ttsFailed}<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>{/if}

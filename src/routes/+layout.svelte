@@ -4,13 +4,24 @@
 	import { onNavigate } from '$app/navigation';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
+	import { ChevronLeft } from '@lucide/svelte';
+	import { page } from '$app/state';
 	import Menu from '#lib/components/Menu.svelte';
+	import Toaster from '#lib/components/Toaster.svelte';
 	import Splash from '#lib/components/Splash.svelte';
 	import StatBar from '#lib/components/StatBar.svelte';
 	import './layout.css';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
+
+	// Header back target: lesson → its chapter, every other sub page → course.
+	const back = $derived.by(() => {
+		const parts = page.url.pathname.split('/').filter(Boolean);
+		if (parts.length === 0) return null;
+		if (parts[0] === 'chapter' && parts.length === 3) return { href: resolve('/chapter/[id]', { id: parts[1] }), label: m.nav_chapter };
+		return { href: resolve('/'), label: m.course };
+	});
 
 	// Page fades via the View Transitions API (CSS in layout.css); browsers without it just navigate.
 	onNavigate((navigation) => {
@@ -29,6 +40,7 @@
 </svelte:head>
 
 <Splash />
+<Toaster />
 
 <!-- Mobile first: one column. From lg on, a sticky sidebar joins on the left; pages stay unchanged. -->
 <div class="mx-auto min-h-dvh max-w-md px-4 lg:grid lg:max-w-5xl lg:grid-cols-[15rem_minmax(0,36rem)] lg:justify-center lg:gap-12">
@@ -44,10 +56,16 @@
 	</aside>
 	<div class="flex min-h-dvh flex-col">
 		<header class="sticky top-0 z-30 -mx-4 flex items-center justify-between gap-3 bg-paper/95 px-4 py-3">
-			<a href={resolve('/')} class="flex items-center gap-2 no-underline lg:invisible">
-				<img src="/icons/logo.svg" alt="" class="h-9 w-9" width="36" height="36" />
-				<span class="display text-xl text-ink">{m.app_title()}</span>
-			</a>
+			{#if back}
+				<a href={back.href} class="backpill" data-testid="header-back">
+					<ChevronLeft size={18} strokeWidth={2.5} />{back.label()}
+				</a>
+			{:else}
+				<a href={resolve('/')} class="flex items-center gap-2 no-underline lg:invisible">
+					<img src="/icons/logo.svg" alt="" class="h-9 w-9" width="36" height="36" />
+					<span class="display text-xl text-ink">{m.app_title()}</span>
+				</a>
+			{/if}
 			<div class="flex items-center gap-2">
 				<span class="lg:hidden"><StatBar /></span>
 				<Menu />

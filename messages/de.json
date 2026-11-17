@@ -143,5 +143,7 @@
 	"set_group_audio": "Audio",
 	"set_group_lang": "Sprache",
 	"set_group_app": "App",
-	"set_group_data": "Daten"
+	"set_group_data": "Daten",
+	"free_label": "Frei",
+	"nav_chapter": "Kapitel"
 }

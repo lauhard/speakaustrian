@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { ChevronLeft } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
@@ -60,7 +59,6 @@
 	const tlMachine = $derived(errorRound.some((i) => chapterContent('DEMO')?.pools?.practice.some((p) => p.id === i.id)));
 </script>
 
-<a href={resolve('/')} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.course()}</a>
 <h1 class="h1 pt-4 pb-2">{m.review_title()}</h1>
 
 {#if tasks === null}

@@ -95,6 +95,38 @@ body {
 	.switch:checked::after {
 		transform: translateX(1.25rem);
 	}
+	.toast {
+		@apply flex w-full max-w-sm items-center gap-3 rounded-2xl bg-white/95 px-3 py-2.5 text-ink shadow-xl ring-1 ring-line backdrop-blur;
+	}
+	/* Answer sheet: slides up at the bottom, colored by verdict, stays until "next". */
+	.sheet {
+		@apply sticky bottom-0 z-20 -mx-4 space-y-3 rounded-t-3xl border-t-2 px-4 pt-4 pb-5 shadow-[0_-8px_24px_rgb(0_0_0/0.06)];
+	}
+	.sheet[data-verdict='correct'] {
+		@apply border-ok bg-ok-soft;
+	}
+	.sheet[data-verdict='near'] {
+		@apply border-warn bg-warn-soft;
+	}
+	.sheet[data-verdict='wrong'] {
+		@apply border-bad bg-bad-soft;
+	}
+	.sheet-title {
+		@apply flex items-center gap-2 text-xl font-black;
+	}
+	.sheet[data-verdict='correct'] .sheet-title {
+		@apply text-ok;
+	}
+	.sheet[data-verdict='near'] .sheet-title {
+		@apply text-warn;
+	}
+	.sheet[data-verdict='wrong'] .sheet-title {
+		@apply text-bad;
+	}
+	/* Back pill in the header, mirrors the stat pills on the right. */
+	.backpill {
+		@apply flex h-10 items-center gap-1 rounded-full bg-white pr-4 pl-2.5 text-sm font-extrabold text-ink no-underline ring-1 ring-line transition hover:ring-brand active:scale-95;
+	}
 	/* Chapter path: nodes on a vertical line. */
 	.path {
 		@apply relative space-y-1.5;

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
+	import { toast } from '#lib/toast.svelte.ts';
 	import { Check, ChevronLeft, ChevronRight, LockOpen } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
@@ -46,25 +48,35 @@
 		game.init();
 		store.init();
 	});
+	// Free mode is announced once per opened chapter, as a toast instead of a box.
+	$effect(() => {
+		if (free && store.ready) untrack(() => toast(m.free_mode(), { icon: 'unlock', testid: 'free-mode' }));
+	});
 </script>
 
-<a href={resolve('/')} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.course()}</a>
-
 {#if content}
-	<section class="space-y-4 pt-4">
-		{#if meta}<span class="chip">{meta.id}</span>{/if}
-		<h1 class="h1" lang="de">{meta ? meta.title.de : m.preview()}</h1>
-		{#if meta && showTr}<p class="text-muted">{meta.title[helpLocale]}</p>{/if}
-		{#if free}<p class="card !bg-brand-soft text-sm" data-testid="free-mode"><LockOpen size={16} strokeWidth={2.5} class="mr-1 inline align-[-2px]" />{m.free_mode()}</p>{/if}
+	<section class="space-y-4 pt-1">
 		{#if meta}
-			<ol class="flex gap-1" aria-label={m.lessons()} data-testid="stepper">
-				{#each steps as st, i (st.label)}
-					<li class="flex-1 text-center">
-						<span class="block h-2 rounded-full {i < stepIndex ? 'bg-ok' : i === stepIndex ? 'bg-brand' : 'bg-line'}"></span>
-						<span class="mt-1 block text-xs font-bold {i === stepIndex ? 'text-brand' : i < stepIndex ? 'text-ok' : 'text-muted'}">{#if i < stepIndex}<Check size={12} strokeWidth={3} class="inline align-[-1px]" /> {/if}{st.label}</span>
-					</li>
-				{/each}
-			</ol>
+			<header class="hero space-y-4">
+				<div class="space-y-1">
+					<p class="flex items-center gap-2 text-xs font-extrabold tracking-wider text-white/75 uppercase">
+						{meta.id}
+						{#if free}<span class="inline-flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 normal-case"><LockOpen size={12} strokeWidth={2.75} />{m.free_label()}</span>{/if}
+					</p>
+					<h1 class="display text-2xl leading-tight" lang="de">{meta.title.de}</h1>
+					{#if showTr}<p class="text-sm font-semibold text-white/80">{meta.title[helpLocale]}</p>{/if}
+				</div>
+				<ol class="flex gap-1.5" aria-label={m.lessons()} data-testid="stepper">
+					{#each steps as st, i (st.label)}
+						<li class="flex-1">
+							<span class="block h-1.5 rounded-full {i <= stepIndex ? 'bg-white' : 'bg-white/25'} {i === stepIndex ? 'animate-pulse' : ''}"></span>
+							<span class="mt-1.5 flex items-center gap-1 text-xs font-bold {i <= stepIndex ? 'text-white' : 'text-white/60'}">{#if i < stepIndex}<Check size={12} strokeWidth={3} />{/if}{st.label}</span>
+						</li>
+					{/each}
+				</ol>
+			</header>
+		{:else}
+			<h1 class="h1" lang="de">{m.preview()}</h1>
 		{/if}
 
 		{#if dueCount > 0}
@@ -77,9 +89,6 @@
 			<ChapterFlow {store} chapterId={id} />
 		{/if}
 
-		{#if !inFlow && content.lessons.length > 0}
-			<div class="bar"><span style="width: {(done.length / content.lessons.length) * 100}%"></span></div>
-		{/if}
 		<details open={!inFlow && !passed} class="group space-y-2">
 		<summary class="h2 flex cursor-pointer list-none items-center justify-between">{m.lessons()} <span class="text-sm text-muted">{done.length}/{content.lessons.length} <ChevronRight size={16} class="inline transition group-open:rotate-90" /></span></summary>
 		<ol class="mt-2 space-y-2">

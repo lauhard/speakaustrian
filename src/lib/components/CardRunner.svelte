@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
 	import { PartyPopper, Volume2 } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, untrack } from 'svelte';
@@ -142,13 +144,14 @@
 		{/if}
 
 		{#if verdict}
+			<div class="sheet" data-verdict={verdict} in:fly={{ y: 60, duration: 260, easing: cubicOut }}>
 			<div
 				data-testid="card-feedback"
 				data-verdict={verdict}
 				role="status"
-				class="feedback"
+				class="space-y-2"
 			>
-				<p class="text-lg font-bold">
+				<p class="sheet-title">
 					{verdict === 'correct' ? m.verdict_correct() : verdict === 'near' ? m.verdict_near() : m.verdict_wrong()}
 				</p>
 				<p class="flex items-center gap-3 text-lg">
@@ -160,6 +163,7 @@
 			<button type="button" data-testid="card-next" class="btn-primary" onclick={next}>
 				{m.next()}
 			</button>
+			</div>
 		{:else}
 			<button data-testid="card-check" class="btn-primary" disabled={!hasAnswer}>
 				{m.check()}

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition';
+	import { cubicOut } from 'svelte/easing';
 	import { Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, type Snippet } from 'svelte';
@@ -261,13 +263,14 @@
 		{/if}
 
 		{#if grade}
+			<div class="sheet" data-verdict={grade.verdict} in:fly={{ y: 60, duration: 260, easing: cubicOut }}>
 			<div
 				data-testid="feedback"
 				data-verdict={grade.verdict}
 				role="status"
-				class="feedback pop {grade.verdict === 'wrong' ? 'shake' : ''}"
+				class="max-h-[45dvh] space-y-2 overflow-y-auto {grade.verdict === 'wrong' ? 'shake' : ''}"
 			>
-				<p class="flex items-center gap-2 text-xl font-black">{#if grade.verdict === 'wrong'}<CircleX size={24} strokeWidth={2.5} />{:else}<CircleCheck size={24} strokeWidth={2.5} />{/if}{verdictText(grade)}</p>
+				<p class="sheet-title">{#if grade.verdict === 'wrong'}<CircleX size={24} strokeWidth={2.5} />{:else}<CircleCheck size={24} strokeWidth={2.5} />{/if}{verdictText(grade)}</p>
 				{#if grade.verdict !== 'correct'}
 					<p lang="de">{m.expected({ answer: Object.values(grade.expected).join(' · ') })}</p>
 				{/if}
@@ -277,7 +280,6 @@
 					<p class="text-xs text-muted">{m.tl_machine_note()}</p>
 				{/if}
 			</div>
-			<div class="actionbar">
 			<button
 				type="button"
 				data-testid="next"
