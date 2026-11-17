@@ -65,7 +65,8 @@ const newRun = (policy: RulePolicy, s: GameState, id: ChapterId): ChapterRun => 
 	startLives: policy.startLives(s, id),
 	attempt: { kind: 'LESSONS', repeatMode: false, done: [] },
 	seenTestItemIds: [],
-	minutesSpent: 0
+	minutesSpent: 0,
+	tally: { correct: 0, total: 0 }
 });
 
 const enterPhase = (policy: RulePolicy, s: GameState, phase: CoursePhase): GameState => ({
@@ -83,6 +84,27 @@ const pickTwins = (content: ContentInfo, run: ChapterRun, wrong: readonly string
 		return [...pool].sort((a, b) => lastSeen(a) - lastSeen(b)).slice(0, 1);
 	});
 	return shuffle(twins, seeded(seed));
+};
+
+// K6: a valid chapter answer adds to the tally of the run; invalid events (wrong state, double taps) do not.
+const tallied = (run: ChapterRun | null, e: GameEvent): ChapterRun | null => {
+	if (!run) return run;
+	const a = run.attempt;
+	const add = (correct: number, total: number): ChapterRun => ({ ...run, tally: { correct: run.tally.correct + correct, total: run.tally.total + total } });
+	switch (e.type) {
+		case 'LESSON_COMPLETED':
+			return run.id === e.chapterId && a.kind === 'LESSONS' && e.total !== undefined ? add(e.correct ?? 0, e.total) : run;
+		case 'PRACTICE_ANSWERED':
+			return a.kind === 'PRACTICE' ? add(Number(e.correct), 1) : run;
+		case 'GATE_ANSWERED':
+			return a.kind === 'GATE' && !a.items.includes(e.itemId) ? add(Number(e.correct), 1) : run;
+		case 'TEST_ANSWERED':
+			return a.kind === 'TEST' && a.attemptId === e.attemptId && a.items[a.idx] === e.itemId ? add(Number(e.correct), 1) : run;
+		case 'CORRECTION_ANSWERED':
+			return a.kind === 'CORRECTION' && a.attemptId === e.attemptId && a.twins[a.idx] === e.twinId ? add(Number(e.correct), 1) : run;
+		default:
+			return run;
+	}
 };
 
 const gateBlock = (block: number): AttemptState => ({ kind: 'GATE', block, items: [], wrong: [], correct: 0, answered: 0 });
@@ -137,7 +159,7 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 		clock: { ...state.clock, lastEventAt: event.at, lastLocalDate: localDate(event.at, event.tzOffsetMin) }
 	};
 	const today = localDate(event.at, event.tzOffsetMin);
-	const run = s.course.chapter;
+	const run = tallied(s.course.chapter, event);
 	const withRun = (base: GameState, next: ChapterRun): GameState => ({ ...base, course: { ...base.course, chapter: next } });
 	const withAttempt = (base: GameState, attempt: AttemptState): GameState => (run ? withRun(base, { ...run, attempt }) : base);
 	const withError = (base: GameState, itemId: string): GameState => ({
@@ -169,6 +191,10 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 			course: {
 				...base.course,
 				completed: { ...base.course.completed, [current.id]: policy.completionOnPass(base, current.id, current, event.at) },
+				results: {
+					...base.course.results,
+					[current.id]: { test: current.lastTest ?? { correct: 0, total: 0 }, chapter: current.tally, attemptNo: current.attemptNo, at: event.at }
+				},
 				nextChapterBonus: policy.bonusForNext(base, current, perfectFirst),
 				perfectStreak: { current: streak, best: Math.max(base.course.perfectStreak.best, streak) }
 			}
@@ -204,9 +230,10 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 		case 'LESSON_COMPLETED': {
 			// Only lessons of the chapter in work count; re-reading passed chapters changes nothing (R-F1).
 			if (!run || run.id !== event.chapterId || run.attempt.kind !== 'LESSONS') return s;
-			if (run.attempt.done.includes(event.lessonId)) return s;
+			// The tally (K6) counts repeated and failed lessons too.
+			if (run.attempt.done.includes(event.lessonId)) return withRun(s, run);
 			// K1, K2: a failed lesson stays open, so practice and readiness stay locked until every lesson is passed.
-			if (event.total !== undefined && !policy.isLessonPassed({ correct: event.correct ?? 0, total: event.total })) return s;
+			if (event.total !== undefined && !policy.isLessonPassed({ correct: event.correct ?? 0, total: event.total })) return withRun(s, run);
 			const done = [...run.attempt.done, event.lessonId];
 			const info = content.chapter(run.id);
 			const attempt: AttemptState =
@@ -263,7 +290,8 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 				wrong: event.correct ? t.wrong : [...t.wrong, event.itemId]
 			};
 			const booked = event.correct ? promote(counted(s, true), event.itemId) : graded(s, event.itemId, false);
-			const current: ChapterRun = { ...run, attempt: test };
+			const finished = policy.outcomeAfterTest({ ...run, attempt: test }) !== 'CONTINUE';
+			const current: ChapterRun = { ...run, attempt: test, ...(finished ? { lastTest: { correct: test.idx - test.wrong.length, total: test.items.length } } : {}) };
 			switch (policy.outcomeAfterTest(current)) {
 				case 'CONTINUE':
 					return withRun(booked, current);
@@ -274,7 +302,7 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 				case 'CORRECTION': {
 					// R-K2 (T-K02): the correction round follows at once, no state in between.
 					const twins = pickTwins(content, run, test.wrong, test.items, test.attemptId);
-					return withRun(booked, { ...run, attempt: { kind: 'CORRECTION', attemptId: test.attemptId, twins, idx: 0, livesLeft: test.lives } });
+					return withRun(booked, { ...current, attempt: { kind: 'CORRECTION', attemptId: test.attemptId, twins, idx: 0, livesLeft: test.lives } });
 				}
 			}
 			return s;

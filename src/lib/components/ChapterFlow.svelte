@@ -25,6 +25,9 @@
 	const run = $derived(s.course.chapter?.id === chapterId ? s.course.chapter : null);
 	const attempt = $derived(run?.attempt);
 	const completed = $derived(chapterId in s.course.completed);
+	// K6: trophy numbers; chapters passed before K6 have none.
+	const result = $derived(s.course.results[chapterId]);
+	const pct = (correct: number, total: number) => Math.round((correct / Math.max(1, total)) * 100);
 	const tlMachine = $derived(content?.tlReviewStatus === 'machine');
 	// The flow is the chapter page itself, so "close" leads back to the course.
 	const backHref = resolve('/');
@@ -218,6 +221,20 @@
 			<BankPoints />
 			<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-ok-soft text-ok"><Trophy size={40} strokeWidth={2} /></p>
 			<h2 class="h2">{m.flow_passed_title()}</h2>
+			{#if result}
+				<div class="grid grid-cols-2 gap-3 text-left" data-testid="trophy">
+					<div class="rounded-2xl bg-ok-soft p-3">
+						<p class="text-xs font-extrabold tracking-wider text-ok uppercase">{m.trophy_test()}</p>
+						<p class="text-3xl font-black text-ok" data-testid="trophy-test">{pct(result.test.correct, result.test.total)}%</p>
+						<p class="text-sm font-semibold">{m.trophy_right_wrong({ correct: result.test.correct, wrong: result.test.total - result.test.correct })}</p>
+					</div>
+					<div class="rounded-2xl bg-paper p-3">
+						<p class="text-xs font-extrabold tracking-wider text-muted uppercase">{m.trophy_error_rate()}</p>
+						<p class="text-3xl font-black" data-testid="trophy-error-rate">{100 - pct(result.chapter.correct, result.chapter.total)}%</p>
+						<p class="text-sm font-semibold">{m.trophy_error_detail({ wrong: result.chapter.total - result.chapter.correct, total: result.chapter.total })}</p>
+					</div>
+				</div>
+			{/if}
 			{#if s.course.nextChapterBonus > 0}<p class="font-bold text-ok">{m.flow_bonus({ count: s.course.nextChapterBonus })}</p>{/if}
 			{#if s.course.phase.kind === 'CHAPTER' && !chapterContent(s.course.phase.id)}
 				<p class="text-muted" data-testid="flow-next-soon">{m.flow_next_soon()}</p>

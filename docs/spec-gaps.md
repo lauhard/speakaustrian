@@ -147,3 +147,10 @@ Format:
 - Implemented: `core/stats.ts` view model with `points: null`; the header/sidebar slot renders only when points are defined. No rule invented.
 - Options: A no points (streak + lives are enough) · B points per correct item, highscore = best day · C points per completed lesson/chapter, highscore = total.
 - Blocks: nothing.
+
+## G-019 – Chapter rating 1–3 stars (K6)   (status: open)
+- Found in: ticket 027 (trophy step), `docs/concepts/xp-flammen-kapitelfluss.md` K6
+- Spec says: K6 "Gesamtbewertung (1–3 Sterne)" – no thresholds, no basis (test %, chapter error rate, attempts).
+- Problem: agents may not invent the numbers. The trophy step shows test %, right/wrong and the chapter error rate, but no stars yet.
+- Options: A like lessons on chapter accuracy (all graded answers): 1 star = passed, 2 ≥ 70 %, 3 ≥ 90 % · B 1 = passed, 2 = test passed in the 1st attempt, 3 = 1st attempt and test without errors (perfect, like the lives bonus) · C combination: 3 only with a perfect 1st attempt and ≥ 90 % accuracy.
+- Blocks: stars in the trophy step (027); flames/XP follow in 029/030.

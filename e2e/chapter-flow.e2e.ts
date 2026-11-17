@@ -73,6 +73,13 @@ test('DEMO chapter: perfect run to the end (bonus life, restart)', async ({ page
 	await expect(page.getByTestId('bank-points')).toBeVisible();
 	await expect.poll(async () => Number(await page.locator('header [data-testid="stat-score"] b').innerText())).toBeGreaterThan(0);
 	await page.screenshot({ path: 'test-results/flame-bank.png' });
+	// K5/K6: the passed chapter shows the trophy step; the other steps stay reachable, one at a time.
+	await expect(page.getByTestId('trophy-test')).toHaveText('100%');
+	await expect(page.getByTestId('trophy-error-rate')).toHaveText('0%');
+	await page.getByTestId('step-0').click();
+	await expect(page.getByTestId('lesson-DEMO-01')).toBeVisible();
+	await expect(page.getByTestId('flow-passed')).toHaveCount(0);
+	await page.getByTestId('step-3').click();
 	await page.getByTestId('flow-restart').click();
 	await expect(page.getByTestId('lesson-DEMO-01')).toBeVisible();
 });
@@ -89,6 +96,8 @@ test('DEMO chapter: one mistake → correction round with a twin → passed with
 	await play(page, 'CORRECTION');
 	await expect(page.getByTestId('flow-passed')).toBeVisible();
 	await expect(page.getByTestId('flow-passed')).not.toContainText(/Bonus|bonus/);
+	await expect(page.getByTestId('trophy-test')).not.toHaveText('100%');
+	await expect(page.getByTestId('trophy-error-rate')).not.toHaveText('0%');
 });
 
 test('DEMO chapter: no lives left → error review → chapter again in repeat mode', async ({ page }) => {
@@ -143,6 +152,9 @@ test('review page: error cards of the DEMO test come back the next day and are a
 test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked, practice can be skipped (K1–K3, K10)', async ({ page }) => {
 	await signIn(page);
 	await page.goto('/chapter/DEMO');
+	// K5: later steps are locked while the lessons are open.
+	await expect(page.getByTestId('step-1')).toBeDisabled();
+	await expect(page.getByTestId('step-3')).toBeDisabled();
 	await page.getByTestId('lesson-DEMO-01').click();
 	for (let i = 0; i < 6; i++) {
 		await answer(page, i < 3);
@@ -164,6 +176,13 @@ test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked, pr
 	}
 	await expect(page.getByTestId('result')).toHaveAttribute('data-passed', 'true');
 	await page.getByTestId('back').click();
+	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'PRACTICE');
+	// K5: only one step is visible; the lessons can be opened again and practice comes back.
+	await expect(page.getByTestId('step-lessons')).toHaveCount(0);
+	await page.getByTestId('step-0').click();
+	await expect(page.getByTestId('lesson-DEMO-01')).toBeVisible();
+	await expect(page.getByTestId('chapter-flow')).toHaveCount(0);
+	await page.getByTestId('step-1').click();
 	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'PRACTICE');
 
 	// K3: practice can be skipped straight to the readiness round.
