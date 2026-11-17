@@ -24,17 +24,17 @@
 {#if show}
 	<button
 		type="button"
-		class="fixed inset-0 z-[60] grid place-items-center bg-brand text-white"
+		class="fixed inset-0 z-[60] grid place-items-center bg-paper text-ink"
 		aria-label={m.app_title()}
 		onclick={() => (show = false)}
 		out:fade={{ duration: 350 }}
 		data-testid="splash"
 	>
 		<span class="flex flex-col items-center gap-5">
-			<img src="/icons/logo.svg" alt="" width="112" height="112" class="splash-logo h-28 w-28 rounded-[28px] ring-4 ring-white/30" />
+			<img src="/icons/logo.svg" alt="" width="112" height="112" class="splash-logo h-28 w-28" />
 			<span class="splash-text text-center">
 				<span class="display block text-4xl">{m.app_title()}</span>
-				<span class="mt-1 block text-base font-semibold text-white/85">{m.app_tagline()}</span>
+				<span class="mt-1 block text-base font-semibold text-muted">{m.app_tagline()}</span>
 			</span>
 		</span>
 	</button>

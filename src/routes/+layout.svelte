@@ -35,7 +35,7 @@
 	<aside class="hidden lg:block">
 		<div class="sticky top-0 space-y-8 py-8">
 			<a href={resolve('/')} class="flex items-center gap-3 no-underline">
-				<img src="/icons/logo.svg" alt="" class="h-12 w-12 rounded-2xl shadow-sm" width="48" height="48" />
+				<img src="/icons/logo.svg" alt="" class="h-12 w-12 drop-shadow-sm" width="48" height="48" />
 				<span class="display text-2xl leading-none text-ink">{m.app_title()}</span>
 			</a>
 			<p class="text-sm font-semibold text-muted">{m.app_tagline()}</p>
@@ -45,7 +45,7 @@
 	<div class="flex min-h-dvh flex-col">
 		<header class="sticky top-0 z-30 -mx-4 flex items-center justify-between gap-3 bg-paper/95 px-4 py-3">
 			<a href={resolve('/')} class="flex items-center gap-2 no-underline lg:invisible">
-				<img src="/icons/logo.svg" alt="" class="h-9 w-9 rounded-xl shadow-sm" width="36" height="36" />
+				<img src="/icons/logo.svg" alt="" class="h-9 w-9" width="36" height="36" />
 				<span class="display text-xl text-ink">{m.app_title()}</span>
 			</a>
 			<div class="flex items-center gap-2">
