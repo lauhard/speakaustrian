@@ -120,5 +120,8 @@
 	"settings_language": "Wika ng tulong",
 	"settings_reset": "Burahin ang progress",
 	"settings_reset_confirm": "Siguradong buburahin? I-tap ulit.",
-	"settings_reset_note": "Buburahin ang profile, kabanata at review sa device na ito."
+	"settings_reset_note": "Buburahin ang profile, kabanata at review sa device na ito.",
+	"result_great": "Napakahusay!",
+	"result_good": "Magaling!",
+	"result_misses": "Sanayin ulit ang mga ito:"
 }

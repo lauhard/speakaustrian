@@ -91,6 +91,19 @@ body {
 	.feedback[data-verdict='wrong'] {
 		@apply border-bad bg-bad-soft;
 	}
+	/* Short feedback motion; switched off for people who ask for reduced motion. */
+	.pop {
+		animation: pop 0.25s ease-out;
+	}
+	.shake {
+		animation: shake 0.35s ease-in-out;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.pop,
+		.shake {
+			animation: none;
+		}
+	}
 	.bar {
 		@apply h-3 w-full overflow-hidden rounded-full bg-line;
 	}
@@ -109,5 +122,28 @@ body {
 	/* Action bar that stays reachable with the thumb on long tasks. */
 	.actionbar {
 		@apply sticky bottom-0 -mx-4 bg-gradient-to-t from-paper via-paper to-transparent px-4 pt-6 pb-4;
+	}
+}
+
+@keyframes pop {
+	from {
+		transform: scale(0.92);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-6px);
+	}
+	75% {
+		transform: translateX(6px);
 	}
 }

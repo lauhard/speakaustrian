@@ -120,5 +120,8 @@
 	"settings_language": "Sprache der Hilfe",
 	"settings_reset": "Kursfortschritt löschen",
 	"settings_reset_confirm": "Wirklich löschen? Noch einmal tippen.",
-	"settings_reset_note": "Löscht Profil, Kapitel und Wiederholungen auf diesem Gerät."
+	"settings_reset_note": "Löscht Profil, Kapitel und Wiederholungen auf diesem Gerät.",
+	"result_great": "Sehr gut!",
+	"result_good": "Gut gemacht!",
+	"result_misses": "Das üben Sie noch einmal:"
 }
