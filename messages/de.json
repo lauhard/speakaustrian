@@ -1,6 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"app_title": "Weg zur A2",
+	"app_title": "Speak Austrian",
 	"home_intro": "Deutsch lernen für die Integrationsprüfung in Österreich.",
 	"name_label": "Wie heißen Sie?",
 	"name_placeholder": "Ihr Name",
@@ -125,5 +125,14 @@
 	"result_good": "Gut gemacht!",
 	"result_misses": "Das üben Sie noch einmal:",
 	"install_app": "App installieren",
-	"install_ios": "Als App nutzen: in Safari auf „Teilen“ tippen, dann „Zum Home-Bildschirm“."
+	"install_ios": "Als App nutzen: in Safari auf „Teilen“ tippen, dann „Zum Home-Bildschirm“.",
+	"app_tagline": "Deutsch lernen – auf Österreichisch",
+	"menu_open": "Menü öffnen",
+	"menu_close": "Menü schließen",
+	"nav_course": "Kurs",
+	"nav_review": "Wiederholen",
+	"stat_streak": "Tage in Folge",
+	"stat_freezes": "Streak-Schutz",
+	"stat_best": "Rekord",
+	"preview_label": "Vorschau"
 }

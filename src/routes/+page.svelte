@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import InstallButton from '#lib/components/InstallButton.svelte';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -64,56 +63,55 @@
 		game.dispatch({ type: 'PROFILE_CREATED', name, pensumMin });
 	};
 
-	const reset = () => {
-		game.reset();
-		name = '';
-	};
 </script>
 
 {#if !game.ready}
 	<p aria-busy="true" class="pt-10 text-center text-muted">…</p>
 {:else if profile}
 	<section class="space-y-5">
-		<div>
+		<div class="rise">
 			<h1 class="h1">{m.welcome_back({ name: profile.name })}</h1>
-			<p class="mt-2 flex flex-wrap gap-2">
-				<span class="chip" data-testid="plan-day">📅 {m.day_x({ day: planDay(profile.startDate, game.today) })}</span>
-				<span class="chip !bg-white !text-muted ring-1 ring-line">⏱ {m.per_day({ time: pensumLabel })}</span>
+			<p class="mt-1 text-sm font-bold text-muted">
+				<span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span> · {m.per_day({ time: pensumLabel })}
 			</p>
 		</div>
 
-		{#if dueCount > 0}
-			<a href={resolve('/review')} data-testid="review-due" class="btn-primary">🔁 {m.review_due({ count: dueCount })}</a>
-		{/if}
-
 		{#if current}
-			<div class="card space-y-3 !border-brand/30">
-				<p class="text-sm font-bold text-muted">{m.your_chapter()} · {current.meta.id}</p>
-				<p class="text-xl leading-tight font-black" lang="de">{current.meta.title.de}</p>
-				{#if showTr}<p class="text-sm text-muted">{current.meta.title[helpLocale]}</p>{/if}
-				<p><span class="chip" data-testid="current-phase">{phaseLabel(current.status)}</span></p>
+			<div class="hero rise" style:animation-delay="60ms">
+				<p class="text-sm font-bold text-white/80">{m.your_chapter()} · {current.meta.id}</p>
+				<p class="display text-2xl leading-tight" lang="de">{current.meta.title.de}</p>
+				{#if showTr}<p class="text-sm text-white/80">{current.meta.title[helpLocale]}</p>{/if}
 				<div class="flex items-center gap-3">
-					<div class="bar"><span style="width: {(current.status.lessonsDone / Math.max(1, current.status.lessonsTotal)) * 100}%"></span></div>
-					<span class="text-sm font-bold text-muted">{current.status.lessonsDone}/{current.status.lessonsTotal}</span>
+					<div class="bar !bg-white/25"><span class="!bg-white" style="width: {(current.status.lessonsDone / Math.max(1, current.status.lessonsTotal)) * 100}%"></span></div>
+					<span class="text-sm font-bold text-white/90">{current.status.lessonsDone}/{current.status.lessonsTotal}</span>
 				</div>
+				<p class="text-sm font-bold text-white/90" data-testid="current-phase">{phaseLabel(current.status)}</p>
 				<a
 					href={current.next
 						? resolve('/chapter/[id]/[lesson]', { id: current.meta.id, lesson: current.next.id })
 						: resolve('/chapter/[id]', { id: current.meta.id })}
 					data-testid="continue"
-					class={dueCount > 0 ? 'btn-secondary' : 'btn-primary'}
+					class="btn-hero"
 				>
 					▶ {m.continue_learning()}
 				</a>
 			</div>
 		{/if}
 
-		<a href={resolve('/practice')} data-testid="free-practice" class="btn-secondary">🎯 {m.free_practice()}</a>
-		<InstallButton />
+		<div class="grid grid-cols-2 gap-3 rise" style:animation-delay="120ms">
+			{#if dueCount > 0}
+				<a href={resolve('/review')} data-testid="review-due" class="navtile !ring-2 !ring-brand">
+					<span class="text-xl">🔁</span>{m.review_due({ count: dueCount })}
+				</a>
+			{/if}
+			<a href={resolve('/practice')} data-testid="free-practice" class="navtile {dueCount > 0 ? '' : 'col-span-2 !flex-row items-center'}">
+				<span class="text-xl">🎯</span>{m.free_practice()}
+			</a>
+		</div>
 
-		<h2 class="h2 pt-2">{m.all_chapters()}</h2>
+		<h2 class="h2 pt-2 rise" style:animation-delay="180ms">{m.all_chapters()}</h2>
 		{#each levels as level (level)}
-			<details class="group" open={level === 'A1'}>
+			<details class="group rise" style:animation-delay="220ms" open={level === 'A1'}>
 				<summary class="flex cursor-pointer list-none items-center justify-between rounded-2xl bg-white px-4 py-3 font-black ring-1 ring-line">
 					<span>{level}</span>
 					<span class="text-muted transition group-open:rotate-90">›</span>
@@ -125,7 +123,7 @@
 						{@const free = content && isFreeMode(chapter.id)}
 						{@const st = content ? statusOf(chapter.id) : null}
 						{@const passed = st?.phase === 'passed'}
-						<li>
+						<li class="rise" style:animation-delay="{240 + i * 30}ms">
 							{#if content && st && (access.allowed || free)}
 								<a href={resolve('/chapter/[id]', { id: chapter.id })} data-testid="chapter-{chapter.id}" class="card-link flex items-center gap-3">
 									<span class="badge {passed ? '!bg-ok-soft !text-ok' : ''}">{passed ? '✓' : free ? '🔓' : i + 1}</span>
@@ -160,17 +158,15 @@
 			<span class="text-muted">›</span>
 		</a>
 
-		<p class="text-center text-sm text-muted">{m.local_note()}</p>
-		<p class="text-center"><button type="button" class="backlink" onclick={reset}>{m.change_name()}</button></p>
 	</section>
 {:else}
-	<section class="space-y-6 pt-4">
-		<div class="space-y-2 text-center">
-			<p class="text-6xl">👋</p>
-			<h1 class="text-3xl font-black">Grüß Gott!</h1>
-			<p class="text-muted">{m.home_intro()}</p>
+	<section class="space-y-6 pt-6">
+		<div class="space-y-3 text-center">
+			<img src="/icons/logo.svg" alt="" width="88" height="88" class="splash-logo mx-auto h-22 w-22 rounded-3xl shadow-lg" />
+			<h1 class="display text-4xl rise" style:animation-delay="120ms" lang="de">Grüß Gott!</h1>
+			<p class="text-muted rise" style:animation-delay="180ms">{m.home_intro()}</p>
 		</div>
-		<form class="card space-y-5" onsubmit={start}>
+		<form class="card space-y-5 rise" style:animation-delay="240ms" onsubmit={start}>
 			<label class="block space-y-2">
 				<span class="h2">{m.name_label()}</span>
 				<input data-testid="name-input" class="field w-full" bind:value={name} placeholder={m.name_placeholder()} autocomplete="given-name" maxlength="40" />
