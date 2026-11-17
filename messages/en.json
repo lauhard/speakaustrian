@@ -66,6 +66,7 @@
 	"all_chapters": "All chapters",
 	"per_day": "{time} per day",
 	"flow_practice": "Practice {current} of {total}",
+	"flow_practice_skip": "Skip practice",
 	"flow_gate": "Readiness round · block {block} · task {current} of {total}",
 	"flow_gate_note": "No lives. You need {min} of {total} right to start the test.",
 	"flow_targeted_title": "Targeted practice",

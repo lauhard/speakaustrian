@@ -23,7 +23,9 @@ export const makeContentInfo = (chapters: readonly ChapterContent[]): ContentInf
 		// A chapter without pools has no practice/test yet, so its attempt stays in the lessons.
 		chapter: (id) => {
 			const c = chapters.find((ch) => ch.chapterId === id);
-			return c?.pools ? { lessonIds: c.lessons.map((l) => l.id), practiceTotal: practiceSplit(c).part.length } : undefined;
+			// K3: a practice round asks at most PRACTICE_ROUND_ITEMS of the practice part.
+			const practiceTotal = Math.min(defaultConfig.PRACTICE_ROUND_ITEMS, practiceSplit(c).part.length);
+			return c?.pools ? { lessonIds: c.lessons.map((l) => l.id), practiceTotal } : undefined;
 		},
 		baseOf: familyOf,
 		twinsOf: (id) => {

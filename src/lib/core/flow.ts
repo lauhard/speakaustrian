@@ -9,6 +9,10 @@ export const gateDraw = (policy: RulePolicy, s: GameState, run: ChapterRun, prac
 	mixSkills(drawGate(practicePool, policy.testComposition(s, run.id), block, `${run.id}:${run.attemptNo}:gate`), practicePool);
 
 // The next unanswered item of the running readiness block, or undefined when the draw is used up.
+// K3: each attempt practises the next round of the practice part, so a repeated chapter does not ask the same items again.
+export const practiceItemAt = (part: readonly PoolItem[], attemptNo: number, roundSize: number, answered: number): PoolItem | undefined =>
+	part.length === 0 ? undefined : part[((attemptNo - 1) * roundSize + answered) % part.length];
+
 export const nextGateItem = (draw: readonly string[], answered: readonly string[]): string | undefined => draw.find((id) => !answered.includes(id));
 
 // R-T2, R-T4: the test list for TEST_STARTED; the caller puts it into the event together with the attempt id.

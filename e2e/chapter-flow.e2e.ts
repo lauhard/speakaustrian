@@ -140,7 +140,7 @@ test('review page: error cards of the DEMO test come back the next day and are a
 	await expect(page.getByTestId('review-none')).toBeVisible();
 });
 
-test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked (K1, K2, K10)', async ({ page }) => {
+test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked, practice can be skipped (K1–K3, K10)', async ({ page }) => {
 	await signIn(page);
 	await page.goto('/chapter/DEMO');
 	await page.getByTestId('lesson-DEMO-01').click();
@@ -165,4 +165,8 @@ test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked (K1
 	await expect(page.getByTestId('result')).toHaveAttribute('data-passed', 'true');
 	await page.getByTestId('back').click();
 	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'PRACTICE');
+
+	// K3: practice can be skipped straight to the readiness round.
+	await page.getByTestId('flow-skip-practice').click();
+	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'GATE');
 });

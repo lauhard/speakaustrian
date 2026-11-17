@@ -18,6 +18,8 @@ export type RuleConfig = {
 	GATE_ITEMS: number;
 	// Size of the practice part before the readiness round (masterprompt phase 5 no. 2, G-010 A).
 	PRACTICE_PART_ITEMS: number;
+	// K3: questions per practice round; the part above stays the pool the rounds rotate through.
+	PRACTICE_ROUND_ITEMS: number;
 	GATE_MIN_CORRECT: number;
 	// K1 (concept xp-flammen-kapitelfluss): a lesson counts as passed from this share of correct answers, in percent.
 	LESSON_PASS_PCT: number;
@@ -59,6 +61,7 @@ export const defaultConfig: RuleConfig = {
 	TEST_EXAM_EXTRA: 1,
 	GATE_ITEMS: 20,
 	PRACTICE_PART_ITEMS: 40,
+	PRACTICE_ROUND_ITEMS: 20,
 	GATE_MIN_CORRECT: 18,
 	LESSON_PASS_PCT: 51,
 	LEITNER_INTERVALS_DAYS: [1, 3, 7, 14, 30]

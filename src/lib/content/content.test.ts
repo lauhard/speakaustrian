@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest';
+import { makeContentInfo } from '#lib/core/content/info.ts';
+import { defaultConfig } from '#lib/core/policy.ts';
 import { allItems, availableFilters, chapters, course, pickPractice, poolItems, practiceParts } from './index';
 
 describe('course', () => {
@@ -78,5 +80,14 @@ describe.each(chapters.filter((c) => /^A[12]-\d{2}$/.test(c.chapterId) && c.pool
 	it('leaves enough items per discipline for two readiness blocks', () => {
 		const bySkill = (skill: string) => rest.filter((r) => r.skill === skill).length;
 		for (const skill of new Set(rest.map((r) => r.skill))) expect(bySkill(skill), skill).toBeGreaterThanOrEqual(6);
+	});
+});
+
+describe('practice round (K3)', () => {
+	it('a round asks at most 20 items of the practice part, the part itself stays at 40', () => {
+		const info = makeContentInfo(chapters);
+		expect(practiceParts('A1-02').part).toHaveLength(defaultConfig.PRACTICE_PART_ITEMS);
+		expect(info.chapter('A1-02')?.practiceTotal).toBe(defaultConfig.PRACTICE_ROUND_ITEMS);
+		expect(defaultConfig.PRACTICE_ROUND_ITEMS).toBe(20);
 	});
 });

@@ -8,7 +8,7 @@
 	import Runner from './Runner.svelte';
 	import { chapterContent, findItem, poolItems, practiceParts, PREVIEW_CHAPTER } from '#lib/content/index.ts';
 	import type { Item } from '#lib/core/content/schema.ts';
-	import { gateDraw, nextGateItem, targetedItems, testDraw } from '#lib/core/flow.ts';
+	import { gateDraw, nextGateItem, practiceItemAt, targetedItems, testDraw } from '#lib/core/flow.ts';
 	import type { game } from '#lib/game.svelte.ts';
 
 	// Everything after the lessons of a chapter attempt (04a §4.2): practice → readiness round → test → correction → error review.
@@ -37,7 +37,7 @@
 	const correction = $derived(attempt?.kind === 'CORRECTION' ? attempt : null);
 	const review = $derived(attempt?.kind === 'ERROR_REVIEW' ? attempt : null);
 
-	const practiceItem = $derived(practice ? findItem(parts.part[practice.answered]?.id ?? '') : undefined);
+	const practiceItem = $derived(practice && run ? findItem(practiceItemAt(parts.part, run.attemptNo, store.policy.config.PRACTICE_ROUND_ITEMS, practice.answered)?.id ?? '') : undefined);
 	const gateItem = $derived.by(() => {
 		if (!gate || !run) return undefined;
 		return findItem(nextGateItem(gateDraw(store.policy, s, run, parts.rest, gate.block), gate.items) ?? '');
@@ -120,7 +120,10 @@
 {/snippet}
 
 {#snippet practiceTop()}
-	{@render label(m.flow_practice({ current: (practice?.answered ?? 0) + 1, total: practice?.total ?? 0 }), 'PRACTICE')}
+	<div class="flex items-center justify-between gap-3">
+		{@render label(m.flow_practice({ current: (practice?.answered ?? 0) + 1, total: practice?.total ?? 0 }), 'PRACTICE')}
+		<button type="button" class="text-sm font-bold text-muted underline underline-offset-4 hover:text-brand" data-testid="flow-skip-practice" onclick={() => store.dispatch({ type: 'PRACTICE_SKIPPED' })}>{m.flow_practice_skip()} →</button>
+	</div>
 {/snippet}
 {#snippet gateTop()}
 	{@render label(m.flow_gate({ block: gate?.block ?? 1, current: (gate?.answered ?? 0) + 1, total: store.policy.config.GATE_ITEMS }), 'GATE')}
