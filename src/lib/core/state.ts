@@ -19,6 +19,13 @@ export const Completion = z.object({
 });
 export type Completion = z.infer<typeof Completion>;
 
+export const Score = z.object({ correct: z.number().int().nonnegative(), total: z.number().int().nonnegative() });
+export type Score = z.infer<typeof Score>;
+
+// K6: what the trophy step of a passed chapter shows.
+export const ChapterResult = z.object({ test: Score, chapter: Score, attemptNo: z.number().int().positive(), at: z.string() });
+export type ChapterResult = z.infer<typeof ChapterResult>;
+
 export const RecoveryPlan = z.object({
 	errorReview: z.boolean(),
 	entry: z.enum(['LESSONS', 'PRACTICE', 'GATE', 'TEST_READY']),
@@ -99,7 +106,11 @@ export const ChapterRun = z.object({
 	seenTestItemIds: z.array(z.string()),
 	// Plan of an accepted override (SET_RECOVERY/GRANT_ATTEMPT); used once instead of the policy's plan.
 	recovery: RecoveryPlan.optional(),
-	minutesSpent: z.number()
+	minutesSpent: z.number(),
+	// K6: all graded answers of the chapter over every attempt (lessons, practice, readiness, test, correction).
+	tally: Score.default({ correct: 0, total: 0 }),
+	// K6: score of the last finished test of this attempt.
+	lastTest: Score.optional()
 });
 export type ChapterRun = z.infer<typeof ChapterRun>;
 
@@ -146,6 +157,7 @@ export const GameState = z.object({
 	course: z.object({
 		phase: CoursePhase,
 		completed: z.record(ChapterId, Completion),
+		results: z.record(ChapterId, ChapterResult).default({}),
 		chapter: ChapterRun.nullable(),
 		perfectStreak: z.object({ current: z.number(), best: z.number() }),
 		nextChapterBonus: z.union([z.literal(0), z.literal(1), z.literal(2)]),
@@ -179,6 +191,7 @@ export const initialState = (ruleset: { id: string; version: number }): GameStat
 	course: {
 		phase: { kind: 'NO_PROFILE' },
 		completed: {},
+		results: {},
 		chapter: null,
 		perfectStreak: { current: 0, best: 0 },
 		nextChapterBonus: 0,

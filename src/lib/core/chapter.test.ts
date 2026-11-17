@@ -265,3 +265,31 @@ describe('settleChapter (content arrives after the lessons were finished)', () =
 		expect(attempt(settleChapter(content)(s)).kind).toBe('GATE');
 	});
 });
+
+describe('chapter result (K6)', () => {
+	const scored = (lessonId: string, correct: number, total: number) => ev({ type: 'LESSON_COMPLETED', chapterId: 'A1-01', lessonId, correct, total });
+	it('a perfect chapter stores test 20/20 and every graded answer of the chapter', () => {
+		const s = play([profile, scored('L1', 3, 4), scored('L2', 4, 4), ...practice, ...gate(0), start('a1'), ...answers('a1', [])]);
+		expect(s.course.results['A1-01']).toEqual({ test: { correct: 20, total: 20 }, chapter: { correct: 49, total: 50 }, attemptNo: 1, at: '2026-11-16T10:00:00Z' });
+		expect(GameState.safeParse(s).success).toBe(true);
+	});
+	it('failed and repeated lessons count; invalid answers (double taps, other states) do not', () => {
+		const s = play([profile, scored('L1', 1, 4), scored('L1', 4, 4), scored('L1', 2, 4), ev({ type: 'PRACTICE_ANSWERED', itemId: 'p1', correct: true })]);
+		expect(s.course.chapter?.tally).toEqual({ correct: 7, total: 12 });
+		const dup = run(policy, play([profile, ...lessons('A1-01'), ...practice]), [gate(0)[0], gate(0)[0]]);
+		expect(dup.course.chapter?.tally).toEqual({ correct: 3, total: 3 });
+	});
+	it('a pass through the correction round stores the test with its errors', () => {
+		const s1 = play([...[profile], ...toTestReady('A1-01'), start('a1'), ...answers('a1', [3, 7])]);
+		const s2 = run(policy, s1, correction('a1', s1));
+		expect(s2.course.results['A1-01']).toMatchObject({ test: { correct: 18, total: 20 }, chapter: { correct: 42, total: 44 }, attemptNo: 1 });
+	});
+	it('a state saved before K6 still loads (tally and results default)', () => {
+		const s = play([profile]);
+		const { results: _r, ...course } = s.course;
+		const { tally: _t, ...chapter } = s.course.chapter!;
+		const parsed = GameState.parse({ ...s, course: { ...course, chapter } });
+		expect(parsed.course.results).toEqual({});
+		expect(parsed.course.chapter?.tally).toEqual({ correct: 0, total: 0 });
+	});
+});
