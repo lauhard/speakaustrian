@@ -148,7 +148,7 @@ Format:
 - Options: A no points (streak + lives are enough) · B points per correct item, highscore = best day · C points per completed lesson/chapter, highscore = total.
 - Blocks: nothing.
 
-## G-019 – Chapter rating 1–3 stars (K6)   (status: open)
+## G-019 – Chapter rating 1–3 stars (K6)   (status: decided – Andi, 18.11.2026: option A, `core/rating.ts`)
 - Found in: ticket 027 (trophy step), `docs/concepts/xp-flammen-kapitelfluss.md` K6
 - Spec says: K6 "Gesamtbewertung (1–3 Sterne)" – no thresholds, no basis (test %, chapter error rate, attempts).
 - Problem: agents may not invent the numbers. The trophy step shows test %, right/wrong and the chapter error rate, but no stars yet.

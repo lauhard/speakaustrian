@@ -13,7 +13,7 @@
 | K3 | **Übung: 20 Fragen** je Durchgang (Pool unverändert), **überspringbar** → direkt Testreife. | ChapterFlow, Konstante |
 | K4 | **Testreife nicht bestanden → Ziel-Stapel** (Pflicht): 2 Aufgaben je schwachem Lernziel, max. 10, mit Fortschritt „Ziel-Training x/n“; danach **Testreife neu** (neuer Block). Liste der unsicheren Lernziele bleibt. Konkretisiert V2. | Reducer (neuer Zustand `TARGET`) |
 | K5 | **Kapitelseite = Stepper:** Balken antippbar (Lektionen · Übung · Testreife · Test 🏆), gesperrte grau, immer **nur ein Schritt** sichtbar (kein Scrollen in andere Schritte). | UI |
-| K6 | **Ergebnis-Schritt 🏆:** Testergebnis (%, richtig/falsch), Fehlerquote des ganzen Kapitels, Gesamtbewertung (1–3 Sterne), Flammen, XP inkl. Bonus. Abgeschlossenes Kapitel öffnet hier. | UI |
+| K6 | **Ergebnis-Schritt 🏆** (eigener 5. Schritt, gesperrt bis bestanden): Testergebnis (%, richtig/falsch), Fehlerquote des ganzen Kapitels, Gesamtbewertung (1–3 Sterne: 1 = bestanden, 2 ab 70 %, 3 ab 90 % Trefferquote im Kapitel – G-019 A), Flammen, XP inkl. Bonus. Abgeschlossenes Kapitel öffnet hier. | UI |
 | K7 | **Herzen verdienen:** 10 Richtige in Folge in der Übung → +1 Herz für den nächsten Kapiteltest; max. 1 pro Kapitel; Obergrenze 5 Leben bleibt. Ergänzt Entscheidung 2; Wirkung auf D14 im Pilot prüfen. | Reducer/Policy |
 | K8 | **Flammen v2** (Abschn. 2) inkl. **Flammenschutz**. | `core/flames.ts` |
 | K9 | **XP + Level** (Abschn. 3), Flammen werden bei bestandenem Kapitel zum Multiplikator. | `core/xp.ts` |
