@@ -1,0 +1,5635 @@
+{
+	"chapterId": "A1-03",
+	"goals": {
+		"A1-03-G1": {
+			"de": "Sagen, woher man kommt (Land, Heimat)",
+			"en": "Saying where you come from (country, home)",
+			"tl": "Sabihin kung taga-saan ka (bansa, pinagmulan)"
+		},
+		"A1-03-G2": {
+			"de": "Sagen, wo man wohnt (Stadt, Dorf, Adresse)",
+			"en": "Saying where you live (town, village, address)",
+			"tl": "Sabihin kung saan ka nakatira (lungsod, baryo, address)"
+		},
+		"A1-03-G3": {
+			"de": "Über Sprachen sprechen",
+			"en": "Talking about languages",
+			"tl": "Pag-usapan ang mga wika"
+		},
+		"A1-03-G4": {
+			"de": "Nicht verstehen: um Wiederholung und langsames Sprechen bitten",
+			"en": "Not understanding: asking to repeat and to speak slowly",
+			"tl": "Hindi naintindihan: humiling na ulitin at bagalan"
+		},
+		"A1-03-G5": {
+			"de": "Ja/Nein-Fragen stellen und mit ja, nein, doch antworten",
+			"en": "Asking yes/no questions and answering with ja, nein, doch",
+			"tl": "Magtanong ng oo/hindi at sumagot ng ja, nein, doch"
+		},
+		"A1-03-G6": {
+			"de": "Nomen mit Artikel: der, die, das, ein, eine",
+			"en": "Nouns with articles: der, die, das, ein, eine",
+			"tl": "Noun na may article: der, die, das, ein, eine"
+		},
+		"A1-03-G7": {
+			"de": "Verben: sprechen, geben, nehmen, finden, suchen, wohnen",
+			"en": "Verbs: sprechen, geben, nehmen, finden, suchen, wohnen",
+			"tl": "Mga verb: sprechen, geben, nehmen, finden, suchen, wohnen"
+		},
+		"A1-03-G8": {
+			"de": "Österreich: Hauptstadt, Währung, Sprache, EU",
+			"en": "Austria: capital, currency, language, EU",
+			"tl": "Austria: kabisera, pera, wika, EU"
+		}
+	},
+	"pools": {
+		"practice": [
+			{
+				"id": "A1-03-P-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus Österreich.“",
+					"en": "You hear: “Ich komme aus Österreich.” (Austria)",
+					"tl": "Naririnig mo: “Ich komme aus Österreich.” (Austria)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Österreich",
+					"Deutschland"
+				],
+				"answer": 0,
+				"audioText": "Grüß Gott! Ich bin Lukas. Ich komme aus Österreich.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus den Philippinen.“",
+					"en": "You hear: “Ich komme aus den Philippinen.” (the Philippines)",
+					"tl": "Naririnig mo: “Ich komme aus den Philippinen.” (Pilipinas)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Philippinen",
+					"Schweiz"
+				],
+				"answer": 0,
+				"audioText": "Grüß Gott! Ich bin Jose. Ich komme aus den Philippinen.",
+				"audioOnly": true,
+				"family": "A1-03-P-HO1-1"
+			},
+			{
+				"id": "A1-03-P-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus der Schweiz.“",
+					"en": "You hear: “Ich komme aus der Schweiz.” (Switzerland)",
+					"tl": "Naririnig mo: “Ich komme aus der Schweiz.” (Switzerland)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Schweiz",
+					"Österreich"
+				],
+				"answer": 0,
+				"audioText": "Grüß Gott! Ich bin Anna. Ich komme aus der Schweiz.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO1-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus Deutschland.“",
+					"en": "You hear: “Ich komme aus Deutschland.” (Germany)",
+					"tl": "Naririnig mo: “Ich komme aus Deutschland.” (Germany)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Philippinen",
+					"Deutschland"
+				],
+				"answer": 1,
+				"audioText": "Grüß Gott! Ich bin Tom. Ich komme aus Deutschland.",
+				"audioOnly": true,
+				"family": "A1-03-P-HO1-3"
+			},
+			{
+				"id": "A1-03-P-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in Linz.“ Cebu ist die Heimat.",
+					"en": "You hear: “Ich wohne in Linz.” Cebu is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in Linz.” Cebu ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Linz",
+					"in Cebu"
+				],
+				"answer": 0,
+				"audioText": "Ich komme aus Cebu, aber ich wohne in Linz.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in Graz.“ München ist die Heimat.",
+					"en": "You hear: “Ich wohne in Graz.” München is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in Graz.” München ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Graz",
+					"in München"
+				],
+				"answer": 0,
+				"audioText": "Ich komme aus München, aber ich wohne in Graz.",
+				"audioOnly": true,
+				"family": "A1-03-P-HO2-1"
+			},
+			{
+				"id": "A1-03-P-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in Innsbruck.“ Zürich ist die Heimat.",
+					"en": "You hear: “Ich wohne in Innsbruck.” Zürich is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in Innsbruck.” Zürich ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Innsbruck",
+					"in Zürich"
+				],
+				"answer": 0,
+				"audioText": "Ich komme aus Zürich, aber ich wohne in Innsbruck.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO2-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in St. Pölten.“ Wien ist die Heimat.",
+					"en": "You hear: “Ich wohne in St. Pölten.” Wien is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in St. Pölten.” Wien ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in St. Pölten",
+					"in Wien"
+				],
+				"answer": 0,
+				"audioText": "Ich komme aus Wien, aber ich wohne in St. Pölten.",
+				"audioOnly": true,
+				"family": "A1-03-P-HO2-3"
+			},
+			{
+				"id": "A1-03-P-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche Deutsch, Englisch und Tagalog.“",
+					"en": "You hear: “Ich spreche Deutsch, Englisch und Tagalog.”",
+					"tl": "Naririnig mo: “Ich spreche Deutsch, Englisch und Tagalog.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"Deutsch, Englisch und Tagalog",
+					"Deutsch und Tagalog"
+				],
+				"answer": 0,
+				"audioText": "Ich spreche Deutsch, Englisch und Tagalog.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche nur Tagalog.“",
+					"en": "You hear: “Ich spreche nur Tagalog.”",
+					"tl": "Naririnig mo: “Ich spreche nur Tagalog.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"Tagalog und Deutsch",
+					"nur Tagalog"
+				],
+				"answer": 1,
+				"audioText": "Ich spreche nur Tagalog.",
+				"audioOnly": true,
+				"family": "A1-03-P-HO3-1"
+			},
+			{
+				"id": "A1-03-P-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche Englisch und Tagalog.“",
+					"en": "You hear: “Ich spreche Englisch und Tagalog.”",
+					"tl": "Naririnig mo: “Ich spreche Englisch und Tagalog.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"Englisch und Deutsch",
+					"Englisch und Tagalog"
+				],
+				"answer": 1,
+				"audioText": "Ich spreche Englisch und Tagalog.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO3-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche nur Englisch.“",
+					"en": "You hear: “Ich spreche nur Englisch.”",
+					"tl": "Naririnig mo: “Ich spreche nur Englisch.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"nur Englisch",
+					"Englisch und Deutsch"
+				],
+				"answer": 0,
+				"audioText": "Ich spreche nur Englisch.",
+				"audioOnly": true,
+				"family": "A1-03-P-HO3-3"
+			},
+			{
+				"id": "A1-03-P-HO4-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Wie heißen Sie?“ – passend ist: „Maria Santos.“",
+					"en": "You hear: “Wie heißen Sie?” – the fitting reply: “Maria Santos.”",
+					"tl": "Naririnig mo: “Wie heißen Sie?” – angkop: “Maria Santos.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"In Linz.",
+					"Maria Santos.",
+					"Aus Graz.",
+					"Deutsch und Englisch."
+				],
+				"answer": 1,
+				"audioText": "Wie heißen Sie?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO4-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Wie ist Ihre Adresse?“ – passend ist: „Hauptstraße 3.“",
+					"en": "You hear: “Wie ist Ihre Adresse?” – the fitting reply: “Hauptstraße 3.”",
+					"tl": "Naririnig mo: “Wie ist Ihre Adresse?” – angkop: “Hauptstraße 3.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"In Linz.",
+					"Hauptstraße 3.",
+					"Aus Graz.",
+					"Maria Santos."
+				],
+				"answer": 1,
+				"audioText": "Wie ist Ihre Adresse?",
+				"audioOnly": true,
+				"family": "A1-03-P-HO4-1"
+			},
+			{
+				"id": "A1-03-P-HO4-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Auf Wiederhören!“ – passend ist: „Auf Wiederhören!“",
+					"en": "You hear: “Auf Wiederhören!” – the fitting reply: “Auf Wiederhören!”",
+					"tl": "Naririnig mo: “Auf Wiederhören!” – angkop: “Auf Wiederhören!”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Auf Wiederhören!",
+					"Maria Santos.",
+					"Nein. Langsam, bitte!",
+					"In Linz."
+				],
+				"answer": 0,
+				"audioText": "Auf Wiederhören!",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO4-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Sprechen Sie nicht Deutsch?“ – passend ist: „Doch, ein bisschen.“",
+					"en": "You hear: “Sprechen Sie nicht Deutsch?” – the fitting reply: “Doch, ein bisschen.”",
+					"tl": "Naririnig mo: “Sprechen Sie nicht Deutsch?” – angkop: “Doch, ein bisschen.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"In Linz.",
+					"Aus Graz.",
+					"Maria Santos.",
+					"Doch, ein bisschen."
+				],
+				"answer": 3,
+				"audioText": "Sprechen Sie nicht Deutsch?",
+				"audioOnly": true,
+				"family": "A1-03-P-HO4-3"
+			},
+			{
+				"id": "A1-03-P-HO5-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wie ist die E-Mail-Adresse?",
+					"en": "Listen. What is the e-mail address?",
+					"tl": "Makinig. Ano ang e-mail address?"
+				},
+				"explanation": {
+					"de": "@ = „ät“, . = „Punkt“: lukas.berger@aon.at",
+					"en": "@ = “ät”, . = “Punkt”: lukas.berger@aon.at",
+					"tl": "@ = “ät”, . = “Punkt”: lukas.berger@aon.at"
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0373"
+				],
+				"options": [
+					"lukasberger@aon.at",
+					"lukas.berger@aon.at",
+					"lukas.berger@aon.de"
+				],
+				"answer": 1,
+				"audioText": "Das E-Mail ist: lukas Punkt berger ät a o n Punkt a t",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO5-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wie ist die E-Mail-Adresse?",
+					"en": "Listen. What is the e-mail address?",
+					"tl": "Makinig. Ano ang e-mail address?"
+				},
+				"explanation": {
+					"de": "@ = „ät“, . = „Punkt“: jose.cruz@gmx.at",
+					"en": "@ = “ät”, . = “Punkt”: jose.cruz@gmx.at",
+					"tl": "@ = “ät”, . = “Punkt”: jose.cruz@gmx.at"
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0373"
+				],
+				"options": [
+					"jose.cruz@gmx.at",
+					"jose.cruz@gmx.de",
+					"josecruz@gmx.at"
+				],
+				"answer": 0,
+				"audioText": "Das E-Mail ist: jose Punkt cruz ät g m x Punkt a t",
+				"audioOnly": true,
+				"family": "A1-03-P-HO5-1"
+			},
+			{
+				"id": "A1-03-P-HO6-1",
+				"type": "short",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Jemand buchstabiert. Schreiben Sie das Wort.",
+					"en": "Listen. Someone spells a word. Write the word.",
+					"tl": "Makinig. May nag-i-spell. Isulat ang salita."
+				},
+				"explanation": {
+					"de": "S, E, E, G, A, S, S, E: „Seegasse“.",
+					"en": "S, E, E, G, A, S, S, E: “Seegasse”.",
+					"tl": "S, E, E, G, A, S, S, E: “Seegasse”."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0369",
+					"W-A1-0312"
+				],
+				"prompt": "Die Straße:",
+				"accept": [
+					"Seegasse",
+					"Seegasse"
+				],
+				"audioText": "Die Straße heißt: s, e, e, g, a, s, s, e",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO6-2",
+				"type": "short",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Jemand buchstabiert. Schreiben Sie das Wort.",
+					"en": "Listen. Someone spells a word. Write the word.",
+					"tl": "Makinig. May nag-i-spell. Isulat ang salita."
+				},
+				"explanation": {
+					"de": "F, E, L, D, W, E, G: „Feldweg“.",
+					"en": "F, E, L, D, W, E, G: “Feldweg”.",
+					"tl": "F, E, L, D, W, E, G: “Feldweg”."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0369",
+					"W-A1-0312"
+				],
+				"prompt": "Die Straße:",
+				"accept": [
+					"Feldweg",
+					"Feldweg"
+				],
+				"audioText": "Die Straße heißt: f, e, l, d, w, e, g",
+				"audioOnly": true,
+				"family": "A1-03-P-HO6-1"
+			},
+			{
+				"id": "A1-03-P-HO6-3",
+				"type": "short",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Jemand buchstabiert. Schreiben Sie das Wort.",
+					"en": "Listen. Someone spells a word. Write the word.",
+					"tl": "Makinig. May nag-i-spell. Isulat ang salita."
+				},
+				"explanation": {
+					"de": "K, I, R, C, H, P, L, A, T, Z: „Kirchplatz“.",
+					"en": "K, I, R, C, H, P, L, A, T, Z: “Kirchplatz”.",
+					"tl": "K, I, R, C, H, P, L, A, T, Z: “Kirchplatz”."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0369",
+					"W-A1-0312"
+				],
+				"prompt": "Die Straße:",
+				"accept": [
+					"Kirchplatz",
+					"Kirchplatz"
+				],
+				"audioText": "Die Straße heißt: k, i, r, c, h, p, l, a, t, z",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-P-HO6-4",
+				"type": "short",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Jemand buchstabiert. Schreiben Sie das Wort.",
+					"en": "Listen. Someone spells a word. Write the word.",
+					"tl": "Makinig. May nag-i-spell. Isulat ang salita."
+				},
+				"explanation": {
+					"de": "R, I, N, G, S, T, R, A, S, S, E: „Ringstraße“.",
+					"en": "R, I, N, G, S, T, R, A, S, S, E: “Ringstraße”.",
+					"tl": "R, I, N, G, S, T, R, A, S, S, E: “Ringstraße”."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0369",
+					"W-A1-0312"
+				],
+				"prompt": "Die Straße:",
+				"accept": [
+					"Ringstraße",
+					"Ringstrasse"
+				],
+				"audioText": "Die Straße heißt: r, i, n, g, s, t, r, a, s, s, e",
+				"audioOnly": true,
+				"family": "A1-03-P-HO6-3"
+			},
+			{
+				"id": "A1-03-P-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich komme aus der Schweiz.“",
+					"en": "The text says: “Ich komme aus der Schweiz.”",
+					"tl": "Sabi sa teksto: “Ich komme aus der Schweiz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"aus Innsbruck",
+					"aus Deutschland",
+					"aus der Schweiz"
+				],
+				"answer": 2,
+				"prompt": "Hallo! Ich heiße Sofia. Ich komme aus der Schweiz. Ich wohne in Innsbruck. Ich spreche Deutsch und Englisch.\nWoher kommt Sofia?"
+			},
+			{
+				"id": "A1-03-P-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich wohne in Linz.“",
+					"en": "The text says: “Ich wohne in Linz.”",
+					"tl": "Sabi sa teksto: “Ich wohne in Linz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"in den Philippinen",
+					"in Linz",
+					"in Wien"
+				],
+				"answer": 1,
+				"prompt": "Hallo! Ich heiße Jose. Ich komme aus den Philippinen. Ich wohne in Linz. Ich spreche Tagalog und Deutsch.\nWo wohnt Jose?",
+				"family": "A1-03-P-LE1-1"
+			},
+			{
+				"id": "A1-03-P-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich spreche Deutsch und Englisch.“",
+					"en": "The text says: “Ich spreche Deutsch und Englisch.”",
+					"tl": "Sabi sa teksto: “Ich spreche Deutsch und Englisch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"nur Englisch",
+					"Deutsch und Tagalog",
+					"Deutsch und Englisch"
+				],
+				"answer": 2,
+				"prompt": "Hallo! Ich heiße Anna. Ich komme aus Österreich. Ich wohne in Klagenfurt. Ich spreche Deutsch und Englisch.\nWelche Sprachen spricht Anna?"
+			},
+			{
+				"id": "A1-03-P-LE1-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich komme aus Deutschland. Ich wohne in Wien.“",
+					"en": "The text says: “Ich komme aus Deutschland. Ich wohne in Wien.”",
+					"tl": "Sabi sa teksto: “Ich komme aus Deutschland. Ich wohne in Wien.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"Lukas wohnt in Wien.",
+					"Lukas kommt aus Wien.",
+					"Lukas spricht Englisch."
+				],
+				"answer": 0,
+				"prompt": "Hallo! Ich heiße Lukas. Ich komme aus Deutschland. Ich wohne in Wien. Ich spreche Deutsch.\nWas ist richtig?",
+				"family": "A1-03-P-LE1-3"
+			},
+			{
+				"id": "A1-03-P-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: 7.",
+					"en": "Read the card: 7.",
+					"tl": "Basahin ang card: 7."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"9020",
+					"7",
+					"20"
+				],
+				"answer": 1,
+				"prompt": "Lukas Mayer\nRingstraße 7\n9020 Klagenfurt\nE-Mail: l.mayer@aon.at\nWas ist die Hausnummer?"
+			},
+			{
+				"id": "A1-03-P-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: Feldweg.",
+					"en": "Read the card: Feldweg.",
+					"tl": "Basahin ang card: Feldweg."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"Feldweg",
+					"Graz",
+					"Santos"
+				],
+				"answer": 0,
+				"prompt": "Maria Santos\nFeldweg 2\n8010 Graz\nE-Mail: maria.s@gmx.at\nWie heißt die Straße?",
+				"family": "A1-03-P-LE2-1"
+			},
+			{
+				"id": "A1-03-P-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: 1010.",
+					"en": "Read the card: 1010.",
+					"tl": "Basahin ang card: 1010."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"1010",
+					"15",
+					"1100"
+				],
+				"answer": 0,
+				"prompt": "Ali Novak\nSeegasse 15\n1010 Wien\nE-Mail: ali.novak@gmx.at\nWie ist die Postleitzahl?"
+			},
+			{
+				"id": "A1-03-P-LE2-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: Innsbruck.",
+					"en": "Read the card: Innsbruck.",
+					"tl": "Basahin ang card: Innsbruck."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"Weber",
+					"Kirchplatz",
+					"Innsbruck"
+				],
+				"answer": 2,
+				"prompt": "Tom Weber\nKirchplatz 1\n6020 Innsbruck\nE-Mail: tom.weber@aon.at\nIn welcher Stadt wohnt Tom?",
+				"family": "A1-03-P-LE2-3"
+			},
+			{
+				"id": "A1-03-P-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Auf der Karte sind Deutschland, Österreich und die Schweiz.",
+					"en": "The map shows Germany, Austria and Switzerland.",
+					"tl": "Nasa mapa ang Germany, Austria at Switzerland."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0096"
+				],
+				"options": [
+					"Deutschland",
+					"die Schweiz",
+					"die Philippinen"
+				],
+				"answer": 2,
+				"prompt": "Welches Land ist nicht auf der Karte?",
+				"image": {
+					"src": "/img/a1-03-karte.svg",
+					"alt": {
+						"de": "Eine Karte mit Deutschland, Österreich und der Schweiz. Ein Punkt zeigt eine Stadt.",
+						"en": "A map with Germany, Austria and Switzerland. A dot marks a city.",
+						"tl": "Mapa na may Germany, Austria at Switzerland. May tuldok para sa isang lungsod."
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Deutschland, Österreich, die Schweiz: drei Länder.",
+					"en": "Germany, Austria, Switzerland: three countries.",
+					"tl": "Germany, Austria, Switzerland: tatlong bansa."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0096"
+				],
+				"options": [
+					"zwei",
+					"vier",
+					"drei"
+				],
+				"answer": 2,
+				"prompt": "Wie viele Länder sind auf der Karte?",
+				"image": {
+					"src": "/img/a1-03-karte.svg",
+					"alt": {
+						"de": "Eine Karte mit Deutschland, Österreich und der Schweiz. Ein Punkt zeigt eine Stadt.",
+						"en": "A map with Germany, Austria and Switzerland. A dot marks a city.",
+						"tl": "Mapa na may Germany, Austria at Switzerland. May tuldok para sa isang lungsod."
+					}
+				},
+				"family": "A1-03-P-LE3-1"
+			},
+			{
+				"id": "A1-03-P-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Doch, ich verstehe.“ = B versteht.",
+					"en": "“Doch, ich verstehe.” = B understands.",
+					"tl": "“Doch, ich verstehe.” = naiintindihan ni B."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "A: Verstehen Sie nicht?\nB: Doch, ich verstehe.\nVersteht B?"
+			},
+			{
+				"id": "A1-03-P-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "B wohnt in Wels, nicht in Linz.",
+					"en": "B lives in Wels, not in Linz.",
+					"tl": "Sa Wels nakatira si B, hindi sa Linz."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 1,
+				"prompt": "A: Wohnen Sie in Linz?\nB: Nein, in Wels.\nWohnt B in Linz?",
+				"family": "A1-03-P-LE4-1"
+			},
+			{
+				"id": "A1-03-P-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Doch!“ = ja, B spricht Tagalog.",
+					"en": "“Doch!” = yes, B speaks Tagalog.",
+					"tl": "“Doch!” = oo, marunong ng Tagalog si B."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "A: Sprichst du nicht Tagalog?\nB: Doch!\nSpricht B Tagalog?"
+			},
+			{
+				"id": "A1-03-P-LE4-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "B kommt aus Deutschland.",
+					"en": "B comes from Germany.",
+					"tl": "Taga-Germany si B."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 0,
+				"prompt": "A: Kommst du aus der Schweiz?\nB: Nein, aus Deutschland.\nKommt B aus der Schweiz?",
+				"family": "A1-03-P-LE4-3"
+			},
+			{
+				"id": "A1-03-P-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Österreich, Wohnort = Salzburg.",
+					"en": "Home country = Österreich, place of residence = Salzburg.",
+					"tl": "Sariling bansa = Österreich, tirahan = Salzburg."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Anna Huber. Ich komme aus Österreich und wohne jetzt in Salzburg.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Österreich"
+						]
+					},
+					"2": {
+						"accept": [
+							"Salzburg"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Philippinen, Wohnort = Innsbruck.",
+					"en": "Home country = Philippinen, place of residence = Innsbruck.",
+					"tl": "Sariling bansa = Philippinen, tirahan = Innsbruck."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Maria Santos. Ich komme aus den Philippinen und wohne jetzt in Innsbruck.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Philippinen",
+							"die Philippinen"
+						]
+					},
+					"2": {
+						"accept": [
+							"Innsbruck"
+						]
+					}
+				},
+				"family": "A1-03-P-SC1-1"
+			},
+			{
+				"id": "A1-03-P-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Deutschland, Wohnort = Klagenfurt.",
+					"en": "Home country = Deutschland, place of residence = Klagenfurt.",
+					"tl": "Sariling bansa = Deutschland, tirahan = Klagenfurt."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Lukas Mayer. Ich komme aus Deutschland und wohne jetzt in Klagenfurt.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Deutschland"
+						]
+					},
+					"2": {
+						"accept": [
+							"Klagenfurt"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-SC1-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Österreich, Wohnort = Wels.",
+					"en": "Home country = Österreich, place of residence = Wels.",
+					"tl": "Sariling bansa = Österreich, tirahan = Wels."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Ali Novak. Ich komme aus Österreich und wohne jetzt in Wels.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Österreich"
+						]
+					},
+					"2": {
+						"accept": [
+							"Wels"
+						]
+					}
+				},
+				"family": "A1-03-P-SC1-3"
+			},
+			{
+				"id": "A1-03-P-SC2-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (Linz)",
+					"en": "Answer. (You live in Linz)",
+					"tl": "Sumagot. (Nakatira ka sa Linz)"
+				},
+				"explanation": {
+					"de": "Antwort: „Ich wohne in Linz.“",
+					"en": "Answer: “Ich wohne in Linz.”",
+					"tl": "Sagot: “Ich wohne in Linz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Wo wohnst du?\nIch {{1}} {{2}} Linz.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"2": {
+						"accept": [
+							"in"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-SC2-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (Österreich)",
+					"en": "Answer. (You come from Austria)",
+					"tl": "Sumagot. (Taga-Austria ka)"
+				},
+				"explanation": {
+					"de": "Antwort: „Ich komme aus Österreich.“",
+					"en": "Answer: “Ich komme aus Österreich.”",
+					"tl": "Sagot: “Ich komme aus Österreich.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Woher kommst du?\nIch {{1}} {{2}} Österreich.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"aus"
+						]
+					}
+				},
+				"family": "A1-03-P-SC2-1"
+			},
+			{
+				"id": "A1-03-P-SC2-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (ja)",
+					"en": "Answer. (Yes, you do)",
+					"tl": "Sumagot. (Oo)"
+				},
+				"explanation": {
+					"de": "Antwort: „Ja, ich spreche Englisch.“",
+					"en": "Answer: “Ja, ich spreche Englisch.”",
+					"tl": "Sagot: “Ja, ich spreche Englisch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Sprechen Sie Englisch?\n{{1}}, ich {{2}} Englisch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Ja"
+						]
+					},
+					"2": {
+						"accept": [
+							"spreche"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-SC2-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (Sie sprechen Deutsch)",
+					"en": "Answer. (You do speak German)",
+					"tl": "Sumagot. (Marunong ka ng German)"
+				},
+				"explanation": {
+					"de": "Antwort: „Doch, ich spreche Deutsch.“",
+					"en": "Answer: “Doch, ich spreche Deutsch.”",
+					"tl": "Sagot: “Doch, ich spreche Deutsch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Sprechen Sie nicht Deutsch?\n{{1}}, ich spreche Deutsch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Doch"
+						]
+					}
+				},
+				"family": "A1-03-P-SC2-3"
+			},
+			{
+				"id": "A1-03-P-SC3-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Jose. Ich {{1}} aus den Philippinen und {{2}} in Linz. Ich {{3}} Tagalog und Deutsch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-SC3-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Anna. Ich {{1}} aus Österreich und {{2}} in Wien. Ich {{3}} Englisch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				},
+				"family": "A1-03-P-SC3-1"
+			},
+			{
+				"id": "A1-03-P-SC3-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Tom. Ich {{1}} aus Deutschland und {{2}} in Innsbruck. Ich {{3}} Deutsch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-SC3-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Ali. Ich {{1}} aus Österreich und {{2}} in Wels. Ich {{3}} Deutsch und Englisch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				},
+				"family": "A1-03-P-SC3-3"
+			},
+			{
+				"id": "A1-03-P-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kommen aus Österreich. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You come from Austria. What do you say? Choose, then say it aloud.",
+					"tl": "Taga-Austria ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich komme aus Österreich.“",
+					"en": "Fitting: “Ich komme aus Österreich.”",
+					"tl": "Angkop: “Ich komme aus Österreich.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich komme in Österreich.",
+					"Ich komme aus Österreich.",
+					"Ich bin aus Österreich kommen."
+				],
+				"answer": 1,
+				"prompt": "Woher kommst du?"
+			},
+			{
+				"id": "A1-03-P-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wohnen in Wien. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You live in Vienna. What do you say? Choose, then say it aloud.",
+					"tl": "Nakatira ka sa Vienna. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich wohne in Wien.“",
+					"en": "Fitting: “Ich wohne in Wien.”",
+					"tl": "Angkop: “Ich wohne in Wien.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich wohnst in Wien.",
+					"Ich wohne aus Wien.",
+					"Ich wohne in Wien."
+				],
+				"answer": 2,
+				"prompt": "Wo wohnst du?",
+				"family": "A1-03-P-SP1-1"
+			},
+			{
+				"id": "A1-03-P-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen Englisch. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You speak English. What do you say? Choose, then say it aloud.",
+					"tl": "Marunong ka ng Ingles. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ja, ich spreche Englisch.“",
+					"en": "Fitting: “Ja, ich spreche Englisch.”",
+					"tl": "Angkop: “Ja, ich spreche Englisch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ja, ich spreche Englisch.",
+					"Doch, ich spreche Englisch.",
+					"Ja, ich bin Englisch."
+				],
+				"answer": 0,
+				"prompt": "Sprechen Sie Englisch?"
+			},
+			{
+				"id": "A1-03-P-SP1-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Ihr Heimatland ist Deutschland. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "Your home country is Germany. What do you say? Choose, then say it aloud.",
+					"tl": "Germany ang sariling bansa mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Deutschland.“",
+					"en": "Fitting: “Deutschland.”",
+					"tl": "Angkop: “Deutschland.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"In Deutschland wohnen.",
+					"Aus Deutschland heißen.",
+					"Deutschland."
+				],
+				"answer": 2,
+				"prompt": "Was ist Ihr Heimatland?",
+				"family": "A1-03-P-SP1-3"
+			},
+			{
+				"id": "A1-03-P-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „Adresse?“ passt: „Wie ist Ihre Adresse?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “Adresse?”: “Wie ist Ihre Adresse?” (exam: speaking part 2).",
+					"tl": "Para sa word card “Adresse?”: “Wie ist Ihre Adresse?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Wo wohnen Sie?",
+					"Wie heißen Sie?",
+					"Wie ist Ihre Adresse?"
+				],
+				"answer": 2,
+				"prompt": "Wortkarte: Adresse?"
+			},
+			{
+				"id": "A1-03-P-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „Hobby?“ passt: „Was ist Ihr Hobby?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “Hobby?”: “Was ist Ihr Hobby?” (exam: speaking part 2).",
+					"tl": "Para sa word card “Hobby?”: “Was ist Ihr Hobby?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Was ist Ihr Hobby?",
+					"Welche Sprachen sprechen Sie?",
+					"Wie heißen Sie?"
+				],
+				"answer": 0,
+				"prompt": "Wortkarte: Hobby?",
+				"family": "A1-03-P-SP2-1"
+			},
+			{
+				"id": "A1-03-P-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „E-Mail?“ passt: „Wie ist Ihr E-Mail?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “E-Mail?”: “Wie ist Ihr E-Mail?” (exam: speaking part 2).",
+					"tl": "Para sa word card “E-Mail?”: “Wie ist Ihr E-Mail?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Wie ist Ihre Adresse?",
+					"Wie ist Ihr E-Mail?",
+					"Wo wohnen Sie?"
+				],
+				"answer": 1,
+				"prompt": "Wortkarte: E-Mail?"
+			},
+			{
+				"id": "A1-03-P-SP2-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „Name?“ passt: „Wie heißen Sie?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “Name?”: “Wie heißen Sie?” (exam: speaking part 2).",
+					"tl": "Para sa word card “Name?”: “Wie heißen Sie?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Woher kommen Sie?",
+					"Wie heißen Sie?",
+					"Was ist Ihr Hobby?"
+				],
+				"answer": 1,
+				"prompt": "Wortkarte: Name?",
+				"family": "A1-03-P-SP2-3"
+			},
+			{
+				"id": "A1-03-P-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie möchten Englisch sprechen. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You would like to speak English. What do you say? Choose, then say it aloud.",
+					"tl": "Gusto mong mag-Ingles. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Sprechen Sie Englisch?“",
+					"en": "Fitting: “Sprechen Sie Englisch?”",
+					"tl": "Angkop: “Sprechen Sie Englisch?”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Wie schreibt man das?",
+					"Sprechen Sie Englisch?",
+					"Auf Wiederhören!"
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-03-P-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Das Telefongespräch ist zu Ende. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "The phone call is over. What do you say? Choose, then say it aloud.",
+					"tl": "Tapos na ang tawag sa telepono. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Auf Wiederhören!“",
+					"en": "Fitting: “Auf Wiederhören!”",
+					"tl": "Angkop: “Auf Wiederhören!”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Wiederholen Sie, bitte.",
+					"Auf Wiederhören!",
+					"Sprechen Sie Englisch?"
+				],
+				"answer": 1,
+				"family": "A1-03-P-SP3-1"
+			},
+			{
+				"id": "A1-03-P-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie verstehen nichts. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You understand nothing. What do you say? Choose, then say it aloud.",
+					"tl": "Wala kang naintindihan. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich verstehe nicht.“",
+					"en": "Fitting: “Ich verstehe nicht.”",
+					"tl": "Angkop: “Ich verstehe nicht.”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Ich verstehe nicht.",
+					"Auf Wiederhören!",
+					"Sprechen Sie Englisch?"
+				],
+				"answer": 0
+			},
+			{
+				"id": "A1-03-P-SP3-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Die Person spricht sehr schnell. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "The person talks very fast. What do you say? Choose, then say it aloud.",
+					"tl": "Masyadong mabilis magsalita ang tao. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Langsam, bitte!“",
+					"en": "Fitting: “Langsam, bitte!”",
+					"tl": "Angkop: “Langsam, bitte!”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Wie schreibt man das?",
+					"Ich verstehe nicht.",
+					"Langsam, bitte!"
+				],
+				"answer": 2,
+				"family": "A1-03-P-SP3-3"
+			},
+			{
+				"id": "A1-03-P-SP4-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Jose – Philippinen – Graz. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Jose – Philippinen – Graz. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Jose – Philippinen – Graz. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Jose. Ich komme aus den Philippinen und wohne in Graz.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Jose. Ich komme aus den Philippinen und wohne in Graz.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Jose. Ich komme aus den Philippinen und wohne in Graz.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Jose. Ich komme aus den Philippinen und wohne in Graz.",
+					"Ich heiße Jose. Ich wohne aus den Philippinen und komme in Graz.",
+					"Ich heiße Jose. Ich komme in Graz und wohne aus den Philippinen."
+				],
+				"answer": 0
+			},
+			{
+				"id": "A1-03-P-SP4-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Anna – Österreich – Klagenfurt. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Anna – Österreich – Klagenfurt. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Anna – Österreich – Klagenfurt. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Anna. Ich komme aus Österreich und wohne in Klagenfurt.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Anna. Ich komme aus Österreich und wohne in Klagenfurt.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Anna. Ich komme aus Österreich und wohne in Klagenfurt.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Anna. Ich komme aus Österreich und wohne in Klagenfurt.",
+					"Ich heiße Anna. Ich komme in Österreich und wohne aus Klagenfurt.",
+					"Ich heiße Anna. Ich wohne aus Österreich."
+				],
+				"answer": 0,
+				"family": "A1-03-P-SP4-1"
+			},
+			{
+				"id": "A1-03-P-SP4-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Ali – Österreich – Linz. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Ali – Österreich – Linz. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Ali – Österreich – Linz. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Ali. Ich komme aus Österreich und wohne in Linz.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Ali. Ich komme aus Österreich und wohne in Linz.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Ali. Ich komme aus Österreich und wohne in Linz.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Ali. Ich wohne aus Österreich und komme in Linz.",
+					"Ich heiße Ali. Ich komme aus Österreich und wohne in Linz.",
+					"Ich heiße Ali. Ich komme aus Linz und wohne in Österreich."
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-03-P-SP4-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Lukas – Deutschland – Wien. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Lukas – Deutschland – Wien. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Lukas – Deutschland – Wien. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Lukas. Ich komme in Deutschland und wohne aus Wien.",
+					"Ich heiße Lukas. Ich komme aus Deutschland und wohne in Wien.",
+					"Ich heiße Lukas. Ich komme aus Wien und wohne in Deutschland."
+				],
+				"answer": 1,
+				"family": "A1-03-P-SP4-3"
+			},
+			{
+				"id": "A1-03-P-SP5-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie verstehen. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You understand. Answer. Choose, then say it aloud.",
+					"tl": "Naiintindihan mo. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, ich verstehe.",
+					"Doch, ich verstehe.",
+					"Ja, ich verstehe nicht."
+				],
+				"answer": 1,
+				"prompt": "Verstehen Sie nicht?"
+			},
+			{
+				"id": "A1-03-P-SP5-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen Englisch. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You speak English. Answer. Choose, then say it aloud.",
+					"tl": "Marunong ka ng Ingles. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Doch, ich spreche Englisch.",
+					"Nein, ich spreche Englisch.",
+					"Ja, ich spreche Englisch."
+				],
+				"answer": 2,
+				"prompt": "Sprechen Sie Englisch?",
+				"family": "A1-03-P-SP5-1"
+			},
+			{
+				"id": "A1-03-P-SP5-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kommen nicht aus der Schweiz. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You do not come from Switzerland. Answer. Choose, then say it aloud.",
+					"tl": "Hindi ka taga-Switzerland. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Doch, ich komme aus Österreich.",
+					"Ja, ich komme aus Österreich.",
+					"Nein, ich komme aus Österreich."
+				],
+				"answer": 2,
+				"prompt": "Kommen Sie aus der Schweiz?"
+			},
+			{
+				"id": "A1-03-P-SP5-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wohnen in einem Dorf. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You live in a village. Answer. Choose, then say it aloud.",
+					"tl": "Nakatira ka sa baryo. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, in einem Dorf.",
+					"Ja, nicht in einem Dorf.",
+					"Doch, in einem Dorf."
+				],
+				"answer": 2,
+				"prompt": "Wohnen Sie nicht in einem Dorf?",
+				"family": "A1-03-P-SP5-3"
+			},
+			{
+				"id": "A1-03-P-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "die Sprache. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "die Sprache. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "die Sprache. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0303"
+				],
+				"options": [
+					"die",
+					"der",
+					"das"
+				],
+				"answer": 0,
+				"prompt": "… Sprache"
+			},
+			{
+				"id": "A1-03-P-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "das Land. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "das Land. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "das Land. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0355"
+				],
+				"options": [
+					"das",
+					"der",
+					"die"
+				],
+				"answer": 0,
+				"prompt": "… Land",
+				"family": "A1-03-P-GW1-1"
+			},
+			{
+				"id": "A1-03-P-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "die Adresse. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "die Adresse. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "die Adresse. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0368"
+				],
+				"options": [
+					"der",
+					"das",
+					"die"
+				],
+				"answer": 2,
+				"prompt": "… Adresse"
+			},
+			{
+				"id": "A1-03-P-GW1-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "das Hobby. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "das Hobby. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "das Hobby. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0375"
+				],
+				"options": [
+					"das",
+					"der",
+					"die"
+				],
+				"answer": 0,
+				"prompt": "… Hobby",
+				"family": "A1-03-P-GW1-3"
+			},
+			{
+				"id": "A1-03-P-GW2-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Österreich ist {{1}} Land.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"ein"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-GW2-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Jose ist {{1}} Mensch aus Manila.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"ein"
+						]
+					}
+				},
+				"family": "A1-03-P-GW2-1"
+			},
+			{
+				"id": "A1-03-P-GW2-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Das ist {{1}} Straße in Graz.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"eine"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-GW2-4",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Das ist {{1}} Adresse in Wien.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"eine"
+						]
+					}
+				},
+				"family": "A1-03-P-GW2-3"
+			},
+			{
+				"id": "A1-03-P-GW3-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "sprechen: du sprichst.",
+					"en": "sprechen: du sprichst. – irregular forms",
+					"tl": "sprechen: du sprichst. – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0131"
+				],
+				"text": "Du {{1}} Deutsch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"sprichst"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-GW3-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "geben: sie gibt.",
+					"en": "geben: sie gibt. – irregular forms",
+					"tl": "geben: sie gibt. – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0137"
+				],
+				"text": "Maria {{1}} mir die Adresse.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"gibt"
+						]
+					}
+				},
+				"family": "A1-03-P-GW3-1"
+			},
+			{
+				"id": "A1-03-P-GW3-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "nehmen: du nimmst.",
+					"en": "nehmen: du nimmst. – irregular forms",
+					"tl": "nehmen: du nimmst. – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0138"
+				],
+				"text": "Du {{1}} das.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nimmst"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-GW3-4",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "finden: er findet (mit -et).",
+					"en": "finden: er findet (with -et). – irregular forms",
+					"tl": "finden: er findet (may -et). – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0140"
+				],
+				"text": "Er {{1}} die Straße nicht.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"findet"
+						]
+					}
+				},
+				"family": "A1-03-P-GW3-3"
+			},
+			{
+				"id": "A1-03-P-GW4-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Spricht er Englisch?",
+					"Er Englisch spricht?",
+					"Englisch er spricht?"
+				],
+				"answer": 0
+			},
+			{
+				"id": "A1-03-P-GW4-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Woher kommen Sie?",
+					"Woher Sie kommen?",
+					"Sie woher kommen?"
+				],
+				"answer": 0,
+				"family": "A1-03-P-GW4-1"
+			},
+			{
+				"id": "A1-03-P-GW4-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Sie Deutsch verstehen?",
+					"Verstehen Sie Deutsch?",
+					"Deutsch Sie verstehen?"
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-03-P-GW4-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Wo die Bahnhofstraße ist?",
+					"Die Bahnhofstraße wo ist?",
+					"Wo ist die Bahnhofstraße?"
+				],
+				"answer": 2,
+				"family": "A1-03-P-GW4-3"
+			},
+			{
+				"id": "A1-03-P-GW5-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"in",
+					"aus",
+					"wo"
+				],
+				"answer": 1,
+				"prompt": "Jose kommt … den Philippinen."
+			},
+			{
+				"id": "A1-03-P-GW5-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"aus",
+					"in",
+					"woher"
+				],
+				"answer": 1,
+				"prompt": "Wir wohnen … einem Dorf.",
+				"family": "A1-03-P-GW5-1"
+			},
+			{
+				"id": "A1-03-P-GW5-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"Wo",
+					"Wie",
+					"Woher"
+				],
+				"answer": 2,
+				"prompt": "… kommen Sie? – Aus Linz."
+			},
+			{
+				"id": "A1-03-P-GW5-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"aus",
+					"woher",
+					"in"
+				],
+				"answer": 2,
+				"prompt": "Anna wohnt … Salzburg.",
+				"family": "A1-03-P-GW5-3"
+			},
+			{
+				"id": "A1-03-P-GW6-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mann: Österreicher, Philippiner. Frau: mit -in.",
+					"en": "Man: Österreicher, Philippiner. Woman: with -in.",
+					"tl": "Lalaki: Österreicher, Philippiner. Babae: may -in."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0358",
+					"W-A1-0363"
+				],
+				"options": [
+					"Philippiner",
+					"Philippinerin",
+					"Österreicherin"
+				],
+				"answer": 1,
+				"prompt": "Maria kommt aus den Philippinen. Sie ist …"
+			},
+			{
+				"id": "A1-03-P-GW6-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mann: Österreicher, Philippiner. Frau: mit -in.",
+					"en": "Man: Österreicher, Philippiner. Woman: with -in.",
+					"tl": "Lalaki: Österreicher, Philippiner. Babae: may -in."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0358",
+					"W-A1-0363"
+				],
+				"options": [
+					"Österreicher",
+					"Österreicherin",
+					"Philippiner"
+				],
+				"answer": 0,
+				"prompt": "Lukas kommt aus Wien. Er ist …",
+				"family": "A1-03-P-GW6-1"
+			},
+			{
+				"id": "A1-03-P-GW6-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mann: Österreicher, Philippiner. Frau: mit -in.",
+					"en": "Man: Österreicher, Philippiner. Woman: with -in.",
+					"tl": "Lalaki: Österreicher, Philippiner. Babae: may -in."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0358",
+					"W-A1-0363"
+				],
+				"options": [
+					"Philippinerin",
+					"Philippiner",
+					"Österreicher"
+				],
+				"answer": 1,
+				"prompt": "Herr Santos kommt aus Manila. Er ist …"
+			},
+			{
+				"id": "A1-03-P-GW6-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mann: Österreicher, Philippiner. Frau: mit -in.",
+					"en": "Man: Österreicher, Philippiner. Woman: with -in.",
+					"tl": "Lalaki: Österreicher, Philippiner. Babae: may -in."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0358",
+					"W-A1-0363"
+				],
+				"options": [
+					"Österreicher",
+					"Philippinerin",
+					"Österreicherin"
+				],
+				"answer": 2,
+				"prompt": "Frau Huber kommt aus Graz. Sie ist …",
+				"family": "A1-03-P-GW6-3"
+			},
+			{
+				"id": "A1-03-P-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Wien ist die Hauptstadt. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Vienna is the capital. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Kabisera ang Vienna. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"ein Dorf in Österreich",
+					"die Hauptstadt von Österreich"
+				],
+				"answer": 1,
+				"prompt": "Wien ist …"
+			},
+			{
+				"id": "A1-03-P-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Die Amtssprache ist Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "The official language is German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "German ang wika sa opisina. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Deutsch",
+					"Englisch"
+				],
+				"answer": 0,
+				"prompt": "Welche Sprache spricht man auf dem Amt in Österreich?",
+				"family": "A1-03-P-WE1-1"
+			},
+			{
+				"id": "A1-03-P-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "EU = Europäische Union. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "EU = European Union. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "EU = European Union. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Europäische Union",
+					"Europäische Stadt"
+				],
+				"answer": 0,
+				"prompt": "EU heißt …"
+			},
+			{
+				"id": "A1-03-P-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Auch Deutschland ist in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Germany is in the EU too. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Nasa EU rin ang Germany. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Ist Deutschland in der EU?",
+				"family": "A1-03-P-WE2-1"
+			},
+			{
+				"id": "A1-03-P-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mit Deutsch findet man leichter Arbeit. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "With German it is easier to find work. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Mas madaling makahanap ng trabaho kung marunong ng German. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Hilft Deutsch bei der Arbeit?"
+			},
+			{
+				"id": "A1-03-P-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Auf dem Amt spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "At the office people speak German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "German ang gamit sa opisina. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Hilft Deutsch auf dem Amt?",
+				"family": "A1-03-P-WE3-1"
+			},
+			{
+				"id": "A1-03-P-WE4-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Wien",
+					"Graz"
+				],
+				"answer": 0,
+				"prompt": "Die Hauptstadt im Bild ist …",
+				"image": {
+					"src": "/img/a1-03-oesterreich.svg",
+					"alt": {
+						"de": "Österreich mit einem Stern für die Hauptstadt, eine Euro-Münze, die Flagge der EU und die Flagge von Österreich.",
+						"en": "Austria with a star for the capital, a euro coin, the EU flag and the Austrian flag.",
+						"tl": "Austria na may bituin para sa kabisera, euro coin, bandila ng EU at ng Austria."
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-WE4-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Euro. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Euro. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Euro. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"der Dollar",
+					"der Euro"
+				],
+				"answer": 1,
+				"prompt": "Das Geld im Bild ist …",
+				"image": {
+					"src": "/img/a1-03-oesterreich.svg",
+					"alt": {
+						"de": "Österreich mit einem Stern für die Hauptstadt, eine Euro-Münze, die Flagge der EU und die Flagge von Österreich.",
+						"en": "Austria with a star for the capital, a euro coin, the EU flag and the Austrian flag.",
+						"tl": "Austria na may bituin para sa kabisera, euro coin, bandila ng EU at ng Austria."
+					}
+				},
+				"family": "A1-03-P-WE4-1"
+			},
+			{
+				"id": "A1-03-P-WE4-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein, Wien.",
+					"Ja."
+				],
+				"answer": 0,
+				"prompt": "Ist Graz die Hauptstadt?",
+				"image": {
+					"src": "/img/a1-03-oesterreich.svg",
+					"alt": {
+						"de": "Österreich mit einem Stern für die Hauptstadt, eine Euro-Münze, die Flagge der EU und die Flagge von Österreich.",
+						"en": "Austria with a star for the capital, a euro coin, the EU flag and the Austrian flag.",
+						"tl": "Austria na may bituin para sa kabisera, euro coin, bandila ng EU at ng Austria."
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-WE4-4",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "EU. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "EU. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Schweiz",
+					"EU"
+				],
+				"answer": 1,
+				"prompt": "Im Bild ist die Flagge von Österreich und die Flagge der …",
+				"image": {
+					"src": "/img/a1-03-oesterreich.svg",
+					"alt": {
+						"de": "Österreich mit einem Stern für die Hauptstadt, eine Euro-Münze, die Flagge der EU und die Flagge von Österreich.",
+						"en": "Austria with a star for the capital, a euro coin, the EU flag and the Austrian flag.",
+						"tl": "Austria na may bituin para sa kabisera, euro coin, bandila ng EU at ng Austria."
+					}
+				},
+				"family": "A1-03-P-WE4-3"
+			},
+			{
+				"id": "A1-03-P-WE4-5",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Seit 1995. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Seit 1995. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Seit 1995. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Ist Österreich in der EU?",
+				"image": {
+					"src": "/img/a1-03-oesterreich.svg",
+					"alt": {
+						"de": "Österreich mit einem Stern für die Hauptstadt, eine Euro-Münze, die Flagge der EU und die Flagge von Österreich.",
+						"en": "Austria with a star for the capital, a euro coin, the EU flag and the Austrian flag.",
+						"tl": "Austria na may bituin para sa kabisera, euro coin, bandila ng EU at ng Austria."
+					}
+				}
+			},
+			{
+				"id": "A1-03-P-WE4-6",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Deutschland",
+					"Österreich"
+				],
+				"answer": 1,
+				"prompt": "Wien ist eine Stadt in …",
+				"image": {
+					"src": "/img/a1-03-oesterreich.svg",
+					"alt": {
+						"de": "Österreich mit einem Stern für die Hauptstadt, eine Euro-Münze, die Flagge der EU und die Flagge von Österreich.",
+						"en": "Austria with a star for the capital, a euro coin, the EU flag and the Austrian flag.",
+						"tl": "Austria na may bituin para sa kabisera, euro coin, bandila ng EU at ng Austria."
+					}
+				},
+				"family": "A1-03-P-WE4-5"
+			}
+		],
+		"test": [
+			{
+				"id": "A1-03-T-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus der Schweiz.“",
+					"en": "You hear: “Ich komme aus der Schweiz.” (Switzerland)",
+					"tl": "Naririnig mo: “Ich komme aus der Schweiz.” (Switzerland)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Schweiz",
+					"Deutschland"
+				],
+				"answer": 0,
+				"audioText": "Grüß Gott! Ich bin Herr Gruber. Ich komme aus der Schweiz.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-T-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus den Philippinen.“",
+					"en": "You hear: “Ich komme aus den Philippinen.” (the Philippines)",
+					"tl": "Naririnig mo: “Ich komme aus den Philippinen.” (Pilipinas)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Österreich",
+					"Philippinen"
+				],
+				"answer": 1,
+				"audioText": "Grüß Gott! Ich bin Maria. Ich komme aus den Philippinen.",
+				"audioOnly": true,
+				"family": "A1-03-T-HO1-1"
+			},
+			{
+				"id": "A1-03-T-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Woher kommt die Person?",
+					"en": "Listen. Where does the person come from?",
+					"tl": "Makinig. Taga-saan ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich komme aus Deutschland.“",
+					"en": "You hear: “Ich komme aus Deutschland.” (Germany)",
+					"tl": "Naririnig mo: “Ich komme aus Deutschland.” (Germany)"
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0096"
+				],
+				"options": [
+					"Deutschland",
+					"Schweiz"
+				],
+				"answer": 0,
+				"audioText": "Grüß Gott! Ich bin Frau Weber. Ich komme aus Deutschland.",
+				"audioOnly": true,
+				"family": "A1-03-T-HO1-1"
+			},
+			{
+				"id": "A1-03-T-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in Klagenfurt.“ Manila ist die Heimat.",
+					"en": "You hear: “Ich wohne in Klagenfurt.” Manila is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in Klagenfurt.” Manila ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Manila",
+					"in Klagenfurt"
+				],
+				"answer": 1,
+				"audioText": "Ich komme aus Manila, aber ich wohne in Klagenfurt.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-T-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in Salzburg.“ Berlin ist die Heimat.",
+					"en": "You hear: “Ich wohne in Salzburg.” Berlin is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in Salzburg.” Berlin ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Berlin",
+					"in Salzburg"
+				],
+				"answer": 1,
+				"audioText": "Ich komme aus Berlin, aber ich wohne in Salzburg.",
+				"audioOnly": true,
+				"family": "A1-03-T-HO2-1"
+			},
+			{
+				"id": "A1-03-T-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Wo wohnt die Person?",
+					"en": "Listen. Where does the person live?",
+					"tl": "Makinig. Saan nakatira ang tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich wohne in Wien.“ Graz ist die Heimat.",
+					"en": "You hear: “Ich wohne in Wien.” Graz is the home town.",
+					"tl": "Naririnig mo: “Ich wohne in Wien.” Graz ang pinagmulan."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Graz",
+					"in Wien"
+				],
+				"answer": 1,
+				"audioText": "Ich komme aus Graz, aber ich wohne in Wien.",
+				"audioOnly": true,
+				"family": "A1-03-T-HO2-1"
+			},
+			{
+				"id": "A1-03-T-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche Tagalog und Deutsch.“",
+					"en": "You hear: “Ich spreche Tagalog und Deutsch.”",
+					"tl": "Naririnig mo: “Ich spreche Tagalog und Deutsch.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"Tagalog und Deutsch",
+					"Tagalog und Englisch"
+				],
+				"answer": 0,
+				"audioText": "Ich spreche Tagalog und Deutsch.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-T-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche Englisch und Deutsch.“",
+					"en": "You hear: “Ich spreche Englisch und Deutsch.”",
+					"tl": "Naririnig mo: “Ich spreche Englisch und Deutsch.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"Englisch und Tagalog",
+					"Englisch und Deutsch"
+				],
+				"answer": 1,
+				"audioText": "Ich spreche Englisch und Deutsch.",
+				"audioOnly": true,
+				"family": "A1-03-T-HO3-1"
+			},
+			{
+				"id": "A1-03-T-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Sprachen spricht die Person?",
+					"en": "Listen. Which languages does the person speak?",
+					"tl": "Makinig. Anong mga wika ang alam ng tao?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich spreche Deutsch und Englisch.“",
+					"en": "You hear: “Ich spreche Deutsch und Englisch.”",
+					"tl": "Naririnig mo: “Ich spreche Deutsch und Englisch.”"
+				},
+				"goals": [
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0131",
+					"W-A1-0303"
+				],
+				"options": [
+					"Deutsch und Englisch",
+					"nur Deutsch"
+				],
+				"answer": 0,
+				"audioText": "Ich spreche Deutsch und Englisch.",
+				"audioOnly": true,
+				"family": "A1-03-T-HO3-1"
+			},
+			{
+				"id": "A1-03-T-HO4-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Woher kommen Sie?“ – passend ist: „Aus Graz.“",
+					"en": "You hear: “Woher kommen Sie?” – the fitting reply: “Aus Graz.”",
+					"tl": "Naririnig mo: “Woher kommen Sie?” – angkop: “Aus Graz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"In Linz.",
+					"Aus Graz.",
+					"Maria Santos.",
+					"Deutsch und Englisch."
+				],
+				"answer": 1,
+				"audioText": "Woher kommen Sie?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-03-T-HO4-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Wo wohnen Sie?“ – passend ist: „In Linz.“",
+					"en": "You hear: “Wo wohnen Sie?” – the fitting reply: “In Linz.”",
+					"tl": "Naririnig mo: “Wo wohnen Sie?” – angkop: “In Linz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Aus Graz.",
+					"Hauptstraße 3.",
+					"Auf Wiederhören!",
+					"In Linz."
+				],
+				"answer": 3,
+				"audioText": "Wo wohnen Sie?",
+				"audioOnly": true,
+				"family": "A1-03-T-HO4-1"
+			},
+			{
+				"id": "A1-03-T-HO4-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was passt? Wählen Sie die Antwort.",
+					"en": "Listen. Which reply fits? Choose the answer.",
+					"tl": "Makinig. Alin ang angkop na sagot?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Welche Sprachen sprechen Sie?“ – passend ist: „Deutsch und Englisch.“",
+					"en": "You hear: “Welche Sprachen sprechen Sie?” – the fitting reply: “Deutsch und Englisch.”",
+					"tl": "Naririnig mo: “Welche Sprachen sprechen Sie?” – angkop: “Deutsch und Englisch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Aus Graz.",
+					"Deutsch und Englisch.",
+					"In Linz.",
+					"Maria Santos."
+				],
+				"answer": 1,
+				"audioText": "Welche Sprachen sprechen Sie?",
+				"audioOnly": true,
+				"family": "A1-03-T-HO4-1"
+			},
+			{
+				"id": "A1-03-T-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich wohne in Wien.“",
+					"en": "The text says: “Ich wohne in Wien.”",
+					"tl": "Sabi sa teksto: “Ich wohne in Wien.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"in Wien",
+					"in den Philippinen",
+					"in Manila"
+				],
+				"answer": 0,
+				"prompt": "Hallo! Ich heiße Maria. Ich komme aus den Philippinen. Ich wohne in Wien. Ich spreche Tagalog und Englisch.\nWo wohnt Maria?"
+			},
+			{
+				"id": "A1-03-T-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich komme aus Deutschland.“",
+					"en": "The text says: “Ich komme aus Deutschland.”",
+					"tl": "Sabi sa teksto: “Ich komme aus Deutschland.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"aus Salzburg",
+					"aus Deutschland",
+					"aus Österreich"
+				],
+				"answer": 1,
+				"prompt": "Hallo! Ich heiße Tom. Ich komme aus Deutschland. Ich wohne in Salzburg. Ich spreche Deutsch und Englisch.\nWoher kommt Tom?",
+				"family": "A1-03-T-LE1-1"
+			},
+			{
+				"id": "A1-03-T-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text steht: „Ich spreche Deutsch und Englisch.“",
+					"en": "The text says: “Ich spreche Deutsch und Englisch.”",
+					"tl": "Sabi sa teksto: “Ich spreche Deutsch und Englisch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0131",
+					"W-A1-0096"
+				],
+				"options": [
+					"Deutsch und Englisch",
+					"nur Deutsch",
+					"Deutsch und Tagalog"
+				],
+				"answer": 0,
+				"prompt": "Hallo! Ich heiße Ali. Ich komme aus Österreich. Ich wohne in Graz. Ich spreche Deutsch und Englisch.\nWelche Sprachen spricht Ali?",
+				"family": "A1-03-T-LE1-1"
+			},
+			{
+				"id": "A1-03-T-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: Gartengasse.",
+					"en": "Read the card: Gartengasse.",
+					"tl": "Basahin ang card: Gartengasse."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"Wien",
+					"Gartengasse",
+					"Huber"
+				],
+				"answer": 1,
+				"prompt": "Anna Huber\nGartengasse 4\n1100 Wien\nE-Mail: anna.huber@gmx.at\nWie heißt die Straße?"
+			},
+			{
+				"id": "A1-03-T-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: Linz.",
+					"en": "Read the card: Linz.",
+					"tl": "Basahin ang card: Linz."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"Cruz",
+					"Linz",
+					"Hauptplatz"
+				],
+				"answer": 1,
+				"prompt": "Jose Cruz\nHauptplatz 9\n4020 Linz\nE-Mail: jose.cruz@aon.at\nIn welcher Stadt wohnt Jose?",
+				"family": "A1-03-T-LE2-1"
+			},
+			{
+				"id": "A1-03-T-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lesen Sie die Karte: sofia.b@gmx.at.",
+					"en": "Read the card: sofia.b@gmx.at.",
+					"tl": "Basahin ang card: sofia.b@gmx.at."
+				},
+				"goals": [
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0368",
+					"W-A1-0369",
+					"W-A1-0373"
+				],
+				"options": [
+					"Bergstraße 21",
+					"5020 Salzburg",
+					"sofia.b@gmx.at"
+				],
+				"answer": 2,
+				"prompt": "Sofia Berger\nBergstraße 21\n5020 Salzburg\nE-Mail: sofia.b@gmx.at\nWie ist das E-Mail?",
+				"family": "A1-03-T-LE2-1"
+			},
+			{
+				"id": "A1-03-T-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lukas hat die Flagge von Deutschland.",
+					"en": "Lukas has the German flag.",
+					"tl": "May bandila ng Germany si Lukas."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0096"
+				],
+				"options": [
+					"aus Österreich",
+					"aus Deutschland",
+					"aus den Philippinen"
+				],
+				"answer": 1,
+				"prompt": "Woher kommt Lukas?",
+				"image": {
+					"src": "/img/a1-03-herkunft.svg",
+					"alt": {
+						"de": "Drei Personen mit Namensschild und Flagge.",
+						"en": "Three people with name tags and flags.",
+						"tl": "Tatlong tao na may name tag at bandila."
+					}
+				}
+			},
+			{
+				"id": "A1-03-T-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Anna hat die Flagge von Österreich.",
+					"en": "Anna has the Austrian flag.",
+					"tl": "May bandila ng Austria si Anna."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0096"
+				],
+				"options": [
+					"aus Deutschland",
+					"aus Österreich",
+					"aus der Schweiz"
+				],
+				"answer": 1,
+				"prompt": "Woher kommt Anna?",
+				"image": {
+					"src": "/img/a1-03-herkunft.svg",
+					"alt": {
+						"de": "Drei Personen mit Namensschild und Flagge.",
+						"en": "Three people with name tags and flags.",
+						"tl": "Tatlong tao na may name tag at bandila."
+					}
+				},
+				"family": "A1-03-T-LE3-1"
+			},
+			{
+				"id": "A1-03-T-LE3-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Jose hat die Flagge der Philippinen.",
+					"en": "Jose has the flag of the Philippines.",
+					"tl": "May bandila ng Pilipinas si Jose."
+				},
+				"goals": [
+					"A1-03-G1"
+				],
+				"refs": [
+					"W-A1-0038",
+					"W-A1-0096"
+				],
+				"options": [
+					"Anna",
+					"Lukas",
+					"Jose"
+				],
+				"answer": 2,
+				"prompt": "Wer kommt aus den Philippinen?",
+				"image": {
+					"src": "/img/a1-03-herkunft.svg",
+					"alt": {
+						"de": "Drei Personen mit Namensschild und Flagge.",
+						"en": "Three people with name tags and flags.",
+						"tl": "Tatlong tao na may name tag at bandila."
+					}
+				},
+				"family": "A1-03-T-LE3-1"
+			},
+			{
+				"id": "A1-03-T-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Doch“ auf eine Frage mit „nicht“ = ja, das stimmt.",
+					"en": "“Doch” to a question with “nicht” = yes, that is right.",
+					"tl": "“Doch” sa tanong na may “nicht” = oo, tama."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "A: Wohnen Sie nicht in Wien?\nB: Doch.\nWohnt B in Wien?"
+			},
+			{
+				"id": "A1-03-T-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "B sagt „Nein, nur Deutsch.“",
+					"en": "B says “Nein, nur Deutsch.”",
+					"tl": "Sabi ni B: “Nein, nur Deutsch.”"
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 0,
+				"prompt": "A: Sprechen Sie Englisch?\nB: Nein, nur Deutsch.\nSpricht B Englisch?",
+				"family": "A1-03-T-LE4-1"
+			},
+			{
+				"id": "A1-03-T-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "„Doch, aus Graz“ = B kommt aus Graz.",
+					"en": "“Doch, aus Graz” = B comes from Graz.",
+					"tl": "“Doch, aus Graz” = taga-Graz si B."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "A: Kommen Sie nicht aus Graz?\nB: Doch, aus Graz.\nKommt B aus Graz?",
+				"family": "A1-03-T-LE4-1"
+			},
+			{
+				"id": "A1-03-T-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Philippinen, Wohnort = Graz.",
+					"en": "Home country = Philippinen, place of residence = Graz.",
+					"tl": "Sariling bansa = Philippinen, tirahan = Graz."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Jose Cruz. Ich komme aus den Philippinen und wohne jetzt in Graz.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Philippinen",
+							"die Philippinen"
+						]
+					},
+					"2": {
+						"accept": [
+							"Graz"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-T-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Deutschland, Wohnort = Wien.",
+					"en": "Home country = Deutschland, place of residence = Wien.",
+					"tl": "Sariling bansa = Deutschland, tirahan = Wien."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Tom Weber. Ich komme aus Deutschland und wohne jetzt in Wien.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Deutschland"
+						]
+					},
+					"2": {
+						"accept": [
+							"Wien"
+						]
+					}
+				},
+				"family": "A1-03-T-SC1-1"
+			},
+			{
+				"id": "A1-03-T-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie den Text. Ergänzen Sie das Formular.",
+					"en": "Read the text. Complete the form.",
+					"tl": "Basahin ang teksto. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Heimatland = Schweiz, Wohnort = Linz.",
+					"en": "Home country = Schweiz, place of residence = Linz.",
+					"tl": "Sariling bansa = Schweiz, tirahan = Linz."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0356",
+					"W-A1-0148"
+				],
+				"text": "Ich bin Sofia Berger. Ich komme aus der Schweiz und wohne jetzt in Linz.\nHeimatland: {{1}} · Wohnort: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Schweiz",
+							"die Schweiz"
+						]
+					},
+					"2": {
+						"accept": [
+							"Linz"
+						]
+					}
+				},
+				"family": "A1-03-T-SC1-1"
+			},
+			{
+				"id": "A1-03-T-SC2-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (Graz)",
+					"en": "Answer. (You live in Graz)",
+					"tl": "Sumagot. (Nakatira ka sa Graz)"
+				},
+				"explanation": {
+					"de": "Antwort: „Ich wohne in Graz.“",
+					"en": "Answer: “Ich wohne in Graz.”",
+					"tl": "Sagot: “Ich wohne in Graz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Wo wohnen Sie?\nIch {{1}} {{2}} Graz.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"2": {
+						"accept": [
+							"in"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-T-SC2-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (Deutschland)",
+					"en": "Answer. (You come from Germany)",
+					"tl": "Sumagot. (Taga-Germany ka)"
+				},
+				"explanation": {
+					"de": "Antwort: „Ich komme aus Deutschland.“",
+					"en": "Answer: “Ich komme aus Deutschland.”",
+					"tl": "Sagot: “Ich komme aus Deutschland.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Woher kommen Sie?\nIch {{1}} {{2}} Deutschland.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"aus"
+						]
+					}
+				},
+				"family": "A1-03-T-SC2-1"
+			},
+			{
+				"id": "A1-03-T-SC2-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Antworten Sie. (Tagalog + Englisch)",
+					"en": "Answer. (Tagalog and English)",
+					"tl": "Sumagot. (Tagalog at Ingles)"
+				},
+				"explanation": {
+					"de": "Antwort: „Ich spreche Tagalog und Englisch.“",
+					"en": "Answer: “Ich spreche Tagalog und Englisch.”",
+					"tl": "Sagot: “Ich spreche Tagalog und Englisch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0148",
+					"W-A1-0096",
+					"W-A1-0131"
+				],
+				"text": "Welche Sprachen sprechen Sie?\nIch {{1}} Tagalog {{2}} Englisch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"spreche"
+						]
+					},
+					"2": {
+						"accept": [
+							"und"
+						]
+					}
+				},
+				"family": "A1-03-T-SC2-1"
+			},
+			{
+				"id": "A1-03-T-SC3-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Maria. Ich {{1}} aus den Philippinen und {{2}} in Wien. Ich {{3}} Tagalog.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-T-SC3-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Lukas. Ich {{1}} aus Deutschland und {{2}} in Graz. Ich {{3}} Deutsch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				},
+				"family": "A1-03-T-SC3-1"
+			},
+			{
+				"id": "A1-03-T-SC3-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "ich heiße, ich komme, ich wohne, ich spreche – bei „ich“ endet das Verb auf -e.",
+					"en": "ich heiße, ich komme, ich wohne, ich spreche – with “ich” the verb ends in -e.",
+					"tl": "ich heiße, komme, wohne, spreche – sa “ich”, nagtatapos sa -e ang verb."
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0147",
+					"W-A1-0128",
+					"W-A1-0148",
+					"W-A1-0131"
+				],
+				"text": "Hallo! Ich heiße Sofia. Ich {{1}} aus der Schweiz und {{2}} in Salzburg. Ich {{3}} Deutsch und Englisch.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"komme"
+						]
+					},
+					"2": {
+						"accept": [
+							"wohne"
+						]
+					},
+					"3": {
+						"accept": [
+							"spreche"
+						]
+					}
+				},
+				"family": "A1-03-T-SC3-1"
+			},
+			{
+				"id": "A1-03-T-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kommen aus den Philippinen. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You come from the Philippines. What do you say? Choose, then say it aloud.",
+					"tl": "Taga-Pilipinas ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich komme aus den Philippinen.“",
+					"en": "Fitting: “Ich komme aus den Philippinen.”",
+					"tl": "Angkop: “Ich komme aus den Philippinen.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich wohne aus den Philippinen.",
+					"Ich komme in den Philippinen.",
+					"Ich komme aus den Philippinen."
+				],
+				"answer": 2,
+				"prompt": "Woher kommen Sie?"
+			},
+			{
+				"id": "A1-03-T-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wohnen in Graz. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You live in Graz. What do you say? Choose, then say it aloud.",
+					"tl": "Nakatira ka sa Graz. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich wohne in Graz.“",
+					"en": "Fitting: “Ich wohne in Graz.”",
+					"tl": "Angkop: “Ich wohne in Graz.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich wohne aus Graz.",
+					"Ich wohne in Graz.",
+					"Ich komme in Graz."
+				],
+				"answer": 1,
+				"prompt": "Wo wohnen Sie?",
+				"family": "A1-03-T-SP1-1"
+			},
+			{
+				"id": "A1-03-T-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen Tagalog und Deutsch. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You speak Tagalog and German. What do you say? Choose, then say it aloud.",
+					"tl": "Marunong ka ng Tagalog at German. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Ich spreche Tagalog und Deutsch.“",
+					"en": "Fitting: “Ich spreche Tagalog und Deutsch.”",
+					"tl": "Angkop: “Ich spreche Tagalog und Deutsch.”"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2",
+					"A1-03-G3"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich sprecht Tagalog und Deutsch.",
+					"Ich spreche Tagalog und Deutsch.",
+					"Ich bin Tagalog und Deutsch."
+				],
+				"answer": 1,
+				"prompt": "Welche Sprachen sprechen Sie?",
+				"family": "A1-03-T-SP1-1"
+			},
+			{
+				"id": "A1-03-T-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „Wohnort?“ passt: „Wo wohnen Sie?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “Wohnort?”: “Wo wohnen Sie?” (exam: speaking part 2).",
+					"tl": "Para sa word card “Wohnort?”: “Wo wohnen Sie?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Wo wohnen Sie?",
+					"Woher kommen Sie?",
+					"Wie heißen Sie?"
+				],
+				"answer": 0,
+				"prompt": "Wortkarte: Wohnort?"
+			},
+			{
+				"id": "A1-03-T-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „Herkunft?“ passt: „Woher kommen Sie?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “Herkunft?”: “Woher kommen Sie?” (exam: speaking part 2).",
+					"tl": "Para sa word card “Herkunft?”: “Woher kommen Sie?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Woher kommen Sie?",
+					"Wo wohnen Sie?",
+					"Welche Sprachen sprechen Sie?"
+				],
+				"answer": 0,
+				"prompt": "Wortkarte: Herkunft?",
+				"family": "A1-03-T-SP2-1"
+			},
+			{
+				"id": "A1-03-T-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zur Wortkarte „Sprachen?“ passt: „Welche Sprachen sprechen Sie?“ (Prüfung: Sprechen Teil 2).",
+					"en": "For the word card “Sprachen?”: “Welche Sprachen sprechen Sie?” (exam: speaking part 2).",
+					"tl": "Para sa word card “Sprachen?”: “Welche Sprachen sprechen Sie?” (exam: speaking part 2)."
+				},
+				"goals": [
+					"A1-03-G5",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0037",
+					"W-A1-0038"
+				],
+				"options": [
+					"Woher kommen Sie?",
+					"Wie ist Ihre Adresse?",
+					"Welche Sprachen sprechen Sie?"
+				],
+				"answer": 2,
+				"prompt": "Wortkarte: Sprachen?",
+				"family": "A1-03-T-SP2-1"
+			},
+			{
+				"id": "A1-03-T-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Die Person spricht sehr schnell. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "The person talks very fast. What do you say? Choose, then say it aloud.",
+					"tl": "Masyadong mabilis magsalita ang tao. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Langsam, bitte!“",
+					"en": "Fitting: “Langsam, bitte!”",
+					"tl": "Angkop: “Langsam, bitte!”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Auf Wiederhören!",
+					"Langsam, bitte!",
+					"Sprechen Sie Englisch?"
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-03-T-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben das Wort nicht verstanden. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You did not understand the word. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo naintindihan ang salita. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Wiederholen Sie, bitte.“",
+					"en": "Fitting: “Wiederholen Sie, bitte.”",
+					"tl": "Angkop: “Wiederholen Sie, bitte.”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Langsam, bitte!",
+					"Auf Wiederhören!",
+					"Wiederholen Sie, bitte."
+				],
+				"answer": 2,
+				"family": "A1-03-T-SP3-1"
+			},
+			{
+				"id": "A1-03-T-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wissen nicht, wie man die Straße schreibt. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You don’t know how the street is written. What do you say? Choose, then say it aloud.",
+					"tl": "Hindi mo alam kung paano isulat ang kalye. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Passend: „Wie schreibt man das?“",
+					"en": "Fitting: “Wie schreibt man das?”",
+					"tl": "Angkop: “Wie schreibt man das?”"
+				},
+				"goals": [
+					"A1-03-G4"
+				],
+				"refs": [
+					"W-A1-0134",
+					"W-A1-0184",
+					"W-A1-0311"
+				],
+				"options": [
+					"Wie schreibt man das?",
+					"Sprechen Sie Englisch?",
+					"Langsam, bitte!"
+				],
+				"answer": 0,
+				"family": "A1-03-T-SP3-1"
+			},
+			{
+				"id": "A1-03-T-SP4-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Maria – Philippinen – Wien. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Maria – Philippinen – Wien. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Maria – Philippinen – Wien. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Maria. Ich komme aus den Philippinen und wohne in Wien.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Maria. Ich komme aus den Philippinen und wohne in Wien.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Maria. Ich komme aus den Philippinen und wohne in Wien.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Maria. Ich komme aus den Philippinen und wohne in Wien.",
+					"Ich heiße Maria. Ich komme in den Philippinen und wohne aus Wien.",
+					"Ich bin Maria. Ich wohne aus den Philippinen und komme in Wien."
+				],
+				"answer": 0
+			},
+			{
+				"id": "A1-03-T-SP4-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Tom – Deutschland – Salzburg. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Tom – Deutschland – Salzburg. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Tom – Deutschland – Salzburg. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Tom. Ich komme aus Deutschland und wohne in Salzburg.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Tom. Ich komme aus Deutschland und wohne in Salzburg.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Tom. Ich komme aus Deutschland und wohne in Salzburg.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Tom. Ich komme aus Deutschland und wohne in Salzburg.",
+					"Ich heiße Tom. Ich komme aus Salzburg und wohne in Deutschland.",
+					"Ich heiße Tom. Ich wohne aus Deutschland in Salzburg."
+				],
+				"answer": 0,
+				"family": "A1-03-T-SP4-1"
+			},
+			{
+				"id": "A1-03-T-SP4-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Stellen Sie sich vor: Sofia – Schweiz – Linz. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Introduce yourself: Sofia – Schweiz – Linz. Choose, then say it aloud.",
+					"tl": "Ipakilala ang sarili: Sofia – Schweiz – Linz. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ich heiße Sofia. Ich komme aus der Schweiz und wohne in Linz.“ – komme aus …, wohne in …",
+					"en": "Correct: “Ich heiße Sofia. Ich komme aus der Schweiz und wohne in Linz.” – komme aus …, wohne in …",
+					"tl": "Tama: “Ich heiße Sofia. Ich komme aus der Schweiz und wohne in Linz.” – komme aus …, wohne in …"
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093",
+					"W-A1-0148"
+				],
+				"options": [
+					"Ich heiße Sofia. Ich komme aus Schweiz und wohne aus Linz.",
+					"Ich heiße Sofia. Ich komme aus der Schweiz und wohne in Linz.",
+					"Ich heiße Sofia. Ich komme in der Schweiz und wohne in Linz."
+				],
+				"answer": 1,
+				"family": "A1-03-T-SP4-1"
+			},
+			{
+				"id": "A1-03-T-SP5-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen Deutsch. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You speak German. Answer. Choose, then say it aloud.",
+					"tl": "Marunong ka ng German. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, ich spreche nicht Deutsch.",
+					"Nein, ich spreche Deutsch.",
+					"Doch, ich spreche Deutsch."
+				],
+				"answer": 2,
+				"prompt": "Sprechen Sie nicht Deutsch?"
+			},
+			{
+				"id": "A1-03-T-SP5-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie wohnen in Linz. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You live in Linz. Answer. Choose, then say it aloud.",
+					"tl": "Nakatira ka sa Linz. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Doch, ich wohne in Linz.",
+					"Ja, ich wohne in Linz.",
+					"Nein, ich wohne in Linz."
+				],
+				"answer": 2,
+				"prompt": "Wohnen Sie in Wien?",
+				"family": "A1-03-T-SP5-1"
+			},
+			{
+				"id": "A1-03-T-SP5-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie kommen aus Graz. Antworten Sie. Wählen Sie, dann sagen Sie es laut.",
+					"en": "You come from Graz. Answer. Choose, then say it aloud.",
+					"tl": "Taga-Graz ka. Sumagot. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Frage mit „nicht“ + positive Antwort → „Doch“. Sonst „Ja“ oder „Nein“.",
+					"en": "Question with “nicht” + positive answer → “Doch”. Otherwise “Ja” or “Nein”.",
+					"tl": "Tanong na may “nicht” + positibong sagot → “Doch”. Kung hindi, “Ja” o “Nein”."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0054",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, aus Graz.",
+					"Doch, aus Graz.",
+					"Ja, nicht aus Graz."
+				],
+				"answer": 1,
+				"prompt": "Kommen Sie nicht aus Graz?",
+				"family": "A1-03-T-SP5-1"
+			},
+			{
+				"id": "A1-03-T-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "die Stadt. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "die Stadt. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "die Stadt. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0366"
+				],
+				"options": [
+					"die",
+					"der",
+					"das"
+				],
+				"answer": 0,
+				"prompt": "… Stadt"
+			},
+			{
+				"id": "A1-03-T-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "das Dorf. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "das Dorf. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "das Dorf. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0367"
+				],
+				"options": [
+					"das",
+					"der",
+					"die"
+				],
+				"answer": 0,
+				"prompt": "… Dorf",
+				"family": "A1-03-T-GW1-1"
+			},
+			{
+				"id": "A1-03-T-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "der Mensch. Den Artikel immer mit dem Nomen lernen: der Mensch, die Stadt, das Land.",
+					"en": "der Mensch. Always learn the article with the noun: der Mensch, die Stadt, das Land.",
+					"tl": "der Mensch. Laging isaulo ang article kasama ng noun: der Mensch, die Stadt, das Land."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0350"
+				],
+				"options": [
+					"die",
+					"der",
+					"das"
+				],
+				"answer": 1,
+				"prompt": "… Mensch",
+				"family": "A1-03-T-GW1-1"
+			},
+			{
+				"id": "A1-03-T-GW2-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Linz ist {{1}} Stadt.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"eine"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-T-GW2-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Das ist {{1}} Dorf.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"ein"
+						]
+					}
+				},
+				"family": "A1-03-T-GW2-1"
+			},
+			{
+				"id": "A1-03-T-GW2-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "der/das → ein, die → eine.",
+					"en": "der/das → ein (a), die → eine (a).",
+					"tl": "der/das → ein (isang), die → eine (isang)."
+				},
+				"goals": [
+					"A1-03-G6"
+				],
+				"refs": [
+					"W-A1-0004"
+				],
+				"text": "Tagalog ist {{1}} Sprache.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"eine"
+						]
+					}
+				},
+				"family": "A1-03-T-GW2-1"
+			},
+			{
+				"id": "A1-03-T-GW3-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "sprechen: er spricht (e → i).",
+					"en": "sprechen: er spricht (e → i). – irregular forms",
+					"tl": "sprechen: er spricht (e → i). – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0131"
+				],
+				"text": "Er {{1}} Tagalog.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"spricht"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-03-T-GW3-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "geben: du gibst (e → i).",
+					"en": "geben: du gibst (e → i). – irregular forms",
+					"tl": "geben: du gibst (e → i). – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0137"
+				],
+				"text": "Du {{1}} mir das E-Mail.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"gibst"
+						]
+					}
+				},
+				"family": "A1-03-T-GW3-1"
+			},
+			{
+				"id": "A1-03-T-GW3-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "nehmen: sie nimmt (e → i).",
+					"en": "nehmen: sie nimmt (e → i). – irregular forms",
+					"tl": "nehmen: sie nimmt (e → i). – irregular na anyo"
+				},
+				"goals": [
+					"A1-03-G7"
+				],
+				"refs": [
+					"W-A1-0138"
+				],
+				"text": "Sie {{1}} die Adresse.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"nimmt"
+						]
+					}
+				},
+				"family": "A1-03-T-GW3-1"
+			},
+			{
+				"id": "A1-03-T-GW4-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Sie wohnen in Graz?",
+					"Wohnen Sie in Graz?",
+					"In Graz Sie wohnen?"
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-03-T-GW4-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Kommst du aus Deutschland?",
+					"Du aus Deutschland kommst?",
+					"Aus Deutschland du kommst?"
+				],
+				"answer": 0,
+				"family": "A1-03-T-GW4-1"
+			},
+			{
+				"id": "A1-03-T-GW4-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Welche Frage ist richtig?",
+					"en": "Which question is correct?",
+					"tl": "Aling tanong ang tama?"
+				},
+				"explanation": {
+					"de": "Ja/Nein-Frage: Verb auf Platz 1. W-Frage: Fragewort, dann Verb.",
+					"en": "Yes/no question: verb first. W-question: question word, then verb.",
+					"tl": "Oo/hindi: una ang verb. W-question: tanong na salita, tapos verb."
+				},
+				"goals": [
+					"A1-03-G5"
+				],
+				"refs": [
+					"W-A1-0037"
+				],
+				"options": [
+					"Wo wohnt Maria?",
+					"Wo Maria wohnt?",
+					"Maria wo wohnt?"
+				],
+				"answer": 0,
+				"family": "A1-03-T-GW4-1"
+			},
+			{
+				"id": "A1-03-T-GW5-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"in",
+					"aus",
+					"woher"
+				],
+				"answer": 0,
+				"prompt": "Ich wohne … Wien."
+			},
+			{
+				"id": "A1-03-T-GW5-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"in",
+					"aus",
+					"wo"
+				],
+				"answer": 1,
+				"prompt": "Ich komme … Deutschland.",
+				"family": "A1-03-T-GW5-1"
+			},
+			{
+				"id": "A1-03-T-GW5-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "aus = Herkunft (woher?), in = Ort (wo?).",
+					"en": "aus = origin (where from?), in = place (where?).",
+					"tl": "aus = pinagmulan (woher?), in = lugar (wo?)."
+				},
+				"goals": [
+					"A1-03-G1",
+					"A1-03-G2"
+				],
+				"refs": [
+					"W-A1-0096",
+					"W-A1-0093"
+				],
+				"options": [
+					"Woher",
+					"Wie",
+					"Wo"
+				],
+				"answer": 2,
+				"prompt": "… wohnen Sie? – In Graz.",
+				"family": "A1-03-T-GW5-1"
+			},
+			{
+				"id": "A1-03-T-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Hauptstadt: Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Capital: Vienna. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Kabisera: Vienna. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Salzburg",
+					"Wien"
+				],
+				"answer": 1,
+				"prompt": "Die Hauptstadt von Österreich ist …"
+			},
+			{
+				"id": "A1-03-T-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Heute zahlt man in Österreich mit Euro. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Today you pay with euros in Austria. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Euro ang pambayad ngayon sa Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"der Euro",
+					"der Dollar"
+				],
+				"answer": 0,
+				"prompt": "Das Geld in Österreich ist …",
+				"family": "A1-03-T-WE1-1"
+			},
+			{
+				"id": "A1-03-T-WE1-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Staatssprache: Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Official language: German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Opisyal na wika: German. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Englisch",
+					"Deutsch"
+				],
+				"answer": 1,
+				"prompt": "Die Staatssprache in Österreich ist …",
+				"family": "A1-03-T-WE1-1"
+			},
+			{
+				"id": "A1-03-T-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Österreich ist seit 1995 in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Austria has been in the EU since 1995. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Nasa EU ang Austria mula 1995. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja, seit 1995."
+				],
+				"answer": 1,
+				"prompt": "Ist Österreich in der EU?"
+			},
+			{
+				"id": "A1-03-T-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Seit 1995 in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "In the EU since 1995. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Nasa EU mula 1995. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"der EU",
+					"der Schweiz"
+				],
+				"answer": 0,
+				"prompt": "Österreich ist seit 1995 in …",
+				"family": "A1-03-T-WE2-1"
+			},
+			{
+				"id": "A1-03-T-WE2-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Österreich liegt in Europa. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "Austria is in Europe. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "Nasa Europa ang Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Europa",
+					"Deutschland"
+				],
+				"answer": 0,
+				"prompt": "Österreich ist ein Land in …",
+				"family": "A1-03-T-WE2-1"
+			},
+			{
+				"id": "A1-03-T-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Deutsch ist die Staatssprache. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "German is the official language. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "German ang opisyal na wika. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"nur in Deutschland",
+					"bei der Arbeit und im Alltag"
+				],
+				"answer": 1,
+				"prompt": "Deutsch hilft …"
+			},
+			{
+				"id": "A1-03-T-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Auf dem Amt spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "At the office people speak German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "German ang gamit sa opisina. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Englisch",
+					"Deutsch"
+				],
+				"answer": 1,
+				"prompt": "Auf dem Amt in Österreich spricht man …",
+				"family": "A1-03-T-WE3-1"
+			},
+			{
+				"id": "A1-03-T-WE3-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In der Schule spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
+					"en": "At school people speak German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
+					"tl": "German ang gamit sa paaralan. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+				},
+				"goals": [
+					"A1-03-G8"
+				],
+				"refs": [
+					"W-A1-0357"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Tagalog",
+					"Deutsch"
+				],
+				"answer": 1,
+				"prompt": "In der Schule in Österreich spricht man …",
+				"family": "A1-03-T-WE3-1"
+			}
+		]
+	}
+}
