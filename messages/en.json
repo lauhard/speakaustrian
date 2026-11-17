@@ -150,5 +150,6 @@
 	"goal_progress": "{done} of {goal} min",
 	"goal_met": "Daily goal reached",
 	"goal_due": "{count} reviews still open",
-	"playing": "Playing …"
+	"playing": "Playing …",
+	"stat_flawless": "correct in a row"
 }

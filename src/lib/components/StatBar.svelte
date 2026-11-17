@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Flame, Heart, Snowflake, Star } from '@lucide/svelte';
+	import { Flame, Heart, Snowflake, Star, Zap } from '@lucide/svelte';
 	import { m } from '#lib/paraglide/messages.js';
 	import { deriveStats } from '#lib/core/stats.ts';
+	import { accuracy } from '#lib/accuracy.svelte.ts';
 	import { game } from '#lib/game.svelte.ts';
 
 	// `vertical` is the desktop sidebar variant with labels; the header uses compact pills.
@@ -15,6 +16,11 @@
 			<Flame size={18} strokeWidth={2.25} class={s.streak > 0 ? 'flame fill-orange-400 text-orange-500' : 'text-stone-400'} />
 			{#key s.streak}<b class="pop">{s.streak}</b>{/key}
 			{#if vertical}<span class="stat-label">{m.stat_streak()} · {m.stat_best()} {s.best}</span>{/if}
+		</li>
+		<li class="stat" title={m.stat_flawless()} data-testid="stat-flawless">
+			<Zap size={18} strokeWidth={2.25} class={accuracy.current > 0 ? 'fill-amber-400 text-amber-500' : 'text-stone-400'} />
+			{#key accuracy.current}<b class="pop">{accuracy.current}</b>{/key}
+			{#if vertical}<span class="stat-label">{m.stat_flawless()} · {m.stat_best()} {accuracy.best}</span>{/if}
 		</li>
 		{#if vertical || s.freezes > 0}
 			<li class="stat" title={m.stat_freezes()}>

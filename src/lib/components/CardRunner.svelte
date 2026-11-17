@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { accuracy } from '#lib/accuracy.svelte.ts';
 	import { fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import { PartyPopper, Volume2 } from '@lucide/svelte';
@@ -62,6 +63,7 @@
 					: selected === question.answer
 						? 'correct'
 						: 'wrong';
+		accuracy.record(verdict !== 'wrong');
 		if (!repeated.includes(task.cardId)) onanswer?.(task, verdict !== 'wrong');
 	};
 

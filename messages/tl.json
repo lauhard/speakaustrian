@@ -150,5 +150,6 @@
 	"goal_progress": "{done} sa {goal} min",
 	"goal_met": "Naabot ang layunin ngayon",
 	"goal_due": "{count} pang ulitin",
-	"playing": "Tumutugtog …"
+	"playing": "Tumutugtog …",
+	"stat_flawless": "sunod-sunod na tama"
 }
