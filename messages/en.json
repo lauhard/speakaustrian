@@ -1,6 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"app_title": "Weg zur A2",
+	"app_title": "Speak Austrian",
 	"home_intro": "Learn German for the integration exam in Austria.",
 	"name_label": "What is your name?",
 	"name_placeholder": "Your name",
@@ -125,5 +125,14 @@
 	"result_good": "Well done!",
 	"result_misses": "Practise these again:",
 	"install_app": "Install the app",
-	"install_ios": "Use it as an app: in Safari tap “Share”, then “Add to Home Screen”."
+	"install_ios": "Use it as an app: in Safari tap “Share”, then “Add to Home Screen”.",
+	"app_tagline": "Learn German – the Austrian way",
+	"menu_open": "Open menu",
+	"menu_close": "Close menu",
+	"nav_course": "Course",
+	"nav_review": "Review",
+	"stat_streak": "day streak",
+	"stat_freezes": "streak freeze",
+	"stat_best": "best",
+	"preview_label": "Preview"
 }

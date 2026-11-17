@@ -1,6 +1,6 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"app_title": "Weg zur A2",
+	"app_title": "Speak Austrian",
 	"home_intro": "Mag-aral ng German para sa integration exam sa Austria.",
 	"name_label": "Ano ang pangalan mo?",
 	"name_placeholder": "Pangalan mo",
@@ -125,5 +125,14 @@
 	"result_good": "Magaling!",
 	"result_misses": "Sanayin ulit ang mga ito:",
 	"install_app": "I-install ang app",
-	"install_ios": "Gamitin bilang app: sa Safari, i-tap ang “Share”, tapos “Add to Home Screen”."
+	"install_ios": "Gamitin bilang app: sa Safari, i-tap ang “Share”, tapos “Add to Home Screen”.",
+	"app_tagline": "Mag-aral ng German – Austrian style",
+	"menu_open": "Buksan ang menu",
+	"menu_close": "Isara ang menu",
+	"nav_course": "Kurso",
+	"nav_review": "Ulitin",
+	"stat_streak": "araw na sunod-sunod",
+	"stat_freezes": "streak freeze",
+	"stat_best": "record",
+	"preview_label": "Preview"
 }
