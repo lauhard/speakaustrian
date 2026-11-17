@@ -3,7 +3,6 @@
 	import { getLocale, locales, setLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
 	import './layout.css';
-	import favicon from '#lib/assets/favicon.svg';
 	import type { LayoutProps } from './$types';
 
 	let { children }: LayoutProps = $props();
@@ -11,18 +10,13 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
 	<title>{m.app_title()}</title>
-	<meta name="theme-color" content="#c8102e" />
 </svelte:head>
 
 <div class="mx-auto flex min-h-dvh max-w-md flex-col px-4">
 	<header class="flex items-center justify-between gap-3 py-4">
 		<a href={resolve('/')} class="flex items-center gap-2 no-underline">
-			<!-- Small Austrian flag as logo mark -->
-			<span class="flex h-8 w-8 flex-col overflow-hidden rounded-lg shadow-sm" aria-hidden="true">
-				<span class="flex-1 bg-brand"></span><span class="flex-1 bg-white"></span><span class="flex-1 bg-brand"></span>
-			</span>
+			<img src="/icons/logo.svg" alt="" class="h-9 w-9 rounded-xl shadow-sm" width="36" height="36" />
 			<span class="text-xl font-black tracking-tight text-ink">{m.app_title()}</span>
 		</a>
 		<div class="flex items-center gap-2">
