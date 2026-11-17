@@ -16,6 +16,7 @@ export type GameEvent = EventBase &
 		// correct/total since K1; events without a score (older logs, migration) stay valid as passed.
 		| { type: 'LESSON_COMPLETED'; chapterId: string; lessonId: string; introduced?: Introduced[]; correct?: number; total?: number }
 		| { type: 'PRACTICE_ANSWERED'; itemId: string; correct: boolean }
+		| { type: 'PRACTICE_SKIPPED' }
 		| { type: 'GATE_ANSWERED'; itemId: string; correct: boolean }
 		| { type: 'TARGETED_PRACTICE_DONE'; goalIds: string[] }
 		| { type: 'TEST_STARTED'; attemptId: string; itemIds: string[] }
@@ -220,6 +221,9 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 			const booked = graded(s, event.itemId, event.correct);
 			return withAttempt(booked, answered >= run.attempt.total ? gateBlock(1) : { ...run.attempt, answered });
 		}
+		case 'PRACTICE_SKIPPED':
+			// K3: practice is optional, skipping leads straight to the readiness round.
+			return run?.attempt.kind === 'PRACTICE' ? withAttempt(s, gateBlock(1)) : s;
 		case 'GATE_ANSWERED': {
 			const g = run?.attempt;
 			if (!g || g.kind !== 'GATE' || g.items.includes(event.itemId)) return s;

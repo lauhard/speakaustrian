@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { makeDefaultPolicy, type RulePolicy } from './policy';
 import { makeReducer, newGame, settleChapter, type ContentInfo, type GameEvent } from './reducer';
 import { GameState } from './state';
+import { practiceItemAt } from './flow';
 
 // Chapter attempt automaton (docs/spec/04a §4.2), test cases of docs/spec/04b §1–5 and §13a.
 const order = ['A1-01', 'A1-02', 'A1-03', 'A1-04'];
@@ -52,6 +53,23 @@ describe('lessons → practice → readiness round (R-G)', () => {
 		expect(attempt(s1)).toEqual({ kind: 'PRACTICE', answered: 0, total: 2 });
 		const s2 = run(policy, s1, practice);
 		expect(attempt(s2)).toEqual({ kind: 'GATE', block: 1, items: [], wrong: [], correct: 0, answered: 0 });
+	});
+	it('K3: practice can be skipped straight to the readiness round; skipping elsewhere changes nothing', () => {
+		const skipPractice = ev({ type: 'PRACTICE_SKIPPED' });
+		const s1 = play([profile, ...lessons('A1-01'), skipPractice]);
+		expect(attempt(s1)).toEqual({ kind: 'GATE', block: 1, items: [], wrong: [], correct: 0, answered: 0 });
+		expect(run(policy, s1, [skipPractice])).toEqual(s1);
+		const inLessons = play([profile]);
+		expect(run(policy, inLessons, [skipPractice])).toEqual(inLessons);
+	});
+	it('K3: each attempt practises the next round of the practice part', () => {
+		const part = Array.from({ length: 40 }, (_, i) => ({ id: `p${i}`, skill: 'lesen' as const, family: `p${i}`, goals: [] }));
+		expect(practiceItemAt(part, 1, 20, 0)?.id).toBe('p0');
+		expect(practiceItemAt(part, 1, 20, 19)?.id).toBe('p19');
+		expect(practiceItemAt(part, 2, 20, 0)?.id).toBe('p20');
+		expect(practiceItemAt(part, 3, 20, 5)?.id).toBe('p5');
+		expect(practiceItemAt(part.slice(0, 15), 2, 20, 0)?.id).toBe('p5');
+		expect(practiceItemAt([], 1, 20, 0)).toBeUndefined();
 	});
 	it('K1: a lesson below 51 % stays open, from 51 % it counts (rounded like the result screen)', () => {
 		const lesson = (lessonId: string, correct: number, total: number) => ev({ type: 'LESSON_COMPLETED', chapterId: 'A1-01', lessonId, correct, total });

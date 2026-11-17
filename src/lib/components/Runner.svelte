@@ -147,9 +147,8 @@
 	<section class="flex min-h-[calc(100dvh-10rem)] flex-col items-center justify-center gap-5 py-6 text-center" data-testid="result" data-passed={!failed}>
 		<BankPoints />
 		<div
-			class="flex h-32 w-32 flex-col items-center justify-center rounded-full border-8 bg-white leading-none font-black {failed ? 'border-bad text-bad' : percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'}"
+			class="flex h-32 w-32 items-center justify-center rounded-full border-8 bg-white leading-none font-black {failed ? 'border-bad text-bad' : percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'}"
 		>
-			{#if failed}<X size={30} strokeWidth={3.5} aria-hidden="true" />{/if}
 			<span class="text-3xl">{percent}%</span>
 		</div>
 		{#if !failed}

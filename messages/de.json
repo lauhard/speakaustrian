@@ -66,6 +66,7 @@
 	"all_chapters": "Alle Kapitel",
 	"per_day": "{time} pro Tag",
 	"flow_practice": "Übung {current} von {total}",
+	"flow_practice_skip": "Übung überspringen",
 	"flow_gate": "Testreife-Runde · Block {block} · Aufgabe {current} von {total}",
 	"flow_gate_note": "Ohne Leben. Du brauchst {min} von {total} richtig, dann darfst du den Test machen.",
 	"flow_targeted_title": "Zielübung",

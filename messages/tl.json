@@ -66,6 +66,7 @@
 	"all_chapters": "Lahat ng kabanata",
 	"per_day": "{time} bawat araw",
 	"flow_practice": "Pagsasanay {current} sa {total}",
+	"flow_practice_skip": "Laktawan ang pagsasanay",
 	"flow_gate": "Pagsusulit bago ang test · bloke {block} · gawain {current} sa {total}",
 	"flow_gate_note": "Walang buhay. Kailangan mo ng {min} sa {total} na tama para makapag-test.",
 	"flow_targeted_title": "Pagsasanay sa mga mahina",
