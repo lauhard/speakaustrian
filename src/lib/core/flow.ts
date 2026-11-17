@@ -1,4 +1,5 @@
 import { drawGate, drawTest, mixSkills, type PoolItem } from './draw';
+import { seeded, shuffle } from './random';
 import type { RulePolicy } from './policy';
 import type { ChapterRun, GameState } from './state';
 
@@ -18,6 +19,18 @@ export const nextGateItem = (draw: readonly string[], answered: readonly string[
 // R-T2, R-T4: the test list for TEST_STARTED; the caller puts it into the event together with the attempt id.
 export const testDraw = (policy: RulePolicy, s: GameState, run: ChapterRun, testPool: readonly PoolItem[], attemptId: string): string[] =>
 	drawTest(testPool, policy.testComposition(s, run.id), run.seenTestItemIds, attemptId);
+
+// K4: the target stack for TARGET_STARTED – up to TARGET_PER_GOAL items per weak goal (weakest first), at most TARGET_MAX,
+// drawn from the practice pool in a fixed order per attempt and block (reload-safe), no item twice.
+export const targetDraw = (policy: RulePolicy, run: ChapterRun, practicePool: readonly PoolItem[], goalIds: readonly string[], block: number): string[] => {
+	const pool = shuffle(practicePool, seeded(`${run.id}:${run.attemptNo}:target:${block}`));
+	return goalIds
+		.reduce<string[]>((stack, goal) => {
+			const fresh = pool.filter((p) => p.goals.includes(goal) && !stack.includes(p.id)).slice(0, policy.config.TARGET_PER_GOAL);
+			return [...stack, ...fresh.map((p) => p.id)];
+		}, [])
+		.slice(0, policy.config.TARGET_MAX);
+};
 
 // R-G2: practice items that train one of the goals the readiness block missed.
 export const targetedItems = (practicePool: readonly PoolItem[], goalIds: readonly string[]): string[] =>

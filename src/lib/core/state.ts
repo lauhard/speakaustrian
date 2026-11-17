@@ -81,7 +81,15 @@ export const AttemptState = z.discriminatedUnion('kind', [
 		correct: z.number(),
 		answered: z.number()
 	}),
-	z.object({ kind: z.literal('TARGETED_PRACTICE'), block: z.number().default(1), goalIds: z.array(z.string()), done: z.boolean() }),
+	// K4: the target stack (2 items per weak goal, max. 10) is set by TARGET_STARTED and must be worked through.
+	z.object({
+		kind: z.literal('TARGETED_PRACTICE'),
+		block: z.number().default(1),
+		goalIds: z.array(z.string()),
+		done: z.boolean(),
+		items: z.array(z.string()).default([]),
+		answered: z.number().default(0)
+	}),
 	z.object({ kind: z.literal('TEST_READY') }),
 	z.object({
 		kind: z.literal('TEST'),

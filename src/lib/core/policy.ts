@@ -21,6 +21,9 @@ export type RuleConfig = {
 	// K3: questions per practice round; the part above stays the pool the rounds rotate through.
 	PRACTICE_ROUND_ITEMS: number;
 	GATE_MIN_CORRECT: number;
+	// K4: target stack after a missed readiness block.
+	TARGET_PER_GOAL: number;
+	TARGET_MAX: number;
 	// K1 (concept xp-flammen-kapitelfluss): a lesson counts as passed from this share of correct answers, in percent.
 	LESSON_PASS_PCT: number;
 	LEITNER_INTERVALS_DAYS: readonly number[];
@@ -63,6 +66,8 @@ export const defaultConfig: RuleConfig = {
 	PRACTICE_PART_ITEMS: 40,
 	PRACTICE_ROUND_ITEMS: 20,
 	GATE_MIN_CORRECT: 18,
+	TARGET_PER_GOAL: 2,
+	TARGET_MAX: 10,
 	LESSON_PASS_PCT: 51,
 	LEITNER_INTERVALS_DAYS: [1, 3, 7, 14, 30]
 };

@@ -120,12 +120,21 @@ test('DEMO chapter: no lives left → error review → chapter again in repeat m
 	await expect(page.getByTestId('flow-rk6')).toBeVisible();
 });
 
-test('DEMO chapter: a weak readiness block leads to targeted practice and a new block', async ({ page }) => {
+test('DEMO chapter: a weak readiness block leads to the target stack and a new block (K4)', async ({ page }) => {
 	await signIn(page);
 	await page.goto('/chapter/DEMO');
 	await lessonAndPractice(page);
 	await play(page, 'GATE', () => false);
 	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'TARGETED_PRACTICE');
+	// K4: intro with the weak goals, then the mandatory stack with progress; it survives a reload.
+	await expect(page.getByTestId('target-intro')).toBeVisible();
+	await page.getByTestId('flow-target-start').click();
+	await expect(page.getByTestId('flow-phase')).toContainText(/1/);
+	await expect(page.getByTestId('target-goals')).toBeVisible();
+	await answer(page, true);
+	await page.getByTestId('next').click();
+	await page.reload();
+	await expect(page.getByTestId('target-intro')).toHaveCount(0);
 	await play(page, 'TARGETED_PRACTICE');
 	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'GATE');
 });
