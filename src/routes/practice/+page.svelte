@@ -66,7 +66,6 @@
 		<ChevronLeft size={18} strokeWidth={2.5} />{m.free_practice()}
 	</button>
 {:else}
-	<a href={resolve('/')} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.course()}</a>
 	<section class="space-y-4 pt-4">
 		<h1 class="h1">{m.free_practice()}</h1>
 		<p class="text-muted">{m.free_practice_intro()}</p>
