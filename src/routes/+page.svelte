@@ -6,7 +6,7 @@
 	import { chapterContent, course } from '#lib/content/index.ts';
 	import { accuracy } from '#lib/accuracy.svelte.ts';
 	import { DAY_GOAL_SEC } from '#lib/core/day.ts';
-	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw, Zap } from '@lucide/svelte';
+	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw, Zap, Snowflake, Info } from '@lucide/svelte';
 	import { planDay } from '#lib/core/reducer.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
@@ -96,7 +96,7 @@
 			</p>
 		</div>
 
-		<div class="tile !flex-row !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
+		<div class="tile !flex-row !flex-wrap !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
 			<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl {streak > 0 ? 'bg-amber-100 text-amber-500' : 'bg-stone-100 text-stone-400'}">
 				<Zap size={26} strokeWidth={2.25} class={streak > 0 ? 'fill-amber-400' : ''} />
 			</span>
@@ -113,6 +113,13 @@
 					</span>
 				</span>
 			</span>
+			<details class="group w-full border-t border-line pt-2.5 lg:hidden" data-testid="freeze-info">
+				<summary class="flex cursor-pointer list-none items-center gap-2 text-sm font-bold text-muted">
+					<Snowflake size={16} strokeWidth={2.25} class="text-sky-500" />{game.state.streak.freezes}/2 {m.stat_freezes()}
+					<Info size={14} strokeWidth={2.5} class="ml-auto" />
+				</summary>
+				<p class="mt-1.5 text-sm font-semibold text-muted">{m.freeze_explain()}</p>
+			</details>
 		</div>
 
 		{#if current}
