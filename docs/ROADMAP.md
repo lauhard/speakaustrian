@@ -10,6 +10,8 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [x] 004a UI/UX: design system (bundled font, tokens, component classes), home with smart continue, sticky action bar, result ring; free practice covers all chapters (D25); richer pictures for A1-01
 
 ## Next (in this order)
+
+- [ ] 025–031 Chapter flow, flames v2, XP, hearts – concept and order: `docs/concepts/xp-flammen-kapitelfluss.md` (decisions K1–K10, Andi 17.11.2026)
 - [x] 004b A1-01 micro lessons 5–7: all 44 active A1-01 words now have a lesson and a card
 - [ ] 004 A1-01 complete, in three steps:
   - [x] 004a QA script for content pools: `pnpm qa` (`docs/QA.md`), pools file `<chapter>-pools.json` merged by `content/index.ts`, ≥ 2 twins for real chapters as content test, runs in CI; gaps G-009–G-011
