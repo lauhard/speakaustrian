@@ -9,7 +9,7 @@
 	import Runner from './Runner.svelte';
 	import { chapterContent, findItem, poolItems, practiceParts, PREVIEW_CHAPTER } from '#lib/content/index.ts';
 	import type { Item } from '#lib/core/content/schema.ts';
-	import { gateDraw, nextGateItem, practiceItemAt, targetedItems, testDraw } from '#lib/core/flow.ts';
+	import { gateDraw, nextGateItem, practiceItemAt, targetDraw, testDraw } from '#lib/core/flow.ts';
 	import type { game } from '#lib/game.svelte.ts';
 
 	// Everything after the lessons of a chapter attempt (04a §4.2): practice → readiness round → test → correction → error review.
@@ -46,7 +46,11 @@
 		if (!gate || !run) return undefined;
 		return findItem(nextGateItem(gateDraw(store.policy, s, run, parts.rest, gate.block), gate.items) ?? '');
 	});
-	const targetedList = $derived(targeted ? targetedItems(practicePool, targeted.goalIds).flatMap((id) => findItem(id) ?? []) : []);
+	const targetItem = $derived(targeted && targeted.items.length > 0 ? findItem(targeted.items[targeted.answered] ?? '') : undefined);
+	const startTarget = () => {
+		if (!targeted || !run) return;
+		store.dispatch({ type: 'TARGET_STARTED', itemIds: targetDraw(store.policy, run, practicePool, targeted.goalIds, targeted.block) });
+	};
 	const testItem = $derived(test ? findItem(test.items[test.idx]) : undefined);
 	const twinItem = $derived(correction ? findItem(correction.twins[correction.idx]) : undefined);
 	const lives = $derived(store.policy.startLives(s, chapterId));
@@ -148,7 +152,12 @@
 	{@render label(m.flow_review_left({ count: pending.length }), 'ERROR_REVIEW')}
 {/snippet}
 {#snippet targetedTop()}
-	{@render label(m.flow_targeted_title(), 'TARGETED_PRACTICE')}
+	{@render label(m.flow_target_count({ current: (targeted?.answered ?? 0) + 1, total: targeted?.items.length ?? 0 }), 'TARGETED_PRACTICE')}
+	<!-- K4: the list of weak goals stays visible while the stack runs. -->
+	<details class="card-muted text-sm" data-testid="target-goals">
+		<summary class="cursor-pointer font-bold">{m.flow_targeted_text()} ({targeted?.goalIds.length ?? 0})</summary>
+		<div class="mt-2">{@render goalList(targeted?.goalIds ?? [])}</div>
+	</details>
 {/snippet}
 
 <section class="space-y-4" data-testid="chapter-flow">
@@ -158,26 +167,18 @@
 		{@render ask(practiceItem, practiceTop, (ok) => store.dispatch({ type: 'PRACTICE_ANSWERED', itemId: practiceItem.id, correct: ok }), false)}
 	{:else if gate && gateItem}
 		{@render ask(gateItem, gateTop, (ok) => store.dispatch({ type: 'GATE_ANSWERED', itemId: gateItem.id, correct: ok }), false)}
+	{:else if targeted && targetItem}
+		{@render ask(targetItem, targetedTop, (ok) => store.dispatch({ type: 'TARGET_ANSWERED', itemId: targetItem.id, correct: ok }), false)}
 	{:else if targeted}
-		<div class="card space-y-2">
+		{@render label(m.flow_targeted_title(), 'TARGETED_PRACTICE')}
+		<div class="card space-y-3" data-testid="target-intro">
+			<p>{m.flow_target_intro({ max: store.policy.config.TARGET_MAX })}</p>
 			<p class="font-bold">{m.flow_targeted_text()}</p>
 			{@render goalList(targeted.goalIds)}
 		</div>
-		{#if targetedList.length > 0}
-			{#key targeted.block}
-				<Runner
-					items={targetedList}
-					bare
-					top={targetedTop}
-					{tlMachine}
-					{backHref}
-					backLabel={m.course()}
-					onfinish={() => store.dispatch({ type: 'TARGETED_PRACTICE_DONE', goalIds: targeted.goalIds })}
-				/>
-			{/key}
-		{:else}
-			<button type="button" class="btn-primary" data-testid="flow-targeted-done" onclick={() => store.dispatch({ type: 'TARGETED_PRACTICE_DONE', goalIds: targeted.goalIds })}>{m.flow_targeted_go()}</button>
-		{/if}
+		<div class="actionbar">
+			<button type="button" class="btn-primary" data-testid="flow-target-start" onclick={startTarget}>{m.flow_target_start()}</button>
+		</div>
 	{:else if ready && run}
 		<div class="card space-y-3">
 			<h2 class="h2">{m.flow_ready_title()}</h2>

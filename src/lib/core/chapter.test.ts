@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { makeDefaultPolicy, type RulePolicy } from './policy';
 import { makeReducer, newGame, settleChapter, type ContentInfo, type GameEvent } from './reducer';
 import { GameState } from './state';
-import { practiceItemAt } from './flow';
+import { practiceItemAt, targetDraw } from './flow';
 
 // Chapter attempt automaton (docs/spec/04a §4.2), test cases of docs/spec/04b §1–5 and §13a.
 const order = ['A1-01', 'A1-02', 'A1-03', 'A1-04'];
@@ -100,7 +100,43 @@ describe('lessons → practice → readiness round (R-G)', () => {
 	});
 	it('T-G03: 17 of 20 leads to targeted practice for the goals of the wrong items', () => {
 		const s = play([profile, ...lessons('A1-01'), ...practice, ...gate(3)]);
-		expect(attempt(s)).toEqual({ kind: 'TARGETED_PRACTICE', block: 1, goalIds: ['goal-g1-1', 'goal-g1-2', 'goal-g1-3'], done: false });
+		expect(attempt(s)).toEqual({ kind: 'TARGETED_PRACTICE', block: 1, goalIds: ['goal-g1-1', 'goal-g1-2', 'goal-g1-3'], done: false, items: [], answered: 0 });
+	});
+	it('K4: the target stack must be worked through, then a new readiness block follows', () => {
+		const s1 = play([profile, ...lessons('A1-01'), ...practice, ...gate(3), ev({ type: 'TARGET_STARTED', itemIds: ['x1', 'x2', 'x3'] })]);
+		expect(attempt(s1)).toMatchObject({ kind: 'TARGETED_PRACTICE', items: ['x1', 'x2', 'x3'], answered: 0 });
+		// Started stacks cannot be skipped or restarted; answers count only in order.
+		expect(run(policy, s1, [ev({ type: 'TARGETED_PRACTICE_DONE', goalIds: [] }), ev({ type: 'TARGET_STARTED', itemIds: ['y'] }), ev({ type: 'TARGET_ANSWERED', itemId: 'x2', correct: true })])).toEqual(s1);
+		const s2 = run(policy, s1, ['x1', 'x2'].map((itemId, i) => ev({ type: 'TARGET_ANSWERED', itemId, correct: i === 0 })));
+		expect(attempt(s2)).toMatchObject({ kind: 'TARGETED_PRACTICE', answered: 2 });
+		expect(s2.review.cards['err-x2']).toBeDefined();
+		const s3 = run(policy, s2, [ev({ type: 'TARGET_ANSWERED', itemId: 'x3', correct: true })]);
+		expect(attempt(s3)).toMatchObject({ kind: 'GATE', block: 2, answered: 0 });
+	});
+	it('K4: at most 10 items; an empty stack goes straight to the next block', () => {
+		const ids = Array.from({ length: 14 }, (_, i) => `x${i}`);
+		const big = play([profile, ...lessons('A1-01'), ...practice, ...gate(3), ev({ type: 'TARGET_STARTED', itemIds: ids })]);
+		expect(attempt(big)).toMatchObject({ items: ids.slice(0, 10) });
+		const empty = play([profile, ...lessons('A1-01'), ...practice, ...gate(3), ev({ type: 'TARGET_STARTED', itemIds: [] })]);
+		expect(attempt(empty)).toMatchObject({ kind: 'GATE', block: 2 });
+	});
+	it('K4: the draw takes 2 items per goal, weakest goal first, no item twice, max. 10', () => {
+		const item = (id: string, ...goals: string[]) => ({ id, skill: 'lesen' as const, family: id, goals });
+		const pool = [item('a1', 'A'), item('a2', 'A'), item('a3', 'A'), item('ab', 'A', 'B'), item('b1', 'B'), item('c1', 'C')];
+		const r = play([profile]).course.chapter!;
+		const stack = targetDraw(policy, r, pool, ['B', 'A', 'C'], 1);
+		expect(stack.filter((id) => ['b1', 'ab'].includes(id))).toHaveLength(2);
+		expect(stack.slice(0, 2).every((id) => ['b1', 'ab'].includes(id))).toBe(true);
+		expect(new Set(stack).size).toBe(stack.length);
+		expect(stack).toContain('c1');
+		expect(stack).toEqual(targetDraw(policy, r, pool, ['B', 'A', 'C'], 1));
+		const many = Array.from({ length: 30 }, (_, i) => item(`m${i}`, `G${i % 8}`));
+		expect(targetDraw(policy, r, many, Array.from({ length: 8 }, (_, i) => `G${i}`), 1)).toHaveLength(10);
+	});
+	it('K4: goals with more wrong items come first', () => {
+		const multi: ContentInfo = { ...content, goalsOf: (id) => (id === 'g1-1' ? ['rare'] : ['often']) };
+		const s = [profile, ...lessons('A1-01'), ...practice, ...gate(3)].reduce(makeReducer(policy, order, multi), newGame(policy));
+		expect(attempt(s)).toMatchObject({ goalIds: ['often', 'rare'] });
 	});
 	it('T-G04: targeted practice is followed by a new gate block', () => {
 		const s = play([profile, ...lessons('A1-01'), ...practice, ...gate(3), ev({ type: 'TARGETED_PRACTICE_DONE', goalIds: [] })]);

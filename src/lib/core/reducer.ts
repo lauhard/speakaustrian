@@ -19,6 +19,8 @@ export type GameEvent = EventBase &
 		| { type: 'PRACTICE_SKIPPED' }
 		| { type: 'GATE_ANSWERED'; itemId: string; correct: boolean }
 		| { type: 'TARGETED_PRACTICE_DONE'; goalIds: string[] }
+		| { type: 'TARGET_STARTED'; itemIds: string[] }
+		| { type: 'TARGET_ANSWERED'; itemId: string; correct: boolean }
 		| { type: 'TEST_STARTED'; attemptId: string; itemIds: string[] }
 		| { type: 'TEST_ANSWERED'; attemptId: string; itemId: string; correct: boolean }
 		| { type: 'CORRECTION_ANSWERED'; attemptId: string; twinId: string; correct: boolean }
@@ -100,6 +102,8 @@ const tallied = (run: ChapterRun | null, e: GameEvent): ChapterRun | null => {
 			return a.kind === 'GATE' && !a.items.includes(e.itemId) ? add(Number(e.correct), 1) : run;
 		case 'TEST_ANSWERED':
 			return a.kind === 'TEST' && a.attemptId === e.attemptId && a.items[a.idx] === e.itemId ? add(Number(e.correct), 1) : run;
+		case 'TARGET_ANSWERED':
+			return a.kind === 'TARGETED_PRACTICE' && a.items[a.answered] === e.itemId ? add(Number(e.correct), 1) : run;
 		case 'CORRECTION_ANSWERED':
 			return a.kind === 'CORRECTION' && a.attemptId === e.attemptId && a.twins[a.idx] === e.twinId ? add(Number(e.correct), 1) : run;
 		default:
@@ -265,12 +269,30 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 			const booked = graded(s, event.itemId, event.correct);
 			if (gate.answered < policy.config.GATE_ITEMS) return withAttempt(booked, gate);
 			if (policy.isTestReady(gate)) return withAttempt(booked, { kind: 'TEST_READY' });
-			const goalIds = [...new Set(gate.wrong.flatMap((item) => content.goalsOf(item)))];
-			return withAttempt(booked, { kind: 'TARGETED_PRACTICE', block: gate.block, goalIds, done: false });
+			// K4: weakest goals first (most wrong items), so the capped stack trains them; the full list stays visible.
+			const misses = gate.wrong.flatMap((item) => content.goalsOf(item));
+			const count = (g: string) => misses.filter((m) => m === g).length;
+			const goalIds = [...new Set(misses)].sort((a, b) => count(b) - count(a));
+			return withAttempt(booked, { kind: 'TARGETED_PRACTICE', block: gate.block, goalIds, done: false, items: [], answered: 0 });
 		}
 		case 'TARGETED_PRACTICE_DONE': {
-			if (!run || run.attempt.kind !== 'TARGETED_PRACTICE') return s;
+			// K4: a started stack is mandatory; DONE only moves on while no stack was started (older states, empty pools).
+			if (!run || run.attempt.kind !== 'TARGETED_PRACTICE' || run.attempt.items.length > 0) return s;
 			return withAttempt(s, gateBlock(run.attempt.block + 1));
+		}
+		case 'TARGET_STARTED': {
+			const t = run?.attempt;
+			if (!t || t.kind !== 'TARGETED_PRACTICE' || t.items.length > 0) return s;
+			const items = event.itemIds.slice(0, policy.config.TARGET_MAX);
+			return withAttempt(s, items.length === 0 ? gateBlock(t.block + 1) : { ...t, items, answered: 0 });
+		}
+		case 'TARGET_ANSWERED': {
+			const t = run?.attempt;
+			if (!t || t.kind !== 'TARGETED_PRACTICE' || t.items[t.answered] !== event.itemId) return s;
+			const booked = graded(s, event.itemId, event.correct);
+			const answered = t.answered + 1;
+			// K4: after the last item a new readiness block follows (V2).
+			return withAttempt(booked, answered >= t.items.length ? gateBlock(t.block + 1) : { ...t, answered });
 		}
 		case 'TEST_STARTED': {
 			if (!run || run.attempt.kind !== 'TEST_READY' || event.itemIds.length === 0) return s;
