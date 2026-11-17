@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BankPoints from './BankPoints.svelte';
 	import { Check, Heart, Trophy, X } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
@@ -211,6 +212,7 @@
 		{/if}
 	{:else if completed}
 		<div class="card space-y-3 text-center" data-testid="flow-passed">
+			<BankPoints />
 			<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-ok-soft text-ok"><Trophy size={40} strokeWidth={2} /></p>
 			<h2 class="h2">{m.flow_passed_title()}</h2>
 			{#if s.course.nextChapterBonus > 0}<p class="font-bold text-ok">{m.flow_bonus({ count: s.course.nextChapterBonus })}</p>{/if}

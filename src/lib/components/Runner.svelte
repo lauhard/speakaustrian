@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { accuracy } from '#lib/accuracy.svelte.ts';
+	import BankPoints from './BankPoints.svelte';
+	import FlamePot from './FlamePot.svelte';
 	import { fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import { AudioLines, Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
@@ -45,7 +47,6 @@
 	let grade = $state<Grade | null>(null);
 	let correctCount = $state(0);
 	// Current run of correct answers and the misses of this round, for the header and the result screen.
-	let streak = $state(0);
 	let misses = $state<{ id: string; text: string; expected: string }[]>([]);
 	let finished = $state(false);
 
@@ -72,9 +73,7 @@
 		accuracy.record(passes(grade.verdict));
 		if (passes(grade.verdict)) {
 			correctCount += 1;
-			streak += 1;
 		} else {
-			streak = 0;
 			misses = [...misses, { id: item.id, text: item.type === 'cloze' ? item.text : (item.prompt ?? item.audioText ?? ''), expected: Object.values(grade.expected).join(' · ') }];
 		}
 		onchecked?.(item, passes(grade.verdict));
@@ -99,7 +98,6 @@
 		index = 0;
 		selected = null;
 		gaps = {};
-		streak = 0;
 		misses = [];
 		shortText = '';
 		grade = null;
@@ -140,6 +138,7 @@
 
 {#if finished && !bare}
 	<section class="space-y-6 pt-10 text-center" data-testid="result">
+		<BankPoints />
 		<div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-8 {percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'} bg-white text-3xl font-black">
 			{percent}%
 		</div>
@@ -171,7 +170,7 @@
 				<span style="width: {((index + (grade ? 1 : 0)) / items.length) * 100}%"></span>
 			</div>
 			<p class="flex shrink-0 items-center gap-2 text-sm font-extrabold">
-				{#if streak >= 3}<span class="pop flex items-center gap-0.5 text-orange-500" data-testid="streak"><Flame size={16} strokeWidth={2.5} class="fill-orange-400" />{streak}</span>{/if}
+				<FlamePot />
 				<span class="flex items-center gap-0.5 text-ok" data-testid="run-correct"><Check size={16} strokeWidth={3} />{correctCount}</span>
 				<span class="text-muted" aria-label={m.task_count({ current: index + 1, total: items.length })}>{index + 1}/{items.length}</span>
 			</p>

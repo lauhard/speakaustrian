@@ -69,6 +69,10 @@ test('DEMO chapter: perfect run to the end (bonus life, restart)', async ({ page
 	await play(page, 'TEST');
 	await expect(page.getByTestId('flow-passed')).toBeVisible();
 	await expect(page.getByTestId('flow-passed')).toContainText(/Bonus|bonus/);
+	// Flame score: a perfect chapter banks its flames into the header score.
+	await expect(page.getByTestId('bank-points')).toBeVisible();
+	await expect.poll(async () => Number(await page.locator('header [data-testid="stat-score"] b').innerText())).toBeGreaterThan(0);
+	await page.screenshot({ path: 'test-results/flame-bank.png' });
 	await page.getByTestId('flow-restart').click();
 	await expect(page.getByTestId('lesson-DEMO-01')).toBeVisible();
 });

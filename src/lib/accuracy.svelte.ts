@@ -1,30 +1,34 @@
-// "No mistakes" run: counts correct answers in a row, resets on a mistake. No game rule yet (device-local, like settings).
-import { step, type Run } from './core/accuracy.ts';
-const KEY = 'speakaustrian.accuracy.v1';
+// Device-local flame score (like settings, not course progress). Rules: core/accuracy.ts.
+import { answer, bank, emptyScore, fxOf, type Score, type ScoreFx } from './core/accuracy.ts';
 
-const load = (): Run => {
+const KEY = 'speakaustrian.score.v1';
+const load = (): Score => {
 	try {
-		return { current: 0, best: 0, ...JSON.parse(localStorage.getItem(KEY) ?? '{}') };
+		return { ...emptyScore, ...JSON.parse(localStorage.getItem(KEY) ?? '{}') };
 	} catch {
-		return { current: 0, best: 0 };
+		return emptyScore;
 	}
 };
 
-let run = $state<Run>(typeof window === 'undefined' ? { current: 0, best: 0 } : load());
+let s = $state<Score>(typeof window === 'undefined' ? emptyScore : load());
+let fx = $state<{ kind: ScoreFx; seq: number }>({ kind: 'none', seq: 0 });
+
+const commit = (next: Score) => {
+	fx = { kind: fxOf(s, next), seq: fx.seq + 1 };
+	s = next;
+	try {
+		localStorage.setItem(KEY, JSON.stringify(s));
+	} catch {
+		/* private mode: keep it in memory */
+	}
+};
 
 export const accuracy = {
-	get current() {
-		return run.current;
-	},
-	get best() {
-		return run.best;
-	},
-	record(correct: boolean) {
-		run = step(run, correct);
-		try {
-			localStorage.setItem(KEY, JSON.stringify(run));
-		} catch {
-			/* private mode: the run just stays in memory */
-		}
-	}
+	get score() { return s.score; },
+	get best() { return s.best; },
+	get pot() { return s.pot; },
+	get hits() { return s.hits; },
+	get fx() { return fx; },
+	record: (correct: boolean) => commit(answer(s, correct)),
+	bank: () => s.pot > 0 && commit(bank(s))
 };
