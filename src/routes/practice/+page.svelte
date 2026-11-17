@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { ChevronLeft } from '@lucide/svelte';
+	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
+	import { practiceKinds } from '#lib/skills.ts';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
 	import { onMount } from 'svelte';
@@ -69,29 +70,24 @@
 	<section class="space-y-4 pt-4">
 		<h1 class="h1">{m.free_practice()}</h1>
 		<p class="text-muted">{m.free_practice_intro()}</p>
-		<ul class="space-y-2">
+		<ul class="list">
 			<li>
-				<button
-					type="button"
-					data-testid="practice-woerter"
-					class="card-link flex w-full items-center justify-between text-left text-lg font-extrabold"
-					onclick={startWords}
-				>
-					<span>{m.skill_woerter()}</span>
+				<button type="button" data-testid="practice-woerter" class="list-row" onclick={startWords}>
+					<span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl {practiceKinds.woerter.tile}"><practiceKinds.woerter.icon size={20} strokeWidth={2.25} /></span>
+					<span class="tile-title flex-1">{m.skill_woerter()}</span>
+					<ChevronRight size={18} class="text-muted" />
 				</button>
 			</li>
 			{#each filters as filter (filter)}
+				{@const kind = practiceKinds[filter]}
 				<li>
-					<button
-						type="button"
-						data-testid="practice-{filter}"
-						class="card-link flex w-full items-center justify-between text-left text-lg font-extrabold"
-						onclick={() => start(filter)}
-					>
-						<span>{label[filter]()}</span>
-						<span class="chip">
-							{m.tasks_available({ count: items.filter((i) => matchesFilter(i, filter)).length })}
+					<button type="button" data-testid="practice-{filter}" class="list-row" onclick={() => start(filter)}>
+						<span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl {kind.tile}"><kind.icon size={20} strokeWidth={2.25} /></span>
+						<span class="flex-1">
+							<span class="tile-title">{label[filter]()}</span>
+							<span class="tile-sub">{m.tasks_available({ count: items.filter((i) => matchesFilter(i, filter)).length })}</span>
 						</span>
+						<ChevronRight size={18} class="text-muted" />
 					</button>
 				</li>
 			{/each}

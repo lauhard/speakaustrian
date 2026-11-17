@@ -1,4 +1,4 @@
-import { BookOpen, Headphones, Landmark, Mic, PenLine, Puzzle } from '@lucide/svelte';
+import { BookOpen, Headphones, Image, Landmark, Library, Mic, PenLine, Puzzle } from '@lucide/svelte';
 import type { Discipline } from './core/content/schema.ts';
 import { m } from './paraglide/messages.js';
 
@@ -11,3 +11,10 @@ export const skills = {
 	grammatikWortschatz: { icon: Puzzle, label: m.skill_grammatikWortschatz, tile: 'bg-brand-soft text-brand', solid: 'bg-brand text-white shadow-brand/30' },
 	werte: { icon: Landmark, label: m.skill_werte, tile: 'bg-indigo-100 text-indigo-700', solid: 'bg-indigo-600 text-white shadow-indigo-600/30' }
 } satisfies Record<Discipline, unknown>;
+
+// Free practice adds two categories that are not exam skills: vocabulary cards and picture tasks.
+export const practiceKinds = {
+	...skills,
+	woerter: { icon: Library, tile: 'bg-teal-100 text-teal-700' },
+	bild: { icon: Image, tile: 'bg-pink-100 text-pink-700' }
+};

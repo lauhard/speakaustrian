@@ -4,8 +4,9 @@
 	import { m } from '#lib/paraglide/messages.js';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { chapterContent, course } from '#lib/content/index.ts';
+	import { accuracy } from '#lib/accuracy.svelte.ts';
 	import { DAY_GOAL_SEC } from '#lib/core/day.ts';
-	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw } from '@lucide/svelte';
+	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw, Zap } from '@lucide/svelte';
 	import { planDay } from '#lib/core/reducer.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
@@ -69,7 +70,7 @@
 	onMount(() => game.init());
 	// Free-mode chapters keep their own state; load it so the list shows their progress.
 	$effect(() => {
-		if (!game.ready) return;
+		if (!game.ready || !game.state.profile) return; // no profile yet (e.g. right after a reset): nothing to load
 		for (const c of course.chapters) if (chapterContent(c.id) && isFreeMode(c.id)) storeFor(c.id).init();
 	});
 
@@ -101,11 +102,16 @@
 			</span>
 			<span class="min-w-0 flex-1 space-y-1.5">
 				<span class="flex items-baseline justify-between gap-2">
-					<span class="tile-title">{streak} {m.stat_streak()}</span>
+					<span class="tile-title">{streak} {m.stat_streak()} <span class="text-sm font-semibold text-muted">· {m.stat_best()} {game.state.streak.best}</span></span>
 					<span class="text-xs font-extrabold tracking-wider text-muted uppercase">{m.goal_title()}</span>
 				</span>
 				<span class="bar !h-2 block"><span class={goal.met ? '!bg-ok' : '!bg-orange-400'} style="width: {goal.pct}%"></span></span>
-				<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
+				<span class="flex items-center justify-between gap-2">
+					<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
+					<span class="flex items-center gap-1 text-sm font-extrabold text-muted" title={m.stat_flawless()} data-testid="flawless-run">
+						<Zap size={15} strokeWidth={2.5} class={accuracy.current > 0 ? 'fill-amber-400 text-amber-500' : ''} />{accuracy.current}<span class="font-semibold">· {m.stat_best()} {accuracy.best}</span>
+					</span>
+				</span>
 			</span>
 		</div>
 
