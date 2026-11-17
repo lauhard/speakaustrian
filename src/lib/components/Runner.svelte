@@ -5,6 +5,7 @@
 	import { fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import { AudioLines, Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
+	import { STARS } from '#lib/lesson-scores.svelte.ts';
 	import { skills } from '#lib/skills.ts';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, type Snippet } from 'svelte';
@@ -32,8 +33,10 @@
 		// Called when an answer is checked (before "next"), so the parent can show lives and similar.
 		onchecked?: (item: Item, correct: boolean) => void;
 		nextLabel?: string;
+		// Lessons (K1): decides pass/fail of the round; without it the result shows no verdict.
+		passCheck?: (correct: number, total: number) => boolean;
 	};
-	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel }: Props = $props();
+	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel, passCheck }: Props = $props();
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 
@@ -121,6 +124,10 @@
 	const gapClass = (id: string) =>
 		!grade ? '' : grade.parts[id] === 'correct' ? 'is-right' : grade.parts[id] === 'near' ? 'is-near' : 'is-wrong';
 	const percent = $derived(Math.round((correctCount / items.length) * 100));
+	const failed = $derived(passCheck ? !passCheck(correctCount, items.length) : false);
+	const heading = $derived(
+		failed ? m.result_failed() : percent >= 90 ? m.result_great() : percent >= 70 ? m.result_good() : passCheck ? m.result_passed() : ''
+	);
 
 	const back = (event: MouseEvent) => {
 		if (!onback) return;
@@ -137,28 +144,41 @@
 {/snippet}
 
 {#if finished && !bare}
-	<section class="space-y-6 pt-10 text-center" data-testid="result">
+	<section class="flex min-h-[calc(100dvh-10rem)] flex-col items-center justify-center gap-5 py-6 text-center" data-testid="result" data-passed={!failed}>
 		<BankPoints />
-		<div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-8 {percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'} bg-white text-3xl font-black">
-			{percent}%
+		<div
+			class="flex h-32 w-32 flex-col items-center justify-center rounded-full border-8 bg-white leading-none font-black {failed ? 'border-bad text-bad' : percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'}"
+		>
+			{#if failed}<X size={30} strokeWidth={3.5} aria-hidden="true" />{/if}
+			<span class="text-3xl">{percent}%</span>
 		</div>
-		<p class="pop flex justify-center gap-1" aria-hidden="true">{#each [50, 70, 90] as min (min)}<Star size={40} strokeWidth={2} class={percent >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</p>
-		<h1 class="text-3xl font-black">{percent >= 90 ? m.result_great() : percent >= 70 ? m.result_good() : m.result_title()}</h1>
+		{#if !failed}
+			<p class="pop flex items-center justify-center gap-1" aria-hidden="true">{#each STARS as min (min)}<Star size={40} strokeWidth={2} class={percent >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</p>
+		{/if}
+		{#if heading}<h1 class="text-3xl font-black {failed ? 'text-bad' : ''}" data-testid="result-heading">{heading}</h1>{/if}
 		<p class="text-xl font-semibold">{m.result_score({ correct: correctCount, total: items.length })}</p>
 		{#if misses.length > 0}
-			<div class="card space-y-2 text-left" data-testid="misses">
+			<div class="card w-full space-y-2 text-left" data-testid="misses">
 				<p class="font-extrabold">{m.result_misses()}</p>
 				<ul class="space-y-2 text-sm">
 					{#each misses as miss (miss.id)}
-						<li class="border-t border-line pt-2"><span class="block text-muted" lang="de">{miss.text.replaceAll(/\{\{\d+\}\}/g, '…')}</span><span class="font-bold text-ok" lang="de">✓ {miss.expected}</span></li>
+						<li class="border-t border-line pt-2">
+							<span class="block text-muted" lang="de">{miss.text.replaceAll(/\{\{\d+\}\}/g, '…')}</span>
+							<span class="text-xs font-bold text-muted">{m.result_solution()}</span> <span class="font-bold" lang="de">{miss.expected}</span>
+						</li>
 					{/each}
 				</ul>
 			</div>
 		{/if}
-		<button type="button" class="btn-secondary" onclick={restart}>
-			{m.again()}
-		</button>
-		<a href={backHref} onclick={back} data-testid="back" class="btn-primary">{backLabel}</a>
+		<div class="flex w-full flex-col gap-3">
+			{#if failed}
+				<button type="button" class="btn-primary" data-testid="again" onclick={restart}>{m.again()}</button>
+				<a href={backHref} onclick={back} data-testid="back" class="btn-secondary">{backLabel}</a>
+			{:else}
+				<button type="button" class="btn-secondary" data-testid="again" onclick={restart}>{m.again()}</button>
+				<a href={backHref} onclick={back} data-testid="back" class="btn-primary">{backLabel}</a>
+			{/if}
+		</div>
 	</section>
 {:else}
 	<form class="space-y-5" data-item={item.id} onsubmit={check}>

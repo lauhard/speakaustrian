@@ -53,6 +53,25 @@ describe('lessons → practice → readiness round (R-G)', () => {
 		const s2 = run(policy, s1, practice);
 		expect(attempt(s2)).toEqual({ kind: 'GATE', block: 1, items: [], wrong: [], correct: 0, answered: 0 });
 	});
+	it('K1: a lesson below 51 % stays open, from 51 % it counts (rounded like the result screen)', () => {
+		const lesson = (lessonId: string, correct: number, total: number) => ev({ type: 'LESSON_COMPLETED', chapterId: 'A1-01', lessonId, correct, total });
+		const s = play([profile, lesson('L1', 2, 3), lesson('L2', 3, 7)]);
+		expect(attempt(s)).toEqual({ kind: 'LESSONS', repeatMode: false, done: ['L1'] });
+		expect(policy.isLessonPassed({ correct: 1, total: 2 })).toBe(false);
+		expect(policy.isLessonPassed({ correct: 50, total: 99 })).toBe(true);
+		expect(policy.isLessonPassed({ correct: 0, total: 0 })).toBe(false);
+	});
+	it('K2: practice stays locked until every lesson is passed; a later pass unlocks it', () => {
+		const lesson = (lessonId: string, correct: number) => ev({ type: 'LESSON_COMPLETED', chapterId: 'A1-01', lessonId, correct, total: 4 });
+		const s1 = play([profile, lesson('L1', 4), lesson('L2', 2)]);
+		expect(attempt(s1).kind).toBe('LESSONS');
+		expect(run(policy, s1, practice)).toEqual(s1);
+		const s2 = run(policy, s1, [lesson('L2', 3)]);
+		expect(attempt(s2)).toEqual({ kind: 'PRACTICE', answered: 0, total: 2 });
+	});
+	it('K2: lesson events without a score (older logs) stay valid as passed', () => {
+		expect(attempt(play([profile, ...lessons('A1-01')])).kind).toBe('PRACTICE');
+	});
 	it('stays in the lessons while the chapter content has no pools yet', () => {
 		const s = newGame(policy);
 		const bare = [profile, ...lessons('A1-01')].reduce(makeReducer(policy, order), s);

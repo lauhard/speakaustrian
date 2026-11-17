@@ -44,7 +44,8 @@
 
 	const finish = (correct: number, total: number) => {
 		if (lesson) lessonScores.record(lesson.id, Math.round((correct / Math.max(1, total)) * 100));
-		if (lesson) store.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson) });
+		// The reducer books the lesson only when it is passed (K1).
+		if (lesson) store.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson), correct, total });
 	};
 </script>
 
@@ -89,6 +90,7 @@
 			backHref={resolve('/chapter/[id]', { id })}
 			backLabel={m.back_chapter()}
 			onfinish={finish}
+			passCheck={(correct, total) => store.policy.isLessonPassed({ correct, total })}
 		/>
 	{/key}
 {/if}

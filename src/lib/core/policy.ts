@@ -19,6 +19,8 @@ export type RuleConfig = {
 	// Size of the practice part before the readiness round (masterprompt phase 5 no. 2, G-010 A).
 	PRACTICE_PART_ITEMS: number;
 	GATE_MIN_CORRECT: number;
+	// K1 (concept xp-flammen-kapitelfluss): a lesson counts as passed from this share of correct answers, in percent.
+	LESSON_PASS_PCT: number;
 	LEITNER_INTERVALS_DAYS: readonly number[];
 };
 
@@ -36,6 +38,8 @@ export interface RulePolicy {
 	testComposition(s: GameState, c: ChapterId): TestSpec;
 	startLives(s: GameState, c: ChapterId): number;
 	isTestReady(gate: { correct: number; answered: number }): boolean;
+	// K1: whether a finished lesson round counts; the rounded percentage, as the result screen shows it.
+	isLessonPassed(score: { correct: number; total: number }): boolean;
 	// Asked after every test answer; 'CONTINUE' (not in the 04a sketch, G-008) keeps the lives rule out of the core.
 	outcomeAfterTest(run: ChapterRun): 'CONTINUE' | 'PASSED' | 'CORRECTION' | 'FAILED';
 	// Asked after a wrong twin or after the last twin.
@@ -56,6 +60,7 @@ export const defaultConfig: RuleConfig = {
 	GATE_ITEMS: 20,
 	PRACTICE_PART_ITEMS: 40,
 	GATE_MIN_CORRECT: 18,
+	LESSON_PASS_PCT: 51,
 	LEITNER_INTERVALS_DAYS: [1, 3, 7, 14, 30]
 };
 
@@ -97,6 +102,8 @@ export const makeDefaultPolicy = (
 	startLives: (s) => Math.min(config.LIVES_MAX, config.LIVES_BASE + s.course.nextChapterBonus),
 	// R-G2
 	isTestReady: (gate) => gate.answered >= config.GATE_ITEMS && gate.correct >= config.GATE_MIN_CORRECT,
+	// K1
+	isLessonPassed: ({ correct, total }) => total > 0 && Math.round((correct / total) * 100) >= config.LESSON_PASS_PCT,
 	// R-L1: no lives left ends the attempt at once. R-F2: passed only without errors, otherwise correction.
 	outcomeAfterTest: (run) => {
 		const t = run.attempt;
