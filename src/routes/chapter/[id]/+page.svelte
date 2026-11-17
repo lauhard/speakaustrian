@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { untrack } from 'svelte';
 	import { toast } from '#lib/toast.svelte.ts';
-	import { Check, ChevronLeft, ChevronRight, LockOpen } from '@lucide/svelte';
+	import { Check, ChevronLeft, ChevronRight, LockOpen, Star } from '@lucide/svelte';
+	import { lessonScores } from '#lib/lesson-scores.svelte.ts';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
@@ -94,6 +95,7 @@
 		<ol class="mt-2 space-y-2">
 			{#each content.lessons as lesson, i (lesson.id)}
 				{@const isDone = done.includes(lesson.id)}
+				{@const pct = lessonScores.of(lesson.id)}
 				<li>
 					<a
 						href={resolve('/chapter/[id]/[lesson]', { id, lesson: lesson.id })}
@@ -106,7 +108,12 @@
 							<span class="block text-lg font-extrabold" lang="de">{lesson.title.de}</span>
 							{#if showTr}<span class="block text-sm text-muted">{lesson.title[helpLocale]}</span>{/if}
 						</span>
-						{#if isDone}<span class="text-sm font-bold text-ok">{m.lesson_done()}</span>{:else}<ChevronRight size={18} class="text-muted" />{/if}
+						{#if pct !== undefined}
+							<span class="flex shrink-0 flex-col items-end gap-0.5" data-testid="lesson-score">
+								<span class="flex gap-px" aria-hidden="true">{#each [50, 70, 90] as min (min)}<Star size={13} strokeWidth={2.25} class={pct >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</span>
+								<span class="rounded-full px-2 py-0.5 text-xs font-extrabold {pct === 100 ? 'bg-amber-100 text-amber-700' : pct >= 70 ? 'bg-ok-soft text-ok' : 'bg-warn-soft text-warn'}">{pct}%</span>
+							</span>
+						{:else}<ChevronRight size={18} class="text-muted" />{/if}
 					</a>
 				</li>
 			{/each}

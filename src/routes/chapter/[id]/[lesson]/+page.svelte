@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { lessonScores } from '#lib/lesson-scores.svelte.ts';
 	import { Headphones, Volume2 } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount } from 'svelte';
@@ -41,7 +42,8 @@
 		ttsFailed = !(await tts.speak(text)).ok;
 	};
 
-	const finish = () => {
+	const finish = (correct: number, total: number) => {
+		if (lesson) lessonScores.record(lesson.id, Math.round((correct / Math.max(1, total)) * 100));
 		if (lesson) store.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson) });
 	};
 </script>

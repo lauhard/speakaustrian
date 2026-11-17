@@ -156,5 +156,7 @@
 	"freeze_explain": "If you miss a day, 1 freeze is used and your day streak stays. You earn a new one every 7 streak days, max. 2.",
 	"streak_explain": "Days with 20 min of learning and all reviews done.",
 	"score_explain": "A flame for every 3 correct in a row. A mistake costs the round's flames, a second one your points.",
-	"side_progress": "Your progress"
+	"side_progress": "Your progress",
+	"update_available": "New version available",
+	"update_reload": "Reload"
 }
