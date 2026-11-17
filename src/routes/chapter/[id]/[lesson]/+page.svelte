@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ChevronLeft, Headphones, Volume2 } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
@@ -49,15 +50,15 @@
 	<p class="pt-6">{m.not_found()}</p>
 {:else if learning && cards.length > 0}
 	<section class="space-y-4">
-		<a href={resolve('/chapter/[id]', { id })} class="backlink">‹ {m.back_chapter()}</a>
+		<a href={resolve('/chapter/[id]', { id })} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.back_chapter()}</a>
 		<h1 class="h1" lang="de">{lesson.title.de}</h1>
-		<p class="chip">🎧 {m.learn_title()}</p>
+		<p class="chip"><Headphones size={16} strokeWidth={2.5} />{m.learn_title()}</p>
 		{#if ttsFailed}<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>{/if}
 		<ul class="space-y-3">
 			{#each cards as card (card.phrase)}
 				<li class="card">
 					<button type="button" class="flex w-full items-start gap-3 text-left" onclick={() => listen(card.audioText ?? card.phrase)}>
-						<span aria-hidden="true" class="badge">🔊</span>
+						<span aria-hidden="true" class="icon-tile"><Volume2 size={20} strokeWidth={2.25} /></span>
 						<span class="text-xl font-extrabold" lang="de">{card.phrase}</span>
 					</button>
 					<p class="mt-3 font-semibold" lang="de">{card.note.de}</p>

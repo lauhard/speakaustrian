@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Check, CircleCheck, CircleX, Flame, Star, Volume2, X } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, type Snippet } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -133,7 +134,7 @@
 		<div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-8 {percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'} bg-white text-3xl font-black">
 			{percent}%
 		</div>
-		<p class="pop text-4xl" aria-hidden="true">{percent >= 90 ? '⭐⭐⭐' : percent >= 70 ? '⭐⭐☆' : percent >= 50 ? '⭐☆☆' : '☆☆☆'}</p>
+		<p class="pop flex justify-center gap-1" aria-hidden="true">{#each [50, 70, 90] as min (min)}<Star size={40} strokeWidth={2} class={percent >= min ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}</p>
 		<h1 class="text-3xl font-black">{percent >= 90 ? m.result_great() : percent >= 70 ? m.result_good() : m.result_title()}</h1>
 		<p class="text-xl font-semibold">{m.result_score({ correct: correctCount, total: items.length })}</p>
 		{#if misses.length > 0}
@@ -157,10 +158,10 @@
 		{#if !bare}
 		<div>
 			<div class="mb-2 flex items-center justify-between">
-				<a href={backHref} onclick={back} class="backlink" aria-label={backLabel}>✕</a>
+				<a href={backHref} onclick={back} class="burger" aria-label={backLabel}><X size={20} strokeWidth={2.5} /></a>
 				<p class="flex items-center gap-3 text-sm font-bold text-muted">
-					<span class="text-ok" data-testid="run-correct">✓ {correctCount}</span>
-					{#if streak >= 3}<span class="pop text-warn" data-testid="streak">🔥 {streak}</span>{/if}
+					<span class="flex items-center gap-1 text-ok" data-testid="run-correct"><Check size={16} strokeWidth={3} />{correctCount}</span>
+					{#if streak >= 3}<span class="pop flex items-center gap-1 text-orange-500" data-testid="streak"><Flame size={16} strokeWidth={2.5} class="fill-orange-400" />{streak}</span>{/if}
 					<span>{m.task_count({ current: index + 1, total: items.length })}</span>
 				</p>
 			</div>
@@ -202,7 +203,7 @@
 				class={item.audioOnly ? 'btn-secondary' : 'btn-ghost'}
 				onclick={() => listen(item.audioText ?? '')}
 			>
-				🔊 {m.listen()}
+				<Volume2 size={20} strokeWidth={2.25} />{m.listen()}
 			</button>
 			{#if ttsFailed}
 				<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>
@@ -266,7 +267,7 @@
 				role="status"
 				class="feedback pop {grade.verdict === 'wrong' ? 'shake' : ''}"
 			>
-				<p class="text-xl font-black">{grade.verdict === 'wrong' ? '✗' : '✓'} {verdictText(grade)}</p>
+				<p class="flex items-center gap-2 text-xl font-black">{#if grade.verdict === 'wrong'}<CircleX size={24} strokeWidth={2.5} />{:else}<CircleCheck size={24} strokeWidth={2.5} />{/if}{verdictText(grade)}</p>
 				{#if grade.verdict !== 'correct'}
 					<p lang="de">{m.expected({ answer: Object.values(grade.expected).join(' · ') })}</p>
 				{/if}

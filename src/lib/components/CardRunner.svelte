@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PartyPopper, Volume2 } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount, untrack } from 'svelte';
 	import { getLocale } from '#lib/paraglide/runtime.js';
@@ -84,7 +85,7 @@
 
 {#if !task || !question}
 	<section class="space-y-6 pt-10 text-center" data-testid="cards-done">
-		<p class="text-6xl">🎉</p>
+		<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-ok-soft text-ok"><PartyPopper size={40} strokeWidth={2} /></p>
 		<h1 class="text-3xl font-black">{m.review_done()}</h1>
 		<a href={backHref} onclick={back} class="btn-primary">{backLabel}</a>
 	</section>
@@ -96,7 +97,7 @@
 			<p class="font-bold text-muted">{m.q_meaning()}</p>
 			<div class="flex items-center gap-3">
 				<p class="h1" lang="de" data-testid="card-word">{fullForm(question.vocab)}</p>
-				<button type="button" class="btn-ghost" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))}>🔊</button>
+				<button type="button" class="btn-ghost" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))} aria-label={m.listen()}><Volume2 size={20} strokeWidth={2.25} /></button>
 			</div>
 			<fieldset class="space-y-2" disabled={verdict !== null}>
 				{#each question.options as option, i (option.id)}
@@ -153,7 +154,7 @@
 				<p class="flex items-center gap-3 text-lg">
 					<span lang="de" class="font-semibold">{fullForm(question.vocab)}</span>
 					<span>– {meaning(question.vocab)}</span>
-					<button type="button" class="btn-ghost" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))}>🔊</button>
+					<button type="button" class="btn-ghost" onclick={() => tts?.speak(fullForm(question?.vocab ?? task.vocab))} aria-label={m.listen()}><Volume2 size={20} strokeWidth={2.25} /></button>
 				</p>
 			</div>
 			<button type="button" data-testid="card-next" class="btn-primary" onclick={next}>

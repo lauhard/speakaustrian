@@ -56,7 +56,7 @@ const lessonAndPractice = async (page: Page) => {
 
 const toTestReady = async (page: Page) => {
 	await signIn(page);
-	await page.getByTestId('chapter-preview').click();
+	await page.goto('/chapter/DEMO');
 	await lessonAndPractice(page);
 	await play(page, 'GATE');
 	await expect(page.getByTestId('flow-start-test')).toBeVisible();
@@ -107,7 +107,7 @@ test('DEMO chapter: no lives left → error review → chapter again in repeat m
 
 test('DEMO chapter: a weak readiness block leads to targeted practice and a new block', async ({ page }) => {
 	await signIn(page);
-	await page.getByTestId('chapter-preview').click();
+	await page.goto('/chapter/DEMO');
 	await lessonAndPractice(page);
 	await play(page, 'GATE', () => false);
 	await expect(page.getByTestId('flow-phase')).toHaveAttribute('data-phase', 'TARGETED_PRACTICE');

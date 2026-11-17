@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Check, ChevronLeft, ChevronRight, LockOpen } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
@@ -47,20 +48,20 @@
 	});
 </script>
 
-<a href={resolve('/')} class="backlink">‹ {m.course()}</a>
+<a href={resolve('/')} class="backlink"><ChevronLeft size={18} strokeWidth={2.5} />{m.course()}</a>
 
 {#if content}
 	<section class="space-y-4 pt-4">
 		{#if meta}<span class="chip">{meta.id}</span>{/if}
 		<h1 class="h1" lang="de">{meta ? meta.title.de : m.preview()}</h1>
 		{#if meta && showTr}<p class="text-muted">{meta.title[helpLocale]}</p>{/if}
-		{#if free}<p class="card !bg-brand-soft text-sm" data-testid="free-mode">🔓 {m.free_mode()}</p>{/if}
+		{#if free}<p class="card !bg-brand-soft text-sm" data-testid="free-mode"><LockOpen size={16} strokeWidth={2.5} class="mr-1 inline align-[-2px]" />{m.free_mode()}</p>{/if}
 		{#if meta}
 			<ol class="flex gap-1" aria-label={m.lessons()} data-testid="stepper">
 				{#each steps as st, i (st.label)}
 					<li class="flex-1 text-center">
 						<span class="block h-2 rounded-full {i < stepIndex ? 'bg-ok' : i === stepIndex ? 'bg-brand' : 'bg-line'}"></span>
-						<span class="mt-1 block text-xs font-bold {i === stepIndex ? 'text-brand' : i < stepIndex ? 'text-ok' : 'text-muted'}">{i < stepIndex ? '✓ ' : ''}{st.label}</span>
+						<span class="mt-1 block text-xs font-bold {i === stepIndex ? 'text-brand' : i < stepIndex ? 'text-ok' : 'text-muted'}">{#if i < stepIndex}<Check size={12} strokeWidth={3} class="inline align-[-1px]" /> {/if}{st.label}</span>
 					</li>
 				{/each}
 			</ol>
@@ -80,7 +81,7 @@
 			<div class="bar"><span style="width: {(done.length / content.lessons.length) * 100}%"></span></div>
 		{/if}
 		<details open={!inFlow && !passed} class="group space-y-2">
-		<summary class="h2 flex cursor-pointer list-none items-center justify-between">{m.lessons()} <span class="text-sm text-muted">{done.length}/{content.lessons.length} <span class="inline-block transition group-open:rotate-90">›</span></span></summary>
+		<summary class="h2 flex cursor-pointer list-none items-center justify-between">{m.lessons()} <span class="text-sm text-muted">{done.length}/{content.lessons.length} <ChevronRight size={16} class="inline transition group-open:rotate-90" /></span></summary>
 		<ol class="mt-2 space-y-2">
 			{#each content.lessons as lesson, i (lesson.id)}
 				{@const isDone = done.includes(lesson.id)}
@@ -88,14 +89,15 @@
 					<a
 						href={resolve('/chapter/[id]/[lesson]', { id, lesson: lesson.id })}
 						data-testid="lesson-{lesson.id}"
+						data-done={isDone}
 						class="card-link flex items-center gap-3"
 					>
-						<span class="badge {isDone ? '!bg-ok-soft !text-ok' : ''}">{isDone ? '✓' : i + 1}</span>
+						<span class="node {isDone ? 'is-passed' : ''}">{#if isDone}<Check size={18} strokeWidth={3} />{:else}{i + 1}{/if}</span>
 						<span class="flex-1">
 							<span class="block text-lg font-extrabold" lang="de">{lesson.title.de}</span>
 							{#if showTr}<span class="block text-sm text-muted">{lesson.title[helpLocale]}</span>{/if}
 						</span>
-						<span class="text-sm font-bold {isDone ? 'text-ok' : 'text-muted'}">{isDone ? `✓ ${m.lesson_done()}` : '›'}</span>
+						{#if isDone}<span class="text-sm font-bold text-ok">{m.lesson_done()}</span>{:else}<ChevronRight size={18} class="text-muted" />{/if}
 					</a>
 				</li>
 			{/each}
