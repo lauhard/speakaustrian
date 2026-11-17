@@ -1,0 +1,5084 @@
+{
+	"chapterId": "A1-04",
+	"goals": {
+		"A1-04-G1": {
+			"de": "Familienmitglieder nennen",
+			"en": "Naming family members",
+			"tl": "Pangalanan ang mga miyembro ng pamilya"
+		},
+		"A1-04-G2": {
+			"de": "Über die eigene Familie sprechen (mein, meine, dein, Ihr)",
+			"en": "Talking about your family (mein, meine, dein, Ihr)",
+			"tl": "Pag-usapan ang pamilya (mein, meine, dein, Ihr)"
+		},
+		"A1-04-G3": {
+			"de": "Familienstand: verheiratet, ledig, geschieden",
+			"en": "Marital status: married, single, divorced",
+			"tl": "Civil status: kasal, walang asawa, hiwalay"
+		},
+		"A1-04-G4": {
+			"de": "Plural der Nomen",
+			"en": "Plural of nouns",
+			"tl": "Plural ng noun"
+		},
+		"A1-04-G5": {
+			"de": "Verben: sehen, hören, lesen, schreiben, leben, bleiben, lieben, heiraten",
+			"en": "Verbs: see, hear, read, write, live, stay, love, marry",
+			"tl": "Verbs: makita, marinig, magbasa, sumulat, mabuhay, manatili, magmahal, magpakasal"
+		},
+		"A1-04-G6": {
+			"de": "Familienformen in Österreich",
+			"en": "Family forms in Austria",
+			"tl": "Mga anyo ng pamilya sa Austria"
+		}
+	},
+	"pools": {
+		"practice": [
+			{
+				"id": "A1-04-P-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lukas und Lena sind Geschwister.",
+					"en": "Answer: Lukas und Lena sind Geschwister.",
+					"tl": "Sagot: Lukas und Lena sind Geschwister."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0035",
+					"W-A1-0002"
+				],
+				"options": [
+					"Anna",
+					"Lena",
+					"Maria"
+				],
+				"answer": 1,
+				"prompt": "Wer ist die Schwester von Lukas?",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Franz und Maria sind die Eltern von Peter.",
+					"en": "Answer: Franz und Maria sind die Eltern von Peter.",
+					"tl": "Sagot: Franz und Maria sind die Eltern von Peter."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0001"
+				],
+				"options": [
+					"der Sohn",
+					"der Opa",
+					"der Bruder"
+				],
+				"answer": 0,
+				"prompt": "Peter ist … von Franz und Maria.",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				},
+				"family": "A1-04-P-LE1-1"
+			},
+			{
+				"id": "A1-04-P-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Opa Franz und Oma Maria.",
+					"en": "Answer: Opa Franz und Oma Maria.",
+					"tl": "Sagot: Opa Franz und Oma Maria."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0041",
+					"W-A1-0042",
+					"W-A1-0043",
+					"W-A1-0795"
+				],
+				"options": [
+					"vier",
+					"eins",
+					"zwei"
+				],
+				"answer": 2,
+				"prompt": "Wie viele Großeltern sind im Bild?",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-LE1-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Oma Maria.",
+					"en": "Answer: Oma Maria.",
+					"tl": "Sagot: Oma Maria."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0035",
+					"W-A1-0002"
+				],
+				"options": [
+					"Maria",
+					"Anna",
+					"Lena"
+				],
+				"answer": 0,
+				"prompt": "Wer ist die Oma von Lena?",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				},
+				"family": "A1-04-P-LE1-3"
+			},
+			{
+				"id": "A1-04-P-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „Sie wohnt bei uns.“",
+					"en": "The text says: “Sie wohnt bei uns.”",
+					"tl": "Sabi sa teksto: “Sie wohnt bei uns.”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Hallo Tom!\nMeine Oma ist 80. Sie wohnt bei uns.\nLiebe Grüße, Lena\n\nWohnt die Oma bei Lena?"
+			},
+			{
+				"id": "A1-04-P-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „Ich bin ledig.“",
+					"en": "The text says: “Ich bin ledig.”",
+					"tl": "Sabi sa teksto: “Ich bin ledig.”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 1,
+				"prompt": "Hallo Tom!\nIch bin ledig. Meine Schwester ist verheiratet.\nLiebe Grüße, Jose\n\nIst Jose verheiratet?",
+				"family": "A1-04-P-LE2-1"
+			},
+			{
+				"id": "A1-04-P-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „Mein Bruder heiratet im Mai.“",
+					"en": "The text says: “Mein Bruder heiratet im Mai.”",
+					"tl": "Sabi sa teksto: “Mein Bruder heiratet im Mai.”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0035",
+					"W-A1-0057"
+				],
+				"options": [
+					"der Bruder von Ana",
+					"Ana"
+				],
+				"answer": 0,
+				"prompt": "Hallo Tom!\nMein Bruder heiratet im Mai. Ich bin sehr glücklich!\nLiebe Grüße, Ana\n\nWer heiratet?"
+			},
+			{
+				"id": "A1-04-P-LE2-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „zwei Schwestern“",
+					"en": "The text says: “zwei Schwestern”",
+					"tl": "Sabi sa teksto: “zwei Schwestern”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0041",
+					"W-A1-0046"
+				],
+				"options": [
+					"fünf",
+					"zwei"
+				],
+				"answer": 1,
+				"prompt": "Hallo Tom!\nWir sind fünf: meine Eltern, zwei Schwestern und ich.\nLiebe Grüße, Lukas\n\nWie viele Schwestern hat Lukas?",
+				"family": "A1-04-P-LE2-3"
+			},
+			{
+				"id": "A1-04-P-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Formular: Name, ledig, verheiratet, geschieden.",
+					"en": "Answer: Im Formular: Name, ledig, verheiratet, geschieden.",
+					"tl": "Sagot: Im Formular: Name, ledig, verheiratet, geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0036"
+				],
+				"options": [
+					"ledig",
+					"geschieden",
+					"Kinder"
+				],
+				"answer": 2,
+				"prompt": "Was steht nicht im Formular?",
+				"image": {
+					"src": "/img/a1-04-formular.svg",
+					"alt": {
+						"de": "Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.",
+						"en": "A form with a name and marital status. One box is ticked.",
+						"tl": "Form na may pangalan at civil status. May isang kahong may ekis."
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Sie ist verheiratet.",
+					"en": "Answer: Sie ist verheiratet.",
+					"tl": "Sagot: Sie ist verheiratet."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 1,
+				"prompt": "Ist Sofia Berger ledig?",
+				"image": {
+					"src": "/img/a1-04-formular.svg",
+					"alt": {
+						"de": "Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.",
+						"en": "A form with a name and marital status. One box is ticked.",
+						"tl": "Form na may pangalan at civil status. May isang kahong may ekis."
+					}
+				},
+				"family": "A1-04-P-LE3-1"
+			},
+			{
+				"id": "A1-04-P-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich habe keine Geschwister.“",
+					"en": "You hear: “Ich habe keine Geschwister.”",
+					"tl": "Naririnig mo: “Ich habe keine Geschwister.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0006"
+				],
+				"options": [
+					"keine Geschwister",
+					"einen Bruder"
+				],
+				"answer": 0,
+				"audioText": "Ich habe keine Geschwister.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-P-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Meine Tochter ist zwölf und mein Sohn ist neun.“",
+					"en": "You hear: “Meine Tochter ist zwölf und mein Sohn ist neun.”",
+					"tl": "Naririnig mo: “Meine Tochter ist zwölf und mein Sohn ist neun.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0046",
+					"W-A1-0803",
+					"W-A1-0806",
+					"W-A1-0001"
+				],
+				"options": [
+					"Der Sohn ist neun.",
+					"Der Sohn ist zwölf."
+				],
+				"answer": 0,
+				"audioText": "Meine Tochter ist zwölf und mein Sohn ist neun.",
+				"audioOnly": true,
+				"family": "A1-04-P-HO1-1"
+			},
+			{
+				"id": "A1-04-P-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Mein Opa ist achtzig Jahre alt.“",
+					"en": "You hear: “Mein Opa ist achtzig Jahre alt.”",
+					"tl": "Naririnig mo: “Mein Opa ist achtzig Jahre alt.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0352",
+					"W-A1-0814"
+				],
+				"options": [
+					"80 Jahre",
+					"18 Jahre"
+				],
+				"answer": 0,
+				"audioText": "Mein Opa ist achtzig Jahre alt.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-P-HO1-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Wir sind vier: Vater, Mutter, Sohn und Tochter.“",
+					"en": "You hear: “Wir sind vier: Vater, Mutter, Sohn und Tochter.”",
+					"tl": "Naririnig mo: “Wir sind vier: Vater, Mutter, Sohn und Tochter.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0046",
+					"W-A1-0011",
+					"W-A1-0797",
+					"W-A1-0798"
+				],
+				"options": [
+					"drei Personen",
+					"vier Personen"
+				],
+				"answer": 1,
+				"audioText": "Wir sind vier: Vater, Mutter, Sohn und Tochter.",
+				"audioOnly": true,
+				"family": "A1-04-P-HO1-3"
+			},
+			{
+				"id": "A1-04-P-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Meine Frau heißt Maria. Wir sind verheiratet.“",
+					"en": "You hear: “Meine Frau heißt Maria. Wir sind verheiratet.”",
+					"tl": "Naririnig mo: “Meine Frau heißt Maria. Wir sind verheiratet.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0328",
+					"W-A1-0011"
+				],
+				"options": [
+					"verheiratet",
+					"geschieden"
+				],
+				"answer": 0,
+				"audioText": "Meine Frau heißt Maria. Wir sind verheiratet.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-P-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich habe einen Freund, aber ich bin ledig.“",
+					"en": "You hear: “Ich habe einen Freund, aber ich bin ledig.”",
+					"tl": "Naririnig mo: “Ich habe einen Freund, aber ich bin ledig.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006"
+				],
+				"options": [
+					"verheiratet",
+					"ledig"
+				],
+				"answer": 1,
+				"audioText": "Ich habe einen Freund, aber ich bin ledig.",
+				"audioOnly": true,
+				"family": "A1-04-P-HO2-1"
+			},
+			{
+				"id": "A1-04-P-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Wir heiraten bald. Jetzt bin ich noch ledig.“",
+					"en": "You hear: “Wir heiraten bald. Jetzt bin ich noch ledig.”",
+					"tl": "Naririnig mo: “Wir heiraten bald. Jetzt bin ich noch ledig.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0011",
+					"W-A1-0059",
+					"W-A1-0069"
+				],
+				"options": [
+					"verheiratet",
+					"ledig"
+				],
+				"answer": 1,
+				"audioText": "Wir heiraten bald. Jetzt bin ich noch ledig.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-P-HO2-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich bin nicht mehr verheiratet, ich bin geschieden.“",
+					"en": "You hear: “Ich bin nicht mehr verheiratet, ich bin geschieden.”",
+					"tl": "Naririnig mo: “Ich bin nicht mehr verheiratet, ich bin geschieden.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0084"
+				],
+				"options": [
+					"geschieden",
+					"verheiratet"
+				],
+				"answer": 0,
+				"audioText": "Ich bin nicht mehr verheiratet, ich bin geschieden.",
+				"audioOnly": true,
+				"family": "A1-04-P-HO2-3"
+			},
+			{
+				"id": "A1-04-P-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Hast du Geschwister?“ – Antwort: „Ja, einen Bruder.“",
+					"en": "Question: “Hast du Geschwister?” – answer: “Ja, einen Bruder.”",
+					"tl": "Tanong: “Hast du Geschwister?” – sagot: “Ja, einen Bruder.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0006",
+					"W-A1-0007",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"In Manila.",
+					"Nein, ich bin ledig.",
+					"Sieben.",
+					"Ja, einen Bruder."
+				],
+				"answer": 3,
+				"audioText": "Hast du Geschwister?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-P-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Wie alt ist Ihre Tochter?“ – Antwort: „Sieben.“",
+					"en": "Question: “Wie alt ist Ihre Tochter?” – answer: “Sieben.”",
+					"tl": "Tanong: “Wie alt ist Ihre Tochter?” – sagot: “Sieben.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0006",
+					"W-A1-0041",
+					"W-A1-0052",
+					"W-A1-0801"
+				],
+				"options": [
+					"In Manila.",
+					"Meine Oma.",
+					"Nein, ich bin ledig.",
+					"Sieben."
+				],
+				"answer": 3,
+				"audioText": "Wie alt ist Ihre Tochter?",
+				"audioOnly": true,
+				"family": "A1-04-P-HO3-1"
+			},
+			{
+				"id": "A1-04-P-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Wie heißt dein Sohn?“ – Antwort: „Lukas.“",
+					"en": "Question: “Wie heißt dein Sohn?” – answer: “Lukas.”",
+					"tl": "Tanong: “Wie heißt dein Sohn?” – sagot: “Lukas.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0006",
+					"W-A1-0041",
+					"W-A1-0052",
+					"W-A1-0801"
+				],
+				"options": [
+					"Sieben.",
+					"Lukas.",
+					"In Manila.",
+					"Nein, ich bin ledig."
+				],
+				"answer": 1,
+				"audioText": "Wie heißt dein Sohn?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-P-HO3-4",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Wer ist das auf dem Foto?“ – Antwort: „Meine Oma.“",
+					"en": "Question: “Wer ist das auf dem Foto?” – answer: “Meine Oma.”",
+					"tl": "Tanong: “Wer ist das auf dem Foto?” – sagot: “Meine Oma.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0035",
+					"W-A1-0051",
+					"W-A1-0796",
+					"W-A1-0801"
+				],
+				"options": [
+					"Ja, zwei.",
+					"Sieben.",
+					"In Manila.",
+					"Meine Oma."
+				],
+				"answer": 3,
+				"audioText": "Wer ist das auf dem Foto?",
+				"audioOnly": true,
+				"family": "A1-04-P-HO3-3"
+			},
+			{
+				"id": "A1-04-P-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: verheiratet, Kinder: 3.",
+					"en": "Marital status: verheiratet, children: 3.",
+					"tl": "Civil status: verheiratet, anak: 3."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006",
+					"W-A1-0797"
+				],
+				"text": "Ich bin Maria, verheiratet, drei Kinder.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"verheiratet"
+						]
+					},
+					"2": {
+						"accept": [
+							"3",
+							"drei"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: ledig, Kinder: 0.",
+					"en": "Marital status: ledig, children: 0.",
+					"tl": "Civil status: ledig, anak: 0."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006"
+				],
+				"text": "Ich heiße Ali. Ich bin ledig. Kinder habe ich keine.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"ledig"
+						]
+					},
+					"2": {
+						"accept": [
+							"0",
+							"keine",
+							"null"
+						]
+					}
+				},
+				"family": "A1-04-P-SC1-1"
+			},
+			{
+				"id": "A1-04-P-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: geschieden, Kinder: 2.",
+					"en": "Marital status: geschieden, children: 2.",
+					"tl": "Civil status: geschieden, anak: 2."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0796"
+				],
+				"text": "Ich bin Sofia. Ich bin geschieden und habe zwei Kinder.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"geschieden"
+						]
+					},
+					"2": {
+						"accept": [
+							"2",
+							"zwei"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-SC1-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: verheiratet, Kinder: 1.",
+					"en": "Marital status: verheiratet, children: 1.",
+					"tl": "Civil status: verheiratet, anak: 1."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0004"
+				],
+				"text": "Ich heiße Lukas, bin verheiratet und habe ein Baby.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"verheiratet"
+						]
+					},
+					"2": {
+						"accept": [
+							"1",
+							"eins"
+						]
+					}
+				},
+				"family": "A1-04-P-SC1-3"
+			},
+			{
+				"id": "A1-04-P-SC2-1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Brüder.",
+					"en": "Answer: Plural: die Brüder.",
+					"tl": "Sagot: Plural: die Brüder."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0337",
+					"W-A1-0796",
+					"W-A1-0004"
+				],
+				"prompt": "ein Bruder – zwei …",
+				"accept": [
+					"Brüder"
+				]
+			},
+			{
+				"id": "A1-04-P-SC2-2",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Schwestern.",
+					"en": "Answer: Plural: die Schwestern.",
+					"tl": "Sagot: Plural: die Schwestern."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0338",
+					"W-A1-0796"
+				],
+				"prompt": "eine Schwester – zwei …",
+				"accept": [
+					"Schwestern"
+				],
+				"family": "A1-04-P-SC2-1"
+			},
+			{
+				"id": "A1-04-P-SC2-3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Söhne.",
+					"en": "Answer: Plural: die Söhne.",
+					"tl": "Sagot: Plural: die Söhne."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0335",
+					"W-A1-0796",
+					"W-A1-0004"
+				],
+				"prompt": "ein Sohn – zwei …",
+				"accept": [
+					"Söhne"
+				]
+			},
+			{
+				"id": "A1-04-P-SC2-4",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Omas.",
+					"en": "Answer: Plural: die Omas.",
+					"tl": "Sagot: Plural: die Omas."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0341",
+					"W-A1-0796"
+				],
+				"prompt": "eine Oma – zwei …",
+				"accept": [
+					"Omas"
+				],
+				"family": "A1-04-P-SC2-3"
+			},
+			{
+				"id": "A1-04-P-SC2-5",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Männer.",
+					"en": "Answer: Plural: die Männer.",
+					"tl": "Sagot: Plural: die Männer."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0329",
+					"W-A1-0796",
+					"W-A1-0004"
+				],
+				"prompt": "ein Mann – zwei …",
+				"accept": [
+					"Männer"
+				]
+			},
+			{
+				"id": "A1-04-P-SC2-6",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Mädchen.",
+					"en": "Answer: Plural: die Mädchen.",
+					"tl": "Sagot: Plural: die Mädchen."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0397",
+					"W-A1-0796",
+					"W-A1-0004"
+				],
+				"prompt": "ein Mädchen – zwei …",
+				"accept": [
+					"Mädchen"
+				],
+				"family": "A1-04-P-SC2-5"
+			},
+			{
+				"id": "A1-04-P-SC3-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Vater und {{3}} Schwester.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"mein"
+						]
+					},
+					"3": {
+						"accept": [
+							"meine"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-SC3-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Oma und {{3}} Opa.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"meine"
+						]
+					},
+					"3": {
+						"accept": [
+							"mein"
+						]
+					}
+				},
+				"family": "A1-04-P-SC3-1"
+			},
+			{
+				"id": "A1-04-P-SC3-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0328",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Frau und {{3}} Sohn.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"meine"
+						]
+					},
+					"3": {
+						"accept": [
+							"mein"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-SC3-4",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Tochter und {{3}} Großeltern.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"meine"
+						]
+					},
+					"3": {
+						"accept": [
+							"meine"
+						]
+					}
+				},
+				"family": "A1-04-P-SC3-3"
+			},
+			{
+				"id": "A1-04-P-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Eltern?“ passt: „Wo leben Ihre Eltern?“",
+					"en": "For “Eltern?”: “Wo leben Ihre Eltern?”",
+					"tl": "Para sa “Eltern?”: “Wo leben Ihre Eltern?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0009",
+					"W-A1-0059",
+					"W-A1-0117",
+					"W-A1-0037"
+				],
+				"options": [
+					"Wo leben Ihre Eltern?",
+					"Leben Ihre Großeltern noch?",
+					"Haben Sie Kinder?"
+				],
+				"answer": 0,
+				"prompt": "Wortkarte: Eltern?"
+			},
+			{
+				"id": "A1-04-P-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Partner?“ passt: „Haben Sie einen Partner?“",
+					"en": "For “Partner?”: “Haben Sie einen Partner?”",
+					"tl": "Para sa “Partner?”: “Haben Sie einen Partner?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0009",
+					"W-A1-0117"
+				],
+				"options": [
+					"Sind Sie verheiratet?",
+					"Haben Sie einen Partner?",
+					"Haben Sie Geschwister?"
+				],
+				"answer": 1,
+				"prompt": "Wortkarte: Partner?",
+				"family": "A1-04-P-SP1-1"
+			},
+			{
+				"id": "A1-04-P-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Großeltern?“ passt: „Leben Ihre Großeltern noch?“",
+					"en": "For “Großeltern?”: “Leben Ihre Großeltern noch?”",
+					"tl": "Para sa “Großeltern?”: “Leben Ihre Großeltern noch?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0041",
+					"W-A1-0059",
+					"W-A1-0037"
+				],
+				"options": [
+					"Leben Ihre Großeltern noch?",
+					"Wo leben Ihre Eltern?",
+					"Wie groß ist Ihre Familie?"
+				],
+				"answer": 0,
+				"prompt": "Wortkarte: Großeltern?"
+			},
+			{
+				"id": "A1-04-P-SP1-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Familie?“ passt: „Wie groß ist Ihre Familie?“",
+					"en": "For “Familie?”: “Wie groß ist Ihre Familie?”",
+					"tl": "Para sa “Familie?”: “Wie groß ist Ihre Familie?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0041",
+					"W-A1-0009",
+					"W-A1-0117",
+					"W-A1-0037"
+				],
+				"options": [
+					"Haben Sie Kinder?",
+					"Wo leben Ihre Eltern?",
+					"Wie groß ist Ihre Familie?"
+				],
+				"answer": 2,
+				"prompt": "Wortkarte: Familie?",
+				"family": "A1-04-P-SP1-3"
+			},
+			{
+				"id": "A1-04-P-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Ihre Familie: Mann, zwei Kinder. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "Your family: husband, two children. What do you say? Choose, then say it aloud.",
+					"tl": "Pamilya mo: asawa, dalawang anak. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Wir sind vier: mein Mann, zwei Kinder und ich.“",
+					"en": "Correct: “Wir sind vier: mein Mann, zwei Kinder und ich.”",
+					"tl": "Tama: “Wir sind vier: mein Mann, zwei Kinder und ich.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0006",
+					"W-A1-0041",
+					"W-A1-0046",
+					"W-A1-0011"
+				],
+				"options": [
+					"Ich bin vier.",
+					"Meine Familie ist Mann.",
+					"Wir sind vier: mein Mann, zwei Kinder und ich."
+				],
+				"answer": 2,
+				"prompt": "Wie groß ist Ihre Familie?"
+			},
+			{
+				"id": "A1-04-P-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Ihre Oma ist 75. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "Your grandma is 75. What do you say? Choose, then say it aloud.",
+					"tl": "75 ang lola mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Meine Oma ist fünfundsiebzig.“",
+					"en": "Correct: “Meine Oma ist fünfundsiebzig.”",
+					"tl": "Tama: “Meine Oma ist fünfundsiebzig.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0041"
+				],
+				"options": [
+					"Mein Oma hat fünfundsiebzig.",
+					"Meine Oma ist fünfundsiebzig.",
+					"Meine Oma ist siebenundfünfzig."
+				],
+				"answer": 1,
+				"prompt": "Wie alt ist Ihre Oma?",
+				"family": "A1-04-P-SP2-1"
+			},
+			{
+				"id": "A1-04-P-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben keine Geschwister. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You have no siblings. What do you say? Choose, then say it aloud.",
+					"tl": "Wala kang kapatid. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Nein, ich habe keine Geschwister.“",
+					"en": "Correct: “Nein, ich habe keine Geschwister.”",
+					"tl": "Tama: “Nein, ich habe keine Geschwister.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, ich habe keine Geschwister.",
+					"Nein, ich bin Geschwister.",
+					"Ja, keine."
+				],
+				"answer": 0,
+				"prompt": "Haben Sie Geschwister?"
+			},
+			{
+				"id": "A1-04-P-SP2-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Ihr Sohn heißt Lukas. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "Your son is called Lukas. What do you say? Choose, then say it aloud.",
+					"tl": "Lukas ang pangalan ng anak mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Mein Sohn heißt Lukas.“",
+					"en": "Correct: “Mein Sohn heißt Lukas.”",
+					"tl": "Tama: “Mein Sohn heißt Lukas.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0147",
+					"W-A1-0041",
+					"W-A1-0012"
+				],
+				"options": [
+					"Meine Sohn heißt Lukas.",
+					"Mein Sohn heißt Lukas.",
+					"Mein Sohn ist heißen Lukas."
+				],
+				"answer": 1,
+				"prompt": "Wie heißt Ihr Sohn?",
+				"family": "A1-04-P-SP2-3"
+			},
+			{
+				"id": "A1-04-P-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihr Baby. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your baby. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: sanggol mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist meine Baby.",
+					"Das sind mein Baby.",
+					"Das ist mein Baby."
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-04-P-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihre Großeltern. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your grandparents. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: lolo at lola mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist mein Großeltern.",
+					"Das sind meine Großeltern.",
+					"Das sind mein Großeltern."
+				],
+				"answer": 1,
+				"family": "A1-04-P-SP3-1"
+			},
+			{
+				"id": "A1-04-P-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihr Mann. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your husband. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: asawa mong lalaki. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist meine Mann.",
+					"Das ist mein Männer.",
+					"Das ist mein Mann."
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-04-P-SP3-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihre Tochter. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your daughter. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: anak mong babae. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist mein Tochter.",
+					"Das sind meine Tochter.",
+					"Das ist meine Tochter."
+				],
+				"answer": 2,
+				"family": "A1-04-P-SP3-3"
+			},
+			{
+				"id": "A1-04-P-SP4-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie heiraten bald, jetzt sind Sie ledig. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You marry soon; now you are single. What do you say? Choose, then say it aloud.",
+					"tl": "Ikakasal ka na, pero ngayon wala kang asawa. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, ich bin ledig.",
+					"Nein, noch nicht. Ich bin ledig.",
+					"Nein, ich habe ledig."
+				],
+				"answer": 1,
+				"prompt": "Sind Sie verheiratet?"
+			},
+			{
+				"id": "A1-04-P-SP4-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sind seit 2010 verheiratet. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You have been married since 2010. What do you say? Choose, then say it aloud.",
+					"tl": "Kasal ka mula 2010. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, seit 2010.",
+					"Ja, seit 2010.",
+					"Ja, ich habe seit 2010."
+				],
+				"answer": 1,
+				"prompt": "Sind Sie verheiratet?",
+				"family": "A1-04-P-SP4-1"
+			},
+			{
+				"id": "A1-04-P-SP4-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie leben mit Ihrem Partner, ohne Ehe. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You live with your partner, not married. What do you say? Choose, then say it aloud.",
+					"tl": "Kasama mo ang partner mo, hindi kasal. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, ich habe einen Partner.",
+					"Nein, ich bin Partner.",
+					"Nein, aber ich habe einen Partner."
+				],
+				"answer": 2,
+				"prompt": "Sind Sie verheiratet?"
+			},
+			{
+				"id": "A1-04-P-SP4-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sind verheiratet und haben Kinder. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You are married and have children. What do you say? Choose, then say it aloud.",
+					"tl": "Kasal ka at may mga anak. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0046",
+					"W-A1-0051"
+				],
+				"options": [
+					"Nein, und wir haben Kinder.",
+					"Ja, ich habe verheiratet.",
+					"Ja, und wir haben Kinder."
+				],
+				"answer": 2,
+				"prompt": "Sind Sie verheiratet?",
+				"family": "A1-04-P-SP4-3"
+			},
+			{
+				"id": "A1-04-P-SP5-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit Ihrem Bruder (du). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to your brother (du). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo ang kapatid mo (du). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0041",
+					"W-A1-0010"
+				],
+				"options": [
+					"Wie geht es Ihrem Sohn?",
+					"Wie geht es dein Sohn?",
+					"Wie geht es deinem Sohn?"
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-04-P-SP5-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit Frau Huber (Sie). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to Mrs Huber (Sie). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo si Frau Huber (Sie). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0041",
+					"W-A1-0012"
+				],
+				"options": [
+					"Wie heißt dein Mann?",
+					"Wie heißt Ihre Mann?",
+					"Wie heißt Ihr Mann?"
+				],
+				"answer": 2,
+				"family": "A1-04-P-SP5-1"
+			},
+			{
+				"id": "A1-04-P-SP5-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit einem Kind (du). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to a child (du). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo ang isang bata (du). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0041"
+				],
+				"options": [
+					"Wie heißt Ihre Mutter?",
+					"Wie heißt deine Mutter?",
+					"Wie heißt dein Mutter?"
+				],
+				"answer": 1
+			},
+			{
+				"id": "A1-04-P-SP5-4",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit Herrn Bauer (Sie). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to Mr Bauer (Sie). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo si Herr Bauer (Sie). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0147",
+					"W-A1-0041",
+					"W-A1-0012"
+				],
+				"options": [
+					"Wie heißen deine Kinder?",
+					"Wie heißen Ihre Kinder?",
+					"Wie heißen Ihr Kinder?"
+				],
+				"answer": 1,
+				"family": "A1-04-P-SP5-3"
+			},
+			{
+				"id": "A1-04-P-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Mütter. Im Plural immer „die“.",
+					"en": "Plural: Mütter. Plural article always “die”.",
+					"tl": "Plural: Mütter. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0333",
+					"W-A1-0002"
+				],
+				"options": [
+					"Mütter",
+					"Mutters",
+					"Muttern"
+				],
+				"answer": 0,
+				"prompt": "die Mutter → die …"
+			},
+			{
+				"id": "A1-04-P-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Kinder. Im Plural immer „die“.",
+					"en": "Plural: Kinder. Plural article always “die”.",
+					"tl": "Plural: Kinder. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0002",
+					"W-A1-0003"
+				],
+				"options": [
+					"Kinder",
+					"Kinds",
+					"Kinden"
+				],
+				"answer": 0,
+				"prompt": "das Kind → die …",
+				"family": "A1-04-P-GW1-1"
+			},
+			{
+				"id": "A1-04-P-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Brüder. Im Plural immer „die“.",
+					"en": "Plural: Brüder. Plural article always “die”.",
+					"tl": "Plural: Brüder. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0337",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"options": [
+					"Bruders",
+					"Brüder",
+					"Brudern"
+				],
+				"answer": 1,
+				"prompt": "der Bruder → die …"
+			},
+			{
+				"id": "A1-04-P-GW1-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Frauen. Im Plural immer „die“.",
+					"en": "Plural: Frauen. Plural article always “die”.",
+					"tl": "Plural: Frauen. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0328",
+					"W-A1-0002"
+				],
+				"options": [
+					"Fraus",
+					"Frauen",
+					"Frau"
+				],
+				"answer": 1,
+				"prompt": "die Frau → die …",
+				"family": "A1-04-P-GW1-3"
+			},
+			{
+				"id": "A1-04-P-GW2-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0003"
+				],
+				"text": "Das sind {{1}} (mein) Großeltern.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-GW2-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0003"
+				],
+				"text": "Ist das {{1}} (dein) Bruder?",
+				"gaps": {
+					"1": {
+						"accept": [
+							"dein"
+						]
+					}
+				},
+				"family": "A1-04-P-GW2-1"
+			},
+			{
+				"id": "A1-04-P-GW2-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0327",
+					"W-A1-0041",
+					"W-A1-0012"
+				],
+				"text": "Herr Bauer, wie alt ist {{1}} (Ihr) Sohn?",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Ihr"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-GW2-4",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0003"
+				],
+				"text": "Das ist {{1}} (mein) Baby.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"mein"
+						]
+					}
+				},
+				"family": "A1-04-P-GW2-3"
+			},
+			{
+				"id": "A1-04-P-GW3-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "sehen: er sieht.",
+					"en": "Answer: sehen: er sieht.",
+					"tl": "Sagot: sehen: er sieht."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0142",
+					"W-A1-0008",
+					"W-A1-0002"
+				],
+				"text": "Er {{1}} (sehen) die Kinder.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"sieht"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-GW3-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "lesen: du liest.",
+					"en": "Answer: lesen: du liest.",
+					"tl": "Sagot: lesen: du liest."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0144",
+					"W-A1-0007",
+					"W-A1-0082"
+				],
+				"text": "Du {{1}} (lesen) viel.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"liest"
+						]
+					}
+				},
+				"family": "A1-04-P-GW3-1"
+			},
+			{
+				"id": "A1-04-P-GW3-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "bleiben: wir bleiben.",
+					"en": "Answer: bleiben: wir bleiben.",
+					"tl": "Sagot: bleiben: wir bleiben."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0151",
+					"W-A1-0011",
+					"W-A1-0093"
+				],
+				"text": "Wir {{1}} (bleiben) in Wien.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"bleiben"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-GW3-4",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "leben: sie leben.",
+					"en": "Answer: leben: sie leben.",
+					"tl": "Sagot: leben: sie leben."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0149",
+					"W-A1-0093"
+				],
+				"text": "Meine Eltern {{1}} (leben) in Manila.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"leben"
+						]
+					}
+				},
+				"family": "A1-04-P-GW3-3"
+			},
+			{
+				"id": "A1-04-P-GW4-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mutter vom Vater = Oma.",
+					"en": "Answer: Mutter vom Vater = Oma.",
+					"tl": "Sagot: Mutter vom Vater = Oma."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0002"
+				],
+				"options": [
+					"Tochter",
+					"Oma",
+					"Schwester"
+				],
+				"answer": 1,
+				"prompt": "Die Mutter von meinem Vater ist meine …"
+			},
+			{
+				"id": "A1-04-P-GW4-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mutter der Mutter = Oma.",
+					"en": "Answer: Mutter der Mutter = Oma.",
+					"tl": "Sagot: Mutter der Mutter = Oma."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0002"
+				],
+				"options": [
+					"Oma",
+					"Schwester",
+					"Tochter"
+				],
+				"answer": 0,
+				"prompt": "Die Mutter von meiner Mutter ist meine …",
+				"family": "A1-04-P-GW4-1"
+			},
+			{
+				"id": "A1-04-P-GW4-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Oma + Opa = Großeltern.",
+					"en": "Answer: Oma + Opa = Großeltern.",
+					"tl": "Sagot: Oma + Opa = Großeltern."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046"
+				],
+				"options": [
+					"Großeltern",
+					"Geschwister",
+					"Kinder"
+				],
+				"answer": 0,
+				"prompt": "Oma und Opa sind meine …"
+			},
+			{
+				"id": "A1-04-P-GW4-4",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mutter + Vater = Eltern.",
+					"en": "Answer: Mutter + Vater = Eltern.",
+					"tl": "Sagot: Mutter + Vater = Eltern."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046"
+				],
+				"options": [
+					"Großeltern",
+					"Eltern",
+					"Geschwister"
+				],
+				"answer": 1,
+				"prompt": "Mutter und Vater sind meine …",
+				"family": "A1-04-P-GW4-3"
+			},
+			{
+				"id": "A1-04-P-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0087",
+					"W-A1-0796"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Ein Vater lebt allein mit zwei Kindern. Ist das eine Familie?"
+			},
+			{
+				"id": "A1-04-P-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0003"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Opa und Oma leben mit dem Kind von ihrer Tochter. Ist das eine Familie?",
+				"family": "A1-04-P-WE1-1"
+			},
+			{
+				"id": "A1-04-P-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 0,
+				"prompt": "Hat eine Familie immer Kinder?"
+			},
+			{
+				"id": "A1-04-P-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0030"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja, alle gleich.",
+					"Nein, Familien leben verschieden."
+				],
+				"answer": 1,
+				"prompt": "Leben alle Familien gleich?",
+				"family": "A1-04-P-WE2-1"
+			},
+			{
+				"id": "A1-04-P-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0041",
+					"W-A1-0042",
+					"W-A1-0043",
+					"W-A1-0796"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"zwei",
+					"eine"
+				],
+				"answer": 1,
+				"prompt": "Bild 1: Wie viele Erwachsene sind in Bild 1?",
+				"image": {
+					"src": "/img/a1-04-familien.svg",
+					"alt": {
+						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+					}
+				}
+			},
+			{
+				"id": "A1-04-P-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0002",
+					"W-A1-0093"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Bild 1",
+					"Bild 3"
+				],
+				"answer": 1,
+				"prompt": "In welchem Bild ist die Oma?",
+				"image": {
+					"src": "/img/a1-04-familien.svg",
+					"alt": {
+						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+					}
+				},
+				"family": "A1-04-P-WE3-1"
+			},
+			{
+				"id": "A1-04-P-LE4-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Er lebt bei seiner Tochter.",
+					"en": "Answer: Er lebt bei seiner Tochter.",
+					"tl": "Sagot: Er lebt bei seiner Tochter."
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0327",
+					"W-A1-0328",
+					"W-A1-0008",
+					"W-A1-0051"
+				],
+				"options": [
+					"Nein, bei seiner Tochter.",
+					"Ja, allein."
+				],
+				"answer": 0,
+				"prompt": "Herr Bauer ist 70. Seine Frau ist gestorben. Er lebt jetzt bei seiner Tochter.\nLebt Herr Bauer allein?"
+			},
+			{
+				"id": "A1-04-P-LE4-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Sie heiraten bald.",
+					"en": "Answer: Sie heiraten bald.",
+					"tl": "Sagot: Sie heiraten bald."
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0009",
+					"W-A1-0057",
+					"W-A1-0046",
+					"W-A1-0051"
+				],
+				"options": [
+					"Nein, noch nicht.",
+					"Ja."
+				],
+				"answer": 0,
+				"prompt": "Anna und Tom heiraten bald. Sie sind sehr glücklich.\nSind Anna und Tom schon verheiratet?",
+				"family": "A1-04-P-LE4-1"
+			},
+			{
+				"id": "A1-04-P-LE4-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "1 Bruder + 2 Schwestern = 3.",
+					"en": "Answer: 1 Bruder + 2 Schwestern = 3.",
+					"tl": "Sagot: 1 Bruder + 2 Schwestern = 3."
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0041",
+					"W-A1-0046",
+					"W-A1-0042",
+					"W-A1-0043"
+				],
+				"options": [
+					"drei",
+					"zwei"
+				],
+				"answer": 0,
+				"prompt": "Lena hat einen Bruder und zwei Schwestern.\nWie viele Geschwister hat Lena?"
+			},
+			{
+				"id": "A1-04-P-LE4-4",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "meine Eltern in Linz",
+					"en": "Answer: meine Eltern in Linz",
+					"tl": "Sagot: meine Eltern in Linz"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0002",
+					"W-A1-0037",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Linz",
+					"in Wien"
+				],
+				"answer": 0,
+				"prompt": "Meine Großeltern leben in Wien, meine Eltern in Linz.\nWo leben die Eltern?",
+				"family": "A1-04-P-LE4-3"
+			},
+			{
+				"id": "A1-04-P-WE4-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0003",
+					"W-A1-0004"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Ein Paar ohne Kinder: Ist das eine Familie?"
+			},
+			{
+				"id": "A1-04-P-WE4-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0003"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Eine Oma lebt mit ihrer Tochter und dem Baby. Ist das eine Familie?",
+				"family": "A1-04-P-WE4-1"
+			},
+			{
+				"id": "A1-04-P-WE4-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0036",
+					"W-A1-0056",
+					"W-A1-0086"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"nur Vater, Mutter und zwei Kinder",
+					"Menschen zusammen – in vielen Familienformen"
+				],
+				"answer": 1,
+				"prompt": "Was ist eine Familie?"
+			},
+			{
+				"id": "A1-04-P-WE4-4",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0128",
+					"W-A1-0055",
+					"W-A1-0002",
+					"W-A1-0096"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"auch aus einer früheren Beziehung",
+					"immer aus dem Ausland"
+				],
+				"answer": 0,
+				"prompt": "Patchwork-Familie: Die Kinder kommen …",
+				"family": "A1-04-P-WE4-3"
+			},
+			{
+				"id": "A1-04-P-WE4-5",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0086"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Eltern, Kinder und Oma wohnen zusammen. Ist das eine Familie?"
+			},
+			{
+				"id": "A1-04-P-WE4-6",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0030"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 1,
+				"prompt": "Sind alle Familien gleich groß?",
+				"family": "A1-04-P-WE4-5"
+			}
+		],
+		"test": [
+			{
+				"id": "A1-04-T-LE1-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Opa Franz.",
+					"en": "Answer: Opa Franz.",
+					"tl": "Sagot: Opa Franz."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0035",
+					"W-A1-0001"
+				],
+				"options": [
+					"Franz",
+					"Peter",
+					"Maria"
+				],
+				"answer": 0,
+				"prompt": "Wer ist der Opa von Lukas?",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-LE1-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Mutter Anna – Tochter Lena.",
+					"en": "Answer: Mutter Anna – Tochter Lena.",
+					"tl": "Sagot: Mutter Anna – Tochter Lena."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0002"
+				],
+				"options": [
+					"die Tochter",
+					"die Mutter",
+					"die Oma"
+				],
+				"answer": 0,
+				"prompt": "Lena ist … von Anna.",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				},
+				"family": "A1-04-T-LE1-1"
+			},
+			{
+				"id": "A1-04-T-LE1-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Lukas und Lena: zwei Kinder.",
+					"en": "Answer: Lukas und Lena: zwei Kinder.",
+					"tl": "Sagot: Lukas und Lena: zwei Kinder."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0041",
+					"W-A1-0046",
+					"W-A1-0042",
+					"W-A1-0043"
+				],
+				"options": [
+					"drei",
+					"zwei",
+					"eins"
+				],
+				"answer": 1,
+				"prompt": "Wie viele Kinder haben Peter und Anna?",
+				"image": {
+					"src": "/img/a1-04-stammbaum.svg",
+					"alt": {
+						"de": "Ein Stammbaum der Familie Huber mit Großeltern, Eltern und Kindern.",
+						"en": "A family tree of the Huber family with grandparents, parents and children.",
+						"tl": "Family tree ng pamilyang Huber: lolo at lola, magulang at mga anak."
+					}
+				},
+				"family": "A1-04-T-LE1-1"
+			},
+			{
+				"id": "A1-04-T-LE2-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „zwei Brüder und eine Schwester“",
+					"en": "The text says: “zwei Brüder und eine Schwester”",
+					"tl": "Sabi sa teksto: “zwei Brüder und eine Schwester”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0051"
+				],
+				"options": [
+					"Ja.",
+					"Nein."
+				],
+				"answer": 0,
+				"prompt": "Hallo Tom!\nIch habe zwei Brüder und eine Schwester. Meine Eltern leben in Manila.\nLiebe Grüße, Maria\n\nHat Maria drei Geschwister?"
+			},
+			{
+				"id": "A1-04-T-LE2-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „Wir haben ein Baby.“",
+					"en": "The text says: “Wir haben ein Baby.”",
+					"tl": "Sabi sa teksto: “Wir haben ein Baby.”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein.",
+					"Ja, ein Baby."
+				],
+				"answer": 1,
+				"prompt": "Hallo Tom!\nIch bin verheiratet. Mein Mann heißt Ali. Wir haben ein Baby.\nLiebe Grüße, Sofia\n\nHat Sofia Kinder?",
+				"family": "A1-04-T-LE2-1"
+			},
+			{
+				"id": "A1-04-T-LE2-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
+					"en": "Read. Choose the correct answer.",
+					"tl": "Basahin. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Im Text: „Ich lebe mit meinem Sohn in Linz.“",
+					"en": "The text says: “Ich lebe mit meinem Sohn in Linz.”",
+					"tl": "Sabi sa teksto: “Ich lebe mit meinem Sohn in Linz.”"
+				},
+				"goals": [
+					"A1-04-G1",
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0378",
+					"W-A1-0006",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, mit ihrem Sohn.",
+					"Ja, allein."
+				],
+				"answer": 0,
+				"prompt": "Hallo Tom!\nIch bin geschieden. Ich lebe mit meinem Sohn in Linz.\nLiebe Grüße, Anna\n\nLebt Anna allein?",
+				"family": "A1-04-T-LE2-1"
+			},
+			{
+				"id": "A1-04-T-LE3-1",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Name: Sofia Berger.",
+					"en": "Answer: Name: Sofia Berger.",
+					"tl": "Sagot: Name: Sofia Berger."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0328",
+					"W-A1-0041",
+					"W-A1-0002"
+				],
+				"options": [
+					"Anna Huber",
+					"Sofia Berger",
+					"Maria Santos"
+				],
+				"answer": 1,
+				"prompt": "Wie heißt die Frau im Formular?",
+				"image": {
+					"src": "/img/a1-04-formular.svg",
+					"alt": {
+						"de": "Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.",
+						"en": "A form with a name and marital status. One box is ticked.",
+						"tl": "Form na may pangalan at civil status. May isang kahong may ekis."
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-LE3-2",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Das Kreuz ist bei „verheiratet“.",
+					"en": "Answer: Das Kreuz ist bei „verheiratet“.",
+					"tl": "Sagot: Das Kreuz ist bei „verheiratet“."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0036"
+				],
+				"options": [
+					"ledig",
+					"geschieden",
+					"verheiratet"
+				],
+				"answer": 2,
+				"prompt": "Was ist angekreuzt?",
+				"image": {
+					"src": "/img/a1-04-formular.svg",
+					"alt": {
+						"de": "Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.",
+						"en": "A form with a name and marital status. One box is ticked.",
+						"tl": "Form na may pangalan at civil status. May isang kahong may ekis."
+					}
+				},
+				"family": "A1-04-T-LE3-1"
+			},
+			{
+				"id": "A1-04-T-LE3-3",
+				"type": "choice",
+				"skill": "lesen",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Angekreuzt ist „verheiratet“.",
+					"en": "Answer: Angekreuzt ist „verheiratet“.",
+					"tl": "Sagot: Angekreuzt ist „verheiratet“."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0328",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, verheiratet.",
+					"Ja.",
+					"Nein, ledig."
+				],
+				"answer": 0,
+				"prompt": "Ist Frau Berger geschieden?",
+				"image": {
+					"src": "/img/a1-04-formular.svg",
+					"alt": {
+						"de": "Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.",
+						"en": "A form with a name and marital status. One box is ticked.",
+						"tl": "Form na may pangalan at civil status. May isang kahong may ekis."
+					}
+				},
+				"family": "A1-04-T-LE3-1"
+			},
+			{
+				"id": "A1-04-T-HO1-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich habe zwei Schwestern und einen Bruder.“",
+					"en": "You hear: “Ich habe zwei Schwestern und einen Bruder.”",
+					"tl": "Naririnig mo: “Ich habe zwei Schwestern und einen Bruder.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0796",
+					"W-A1-0797"
+				],
+				"options": [
+					"drei Geschwister",
+					"zwei Geschwister"
+				],
+				"answer": 0,
+				"audioText": "Ich habe zwei Schwestern und einen Bruder.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-T-HO1-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Wir haben drei Kinder: zwei Söhne und eine Tochter.“",
+					"en": "You hear: “Wir haben drei Kinder: zwei Söhne und eine Tochter.”",
+					"tl": "Naririnig mo: “Wir haben drei Kinder: zwei Söhne und eine Tochter.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0046",
+					"W-A1-0011",
+					"W-A1-0117",
+					"W-A1-0796"
+				],
+				"options": [
+					"eine Tochter",
+					"zwei Töchter"
+				],
+				"answer": 0,
+				"audioText": "Wir haben drei Kinder: zwei Söhne und eine Tochter.",
+				"audioOnly": true,
+				"family": "A1-04-T-HO1-1"
+			},
+			{
+				"id": "A1-04-T-HO1-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist richtig?",
+					"en": "Listen. What is correct?",
+					"tl": "Makinig. Alin ang tama?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Meine Großeltern leben in Graz.“",
+					"en": "You hear: “Meine Großeltern leben in Graz.”",
+					"tl": "Naririnig mo: “Meine Großeltern leben in Graz.”"
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0339",
+					"W-A1-0093"
+				],
+				"options": [
+					"in Wien",
+					"in Graz"
+				],
+				"answer": 1,
+				"audioText": "Meine Großeltern leben in Graz.",
+				"audioOnly": true,
+				"family": "A1-04-T-HO1-1"
+			},
+			{
+				"id": "A1-04-T-HO2-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich bin seit zehn Jahren verheiratet.“",
+					"en": "You hear: “Ich bin seit zehn Jahren verheiratet.”",
+					"tl": "Naririnig mo: “Ich bin seit zehn Jahren verheiratet.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0804"
+				],
+				"options": [
+					"verheiratet",
+					"ledig"
+				],
+				"answer": 0,
+				"audioText": "Ich bin seit zehn Jahren verheiratet.",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-T-HO2-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich bin ledig und wohne allein.“",
+					"en": "You hear: “Ich bin ledig und wohne allein.”",
+					"tl": "Naririnig mo: “Ich bin ledig und wohne allein.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0087"
+				],
+				"options": [
+					"verheiratet",
+					"ledig"
+				],
+				"answer": 1,
+				"audioText": "Ich bin ledig und wohne allein.",
+				"audioOnly": true,
+				"family": "A1-04-T-HO2-1"
+			},
+			{
+				"id": "A1-04-T-HO2-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Was ist der Familienstand?",
+					"en": "Listen. What is the marital status?",
+					"tl": "Makinig. Ano ang civil status?"
+				},
+				"explanation": {
+					"de": "Sie hören: „Ich bin geschieden und habe zwei Kinder.“",
+					"en": "You hear: “Ich bin geschieden und habe zwei Kinder.”",
+					"tl": "Naririnig mo: “Ich bin geschieden und habe zwei Kinder.”"
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0796"
+				],
+				"options": [
+					"verheiratet",
+					"geschieden"
+				],
+				"answer": 1,
+				"audioText": "Ich bin geschieden und habe zwei Kinder.",
+				"audioOnly": true,
+				"family": "A1-04-T-HO2-1"
+			},
+			{
+				"id": "A1-04-T-HO3-1",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Haben Sie Kinder?“ – Antwort: „Ja, zwei.“",
+					"en": "Question: “Haben Sie Kinder?” – answer: “Ja, zwei.”",
+					"tl": "Tanong: “Haben Sie Kinder?” – sagot: “Ja, zwei.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Nein, ich bin ledig.",
+					"Ja, zwei.",
+					"In Manila.",
+					"Lukas."
+				],
+				"answer": 1,
+				"audioText": "Haben Sie Kinder?",
+				"audioOnly": true
+			},
+			{
+				"id": "A1-04-T-HO3-2",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Sind Sie verheiratet?“ – Antwort: „Nein, ich bin ledig.“",
+					"en": "Question: “Sind Sie verheiratet?” – answer: “Nein, ich bin ledig.”",
+					"tl": "Tanong: “Sind Sie verheiratet?” – sagot: “Nein, ich bin ledig.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, zwei.",
+					"Nein, ich bin ledig.",
+					"Sieben.",
+					"Meine Oma."
+				],
+				"answer": 1,
+				"audioText": "Sind Sie verheiratet?",
+				"audioOnly": true,
+				"family": "A1-04-T-HO3-1"
+			},
+			{
+				"id": "A1-04-T-HO3-3",
+				"type": "choice",
+				"skill": "hoeren",
+				"instruction": {
+					"de": "Hören Sie. Welche Antwort passt?",
+					"en": "Listen. Which answer fits?",
+					"tl": "Makinig. Aling sagot ang angkop?"
+				},
+				"explanation": {
+					"de": "Frage: „Wo leben Ihre Eltern?“ – Antwort: „In Manila.“",
+					"en": "Question: “Wo leben Ihre Eltern?” – answer: “In Manila.”",
+					"tl": "Tanong: “Wo leben Ihre Eltern?” – sagot: “In Manila.”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0051",
+					"W-A1-0801",
+					"W-A1-0037",
+					"W-A1-0093"
+				],
+				"options": [
+					"Sieben.",
+					"Lukas.",
+					"Ja, einen Bruder.",
+					"In Manila."
+				],
+				"answer": 3,
+				"audioText": "Wo leben Ihre Eltern?",
+				"audioOnly": true,
+				"family": "A1-04-T-HO3-1"
+			},
+			{
+				"id": "A1-04-T-SC1-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: verheiratet, Kinder: 2.",
+					"en": "Marital status: verheiratet, children: 2.",
+					"tl": "Civil status: verheiratet, anak: 2."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006",
+					"W-A1-0046",
+					"W-A1-0796"
+				],
+				"text": "Ich bin Jose. Ich bin verheiratet und habe zwei Töchter.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"verheiratet"
+						]
+					},
+					"2": {
+						"accept": [
+							"2",
+							"zwei"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-SC1-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: geschieden, Kinder: 1.",
+					"en": "Marital status: geschieden, children: 1.",
+					"tl": "Civil status: geschieden, anak: 1."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006"
+				],
+				"text": "Ich heiße Anna. Ich bin geschieden. Ich habe einen Sohn.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"geschieden"
+						]
+					},
+					"2": {
+						"accept": [
+							"1",
+							"eins"
+						]
+					}
+				},
+				"family": "A1-04-T-SC1-1"
+			},
+			{
+				"id": "A1-04-T-SC1-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Lesen Sie. Ergänzen Sie das Formular.",
+					"en": "Read. Complete the form.",
+					"tl": "Basahin. Kumpletuhin ang form."
+				},
+				"explanation": {
+					"de": "Familienstand: ledig, Kinder: 0.",
+					"en": "Marital status: ledig, children: 0.",
+					"tl": "Civil status: ledig, anak: 0."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0006",
+					"W-A1-0324",
+					"W-A1-0046"
+				],
+				"text": "Mein Name ist Tom. Ich bin ledig und habe keine Kinder.\nFamilienstand: {{1}} · Kinder: {{2}}",
+				"gaps": {
+					"1": {
+						"accept": [
+							"ledig"
+						]
+					},
+					"2": {
+						"accept": [
+							"0",
+							"keine",
+							"null"
+						]
+					}
+				},
+				"family": "A1-04-T-SC1-1"
+			},
+			{
+				"id": "A1-04-T-SC2-1",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Kinder.",
+					"en": "Answer: Plural: die Kinder.",
+					"tl": "Sagot: Plural: die Kinder."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0330",
+					"W-A1-0796",
+					"W-A1-0004"
+				],
+				"prompt": "ein Kind – zwei …",
+				"accept": [
+					"Kinder"
+				]
+			},
+			{
+				"id": "A1-04-T-SC2-2",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Töchter.",
+					"en": "Answer: Plural: die Töchter.",
+					"tl": "Sagot: Plural: die Töchter."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0336",
+					"W-A1-0796"
+				],
+				"prompt": "eine Tochter – zwei …",
+				"accept": [
+					"Töchter"
+				],
+				"family": "A1-04-T-SC2-1"
+			},
+			{
+				"id": "A1-04-T-SC2-3",
+				"type": "short",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Schreiben Sie den Plural.",
+					"en": "Write the plural.",
+					"tl": "Isulat ang plural."
+				},
+				"explanation": {
+					"de": "Plural: die Babys.",
+					"en": "Answer: Plural: die Babys.",
+					"tl": "Sagot: Plural: die Babys."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0343",
+					"W-A1-0796",
+					"W-A1-0004"
+				],
+				"prompt": "ein Baby – zwei …",
+				"accept": [
+					"Babys"
+				],
+				"family": "A1-04-T-SC2-1"
+			},
+			{
+				"id": "A1-04-T-SC3-1",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Mann und {{3}} Kinder.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"mein"
+						]
+					},
+					"3": {
+						"accept": [
+							"meine"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-SC3-2",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Mutter und {{3}} Bruder.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"meine"
+						]
+					},
+					"3": {
+						"accept": [
+							"mein"
+						]
+					}
+				},
+				"family": "A1-04-T-SC3-1"
+			},
+			{
+				"id": "A1-04-T-SC3-3",
+				"type": "cloze",
+				"skill": "schreiben",
+				"instruction": {
+					"de": "Ergänzen Sie die Nachricht.",
+					"en": "Complete the message.",
+					"tl": "Kumpletuhin ang mensahe."
+				},
+				"explanation": {
+					"de": "die Familie → meine; der/das → mein; die (auch Plural) → meine.",
+					"en": "die Familie → meine; der/das → mein; die (and plural) → meine.",
+					"tl": "die Familie → meine; der/das → mein; die (at plural) → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0378",
+					"W-A1-0046",
+					"W-A1-0003"
+				],
+				"text": "Hallo! Das ist {{1}} Familie: {{2}} Eltern und {{3}} Baby.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					},
+					"2": {
+						"accept": [
+							"meine"
+						]
+					},
+					"3": {
+						"accept": [
+							"mein"
+						]
+					}
+				},
+				"family": "A1-04-T-SC3-1"
+			},
+			{
+				"id": "A1-04-T-SP1-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Kinder?“ passt: „Haben Sie Kinder?“",
+					"en": "For “Kinder?”: “Haben Sie Kinder?”",
+					"tl": "Para sa “Kinder?”: “Haben Sie Kinder?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0009",
+					"W-A1-0117",
+					"W-A1-0037"
+				],
+				"options": [
+					"Haben Sie Geschwister?",
+					"Haben Sie Kinder?",
+					"Wo leben Ihre Eltern?"
+				],
+				"answer": 1,
+				"prompt": "Wortkarte: Kinder?"
+			},
+			{
+				"id": "A1-04-T-SP1-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Familienstand?“ passt: „Sind Sie verheiratet?“",
+					"en": "For “Familienstand?”: “Sind Sie verheiratet?”",
+					"tl": "Para sa “Familienstand?”: “Sind Sie verheiratet?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0009",
+					"W-A1-0117"
+				],
+				"options": [
+					"Sind Sie verheiratet?",
+					"Haben Sie Kinder?",
+					"Haben Sie einen Partner?"
+				],
+				"answer": 0,
+				"prompt": "Wortkarte: Familienstand?",
+				"family": "A1-04-T-SP1-1"
+			},
+			{
+				"id": "A1-04-T-SP1-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Wortkarte: Stellen Sie die Frage. Wählen Sie, dann sagen Sie es laut.",
+					"en": "Word card: ask the question. Choose, then say it aloud.",
+					"tl": "Word card: itanong. Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Zu „Geschwister?“ passt: „Haben Sie Geschwister?“",
+					"en": "For “Geschwister?”: “Haben Sie Geschwister?”",
+					"tl": "Para sa “Geschwister?”: “Haben Sie Geschwister?”"
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0028",
+					"W-A1-0009",
+					"W-A1-0059",
+					"W-A1-0117"
+				],
+				"options": [
+					"Haben Sie Kinder?",
+					"Haben Sie Geschwister?",
+					"Leben Ihre Großeltern noch?"
+				],
+				"answer": 1,
+				"prompt": "Wortkarte: Geschwister?",
+				"family": "A1-04-T-SP1-1"
+			},
+			{
+				"id": "A1-04-T-SP2-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben eine Tochter und einen Sohn. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You have a daughter and a son. What do you say? Choose, then say it aloud.",
+					"tl": "May anak kang babae at lalaki. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ja, eine Tochter und einen Sohn.“",
+					"en": "Correct: “Ja, eine Tochter und einen Sohn.”",
+					"tl": "Tama: “Ja, eine Tochter und einen Sohn.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0046",
+					"W-A1-0051"
+				],
+				"options": [
+					"Ja, ich bin Tochter und Sohn.",
+					"Ja, eine Tochter und einen Sohn.",
+					"Nein, eine Tochter."
+				],
+				"answer": 1,
+				"prompt": "Haben Sie Kinder?"
+			},
+			{
+				"id": "A1-04-T-SP2-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Ihre Eltern leben in Cebu. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "Your parents live in Cebu. What do you say? Choose, then say it aloud.",
+					"tl": "Nasa Cebu ang mga magulang mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Meine Eltern leben in Cebu.“",
+					"en": "Correct: “Meine Eltern leben in Cebu.”",
+					"tl": "Tama: “Meine Eltern leben in Cebu.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0006",
+					"W-A1-0037",
+					"W-A1-0093"
+				],
+				"options": [
+					"Meine Eltern leben in Cebu.",
+					"Mein Eltern lebt in Cebu.",
+					"Ich lebe in Cebu Eltern."
+				],
+				"answer": 0,
+				"prompt": "Wo leben Ihre Eltern?",
+				"family": "A1-04-T-SP2-1"
+			},
+			{
+				"id": "A1-04-T-SP2-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie haben zwei Brüder. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You have two brothers. What do you say? Choose, then say it aloud.",
+					"tl": "May dalawa kang kapatid na lalaki. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Richtig: „Ja, zwei Brüder.“",
+					"en": "Correct: “Ja, zwei Brüder.”",
+					"tl": "Tama: “Ja, zwei Brüder.”"
+				},
+				"goals": [
+					"A1-04-G2",
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0117"
+				],
+				"options": [
+					"Ja, zwei Bruder.",
+					"Ja, ich bin zwei Brüder.",
+					"Ja, zwei Brüder."
+				],
+				"answer": 2,
+				"prompt": "Haben Sie Geschwister?",
+				"family": "A1-04-T-SP2-1"
+			},
+			{
+				"id": "A1-04-T-SP3-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihre Schwester. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your sister. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: kapatid mong babae. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist mein Schwester.",
+					"Das ist meiner Schwester.",
+					"Das ist meine Schwester."
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-04-T-SP3-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihr Bruder. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your brother. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: kapatid mong lalaki. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist mein Bruder.",
+					"Das ist meine Bruder.",
+					"Das sind mein Bruder."
+				],
+				"answer": 0,
+				"family": "A1-04-T-SP3-1"
+			},
+			{
+				"id": "A1-04-T-SP3-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie zeigen ein Foto: Ihre Eltern. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You show a photo: your parents. What do you say? Choose, then say it aloud.",
+					"tl": "Nagpapakita ka ng litrato: mga magulang mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "der/das → mein, die und Plural → meine.",
+					"en": "der/das → mein, die and plural → meine.",
+					"tl": "der/das → mein, die at plural → meine."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0003"
+				],
+				"options": [
+					"Das ist mein Eltern.",
+					"Das sind mein Eltern.",
+					"Das sind meine Eltern."
+				],
+				"answer": 2,
+				"family": "A1-04-T-SP3-1"
+			},
+			{
+				"id": "A1-04-T-SP4-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sind verheiratet. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You are married. What do you say? Choose, then say it aloud.",
+					"tl": "Kasal ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, ich habe verheiratet.",
+					"Ja, ich bin verheiratet.",
+					"Nein, ich bin verheiratet."
+				],
+				"answer": 1,
+				"prompt": "Sind Sie verheiratet?"
+			},
+			{
+				"id": "A1-04-T-SP4-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sind geschieden. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You are divorced. What do you say? Choose, then say it aloud.",
+					"tl": "Hiwalay ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, ich bin geschieden.",
+					"Nein, ich bin geschieden.",
+					"Nein, ich habe geschieden."
+				],
+				"answer": 1,
+				"prompt": "Sind Sie verheiratet?",
+				"family": "A1-04-T-SP4-1"
+			},
+			{
+				"id": "A1-04-T-SP4-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sind ledig. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You are single. What do you say? Choose, then say it aloud.",
+					"tl": "Wala kang asawa. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "Familienstand mit „sein“: Ich bin verheiratet / ledig / geschieden.",
+					"en": "Marital status with “sein”: Ich bin verheiratet / ledig / geschieden.",
+					"tl": "Civil status gamit ang “sein”: Ich bin verheiratet / ledig / geschieden."
+				},
+				"goals": [
+					"A1-04-G3"
+				],
+				"refs": [
+					"W-A1-0345",
+					"W-A1-0346",
+					"W-A1-0347",
+					"W-A1-0006",
+					"W-A1-0009",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"options": [
+					"Ja, ich bin ledig.",
+					"Nein, ich bin ledig.",
+					"Nein, ich habe ledig."
+				],
+				"answer": 1,
+				"prompt": "Sind Sie verheiratet?",
+				"family": "A1-04-T-SP4-1"
+			},
+			{
+				"id": "A1-04-T-SP5-1",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit Ihrer Freundin (du). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to your friend (du). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo ang kaibigan mo (du). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0041"
+				],
+				"options": [
+					"Wie heißt Ihre Tochter?",
+					"Wie heißt dein Tochter?",
+					"Wie heißt deine Tochter?"
+				],
+				"answer": 2
+			},
+			{
+				"id": "A1-04-T-SP5-2",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit dem Lehrer (Sie). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to the teacher (Sie). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo ang guro (Sie). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0041",
+					"W-A1-0012"
+				],
+				"options": [
+					"Wie alt ist dein Sohn?",
+					"Wie alt ist Ihr Sohn?",
+					"Wie alt ist Ihre Sohn?"
+				],
+				"answer": 1,
+				"family": "A1-04-T-SP5-1"
+			},
+			{
+				"id": "A1-04-T-SP5-3",
+				"type": "choice",
+				"skill": "sprechen",
+				"instruction": {
+					"de": "Sie sprechen mit einer Kollegin (Sie). Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
+					"en": "You talk to a colleague (Sie). What do you ask? Choose, then say it aloud.",
+					"tl": "Kausap mo ang katrabaho (Sie). Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
+				},
+				"explanation": {
+					"de": "„du“ → dein/deine; „Sie“ → Ihr/Ihre.",
+					"en": "“du” → dein/deine; “Sie” → Ihr/Ihre.",
+					"tl": "“du” → dein/deine; “Sie” → Ihr/Ihre."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0023",
+					"W-A1-0028",
+					"W-A1-0012",
+					"W-A1-0037"
+				],
+				"options": [
+					"Wo leben deine Eltern?",
+					"Wo leben Ihre Eltern?",
+					"Wo leben Ihr Eltern?"
+				],
+				"answer": 1,
+				"family": "A1-04-T-SP5-1"
+			},
+			{
+				"id": "A1-04-T-GW1-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Väter. Im Plural immer „die“.",
+					"en": "Plural: Väter. Plural article always “die”.",
+					"tl": "Plural: Väter. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0334",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"options": [
+					"Vaters",
+					"Väter",
+					"Vatern"
+				],
+				"answer": 1,
+				"prompt": "der Vater → die …"
+			},
+			{
+				"id": "A1-04-T-GW1-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Familien. Im Plural immer „die“.",
+					"en": "Plural: Familien. Plural article always “die”.",
+					"tl": "Plural: Familien. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0002"
+				],
+				"options": [
+					"Families",
+					"Familie",
+					"Familien"
+				],
+				"answer": 2,
+				"prompt": "die Familie → die …",
+				"family": "A1-04-T-GW1-1"
+			},
+			{
+				"id": "A1-04-T-GW1-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Plural: Opas. Im Plural immer „die“.",
+					"en": "Plural: Opas. Plural article always “die”.",
+					"tl": "Plural: Opas. Laging “die” sa plural."
+				},
+				"goals": [
+					"A1-04-G4"
+				],
+				"refs": [
+					"W-A1-0342",
+					"W-A1-0001",
+					"W-A1-0002"
+				],
+				"options": [
+					"Opa",
+					"Omas",
+					"Opas"
+				],
+				"answer": 2,
+				"prompt": "der Opa → die …",
+				"family": "A1-04-T-GW1-1"
+			},
+			{
+				"id": "A1-04-T-GW2-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0003"
+				],
+				"text": "Das ist {{1}} (mein) Tochter.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"meine"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-GW2-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0041"
+				],
+				"text": "Wie heißt {{1}} (dein) Vater?",
+				"gaps": {
+					"1": {
+						"accept": [
+							"dein"
+						]
+					}
+				},
+				"family": "A1-04-T-GW2-1"
+			},
+			{
+				"id": "A1-04-T-GW2-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "mein/dein/Ihr vor der/das, meine/deine/Ihre vor die und Plural.",
+					"en": "mein/dein/Ihr before der/das, meine/deine/Ihre before die and plural.",
+					"tl": "mein/dein/Ihr bago der/das, meine/deine/Ihre bago die at plural."
+				},
+				"goals": [
+					"A1-04-G2"
+				],
+				"refs": [
+					"W-A1-0022",
+					"W-A1-0023",
+					"W-A1-0328",
+					"W-A1-0012",
+					"W-A1-0037"
+				],
+				"text": "Frau Huber, wo leben {{1}} (Ihr) Kinder?",
+				"gaps": {
+					"1": {
+						"accept": [
+							"Ihre"
+						]
+					}
+				},
+				"family": "A1-04-T-GW2-1"
+			},
+			{
+				"id": "A1-04-T-GW3-1",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "lesen: er liest (e → ie).",
+					"en": "Answer: lesen: er liest (e → ie).",
+					"tl": "Sagot: lesen: er liest (e → ie)."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0144",
+					"W-A1-0001"
+				],
+				"text": "Der Opa {{1}} (lesen) gern.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"liest"
+						]
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-GW3-2",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "sehen: du siehst (e → ie).",
+					"en": "Answer: sehen: du siehst (e → ie).",
+					"tl": "Sagot: sehen: du siehst (e → ie)."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0142",
+					"W-A1-0007"
+				],
+				"text": "Du {{1}} (sehen) deine Familie.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"siehst"
+						]
+					}
+				},
+				"family": "A1-04-T-GW3-1"
+			},
+			{
+				"id": "A1-04-T-GW3-3",
+				"type": "cloze",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Schreiben Sie die fehlenden Wörter.",
+					"en": "Write the missing words.",
+					"tl": "Isulat ang mga nawawalang salita."
+				},
+				"explanation": {
+					"de": "schreiben: sie schreibt.",
+					"en": "Answer: schreiben: sie schreibt.",
+					"tl": "Sagot: schreiben: sie schreibt."
+				},
+				"goals": [
+					"A1-04-G5"
+				],
+				"refs": [
+					"W-A1-0145"
+				],
+				"text": "Meine Tochter {{1}} (schreiben) eine Nachricht.",
+				"gaps": {
+					"1": {
+						"accept": [
+							"schreibt"
+						]
+					}
+				},
+				"family": "A1-04-T-GW3-1"
+			},
+			{
+				"id": "A1-04-T-GW4-1",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Vater vom Vater = Opa.",
+					"en": "Answer: Vater vom Vater = Opa.",
+					"tl": "Sagot: Vater vom Vater = Opa."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0001"
+				],
+				"options": [
+					"Bruder",
+					"Sohn",
+					"Opa"
+				],
+				"answer": 2,
+				"prompt": "Der Vater von meinem Vater ist mein …"
+			},
+			{
+				"id": "A1-04-T-GW4-2",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Vater der Mutter = Opa.",
+					"en": "Answer: Vater der Mutter = Opa.",
+					"tl": "Sagot: Vater der Mutter = Opa."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0001"
+				],
+				"options": [
+					"Bruder",
+					"Sohn",
+					"Opa"
+				],
+				"answer": 2,
+				"prompt": "Der Vater von meiner Mutter ist mein …",
+				"family": "A1-04-T-GW4-1"
+			},
+			{
+				"id": "A1-04-T-GW4-3",
+				"type": "choice",
+				"skill": "grammatikWortschatz",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "Bruder + Schwester = Geschwister.",
+					"en": "Answer: Bruder + Schwester = Geschwister.",
+					"tl": "Sagot: Bruder + Schwester = Geschwister."
+				},
+				"goals": [
+					"A1-04-G1"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046"
+				],
+				"options": [
+					"Eltern",
+					"Großeltern",
+					"Geschwister"
+				],
+				"answer": 2,
+				"prompt": "Mein Bruder und meine Schwester sind meine …",
+				"family": "A1-04-T-GW4-1"
+			},
+			{
+				"id": "A1-04-T-WE1-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0087",
+					"W-A1-0003"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Eine Mutter lebt allein mit ihrem Kind. Ist das eine Familie?"
+			},
+			{
+				"id": "A1-04-T-WE1-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0001"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein.",
+					"Ja."
+				],
+				"answer": 1,
+				"prompt": "Ein Vater lebt mit seinem Kind und der Oma. Ist das eine Familie?",
+				"family": "A1-04-T-WE1-1"
+			},
+			{
+				"id": "A1-04-T-WE1-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0051",
+					"W-A1-0052",
+					"W-A1-0055",
+					"W-A1-0056"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein, nur mit Kindern.",
+					"Ja, auch ohne Kinder."
+				],
+				"answer": 1,
+				"prompt": "Ein Paar hat keine Kinder. Ist das eine Familie?",
+				"family": "A1-04-T-WE1-1"
+			},
+			{
+				"id": "A1-04-T-WE2-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0357",
+					"W-A1-0010",
+					"W-A1-0051",
+					"W-A1-0052"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Nein, es gibt viele Familienformen.",
+					"Ja, nur eine."
+				],
+				"answer": 0,
+				"prompt": "Gibt es in Österreich nur eine Familienform?"
+			},
+			{
+				"id": "A1-04-T-WE2-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0096"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"eine Familie ohne Eltern",
+					"eine Familie mit Kindern aus einer früheren Beziehung"
+				],
+				"answer": 1,
+				"prompt": "Eine Patchwork-Familie ist …",
+				"family": "A1-04-T-WE2-1"
+			},
+			{
+				"id": "A1-04-T-WE2-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Wählen Sie die richtige Antwort.",
+					"en": "Choose the correct answer.",
+					"tl": "Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0030"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Familien sind verschieden.",
+					"Alle Familien sind gleich groß."
+				],
+				"answer": 0,
+				"prompt": "Welcher Satz ist richtig?",
+				"family": "A1-04-T-WE2-1"
+			},
+			{
+				"id": "A1-04-T-WE3-1",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0035",
+					"W-A1-0001",
+					"W-A1-0002",
+					"W-A1-0073"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"die Oma",
+					"der Vater"
+				],
+				"answer": 0,
+				"prompt": "Bild 3: Wer ist hier mit dem Kind?",
+				"image": {
+					"src": "/img/a1-04-familien.svg",
+					"alt": {
+						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+					}
+				}
+			},
+			{
+				"id": "A1-04-T-WE3-2",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0046",
+					"W-A1-0093"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"Bild 2",
+					"Bild 1"
+				],
+				"answer": 0,
+				"prompt": "In welchem Bild sind Vater, Mutter und Kind?",
+				"image": {
+					"src": "/img/a1-04-familien.svg",
+					"alt": {
+						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+					}
+				},
+				"family": "A1-04-T-WE3-1"
+			},
+			{
+				"id": "A1-04-T-WE3-3",
+				"type": "choice",
+				"skill": "werte",
+				"instruction": {
+					"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+					"en": "Look at the picture. Choose the correct answer.",
+					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+				},
+				"explanation": {
+					"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
+					"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
+					"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+				},
+				"goals": [
+					"A1-04-G6"
+				],
+				"refs": [
+					"W-A1-0331",
+					"W-A1-0041",
+					"W-A1-0042",
+					"W-A1-0043",
+					"W-A1-0796"
+				],
+				"sourceIds": [
+					"Q36"
+				],
+				"options": [
+					"zwei",
+					"drei"
+				],
+				"answer": 1,
+				"prompt": "Wie viele Familien zeigt das Bild?",
+				"image": {
+					"src": "/img/a1-04-familien.svg",
+					"alt": {
+						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
+						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+					}
+				},
+				"family": "A1-04-T-WE3-1"
+			}
+		]
+	}
+}

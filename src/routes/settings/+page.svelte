@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import InstallButton from '#lib/components/InstallButton.svelte';
 	import { resolve } from '$app/paths';
 	import { getLocale, locales, setLocale } from '#lib/paraglide/runtime.js';
 	import { m } from '#lib/paraglide/messages.js';
@@ -65,6 +66,8 @@
 			{m.settings_translations()}
 		</label>
 	</div>
+
+	<InstallButton />
 
 	<div class="card space-y-2">
 		<button type="button" class={armed ? 'btn-primary' : 'btn-secondary'} data-testid="setting-reset" onclick={reset}>🗑 {armed ? m.settings_reset_confirm() : m.settings_reset()}</button>
