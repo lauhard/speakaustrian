@@ -309,6 +309,18 @@
 				"en": "The family",
 				"tl": "Ang pamilya"
 			},
+			"intro": {
+				"situation": {
+					"de": "Anna wohnt in Wien. Sie zeigt Ihnen die Familie Huber: Vater, Mutter und zwei Kinder.",
+					"en": "Anna lives in Vienna. She shows you the Huber family: father, mother and two children.",
+					"tl": "Nakatira si Anna sa Vienna. Ipinapakita niya sa iyo ang pamilyang Huber: tatay, nanay at dalawang anak."
+				},
+				"goal": {
+					"de": "Am Ende kannst du Familienmitglieder nennen: Mutter, Vater, Sohn, Tochter, Eltern, Kinder.",
+					"en": "By the end you can name family members: mother, father, son, daughter, parents, children.",
+					"tl": "Sa dulo, mapapangalanan mo ang mga miyembro ng pamilya: nanay, tatay, anak na lalaki, anak na babae, magulang, mga anak."
+				}
+			},
 			"introduces": [
 				"W-A1-0331",
 				"W-A1-0333",
@@ -320,35 +332,48 @@
 			],
 			"cards": [
 				{
-					"phrase": "die Familie",
+					"kind": "phrase",
+					"phrase": "Das ist meine Familie. Das ist meine Mutter, das ist mein Vater.",
 					"note": {
-						"de": "Mutter + Vater = die Eltern. Sohn und Tochter = die Kinder.",
-						"en": "Mother + father = the parents (Eltern). Son and daughter = the children (Kinder).",
-						"tl": "Nanay + tatay = magulang (Eltern). Anak na lalaki at babae = mga anak (Kinder)."
+						"de": "So zeigen Sie Ihre Familie. „meine Mutter“ und „mein Vater“ lernen Sie zuerst als feste Wörter, Lektion 5 erklärt sie.",
+						"en": "This is how you introduce your family. Learn “meine Mutter” and “mein Vater” as fixed phrases first; lesson 5 explains them.",
+						"tl": "Ganito mo ipakilala ang pamilya mo. Isaulo muna ang “meine Mutter” at “mein Vater” bilang buong parirala; ipapaliwanag ito sa lesson 5."
 					}
 				},
 				{
-					"phrase": "die Mutter – der Vater",
+					"kind": "rule",
+					"phrase": "Mutter + Vater = die Eltern",
 					"note": {
-						"de": "Die Mutter und der Vater sind die Eltern.",
-						"en": "The mother and the father are the parents.",
-						"tl": "Ang nanay at tatay ay ang mga magulang."
-					}
+						"de": "Die Eltern sind Mutter und Vater zusammen. „Eltern“ gibt es nur im Plural: die Eltern (nicht „der Eltern“).",
+						"en": "The parents are mother and father together. “Eltern” only exists in the plural: die Eltern.",
+						"tl": "Ang Eltern ay nanay at tatay na magkasama. Plural lang ang “Eltern”: die Eltern."
+					},
+					"examples": [
+						"Anna ist die Mutter. Peter ist der Vater.",
+						"Anna und Peter sind die Eltern."
+					]
 				},
 				{
-					"phrase": "der Sohn – die Tochter – das Kind",
+					"kind": "rule",
+					"phrase": "der Sohn · die Tochter · das Kind",
 					"note": {
-						"de": "Lukas ist der Sohn, Lena ist die Tochter. Beide sind Kinder.",
-						"en": "Lukas is the son, Lena the daughter. Both are children.",
-						"tl": "Anak na lalaki si Lukas, anak na babae si Lena. Pareho silang anak."
-					}
+						"de": "Sohn = Bub, Tochter = Mädchen. „das Kind“ ist beides: Sohn und Tochter sind Kinder. Das Wort „Kind“ hat den Artikel „das“.",
+						"en": "Sohn = boy, Tochter = girl. “das Kind” is both: son and daughter are children. “Kind” takes “das”.",
+						"tl": "Sohn = lalaki, Tochter = babae. Ang “das Kind” ay para sa dalawa: ang anak na lalaki at babae ay Kinder. “das” ang article ng “Kind”."
+					},
+					"examples": [
+						"Lukas ist der Sohn.",
+						"Lena ist die Tochter.",
+						"Lukas und Lena sind die Kinder."
+					]
 				},
 				{
-					"phrase": "die Eltern",
+					"kind": "phrase",
+					"phrase": "Haben Sie Kinder? – Ja, ich habe zwei Kinder.",
 					"note": {
-						"de": "Eltern gibt es nur im Plural.",
-						"en": "“Eltern” only exists in the plural.",
-						"tl": "Plural lang ang “Eltern”."
+						"de": "Mit „haben“ sagen Sie, wie viele Kinder Sie haben. „Ich bin zwei Kinder“ geht nicht: „sein“ sagt, wer Sie sind.",
+						"en": "With “haben” you say how many children you have. “Ich bin zwei Kinder” is wrong: “sein” says who you are.",
+						"tl": "Gamit ang “haben” sinasabi mo kung ilan ang anak mo. Mali ang “Ich bin zwei Kinder”: ang “sein” ay para sa kung sino ka."
 					}
 				}
 			],
@@ -358,30 +383,33 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Anna Huber zeigt ihren Stammbaum. Schauen Sie das Bild an.",
+						"en": "Anna Huber shows her family tree. Look at the picture. The lines go from the parents down to their children.",
+						"tl": "Ipinapakita ni Anna Huber ang family tree niya. Tingnan ang larawan. Ang mga linya ay mula sa magulang pababa sa mga anak."
 					},
 					"explanation": {
-						"de": "Im Stammbaum: Mutter Anna, Tochter Lena.",
-						"en": "In the family tree: mother Anna, daughter Lena.",
-						"tl": "Sa family tree: nanay si Anna, anak si Lena."
+						"de": "Richtig: Anna. Von Peter und Anna führt die Linie zu Lukas und Lena: Anna ist die Mutter. Maria steht in der Zeile darüber: Maria ist die Oma. Lena ist ein Kind, nicht die Mutter.",
+						"en": "Correct: Anna. The line goes from Peter and Anna down to Lukas and Lena: Anna is the mother. Maria is in the row above: she is the grandmother. Lena is a child, not the mother.",
+						"tl": "Tama: Anna. Ang linya ay mula kina Peter at Anna pababa kina Lukas at Lena: nanay si Anna. Si Maria ay nasa itaas na hanay: lola siya. Anak si Lena, hindi nanay."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
 						"W-A1-0333",
-						"W-A1-0035",
-						"W-A1-0002"
+						"W-A1-0330",
+						"W-A1-0041",
+						"W-A1-0009",
+						"W-A1-0046",
+						"W-A1-0117"
 					],
 					"options": [
 						"Maria",
 						"Anna",
-						"Peter"
+						"Lena"
 					],
 					"answer": 1,
-					"prompt": "Wer ist die Mutter von Lena?",
+					"prompt": "Lukas und Lena haben eine Mutter. Wie heißt sie?",
 					"image": {
 						"src": "/img/a1-04-stammbaum.svg",
 						"alt": {
@@ -396,31 +424,30 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Schauen Sie den Stammbaum noch einmal an. Die Kinder heißen Lukas und Lena.",
+						"en": "Look at the family tree again. The children are Lukas and Lena.",
+						"tl": "Tingnan muli ang family tree. Sina Lukas at Lena ang mga anak."
 					},
 					"explanation": {
-						"de": "Peter ist der Vater, Lukas ist der Sohn.",
-						"en": "Peter is the father, Lukas is the son.",
-						"tl": "Tatay si Peter, anak si Lukas."
+						"de": "Richtig: Lena. Im Stammbaum steht „Lena (Mädchen)“: Mädchen = Tochter. Lukas ist ein Bub: der Sohn.",
+						"en": "Correct: Lena. The tree says “Lena (Mädchen)”: girl = daughter. Lukas is a boy: the son.",
+						"tl": "Tama: Lena. Nakasulat sa family tree ang “Lena (Mädchen)”: babae = Tochter. Lalaki si Lukas (Bub): ang Sohn."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
+						"W-A1-0336",
 						"W-A1-0335",
-						"W-A1-0334",
-						"W-A1-0001",
+						"W-A1-0035",
 						"W-A1-0002"
 					],
 					"options": [
-						"der Vater",
-						"die Tochter",
-						"der Sohn"
+						"Lena",
+						"Lukas"
 					],
-					"answer": 2,
-					"prompt": "Lukas ist … von Peter.",
+					"answer": 0,
+					"prompt": "Wer ist die Tochter, Lukas oder Lena?",
 					"image": {
 						"src": "/img/a1-04-stammbaum.svg",
 						"alt": {
@@ -435,31 +462,34 @@
 					"type": "choice",
 					"skill": "hoeren",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Lena stellt ihre Familie vor. Hören Sie.",
+						"en": "Lena introduces her family. Listen.",
+						"tl": "Ipinakikilala ni Lena ang pamilya niya. Makinig."
 					},
 					"explanation": {
-						"de": "Sie hören: „Ich habe zwei Kinder, einen Sohn und eine Tochter.“",
-						"en": "You hear: “Ich habe zwei Kinder, einen Sohn und eine Tochter.”",
-						"tl": "Naririnig mo: “Ich habe zwei Kinder, einen Sohn und eine Tochter.”"
+						"de": "Sie hören: „Hallo! Ich bin Lena. Das ist mein Vater Peter und das ist meine Mutter Anna.“ Peter ist der Vater, Lena spricht – sie ist das Kind. Die Mutter heißt Anna.",
+						"en": "You hear: “Hallo! Ich bin Lena. Das ist mein Vater Peter und das ist meine Mutter Anna.” Peter is the father, Lena is speaking – she is the child. The mother is Anna.",
+						"tl": "Naririnig mo: “Hallo! Ich bin Lena. Das ist mein Vater Peter und das ist meine Mutter Anna.” Tatay si Peter, si Lena ang nagsasalita – anak siya. Anna ang nanay."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
-						"W-A1-0330",
+						"W-A1-0333",
+						"W-A1-0334",
+						"W-A1-0378",
 						"W-A1-0006",
-						"W-A1-0046",
-						"W-A1-0796",
-						"W-A1-0797"
+						"W-A1-0041",
+						"W-A1-0046"
 					],
 					"options": [
-						"zwei Kinder",
-						"drei Kinder"
+						"Anna",
+						"Peter",
+						"Lena"
 					],
 					"answer": 0,
-					"audioText": "Ich habe zwei Kinder, einen Sohn und eine Tochter.",
+					"prompt": "Wie heißt die Mutter?",
+					"audioText": "Hallo! Ich bin Lena. Das ist mein Vater Peter und das ist meine Mutter Anna.",
 					"audioOnly": true
 				},
 				{
@@ -467,31 +497,142 @@
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Lena ist acht Jahre alt. Ergänzen Sie, was Lena sagt. Nehmen Sie die Wörter unten.",
+						"en": "Lena is eight years old. Complete what Lena says. Use the words below.",
+						"tl": "Walong taong gulang si Lena. Kumpletuhin ang sinasabi ni Lena. Gamitin ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Mutter + Vater = die Eltern.",
-						"en": "mother + father = the parents (Eltern).",
-						"tl": "nanay + tatay = Eltern."
+						"de": "Richtig: Vater, Mutter, Eltern. Lena ist das Kind – darum sind Peter und Anna ihre Eltern. „Kinder“ passt nicht: Lena ist selbst ein Kind, ihre Eltern sind keine Kinder.",
+						"en": "Correct: Vater, Mutter, Eltern. Lena is the child – so Peter and Anna are her parents. “Kinder” does not fit: Lena is a child herself, her parents are not.",
+						"tl": "Tama: Vater, Mutter, Eltern. Anak si Lena – kaya magulang niya sina Peter at Anna. Hindi bagay ang “Kinder”: bata si Lena mismo, hindi ang magulang niya."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
+						"W-A1-0334",
+						"W-A1-0333",
 						"W-A1-0332",
-						"W-A1-0046",
-						"W-A1-0002"
+						"W-A1-0046"
 					],
-					"text": "Mutter und Vater sind die {{1}}.",
+					"text": "Peter ist mein {{1}}. Anna ist meine {{2}}. Peter und Anna sind meine {{3}}.",
 					"gaps": {
 						"1": {
+							"accept": [
+								"Vater"
+							]
+						},
+						"2": {
+							"accept": [
+								"Mutter"
+							]
+						},
+						"3": {
 							"accept": [
 								"Eltern"
 							]
 						}
-					}
+					},
+					"bank": [
+						"Vater",
+						"Mutter",
+						"Eltern",
+						"Kinder"
+					]
+				},
+				{
+					"id": "A1-04-L01-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Anna spricht über ihren Sohn Lukas. Er ist ein Bub. Was sagt sie?",
+						"en": "Anna talks about her son Lukas. He is a boy. What does she say?",
+						"tl": "Nagsasalita si Anna tungkol sa anak niyang si Lukas. Lalaki siya. Ano ang sinasabi niya?"
+					},
+					"explanation": {
+						"de": "Richtig: Sohn. Lukas ist ein Bub, also männlich: der Sohn. „Tochter“ ist ein Mädchen (die Tochter) und braucht „meine“. „Vater“ ist Peter, nicht Lukas.",
+						"en": "Correct: Sohn. Lukas is a boy, so masculine: der Sohn. “Tochter” is a girl (die Tochter) and needs “meine”. “Vater” is Peter, not Lukas.",
+						"tl": "Tama: Sohn. Lalaki si Lukas, kaya panlalaki: der Sohn. Ang “Tochter” ay babae (die Tochter) at kailangan ng “meine”. Si Peter ang “Vater”, hindi si Lukas."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0335"
+					],
+					"options": [
+						"Tochter",
+						"Sohn",
+						"Vater"
+					],
+					"answer": 1,
+					"prompt": "Lukas ist mein …"
+				},
+				{
+					"id": "A1-04-L01-I6",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Eine Frau in Wien fragt Sie. Sie haben zwei Kinder. Was antworten Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "A woman in Vienna asks you. You have two children. What do you answer? Choose, then say it aloud.",
+						"tl": "Nagtanong sa iyo ang isang babae sa Vienna. May dalawa kang anak. Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Ja, ich habe zwei Kinder.“ Wer Kinder hat, sagt „haben“. „Ich bin zwei Kinder“ heißt: Ich selbst bin zwei Kinder – das ist falsch. „Nein“ passt nicht zu „zwei Kinder“: Auf „Haben Sie Kinder?“ mit zwei Kindern sagen Sie „Ja“.",
+						"en": "Correct: “Ja, ich habe zwei Kinder.” Use “haben” for your children. “Ich bin zwei Kinder” would mean I myself am two children – wrong. “Nein” does not fit “two children”: you answer “Haben Sie Kinder?” with “Ja”.",
+						"tl": "Tama: “Ja, ich habe zwei Kinder.” “Haben” ang gamit para sa mga anak mo. Ang “Ich bin zwei Kinder” ay ako mismo ang dalawang bata – mali. Hindi bagay ang “Nein” sa “zwei Kinder”: “Ja” ang sagot sa “Haben Sie Kinder?”."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0330",
+						"W-A1-0117",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0051"
+					],
+					"options": [
+						"Ja, ich bin zwei Kinder.",
+						"Nein, ich habe zwei Kinder.",
+						"Ja, ich habe zwei Kinder."
+					],
+					"answer": 2,
+					"prompt": "Frau: „Haben Sie Kinder?“"
+				},
+				{
+					"id": "A1-04-L01-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lukas schreibt an Tom. Lesen Sie die E-Mail.",
+						"en": "Lukas writes an e-mail to Tom. Read it.",
+						"tl": "Sumulat si Lukas ng e-mail kay Tom. Basahin ito."
+					},
+					"explanation": {
+						"de": "Richtig: zwei. Die Kinder sind Lukas und Lena. Peter und Anna sind die Eltern, keine Kinder. „vier“ sind alle Menschen zusammen, „drei“ wären Lena und die Eltern.",
+						"en": "Correct: zwei. The children are Lukas and Lena. Peter and Anna are the parents. “vier” is everyone together; “drei” would be Lena and the parents.",
+						"tl": "Tama: zwei. Ang mga anak ay sina Lukas at Lena. Magulang sina Peter at Anna. Ang “vier” ay lahat ng tao; ang “drei” ay si Lena at ang mga magulang."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0330",
+						"W-A1-0332",
+						"W-A1-0377",
+						"W-A1-0006",
+						"W-A1-0041",
+						"W-A1-0046"
+					],
+					"options": [
+						"drei",
+						"vier",
+						"zwei"
+					],
+					"answer": 2,
+					"prompt": "Servus Tom! Wir sind vier: mein Vater Peter, meine Mutter Anna, meine Schwester Lena und ich. Servus, Lukas\n\nWie viele Kinder sind in der Familie?"
 				}
 			]
 		},
@@ -502,6 +643,18 @@
 				"en": "Siblings",
 				"tl": "Magkakapatid"
 			},
+			"intro": {
+				"situation": {
+					"de": "Maria kommt aus den Philippinen. Sie wohnt jetzt in Wien. Ihr Bruder Jose und ihre Schwester Ana sind auch da.",
+					"en": "Maria is from the Philippines. She now lives in Vienna. Her brother Jose and her sister Ana are there too.",
+					"tl": "Taga-Pilipinas si Maria. Nakatira na siya ngayon sa Vienna. Nandoon din ang kuya/kapatid niyang si Jose at ang kapatid niyang si Ana."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen, ob du Geschwister hast, und Bruder und Schwester nennen.",
+					"en": "By the end you can say whether you have siblings and name brother and sister.",
+					"tl": "Sa dulo, masasabi mo kung may kapatid ka at mapapangalanan mo ang kapatid na lalaki at babae."
+				}
+			},
 			"introduces": [
 				"W-A1-0337",
 				"W-A1-0338",
@@ -509,28 +662,41 @@
 			],
 			"cards": [
 				{
-					"phrase": "der Bruder – die Schwester",
+					"kind": "phrase",
+					"phrase": "Hast du Geschwister? – Ja, ich habe einen Bruder und eine Schwester.",
 					"note": {
-						"de": "Jose ist der Bruder von Maria. Ana ist die Schwester.",
-						"en": "Jose is Maria’s brother. Ana is her sister.",
-						"tl": "Kuya/kapatid na lalaki ni Maria si Jose. Kapatid na babae si Ana."
+						"de": "So fragen Sie einen Freund (du) nach den Geschwistern. Die Antwort: „Ja, ich habe …“ und die Zahl oder Bruder und Schwester.",
+						"en": "This is how you ask a friend (du) about siblings. The answer: “Ja, ich habe …” plus a number or brother and sister.",
+						"tl": "Ganito ka magtatanong sa kaibigan (du) tungkol sa kapatid. Ang sagot: “Ja, ich habe …” at bilang o kapatid na lalaki at babae."
 					}
 				},
 				{
-					"phrase": "die Geschwister",
+					"kind": "rule",
+					"phrase": "der Bruder · die Schwester · die Geschwister",
 					"note": {
-						"de": "Bruder und Schwester zusammen = Geschwister.",
-						"en": "Brothers and sisters together = Geschwister (siblings).",
-						"tl": "Magkapatid na lalaki at babae = Geschwister."
-					}
+						"de": "Bruder = männlich, Schwester = weiblich. „die Geschwister“ sind Brüder und Schwestern zusammen. Das Wort gibt es nur im Plural.",
+						"en": "Bruder = male, Schwester = female. “die Geschwister” are brothers and sisters together. The word only exists in the plural.",
+						"tl": "Bruder = lalaki, Schwester = babae. Ang “die Geschwister” ay magkapatid na lalaki at babae. Plural lang ang salita."
+					},
+					"examples": [
+						"Jose ist der Bruder.",
+						"Ana ist die Schwester.",
+						"Maria hat zwei Geschwister."
+					]
 				},
 				{
-					"phrase": "Hast du Geschwister? – Ja, zwei.",
+					"kind": "rule",
+					"phrase": "Ich habe einen Bruder. · Ich habe eine Schwester.",
 					"note": {
-						"de": "Kurze Antwort mit der Zahl.",
-						"en": "Short answer with the number.",
-						"tl": "Maikling sagot gamit ang bilang."
-					}
+						"de": "Nach „haben“ wird „ein“ bei männlichen Wörtern zu „einen“: einen Bruder. Bei „die“-Wörtern bleibt es „eine“: eine Schwester. Lernen Sie es als feste Wendung.",
+						"en": "After “haben”, “ein” becomes “einen” for masculine words: einen Bruder. For “die” words it stays “eine”: eine Schwester. Learn it as a fixed phrase.",
+						"tl": "Pagkatapos ng “haben”, ang “ein” ay nagiging “einen” sa panlalaki: einen Bruder. Sa “die” na salita, “eine” pa rin: eine Schwester. Isaulo bilang buong parirala."
+					},
+					"examples": [
+						"Ich habe einen Bruder.",
+						"Ich habe eine Schwester.",
+						"Wir haben zwei Kinder."
+					]
 				}
 			],
 			"items": [
@@ -539,14 +705,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Maria zeigt ihre Geschwister. Schauen Sie das Bild an: Maria spricht.",
+						"en": "Maria shows her siblings. Look at the picture: Maria is the one speaking.",
+						"tl": "Ipinapakilala ni Maria ang mga kapatid niya. Tingnan ang larawan: si Maria ang nagsasalita."
 					},
 					"explanation": {
-						"de": "Maria hat einen Bruder (Jose) und eine Schwester (Ana): zwei Geschwister.",
-						"en": "Maria has a brother (Jose) and a sister (Ana): two siblings.",
-						"tl": "May isang kapatid na lalaki (Jose) at babae (Ana) si Maria: dalawa."
+						"de": "Richtig: zwei – Jose und Ana. Maria spricht und steht in der Mitte: Sie ist keine Schwester von sich selbst. „drei“ zählt Maria mit, das ist falsch.",
+						"en": "Correct: zwei – Jose and Ana. Maria is speaking, in the middle: she does not count herself. “drei” counts Maria too – wrong.",
+						"tl": "Tama: zwei – sina Jose at Ana. Si Maria ang nagsasalita sa gitna: hindi niya binibilang ang sarili niya. Ang “drei” ay kasama si Maria – mali."
 					},
 					"goals": [
 						"A1-04-G1"
@@ -559,112 +725,241 @@
 						"W-A1-0795"
 					],
 					"options": [
-						"zwei",
 						"drei",
+						"zwei",
 						"eins"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Wie viele Geschwister hat Maria?",
 					"image": {
 						"src": "/img/a1-04-geschwister.svg",
 						"alt": {
-							"de": "Maria mit ihrem Bruder und ihrer Schwester.",
-							"en": "Maria with her brother and her sister.",
-							"tl": "Si Maria kasama ang kapatid na lalaki at babae."
+							"de": "Eine junge Frau in der Mitte sagt „Das sind meine Geschwister.“ Links und rechts steht je ein Mensch mit Namensschild.",
+							"en": "A young woman in the middle says “Das sind meine Geschwister.” A person with a name tag stands on each side.",
+							"tl": "Isang dalaga sa gitna ang nagsasabi ng “Das sind meine Geschwister.” May taong may name tag sa magkabilang gilid."
 						}
 					}
 				},
 				{
 					"id": "A1-04-L02-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Schauen Sie das Bild noch einmal an.",
+						"en": "Look at the picture again.",
+						"tl": "Tingnan muli ang larawan."
 					},
 					"explanation": {
-						"de": "Ana ist eine Frau: die Schwester.",
-						"en": "Ana is female: die Schwester (sister).",
-						"tl": "Babae si Ana: die Schwester."
-					},
-					"goals": [
-						"A1-04-G1"
-					],
-					"refs": [
-						"W-A1-0338",
-						"W-A1-0002"
-					],
-					"options": [
-						"Bruder",
-						"Schwester",
-						"Mutter"
-					],
-					"answer": 1,
-					"prompt": "Ana ist die … von Jose."
-				},
-				{
-					"id": "A1-04-L02-I3",
-					"type": "choice",
-					"skill": "hoeren",
-					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
-					},
-					"explanation": {
-						"de": "Sie hören: „Ich habe einen Bruder. Er wohnt in Graz.“",
-						"en": "You hear: “Ich habe einen Bruder. Er wohnt in Graz.”",
-						"tl": "Naririnig mo: “Ich habe einen Bruder. Er wohnt in Graz.”"
+						"de": "Richtig: Jose. Ein Bruder ist männlich: Jose. Ana und Maria sind Frauen – Ana ist die Schwester, Maria spricht.",
+						"en": "Correct: Jose. A brother is male: Jose. Ana and Maria are women – Ana is the sister, Maria is the speaker.",
+						"tl": "Tama: Jose. Panlalaki ang Bruder: si Jose. Babae sina Ana at Maria – si Ana ang Schwester, si Maria ang nagsasalita."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
 						"W-A1-0337",
-						"W-A1-0006",
-						"W-A1-0008",
-						"W-A1-0093"
+						"W-A1-0035",
+						"W-A1-0001"
 					],
 					"options": [
-						"eine Schwester",
-						"einen Bruder"
+						"Ana",
+						"Jose",
+						"Maria"
 					],
 					"answer": 1,
-					"audioText": "Ich habe einen Bruder. Er wohnt in Graz.",
+					"prompt": "Wer ist der Bruder?",
+					"image": {
+						"src": "/img/a1-04-geschwister.svg",
+						"alt": {
+							"de": "Eine junge Frau in der Mitte sagt „Das sind meine Geschwister.“ Links und rechts steht je ein Mensch mit Namensschild.",
+							"en": "A young woman in the middle says “Das sind meine Geschwister.” A person with a name tag stands on each side.",
+							"tl": "Isang dalaga sa gitna ang nagsasabi ng “Das sind meine Geschwister.” May taong may name tag sa magkabilang gilid."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L02-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Jose stellt sich vor. Hören Sie.",
+						"en": "Jose introduces himself. Listen.",
+						"tl": "Nagpapakilala si Jose. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Ich bin Jose. Ich habe einen Bruder und zwei Schwestern.“ 1 + 2 = drei Geschwister. „zwei“ sind nur die Schwestern, „vier“ zählt Jose selbst mit.",
+						"en": "You hear: “Ich bin Jose. Ich habe einen Bruder und zwei Schwestern.” 1 + 2 = three siblings. “zwei” is only the sisters; “vier” counts Jose himself.",
+						"tl": "Naririnig mo: “Ich bin Jose. Ich habe einen Bruder und zwei Schwestern.” 1 + 2 = tatlong kapatid. Ang “zwei” ay ang mga kapatid na babae lang; ang “vier” ay kasama si Jose."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0339",
+						"W-A1-0337",
+						"W-A1-0338",
+						"W-A1-0006",
+						"W-A1-0041",
+						"W-A1-0046",
+						"W-A1-0042"
+					],
+					"options": [
+						"drei",
+						"zwei",
+						"vier"
+					],
+					"answer": 0,
+					"prompt": "Wie viele Geschwister hat Jose?",
+					"audioText": "Ich bin Jose. Ich habe einen Bruder und zwei Schwestern.",
 					"audioOnly": true
 				},
 				{
 					"id": "A1-04-L02-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Anna fragt Maria. Ergänzen Sie den Dialog. Nehmen Sie die Wörter unten.",
+						"en": "Anna asks Maria. Complete the dialogue. Use the words below.",
+						"tl": "Nagtanong si Anna kay Maria. Kumpletuhin ang dialogo. Gamitin ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: Geschwister, Bruder, Schwester. „einen“ gehört zu einem männlichen Wort: einen Bruder. „eine“ gehört zu „die Schwester“. „Eltern“ passt nicht zu der Antwort: Maria spricht über Bruder und Schwester.",
+						"en": "Correct: Geschwister, Bruder, Schwester. “einen” goes with a masculine word: einen Bruder. “eine” goes with “die Schwester”. “Eltern” does not fit the answer: Maria talks about a brother and a sister.",
+						"tl": "Tama: Geschwister, Bruder, Schwester. Ang “einen” ay para sa panlalaking salita: einen Bruder. Ang “eine” ay para sa “die Schwester”. Hindi bagay ang “Eltern”: tungkol sa kapatid na lalaki at babae ang sagot ni Maria."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0339",
+						"W-A1-0337",
+						"W-A1-0338",
+						"W-A1-0006",
+						"W-A1-0007",
+						"W-A1-0046",
+						"W-A1-0051"
+					],
+					"text": "Anna: Hast du {{1}}? – Maria: Ja, ich habe einen {{2}} und eine {{3}}.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Geschwister"
+							]
+						},
+						"2": {
+							"accept": [
+								"Bruder"
+							]
+						},
+						"3": {
+							"accept": [
+								"Schwester"
+							]
+						}
+					},
+					"bank": [
+						"Geschwister",
+						"Bruder",
+						"Schwester",
+						"Eltern"
+					]
+				},
+				{
+					"id": "A1-04-L02-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Tom spricht über seinen Bruder. Wählen Sie die richtige Form.",
+						"en": "Tom talks about his brother. Choose the right form.",
+						"tl": "Nagsasalita si Tom tungkol sa kapatid niyang lalaki. Piliin ang tamang anyo."
+					},
+					"explanation": {
+						"de": "Richtig: einen Bruder. Nach „haben“ wird „ein“ bei „der Bruder“ zu „einen“. „eine“ gehört zu „die“-Wörtern (eine Schwester). „ein Bruder“ sagt man nur bei „Das ist ein Bruder.“",
+						"en": "Correct: einen Bruder. After “haben”, “ein” becomes “einen” for “der Bruder”. “eine” belongs to “die” words (eine Schwester). “ein Bruder” is only used in “Das ist ein Bruder.”",
+						"tl": "Tama: einen Bruder. Pagkatapos ng “haben”, ang “ein” ay nagiging “einen” sa “der Bruder”. Ang “eine” ay para sa “die” na salita (eine Schwester). Ang “ein Bruder” ay sa “Das ist ein Bruder.” lang."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0337",
+						"W-A1-0117",
+						"W-A1-0006",
+						"W-A1-0004"
+					],
+					"options": [
+						"eine",
+						"einen",
+						"ein"
+					],
+					"answer": 1,
+					"prompt": "Tom: „Ich habe … Bruder.“"
+				},
+				{
+					"id": "A1-04-L02-I6",
 					"type": "choice",
 					"skill": "sprechen",
 					"instruction": {
-						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
-						"en": "What do you say? Choose, then say it aloud.",
-						"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+						"de": "Im Kurs fragt ein Freund Sie: „Hast du Geschwister?“ Sie haben eine Schwester. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "In class a friend asks you: “Hast du Geschwister?” You have one sister. What do you say? Choose, then say it aloud.",
+						"tl": "Sa klase, tinanong ka ng kaibigan: “Hast du Geschwister?” May isa kang kapatid na babae. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "Kurz und richtig: „Ja, eine Schwester.“",
-						"en": "Short and correct: “Ja, eine Schwester.”",
-						"tl": "Maikli at tama: “Ja, eine Schwester.”"
+						"de": "Richtig: „Ja, ich habe eine Schwester.“ „haben“ + „eine Schwester“ (die-Wort). „Ich bin eine Schwester“ sagt, was Sie selbst sind. „einen Schwester“ ist falsch: „einen“ gibt es nur bei männlichen Wörtern.",
+						"en": "Correct: “Ja, ich habe eine Schwester.” “haben” + “eine Schwester” (a “die” word). “Ich bin eine Schwester” says what you yourself are. “einen Schwester” is wrong: “einen” is only for masculine words.",
+						"tl": "Tama: “Ja, ich habe eine Schwester.” “haben” + “eine Schwester” (“die” na salita). Ang “Ich bin eine Schwester” ay kung ano ka mismo. Mali ang “einen Schwester”: ang “einen” ay para lang sa panlalaking salita."
 					},
 					"goals": [
 						"A1-04-G2"
 					],
 					"refs": [
 						"W-A1-0338",
+						"W-A1-0117",
 						"W-A1-0006",
 						"W-A1-0007",
-						"W-A1-0051",
-						"W-A1-0796"
+						"W-A1-0051"
 					],
 					"options": [
-						"Ja, ich bin Schwester.",
-						"Ja, eine Schwester.",
-						"Ja, Geschwister ist zwei."
+						"Ja, ich bin eine Schwester.",
+						"Ja, ich habe einen Schwester.",
+						"Ja, ich habe eine Schwester."
 					],
-					"answer": 1,
-					"prompt": "Hast du Geschwister?"
+					"answer": 2,
+					"prompt": "Freund: „Hast du Geschwister?“"
+				},
+				{
+					"id": "A1-04-L02-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Maria schreibt eine E-Mail. Lesen Sie.",
+						"en": "Maria writes an e-mail. Read it.",
+						"tl": "Sumulat si Maria ng e-mail. Basahin ito."
+					},
+					"explanation": {
+						"de": "Im Text: „Ich habe einen Bruder: Jose. Er wohnt in Graz.“ „Er“ ist Jose. Ana wohnt in Wien, Maria schreibt die E-Mail.",
+						"en": "The text says: “Ich habe einen Bruder: Jose. Er wohnt in Graz.” “Er” is Jose. Ana lives in Vienna; Maria is the writer.",
+						"tl": "Sabi sa teksto: “Ich habe einen Bruder: Jose. Er wohnt in Graz.” Si Jose ang “Er”. Si Ana ay nakatira sa Wien; si Maria ang sumulat."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0337",
+						"W-A1-0148",
+						"W-A1-0377",
+						"W-A1-0006",
+						"W-A1-0009",
+						"W-A1-0035"
+					],
+					"options": [
+						"Jose",
+						"Ana",
+						"Maria"
+					],
+					"answer": 0,
+					"prompt": "Servus! Ich heiße Maria. Ich habe einen Bruder: Jose. Er wohnt in Graz. Meine Schwester heißt Ana. Sie wohnt in Wien.\n\nWer wohnt in Graz?"
 				}
 			]
 		},
@@ -675,6 +970,18 @@
 				"en": "Man, woman, child, baby",
 				"tl": "Lalaki, babae, bata, sanggol"
 			},
+			"intro": {
+				"situation": {
+					"de": "Die Familie Huber ist im Park. Dort sind viele Menschen: Mann, Frau, Mädchen, Bub und ein Baby.",
+					"en": "The Huber family is in the park. Many people are there: man, woman, girl, boy and a baby.",
+					"tl": "Nasa park ang pamilyang Huber. Maraming tao roon: lalaki, babae, batang babae, batang lalaki at isang sanggol."
+				},
+				"goal": {
+					"de": "Am Ende kannst du Menschen im Bild nennen und sagen, wer Erwachsene und wer Kinder sind.",
+					"en": "By the end you can name people in a picture and say who is an adult and who is a child.",
+					"tl": "Sa dulo, mapapangalanan mo ang mga tao sa larawan at masasabi mo kung sino ang matanda at sino ang bata."
+				}
+			},
 			"introduces": [
 				"W-A1-0329",
 				"W-A1-0397",
@@ -684,28 +991,53 @@
 			],
 			"cards": [
 				{
-					"phrase": "der Mann – die Frau",
+					"kind": "rule",
+					"phrase": "der Mann · die Frau · das Baby",
 					"note": {
-						"de": "Mann und Frau sind Erwachsene.",
-						"en": "Man and woman are adults (Erwachsene).",
-						"tl": "Ang lalaki at babae ay nasa hustong gulang (Erwachsene)."
+						"de": "Mann und Frau sind Erwachsene. Ein Baby ist ein sehr kleines Kind. Das Wort „Baby“ hat den Artikel „das“.",
+						"en": "Man and woman are adults (Erwachsene). A baby is a very small child. “Baby” takes “das”.",
+						"tl": "Ang lalaki at babae ay Erwachsene (nasa hustong gulang). Ang baby ay napakaliit na bata. “das” ang article ng “Baby”."
+					},
+					"examples": [
+						"Das ist ein Mann.",
+						"Das ist eine Frau.",
+						"Das ist ein Baby."
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "das Mädchen – auch bei einem Mädchen „das“",
+					"note": {
+						"de": "Alle Wörter auf -chen haben den Artikel „das“, auch wenn der Mensch weiblich ist: das Mädchen, ein Mädchen (nicht „eine“).",
+						"en": "All words ending in -chen take “das”, even if the person is female: das Mädchen, ein Mädchen (not “eine”).",
+						"tl": "Lahat ng salitang nagtatapos sa -chen ay “das”, kahit babae ang tao: das Mädchen, ein Mädchen (hindi “eine”)."
+					},
+					"examples": [
+						"Das ist ein Mädchen.",
+						"Das Mädchen ist sieben Jahre alt."
+					]
+				},
+				{
+					"kind": "culture",
+					"phrase": "der Bub (in Deutschland: der Junge)",
+					"note": {
+						"de": "In Österreich sagen die Menschen „der Bub“ für ein männliches Kind, in Deutschland sagt man „der Junge“. Im Alltag hören Sie bei uns also: Bub und Mädchen.",
+						"en": "In Austria people say “der Bub” for a male child; in Germany people say “der Junge”. In everyday Austrian speech you hear: Bub and Mädchen.",
+						"tl": "Sa Austria, “der Bub” ang tawag sa batang lalaki; sa Germany, “der Junge”. Sa araw-araw na usapan sa Austria maririnig mo: Bub at Mädchen."
 					}
 				},
 				{
-					"phrase": "das Mädchen – der Bub",
+					"kind": "rule",
+					"phrase": "Erwachsene und Kinder",
 					"note": {
-						"de": "In Österreich sagt man „der Bub“. (in Deutschland: „der Junge“). „das Mädchen“ hat den Artikel „das“!",
-						"en": "In Austria you say “der Bub” (in Germany: “der Junge”). “das Mädchen” takes “das”!",
-						"tl": "Sa Austria: “der Bub” (sa Germany: “der Junge”). May “das” ang “das Mädchen”!"
-					}
-				},
-				{
-					"phrase": "das Baby",
-					"note": {
-						"de": "Ein Baby ist ein sehr kleines Kind.",
-						"en": "A baby is a very small child.",
-						"tl": "Ang baby ay napakaliit na bata."
-					}
+						"de": "Erwachsene sind große Menschen: Mann, Frau. Kinder sind Baby, Bub, Mädchen. Jugendliche sind Menschen zwischen Kind und Erwachsener. „Dame“ ist ein höfliches Wort für „Frau“.",
+						"en": "Erwachsene (adults) are grown-up people: man, woman. Children are baby, boy, girl. Jugendliche (teenagers) are between child and adult. “Dame” is a polite word for “Frau”.",
+						"tl": "Ang Erwachsene ay mga nasa hustong gulang: lalaki, babae. Ang Kinder ay baby, Bub, Mädchen. Ang Jugendliche ay nasa pagitan ng bata at matanda. Ang “Dame” ay magalang na salita para sa “Frau”."
+					},
+					"examples": [
+						"Ein Mann und eine Frau sind Erwachsene.",
+						"Ein Baby, ein Bub und ein Mädchen sind Kinder."
+					]
 				}
 			],
 			"items": [
@@ -714,87 +1046,128 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Die Familie ist im Park. Schauen Sie das Bild an.",
+						"en": "The family is in the park. Look at the picture. Count the grown-ups.",
+						"tl": "Nasa park ang pamilya. Tingnan ang larawan. Bilangin ang mga nasa hustong gulang."
 					},
 					"explanation": {
-						"de": "Ein Mädchen und ein Baby: zwei Kinder. Mann und Frau sind Erwachsene.",
-						"en": "A girl and a baby: two children. Man and woman are adults.",
-						"tl": "Isang batang babae at baby: dalawang bata. Nasa hustong gulang ang lalaki at babae."
+						"de": "Richtig: zwei – ein Mann und eine Frau. Der Bub, das Mädchen und das Baby sind Kinder, keine Erwachsenen. Mit „vier“ oder „drei“ zählen Sie Kinder mit.",
+						"en": "Correct: zwei – a man and a woman. The boy, the girl and the baby are children, not adults. With “vier” or “drei” you count children too.",
+						"tl": "Tama: zwei – isang lalaki at isang babae. Ang Bub, Mädchen at Baby ay mga bata, hindi Erwachsene. Sa “vier” o “drei” kasama mo ang mga bata."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
-						"W-A1-0330",
-						"W-A1-0397",
-						"W-A1-0343",
+						"W-A1-0400",
+						"W-A1-0329",
 						"W-A1-0041",
 						"W-A1-0042",
 						"W-A1-0043",
-						"W-A1-0795"
+						"W-A1-0796"
 					],
 					"options": [
-						"zwei",
 						"drei",
-						"eins"
+						"vier",
+						"zwei"
 					],
-					"answer": 0,
-					"prompt": "Wie viele Kinder sind im Bild?",
+					"answer": 2,
+					"prompt": "Wie viele Erwachsene sind im Park?",
 					"image": {
 						"src": "/img/a1-04-park.svg",
 						"alt": {
-							"de": "Eine Familie im Park: Mann, Frau, Mädchen und Baby.",
-							"en": "A family in the park: man, woman, girl and baby.",
-							"tl": "Pamilya sa park: lalaki, babae, batang babae at baby."
+							"de": "Im Park stehen ein Mann, eine Frau, ein Bub und ein Mädchen. Ein Baby liegt im Kinderwagen.",
+							"en": "In a park stand a man, a woman, a boy and a girl. A baby lies in a pram.",
+							"tl": "Sa park may lalaki, babae, batang lalaki at batang babae. May sanggol sa stroller."
 						}
 					}
 				},
 				{
 					"id": "A1-04-L03-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Schauen Sie das Bild noch einmal an. Zählen Sie die Kinder.",
+						"en": "Look at the picture again. Count the children.",
+						"tl": "Tingnan muli ang larawan. Bilangin ang mga bata."
 					},
 					"explanation": {
-						"de": "Achtung: das Mädchen – mit „das“.",
-						"en": "Careful: das Mädchen – with “das”.",
-						"tl": "Ingat: das Mädchen – may “das”."
+						"de": "Richtig: drei – der Bub, das Mädchen und das Baby. Auch das Baby ist ein Kind. Mit „zwei“ vergessen Sie das Baby, „vier“ zählt einen Erwachsenen mit.",
+						"en": "Correct: drei – the boy, the girl and the baby. The baby is a child too. With “zwei” you forget the baby; “vier” counts an adult.",
+						"tl": "Tama: drei – ang Bub, Mädchen at Baby. Bata rin ang Baby. Sa “zwei” nakalimutan mo ang baby; ang “vier” ay kasama ang isang Erwachsene."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
+						"W-A1-0330",
+						"W-A1-0343",
 						"W-A1-0397",
-						"W-A1-0001",
-						"W-A1-0002",
-						"W-A1-0003"
+						"W-A1-0398",
+						"W-A1-0041",
+						"W-A1-0042",
+						"W-A1-0043",
+						"W-A1-0796"
 					],
 					"options": [
-						"die",
-						"das",
-						"der"
+						"zwei",
+						"vier",
+						"drei"
 					],
-					"answer": 1,
-					"prompt": "… Mädchen"
+					"answer": 2,
+					"prompt": "Wie viele Kinder sind im Park?",
+					"image": {
+						"src": "/img/a1-04-park.svg",
+						"alt": {
+							"de": "Im Park stehen ein Mann, eine Frau, ein Bub und ein Mädchen. Ein Baby liegt im Kinderwagen.",
+							"en": "In a park stand a man, a woman, a boy and a girl. A baby lies in a pram.",
+							"tl": "Sa park may lalaki, babae, batang lalaki at batang babae. May sanggol sa stroller."
+						}
+					}
 				},
 				{
 					"id": "A1-04-L03-I3",
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Sie zeigen im Park auf ein Mädchen. Was sagen Sie?",
+						"en": "In the park you point at a girl. What do you say?",
+						"tl": "Sa park, itinuturo mo ang isang batang babae. Ano ang sasabihin mo?"
 					},
 					"explanation": {
-						"de": "der Bub (männlich): der.",
-						"en": "der Bub (boy) – masculine: der.",
-						"tl": "der Bub (batang lalaki) – panlalaki: der."
+						"de": "Richtig: ein Mädchen. Alle Wörter auf -chen haben „das“ und damit „ein“. „eine“ passt nicht, obwohl der Mensch weiblich ist. „einen“ gibt es nur bei männlichen Wörtern (der Bruder).",
+						"en": "Correct: ein Mädchen. All words ending in -chen take “das” and so “ein”. “eine” does not fit although the person is female. “einen” is only for masculine words (der Bruder).",
+						"tl": "Tama: ein Mädchen. Lahat ng salitang -chen ay “das” kaya “ein”. Hindi bagay ang “eine” kahit babae ang tao. Ang “einen” ay para sa panlalaking salita (der Bruder)."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0397",
+						"W-A1-0003",
+						"W-A1-0004"
+					],
+					"options": [
+						"ein",
+						"eine",
+						"einen"
+					],
+					"answer": 0,
+					"prompt": "Das ist … Mädchen."
+				},
+				{
+					"id": "A1-04-L03-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie lernen die Wörter für Kinder. Welcher Artikel passt?",
+						"en": "You are learning the words for children. Which article fits?",
+						"tl": "Inaaral mo ang mga salita para sa mga bata. Aling article ang bagay?"
+					},
+					"explanation": {
+						"de": "Richtig: der Bub. „Bub“ ist männlich: der Bub. „das“ gehört zu „Mädchen“ und „Baby“, „die“ zu „Frau“ und „Tochter“.",
+						"en": "Correct: der Bub. “Bub” is masculine: der Bub. “das” belongs to “Mädchen” and “Baby”, “die” to “Frau” and “Tochter”.",
+						"tl": "Tama: der Bub. Panlalaki ang “Bub”: der Bub. Ang “das” ay para sa “Mädchen” at “Baby”, ang “die” sa “Frau” at “Tochter”."
 					},
 					"goals": [
 						"A1-04-G1"
@@ -806,12 +1179,124 @@
 						"W-A1-0003"
 					],
 					"options": [
-						"die",
 						"das",
+						"die",
 						"der"
 					],
 					"answer": 2,
 					"prompt": "… Bub"
+				},
+				{
+					"id": "A1-04-L03-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Eine Frau erzählt, was sie im Park sieht. Hören Sie.",
+						"en": "A woman tells what she sees in the park. Listen.",
+						"tl": "Isang babae ang nagsasabi ng nakikita niya sa park. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Im Park sind ein Mann, eine Frau, ein Mädchen und ein Baby.“ Kinder sind das Mädchen und das Baby: zwei. Mann und Frau sind Erwachsene. „vier“ zählt alle Menschen.",
+						"en": "You hear: “Im Park sind ein Mann, eine Frau, ein Mädchen und ein Baby.” The children are the girl and the baby: two. Man and woman are adults. “vier” counts everyone.",
+						"tl": "Naririnig mo: “Im Park sind ein Mann, eine Frau, ein Mädchen und ein Baby.” Ang mga bata ay ang Mädchen at Baby: dalawa. Erwachsene ang lalaki at babae. Ang “vier” ay lahat ng tao."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0330",
+						"W-A1-0400",
+						"W-A1-0328",
+						"W-A1-0041",
+						"W-A1-0046",
+						"W-A1-0042"
+					],
+					"options": [
+						"drei",
+						"zwei",
+						"vier"
+					],
+					"answer": 1,
+					"prompt": "Wie viele Kinder sind im Park?",
+					"audioText": "Im Park sind ein Mann, eine Frau, ein Mädchen und ein Baby.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-04-L03-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie die Sätze über den Park. Nehmen Sie die Wörter unten.",
+						"en": "Complete the sentences about the park. Use the words below.",
+						"tl": "Kumpletuhin ang mga pangungusap tungkol sa park. Gamitin ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: Erwachsene, Kinder. Mann und Frau sind große Menschen: Erwachsene. Baby und Mädchen sind klein: Kinder. „Babys“ passt nicht: Das Mädchen ist kein Baby.",
+						"en": "Correct: Erwachsene, Kinder. Man and woman are grown-ups: Erwachsene. Baby and girl are small: Kinder. “Babys” does not fit: the girl is not a baby.",
+						"tl": "Tama: Erwachsene, Kinder. Malalaki ang lalaki at babae: Erwachsene. Maliliit ang baby at batang babae: Kinder. Hindi bagay ang “Babys”: hindi baby ang Mädchen."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0400",
+						"W-A1-0330",
+						"W-A1-0328",
+						"W-A1-0046",
+						"W-A1-0004"
+					],
+					"text": "Ein Mann und eine Frau sind {{1}}. Ein Baby und ein Mädchen sind {{2}}.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Erwachsene"
+							]
+						},
+						"2": {
+							"accept": [
+								"Kinder"
+							]
+						}
+					},
+					"bank": [
+						"Erwachsene",
+						"Kinder",
+						"Babys"
+					]
+				},
+				{
+					"id": "A1-04-L03-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Ein Mann im Park fragt Sie: „Ist das Ihr Sohn?“ Es ist Ihre Tochter, ein Mädchen. Was antworten Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "A man in the park asks you: “Ist das Ihr Sohn?” It is your daughter, a girl. What do you answer? Choose, then say it aloud.",
+						"tl": "Tinanong ka ng isang lalaki sa park: “Ist das Ihr Sohn?” Anak mong babae ito. Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Nein, das ist meine Tochter.“ Auf „Sohn?“ antworten Sie „Nein“, weil es ein Mädchen ist. „Tochter“ ist ein „die“-Wort: meine Tochter. „Ja“ passt nicht zu „Tochter“, „mein Tochter“ ist falsch.",
+						"en": "Correct: “Nein, das ist meine Tochter.” To “Sohn?” you answer “Nein” because it is a girl. “Tochter” is a “die” word: meine Tochter. “Ja” does not fit “Tochter”; “mein Tochter” is wrong.",
+						"tl": "Tama: “Nein, das ist meine Tochter.” Sa “Sohn?” sasagot ka ng “Nein” dahil babae ito. Ang “Tochter” ay “die” na salita: meine Tochter. Hindi bagay ang “Ja” sa “Tochter”; mali ang “mein Tochter”."
+					},
+					"goals": [
+						"A1-04-G1",
+						"A1-04-G2"
+					],
+					"refs": [
+						"W-A1-0336",
+						"W-A1-0022",
+						"W-A1-0051",
+						"W-A1-0052",
+						"W-A1-0012",
+						"W-A1-0003"
+					],
+					"options": [
+						"Nein, das ist meine Tochter.",
+						"Ja, das ist meine Tochter.",
+						"Nein, das ist mein Tochter."
+					],
+					"answer": 0,
+					"prompt": "Mann: „Ist das Ihr Sohn?“"
 				}
 			]
 		},
@@ -822,125 +1307,164 @@
 				"en": "One child, two children – the plural",
 				"tl": "Isang anak, dalawang anak – plural"
 			},
+			"intro": {
+				"situation": {
+					"de": "Maria schreibt eine E-Mail an Tom. Sie spricht über Frauen, Männer und Kinder.",
+					"en": "Maria writes an e-mail to Tom. She talks about women, men and children.",
+					"tl": "Sumusulat si Maria ng e-mail kay Tom. Nagsasalita siya tungkol sa mga babae, lalaki at bata."
+				},
+				"goal": {
+					"de": "Am Ende kannst du von einer Person und von mehreren Personen sprechen: ein Kind, zwei Kinder.",
+					"en": "By the end you can talk about one person and several people: ein Kind, zwei Kinder.",
+					"tl": "Sa dulo, masasabi mo ang isang tao at ang maraming tao: ein Kind, zwei Kinder."
+				}
+			},
 			"introduces": [],
 			"cards": [
 				{
-					"phrase": "das Kind → die Kinder",
+					"kind": "rule",
+					"phrase": "Plural: immer „die“",
 					"note": {
-						"de": "Im Plural ist der Artikel immer „die“.",
-						"en": "In the plural the article is always “die”.",
-						"tl": "Sa plural, laging “die” ang article."
-					}
+						"de": "Im Plural ist der Artikel immer „die“: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Das Nomen ändert sich: Lernen Sie den Plural zu jedem Wort mit!",
+						"en": "In the plural the article is always “die”: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. The noun changes: learn the plural with every word!",
+						"tl": "Sa plural, laging “die” ang article: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Nagbabago ang noun: isaulo ang plural ng bawat salita! (Sa Tagalog, “mga” lang ang idinadagdag.)"
+					},
+					"examples": [
+						"Ein Kind, zwei Kinder.",
+						"Ein Mann, zwei Männer.",
+						"Eine Frau, drei Frauen."
+					]
 				},
 				{
-					"phrase": "der Mann → die Männer · die Frau → die Frauen",
+					"kind": "rule",
+					"phrase": "-en / -n: die Frau → die Frauen",
 					"note": {
-						"de": "Endungen: -er (oft mit Umlaut), -en/-n, -e, -s oder ohne Endung.",
-						"en": "Endings: -er (often with umlaut), -en/-n, -e, -s or none.",
-						"tl": "Mga ending: -er (madalas may umlaut), -en/-n, -e, -s o wala."
-					}
+						"de": "Viele „die“-Wörter haben im Plural die Endung -en oder -n: die Frau → die Frauen, die Schwester → die Schwestern, die Familie → die Familien.",
+						"en": "Many “die” words add -en or -n in the plural: die Frau → die Frauen, die Schwester → die Schwestern, die Familie → die Familien.",
+						"tl": "Maraming “die” na salita ang nagdaragdag ng -en o -n sa plural: die Frau → die Frauen, die Schwester → die Schwestern, die Familie → die Familien."
+					},
+					"examples": [
+						"Eine Schwester, zwei Schwestern.",
+						"Eine Familie, zwei Familien."
+					]
 				},
 				{
-					"phrase": "der Sohn → die Söhne · die Tochter → die Töchter",
+					"kind": "rule",
+					"phrase": "Umlaut: Mutter → Mütter · Sohn → Söhne",
 					"note": {
-						"de": "Den Plural immer mitlernen!",
-						"en": "Always learn the plural too!",
-						"tl": "Laging isaulo ang plural!"
-					}
+						"de": "Bei vielen Familienwörtern kommt im Plural ein Umlaut: a → ä, o → ö, u → ü. Dazu kommt oft -e oder -er: der Sohn → die Söhne, der Mann → die Männer, der Bruder → die Brüder.",
+						"en": "Many family words get an umlaut in the plural: a → ä, o → ö, u → ü. Often with -e or -er: der Sohn → die Söhne, der Mann → die Männer, der Bruder → die Brüder.",
+						"tl": "Maraming salita sa pamilya ang may umlaut sa plural: a → ä, o → ö, u → ü. Madalas may -e o -er: der Sohn → die Söhne, der Mann → die Männer, der Bruder → die Brüder."
+					},
+					"examples": [
+						"Eine Mutter, zwei Mütter.",
+						"Ein Vater, zwei Väter.",
+						"Eine Tochter, zwei Töchter."
+					]
 				},
 				{
-					"phrase": "die Mutter → die Mütter · der Vater → die Väter",
+					"kind": "rule",
+					"phrase": "-s: das Baby → die Babys · die Oma → die Omas",
 					"note": {
-						"de": "Umlaut im Plural: u → ü, a → ä.",
-						"en": "Umlaut in the plural: u → ü, a → ä.",
-						"tl": "Umlaut sa plural: u → ü, a → ä."
-					}
+						"de": "Wörter wie Baby, Oma, Opa bekommen im Plural ein -s: die Babys, die Omas, die Opas.",
+						"en": "Words like Baby, Oma, Opa take -s in the plural: die Babys, die Omas, die Opas.",
+						"tl": "Ang mga salitang tulad ng Baby, Oma, Opa ay may -s sa plural: die Babys, die Omas, die Opas."
+					},
+					"examples": [
+						"Ein Baby, zwei Babys.",
+						"Eine Oma, zwei Omas."
+					]
 				},
 				{
-					"phrase": "das Baby → die Babys · der Bruder → die Brüder",
+					"kind": "rule",
+					"phrase": "Nur Plural: die Eltern · die Geschwister · die Leute",
 					"note": {
-						"de": "-s bei Wörtern wie Baby, Opa, Oma.",
-						"en": "-s with words like Baby, Opa, Oma.",
-						"tl": "-s sa mga salitang Baby, Opa, Oma."
-					}
+						"de": "Manche Wörter gibt es fast nur im Plural. Sie sagen: „Meine Eltern sind da.“ Für eine Person sagen Sie Mutter oder Vater, Bruder oder Schwester.",
+						"en": "Some words almost only exist in the plural. You say: “Meine Eltern sind da.” For one person you say Mutter or Vater, Bruder or Schwester.",
+						"tl": "May mga salitang halos plural lang. Sasabihin mo: “Meine Eltern sind da.” Para sa isang tao, Mutter o Vater, Bruder o Schwester ang gamit."
+					},
+					"examples": [
+						"Meine Eltern wohnen in Graz.",
+						"Meine Geschwister sind da."
+					]
 				}
 			],
 			"items": [
 				{
 					"id": "A1-04-L04-I1",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Sie sehen drei Bilder mit Menschen. Schauen Sie das Bild an.",
+						"en": "You see three pictures with people. Look at the picture.",
+						"tl": "May tatlong larawan ng mga tao. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Drei Kinder: das Kind → die Kinder.",
-						"en": "Three children: das Kind → die Kinder.",
-						"tl": "Tatlong bata: das Kind → die Kinder."
-					},
-					"goals": [
-						"A1-04-G4"
-					],
-					"refs": [
-						"W-A1-0330",
-						"W-A1-0041",
-						"W-A1-0042",
-						"W-A1-0043",
-						"W-A1-0796"
-					],
-					"options": [
-						"drei Kinder",
-						"zwei Kinder",
-						"vier Kinder"
-					],
-					"answer": 0,
-					"prompt": "Bild 1: Wie viele Kinder sind das?",
-					"image": {
-						"src": "/img/a1-04-plural.svg",
-						"alt": {
-							"de": "Drei Bilder: Kinder, Männer und Frauen.",
-							"en": "Three pictures: children, men and women.",
-							"tl": "Tatlong larawan: mga bata, lalaki at babae."
-						}
-					}
-				},
-				{
-					"id": "A1-04-L04-I2",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
-					},
-					"explanation": {
-						"de": "der Mann → die Männer, die Frau → die Frauen.",
-						"en": "der Mann → die Männer, die Frau → die Frauen (plural).",
-						"tl": "der Mann → die Männer, die Frau → die Frauen (plural)."
+						"de": "Richtig: zwei Männer. Nummer 2 zeigt zwei Männer. Der Plural von „Mann“ ist „Männer“ (Umlaut + -er). „Mann“ ist der Singular (eine Person), „Kinder“ zeigt Nummer 1.",
+						"en": "Correct: zwei Männer. Number 2 shows two men. The plural of “Mann” is “Männer” (umlaut + -er). “Mann” is the singular (one person); “Kinder” is number 1.",
+						"tl": "Tama: zwei Männer. Dalawang lalaki ang nasa Nummer 2. Ang plural ng “Mann” ay “Männer” (umlaut + -er). Ang “Mann” ay singular (isang tao); ang “Kinder” ay Nummer 1."
 					},
 					"goals": [
 						"A1-04-G4"
 					],
 					"refs": [
 						"W-A1-0329",
-						"W-A1-0328",
 						"W-A1-0796",
-						"W-A1-0798",
-						"W-A1-0004"
+						"W-A1-0820"
 					],
-					"text": "ein Mann – zwei {{1}} · eine Frau – vier {{2}}",
-					"gaps": {
-						"1": {
-							"accept": [
-								"Männer"
-							]
-						},
-						"2": {
-							"accept": [
-								"Frauen"
-							]
+					"options": [
+						"Mann",
+						"Kinder",
+						"Männer"
+					],
+					"answer": 2,
+					"prompt": "Nummer 2: zwei …",
+					"image": {
+						"src": "/img/a1-04-plural.svg",
+						"alt": {
+							"de": "Drei Bilder: Nummer 1 zeigt Kinder, Nummer 2 zwei Männer mit Krawatte, Nummer 3 mehrere Frauen.",
+							"en": "Three pictures: number 1 shows children, number 2 two men with ties, number 3 several women.",
+							"tl": "Tatlong larawan: Nummer 1 mga bata, Nummer 2 dalawang lalaking may kurbata, Nummer 3 ilang babae."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L04-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild noch einmal an. Zählen Sie die Frauen.",
+						"en": "Look at the picture again. Count the women.",
+						"tl": "Tingnan muli ang larawan. Bilangin ang mga babae."
+					},
+					"explanation": {
+						"de": "Richtig: vier Frauen. Der Plural von „die Frau“ ist „die Frauen“ (-en). In Nummer 1 sind es drei Kinder, in Nummer 3 vier Frauen.",
+						"en": "Correct: vier Frauen. The plural of “die Frau” is “die Frauen” (-en). Number 1 has three children, number 3 has four women.",
+						"tl": "Tama: vier Frauen. Ang plural ng “die Frau” ay “die Frauen” (-en). Tatlong bata ang nasa Nummer 1, apat na babae ang nasa Nummer 3."
+					},
+					"goals": [
+						"A1-04-G4"
+					],
+					"refs": [
+						"W-A1-0328",
+						"W-A1-0041",
+						"W-A1-0042",
+						"W-A1-0043",
+						"W-A1-0797"
+					],
+					"options": [
+						"drei",
+						"vier",
+						"fünf"
+					],
+					"answer": 1,
+					"prompt": "Nummer 3: Wie viele Frauen sind das?",
+					"image": {
+						"src": "/img/a1-04-plural.svg",
+						"alt": {
+							"de": "Drei Bilder: Nummer 1 zeigt Kinder, Nummer 2 zwei Männer mit Krawatte, Nummer 3 mehrere Frauen.",
+							"en": "Three pictures: number 1 shows children, number 2 two men with ties, number 3 several women.",
+							"tl": "Tatlong larawan: Nummer 1 mga bata, Nummer 2 dalawang lalaking may kurbata, Nummer 3 ilang babae."
 						}
 					}
 				},
@@ -949,14 +1473,14 @@
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Anna zeigt, wie viele Kinder sie hat: ein Sohn, zwei Söhne. Wählen Sie den Plural.",
+						"en": "Anna talks about sons: one son, two sons. Choose the plural.",
+						"tl": "Nagsasalita si Anna tungkol sa mga anak na lalaki: isang anak, dalawang anak. Piliin ang plural."
 					},
 					"explanation": {
-						"de": "der Sohn → die Söhne (mit Umlaut).",
-						"en": "der Sohn → die Söhne (with umlaut).",
-						"tl": "der Sohn → die Söhne (may umlaut)."
+						"de": "Richtig: zwei Söhne. „der Sohn“ bekommt im Plural einen Umlaut (o → ö) und -e. „Sohns“ und „Sohnen“ gibt es nicht.",
+						"en": "Correct: zwei Söhne. “der Sohn” takes an umlaut (o → ö) and -e in the plural. “Sohns” and “Sohnen” do not exist.",
+						"tl": "Tama: zwei Söhne. Ang “der Sohn” ay may umlaut (o → ö) at -e sa plural. Walang “Sohns” at “Sohnen”."
 					},
 					"goals": [
 						"A1-04-G4"
@@ -976,33 +1500,144 @@
 				},
 				{
 					"id": "A1-04-L04-I4",
-					"type": "choice",
-					"skill": "hoeren",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Maria beschreibt ein Foto. Ergänzen Sie den Plural. Nehmen Sie die Wörter unten.",
+						"en": "Maria describes a photo. Complete the plural. Use the words below.",
+						"tl": "Inilalarawan ni Maria ang isang litrato. Kumpletuhin ang plural. Gamitin ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Sie hören: „Ich habe zwei Töchter.“",
-						"en": "You hear: “Ich habe zwei Töchter.”",
-						"tl": "Naririnig mo: “Ich habe zwei Töchter.”"
+						"de": "Richtig: Männer, Frauen, Kinder. Mann → Männer (Umlaut + -er), Frau → Frauen (-en), Kind → Kinder (-er). „Kinds“ gibt es nicht: Das Wort „Kind“ nimmt im Plural -er.",
+						"en": "Correct: Männer, Frauen, Kinder. Mann → Männer (umlaut + -er), Frau → Frauen (-en), Kind → Kinder (-er). “Kinds” does not exist: “Kind” takes -er in the plural.",
+						"tl": "Tama: Männer, Frauen, Kinder. Mann → Männer (umlaut + -er), Frau → Frauen (-en), Kind → Kinder (-er). Walang “Kinds”: ang “Kind” ay may -er sa plural."
 					},
 					"goals": [
 						"A1-04-G4"
 					],
 					"refs": [
-						"W-A1-0336",
+						"W-A1-0329",
+						"W-A1-0328",
+						"W-A1-0330",
+						"W-A1-0796",
+						"W-A1-0797",
+						"W-A1-0798"
+					],
+					"text": "ein Mann – zwei {{1}} · eine Frau – vier {{2}} · ein Kind – drei {{3}}",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Männer"
+							]
+						},
+						"2": {
+							"accept": [
+								"Frauen"
+							]
+						},
+						"3": {
+							"accept": [
+								"Kinder"
+							]
+						}
+					},
+					"bank": [
+						"Männer",
+						"Frauen",
+						"Kinder",
+						"Kinds"
+					]
+				},
+				{
+					"id": "A1-04-L04-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Maria erzählt von ihrer Familie. Hören Sie.",
+						"en": "Maria talks about her family. Listen.",
+						"tl": "Nagkukuwento si Maria tungkol sa pamilya niya. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Ich habe zwei Brüder und drei Schwestern.“ Brüder und Schwestern sind Plural: 2 + 3 = fünf Geschwister. „drei“ sind nur die Schwestern, „zwei“ nur die Brüder.",
+						"en": "You hear: “Ich habe zwei Brüder und drei Schwestern.” Brüder and Schwestern are plurals: 2 + 3 = five siblings. “drei” is only the sisters, “zwei” only the brothers.",
+						"tl": "Naririnig mo: “Ich habe zwei Brüder und drei Schwestern.” Plural ang Brüder at Schwestern: 2 + 3 = limang kapatid. Ang “drei” ay mga kapatid na babae lang, ang “zwei” ay mga kapatid na lalaki lang."
+					},
+					"goals": [
+						"A1-04-G4"
+					],
+					"refs": [
+						"W-A1-0337",
+						"W-A1-0338",
+						"W-A1-0339",
 						"W-A1-0006",
+						"W-A1-0041",
+						"W-A1-0046",
+						"W-A1-0042"
+					],
+					"options": [
+						"drei",
+						"fünf",
+						"zwei"
+					],
+					"answer": 1,
+					"prompt": "Wie viele Geschwister hat Maria?",
+					"audioText": "Ich habe zwei Brüder und drei Schwestern.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-04-L04-I6",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ana schreibt über ihre Familie. Welcher Plural ist richtig?",
+						"en": "Ana writes about her family. Which plural is correct?",
+						"tl": "Sumusulat si Ana tungkol sa pamilya niya. Aling plural ang tama?"
+					},
+					"explanation": {
+						"de": "Richtig: zwei Schwestern. „die Schwester“ bekommt im Plural -n. „zwei Schwester“ ist falsch: Im Deutschen muss das Nomen den Plural zeigen (nicht nur die Zahl). „Schwesters“ gibt es nicht.",
+						"en": "Correct: zwei Schwestern. “die Schwester” takes -n in the plural. “zwei Schwester” is wrong: in German the noun itself must show the plural (not just the number). “Schwesters” does not exist.",
+						"tl": "Tama: zwei Schwestern. Ang “die Schwester” ay may -n sa plural. Mali ang “zwei Schwester”: sa German, ang noun mismo ang nagpapakita ng plural (hindi lang ang bilang). Walang “Schwesters”."
+					},
+					"goals": [
+						"A1-04-G4"
+					],
+					"refs": [
+						"W-A1-0338",
 						"W-A1-0796"
 					],
 					"options": [
-						"zwei Töchter",
-						"zwei Söhne"
+						"Schwester",
+						"Schwestern",
+						"Schwesters"
 					],
-					"answer": 0,
-					"audioText": "Ich habe zwei Töchter.",
-					"audioOnly": true
+					"answer": 1,
+					"prompt": "eine Schwester – zwei …"
+				},
+				{
+					"id": "A1-04-L04-I7",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Sie schreiben an Tom über Ihre Familie. Schreiben Sie den Plural.",
+						"en": "You write to Tom about your family. Write the plural.",
+						"tl": "Sumusulat ka kay Tom tungkol sa pamilya mo. Isulat ang plural."
+					},
+					"explanation": {
+						"de": "Richtig: Mütter. „die Mutter“ bekommt im Plural einen Umlaut (u → ü): die Mütter. Der Artikel im Plural ist immer „die“.",
+						"en": "Correct: Mütter. “die Mutter” takes an umlaut in the plural (u → ü): die Mütter. The plural article is always “die”.",
+						"tl": "Tama: Mütter. Ang “die Mutter” ay may umlaut sa plural (u → ü): die Mütter. Laging “die” ang article sa plural."
+					},
+					"goals": [
+						"A1-04-G4"
+					],
+					"refs": [
+						"W-A1-0333",
+						"W-A1-0796"
+					],
+					"prompt": "eine Mutter – zwei …",
+					"accept": [
+						"Mütter"
+					]
 				}
 			]
 		},
@@ -1013,6 +1648,18 @@
 				"en": "My – your",
 				"tl": "Aking – iyong"
 			},
+			"intro": {
+				"situation": {
+					"de": "Lukas sagt: „Das ist meine Mutter. Das ist mein Vater.“ Zu Anna sagen Sie „du“, zu Herrn Bauer sagen Sie „Sie“.",
+					"en": "Lukas says: “Das ist meine Mutter. Das ist mein Vater.” You say “du” to Anna and “Sie” to Mr Bauer.",
+					"tl": "Sabi ni Lukas: “Das ist meine Mutter. Das ist mein Vater.” “du” ang sinasabi mo kay Anna at “Sie” kay Herr Bauer."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen: mein Vater, meine Mutter – und fragen: dein Bruder? Ihre Tochter?",
+					"en": "By the end you can say: mein Vater, meine Mutter – and ask: dein Bruder? Ihre Tochter?",
+					"tl": "Sa dulo, masasabi mo ang: mein Vater, meine Mutter – at makakatanong ka ng: dein Bruder? Ihre Tochter?"
+				}
+			},
 			"introduces": [
 				"W-A1-0022",
 				"W-A1-0023",
@@ -1020,36 +1667,54 @@
 			],
 			"cards": [
 				{
-					"phrase": "Das ist mein Bruder. Das ist meine Schwester.",
+					"kind": "phrase",
+					"phrase": "Das ist meine Familie. Das ist mein Bruder und das ist meine Schwester.",
 					"note": {
-						"de": "der/das → mein, die → meine. Zuerst als feste Form lernen.",
-						"en": "der/das → mein, die → meine. Learn it as a fixed form first.",
-						"tl": "der/das → mein, die → meine. Isaulo muna bilang buo."
+						"de": "So stellen Sie Menschen aus Ihrer Familie vor. „mein“ und „meine“ zeigen: Das gehört zu mir.",
+						"en": "This is how you introduce people from your family. “mein” and “meine” show: this belongs to me.",
+						"tl": "Ganito mo ipakikilala ang mga tao sa pamilya mo. Ipinapakita ng “mein” at “meine”: sa akin ito."
 					}
 				},
 				{
-					"phrase": "Das ist mein Kind. Das sind meine Eltern.",
+					"kind": "rule",
+					"phrase": "mein Vater · meine Mutter",
 					"note": {
-						"de": "Plural → meine.",
-						"en": "Plural → meine.",
-						"tl": "Plural → meine."
-					}
+						"de": "Wie bei „ein / eine“: bei „der“- und „das“-Wörtern sagen Sie „mein“ (mein Vater, mein Kind), bei „die“-Wörtern „meine“ (meine Mutter). Der Artikel bestimmt die Form, nicht, ob der Mensch männlich oder weiblich ist: mein Mädchen, aber meine Frau.",
+						"en": "Like “ein / eine”: for “der” and “das” words you say “mein” (mein Vater, mein Kind), for “die” words “meine” (meine Mutter). The article decides, not the sex of the person.",
+						"tl": "Tulad ng “ein / eine”: sa “der” at “das” na salita, “mein” (mein Vater, mein Kind); sa “die” na salita, “meine” (meine Mutter). Ang article ang nagpapasya."
+					},
+					"examples": [
+						"Das ist mein Vater.",
+						"Das ist meine Mutter.",
+						"Das ist mein Kind."
+					]
 				},
 				{
-					"phrase": "dein Vater – deine Mutter",
+					"kind": "rule",
+					"phrase": "Plural: meine Eltern · meine Kinder",
 					"note": {
-						"de": "Mit „du“: dein, deine.",
-						"en": "With “du”: dein, deine.",
-						"tl": "Sa “du”: dein, deine."
-					}
+						"de": "Im Plural sagen Sie immer „meine“, wie bei „die“: meine Eltern, meine Kinder, meine Geschwister.",
+						"en": "In the plural you always say “meine”, like “die”: meine Eltern, meine Kinder, meine Geschwister.",
+						"tl": "Sa plural, laging “meine” ang sasabihin mo, tulad ng “die”: meine Eltern, meine Kinder, meine Geschwister."
+					},
+					"examples": [
+						"Das sind meine Eltern.",
+						"Das sind meine Kinder."
+					]
 				},
 				{
-					"phrase": "Ihr Vater – Ihre Mutter",
+					"kind": "rule",
+					"phrase": "du → dein / deine · Sie → Ihr / Ihre",
 					"note": {
-						"de": "Höflich (Sie): Ihr, Ihre – groß geschrieben.",
-						"en": "Polite (Sie): Ihr, Ihre – with a capital I.",
-						"tl": "Magalang (Sie): Ihr, Ihre – malaking I."
-					}
+						"de": "Mit „du“ (Freunde, Kinder) sagen Sie dein / deine. Mit „Sie“ (Beamtin, Lehrer, fremde Erwachsene) sagen Sie Ihr / Ihre – „Ihr“ schreiben Sie immer groß. Die Endung folgt wieder dem Artikel.",
+						"en": "With “du” (friends, children) you say dein / deine. With “Sie” (an official, a teacher, strangers) you say Ihr / Ihre – “Ihr” always starts with a capital. The ending follows the article again.",
+						"tl": "Sa “du” (kaibigan, bata) sinasabi mo ang dein / deine. Sa “Sie” (opisyal, guro, estranghero) ang Ihr / Ihre – laging malaking I ang “Ihr”. Sinusunod muli ng ending ang article."
+					},
+					"examples": [
+						"Wie heißt dein Bruder?",
+						"Wie heißt Ihr Bruder?",
+						"Wie heißen Ihre Eltern?"
+					]
 				}
 			],
 			"items": [
@@ -1058,64 +1723,109 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Lukas zeigt seine Familie an der Wand. Schauen Sie das Bild an.",
+						"en": "Lukas shows his family on the wall. Look at the picture. Which photo does he mean?",
+						"tl": "Ipinapakita ni Lukas ang pamilya niya sa dingding. Tingnan ang larawan. Aling larawan ang tinutukoy niya?"
 					},
 					"explanation": {
-						"de": "Lukas sagt: „Das ist meine Mutter.“",
-						"en": "Lukas says: “Das ist meine Mutter.”",
-						"tl": "Sabi ni Lukas: “Das ist meine Mutter.”"
+						"de": "Richtig: „Das ist meine Schwester.“ Nummer 3 ist die Schwester, und „Schwester“ ist ein „die“-Wort: meine. „mein Schwester“ ist falsch. „meine Mutter“ ist Nummer 1.",
+						"en": "Correct: “Das ist meine Schwester.” Number 3 is the sister, and “Schwester” is a “die” word: meine. “mein Schwester” is wrong. “meine Mutter” is number 1.",
+						"tl": "Tama: “Das ist meine Schwester.” Ang Nummer 3 ay ang kapatid na babae, at “die” na salita ang “Schwester”: meine. Mali ang “mein Schwester”. Ang “meine Mutter” ay Nummer 1."
 					},
 					"goals": [
 						"A1-04-G2"
 					],
 					"refs": [
 						"W-A1-0022",
-						"W-A1-0333",
-						"W-A1-0035",
-						"W-A1-0001",
-						"W-A1-0002"
+						"W-A1-0338",
+						"W-A1-0008",
+						"W-A1-0036",
+						"W-A1-0820",
+						"W-A1-0003"
 					],
 					"options": [
-						"der Vater von Lukas",
-						"die Schwester von Lukas",
-						"die Mutter von Lukas"
+						"Das ist mein Schwester.",
+						"Das ist meine Mutter.",
+						"Das ist meine Schwester."
 					],
 					"answer": 2,
-					"prompt": "Wer ist auf dem Foto?",
+					"prompt": "Lukas zeigt Nummer 3. Was sagt er?",
 					"image": {
 						"src": "/img/a1-04-foto.svg",
 						"alt": {
-							"de": "Lukas zeigt ein Foto und sagt etwas.",
-							"en": "Lukas shows a photo and says something.",
-							"tl": "Ipinapakita ni Lukas ang litrato at may sinasabi."
+							"de": "Lukas sagt „Das ist meine Familie.“ An der Wand hängen drei Fotos mit den Nummern 1, 2, 3. Darunter steht Mutter, Vater, Schwester.",
+							"en": "Lukas says “Das ist meine Familie.” Three photos numbered 1, 2, 3 hang on the wall. Underneath it says Mutter, Vater, Schwester.",
+							"tl": "Sinasabi ni Lukas ang “Das ist meine Familie.” May tatlong larawan sa dingding, may numero 1, 2, 3. Sa ilalim nakasulat ang Mutter, Vater, Schwester."
 						}
 					}
 				},
 				{
 					"id": "A1-04-L05-I2",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
+					"type": "choice",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Lukas zeigt jetzt Nummer 2. Schauen Sie das Bild noch einmal an.",
+						"en": "Lukas now shows number 2. Look at the picture again.",
+						"tl": "Ipinapakita na ni Lukas ang Nummer 2. Tingnan muli ang larawan."
 					},
 					"explanation": {
-						"de": "der Vater → mein, die Mutter → meine.",
-						"en": "der Vater → mein (my), die Mutter → meine (my).",
-						"tl": "der Vater → mein (aking), die Mutter → meine (aking)."
+						"de": "Richtig: „Das ist mein Vater.“ Nummer 2 ist der Vater, und „Vater“ ist ein „der“-Wort: mein. „meine Vater“ ist falsch, „meine Mutter“ ist Nummer 1.",
+						"en": "Correct: “Das ist mein Vater.” Number 2 is the father, and “Vater” is a “der” word: mein. “meine Vater” is wrong; “meine Mutter” is number 1.",
+						"tl": "Tama: “Das ist mein Vater.” Ang Nummer 2 ay ang tatay, at “der” na salita ang “Vater”: mein. Mali ang “meine Vater”; ang “meine Mutter” ay Nummer 1."
 					},
 					"goals": [
 						"A1-04-G2"
 					],
 					"refs": [
 						"W-A1-0022",
+						"W-A1-0334",
+						"W-A1-0008",
+						"W-A1-0036",
+						"W-A1-0820",
+						"W-A1-0003"
+					],
+					"options": [
+						"Das ist meine Vater.",
+						"Das ist meine Mutter.",
+						"Das ist mein Vater."
+					],
+					"answer": 2,
+					"prompt": "Lukas zeigt Nummer 2. Was sagt er?",
+					"image": {
+						"src": "/img/a1-04-foto.svg",
+						"alt": {
+							"de": "Lukas sagt „Das ist meine Familie.“ An der Wand hängen drei Fotos mit den Nummern 1, 2, 3. Darunter steht Mutter, Vater, Schwester.",
+							"en": "Lukas says “Das ist meine Familie.” Three photos numbered 1, 2, 3 hang on the wall. Underneath it says Mutter, Vater, Schwester.",
+							"tl": "Sinasabi ni Lukas ang “Das ist meine Familie.” May tatlong larawan sa dingding, may numero 1, 2, 3. Sa ilalim nakasulat ang Mutter, Vater, Schwester."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L05-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Lukas zeigt Frau Berger seine Eltern. Ergänzen Sie. Nehmen Sie die Wörter unten.",
+						"en": "Lukas shows Mrs Berger his parents. Complete the sentences. Use the words below.",
+						"tl": "Ipinapakita ni Lukas kay Frau Berger ang mga magulang niya. Kumpletuhin. Gamitin ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: mein Vater (der-Wort), meine Mutter (die-Wort), meine Eltern (Plural). „meinen“ gibt es hier nicht: Nach „Das ist“ steht „mein / meine“ ohne -n.",
+						"en": "Correct: mein Vater (der word), meine Mutter (die word), meine Eltern (plural). “meinen” does not fit here: after “Das ist” you say “mein / meine” without -n.",
+						"tl": "Tama: mein Vater (der na salita), meine Mutter (die na salita), meine Eltern (plural). Hindi bagay ang “meinen”: pagkatapos ng “Das ist” ay “mein / meine” na walang -n."
+					},
+					"goals": [
+						"A1-04-G2"
+					],
+					"refs": [
+						"W-A1-0022",
+						"W-A1-0334",
+						"W-A1-0333",
+						"W-A1-0332",
 						"W-A1-0046",
 						"W-A1-0003"
 					],
-					"text": "Das ist {{1}} Vater und das ist {{2}} Mutter.",
+					"text": "Das ist {{1}} Vater und das ist {{2}} Mutter. Das sind {{3}} Eltern.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1126,66 +1836,146 @@
 							"accept": [
 								"meine"
 							]
+						},
+						"3": {
+							"accept": [
+								"meine"
+							]
 						}
-					}
-				},
-				{
-					"id": "A1-04-L05-I3",
-					"type": "choice",
-					"skill": "sprechen",
-					"instruction": {
-						"de": "Sie sprechen mit einer Frau. Sie sagen „Sie“. Was fragen Sie? Wählen Sie, dann sagen Sie es laut.",
-						"en": "You talk to a woman and say “Sie”. What do you ask? Choose, then say it aloud.",
-						"tl": "Kausap mo ang isang babae, “Sie” ang gamit. Ano ang itatanong mo? Pumili, tapos sabihin nang malakas."
 					},
-					"explanation": {
-						"de": "Mit „Sie“: Ihr Sohn.",
-						"en": "With “Sie”: Ihr Sohn.",
-						"tl": "Sa “Sie”: Ihr Sohn."
-					},
-					"goals": [
-						"A1-04-G2"
-					],
-					"refs": [
-						"W-A1-0028",
-						"W-A1-0041",
-						"W-A1-0012"
-					],
-					"options": [
-						"Wie heißt dein Sohn?",
-						"Wie heißt Ihr Sohn?",
-						"Wie heißt meine Sohn?"
-					],
-					"answer": 1
+					"bank": [
+						"mein",
+						"meine",
+						"meine",
+						"meinen"
+					]
 				},
 				{
 					"id": "A1-04-L05-I4",
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Sie sprechen mit Anna, Ihrer Freundin. Sie sagen „du“. Was fragen Sie?",
+						"en": "You talk to Anna, your friend. You say “du”. What do you ask?",
+						"tl": "Kausap mo si Anna, kaibigan mo. “du” ang gamit mo. Ano ang itatanong mo?"
 					},
 					"explanation": {
-						"de": "Mit „du“ (Anna): dein Bruder.",
-						"en": "With “du” (Anna): dein Bruder.",
-						"tl": "Sa “du” (Anna): dein Bruder."
+						"de": "Richtig: deine Schwester. Mit „du“ sagen Sie „dein / deine“, und „Schwester“ ist ein „die“-Wort: deine. „Ihre“ ist die höfliche Form für „Sie“ – Sie sagen aber „du“ zu Anna.",
+						"en": "Correct: deine Schwester. With “du” you say “dein / deine”, and “Schwester” is a “die” word: deine. “Ihre” is the polite form for “Sie” – but you say “du” to Anna.",
+						"tl": "Tama: deine Schwester. Sa “du”, “dein / deine” ang gamit, at “die” na salita ang “Schwester”: deine. Ang “Ihre” ay magalang na anyo para sa “Sie” – pero “du” ang gamit mo kay Anna."
 					},
 					"goals": [
 						"A1-04-G2"
 					],
 					"refs": [
 						"W-A1-0023",
+						"W-A1-0338",
 						"W-A1-0041"
 					],
 					"options": [
-						"dein",
 						"deine",
+						"dein",
 						"Ihre"
 					],
 					"answer": 0,
-					"prompt": "Anna, wie alt ist … Bruder?"
+					"prompt": "Anna, wie heißt … Schwester?"
+				},
+				{
+					"id": "A1-04-L05-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie sprechen mit Herrn Bauer, Ihrem Lehrer. Sie sagen „Sie“. Was fragen Sie?",
+						"en": "You talk to Mr Bauer, your teacher. You say “Sie”. What do you ask?",
+						"tl": "Kausap mo si Herr Bauer, guro mo. “Sie” ang gamit mo. Ano ang itatanong mo?"
+					},
+					"explanation": {
+						"de": "Richtig: Ihr Sohn. Mit „Sie“ sagen Sie „Ihr / Ihre“, und „Sohn“ ist ein „der“-Wort: Ihr. „Ihre“ gehört zu „die“-Wörtern. „dein“ ist die Form für „du“ – bei Herrn Bauer sagen Sie „Sie“.",
+						"en": "Correct: Ihr Sohn. With “Sie” you say “Ihr / Ihre”, and “Sohn” is a “der” word: Ihr. “Ihre” belongs to “die” words. “dein” is the “du” form – to Mr Bauer you say “Sie”.",
+						"tl": "Tama: Ihr Sohn. Sa “Sie”, “Ihr / Ihre” ang gamit, at “der” na salita ang “Sohn”: Ihr. Ang “Ihre” ay para sa “die” na salita. Ang “dein” ay anyo ng “du” – kay Herr Bauer, “Sie” ang gamit mo."
+					},
+					"goals": [
+						"A1-04-G2"
+					],
+					"refs": [
+						"W-A1-0028",
+						"W-A1-0335",
+						"W-A1-0327",
+						"W-A1-0041",
+						"W-A1-0012"
+					],
+					"options": [
+						"Ihr",
+						"Ihre",
+						"dein"
+					],
+					"answer": 0,
+					"prompt": "Herr Bauer, wie alt ist … Sohn?"
+				},
+				{
+					"id": "A1-04-L05-I6",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Sie sind beim Magistrat. Die Beamtin fragt: „Wie heißt Ihre Tochter?“ Ihre Tochter heißt Lena. Was antworten Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are at the Magistrat (city office). The official asks: “Wie heißt Ihre Tochter?” Your daughter is called Lena. What do you answer? Choose, then say it aloud.",
+						"tl": "Nasa Magistrat (city office) ka. Tinanong ka ng opisyal: “Wie heißt Ihre Tochter?” Lena ang pangalan ng anak mong babae. Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Meine Tochter heißt Lena.“ Es ist Ihre eigene Tochter: meine. „Tochter“ ist ein „die“-Wort: meine, nicht „mein“. „Ihre Tochter“ wäre die Tochter der Beamtin.",
+						"en": "Correct: “Meine Tochter heißt Lena.” It is your own daughter: meine. “Tochter” is a “die” word: meine, not “mein”. “Ihre Tochter” would be the official’s daughter.",
+						"tl": "Tama: “Meine Tochter heißt Lena.” Sarili mong anak ito: meine. “die” na salita ang “Tochter”: meine, hindi “mein”. Ang “Ihre Tochter” ay anak ng opisyal."
+					},
+					"goals": [
+						"A1-04-G2"
+					],
+					"refs": [
+						"W-A1-0022",
+						"W-A1-0336",
+						"W-A1-0041"
+					],
+					"options": [
+						"Meine Tochter heißt Lena.",
+						"Mein Tochter heißt Lena.",
+						"Ihre Tochter heißt Lena."
+					],
+					"answer": 0,
+					"prompt": "Beamtin: „Wie heißt Ihre Tochter?“"
+				},
+				{
+					"id": "A1-04-L05-I7",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Lukas stellt seine Eltern vor. Hören Sie.",
+						"en": "Lukas introduces his parents. Listen.",
+						"tl": "Ipinakikilala ni Lukas ang mga magulang niya. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Das sind meine Eltern. Mein Vater heißt Peter und meine Mutter heißt Anna.“ „Mein Vater“ ist Peter, „meine Mutter“ ist Anna. Lukas spricht selbst.",
+						"en": "You hear: “Das sind meine Eltern. Mein Vater heißt Peter und meine Mutter heißt Anna.” “Mein Vater” is Peter, “meine Mutter” is Anna. Lukas is the speaker.",
+						"tl": "Naririnig mo: “Das sind meine Eltern. Mein Vater heißt Peter und meine Mutter heißt Anna.” Si Peter ang “mein Vater”, si Anna ang “meine Mutter”. Si Lukas ang nagsasalita."
+					},
+					"goals": [
+						"A1-04-G2"
+					],
+					"refs": [
+						"W-A1-0022",
+						"W-A1-0334",
+						"W-A1-0041",
+						"W-A1-0046",
+						"W-A1-0001",
+						"W-A1-0003"
+					],
+					"options": [
+						"Peter",
+						"Anna",
+						"Lukas"
+					],
+					"answer": 0,
+					"prompt": "Wie heißt der Vater?",
+					"audioText": "Das sind meine Eltern. Mein Vater heißt Peter und meine Mutter heißt Anna.",
+					"audioOnly": true
 				}
 			]
 		},
@@ -1195,6 +1985,18 @@
 				"de": "Familienstand",
 				"en": "Marital status",
 				"tl": "Civil status"
+			},
+			"intro": {
+				"situation": {
+					"de": "Sofia Berger ist in Wien. Eine Frau fragt: „Sind Sie verheiratet?“ Sofia antwortet.",
+					"en": "Sofia Berger is in Vienna. A woman asks: “Sind Sie verheiratet?” Sofia answers.",
+					"tl": "Nasa Vienna si Sofia Berger. Nagtanong ang isang babae: “Sind Sie verheiratet?” Sumagot si Sofia."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen, ob du verheiratet, ledig oder geschieden bist – und danach fragen.",
+					"en": "By the end you can say whether you are married, single or divorced – and ask about it.",
+					"tl": "Sa dulo, masasabi mo kung kasal, walang asawa o hiwalay ka – at makakatanong ka tungkol dito."
+				}
 			},
 			"introduces": [
 				"W-A1-0345",
@@ -1207,35 +2009,62 @@
 			],
 			"cards": [
 				{
-					"phrase": "Ich bin verheiratet.",
+					"kind": "phrase",
+					"phrase": "Sind Sie verheiratet? – Ja, ich bin verheiratet.",
 					"note": {
-						"de": "Der Familienstand steht in vielen Formularen, z. B. auf dem Meldezettel.",
-						"en": "Marital status is on many forms, e.g. the Meldezettel (registration form).",
-						"tl": "Nasa maraming form ang civil status, hal. Meldezettel."
+						"de": "So fragt man nach dem Familienstand. Der Familienstand sagt, ob jemand verheiratet, ledig oder geschieden ist.",
+						"en": "This is how people ask about marital status. The Familienstand says whether someone is married, single or divorced.",
+						"tl": "Ganito itinatanong ang civil status. Sinasabi ng Familienstand kung kasal, walang asawa o hiwalay ang isang tao."
 					}
 				},
 				{
-					"phrase": "ledig – verheiratet – geschieden",
+					"kind": "rule",
+					"phrase": "ich bin verheiratet · ledig · geschieden",
 					"note": {
-						"de": "ledig = nicht verheiratet.",
-						"en": "ledig = not married.",
-						"tl": "ledig = walang asawa."
-					}
+						"de": "verheiratet = mit Ehemann oder Ehefrau. ledig = nicht verheiratet, auch früher nicht. geschieden = früher verheiratet, jetzt nicht mehr. Man sagt „ich bin …“ (mit „sein“), nicht „ich habe …“.",
+						"en": "verheiratet = married. ledig = not married (never married). geschieden = was married, not any more. You say “ich bin …” (with “sein”), not “ich habe …”.",
+						"tl": "verheiratet = kasal. ledig = walang asawa (hindi pa kasal). geschieden = dating kasal, hiwalay na. Sinasabi: “ich bin …” (gamit ang “sein”), hindi “ich habe …”."
+					},
+					"examples": [
+						"Ich bin ledig.",
+						"Anna ist verheiratet.",
+						"Sofia ist geschieden."
+					]
 				},
 				{
-					"phrase": "die Ehefrau – der Ehemann – der Partner, die Partnerin",
+					"kind": "rule",
+					"phrase": "der Ehemann · die Ehefrau · der Partner, die Partnerin",
 					"note": {
-						"de": "Mein Mann = mein Ehemann. Partner/Partnerin: auch ohne Ehe.",
-						"en": "Mein Mann = my husband. Partner: also without marriage.",
-						"tl": "Mein Mann = asawa kong lalaki. Partner: kahit hindi kasal."
-					}
+						"de": "Ehemann und Ehefrau sind verheiratet. Im Alltag sagt man auch: mein Mann, meine Frau. Partner und Partnerin kann auch ein Mensch sein, den Sie nicht geheiratet haben.",
+						"en": "Ehemann and Ehefrau are married. In everyday speech you also say: mein Mann, meine Frau. Partner and Partnerin can also be a person you have not married.",
+						"tl": "Ang Ehemann at Ehefrau ay kasal. Sa araw-araw: mein Mann, meine Frau. Ang Partner at Partnerin ay puwedeng taong hindi mo pa naaasawa."
+					},
+					"examples": [
+						"Das ist mein Mann.",
+						"Das ist meine Frau.",
+						"Das ist meine Partnerin."
+					]
 				},
 				{
-					"phrase": "Sie heiraten im Mai.",
+					"kind": "rule",
+					"phrase": "heiraten: ich heirate · du heiratest · er heiratet",
 					"note": {
-						"de": "„heiraten“: ich heirate, du heiratest, er heiratet.",
-						"en": "“heiraten” (marry): ich heirate, du heiratest, er heiratet.",
-						"tl": "“heiraten” (magpakasal): ich heirate, du heiratest, er heiratet."
+						"de": "„heiraten“ ist ein Verb: ich heirate, du heiratest, er heiratet, wir heiraten. Vor -st steht ein „e“, damit man es gut sprechen kann.",
+						"en": "“heiraten” (to marry) is a verb: ich heirate, du heiratest, er heiratet, wir heiraten. An “e” comes before -st so you can say it easily.",
+						"tl": "Ang “heiraten” (magpakasal) ay verb: ich heirate, du heiratest, er heiratet, wir heiraten. May “e” bago ang -st para madaling bigkasin."
+					},
+					"examples": [
+						"Ich heirate bald.",
+						"Anna und Peter heiraten."
+					]
+				},
+				{
+					"kind": "culture",
+					"phrase": "Familienstand auf Formularen",
+					"note": {
+						"de": "Auf vielen Formularen in Österreich steht „Familienstand“: ledig, verheiratet oder geschieden. Sie kreuzen an, was für Sie stimmt.",
+						"en": "On many forms in Austria you find “Familienstand”: ledig, verheiratet or geschieden. You tick what is true for you.",
+						"tl": "Sa maraming form sa Austria may nakasulat na “Familienstand”: ledig, verheiratet o geschieden. Ie-ekis mo ang totoo para sa iyo."
 					}
 				}
 			],
@@ -1245,14 +2074,51 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Sofia Berger füllt ein Formular aus. Schauen Sie das Bild an.",
+						"en": "Sofia Berger fills in a form. Look at the picture. One box is ticked.",
+						"tl": "Pinupunan ni Sofia Berger ang isang form. Tingnan ang larawan. May isang kahong may ekis."
 					},
 					"explanation": {
-						"de": "Im Formular ist „verheiratet“ angekreuzt.",
-						"en": "“verheiratet” is ticked on the form.",
-						"tl": "May ekis ang “verheiratet” sa form."
+						"de": "Richtig: verheiratet. Im Formular ist nur „verheiratet“ angekreuzt. „ledig“ und „geschieden“ sind leer.",
+						"en": "Correct: verheiratet. Only “verheiratet” is ticked on the form. “ledig” and “geschieden” are empty.",
+						"tl": "Tama: verheiratet. “verheiratet” lang ang may ekis sa form. Walang laman ang “ledig” at “geschieden”."
+					},
+					"goals": [
+						"A1-04-G3"
+					],
+					"refs": [
+						"W-A1-0345",
+						"W-A1-0036"
+					],
+					"options": [
+						"verheiratet",
+						"ledig",
+						"geschieden"
+					],
+					"answer": 0,
+					"prompt": "Was ist Sofia Berger?",
+					"image": {
+						"src": "/img/a1-04-formular.svg",
+						"alt": {
+							"de": "Ein Formular mit Name und Familienstand. Ein Feld ist angekreuzt.",
+							"en": "A form with a name and marital status. One box is ticked.",
+							"tl": "Form na may pangalan at civil status. May isang kahong may ekis."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L06-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Formular noch einmal an. Sie lesen die Frage und die Antwort.",
+						"en": "Look at the form again. You read the question and the answer.",
+						"tl": "Tingnan muli ang form. Binabasa mo ang tanong at ang sagot."
+					},
+					"explanation": {
+						"de": "Richtig: „Nein, sie ist verheiratet.“ Das Kreuz steht bei „verheiratet“. „ledig“ ist falsch, „geschieden“ ist auch nicht angekreuzt.",
+						"en": "Correct: “Nein, sie ist verheiratet.” The cross is at “verheiratet”. “ledig” is wrong; “geschieden” is not ticked either.",
+						"tl": "Tama: “Nein, sie ist verheiratet.” Ang ekis ay nasa “verheiratet”. Mali ang “ledig”; walang ekis din ang “geschieden”."
 					},
 					"goals": [
 						"A1-04-G3"
@@ -1266,10 +2132,10 @@
 					],
 					"options": [
 						"Ja, sie ist ledig.",
-						"Nein, sie ist geschieden.",
-						"Nein, sie ist verheiratet."
+						"Nein, sie ist verheiratet.",
+						"Nein, sie ist geschieden."
 					],
-					"answer": 2,
+					"answer": 1,
 					"prompt": "Ist Sofia Berger ledig?",
 					"image": {
 						"src": "/img/a1-04-formular.svg",
@@ -1281,50 +2147,18 @@
 					}
 				},
 				{
-					"id": "A1-04-L06-I2",
-					"type": "choice",
-					"skill": "sprechen",
-					"instruction": {
-						"de": "Sie sind nicht verheiratet. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
-						"en": "You are not married. What do you say? Choose, then say it aloud.",
-						"tl": "Hindi ka kasal. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
-					},
-					"explanation": {
-						"de": "„Ich bin ledig.“ – mit „sein“.",
-						"en": "“Ich bin ledig.” – with “sein”.",
-						"tl": "“Ich bin ledig.” – gamit ang “sein”."
-					},
-					"goals": [
-						"A1-04-G3"
-					],
-					"refs": [
-						"W-A1-0346",
-						"W-A1-0006",
-						"W-A1-0009",
-						"W-A1-0051",
-						"W-A1-0052"
-					],
-					"options": [
-						"Nein, ich habe ledig.",
-						"Nein, ich bin ledig.",
-						"Ja, ich bin ledig."
-					],
-					"answer": 1,
-					"prompt": "Sind Sie verheiratet?"
-				},
-				{
 					"id": "A1-04-L06-I3",
 					"type": "choice",
 					"skill": "hoeren",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Eine Frau stellt sich vor. Hören Sie.",
+						"en": "A woman introduces herself. Listen.",
+						"tl": "Nagpapakilala ang isang babae. Makinig."
 					},
 					"explanation": {
-						"de": "Sie hören: „Ich bin geschieden. Ich lebe allein mit meiner Tochter.“",
-						"en": "You hear: “Ich bin geschieden. Ich lebe allein mit meiner Tochter.”",
-						"tl": "Naririnig mo: “Ich bin geschieden. Ich lebe allein mit meiner Tochter.”"
+						"de": "Sie hören: „Ich bin geschieden. Ich habe eine Tochter. Sie wohnt in Linz.“ „geschieden“ steht am Anfang. Dass sie eine Tochter hat, sagt nichts über „ledig“ oder „verheiratet“.",
+						"en": "You hear: “Ich bin geschieden. Ich habe eine Tochter. Sie wohnt in Linz.” “geschieden” is right at the start. Having a daughter says nothing about “ledig” or “verheiratet”.",
+						"tl": "Naririnig mo: “Ich bin geschieden. Ich habe eine Tochter. Sie wohnt in Linz.” Nasa simula ang “geschieden”. Ang pagkakaroon ng anak ay walang sinasabi tungkol sa “ledig” o “verheiratet”."
 					},
 					"goals": [
 						"A1-04-G3"
@@ -1332,16 +2166,18 @@
 					"refs": [
 						"W-A1-0347",
 						"W-A1-0006",
-						"W-A1-0328",
-						"W-A1-0087",
-						"W-A1-0002"
+						"W-A1-0009",
+						"W-A1-0036",
+						"W-A1-0001"
 					],
 					"options": [
-						"Die Frau ist verheiratet.",
-						"Die Frau ist geschieden."
+						"geschieden",
+						"ledig",
+						"verheiratet"
 					],
-					"answer": 1,
-					"audioText": "Ich bin geschieden. Ich lebe allein mit meiner Tochter.",
+					"answer": 0,
+					"prompt": "Was ist der Familienstand?",
+					"audioText": "Ich bin geschieden. Ich habe eine Tochter. Sie wohnt in Linz.",
 					"audioOnly": true
 				},
 				{
@@ -1349,14 +2185,14 @@
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Peter und Anna sind verheiratet. Ergänzen Sie, was sie sagen. Nehmen Sie die Wörter unten.",
+						"en": "Peter and Anna are married. Complete what they say. Use the words below.",
+						"tl": "Kasal sina Peter at Anna. Kumpletuhin ang sinasabi nila. Gamitin ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "der Ehemann – die Ehefrau (auch: mein Mann, meine Frau).",
-						"en": "husband (Ehemann) – wife (Ehefrau); also: mein Mann, meine Frau.",
-						"tl": "Ehemann – Ehefrau (o: mein Mann, meine Frau)."
+						"de": "Richtig: Ehefrau, Ehemann. Peter und Anna sind verheiratet: Anna ist seine Ehefrau, Peter ist ihr Ehemann. „meine“ + Ehefrau (die), „mein“ + Ehemann (der). „Tochter“ passt nicht: Verheiratete Menschen sind Mann und Frau, nicht Vater und Tochter.",
+						"en": "Correct: Ehefrau, Ehemann. Peter and Anna are married: Anna is his wife, Peter is her husband. “meine” + Ehefrau (die), “mein” + Ehemann (der). “Tochter” does not fit: a married couple are husband and wife, not father and daughter.",
+						"tl": "Tama: Ehefrau, Ehemann. Kasal sina Peter at Anna: asawang babae ni Peter si Anna, asawang lalaki ni Anna si Peter. “meine” + Ehefrau (die), “mein” + Ehemann (der). Hindi bagay ang “Tochter”: mag-asawa ang kasal, hindi tatay at anak."
 					},
 					"goals": [
 						"A1-04-G3"
@@ -1364,24 +2200,124 @@
 					"refs": [
 						"W-A1-0403",
 						"W-A1-0402",
-						"W-A1-0001",
-						"W-A1-0002"
+						"W-A1-0003"
 					],
-					"text": "Peter ist der {{1}} von Anna. Anna ist die {{2}} von Peter.",
+					"text": "Peter sagt: „Das ist meine {{1}} Anna.“ Anna sagt: „Das ist mein {{2}} Peter.“",
 					"gaps": {
 						"1": {
-							"accept": [
-								"Ehemann",
-								"Mann"
-							]
-						},
-						"2": {
 							"accept": [
 								"Ehefrau",
 								"Frau"
 							]
+						},
+						"2": {
+							"accept": [
+								"Ehemann",
+								"Mann"
+							]
 						}
-					}
+					},
+					"bank": [
+						"Ehefrau",
+						"Ehemann",
+						"Tochter"
+					]
+				},
+				{
+					"id": "A1-04-L06-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Sie sagen Ihren Familienstand. Wählen Sie das richtige Verb.",
+						"en": "You state your marital status. Choose the right verb.",
+						"tl": "Sinasabi mo ang civil status mo. Piliin ang tamang verb."
+					},
+					"explanation": {
+						"de": "Richtig: Ich bin verheiratet. Der Familienstand kommt mit „sein“: ich bin. „haben“ sagt, was Sie besitzen (Kinder, Geschwister). „ist“ gehört zu er/sie/es.",
+						"en": "Correct: Ich bin verheiratet. Marital status goes with “sein”: ich bin. “haben” says what you have (children, siblings). “ist” belongs to er/sie/es.",
+						"tl": "Tama: Ich bin verheiratet. Ang civil status ay gamit ang “sein”: ich bin. Ang “haben” ay sa mayroon ka (anak, kapatid). Ang “ist” ay para sa er/sie/es."
+					},
+					"goals": [
+						"A1-04-G3"
+					],
+					"refs": [
+						"W-A1-0345",
+						"W-A1-0116",
+						"W-A1-0006"
+					],
+					"options": [
+						"bin",
+						"habe",
+						"ist"
+					],
+					"answer": 0,
+					"prompt": "Ich … verheiratet."
+				},
+				{
+					"id": "A1-04-L06-I6",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Eine Frau in Wien fragt Sie. Sie sind nicht verheiratet und waren nie verheiratet. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "A woman in Vienna asks you. You are not married and never were. What do you say? Choose, then say it aloud.",
+						"tl": "Tinanong ka ng isang babae sa Vienna. Hindi ka kasal at hindi ka pa nagkaroon ng asawa. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Nein, ich bin ledig.“ „ledig“ heißt: nicht verheiratet – also „Nein“. „Ja, ich bin ledig“ widerspricht sich. Der Familienstand kommt mit „sein“, nicht mit „haben“.",
+						"en": "Correct: “Nein, ich bin ledig.” “ledig” means not married – so “Nein”. “Ja, ich bin ledig” contradicts itself. Marital status goes with “sein”, not “haben”.",
+						"tl": "Tama: “Nein, ich bin ledig.” Ang “ledig” ay walang asawa – kaya “Nein”. Salungat sa sarili ang “Ja, ich bin ledig”. Ang civil status ay gamit ang “sein”, hindi “haben”."
+					},
+					"goals": [
+						"A1-04-G3"
+					],
+					"refs": [
+						"W-A1-0346",
+						"W-A1-0345",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0051"
+					],
+					"options": [
+						"Ja, ich bin ledig.",
+						"Nein, ich bin ledig.",
+						"Nein, ich habe ledig."
+					],
+					"answer": 1,
+					"prompt": "Frau: „Sind Sie verheiratet?“"
+				},
+				{
+					"id": "A1-04-L06-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Tom schreibt an Lukas. Lesen Sie die E-Mail.",
+						"en": "Tom writes to Lukas. Read the e-mail.",
+						"tl": "Sumulat si Tom kay Lukas. Basahin ang e-mail."
+					},
+					"explanation": {
+						"de": "Im Text: „Ich bin ledig.“ „Wir heiraten bald“ heißt: Tom und Anna heiraten später – jetzt ist Tom noch nicht verheiratet. „geschieden“ steht nicht im Text.",
+						"en": "The text says: “Ich bin ledig.” “Wir heiraten bald” means Tom and Anna will marry later – now Tom is not yet married. “geschieden” is not in the text.",
+						"tl": "Sabi sa teksto: “Ich bin ledig.” Ang “Wir heiraten bald” ay ikakasal pa lang sina Tom at Anna – hindi pa kasal si Tom ngayon. Wala ang “geschieden” sa teksto."
+					},
+					"goals": [
+						"A1-04-G3"
+					],
+					"refs": [
+						"W-A1-0346",
+						"W-A1-0395",
+						"W-A1-0377",
+						"W-A1-0006",
+						"W-A1-0008",
+						"W-A1-0051"
+					],
+					"options": [
+						"Ja, er ist verheiratet.",
+						"Nein, er ist ledig.",
+						"Nein, er ist geschieden."
+					],
+					"answer": 1,
+					"prompt": "Servus Lukas! Ich bin Tom. Ich bin ledig. Meine Freundin heißt Anna. Wir heiraten bald. Servus, Tom\n\nIst Tom verheiratet?"
 				}
 			]
 		},
@@ -1392,6 +2328,18 @@
 				"en": "see, hear, read, write",
 				"tl": "makita, marinig, magbasa, sumulat"
 			},
+			"intro": {
+				"situation": {
+					"de": "Anna ist in Wien. Sie schreibt eine E-Mail an Tom. Sie liest die Antwort. Sie hört Lukas und sie sieht Lena.",
+					"en": "Anna is in Vienna. She writes an e-mail to Tom. She reads the answer. She hears Lukas and sees Lena.",
+					"tl": "Nasa Vienna si Anna. Sumusulat siya ng e-mail kay Tom. Binabasa niya ang sagot. Naririnig niya si Lukas at nakikita niya si Lena."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen, was du siehst, hörst, liest und schreibst – mit der richtigen Verbform.",
+					"en": "By the end you can say what you see, hear, read and write – with the right verb form.",
+					"tl": "Sa dulo, masasabi mo ang nakikita, naririnig, binabasa at isinusulat mo – gamit ang tamang anyo ng verb."
+				}
+			},
 			"introduces": [
 				"W-A1-0142",
 				"W-A1-0143",
@@ -1400,82 +2348,149 @@
 			],
 			"cards": [
 				{
-					"phrase": "ich sehe – du siehst – er sieht",
+					"kind": "phrase",
+					"phrase": "Ich sehe Lukas. Ich höre Lena. Ich lese eine E-Mail. Ich schreibe an Tom.",
 					"note": {
-						"de": "„sehen“: e → ie bei du und er/sie/es.",
-						"en": "“sehen”: e → ie with du and er/sie/es.",
-						"tl": "“sehen”: e → ie sa du at er/sie/es."
+						"de": "Vier wichtige Verben für den Alltag: sehen, hören, lesen, schreiben. Zuerst die „ich“-Form lernen: ich sehe, ich höre, ich lese, ich schreibe.",
+						"en": "Four important everyday verbs: sehen, hören, lesen, schreiben. Learn the “ich” form first: ich sehe, ich höre, ich lese, ich schreibe.",
+						"tl": "Apat na mahalagang verb sa araw-araw: sehen, hören, lesen, schreiben. Unahin ang “ich” na anyo: ich sehe, ich höre, ich lese, ich schreibe."
 					}
 				},
 				{
-					"phrase": "ich lese – du liest – sie liest",
+					"kind": "rule",
+					"phrase": "sehen: ich sehe · du siehst · er sieht",
 					"note": {
-						"de": "„lesen“: e → ie.",
-						"en": "“lesen”: e → ie.",
-						"tl": "“lesen”: e → ie."
-					}
+						"de": "„sehen“ ändert den Vokal bei „du“ und „er/sie/es“: e → ie. Bei „ich“, „wir“ und „Sie“ bleibt das „e“: ich sehe, wir sehen, Sie sehen.",
+						"en": "“sehen” changes its vowel with “du” and “er/sie/es”: e → ie. With “ich”, “wir” and “Sie” the “e” stays: ich sehe, wir sehen, Sie sehen.",
+						"tl": "Nagbabago ang patinig ng “sehen” sa “du” at “er/sie/es”: e → ie. Sa “ich”, “wir” at “Sie” nananatili ang “e”: ich sehe, wir sehen, Sie sehen."
+					},
+					"examples": [
+						"Ich sehe Lena.",
+						"Du siehst Lukas.",
+						"Anna sieht Peter."
+					]
 				},
 				{
-					"phrase": "ich höre – du hörst · ich schreibe – du schreibst",
+					"kind": "rule",
+					"phrase": "lesen: ich lese · du liest · er liest",
 					"note": {
-						"de": "„hören“ und „schreiben“ sind regelmäßig.",
-						"en": "“hören” and “schreiben” are regular.",
-						"tl": "Regular ang “hören” at “schreiben”."
-					}
+						"de": "„lesen“ macht dasselbe: e → ie bei „du“ und „er/sie/es“. Bei „du“ und „er“ ist die Form gleich: du liest, er liest.",
+						"en": "“lesen” does the same: e → ie with “du” and “er/sie/es”. “du” and “er” have the same form: du liest, er liest.",
+						"tl": "Ganoon din ang “lesen”: e → ie sa “du” at “er/sie/es”. Pareho ang anyo ng “du” at “er”: du liest, er liest."
+					},
+					"examples": [
+						"Ich lese die E-Mail.",
+						"Du liest viel.",
+						"Oma liest."
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "hören, schreiben: regelmäßig",
+					"note": {
+						"de": "Bei „hören“ und „schreiben“ ändert sich der Vokal nicht. Die Endungen: ich -e, du -st, er/sie/es -t, wir/Sie/sie -en: ich höre, du hörst, er hört; ich schreibe, du schreibst, sie schreibt.",
+						"en": "With “hören” and “schreiben” the vowel does not change. Endings: ich -e, du -st, er/sie/es -t, wir/Sie/sie -en: ich höre, du hörst, er hört; ich schreibe, du schreibst, sie schreibt.",
+						"tl": "Sa “hören” at “schreiben” hindi nagbabago ang patinig. Mga ending: ich -e, du -st, er/sie/es -t, wir/Sie/sie -en: ich höre, du hörst, er hört; ich schreibe, du schreibst, sie schreibt."
+					},
+					"examples": [
+						"Ich schreibe eine E-Mail.",
+						"Du hörst Anna.",
+						"Lukas und Lena schreiben."
+					]
 				}
 			],
 			"items": [
 				{
 					"id": "A1-04-L07-I1",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Sie sehen vier Bilder. Jedes Bild zeigt einen Menschen mit einer Tätigkeit. Schauen Sie das Bild an.",
+						"en": "You see four pictures. Each shows a person doing something. Look at the picture.",
+						"tl": "May apat na larawan. Bawat isa ay may taong may ginagawa. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Bild 3 zeigt ein offenes Buch: lesen. 1 = sehen, 2 = hören, 4 = schreiben.",
-						"en": "Picture 3 shows an open book: lesen (read). 1 = see, 2 = hear, 4 = write.",
-						"tl": "Larawan 3: bukas na libro: lesen. 1 = makita, 2 = marinig, 4 = sumulat."
+						"de": "Richtig: „Sie schreibt.“ In Nummer 4 hat die Frau Stift und Papier: schreiben. Nummer 3 hat ein Buch (lesen), Nummer 2 Kopfhörer (hören).",
+						"en": "Correct: “Sie schreibt.” In number 4 the woman has a pencil and paper: schreiben. Number 3 has a book (lesen), number 2 headphones (hören).",
+						"tl": "Tama: “Sie schreibt.” Sa Nummer 4, may lapis at papel ang babae: schreiben. Ang Nummer 3 ay may libro (lesen), ang Nummer 2 ay may headphones (hören)."
 					},
 					"goals": [
 						"A1-04-G5"
 					],
 					"refs": [
-						"W-A1-0144",
+						"W-A1-0145",
+						"W-A1-0328",
+						"W-A1-0009",
 						"W-A1-0036",
-						"W-A1-0073"
+						"W-A1-0820"
 					],
 					"options": [
-						"hören",
-						"lesen",
-						"schreiben"
+						"Sie schreibt.",
+						"Sie liest.",
+						"Sie hört."
 					],
-					"answer": 1,
-					"prompt": "Bild 3: Was macht man hier?",
+					"answer": 0,
+					"prompt": "Was macht die Frau in Nummer 4?",
 					"image": {
 						"src": "/img/a1-04-verben.svg",
 						"alt": {
-							"de": "Vier Bilder: ein Auge, ein Ohr, ein Buch, ein Stift.",
-							"en": "Four pictures: an eye, an ear, a book, a pen.",
-							"tl": "Apat na larawan: mata, tainga, libro, panulat."
+							"de": "Vier Bilder mit Nummern: 1 ein Mann schaut zu einem Baum, 2 eine Frau mit Kopfhörern und Noten, 3 ein Mann mit einem offenen Buch, 4 eine Frau mit Stift und Papier.",
+							"en": "Four numbered pictures: 1 a man looks at a tree, 2 a woman with headphones and music notes, 3 a man with an open book, 4 a woman with a pencil and paper.",
+							"tl": "Apat na larawang may numero: 1 lalaking tumitingin sa puno, 2 babaeng may headphones at nota, 3 lalaking may bukas na libro, 4 babaeng may lapis at papel."
 						}
 					}
 				},
 				{
 					"id": "A1-04-L07-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild noch einmal an.",
+						"en": "Look at the picture again.",
+						"tl": "Tingnan muli ang larawan."
+					},
+					"explanation": {
+						"de": "Richtig: Nummer 2. Die Frau trägt Kopfhörer, über ihr sind Noten: sie hört. In Nummer 1 sieht der Mann einen Baum (sehen), in Nummer 3 liest der Mann ein Buch.",
+						"en": "Correct: Nummer 2. The woman wears headphones and there are music notes above her: she hears. In number 1 the man looks at a tree (sehen), in number 3 the man reads a book.",
+						"tl": "Tama: Nummer 2. May headphones ang babae at may nota sa itaas niya: nakikinig siya. Sa Nummer 1, tinitingnan ng lalaki ang puno (sehen); sa Nummer 3, nagbabasa ang lalaki ng libro."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0143",
+						"W-A1-0820",
+						"W-A1-0093"
+					],
+					"options": [
+						"Nummer 1",
+						"Nummer 3",
+						"Nummer 2"
+					],
+					"answer": 2,
+					"prompt": "In welchem Bild hört jemand?",
+					"image": {
+						"src": "/img/a1-04-verben.svg",
+						"alt": {
+							"de": "Vier Bilder mit Nummern: 1 ein Mann schaut zu einem Baum, 2 eine Frau mit Kopfhörern und Noten, 3 ein Mann mit einem offenen Buch, 4 eine Frau mit Stift und Papier.",
+							"en": "Four numbered pictures: 1 a man looks at a tree, 2 a woman with headphones and music notes, 3 a man with an open book, 4 a woman with a pencil and paper.",
+							"tl": "Apat na larawang may numero: 1 lalaking tumitingin sa puno, 2 babaeng may headphones at nota, 3 lalaking may bukas na libro, 4 babaeng may lapis at papel."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L07-I3",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Anna und Lukas sind im Park. Setzen Sie das Verb in der richtigen Form ein.",
+						"en": "Anna and Lukas are in the park. Put the verb in the right form.",
+						"tl": "Nasa park sina Anna at Lukas. Ilagay ang verb sa tamang anyo."
 					},
 					"explanation": {
-						"de": "du siehst, sie liest – e wird ie.",
-						"en": "du siehst, sie liest – e becomes ie.",
-						"tl": "du siehst, sie liest – nagiging ie ang e."
+						"de": "Richtig: du siehst, Anna liest. Bei „du“ und „er/sie/es“ wird e zu ie: sehen → du siehst, lesen → sie liest. Bei „lesen“ gibt es kein zusätzliches -t: „sie liest“, nicht „sie liesst“.",
+						"en": "Correct: du siehst, Anna liest. With “du” and “er/sie/es”, e becomes ie: sehen → du siehst, lesen → sie liest. “lesen” takes no extra -t: “sie liest”, not “sie liesst”.",
+						"tl": "Tama: du siehst, Anna liest. Sa “du” at “er/sie/es”, ang e ay nagiging ie: sehen → du siehst, lesen → sie liest. Walang dagdag na -t ang “lesen”: “sie liest”, hindi “sie liesst”."
 					},
 					"goals": [
 						"A1-04-G5"
@@ -1486,56 +2501,155 @@
 						"W-A1-0007",
 						"W-A1-0002"
 					],
-					"text": "Du {{1}} (sehen) die Kinder. Oma {{2}} (lesen) gern.",
+					"text": "Du {{1}} die Kinder. Anna {{2}} die E-Mail.",
 					"gaps": {
 						"1": {
 							"accept": [
 								"siehst"
-							]
+							],
+							"hint": "sehen"
 						},
 						"2": {
 							"accept": [
 								"liest"
-							]
+							],
+							"hint": "lesen"
 						}
 					}
 				},
 				{
-					"id": "A1-04-L07-I3",
+					"id": "A1-04-L07-I4",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Lena erzählt. Setzen Sie das Verb in der richtigen Form ein.",
+						"en": "Lena tells a story. Put the verb in the right form.",
+						"tl": "Nagkukuwento si Lena. Ilagay ang verb sa tamang anyo."
 					},
 					"explanation": {
-						"de": "ich höre, du schreibst – regelmäßig.",
-						"en": "ich höre, du schreibst – regular.",
-						"tl": "ich höre, du schreibst – regular."
+						"de": "Richtig: Lukas und Lena schreiben, ich höre. Bei „Lukas und Lena“ (sie, Plural) endet das Verb auf -en. Bei „ich“ endet es auf -e. „schreibt“ gehört zu er/sie/es (eine Person), nicht zu zwei Personen.",
+						"en": "Correct: Lukas und Lena schreiben, ich höre. With “Lukas und Lena” (they, plural) the verb ends in -en. With “ich” it ends in -e. “schreibt” belongs to er/sie/es (one person), not to two people.",
+						"tl": "Tama: Lukas und Lena schreiben, ich höre. Sa “Lukas und Lena” (sila, plural), nagtatapos sa -en ang verb. Sa “ich”, sa -e. Ang “schreibt” ay para sa er/sie/es (isang tao), hindi sa dalawang tao."
 					},
 					"goals": [
 						"A1-04-G5"
 					],
 					"refs": [
-						"W-A1-0143",
 						"W-A1-0145",
+						"W-A1-0143",
 						"W-A1-0006",
-						"W-A1-0007"
+						"W-A1-0046"
 					],
-					"text": "Ich {{1}} (hören) Musik. Du {{2}} (schreiben) eine Nachricht.",
+					"text": "Lukas und Lena {{1}} eine E-Mail. Ich {{2}} Peter.",
 					"gaps": {
 						"1": {
 							"accept": [
-								"höre"
-							]
+								"schreiben"
+							],
+							"hint": "schreiben"
 						},
 						"2": {
 							"accept": [
-								"schreibst"
-							]
+								"höre"
+							],
+							"hint": "hören"
 						}
 					}
+				},
+				{
+					"id": "A1-04-L07-I5",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Tom fragt seine Freundin Lena. Sie sagen „du“. Wählen Sie die richtige Form.",
+						"en": "Tom asks his friend Lena. They say “du”. Choose the right form.",
+						"tl": "Tinatanong ni Tom ang kaibigan niyang si Lena. “du” ang gamit nila. Piliin ang tamang anyo."
+					},
+					"explanation": {
+						"de": "Richtig: „siehst du“. Bei „du“ wird „sehen“ zu „siehst“ (e → ie, Endung -st). „sehst“ vergisst den Vokalwechsel. „sieht“ gehört zu er/sie/es, nicht zu „du“.",
+						"en": "Correct: “siehst du”. With “du”, “sehen” becomes “siehst” (e → ie, ending -st). “sehst” forgets the vowel change. “sieht” belongs to er/sie/es, not “du”.",
+						"tl": "Tama: “siehst du”. Sa “du”, ang “sehen” ay nagiging “siehst” (e → ie, ending -st). Nakalimutan ng “sehst” ang pagbabago ng patinig. Ang “sieht” ay para sa er/sie/es, hindi sa “du”."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0142",
+						"W-A1-0007"
+					],
+					"options": [
+						"siehst",
+						"sehst",
+						"sieht"
+					],
+					"answer": 0,
+					"prompt": "Tom: „Lena, … du Lukas?“ (sehen)"
+				},
+				{
+					"id": "A1-04-L07-I6",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Lena erzählt von Lukas und seiner Familie. Hören Sie.",
+						"en": "Lena tells about Lukas and his family. Listen.",
+						"tl": "Nagkukuwento si Lena tungkol kay Lukas at sa pamilya niya. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Das ist Lukas. Er liest. Ich bin Lena, ich sehe Lukas.“ „Er liest“ – Lukas liest. Lena sieht Lukas, sie liest nicht.",
+						"en": "You hear: “Das ist Lukas. Er liest. Ich bin Lena, ich sehe Lukas.” “Er liest” – Lukas is reading. Lena sees Lukas; she is not reading.",
+						"tl": "Naririnig mo: “Das ist Lukas. Er liest. Ich bin Lena, ich sehe Lukas.” “Er liest” – nagbabasa si Lukas. Nakikita ni Lena si Lukas; hindi siya nagbabasa."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0144",
+						"W-A1-0142",
+						"W-A1-0006",
+						"W-A1-0035",
+						"W-A1-0008",
+						"W-A1-0003"
+					],
+					"options": [
+						"Lukas",
+						"Lena",
+						"Anna"
+					],
+					"answer": 0,
+					"prompt": "Wer liest?",
+					"audioText": "Das ist Lukas. Er liest. Ich bin Lena, ich sehe Lukas.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-04-L07-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Sie sind im Park. Ihr Freund Lukas fragt Sie: „Siehst du Lena?“ Sie sehen Lena dort. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are in the park. Your friend Lukas asks you: “Siehst du Lena?” You see Lena over there. What do you say? Choose, then say it aloud.",
+						"tl": "Nasa park ka. Tinanong ka ng kaibigan mong si Lukas: “Siehst du Lena?” Nakikita mo si Lena doon. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Ja, ich sehe Lena.“ Sie sprechen über sich: „ich“ + sehe. „ich siehst“ mischt zwei Formen. „du siehst“ wäre Lukas, nicht Sie.",
+						"en": "Correct: “Ja, ich sehe Lena.” You talk about yourself: “ich” + sehe. “ich siehst” mixes two forms. “du siehst” would be Lukas, not you.",
+						"tl": "Tama: “Ja, ich sehe Lena.” Sarili mo ang pinag-uusapan: “ich” + sehe. Pinaghalo ng “ich siehst” ang dalawang anyo. Ang “du siehst” ay si Lukas, hindi ikaw."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0142",
+						"W-A1-0006",
+						"W-A1-0007",
+						"W-A1-0051"
+					],
+					"options": [
+						"Ja, ich siehst Lena.",
+						"Ja, du siehst Lena.",
+						"Ja, ich sehe Lena."
+					],
+					"answer": 2,
+					"prompt": "Lukas: „Siehst du Lena?“"
 				}
 			]
 		},
@@ -1546,6 +2660,18 @@
 				"en": "Happy and sad",
 				"tl": "Masaya at malungkot"
 			},
+			"intro": {
+				"situation": {
+					"de": "Peter und Anna heiraten. Lukas und Lena sind auch da. Alle sind glücklich.",
+					"en": "Peter and Anna are getting married. Lukas and Lena are there. Everyone is happy. Only grandpa is no longer here.",
+					"tl": "Ikakasal sina Peter at Anna. Nandoon sina Lukas at Lena. Masaya ang lahat. Wala na lang ang lolo."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen, wie es dir geht (glücklich, traurig, zufrieden), und sagen, wen du liebst.",
+					"en": "By the end you can say how you feel (happy, sad, content) and say whom you love.",
+					"tl": "Sa dulo, masasabi mo kung ano ang nararamdaman mo (masaya, malungkot, kuntento) at kung sino ang mahal mo."
+				}
+			},
 			"introduces": [
 				"W-A1-0391",
 				"W-A1-0392",
@@ -1553,27 +2679,48 @@
 			],
 			"cards": [
 				{
-					"phrase": "Peter und Anna heiraten. Sie sind glücklich.",
+					"kind": "phrase",
+					"phrase": "Ich bin glücklich. Ich bin zufrieden.",
 					"note": {
-						"de": "glücklich = sehr froh.",
-						"en": "glücklich = very happy.",
-						"tl": "glücklich = napakasaya."
+						"de": "„glücklich“ = sehr froh. „zufrieden“ = es ist gut genug, ich brauche nichts mehr. „zufrieden“ ist weniger stark als „glücklich“.",
+						"en": "“glücklich” = very happy. “zufrieden” = content, it is good enough, I need nothing more. “zufrieden” is weaker than “glücklich”.",
+						"tl": "“glücklich” = napakasaya. “zufrieden” = kuntento, sapat na, wala nang kailangan. Mas mahina ang “zufrieden” kaysa “glücklich”."
 					}
 				},
 				{
-					"phrase": "Ich liebe meine Familie.",
+					"kind": "rule",
+					"phrase": "ich bin traurig · glücklich · zufrieden",
 					"note": {
-						"de": "„lieben“: ich liebe, du liebst, er liebt.",
-						"en": "“lieben” (love): ich liebe, du liebst, er liebt.",
-						"tl": "“lieben” (magmahal): ich liebe, du liebst, er liebt."
-					}
+						"de": "Gefühle sagen Sie mit „sein“: ich bin, du bist, er ist, wir sind. Das Adjektiv bleibt gleich: Lena ist glücklich, Lukas ist traurig. „traurig“ ist das Gegenteil von „glücklich“.",
+						"en": "You say feelings with “sein”: ich bin, du bist, er ist, wir sind. The adjective does not change: Lena ist glücklich, Lukas ist traurig. “traurig” is the opposite of “glücklich”.",
+						"tl": "Ang damdamin ay sinasabi gamit ang “sein”: ich bin, du bist, er ist, wir sind. Hindi nagbabago ang adjective: Lena ist glücklich, Lukas ist traurig. Kabaligtaran ng “glücklich” ang “traurig”."
+					},
+					"examples": [
+						"Lena ist glücklich.",
+						"Lukas ist traurig.",
+						"Wir sind zufrieden."
+					]
 				},
 				{
-					"phrase": "Der Opa ist gestorben. Die Familie ist traurig.",
+					"kind": "rule",
+					"phrase": "lieben: ich liebe · du liebst · er liebt",
 					"note": {
-						"de": "traurig ist das Gegenteil von glücklich.",
-						"en": "traurig (sad) is the opposite of glücklich.",
-						"tl": "Kabaligtaran ng glücklich ang traurig (malungkot)."
+						"de": "„lieben“ ist regelmäßig: ich liebe, du liebst, er liebt, wir lieben. Sie lieben Menschen, die Ihnen sehr wichtig sind – zum Beispiel Ihre Familie.",
+						"en": "“lieben” (to love) is regular: ich liebe, du liebst, er liebt, wir lieben. You love people who are very important to you – for example your family.",
+						"tl": "Regular ang “lieben” (magmahal): ich liebe, du liebst, er liebt, wir lieben. Minamahal mo ang mga taong napakahalaga sa iyo – halimbawa ang pamilya mo."
+					},
+					"examples": [
+						"Ich liebe meine Kinder.",
+						"Peter liebt Anna."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Der Opa ist gestorben. Wir sind traurig.",
+					"note": {
+						"de": "„gestorben“ heißt: Der Mensch lebt nicht mehr. Dann sind die Menschen in der Familie traurig.",
+						"en": "“gestorben” means: the person is no longer alive. Then the people in the family are sad.",
+						"tl": "Ang “gestorben” ay: hindi na buhay ang tao. Malungkot ang pamilya."
 					}
 				}
 			],
@@ -1583,60 +2730,173 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Peter und Anna feiern ihre Hochzeit. Schauen Sie das Bild an.",
+						"en": "Peter and Anna are at their wedding. Look at the picture.",
+						"tl": "Kasal nina Peter at Anna. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Das Bild zeigt eine Hochzeit: Peter und Anna heiraten und sind glücklich.",
-						"en": "The picture shows a wedding: Peter and Anna marry and are happy.",
-						"tl": "Kasal ang nasa larawan: ikakasal sina Peter at Anna at masaya sila."
+						"de": "Richtig: „Sie heiraten.“ Das Bild zeigt eine Hochzeit: Anzug, weißes Kleid, Blumenbogen. Sie lesen oder schreiben nichts.",
+						"en": "Correct: “Sie heiraten.” The picture shows a wedding: suit, white dress, flower arch. They are not reading or writing anything.",
+						"tl": "Tama: “Sie heiraten.” Kasal ang nasa larawan: suit, puting damit, arko ng bulaklak. Wala silang binabasa o isinusulat."
 					},
 					"goals": [
 						"A1-04-G5"
 					],
 					"refs": [
 						"W-A1-0395",
-						"W-A1-0391",
 						"W-A1-0009",
 						"W-A1-0046",
 						"W-A1-0036",
 						"W-A1-0126"
 					],
 					"options": [
-						"Sie sind traurig.",
-						"Sie sind geschieden.",
-						"Sie heiraten."
+						"Sie lesen.",
+						"Sie heiraten.",
+						"Sie schreiben eine E-Mail."
 					],
-					"answer": 2,
-					"prompt": "Was machen Peter und Anna heute?",
+					"answer": 1,
+					"prompt": "Was machen Peter und Anna?",
 					"image": {
 						"src": "/img/a1-04-hochzeit.svg",
 						"alt": {
-							"de": "Ein Paar bei der Hochzeit mit Herzen.",
-							"en": "A couple at their wedding with hearts.",
-							"tl": "Magkasintahan sa kasal na may mga puso."
+							"de": "Ein Mann im dunklen Anzug und eine Frau im weißen Kleid mit Schleier stehen unter einem Bogen mit Blumen. Daneben die Namen Peter und Anna.",
+							"en": "A man in a dark suit and a woman in a white dress with a veil stand under a flower arch. Their names are Peter and Anna.",
+							"tl": "Isang lalaking naka-dark suit at isang babaeng naka-puting damit at belo ang nakatayo sa ilalim ng arko ng bulaklak. Peter at Anna ang pangalan nila."
 						}
 					}
 				},
 				{
 					"id": "A1-04-L08-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Schauen Sie das Bild noch einmal an. Sehen Sie auf die Gesichter.",
+						"en": "Look at the picture again. Look at their faces.",
+						"tl": "Tingnan muli ang larawan. Tingnan ang mga mukha nila."
 					},
 					"explanation": {
-						"de": "Lachen = glücklich.",
-						"en": "Laughing = happy (glücklich).",
-						"tl": "Tumatawa = masaya (glücklich)."
+						"de": "Richtig: glücklich. Peter und Anna lachen, über ihnen sind Herzen. „traurig“ passt nicht zu den Gesichtern. „geschieden“ heißt: nicht mehr verheiratet – aber sie heiraten gerade.",
+						"en": "Correct: glücklich. Peter and Anna are smiling and there are hearts above them. “traurig” does not fit their faces. “geschieden” means no longer married – but they are just getting married.",
+						"tl": "Tama: glücklich. Nakangiti sina Peter at Anna at may mga puso sa itaas nila. Hindi bagay ang “traurig” sa mga mukha nila. Ang “geschieden” ay hindi na kasal – pero ikakasal pa lang sila."
 					},
+					"goals": [
+						"A1-04-G5"
+					],
 					"refs": [
 						"W-A1-0391",
-						"W-A1-0010",
-						"W-A1-0003"
+						"W-A1-0046"
+					],
+					"options": [
+						"glücklich",
+						"traurig",
+						"geschieden"
+					],
+					"answer": 0,
+					"prompt": "Peter und Anna sind …",
+					"image": {
+						"src": "/img/a1-04-hochzeit.svg",
+						"alt": {
+							"de": "Ein Mann im dunklen Anzug und eine Frau im weißen Kleid mit Schleier stehen unter einem Bogen mit Blumen. Daneben die Namen Peter und Anna.",
+							"en": "A man in a dark suit and a woman in a white dress with a veil stand under a flower arch. Their names are Peter and Anna.",
+							"tl": "Isang lalaking naka-dark suit at isang babaeng naka-puting damit at belo ang nakatayo sa ilalim ng arko ng bulaklak. Peter at Anna ang pangalan nila."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L08-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Lukas erzählt. Welches Wort passt? Denken Sie an den Opa.",
+						"en": "Lukas tells a story. Which word fits? Think of grandpa.",
+						"tl": "Nagkukuwento si Lukas. Aling salita ang bagay? Isipin ang lolo."
+					},
+					"explanation": {
+						"de": "Richtig: traurig. Wenn ein Mensch gestorben ist, ist die Familie traurig. „glücklich“ ist das Gegenteil. „zufrieden“ passt auch nicht: Das sagt man, wenn alles gut ist.",
+						"en": "Correct: traurig. When a person has died, the family is sad. “glücklich” is the opposite. “zufrieden” does not fit either: you say it when everything is fine.",
+						"tl": "Tama: traurig. Kapag may namatay, malungkot ang pamilya. Kabaligtaran ang “glücklich”. Hindi rin bagay ang “zufrieden”: sinasabi ito kapag maayos ang lahat."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0392",
+						"W-A1-0407",
+						"W-A1-0001",
+						"W-A1-0002"
+					],
+					"options": [
+						"traurig",
+						"glücklich",
+						"zufrieden"
+					],
+					"answer": 0,
+					"prompt": "Der Opa ist gestorben. Die Familie ist …"
+				},
+				{
+					"id": "A1-04-L08-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Peter spricht über seine Familie. Ergänzen Sie. Nehmen Sie die Wörter unten.",
+						"en": "Peter talks about his family. Complete the sentences. Use the words below.",
+						"tl": "Nagsasalita si Peter tungkol sa pamilya niya. Kumpletuhin. Gamitin ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: ich liebe, Peter liebt. Bei „ich“ endet das Verb auf -e, bei „Peter“ (er) auf -t. „liebst“ gehört zu „du“.",
+						"en": "Correct: ich liebe, Peter liebt. With “ich” the verb ends in -e, with “Peter” (er) in -t. “liebst” belongs to “du”.",
+						"tl": "Tama: ich liebe, Peter liebt. Sa “ich”, nagtatapos sa -e ang verb; sa “Peter” (er), sa -t. Ang “liebst” ay para sa “du”."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0394",
+						"W-A1-0006",
+						"W-A1-0046"
+					],
+					"text": "Ich {{1}} meine Kinder. Und Peter {{2}} Anna.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"liebe"
+							]
+						},
+						"2": {
+							"accept": [
+								"liebt"
+							]
+						}
+					},
+					"bank": [
+						"liebe",
+						"liebt",
+						"liebst"
+					]
+				},
+				{
+					"id": "A1-04-L08-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Peter und Anna erzählen. Hören Sie.",
+						"en": "Peter and Anna tell a story. Listen.",
+						"tl": "Nagkukuwento sina Peter at Anna. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Das Baby ist da! Wir sind sehr glücklich.“ Die Eltern freuen sich: glücklich. „traurig“ ist das Gegenteil. „geschieden“ ist ein Familienstand, kein Gefühl.",
+						"en": "You hear: “Das Baby ist da! Wir sind sehr glücklich.” The parents are pleased: glücklich. “traurig” is the opposite. “geschieden” is a marital status, not a feeling.",
+						"tl": "Naririnig mo: “Das Baby ist da! Wir sind sehr glücklich.” Masaya ang mga magulang: glücklich. Kabaligtaran ang “traurig”. Ang “geschieden” ay civil status, hindi damdamin."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0391",
+						"W-A1-0041",
+						"W-A1-0057",
+						"W-A1-0011",
+						"W-A1-0002"
 					],
 					"options": [
 						"traurig",
@@ -1644,37 +2904,75 @@
 						"glücklich"
 					],
 					"answer": 2,
-					"prompt": "Das Baby lacht. Es ist …"
+					"prompt": "Wie sind die Eltern?",
+					"audioText": "Das Baby ist da! Wir sind sehr glücklich.",
+					"audioOnly": true
 				},
 				{
-					"id": "A1-04-L08-I3",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
+					"id": "A1-04-L08-I6",
+					"type": "choice",
+					"skill": "sprechen",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Ihr Freund Tom fragt: „Wie geht’s?“ Sie sind sehr glücklich: Ihre Tochter heiratet bald. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Your friend Tom asks: “Wie geht’s?” You are very happy: your daughter is getting married soon. What do you say? Choose, then say it aloud.",
+						"tl": "Tinanong ka ng kaibigan mong si Tom: “Wie geht’s?” Napakasaya mo: ikakasal na ang anak mong babae. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "ich liebe.",
-						"en": "ich liebe (I love).",
-						"tl": "ich liebe (mahal ko)."
+						"de": "Richtig: „Ich bin glücklich.“ Gefühle sagen Sie mit „sein“. „habe“ sagt, was Sie haben (Kinder, Geschwister), „lieben“ braucht einen Menschen: „ich liebe meine Tochter“.",
+						"en": "Correct: “Ich bin glücklich.” You say feelings with “sein”. “habe” says what you have (children, siblings); “lieben” needs a person: “ich liebe meine Tochter”.",
+						"tl": "Tama: “Ich bin glücklich.” Ang damdamin ay gamit ang “sein”. Ang “habe” ay sa mayroon ka (anak, kapatid); ang “lieben” ay kailangan ng tao: “ich liebe meine Tochter”."
 					},
 					"goals": [
 						"A1-04-G5"
 					],
 					"refs": [
-						"W-A1-0394",
-						"W-A1-0006"
+						"W-A1-0391",
+						"W-A1-0116",
+						"W-A1-0006",
+						"W-A1-0041",
+						"W-A1-0173",
+						"W-A1-0057"
 					],
-					"text": "Ich {{1}} (lieben) meine Kinder.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"liebe"
-							]
-						}
-					}
+					"options": [
+						"Sehr gut, ich habe glücklich.",
+						"Sehr gut, ich bin glücklich.",
+						"Sehr gut, ich liebe glücklich."
+					],
+					"answer": 1,
+					"prompt": "Tom: „Wie geht’s?“"
+				},
+				{
+					"id": "A1-04-L08-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Anna schreibt an Tom. Lesen Sie die E-Mail.",
+						"en": "Anna writes to Tom. Read the e-mail.",
+						"tl": "Sumulat si Anna kay Tom. Basahin ang e-mail."
+					},
+					"explanation": {
+						"de": "Im Text: „Mein Bruder ist traurig.“ Die Eltern sind glücklich, Peter heiratet Anna und ist nicht traurig. „Er wohnt in Graz“ gehört zum Bruder.",
+						"en": "The text says: “Mein Bruder ist traurig.” The parents are happy; Peter is marrying Anna and is not sad. “Er wohnt in Graz” belongs to the brother.",
+						"tl": "Sabi sa teksto: “Mein Bruder ist traurig.” Masaya ang mga magulang; ikakasal si Peter kay Anna at hindi malungkot. Ang “Er wohnt in Graz” ay tungkol sa kapatid."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0392",
+						"W-A1-0391",
+						"W-A1-0377",
+						"W-A1-0006",
+						"W-A1-0035",
+						"W-A1-0046"
+					],
+					"options": [
+						"der Bruder",
+						"die Eltern",
+						"Peter"
+					],
+					"answer": 0,
+					"prompt": "Servus Tom! Peter und ich heiraten bald. Meine Eltern sind glücklich. Mein Bruder ist traurig. Er wohnt in Graz. Servus, Anna\n\nWer ist traurig?"
 				}
 			]
 		},
@@ -1684,6 +2982,18 @@
 				"de": "Freunde, Verwandte, Leute",
 				"en": "Friends, relatives, people",
 				"tl": "Kaibigan, kamag-anak, tao"
+			},
+			"intro": {
+				"situation": {
+					"de": "Die Familie Huber ist zusammen. Oma und Opa sind da. Auch Sara ist da: Sara ist eine Freundin.",
+					"en": "The Huber family is together. Oma and Opa are there. Sara is there too: Sara is a friend.",
+					"tl": "Magkakasama ang pamilyang Huber. Nandoon sina Oma at Opa. Nandoon din si Sara: kaibigan siya."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen: Das sind meine Großeltern, das ist meine Freundin – und wo deine Verwandten leben.",
+					"en": "By the end you can say: These are my grandparents, this is my friend – and where your relatives live.",
+					"tl": "Sa dulo, masasabi mo: Ito ang mga lolo’t lola ko, ito ang kaibigan ko – at kung saan nakatira ang mga kamag-anak mo."
+				}
 			},
 			"introduces": [
 				"W-A1-0348",
@@ -1698,36 +3008,58 @@
 			],
 			"cards": [
 				{
+					"kind": "rule",
 					"phrase": "die Großeltern: Oma und Opa",
 					"note": {
-						"de": "Oma = Großmutter, Opa = Großvater.",
-						"en": "Oma = grandma, Opa = grandpa.",
-						"tl": "Oma = lola, Opa = lolo."
-					}
+						"de": "Oma = Großmutter, Opa = Großvater. Im Alltag sagt man fast nur „Oma“ und „Opa“. Oma und Opa zusammen sind die Großeltern – das Wort gibt es nur im Plural.",
+						"en": "Oma = grandmother, Opa = grandfather. In everyday speech people almost only say “Oma” and “Opa”. Oma and Opa together are the Großeltern – only in the plural.",
+						"tl": "Oma = lola, Opa = lolo. Sa araw-araw, “Oma” at “Opa” halos ang sinasabi. Ang Oma at Opa na magkasama ay ang Großeltern – plural lang."
+					},
+					"examples": [
+						"Das sind meine Großeltern.",
+						"Meine Oma heißt Maria.",
+						"Mein Opa heißt Franz."
+					]
 				},
 				{
-					"phrase": "der Freund – die Freundin",
+					"kind": "rule",
+					"phrase": "der Freund · die Freundin",
 					"note": {
-						"de": "Auch: mein Freund = Partner. Der Kontext zeigt es.",
-						"en": "Also: mein Freund can mean boyfriend. Context shows it.",
-						"tl": "Puwede ring nobyo ang mein Freund. Konteksto ang magsasabi."
-					}
+						"de": "Ein Freund oder eine Freundin ist ein Mensch, den Sie gern haben. „Mein Freund“ kann auch „mein Partner“ heißen. Der Satz zeigt, was gemeint ist: „Das ist mein Freund Tom. Wir heiraten bald.“",
+						"en": "A Freund or Freundin is a person you like. “Mein Freund” can also mean “my boyfriend”. The sentence shows which: “Das ist mein Freund Tom. Wir heiraten bald.”",
+						"tl": "Ang Freund o Freundin ay taong gusto mo. Ang “mein Freund” ay puwede ring “nobyo ko”. Ipinapakita ng pangungusap kung alin: “Das ist mein Freund Tom. Wir heiraten bald.”"
+					},
+					"examples": [
+						"Das ist meine Freundin Sara.",
+						"Mein Freund wohnt in Graz."
+					]
 				},
 				{
-					"phrase": "die Verwandten – die Bekannten – die Leute",
+					"kind": "rule",
+					"phrase": "die Verwandten · die Bekannten · die Leute",
 					"note": {
-						"de": "Verwandte = Familie. Bekannte = man kennt sie. Leute = Menschen.",
-						"en": "Verwandte = family. Bekannte = people you know. Leute = people.",
-						"tl": "Verwandte = kamag-anak. Bekannte = kakilala. Leute = mga tao."
-					}
+						"de": "Verwandte gehören zur Familie. Bekannte sind Menschen, die Sie kennen – aber keine Freunde. „die Leute“ heißt „die Menschen“ und gibt es nur im Plural. Im Alltag sagt man: „Hallo, Leute!“",
+						"en": "Verwandte (relatives) belong to the family. Bekannte (acquaintances) are people you know – but not friends. “die Leute” means “people” and only exists in the plural. In everyday speech: “Hallo, Leute!”",
+						"tl": "Ang Verwandte ay kasama sa pamilya. Ang Bekannte ay mga taong kilala mo – pero hindi kaibigan. Ang “die Leute” ay “mga tao” at plural lang. Sa araw-araw: “Hallo, Leute!”"
+					},
+					"examples": [
+						"Meine Verwandten leben in Manila.",
+						"Viele Leute wohnen in Wien."
+					]
 				},
 				{
-					"phrase": "Meine Eltern leben in Manila. Ich bleibe in Wien.",
+					"kind": "rule",
+					"phrase": "leben · bleiben",
 					"note": {
-						"de": "„leben“ = wohnen, da sein. „bleiben“ = nicht weggehen.",
-						"en": "“leben” = live; “bleiben” = stay.",
-						"tl": "“leben” = tumira; “bleiben” = manatili."
-					}
+						"de": "„leben“ sagt, wo jemand lebt: Meine Eltern leben in Manila. „bleiben“ sagt, dass jemand nicht weggeht: Ich bleibe in Wien. Beide sind regelmäßig: ich lebe, du lebst, er lebt; ich bleibe, du bleibst, er bleibt.",
+						"en": "“leben” says where someone lives: Meine Eltern leben in Manila. “bleiben” says that someone does not leave: Ich bleibe in Wien. Both are regular: ich lebe, du lebst, er lebt; ich bleibe, du bleibst, er bleibt.",
+						"tl": "Sinasabi ng “leben” kung saan nakatira ang tao: Meine Eltern leben in Manila. Sinasabi ng “bleiben” na hindi umaalis ang tao: Ich bleibe in Wien. Parehong regular: ich lebe, du lebst, er lebt; ich bleibe, du bleibst, er bleibt."
+					},
+					"examples": [
+						"Meine Eltern leben in Manila.",
+						"Ich bleibe in Wien.",
+						"Wo lebt dein Opa?"
+					]
 				}
 			],
 			"items": [
@@ -1736,15 +3068,18 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Die Familie Huber ist zusammen. Auch eine Freundin ist da. Schauen Sie das Bild an.",
+						"en": "The Huber family is together. A friend is there too. Look at the picture and count the people.",
+						"tl": "Magkakasama ang pamilyang Huber. Nandoon din ang isang kaibigan. Tingnan ang larawan at bilangin ang mga tao."
 					},
 					"explanation": {
-						"de": "Im Bild sind fünf Personen.",
-						"en": "There are five people in the picture.",
-						"tl": "Limang tao ang nasa larawan."
+						"de": "Richtig: fünf Leute – Opa, Oma, Lena, Lukas und Sara. „Leute“ ist der Plural von „Mensch“: viele Menschen. Jeder Mensch hat ein Namensschild, so zählen Sie ohne Fehler.",
+						"en": "Correct: fünf – Opa, Oma, Lena, Lukas and Sara. “Leute” means many people. Each person has a name tag, so you can count without mistakes.",
+						"tl": "Tama: fünf – sina Opa, Oma, Lena, Lukas at Sara. Ang “Leute” ay maraming tao. Bawat tao ay may name tag, kaya madali ang bilang."
 					},
+					"goals": [
+						"A1-04-G1"
+					],
 					"refs": [
 						"W-A1-0349",
 						"W-A1-0041",
@@ -1753,63 +3088,104 @@
 						"W-A1-0798"
 					],
 					"options": [
-						"fünf",
 						"vier",
+						"fünf",
 						"sechs"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Wie viele Leute sind im Bild?",
 					"image": {
 						"src": "/img/a1-04-leute.svg",
 						"alt": {
-							"de": "Fünf Personen stehen zusammen. Eine sagt „Hallo, Leute!“.",
-							"en": "Five people stand together. One says “Hallo, Leute!”.",
-							"tl": "Limang tao ang magkakasama. May nagsasabing “Hallo, Leute!”."
+							"de": "Fünf Menschen stehen zusammen: Opa und Oma mit grauen Haaren und Brille, zwei Kinder und eine junge Frau. Jeder hat ein Namensschild. Einer sagt „Hallo, Leute!“.",
+							"en": "Five people stand together: grandpa and grandma with grey hair and glasses, two children and a young woman. Each has a name tag. One says “Hallo, Leute!”.",
+							"tl": "Limang tao ang magkakasama: lolo at lola na may puting buhok at salamin, dalawang bata at isang dalaga. Bawat isa ay may name tag. May nagsasabi ng “Hallo, Leute!”."
 						}
 					}
 				},
 				{
 					"id": "A1-04-L09-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Schauen Sie das Bild noch einmal an. Die Großeltern haben graue Haare.",
+						"en": "Look at the picture again. The grandparents have grey hair.",
+						"tl": "Tingnan muli ang larawan. Puti ang buhok ng mga lolo at lola."
 					},
 					"explanation": {
-						"de": "Die Mutter der Mutter = die Oma (Großmutter).",
-						"en": "Mother’s mother = Oma (grandma).",
-						"tl": "Nanay ng nanay = Oma (lola)."
+						"de": "Richtig: Oma und Opa. Großeltern sind Oma und Opa zusammen. Lena und Lukas sind Kinder. Sara ist eine junge Frau, eine Freundin – keine Oma.",
+						"en": "Correct: Oma und Opa. Grandparents are Oma and Opa together. Lena and Lukas are children. Sara is a young woman, a friend – not a grandma.",
+						"tl": "Tama: Oma und Opa. Ang Großeltern ay Oma at Opa na magkasama. Mga bata sina Lena at Lukas. Si Sara ay dalaga, kaibigan – hindi lola."
 					},
 					"goals": [
 						"A1-04-G1"
 					],
 					"refs": [
+						"W-A1-0340",
 						"W-A1-0341",
+						"W-A1-0342",
+						"W-A1-0035",
+						"W-A1-0046",
 						"W-A1-0002"
 					],
 					"options": [
-						"Oma",
-						"Tochter",
-						"Schwester"
+						"Lena und Lukas",
+						"Oma und Opa",
+						"Sara und Opa"
 					],
-					"answer": 0,
-					"prompt": "Die Mutter von meiner Mutter ist meine …"
+					"answer": 1,
+					"prompt": "Wer sind die Großeltern?",
+					"image": {
+						"src": "/img/a1-04-leute.svg",
+						"alt": {
+							"de": "Fünf Menschen stehen zusammen: Opa und Oma mit grauen Haaren und Brille, zwei Kinder und eine junge Frau. Jeder hat ein Namensschild. Einer sagt „Hallo, Leute!“.",
+							"en": "Five people stand together: grandpa and grandma with grey hair and glasses, two children and a young woman. Each has a name tag. One says “Hallo, Leute!”.",
+							"tl": "Limang tao ang magkakasama: lolo at lola na may puting buhok at salamin, dalawang bata at isang dalaga. Bawat isa ay may name tag. May nagsasabi ng “Hallo, Leute!”."
+						}
+					}
 				},
 				{
 					"id": "A1-04-L09-I3",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Lena zeigt auf Oma und Opa. Was sagt sie?",
+						"en": "Lena points at Oma and Opa. What does she say?",
+						"tl": "Itinuturo ni Lena sina Oma at Opa. Ano ang sinasabi niya?"
 					},
 					"explanation": {
-						"de": "Sie hören: „Meine Eltern leben in Manila. Ich bleibe in Wien.“",
-						"en": "You hear: “Meine Eltern leben in Manila. Ich bleibe in Wien.”",
-						"tl": "Naririnig mo: “Meine Eltern leben in Manila. Ich bleibe in Wien.”"
+						"de": "Richtig: Großeltern. Oma und Opa sind Lenas Großeltern. „Eltern“ sind Peter und Anna. „Geschwister“ wären Lukas und Sara oder Bruder und Schwester, nicht Oma und Opa.",
+						"en": "Correct: Großeltern. Oma and Opa are Lena’s grandparents. “Eltern” are Peter and Anna. “Geschwister” would be brothers and sisters, not Oma and Opa.",
+						"tl": "Tama: Großeltern. Ang Oma at Opa ay mga lolo’t lola ni Lena. Ang “Eltern” ay sina Peter at Anna. Ang “Geschwister” ay magkapatid, hindi sina Oma at Opa."
+					},
+					"goals": [
+						"A1-04-G1"
+					],
+					"refs": [
+						"W-A1-0340",
+						"W-A1-0003"
+					],
+					"options": [
+						"Eltern",
+						"Geschwister",
+						"Großeltern"
+					],
+					"answer": 2,
+					"prompt": "Lena: „Das sind meine …“"
+				},
+				{
+					"id": "A1-04-L09-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Anna und Peter sprechen über ihre Familie. Ergänzen Sie den Dialog. Nehmen Sie die Wörter unten.",
+						"en": "Anna and Peter talk about their family. Complete the dialogue. Use the words below.",
+						"tl": "Nag-uusap sina Anna at Peter tungkol sa pamilya nila. Kumpletuhin ang dialogo. Gamitin ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Wo leben deine Eltern?“ und „Ich bleibe in Wien.“ „Eltern“ ist Plural: sie leben. Auf „Bleibst du …?“ antworten Sie mit „bleibe“. „bleibst“ gehört zu „du“, „lebt“ zu er/sie/es.",
+						"en": "Correct: “Wo leben deine Eltern?” and “Ich bleibe in Wien.” “Eltern” is plural: sie leben. You answer “Bleibst du …?” with “bleibe”. “bleibst” belongs to “du”, “lebt” to er/sie/es.",
+						"tl": "Tama: “Wo leben deine Eltern?” at “Ich bleibe in Wien.” Plural ang “Eltern”: sie leben. Sa “Bleibst du …?” sasagot ka ng “bleibe”. Ang “bleibst” ay para sa “du”, ang “lebt” sa er/sie/es."
 					},
 					"goals": [
 						"A1-04-G5"
@@ -1818,16 +3194,129 @@
 						"W-A1-0149",
 						"W-A1-0151",
 						"W-A1-0006",
-						"W-A1-0002",
+						"W-A1-0007",
+						"W-A1-0051",
+						"W-A1-0037"
+					],
+					"text": "Peter: Wo {{1}} deine Eltern? – Anna: In Manila. – Peter: Bleibst du in Wien? – Anna: Ja, ich {{2}} in Wien.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"leben"
+							]
+						},
+						"2": {
+							"accept": [
+								"bleibe"
+							]
+						}
+					},
+					"bank": [
+						"leben",
+						"bleibe",
+						"lebt",
+						"bleibst"
+					]
+				},
+				{
+					"id": "A1-04-L09-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Ein Mann erzählt von seiner Familie. Hören Sie.",
+						"en": "A man talks about his family. Listen.",
+						"tl": "May lalaking nagkukuwento tungkol sa pamilya niya. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Meine Eltern leben in Manila. Ich bleibe in Wien.“ Die Eltern leben in Manila, der Mann bleibt in Wien. „in Graz“ kommt nicht vor.",
+						"en": "You hear: “Meine Eltern leben in Manila. Ich bleibe in Wien.” The parents live in Manila; the man stays in Vienna. “in Graz” is not mentioned.",
+						"tl": "Naririnig mo: “Meine Eltern leben in Manila. Ich bleibe in Wien.” Nakatira sa Manila ang mga magulang; nananatili sa Vienna ang lalaki. Hindi binanggit ang “in Graz”."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0151",
+						"W-A1-0149",
+						"W-A1-0006",
+						"W-A1-0001",
+						"W-A1-0037",
 						"W-A1-0093"
 					],
 					"options": [
-						"Die Eltern leben in Manila.",
-						"Die Eltern leben in Wien."
+						"in Wien",
+						"in Manila",
+						"in Graz"
 					],
 					"answer": 0,
+					"prompt": "Wo bleibt der Mann?",
 					"audioText": "Meine Eltern leben in Manila. Ich bleibe in Wien.",
 					"audioOnly": true
+				},
+				{
+					"id": "A1-04-L09-I6",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Sie sind im Park. Eine Frau fragt Sie: „Wer ist das?“ Sie zeigen auf Oma und Opa. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are in the park. A woman asks you: “Wer ist das?” You point at your grandma and grandpa. What do you say? Choose, then say it aloud.",
+						"tl": "Nasa park ka. Tinanong ka ng isang babae: “Wer ist das?” Itinuturo mo ang lolo at lola mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Das sind meine Großeltern.“ Großeltern ist Plural: „sind“ und „meine“. „Das ist“ passt zu einer Person. „mein“ passt zu „der“- und „das“-Wörtern, nicht zum Plural.",
+						"en": "Correct: “Das sind meine Großeltern.” Großeltern is plural: “sind” and “meine”. “Das ist” fits one person. “mein” fits “der” and “das” words, not the plural.",
+						"tl": "Tama: “Das sind meine Großeltern.” Plural ang Großeltern: “sind” at “meine”. Ang “Das ist” ay para sa isang tao. Ang “mein” ay para sa “der” at “das” na salita, hindi sa plural."
+					},
+					"goals": [
+						"A1-04-G2"
+					],
+					"refs": [
+						"W-A1-0340",
+						"W-A1-0022",
+						"W-A1-0328",
+						"W-A1-0035",
+						"W-A1-0003"
+					],
+					"options": [
+						"Das ist meine Großeltern.",
+						"Das sind mein Großeltern.",
+						"Das sind meine Großeltern."
+					],
+					"answer": 2,
+					"prompt": "Frau: „Wer ist das?“"
+				},
+				{
+					"id": "A1-04-L09-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lukas schreibt an Tom. Lesen Sie die E-Mail.",
+						"en": "Lukas writes to Tom. Read the e-mail.",
+						"tl": "Sumulat si Lukas kay Tom. Basahin ang e-mail."
+					},
+					"explanation": {
+						"de": "Im Text: „Meine Großeltern leben in Graz.“ „in Wien“ ist der Wohnort von Lukas, nicht von den Großeltern. „in Manila“ steht nicht im Text.",
+						"en": "The text says: “Meine Großeltern leben in Graz.” “in Wien” is where Lukas lives, not the grandparents. “in Manila” is not in the text.",
+						"tl": "Sabi sa teksto: “Meine Großeltern leben in Graz.” Ang “in Wien” ay tirahan ni Lukas, hindi ng mga lolo’t lola. Wala ang “in Manila” sa teksto."
+					},
+					"goals": [
+						"A1-04-G5"
+					],
+					"refs": [
+						"W-A1-0149",
+						"W-A1-0340",
+						"W-A1-0377",
+						"W-A1-0006",
+						"W-A1-0046",
+						"W-A1-0011"
+					],
+					"options": [
+						"in Wien",
+						"in Graz",
+						"in Manila"
+					],
+					"answer": 1,
+					"prompt": "Servus Tom! Wir sind sechs Leute: meine Eltern, meine Großeltern, mein Bruder und ich. Ich wohne in Wien. Meine Großeltern leben in Graz. Servus, Lukas\n\nWo leben die Großeltern?"
 				}
 			]
 		},
@@ -1838,30 +3327,54 @@
 				"en": "Families in Austria",
 				"tl": "Mga pamilya sa Austria"
 			},
+			"intro": {
+				"situation": {
+					"de": "Sie sind im Park. Sie sehen drei Familien.",
+					"en": "You are in the park. You see three families. Every family looks different.",
+					"tl": "Nasa park ka. May nakikita kang tatlong pamilya. Magkakaiba ang hitsura ng bawat isa."
+				},
+				"goal": {
+					"de": "Am Ende kannst du sagen: In Österreich gibt es viele Familienformen – auch Mutter und Kind oder Oma und Kind sind eine Familie.",
+					"en": "By the end you can say: in Austria there are many family forms – a mother and child or a grandma and child are a family too.",
+					"tl": "Sa dulo, masasabi mo: sa Austria may maraming anyo ng pamilya – pamilya rin ang nanay at anak o ang lola at anak."
+				}
+			},
 			"introduces": [],
 			"cards": [
 				{
-					"phrase": "Es gibt viele Familienformen.",
+					"kind": "phrase",
+					"phrase": "Vater, Mutter und Kind – das ist eine Familie.",
 					"note": {
-						"de": "Vater, Mutter, Kinder – oder eine Mutter allein mit Kind – oder die Oma mit dem Kind. Alles ist Familie.",
-						"en": "Father, mother, children – or a mother alone with a child – or grandma with the child. All of it is family.",
-						"tl": "Tatay, nanay, anak – o nanay na mag-isa kasama ang anak – o lola kasama ang bata. Lahat ay pamilya."
+						"de": "Das ist die bekannte Form: Eltern und Kinder. Aber das ist nicht die einzige Form.",
+						"en": "This is the well-known form: parents and children. But it is not the only form.",
+						"tl": "Ito ang kilalang anyo: magulang at mga anak. Pero hindi lang ito ang anyo."
 					}
 				},
 				{
-					"phrase": "Familien sind verschieden.",
+					"kind": "phrase",
+					"phrase": "Mutter und Kind – das ist auch eine Familie.",
 					"note": {
-						"de": "verschieden = nicht gleich. Ein Paar = zwei Menschen, z. B. Mann und Frau.",
-						"en": "verschieden = different. Ein Paar = a couple.",
-						"tl": "verschieden = magkakaiba. Ein Paar = magkapareha."
+						"de": "Eine Mutter oder ein Vater kann allein mit dem Kind leben. Das ist auch eine Familie.",
+						"en": "A mother or a father can live alone with a child. That is a family too.",
+						"tl": "Ang nanay o tatay ay puwedeng mag-isang kasama ang anak. Pamilya rin iyon."
 					}
 				},
 				{
-					"phrase": "die Patchwork-Familie",
+					"kind": "phrase",
+					"phrase": "Oma und Kind – das ist auch eine Familie.",
 					"note": {
-						"de": "Eltern mit Kindern aus einer früheren Beziehung.",
-						"en": "Parents with children from an earlier relationship.",
-						"tl": "Magulang na may anak mula sa naunang relasyon."
+						"de": "Manchmal leben Großeltern und Enkelkinder zusammen. „Enkelkind“ heißt: das Kind von meinem Sohn oder von meiner Tochter.",
+						"en": "Sometimes grandparents and grandchildren live together. “Enkelkind” means: the child of my son or daughter.",
+						"tl": "Minsan magkasama ang mga lolo’t lola at apo. Ang “Enkelkind” ay anak ng anak ko."
+					}
+				},
+				{
+					"kind": "culture",
+					"phrase": "Familien in Österreich",
+					"note": {
+						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern und Patchwork-Familien (Eltern mit Kindern aus früheren Beziehungen).",
+						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, and patchwork families (parents with children from earlier relationships).",
+						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, at patchwork na pamilya (magulang na may anak mula sa naunang relasyon)."
 					}
 				}
 			],
@@ -1871,39 +3384,41 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Sie sehen drei Familien im Park. Schauen Sie das Bild an.",
+						"en": "You see three families in the park. Look at the picture.",
+						"tl": "May tatlong pamilya sa park. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
-						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+						"de": "Richtig: Ja. Auch eine Mutter allein mit ihrem Kind ist eine Familie. In Österreich gibt es viele Familienformen, nicht nur Vater, Mutter und Kinder.",
+						"en": "Correct: Ja. A mother alone with her child is a family too. In Austria there are many family forms, not only father, mother and children.",
+						"tl": "Tama: Ja. Pamilya rin ang nanay na mag-isang kasama ang anak. Sa Austria may maraming anyo ng pamilya, hindi lang tatay, nanay at mga anak."
 					},
 					"goals": [
 						"A1-04-G6"
 					],
 					"refs": [
 						"W-A1-0331",
+						"W-A1-0333",
+						"W-A1-0328",
+						"W-A1-0046",
 						"W-A1-0051",
-						"W-A1-0052",
-						"W-A1-0003"
+						"W-A1-0052"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"Ja, das ist eine Familie.",
-						"Nein, das ist keine Familie."
+						"Ja.",
+						"Nein."
 					],
 					"answer": 0,
-					"prompt": "Bild 1: eine Mutter mit Kind. Ist das eine Familie?",
+					"prompt": "Nummer 1: eine Frau und ein Kind. Ist das eine Familie?",
 					"image": {
 						"src": "/img/a1-04-familien.svg",
 						"alt": {
-							"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-							"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-							"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+							"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+							"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+							"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 						}
 					}
 				},
@@ -1912,40 +3427,42 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Schauen Sie das Bild noch einmal an. Unter den Erwachsenen stehen Namen.",
+						"en": "Look at the picture again. The adults have name tags.",
+						"tl": "Tingnan muli ang larawan. May name tag ang mga nasa hustong gulang."
 					},
 					"explanation": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
-						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+						"de": "Richtig: die Oma. In Nummer 3 steht „Oma“ unter der Frau mit grauen Haaren und Brille. Großeltern mit Enkelkindern sind eine Familienform in Österreich. „Vater“ ist ein Mann, „Mutter“ ist in Nummer 1.",
+						"en": "Correct: die Oma. The woman with grey hair and glasses is the grandmother. Grandparents with grandchildren are a family form in Austria. “Vater” is a man; “Mutter” is in number 1.",
+						"tl": "Tama: die Oma. Ang babaeng may puting buhok at salamin ay ang lola. Ang lolo’t lola kasama ang apo ay isang anyo ng pamilya sa Austria. Ang “Vater” ay lalaki; ang “Mutter” ay nasa Nummer 1."
 					},
 					"goals": [
 						"A1-04-G6"
 					],
 					"refs": [
+						"W-A1-0341",
 						"W-A1-0331",
-						"W-A1-0041",
-						"W-A1-0042",
-						"W-A1-0043",
-						"W-A1-0797"
+						"W-A1-0046",
+						"W-A1-0820",
+						"W-A1-0001",
+						"W-A1-0002"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"drei",
-						"eine"
+						"der Vater",
+						"die Mutter",
+						"die Oma"
 					],
-					"answer": 0,
-					"prompt": "Wie viele Familien sind im Bild?",
+					"answer": 2,
+					"prompt": "Nummer 3: Das Kind und … sind eine Familie.",
 					"image": {
 						"src": "/img/a1-04-familien.svg",
 						"alt": {
-							"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-							"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-							"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+							"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+							"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+							"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 						}
 					}
 				},
@@ -1954,34 +3471,187 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Schauen Sie das Bild noch einmal an. Eine Familie hat Vater, Mutter und Kind.",
+						"en": "Look at the picture again. One family has father, mother and child.",
+						"tl": "Tingnan muli ang larawan. May tatay, nanay at anak ang isang pamilya."
 					},
 					"explanation": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.",
-						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork."
+						"de": "Richtig: Nummer 2 zeigt einen Mann, eine Frau und ein Kind. In Nummer 1 ist nur eine Frau, in Nummer 3 lebt eine Oma mit dem Kind. Alle drei Bilder zeigen eine Familie.",
+						"en": "Correct: Nummer 2 shows a man, a woman and a child. Number 1 has no man; in number 3 a grandma is with the child. All three pictures show a family.",
+						"tl": "Tama: Ang Nummer 2 ay lalaki, babae at bata. Walang lalaki sa Nummer 1; sa Nummer 3 ang lola kasama ang bata. Lahat ng tatlong larawan ay pamilya."
 					},
 					"goals": [
 						"A1-04-G6"
 					],
 					"refs": [
 						"W-A1-0331",
-						"W-A1-0357",
+						"W-A1-0332",
 						"W-A1-0046",
-						"W-A1-0010",
-						"W-A1-0051"
+						"W-A1-0820",
+						"W-A1-0037"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"Ja, nur Vater, Mutter und Kinder.",
-						"Nein, es gibt viele Familienformen."
+						"Nummer 1",
+						"Nummer 3",
+						"Nummer 2"
+					],
+					"answer": 2,
+					"prompt": "Wo sind Vater, Mutter und Kind?",
+					"image": {
+						"src": "/img/a1-04-familien.svg",
+						"alt": {
+							"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+							"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+							"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
+						}
+					}
+				},
+				{
+					"id": "A1-04-L10-I4",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Wählen Sie die richtige Antwort.",
+						"en": "Choose the correct answer.",
+						"tl": "Piliin ang tamang sagot."
+					},
+					"explanation": {
+						"de": "Richtig: Auch eine Mutter und ein Kind sind eine Familie. In Österreich gibt es verschiedene Familienformen. Der zweite Satz ist falsch, weil er nur eine Form nennt.",
+						"en": "Correct: a mother and a child are a family too. In Austria there are different family forms. The second sentence is wrong because it names only one form.",
+						"tl": "Tama: pamilya rin ang nanay at anak. Sa Austria may iba’t ibang anyo ng pamilya. Mali ang ikalawang pangungusap dahil isa lang ang binabanggit na anyo."
+					},
+					"goals": [
+						"A1-04-G6"
+					],
+					"refs": [
+						"W-A1-0331",
+						"W-A1-0046",
+						"W-A1-0055",
+						"W-A1-0056",
+						"W-A1-0004"
+					],
+					"sourceIds": [
+						"Q36"
+					],
+					"options": [
+						"Auch eine Mutter und ein Kind sind eine Familie.",
+						"Nur Vater, Mutter und Kinder sind eine Familie."
+					],
+					"answer": 0,
+					"prompt": "Welcher Satz ist richtig?"
+				},
+				{
+					"id": "A1-04-L10-I5",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Eine Frau, ihre Mutter und ihr Kind wohnen zusammen. Eine Freundin fragt Sie.",
+						"en": "A woman, her mother and her child live together. A friend asks you.",
+						"tl": "Magkasamang nakatira ang isang babae, ang nanay niya at ang anak niya. May kaibigang nagtanong sa iyo."
+					},
+					"explanation": {
+						"de": "Richtig: Ja. Drei Menschen aus der Familie wohnen zusammen: Großmutter, Mutter und Kind. In Österreich gibt es viele Familienformen, auch mit Oma.",
+						"en": "Correct: Ja. Three family members live together: grandmother, mother and child. In Austria there are many family forms, also with a grandmother.",
+						"tl": "Tama: Ja. Tatlong miyembro ng pamilya ang magkasama: lola, nanay at anak. Sa Austria may maraming anyo ng pamilya, kasama ang lola."
+					},
+					"goals": [
+						"A1-04-G6"
+					],
+					"refs": [
+						"W-A1-0331",
+						"W-A1-0341",
+						"W-A1-0051",
+						"W-A1-0052",
+						"W-A1-0003"
+					],
+					"sourceIds": [
+						"Q36"
+					],
+					"options": [
+						"Nein.",
+						"Ja."
 					],
 					"answer": 1,
-					"prompt": "Gibt es in Österreich nur eine Familienform?"
+					"prompt": "Ist das eine Familie?"
+				},
+				{
+					"id": "A1-04-L10-I6",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Ein Mädchen erzählt von seiner Familie. Hören Sie.",
+						"en": "A girl tells about her family. Listen.",
+						"tl": "Nagkukuwento ang isang batang babae tungkol sa pamilya niya. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Meine Eltern sind geschieden. Mein Vater lebt in Graz. Meine Mutter und ich leben in Wien.“ In Wien leben die Mutter und das Mädchen. Der Vater lebt in Graz.",
+						"en": "You hear: “Meine Eltern sind geschieden. Mein Vater lebt in Graz. Meine Mutter und ich leben in Wien.” In Vienna live the mother and the girl. The father lives in Graz.",
+						"tl": "Naririnig mo: “Meine Eltern sind geschieden. Mein Vater lebt in Graz. Meine Mutter und ich leben in Wien.” Sa Vienna nakatira ang nanay at ang batang babae. Ang tatay ay sa Graz."
+					},
+					"goals": [
+						"A1-04-G6"
+					],
+					"refs": [
+						"W-A1-0149",
+						"W-A1-0332",
+						"W-A1-0006",
+						"W-A1-0035",
+						"W-A1-0046",
+						"W-A1-0001"
+					],
+					"options": [
+						"die Mutter und das Kind",
+						"der Vater und das Kind",
+						"der Vater und die Mutter"
+					],
+					"answer": 0,
+					"prompt": "Wer lebt in Wien?",
+					"audioText": "Meine Eltern sind geschieden. Mein Vater lebt in Graz. Meine Mutter und ich leben in Wien.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-04-L10-I7",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Lena erzählt von Familien. Ergänzen Sie. Nehmen Sie die Wörter unten.",
+						"en": "Lena tells about families. Complete the sentences. Use the words below.",
+						"tl": "Nagkukuwento si Lena tungkol sa mga pamilya. Kumpletuhin. Gamitin ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: Familie – zweimal. Beide Gruppen sind eine Familie. „Eltern“ passt nicht: „eine Eltern“ geht nicht, „Eltern“ ist Plural.",
+						"en": "Correct: Familie – twice. Both groups are a family. “Eltern” does not fit: “eine Eltern” is impossible, “Eltern” is plural.",
+						"tl": "Tama: Familie – dalawang beses. Parehong grupo ay pamilya. Hindi bagay ang “Eltern”: hindi puwede ang “eine Eltern”, plural ang “Eltern”."
+					},
+					"goals": [
+						"A1-04-G6"
+					],
+					"refs": [
+						"W-A1-0331",
+						"W-A1-0046",
+						"W-A1-0055"
+					],
+					"text": "Vater, Mutter und Kind sind eine {{1}}. Oma und Kind sind auch eine {{2}}.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Familie"
+							]
+						},
+						"2": {
+							"accept": [
+								"Familie"
+							]
+						}
+					},
+					"bank": [
+						"Familie",
+						"Familie",
+						"Eltern"
+					]
 				}
 			]
 		}

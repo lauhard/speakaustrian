@@ -1,9 +1,9 @@
-# 035 – Content standard v2 rollout: lessons (batch 1: A1-02, A1-03)
+# 035 – Content standard v2 rollout: lessons (batch 1: A1-02, A1-03 ✅ · batch 2: A1-04, A1-05)
 
 **Context = this file + `docs/content-standard.md` (read it whole, it is short) + the pilot.** Do not read other spec docs, do not read whole `src/lib/content/*.json` (grep / `python3 -c` with filters only).
 
 ## Template (approved by Andi, 18.11.2026)
-- Pilot lesson: `# L01` block in `scripts/content/a1-03/gen_a103_lessons.py` – copy its shape exactly:
+- Pilot lesson: `# L01` block in `scripts/content/a1-03/gen_a103_lessons.py` (batch 1 result for more examples: `scripts/content/a1-02/gen_a102_lessons.py`, incl. its standard asserts in `lesson()`) – copy its shape exactly:
   `intro=INTRO(L(situation…), L(goal…))`, cards with `PHRASE` / `RULE(…, examples=[…])` / `CULTURE`, 6–8 items, each with a situation instruction (`L(de short, en/tl full)`), cloze with `bank=[correct…, 1–2 distractors]` (or `hints=[…]`), explanations = rule + why the typical wrong option is wrong.
 - Reference pictures: `static/img/a1-03-karte.svg`, `a1-03-oesterreich.svg`, `a1-05-sachen.svg`, `a1-05-tische.svg` (code in `gen_a103_pics.py`, `a1-05.py` – `geo_map`, `halo`, `BOOK`, `HEFT`). New or redrawn pictures match this level of detail.
 

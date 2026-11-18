@@ -57,11 +57,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"Anna",
 					"Lena",
+					"Anna",
 					"Maria"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wer ist die Schwester von Lukas?",
 				"image": {
 					"src": "/img/a1-04-stammbaum.svg",
@@ -95,11 +95,11 @@
 					"W-A1-0001"
 				],
 				"options": [
-					"der Sohn",
 					"der Opa",
+					"der Sohn",
 					"der Bruder"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Peter ist … von Franz und Maria.",
 				"image": {
 					"src": "/img/a1-04-stammbaum.svg",
@@ -174,11 +174,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"Maria",
 					"Anna",
+					"Maria",
 					"Lena"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Wer ist die Oma von Lena?",
 				"image": {
 					"src": "/img/a1-04-stammbaum.svg",
@@ -248,10 +248,10 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Ja.",
-					"Nein."
+					"Nein.",
+					"Ja."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Hallo Tom!\nIch bin ledig. Meine Schwester ist verheiratet.\nLiebe Grüße, Jose\n\nIst Jose verheiratet?",
 				"family": "A1-04-P-LE2-1"
 			},
@@ -343,10 +343,10 @@
 				],
 				"options": [
 					"ledig",
-					"geschieden",
-					"Kinder"
+					"Kinder",
+					"geschieden"
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Was steht nicht im Formular?",
 				"image": {
 					"src": "/img/a1-04-formular.svg",
@@ -417,10 +417,10 @@
 					"W-A1-0006"
 				],
 				"options": [
-					"keine Geschwister",
-					"einen Bruder"
+					"einen Bruder",
+					"keine Geschwister"
 				],
-				"answer": 0,
+				"answer": 1,
 				"audioText": "Ich habe keine Geschwister.",
 				"audioOnly": true
 			},
@@ -480,10 +480,10 @@
 					"W-A1-0814"
 				],
 				"options": [
-					"80 Jahre",
-					"18 Jahre"
+					"18 Jahre",
+					"80 Jahre"
 				],
-				"answer": 0,
+				"answer": 1,
 				"audioText": "Mein Opa ist achtzig Jahre alt.",
 				"audioOnly": true
 			},
@@ -512,10 +512,10 @@
 					"W-A1-0798"
 				],
 				"options": [
-					"drei Personen",
-					"vier Personen"
+					"vier Personen",
+					"drei Personen"
 				],
-				"answer": 1,
+				"answer": 0,
 				"audioText": "Wir sind vier: Vater, Mutter, Sohn und Tochter.",
 				"audioOnly": true,
 				"family": "A1-04-P-HO1-3"
@@ -643,10 +643,10 @@
 					"W-A1-0084"
 				],
 				"options": [
-					"geschieden",
-					"verheiratet"
+					"verheiratet",
+					"geschieden"
 				],
-				"answer": 0,
+				"answer": 1,
 				"audioText": "Ich bin nicht mehr verheiratet, ich bin geschieden.",
 				"audioOnly": true,
 				"family": "A1-04-P-HO2-3"
@@ -712,10 +712,10 @@
 				"options": [
 					"In Manila.",
 					"Meine Oma.",
-					"Nein, ich bin ledig.",
-					"Sieben."
+					"Sieben.",
+					"Nein, ich bin ledig."
 				],
-				"answer": 3,
+				"answer": 2,
 				"audioText": "Wie alt ist Ihre Tochter?",
 				"audioOnly": true,
 				"family": "A1-04-P-HO3-1"
@@ -746,11 +746,11 @@
 				],
 				"options": [
 					"Sieben.",
-					"Lukas.",
 					"In Manila.",
+					"Lukas.",
 					"Nein, ich bin ledig."
 				],
-				"answer": 1,
+				"answer": 2,
 				"audioText": "Wie heißt dein Sohn?",
 				"audioOnly": true
 			},
@@ -781,10 +781,10 @@
 				"options": [
 					"Ja, zwei.",
 					"Sieben.",
-					"In Manila.",
-					"Meine Oma."
+					"Meine Oma.",
+					"In Manila."
 				],
-				"answer": 3,
+				"answer": 2,
 				"audioText": "Wer ist das auf dem Foto?",
 				"audioOnly": true,
 				"family": "A1-04-P-HO3-3"
@@ -1330,11 +1330,11 @@
 					"W-A1-0117"
 				],
 				"options": [
-					"Sind Sie verheiratet?",
 					"Haben Sie einen Partner?",
+					"Sind Sie verheiratet?",
 					"Haben Sie Geschwister?"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wortkarte: Partner?",
 				"family": "A1-04-P-SP1-1"
 			},
@@ -1362,11 +1362,11 @@
 					"W-A1-0037"
 				],
 				"options": [
-					"Leben Ihre Großeltern noch?",
 					"Wo leben Ihre Eltern?",
+					"Leben Ihre Großeltern noch?",
 					"Wie groß ist Ihre Familie?"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Wortkarte: Großeltern?"
 			},
 			{
@@ -1395,10 +1395,10 @@
 				],
 				"options": [
 					"Haben Sie Kinder?",
-					"Wo leben Ihre Eltern?",
-					"Wie groß ist Ihre Familie?"
+					"Wie groß ist Ihre Familie?",
+					"Wo leben Ihre Eltern?"
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Wortkarte: Familie?",
 				"family": "A1-04-P-SP1-3"
 			},
@@ -1429,10 +1429,10 @@
 				],
 				"options": [
 					"Ich bin vier.",
-					"Meine Familie ist Mann.",
-					"Wir sind vier: mein Mann, zwei Kinder und ich."
+					"Wir sind vier: mein Mann, zwei Kinder und ich.",
+					"Meine Familie ist Mann."
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Wie groß ist Ihre Familie?"
 			},
 			{
@@ -1458,11 +1458,11 @@
 					"W-A1-0041"
 				],
 				"options": [
-					"Mein Oma hat fünfundsiebzig.",
 					"Meine Oma ist fünfundsiebzig.",
+					"Mein Oma hat fünfundsiebzig.",
 					"Meine Oma ist siebenundfünfzig."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wie alt ist Ihre Oma?",
 				"family": "A1-04-P-SP2-1"
 			},
@@ -1583,10 +1583,10 @@
 				],
 				"options": [
 					"Das ist mein Großeltern.",
-					"Das sind meine Großeltern.",
-					"Das sind mein Großeltern."
+					"Das sind mein Großeltern.",
+					"Das sind meine Großeltern."
 				],
-				"answer": 1,
+				"answer": 2,
 				"family": "A1-04-P-SP3-1"
 			},
 			{
@@ -1611,11 +1611,11 @@
 					"W-A1-0003"
 				],
 				"options": [
+					"Das ist mein Mann.",
 					"Das ist meine Mann.",
-					"Das ist mein Männer.",
-					"Das ist mein Mann."
+					"Das ist mein Männer."
 				],
-				"answer": 2
+				"answer": 0
 			},
 			{
 				"id": "A1-04-P-SP3-4",
@@ -1707,11 +1707,11 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Nein, seit 2010.",
 					"Ja, seit 2010.",
+					"Nein, seit 2010.",
 					"Ja, ich habe seit 2010."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Sind Sie verheiratet?",
 				"family": "A1-04-P-SP4-1"
 			},
@@ -1742,11 +1742,11 @@
 					"W-A1-0052"
 				],
 				"options": [
+					"Nein, aber ich habe einen Partner.",
 					"Ja, ich habe einen Partner.",
-					"Nein, ich bin Partner.",
-					"Nein, aber ich habe einen Partner."
+					"Nein, ich bin Partner."
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "Sind Sie verheiratet?"
 			},
 			{
@@ -1777,10 +1777,10 @@
 				],
 				"options": [
 					"Nein, und wir haben Kinder.",
-					"Ja, ich habe verheiratet.",
-					"Ja, und wir haben Kinder."
+					"Ja, und wir haben Kinder.",
+					"Ja, ich habe verheiratet."
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Sind Sie verheiratet?",
 				"family": "A1-04-P-SP4-3"
 			},
@@ -1839,10 +1839,10 @@
 				],
 				"options": [
 					"Wie heißt dein Mann?",
-					"Wie heißt Ihre Mann?",
-					"Wie heißt Ihr Mann?"
+					"Wie heißt Ihr Mann?",
+					"Wie heißt Ihre Mann?"
 				],
-				"answer": 2,
+				"answer": 1,
 				"family": "A1-04-P-SP5-1"
 			},
 			{
@@ -1958,11 +1958,11 @@
 					"W-A1-0003"
 				],
 				"options": [
-					"Kinder",
 					"Kinds",
+					"Kinder",
 					"Kinden"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "das Kind → die …",
 				"family": "A1-04-P-GW1-1"
 			},
@@ -1989,11 +1989,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"Bruders",
 					"Brüder",
+					"Bruders",
 					"Brudern"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "der Bruder → die …"
 			},
 			{
@@ -2019,10 +2019,10 @@
 				],
 				"options": [
 					"Fraus",
-					"Frauen",
-					"Frau"
+					"Frau",
+					"Frauen"
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "die Frau → die …",
 				"family": "A1-04-P-GW1-3"
 			},
@@ -2301,11 +2301,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"Tochter",
 					"Oma",
+					"Tochter",
 					"Schwester"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Die Mutter von meinem Vater ist meine …"
 			},
 			{
@@ -2330,11 +2330,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"Oma",
 					"Schwester",
+					"Oma",
 					"Tochter"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Die Mutter von meiner Mutter ist meine …",
 				"family": "A1-04-P-GW4-1"
 			},
@@ -2360,11 +2360,11 @@
 					"W-A1-0046"
 				],
 				"options": [
-					"Großeltern",
 					"Geschwister",
+					"Großeltern",
 					"Kinder"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Oma und Opa sind meine …"
 			},
 			{
@@ -2390,10 +2390,10 @@
 				],
 				"options": [
 					"Großeltern",
-					"Eltern",
-					"Geschwister"
+					"Geschwister",
+					"Eltern"
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Mutter und Vater sind meine …",
 				"family": "A1-04-P-GW4-3"
 			},
@@ -2425,10 +2425,10 @@
 					"Q36"
 				],
 				"options": [
-					"Ja.",
-					"Nein."
+					"Nein.",
+					"Ja."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Ein Vater lebt allein mit zwei Kindern. Ist das eine Familie?"
 			},
 			{
@@ -2492,10 +2492,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Hat eine Familie immer Kinder?"
 			},
 			{
@@ -2568,9 +2568,9 @@
 				"image": {
 					"src": "/img/a1-04-familien.svg",
 					"alt": {
-						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+						"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+						"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 					}
 				}
 			},
@@ -2600,17 +2600,17 @@
 					"Q36"
 				],
 				"options": [
-					"Bild 1",
-					"Bild 3"
+					"Bild 3",
+					"Bild 1"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "In welchem Bild ist die Oma?",
 				"image": {
 					"src": "/img/a1-04-familien.svg",
 					"alt": {
-						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+						"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+						"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 					}
 				},
 				"family": "A1-04-P-WE3-1"
@@ -2673,10 +2673,10 @@
 					"W-A1-0051"
 				],
 				"options": [
-					"Nein, noch nicht.",
-					"Ja."
+					"Ja.",
+					"Nein, noch nicht."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Anna und Tom heiraten bald. Sie sind sehr glücklich.\nSind Anna und Tom schon verheiratet?",
 				"family": "A1-04-P-LE4-1"
 			},
@@ -2910,10 +2910,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Eltern, Kinder und Oma wohnen zusammen. Ist das eine Familie?"
 			},
 			{
@@ -3160,10 +3160,10 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Nein, mit ihrem Sohn.",
-					"Ja, allein."
+					"Ja, allein.",
+					"Nein, mit ihrem Sohn."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Hallo Tom!\nIch bin geschieden. Ich lebe mit meinem Sohn in Linz.\nLiebe Grüße, Anna\n\nLebt Anna allein?",
 				"family": "A1-04-T-LE2-1"
 			},
@@ -3229,10 +3229,10 @@
 				],
 				"options": [
 					"ledig",
-					"geschieden",
-					"verheiratet"
+					"verheiratet",
+					"geschieden"
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Was ist angekreuzt?",
 				"image": {
 					"src": "/img/a1-04-formular.svg",
@@ -3341,10 +3341,10 @@
 					"W-A1-0796"
 				],
 				"options": [
-					"eine Tochter",
-					"zwei Töchter"
+					"zwei Töchter",
+					"eine Tochter"
 				],
-				"answer": 0,
+				"answer": 1,
 				"audioText": "Wir haben drei Kinder: zwei Söhne und eine Tochter.",
 				"audioOnly": true,
 				"family": "A1-04-T-HO1-1"
@@ -3371,10 +3371,10 @@
 					"W-A1-0093"
 				],
 				"options": [
-					"in Wien",
-					"in Graz"
+					"in Graz",
+					"in Wien"
 				],
-				"answer": 1,
+				"answer": 0,
 				"audioText": "Meine Großeltern leben in Graz.",
 				"audioOnly": true,
 				"family": "A1-04-T-HO1-1"
@@ -3404,10 +3404,10 @@
 					"W-A1-0804"
 				],
 				"options": [
-					"verheiratet",
-					"ledig"
+					"ledig",
+					"verheiratet"
 				],
-				"answer": 0,
+				"answer": 1,
 				"audioText": "Ich bin seit zehn Jahren verheiratet.",
 				"audioOnly": true
 			},
@@ -3437,10 +3437,10 @@
 					"W-A1-0087"
 				],
 				"options": [
-					"verheiratet",
-					"ledig"
+					"ledig",
+					"verheiratet"
 				],
-				"answer": 1,
+				"answer": 0,
 				"audioText": "Ich bin ledig und wohne allein.",
 				"audioOnly": true,
 				"family": "A1-04-T-HO2-1"
@@ -3505,11 +3505,11 @@
 				],
 				"options": [
 					"Nein, ich bin ledig.",
-					"Ja, zwei.",
 					"In Manila.",
+					"Ja, zwei.",
 					"Lukas."
 				],
-				"answer": 1,
+				"answer": 2,
 				"audioText": "Haben Sie Kinder?",
 				"audioOnly": true
 			},
@@ -3539,11 +3539,11 @@
 				],
 				"options": [
 					"Ja, zwei.",
-					"Nein, ich bin ledig.",
 					"Sieben.",
-					"Meine Oma."
+					"Meine Oma.",
+					"Nein, ich bin ledig."
 				],
-				"answer": 1,
+				"answer": 3,
 				"audioText": "Sind Sie verheiratet?",
 				"audioOnly": true,
 				"family": "A1-04-T-HO3-1"
@@ -3962,11 +3962,11 @@
 					"W-A1-0117"
 				],
 				"options": [
-					"Sind Sie verheiratet?",
 					"Haben Sie Kinder?",
-					"Haben Sie einen Partner?"
+					"Haben Sie einen Partner?",
+					"Sind Sie verheiratet?"
 				],
-				"answer": 0,
+				"answer": 2,
 				"prompt": "Wortkarte: Familienstand?",
 				"family": "A1-04-T-SP1-1"
 			},
@@ -3995,10 +3995,10 @@
 				],
 				"options": [
 					"Haben Sie Kinder?",
-					"Haben Sie Geschwister?",
-					"Leben Ihre Großeltern noch?"
+					"Leben Ihre Großeltern noch?",
+					"Haben Sie Geschwister?"
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Wortkarte: Geschwister?",
 				"family": "A1-04-T-SP1-1"
 			},
@@ -4029,10 +4029,10 @@
 				],
 				"options": [
 					"Ja, ich bin Tochter und Sohn.",
-					"Ja, eine Tochter und einen Sohn.",
-					"Nein, eine Tochter."
+					"Nein, eine Tochter.",
+					"Ja, eine Tochter und einen Sohn."
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Haben Sie Kinder?"
 			},
 			{
@@ -4060,11 +4060,11 @@
 					"W-A1-0093"
 				],
 				"options": [
-					"Meine Eltern leben in Cebu.",
 					"Mein Eltern lebt in Cebu.",
-					"Ich lebe in Cebu Eltern."
+					"Ich lebe in Cebu Eltern.",
+					"Meine Eltern leben in Cebu."
 				],
-				"answer": 0,
+				"answer": 2,
 				"prompt": "Wo leben Ihre Eltern?",
 				"family": "A1-04-T-SP2-1"
 			},
@@ -4125,10 +4125,10 @@
 				],
 				"options": [
 					"Das ist mein Schwester.",
-					"Das ist meiner Schwester.",
-					"Das ist meine Schwester."
+					"Das ist meine Schwester.",
+					"Das ist meiner Schwester."
 				],
-				"answer": 2
+				"answer": 1
 			},
 			{
 				"id": "A1-04-T-SP3-2",
@@ -4152,11 +4152,11 @@
 					"W-A1-0003"
 				],
 				"options": [
-					"Das ist mein Bruder.",
 					"Das ist meine Bruder.",
+					"Das ist mein Bruder.",
 					"Das sind mein Bruder."
 				],
-				"answer": 0,
+				"answer": 1,
 				"family": "A1-04-T-SP3-1"
 			},
 			{
@@ -4182,10 +4182,10 @@
 				],
 				"options": [
 					"Das ist mein Eltern.",
-					"Das sind mein Eltern.",
-					"Das sind meine Eltern."
+					"Das sind meine Eltern.",
+					"Das sind mein Eltern."
 				],
-				"answer": 2,
+				"answer": 1,
 				"family": "A1-04-T-SP3-1"
 			},
 			{
@@ -4215,11 +4215,11 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Ja, ich habe verheiratet.",
 					"Ja, ich bin verheiratet.",
+					"Ja, ich habe verheiratet.",
 					"Nein, ich bin verheiratet."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Sind Sie verheiratet?"
 			},
 			{
@@ -4249,11 +4249,11 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Ja, ich bin geschieden.",
 					"Nein, ich bin geschieden.",
+					"Ja, ich bin geschieden.",
 					"Nein, ich habe geschieden."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Sind Sie verheiratet?",
 				"family": "A1-04-T-SP4-1"
 			},
@@ -4285,10 +4285,10 @@
 				],
 				"options": [
 					"Ja, ich bin ledig.",
-					"Nein, ich bin ledig.",
-					"Nein, ich habe ledig."
+					"Nein, ich habe ledig.",
+					"Nein, ich bin ledig."
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Sind Sie verheiratet?",
 				"family": "A1-04-T-SP4-1"
 			},
@@ -4345,11 +4345,11 @@
 					"W-A1-0012"
 				],
 				"options": [
-					"Wie alt ist dein Sohn?",
 					"Wie alt ist Ihr Sohn?",
+					"Wie alt ist dein Sohn?",
 					"Wie alt ist Ihre Sohn?"
 				],
-				"answer": 1,
+				"answer": 0,
 				"family": "A1-04-T-SP5-1"
 			},
 			{
@@ -4376,11 +4376,11 @@
 					"W-A1-0037"
 				],
 				"options": [
-					"Wo leben deine Eltern?",
 					"Wo leben Ihre Eltern?",
+					"Wo leben deine Eltern?",
 					"Wo leben Ihr Eltern?"
 				],
-				"answer": 1,
+				"answer": 0,
 				"family": "A1-04-T-SP5-1"
 			},
 			{
@@ -4406,11 +4406,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"Vaters",
 					"Väter",
+					"Vaters",
 					"Vatern"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "der Vater → die …"
 			},
 			{
@@ -4435,11 +4435,11 @@
 					"W-A1-0002"
 				],
 				"options": [
+					"Familien",
 					"Families",
-					"Familie",
-					"Familien"
+					"Familie"
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "die Familie → die …",
 				"family": "A1-04-T-GW1-1"
 			},
@@ -4466,11 +4466,11 @@
 					"W-A1-0002"
 				],
 				"options": [
+					"Opas",
 					"Opa",
-					"Omas",
-					"Opas"
+					"Omas"
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "der Opa → die …",
 				"family": "A1-04-T-GW1-1"
 			},
@@ -4685,10 +4685,10 @@
 				],
 				"options": [
 					"Bruder",
-					"Sohn",
-					"Opa"
+					"Opa",
+					"Sohn"
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Der Vater von meinem Vater ist mein …"
 			},
 			{
@@ -4813,10 +4813,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Ein Vater lebt mit seinem Kind und der Oma. Ist das eine Familie?",
 				"family": "A1-04-T-WE1-1"
 			},
@@ -4848,10 +4848,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein, nur mit Kindern.",
-					"Ja, auch ohne Kinder."
+					"Ja, auch ohne Kinder.",
+					"Nein, nur mit Kindern."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Ein Paar hat keine Kinder. Ist das eine Familie?",
 				"family": "A1-04-T-WE1-1"
 			},
@@ -4914,10 +4914,10 @@
 					"Q36"
 				],
 				"options": [
-					"eine Familie ohne Eltern",
-					"eine Familie mit Kindern aus einer früheren Beziehung"
+					"eine Familie mit Kindern aus einer früheren Beziehung",
+					"eine Familie ohne Eltern"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Eine Patchwork-Familie ist …",
 				"family": "A1-04-T-WE2-1"
 			},
@@ -4981,17 +4981,17 @@
 					"Q36"
 				],
 				"options": [
-					"die Oma",
-					"der Vater"
+					"der Vater",
+					"die Oma"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Bild 3: Wer ist hier mit dem Kind?",
 				"image": {
 					"src": "/img/a1-04-familien.svg",
 					"alt": {
-						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+						"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+						"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 					}
 				}
 			},
@@ -5029,9 +5029,9 @@
 				"image": {
 					"src": "/img/a1-04-familien.svg",
 					"alt": {
-						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+						"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+						"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 					}
 				},
 				"family": "A1-04-T-WE3-1"
@@ -5064,17 +5064,17 @@
 					"Q36"
 				],
 				"options": [
-					"zwei",
-					"drei"
+					"drei",
+					"zwei"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wie viele Familien zeigt das Bild?",
 				"image": {
 					"src": "/img/a1-04-familien.svg",
 					"alt": {
-						"de": "Drei Bilder mit drei Familien: Mutter mit Kind; Vater, Mutter und Kind; Oma mit Kind.",
-						"en": "Three pictures with three families: mother with child; father, mother and child; grandma with child.",
-						"tl": "Tatlong larawan ng tatlong pamilya: nanay at anak; tatay, nanay at anak; lola at bata."
+						"de": "Drei Bilder mit drei Familien: Frau mit Kind; Mann, Frau und Kind; Frau mit grauen Haaren und Kind.",
+						"en": "Three pictures with three families: a woman and a child; a man, a woman and a child; a grey-haired woman and a child.",
+						"tl": "Tatlong larawan ng tatlong pamilya: babae at bata; lalaki, babae at bata; babaeng may puting buhok at bata."
 					}
 				},
 				"family": "A1-04-T-WE3-1"
