@@ -282,245 +282,18 @@
 				"en": "Hello and goodbye",
 				"tl": "Pagbati at pagpapaalam"
 			},
-			"cards": [
-				{
-					"phrase": "Grüß Gott!",
-					"note": {
-						"de": "So grüßt man in Österreich – den ganzen Tag, bei allen Leuten.",
-						"en": "The standard greeting in Austria – all day, with everyone.",
-						"tl": "Karaniwang pagbati sa Austria – buong araw, sa lahat ng tao."
-					}
+			"intro": {
+				"situation": {
+					"de": "Anna Gruber arbeitet im Büro in Wien. Jonas Huber kommt am Morgen, am Abend sagt er „Auf Wiedersehen“. Was sagt man wann?",
+					"en": "Anna Gruber works in an office in Vienna. Jonas Huber arrives in the morning and says goodbye in the evening. Which greeting is right at which moment?",
+					"tl": "Nagtatrabaho si Anna Gruber sa isang opisina sa Vienna. Dumarating si Jonas Huber sa umaga at nagpapaalam sa gabi. Aling pagbati ang tama sa bawat oras?"
 				},
-				{
-					"phrase": "Guten Morgen! Guten Tag! Guten Abend!",
-					"note": {
-						"de": "Morgen – Tag – Abend: Der Gruß passt zur Tageszeit.",
-						"en": "Morning – day – evening: the greeting matches the time of day.",
-						"tl": "Umaga – araw – gabi: bagay ang pagbati sa oras."
-					}
-				},
-				{
-					"phrase": "Gute Nacht!",
-					"note": {
-						"de": "Nur wenn man schlafen geht.",
-						"en": "Only when someone is going to bed.",
-						"tl": "Sinasabi lang kapag matutulog na."
-					}
-				},
-				{
-					"phrase": "Servus! Hallo!",
-					"note": {
-						"de": "Für Freunde und Familie. „Servus“ sagt man beim Kommen und beim Gehen.",
-						"en": "For friends and family. “Servus” works for hello and for goodbye.",
-						"tl": "Para sa kaibigan at pamilya. Ang “Servus” ay pambati at pamamaalam."
-					}
-				},
-				{
-					"phrase": "Auf Wiedersehen! Tschüss!",
-					"note": {
-						"de": "Beim Gehen. „Auf Wiedersehen“ ist höflich, „Tschüss“ ist für Freunde.",
-						"en": "When you leave. “Auf Wiedersehen” is polite, “Tschüss” is for friends.",
-						"tl": "Kapag aalis. Magalang ang “Auf Wiedersehen”, pangkaibigan ang “Tschüss”."
-					}
+				"goal": {
+					"de": "zu jeder Tageszeit grüßen und sich verabschieden – höflich („Grüß Gott“) und unter Freunden („Servus“).",
+					"en": "greet people at any time of day and say goodbye – politely (“Grüß Gott”) and among friends (“Servus”).",
+					"tl": "bumati at magpaalam anumang oras ng araw – magalang (“Grüß Gott”) at sa mga kaibigan (“Servus”)."
 				}
-			],
-			"items": [
-				{
-					"id": "A1-01-L01-I1",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Es ist Abend. Sie kommen. Was sagen Sie?",
-						"en": "It is evening. You arrive. What do you say?",
-						"tl": "Gabi na. Dumating ka. Ano ang sasabihin mo?"
-					},
-					"options": [
-						"Guten Abend!",
-						"Gute Nacht!",
-						"Auf Wiedersehen!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Am Abend sagt man „Guten Abend“. „Gute Nacht“ sagt man nur, wenn man schlafen geht.",
-						"en": "In the evening you say “Guten Abend”. “Gute Nacht” is only for going to bed.",
-						"tl": "Sa gabi, “Guten Abend”. Ang “Gute Nacht” ay kapag matutulog na."
-					}
-				},
-				{
-					"id": "A1-01-L01-I2",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Sie gehen. Was sagen Sie zu Frau Huber?",
-						"en": "You are leaving. What do you say to Ms Huber?",
-						"tl": "Aalis ka na. Ano ang sasabihin mo kay Gng. Huber?"
-					},
-					"options": [
-						"Auf Wiedersehen!",
-						"Grüß Gott!",
-						"Guten Morgen!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Beim Gehen sagt man höflich „Auf Wiedersehen“. „Grüß Gott“ sagt man beim Kommen.",
-						"en": "When leaving you politely say “Auf Wiedersehen”. “Grüß Gott” is for arriving.",
-						"tl": "Kapag aalis, magalang na “Auf Wiedersehen”. Ang “Grüß Gott” ay pagdating."
-					}
-				},
-				{
-					"id": "A1-01-L01-I3",
-					"type": "choice",
-					"skill": "hoeren",
-					"instruction": {
-						"de": "Hören Sie. Was hören Sie?",
-						"en": "Listen. What do you hear?",
-						"tl": "Makinig. Ano ang naririnig mo?"
-					},
-					"options": [
-						"Servus!",
-						"Tschüss!",
-						"Hallo!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Sie hören: „Servus!“ – ein Gruß für Freunde, typisch für Österreich.",
-						"en": "You hear “Servus!” – a greeting for friends, typical of Austria.",
-						"tl": "Narinig mo: “Servus!” – pagbati sa kaibigan, tipikal sa Austria."
-					},
-					"audioText": "Servus!",
-					"audioOnly": true
-				},
-				{
-					"id": "A1-01-L01-I4",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Ein Freund kommt. Was passt?",
-						"en": "A friend arrives. Which one fits?",
-						"tl": "Dumating ang kaibigan. Alin ang bagay?"
-					},
-					"options": [
-						"Servus!",
-						"Auf Wiedersehen!",
-						"Gute Nacht!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Zu Freunden sagt man „Servus“ oder „Hallo“.",
-						"en": "To friends you say “Servus” or “Hallo”.",
-						"tl": "Sa kaibigan, “Servus” o “Hallo”."
-					}
-				},
-				{
-					"id": "A1-01-L01-I5",
-					"type": "cloze",
-					"skill": "schreiben",
-					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
-					},
-					"text": "Sie kommen: Grüß {{1}}! Sie gehen: Auf {{2}}!",
-					"gaps": {
-						"1": {
-							"accept": [
-								"Gott"
-							]
-						},
-						"2": {
-							"accept": [
-								"Wiedersehen"
-							]
-						}
-					},
-					"explanation": {
-						"de": "„Grüß Gott“ beim Kommen, „Auf Wiedersehen“ beim Gehen. „Gott“ und „Wiedersehen“ schreibt man groß.",
-						"en": "“Grüß Gott” when arriving, “Auf Wiedersehen” when leaving. “Gott” and “Wiedersehen” start with a capital letter.",
-						"tl": "“Grüß Gott” pagdating, “Auf Wiedersehen” pag-alis. Malaking titik ang simula ng “Gott” at “Wiedersehen”."
-					}
-				},
-				{
-					"id": "A1-01-L01-I6",
-					"type": "choice",
-					"skill": "hoeren",
-					"instruction": {
-						"de": "Hören Sie. Was hören Sie?",
-						"en": "Listen. What do you hear?",
-						"tl": "Makinig. Ano ang naririnig mo?"
-					},
-					"options": [
-						"Guten Abend!",
-						"Guten Morgen!",
-						"Gute Nacht!"
-					],
-					"answer": 1,
-					"explanation": {
-						"de": "Sie hören: „Guten Morgen!“",
-						"en": "You hear: “Guten Morgen!”",
-						"tl": "Narinig mo: “Guten Morgen!”"
-					},
-					"audioText": "Guten Morgen!",
-					"audioOnly": true
-				},
-				{
-					"id": "A1-01-L01-B1",
-					"type": "choice",
-					"skill": "lesen",
-					"image": {
-						"src": "/img/a1-01-nacht.svg",
-						"alt": {
-							"de": "Nacht im Kinderzimmer: Ein Kind liegt im Bett und schläft ein, die Mutter steht am Bett und winkt. Draußen sind Mond und Sterne, die Uhr zeigt 21:00.",
-							"en": "Night in a child's bedroom: a child lies in bed and is falling asleep, the mother stands by the bed and waves. Outside there are the moon and stars, the clock shows 21:00.",
-							"tl": "Gabi sa kuwarto ng bata: nakahiga ang bata sa kama at patulog na, nakatayo ang nanay sa tabi ng kama at kumakaway. May buwan at mga bituin sa labas, 21:00 ang nasa orasan."
-						}
-					},
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Das Kind schläft ein. Was sagt die Mutter?",
-						"en": "Look at the picture. The child is falling asleep. What does the mother say?",
-						"tl": "Tingnan ang larawan. Patulog na ang bata. Ano ang sinasabi ng nanay?"
-					},
-					"options": [
-						"Guten Morgen!",
-						"Gute Nacht!",
-						"Grüß Gott!"
-					],
-					"answer": 1,
-					"explanation": {
-						"de": "Es ist Nacht, das Kind liegt im Bett. Wenn jemand schlafen geht, sagt man „Gute Nacht“.",
-						"en": "It is night, the child is in bed. When someone goes to sleep you say “Gute Nacht”.",
-						"tl": "Gabi na at nasa kama ang bata. Kapag matutulog na ang isang tao, “Gute Nacht” ang sinasabi."
-					}
-				},
-				{
-					"id": "A1-01-L01-B2",
-					"type": "choice",
-					"skill": "lesen",
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					},
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Der Mann kommt ins Büro. Was sagt er?",
-						"en": "Look at the picture. The man comes into the office. What does he say?",
-						"tl": "Tingnan ang larawan. Pumasok ang lalaki sa opisina. Ano ang sinasabi niya?"
-					},
-					"options": [
-						"Gute Nacht!",
-						"Auf Wiedersehen!",
-						"Grüß Gott!"
-					],
-					"answer": 2,
-					"explanation": {
-						"de": "Er kommt und es ist Tag (10 Uhr). Im Büro grüßt man höflich: „Grüß Gott!“",
-						"en": "He is arriving and it is daytime (10 o'clock). In an office you greet politely: “Grüß Gott!”",
-						"tl": "Dumarating siya at araw pa (alas-10). Sa opisina, magalang ang pagbati: “Grüß Gott!”"
-					}
-				}
-			],
+			},
 			"introduces": [
 				"W-A1-0376",
 				"W-A1-0377",
@@ -531,6 +304,349 @@
 				"W-A1-0382",
 				"W-A1-0383",
 				"W-A1-0385"
+			],
+			"cards": [
+				{
+					"kind": "phrase",
+					"phrase": "Grüß Gott!",
+					"note": {
+						"de": "So grüßen Sie in Österreich: höflich, zu jeder Tageszeit, auch zu Menschen, die Sie nicht kennen. Die Antwort ist wieder „Grüß Gott!“.",
+						"en": "This is how you greet people in Austria: politely, at any time of day, also people you do not know. The answer is “Grüß Gott!” again.",
+						"tl": "Ganito ang pagbati sa Austria: magalang, anumang oras ng araw, kahit sa mga hindi mo kilala. Ang sagot ay “Grüß Gott!” din."
+					}
+				},
+				{
+					"kind": "rule",
+					"phrase": "Guten Morgen · Guten Tag · Guten Abend",
+					"note": {
+						"de": "Der Gruß passt zur Tageszeit: früh am Tag „Guten Morgen“, untertags „Guten Tag“, am Abend „Guten Abend“. Wann genau der Abend beginnt, ist nicht fest – wenn es dunkel wird, passt „Guten Abend“ sicher.",
+						"en": "The greeting matches the time of day: early in the day “Guten Morgen”, during the day “Guten Tag”, in the evening “Guten Abend”. There is no exact time when the evening starts – when it gets dark, “Guten Abend” is always right.",
+						"tl": "Ang pagbati ay ayon sa oras ng araw: maaga ang “Guten Morgen”, sa araw ang “Guten Tag”, sa gabi ang “Guten Abend”. Walang eksaktong oras kung kailan nagsisimula ang gabi – kapag dumidilim na, tama palagi ang “Guten Abend”."
+					},
+					"examples": [
+						"Guten Morgen, Frau Gruber!",
+						"Guten Tag, Herr Huber!",
+						"Guten Abend, Frau Santos!"
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "Gute Nacht! – nur vor dem Schlafen",
+					"note": {
+						"de": "„Gute Nacht“ ist kein Gruß zum Kommen. Sie sagen es, wenn jemand schlafen geht. Wer am Abend kommt, sagt „Guten Abend“. Achtung: Nacht ist „die Nacht“, darum „Gute“ – bei Morgen, Tag und Abend heißt es „Guten“.",
+						"en": "“Gute Nacht” is not a greeting for arriving. You say it when someone goes to sleep. Anyone arriving in the evening says “Guten Abend”. Careful: Nacht is “die Nacht”, so it is “Gute” – with Morgen, Tag and Abend it is “Guten”.",
+						"tl": "Hindi pagbati sa pagdating ang “Gute Nacht”. Sinasabi ito kapag may matutulog na. Ang dumarating sa gabi ay nagsasabi ng “Guten Abend”. Pansin: “die Nacht” ang Nacht, kaya “Gute” – sa Morgen, Tag at Abend ay “Guten”."
+					},
+					"examples": [
+						"Gute Nacht, Maria!",
+						"Guten Abend, Maria!"
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Servus! · Hallo! · Tschüss!",
+					"note": {
+						"de": "Für Freunde und Familie. „Servus“ passt beim Kommen und beim Gehen. „Hallo“ sagen Sie beim Kommen, „Tschüss“ beim Gehen.",
+						"en": "For friends and family. “Servus” works when you arrive and when you leave. You say “Hallo” when you arrive and “Tschüss” when you leave.",
+						"tl": "Para sa mga kaibigan at pamilya. Ang “Servus” ay para sa pagdating at pag-alis. Ang “Hallo” ay sinasabi sa pagdating, ang “Tschüss” sa pag-alis."
+					}
+				},
+				{
+					"kind": "culture",
+					"phrase": "Auf Wiedersehen!",
+					"note": {
+						"de": "Beim Gehen sagen Sie höflich „Auf Wiedersehen!“ – zum Beispiel im Büro, im Geschäft oder bei einer Ärztin. In Österreich hören Sie oft auch „Auf Wiederschauen!“. Unter Freunden reicht „Servus!“ oder „Tschüss!“.",
+						"en": "When you leave, you politely say “Auf Wiedersehen!” – for example in an office, a shop or at the doctor’s. In Austria you also often hear “Auf Wiederschauen!”. Among friends “Servus!” or “Tschüss!” is enough.",
+						"tl": "Sa pag-alis, magalang na sinasabi ang “Auf Wiedersehen!” – halimbawa sa opisina, sa tindahan o sa doktor. Sa Austria madalas ding maririnig ang “Auf Wiederschauen!”. Sa mga kaibigan, sapat na ang “Servus!” o “Tschüss!”."
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L01-I1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an.",
+						"en": "Jonas Huber comes to the office three times: in the morning, in the afternoon and in the evening. Look at the sky and the clock in picture 3.",
+						"tl": "Tatlong beses na pumupunta si Jonas Huber sa opisina: sa umaga, sa hapon at sa gabi. Tingnan ang langit at ang orasan sa larawan 3."
+					},
+					"explanation": {
+						"de": "Richtig: „Guten Abend!“ Bild 3 zeigt 19:00 und der Himmel ist dunkel: Es ist Abend. „Gute Nacht“ sagt man nicht beim Kommen, sondern vor dem Schlafen. „Guten Morgen“ passt zu Bild 1.",
+						"en": "Correct: “Guten Abend!” Picture 3 shows 7 p.m. and the sky is dark: it is evening. You do not say “Gute Nacht” when you arrive, but before going to sleep. “Guten Morgen” fits picture 1.",
+						"tl": "Tama: “Guten Abend!” Ipinapakita ng larawan 3 ang 7:00 ng gabi at madilim ang langit: gabi na. Hindi sinasabi ang “Gute Nacht” sa pagdating kundi bago matulog. Ang “Guten Morgen” ay para sa larawan 1."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0381",
+						"W-A1-0382",
+						"W-A1-0379"
+					],
+					"options": [
+						"Guten Morgen!",
+						"Gute Nacht!",
+						"Guten Abend!"
+					],
+					"answer": 2,
+					"prompt": "Bild 3: Was sagt Jonas?",
+					"image": {
+						"src": "/img/a1-01-tageszeit.svg",
+						"alt": {
+							"de": "Drei Fenster mit Himmel und Uhr. Bild 1: oranger Himmel, Uhr 07:00. Bild 2: blauer Himmel mit hoher Sonne, Uhr 14:00. Bild 3: dunkler Himmel mit Mond und Sternen, Uhr 19:00. Unter jeder Uhr steht ein Mann.",
+							"en": "Three windows with sky and clock. Picture 1: orange sky, clock 07:00. Picture 2: blue sky with a high sun, clock 14:00. Picture 3: dark sky with moon and stars, clock 19:00. A man stands under each clock.",
+							"tl": "Tatlong bintana na may langit at orasan. Larawan 1: kulay-kahel na langit, orasan 07:00. Larawan 2: asul na langit at mataas na araw, orasan 14:00. Larawan 3: madilim na langit na may buwan at mga bituin, orasan 19:00. May lalaking nakatayo sa ilalim ng bawat orasan."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L01-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an.",
+						"en": "Jonas Huber comes into the office of Frau Gruber. He does not know her well. Look at the name signs. What does he say?",
+						"tl": "Pumapasok si Jonas Huber sa opisina ni Frau Gruber. Hindi niya siya lubos na kilala. Tingnan ang mga name sign. Ano ang sinasabi niya?"
+					},
+					"explanation": {
+						"de": "Richtig: „Grüß Gott, Frau Gruber!“ „Grüß Gott“ ist der höfliche Gruß beim Kommen, zu jeder Tageszeit. „Gute Nacht“ ist für das Schlafengehen, „Tschüss“ ist ein Gruß zum Gehen unter Freunden.",
+						"en": "Correct: “Grüß Gott, Frau Gruber!” “Grüß Gott” is the polite greeting when you arrive, at any time of day. “Gute Nacht” is for going to sleep, “Tschüss” is a goodbye among friends.",
+						"tl": "Tama: “Grüß Gott, Frau Gruber!” Ang “Grüß Gott” ay ang magalang na pagbati sa pagdating, anumang oras. Ang “Gute Nacht” ay para sa pagtulog, ang “Tschüss” ay paalam sa mga kaibigan."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0376",
+						"W-A1-0328"
+					],
+					"options": [
+						"Grüß Gott, Frau Gruber!",
+						"Gute Nacht, Frau Gruber!",
+						"Tschüss, Frau Gruber!"
+					],
+					"answer": 0,
+					"prompt": "Was sagt Jonas?",
+					"image": {
+						"src": "/img/a1-01-amt.svg",
+						"alt": {
+							"de": "Ein Büro am Vormittag. Frau Gruber sitzt am Schreibtisch, Herr Huber kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
+							"en": "An office in the morning. Frau Gruber sits at her desk, Herr Huber comes in and waves. Both have a name sign, and there is a clock on the wall.",
+							"tl": "Isang opisina sa umaga. Nakaupo si Frau Gruber sa mesa, pumapasok si Herr Huber at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L01-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Zu welchem Bild passt der Gruß?",
+						"en": "Jonas greets Frau Gruber. Listen and look at the three pictures again: which picture fits the greeting?",
+						"tl": "Binabati ni Jonas si Frau Gruber. Makinig at tingnan muli ang tatlong larawan: aling larawan ang tugma sa pagbati?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Guten Morgen, Frau Gruber!“ „Morgen“ passt zu Bild 1: Die Sonne geht auf, die Uhr zeigt 07:00. Um 14:00 (Bild 2) und um 19:00 (Bild 3) wäre „Guten Morgen“ nicht richtig.",
+						"en": "You hear: “Guten Morgen, Frau Gruber!” “Morgen” fits picture 1: the sun is rising and the clock shows 07:00. At 14:00 (picture 2) and at 19:00 (picture 3) “Guten Morgen” would not be right.",
+						"tl": "Naririnig mo: “Guten Morgen, Frau Gruber!” Ang “Morgen” ay para sa larawan 1: sumisikat ang araw at 07:00 ang orasan. Sa 14:00 (larawan 2) at sa 19:00 (larawan 3) hindi tama ang “Guten Morgen”."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0379"
+					],
+					"options": [
+						"Bild 1",
+						"Bild 2",
+						"Bild 3"
+					],
+					"answer": 0,
+					"audioText": "Guten Morgen, Frau Gruber!",
+					"audioOnly": true,
+					"image": {
+						"src": "/img/a1-01-tageszeit.svg",
+						"alt": {
+							"de": "Drei Fenster mit Himmel und Uhr. Bild 1: oranger Himmel, Uhr 07:00. Bild 2: blauer Himmel mit hoher Sonne, Uhr 14:00. Bild 3: dunkler Himmel mit Mond und Sternen, Uhr 19:00. Unter jeder Uhr steht ein Mann.",
+							"en": "Three windows with sky and clock. Picture 1: orange sky, clock 07:00. Picture 2: blue sky with a high sun, clock 14:00. Picture 3: dark sky with moon and stars, clock 19:00. A man stands under each clock.",
+							"tl": "Tatlong bintana na may langit at orasan. Larawan 1: kulay-kahel na langit, orasan 07:00. Larawan 2: asul na langit at mataas na araw, orasan 14:00. Larawan 3: madilim na langit na may buwan at mga bituin, orasan 19:00. May lalaking nakatayo sa ilalim ng bawat orasan."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L01-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Maria sieht ihren Freund Jose auf der Straße. Was sagt sie?",
+						"en": "Maria sees her friend Jose in the street. What does she say?",
+						"tl": "Nakita ni Maria ang kaibigan niyang si Jose sa kalye. Ano ang sinasabi niya?"
+					},
+					"explanation": {
+						"de": "Richtig: „Servus, Jose!“ „Servus“ ist der Gruß unter Freunden. „Auf Wiedersehen“ sagt man beim Gehen und eher höflich, nicht beim Treffen. „Gute Nacht“ ist nur für das Schlafengehen.",
+						"en": "Correct: “Servus, Jose!” “Servus” is the greeting among friends. “Auf Wiedersehen” is said when leaving, and is rather polite, not when meeting. “Gute Nacht” is only for going to sleep.",
+						"tl": "Tama: “Servus, Jose!” Ang “Servus” ay pagbati ng magkakaibigan. Ang “Auf Wiedersehen” ay sinasabi sa pag-alis at medyo magalang, hindi sa pagkikita. Ang “Gute Nacht” ay para lang sa pagtulog."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0377"
+					],
+					"options": [
+						"Servus, Jose!",
+						"Auf Wiedersehen, Jose!",
+						"Gute Nacht, Jose!"
+					],
+					"answer": 0
+				},
+				{
+					"id": "A1-01-L01-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie die Sätze.",
+						"en": "Jonas comes into the office and later leaves again. Complete what he says with the words below.",
+						"tl": "Pumapasok si Jonas sa opisina at pagkatapos ay umaalis. Kumpletuhin ang sinasabi niya gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Grüß Gott“ beim Kommen, „Auf Wiedersehen“ beim Gehen. „Gott“ und „Wiedersehen“ schreibt man groß. „Guten Gott“ gibt es nicht, und „Tschüss“ ist ein anderes Wort: „Auf Tschüss“ ist falsch.",
+						"en": "Correct: “Grüß Gott” when arriving, “Auf Wiedersehen” when leaving. “Gott” and “Wiedersehen” are written with a capital letter. There is no “Guten Gott”, and “Tschüss” is a different word: “Auf Tschüss” is wrong.",
+						"tl": "Tama: “Grüß Gott” sa pagdating, “Auf Wiedersehen” sa pag-alis. Nakasulat nang malaki ang unang titik ng “Gott” at “Wiedersehen”. Walang “Guten Gott”, at ibang salita ang “Tschüss”: mali ang “Auf Tschüss”."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0376",
+						"W-A1-0383"
+					],
+					"text": "Jonas kommt: „{{1}} Gott, Frau Gruber!“\nJonas geht: „Auf {{2}}, Frau Gruber!“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Grüß"
+							]
+						},
+						"2": {
+							"accept": [
+								"Wiedersehen"
+							]
+						}
+					},
+					"bank": [
+						"Grüß",
+						"Wiedersehen",
+						"Guten",
+						"Tschüss"
+					]
+				},
+				{
+					"id": "A1-01-L01-I6",
+					"type": "cloze",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Schreiben Sie die zwei Wörter.",
+						"en": "Maria’s mother says goodnight to her daughter. Look at the picture and complete the greeting with the words below.",
+						"tl": "Binabati ng nanay ni Maria ang anak niya ng magandang gabi bago matulog. Tingnan ang larawan at kumpletuhin ang pagbati gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Gute Nacht, Maria!“ Das Bild zeigt die Nacht (Mond, 21:00), das Kind geht schlafen. „Guten Morgen“ wäre falsch. Und: „die Nacht“ → „Gute“, nicht „Guten“.",
+						"en": "Correct: “Gute Nacht, Maria!” The picture shows the night (moon, 21:00), the child is going to sleep. “Guten Morgen” would be wrong. And: “die Nacht” → “Gute”, not “Guten”.",
+						"tl": "Tama: “Gute Nacht, Maria!” Ipinapakita ng larawan ang gabi (buwan, 21:00), matutulog na ang bata. Mali ang “Guten Morgen”. At: “die Nacht” → “Gute”, hindi “Guten”."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0382"
+					],
+					"text": "„{{1}} {{2}}, Maria!“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Gute"
+							]
+						},
+						"2": {
+							"accept": [
+								"Nacht"
+							]
+						}
+					},
+					"bank": [
+						"Gute",
+						"Nacht",
+						"Guten",
+						"Morgen"
+					],
+					"image": {
+						"src": "/img/a1-01-nacht.svg",
+						"alt": {
+							"de": "Nacht im Kinderzimmer: Ein Kind liegt im Bett und schläft ein, die Mutter steht am Bett und winkt. Draußen sind Mond und Sterne, die Uhr zeigt 21:00.",
+							"en": "Night in a child’s bedroom: a child lies in bed and is falling asleep, the mother stands by the bed and waves. Outside there are the moon and stars, the clock shows 21:00.",
+							"tl": "Gabi sa kuwarto ng bata: nakahiga ang bata sa kama at patulog na, nakatayo ang nanay sa tabi ng kama at kumakaway. May buwan at mga bituin sa labas, 21:00 ang nasa orasan."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L01-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You leave the office. Frau Gruber is still working. What do you say? Choose, then say it aloud.",
+						"tl": "Aalis ka sa opisina. Nagtatrabaho pa si Frau Gruber. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Auf Wiedersehen, Frau Gruber!“ Beim Gehen sagt man höflich „Auf Wiedersehen“. „Guten Morgen“ und „Hallo“ sind Grüße zum Kommen, „Hallo“ ist außerdem zu locker für Frau Gruber.",
+						"en": "Correct: “Auf Wiedersehen, Frau Gruber!” When leaving you politely say “Auf Wiedersehen”. “Guten Morgen” and “Hallo” are greetings for arriving, and “Hallo” is also too casual for Frau Gruber.",
+						"tl": "Tama: “Auf Wiedersehen, Frau Gruber!” Sa pag-alis, magalang na sinasabi ang “Auf Wiedersehen”. Ang “Guten Morgen” at “Hallo” ay pagbati sa pagdating, at ang “Hallo” ay masyadong kaswal para kay Frau Gruber."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0383",
+						"W-A1-0378"
+					],
+					"options": [
+						"Auf Wiedersehen, Frau Gruber!",
+						"Guten Morgen, Frau Gruber!",
+						"Hallo, Frau Gruber!"
+					],
+					"answer": 0
+				},
+				{
+					"id": "A1-01-L01-I8",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie, was Sie antworten.",
+						"en": "It is morning. You come into the office, and Frau Gruber greets you. Write your answer.",
+						"tl": "Umaga na. Pumasok ka sa opisina at binati ka ni Frau Gruber. Isulat ang sagot mo."
+					},
+					"explanation": {
+						"de": "Richtig: „Guten Morgen!“ oder „Grüß Gott!“ Man grüßt zurück, mit demselben Gruß oder mit „Grüß Gott“. „Guten“ und „Morgen“ schreibt man groß.",
+						"en": "Correct: “Guten Morgen!” or “Grüß Gott!” You greet back, with the same greeting or with “Grüß Gott”. “Guten” and “Morgen” are written with a capital letter.",
+						"tl": "Tama: “Guten Morgen!” o “Grüß Gott!” Binabati mo pabalik, gamit ang parehong pagbati o ang “Grüß Gott”. Nakasulat nang malaki ang unang titik ng “Guten” at “Morgen”."
+					},
+					"goals": [
+						"A1-01-G1"
+					],
+					"refs": [
+						"W-A1-0379",
+						"W-A1-0376"
+					],
+					"prompt": "Frau Gruber: „Guten Morgen!“ – Sie: „…“",
+					"accept": [
+						"Guten Morgen!",
+						"Guten Morgen, Frau Gruber!",
+						"Grüß Gott!",
+						"Grüß Gott, Frau Gruber!"
+					]
+				}
 			]
 		},
 		{
@@ -540,264 +656,18 @@
 				"en": "My name is …",
 				"tl": "Ang pangalan ko ay …"
 			},
-			"cards": [
-				{
-					"phrase": "Ich heiße Maria Santos.",
-					"note": {
-						"de": "So sagen Sie Ihren Namen.",
-						"en": "This is how you say your name.",
-						"tl": "Ganito sabihin ang pangalan mo."
-					}
+			"intro": {
+				"situation": {
+					"de": "Jonas Huber kommt zu Frau Gruber. Sie fragt: „Wie heißen Sie?“ Er sagt seinen Namen.",
+					"en": "Jonas Huber comes to Frau Gruber. She asks: “Wie heißen Sie?” He tells her his name.",
+					"tl": "Pumunta si Jonas Huber kay Frau Gruber. Nagtanong siya: “Wie heißen Sie?” Sinabi niya ang pangalan niya."
 				},
-				{
-					"phrase": "Ich bin Maria.",
-					"note": {
-						"de": "Kürzer und auch richtig.",
-						"en": "Shorter and also correct.",
-						"tl": "Mas maikli at tama rin."
-					}
-				},
-				{
-					"phrase": "Wie heißen Sie?",
-					"note": {
-						"de": "So fragen Sie höflich nach dem Namen.",
-						"en": "The polite way to ask for a name.",
-						"tl": "Magalang na pagtatanong ng pangalan."
-					}
-				},
-				{
-					"phrase": "Vorname: Maria. Familienname: Santos.",
-					"note": {
-						"de": "Der Vorname steht vorne, der Familienname hinten.",
-						"en": "The first name comes first, the family name last.",
-						"tl": "Nauuna ang Vorname (pangalan), kasunod ang Familienname (apelyido)."
-					}
-				},
-				{
-					"phrase": "Grüß Gott, Frau Santos! Grüß Gott, Herr Huber!",
-					"note": {
-						"de": "„Frau“ und „Herr“ stehen immer mit dem Familiennamen.",
-						"en": "“Frau” and “Herr” always go with the family name.",
-						"tl": "Laging kasama ng apelyido ang “Frau” at “Herr”."
-					}
+				"goal": {
+					"de": "sagen, wie Sie heißen – und andere höflich nach dem Namen fragen: „Wie heißen Sie?“",
+					"en": "say what your name is – and politely ask other people for theirs: “Wie heißen Sie?”",
+					"tl": "sabihin ang pangalan mo – at magalang na itanong ang pangalan ng iba: “Wie heißen Sie?”"
 				}
-			],
-			"items": [
-				{
-					"id": "A1-01-L02-I1",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Schreiben Sie das fehlende Wort.",
-						"en": "Write the missing word.",
-						"tl": "Isulat ang nawawalang salita."
-					},
-					"text": "Grüß Gott! Ich {{1}} Jonas Huber.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"heiße",
-								"bin"
-							]
-						}
-					},
-					"explanation": {
-						"de": "„Ich heiße …“ oder „Ich bin …“ – beides ist richtig. Bei „ich“ endet das Verb auf -e: ich heiße.",
-						"en": "“Ich heiße …” or “Ich bin …” – both are correct. With “ich” the verb ends in -e: ich heiße.",
-						"tl": "“Ich heiße …” o “Ich bin …” – parehong tama. Kapag “ich”, -e ang dulo ng pandiwa: ich heiße."
-					}
-				},
-				{
-					"id": "A1-01-L02-I2",
-					"type": "choice",
-					"skill": "lesen",
-					"instruction": {
-						"de": "Lesen Sie. Was ist der Familienname?",
-						"en": "Read. What is the family name?",
-						"tl": "Basahin. Alin ang apelyido?"
-					},
-					"options": [
-						"Santos",
-						"Maria",
-						"Frau"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Maria ist der Vorname, Santos ist der Familienname.",
-						"en": "Maria is the first name, Santos is the family name.",
-						"tl": "Maria ang pangalan, Santos ang apelyido."
-					},
-					"prompt": "„Ich heiße Maria Santos.“"
-				},
-				{
-					"id": "A1-01-L02-I3",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Jonas Huber kommt. Was passt?",
-						"en": "Jonas Huber arrives. Which one fits?",
-						"tl": "Dumating si Jonas Huber. Alin ang bagay?"
-					},
-					"options": [
-						"Grüß Gott, Herr Huber!",
-						"Grüß Gott, Frau Huber!",
-						"Grüß Gott, Herr Jonas!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Jonas ist ein Mann: „Herr“. Nach „Herr“ steht der Familienname, nicht der Vorname.",
-						"en": "Jonas is a man: “Herr”. After “Herr” comes the family name, not the first name.",
-						"tl": "Lalaki si Jonas: “Herr”. Apelyido ang kasunod ng “Herr”, hindi pangalan."
-					}
-				},
-				{
-					"id": "A1-01-L02-I4",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
-					},
-					"text": "Wie {{1}} Sie? – Ich {{2}} Anna Gruber.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"heißen"
-							]
-						},
-						"2": {
-							"accept": [
-								"heiße",
-								"bin"
-							]
-						}
-					},
-					"explanation": {
-						"de": "Bei „Sie“ endet das Verb auf -en: Sie heißen. Bei „ich“ auf -e: ich heiße.",
-						"en": "With “Sie” the verb ends in -en: Sie heißen. With “ich” in -e: ich heiße.",
-						"tl": "Kapag “Sie”, -en ang dulo: Sie heißen. Kapag “ich”, -e: ich heiße."
-					}
-				},
-				{
-					"id": "A1-01-L02-I5",
-					"type": "choice",
-					"skill": "hoeren",
-					"instruction": {
-						"de": "Hören Sie. Was ist der Vorname?",
-						"en": "Listen. What is the first name?",
-						"tl": "Makinig. Alin ang pangalan (Vorname)?"
-					},
-					"options": [
-						"Gruber",
-						"Anna",
-						"Frau"
-					],
-					"answer": 1,
-					"explanation": {
-						"de": "Sie hören: „Ich heiße Anna Gruber.“ Anna ist der Vorname.",
-						"en": "You hear: “Ich heiße Anna Gruber.” Anna is the first name.",
-						"tl": "Narinig mo: “Ich heiße Anna Gruber.” Anna ang pangalan."
-					},
-					"audioText": "Ich heiße Anna Gruber.",
-					"audioOnly": true
-				},
-				{
-					"id": "A1-01-L02-B1",
-					"type": "cloze",
-					"skill": "lesen",
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					},
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Lesen Sie die Namen und schreiben Sie.",
-						"en": "Look at the picture. Read the names and write.",
-						"tl": "Tingnan ang larawan. Basahin ang mga pangalan at isulat."
-					},
-					"text": "Sie heißt {{1}} Gruber. Er heißt Jonas {{2}}.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"Anna"
-							]
-						},
-						"2": {
-							"accept": [
-								"Huber"
-							]
-						}
-					},
-					"explanation": {
-						"de": "Die Namen stehen auf den Schildern: Anna Gruber und Jonas Huber. „sie“ für eine Frau, „er“ für einen Mann.",
-						"en": "The names are on the signs: Anna Gruber and Jonas Huber. “sie” for a woman, “er” for a man.",
-						"tl": "Nasa mga karatula ang mga pangalan: Anna Gruber at Jonas Huber. “sie” para sa babae, “er” para sa lalaki."
-					}
-				},
-				{
-					"id": "A1-01-L02-B2",
-					"type": "short",
-					"skill": "schreiben",
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					},
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Antworten Sie mit einem Satz.",
-						"en": "Look at the picture. Answer with one sentence.",
-						"tl": "Tingnan ang larawan. Sumagot gamit ang isang pangungusap."
-					},
-					"prompt": "Wie heißt er?",
-					"accept": [
-						"Er heißt Jonas Huber.",
-						"Er heißt Jonas.",
-						"Er heißt Herr Huber.",
-						"Jonas Huber"
-					],
-					"explanation": {
-						"de": "„Er heißt Jonas Huber.“ Bei „er“ endet das Verb auf -t: er heißt.",
-						"en": "“Er heißt Jonas Huber.” With “er” the verb ends in -t: er heißt.",
-						"tl": "“Er heißt Jonas Huber.” Kapag “er”, -t ang dulo ng pandiwa: er heißt."
-					}
-				},
-				{
-					"id": "A1-01-L02-B3",
-					"type": "choice",
-					"skill": "lesen",
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					},
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Was ist richtig?",
-						"en": "Look at the picture. What is correct?",
-						"tl": "Tingnan ang larawan. Alin ang tama?"
-					},
-					"options": [
-						"Der Familienname von Anna ist Huber.",
-						"Der Vorname von Herrn Huber ist Jonas.",
-						"Frau Gruber heißt Jonas."
-					],
-					"answer": 1,
-					"explanation": {
-						"de": "Auf dem Schild steht „Jonas Huber“: Jonas ist der Vorname, Huber der Familienname.",
-						"en": "The badge says “Jonas Huber”: Jonas is the first name, Huber the family name.",
-						"tl": "Nakasulat sa karatula ang “Jonas Huber”: Jonas ang pangalan, Huber ang apelyido."
-					}
-				}
-			],
+			},
 			"introduces": [
 				"W-A1-0006",
 				"W-A1-0147",
@@ -808,6 +678,303 @@
 				"W-A1-0328",
 				"W-A1-0041",
 				"W-A1-0013"
+			],
+			"cards": [
+				{
+					"kind": "phrase",
+					"phrase": "Wie heißen Sie? – Ich heiße Jonas Huber.",
+					"note": {
+						"de": "So fragen Sie höflich nach dem Namen und so antworten Sie. Kürzer geht auch: „Ich bin Jonas Huber.“",
+						"en": "This is how you politely ask for a name and how you answer. A shorter answer is also correct: “Ich bin Jonas Huber.”",
+						"tl": "Ganito magalang na itanong ang pangalan at ganito sumagot. Puwede rin ang mas maikli: “Ich bin Jonas Huber.”"
+					}
+				},
+				{
+					"kind": "rule",
+					"phrase": "ich heiße · Sie heißen",
+					"note": {
+						"de": "Das Verb ändert sich mit der Person. Bei „ich“ endet es auf -e, bei „Sie“ auf -en. Darum: „Wie heißen Sie?“, aber „Ich heiße …“.",
+						"en": "The verb changes with the person. With “ich” it ends in -e, with “Sie” in -en. That is why: “Wie heißen Sie?”, but “Ich heiße …”.",
+						"tl": "Nagbabago ang verb ayon sa tao. Sa “ich”, nagtatapos ito sa -e; sa “Sie”, sa -en. Kaya: “Wie heißen Sie?”, pero “Ich heiße …”."
+					},
+					"examples": [
+						"Ich heiße Maria.",
+						"Wie heißen Sie?"
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "Vorname + Familienname = Name",
+					"note": {
+						"de": "Der Vorname ist der erste Teil des Namens (Maria), der Familienname der zweite (Santos). Beim Sprechen sagen Sie zuerst den Vornamen. Auf Formularen stehen beide in getrennten Feldern.",
+						"en": "The Vorname is the first part of the name (Maria), the Familienname the second (Santos). When speaking, you say the Vorname first. On forms both have their own field.",
+						"tl": "Ang Vorname ang unang bahagi ng pangalan (Maria), ang Familienname ang pangalawa (Santos). Sa pagsasalita, unang sinasabi ang Vorname. Sa mga form, may sariling kahon ang bawat isa."
+					},
+					"examples": [
+						"Maria ist der Vorname.",
+						"Santos ist der Familienname.",
+						"Maria Santos ist der Name."
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "Herr / Frau + Familienname",
+					"note": {
+						"de": "Höflich sagen Sie „Herr“ oder „Frau“ und den Familiennamen: Herr Huber, Frau Gruber. Mit dem Vornamen („Herr Jonas“) ist es nicht die übliche höfliche Anrede.",
+						"en": "To be polite, you say “Herr” or “Frau” and the family name: Herr Huber, Frau Gruber. With the first name (“Herr Jonas”) it is not the usual polite form of address.",
+						"tl": "Para maging magalang, sinasabi ang “Herr” o “Frau” at ang apelyido: Herr Huber, Frau Gruber. Kapag Vorname ang gamit (“Herr Jonas”), hindi ito ang karaniwang magalang na pagtawag."
+					},
+					"examples": [
+						"Grüß Gott, Herr Huber!",
+						"Guten Tag, Frau Gruber!"
+					]
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L02-I1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an.",
+						"en": "Maria Santos registers for a German course in Vienna. Look at the form. Which sentence is correct?",
+						"tl": "Nagpaparehistro si Maria Santos sa isang kursong German sa Vienna. Tingnan ang form. Aling pangungusap ang tama?"
+					},
+					"explanation": {
+						"de": "Richtig: Beim Feld „Vorname“ steht Maria, beim Feld „Familienname“ steht Santos. „Frau“ gehört nicht zum Namen: Es zeigt nur, dass Maria eine Frau ist.",
+						"en": "Correct: next to “Vorname” it says Maria, next to “Familienname” it says Santos. “Frau” is not part of the name: it only shows that Maria is a woman.",
+						"tl": "Tama: sa tabi ng “Vorname” ay Maria, sa tabi ng “Familienname” ay Santos. Hindi bahagi ng pangalan ang “Frau”: ipinapakita lang nito na babae si Maria."
+					},
+					"goals": [
+						"A1-01-G2"
+					],
+					"refs": [
+						"W-A1-0325",
+						"W-A1-0326"
+					],
+					"options": [
+						"Der Vorname ist Maria. Der Familienname ist Santos.",
+						"Der Vorname ist Santos. Der Familienname ist Maria.",
+						"Der Vorname ist Maria. Der Familienname ist Frau."
+					],
+					"answer": 0,
+					"image": {
+						"src": "/img/a1-01-formular.svg",
+						"alt": {
+							"de": "Ein Formular mit der Überschrift „Name“. Bei „Herr“ und „Frau“ ist ein Kästchen angekreuzt. Darunter stehen zwei Zeilen: „Vorname“ und „Familienname“, beide ausgefüllt.",
+							"en": "A form headed “Name”. One of the boxes “Herr” and “Frau” is ticked. Below are two filled-in lines: “Vorname” and “Familienname”.",
+							"tl": "Isang form na may pamagat na “Name”. May ekis ang isa sa mga kahong “Herr” at “Frau”. Sa ibaba ay may dalawang linyang may sagot: “Vorname” at “Familienname”."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L02-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an.",
+						"en": "Jonas Huber meets Maria Santos in the course. Look at the form: is she a Frau or a Herr? What does he say?",
+						"tl": "Nakilala ni Jonas Huber si Maria Santos sa kurso. Tingnan ang form: Frau ba siya o Herr? Ano ang sinasabi niya?"
+					},
+					"explanation": {
+						"de": "Richtig: „Grüß Gott, Frau Santos!“ Auf dem Formular ist „Frau“ angekreuzt, und höflich sagt man Frau + Familienname. „Herr“ ist für Männer. „Frau Maria“ nennt den Vornamen und ist nicht die übliche höfliche Anrede.",
+						"en": "Correct: “Grüß Gott, Frau Santos!” On the form “Frau” is ticked, and politely you say Frau + family name. “Herr” is for men. “Frau Maria” uses the first name and is not the usual polite form of address.",
+						"tl": "Tama: “Grüß Gott, Frau Santos!” Nakaekis ang “Frau” sa form, at magalang ang Frau + apelyido. Ang “Herr” ay para sa lalaki. Ang “Frau Maria” ay gumagamit ng Vorname at hindi ito ang karaniwang magalang na pagtawag."
+					},
+					"goals": [
+						"A1-01-G2"
+					],
+					"refs": [
+						"W-A1-0328",
+						"W-A1-0326"
+					],
+					"options": [
+						"Grüß Gott, Frau Santos!",
+						"Grüß Gott, Herr Santos!",
+						"Grüß Gott, Frau Maria!"
+					],
+					"answer": 0,
+					"prompt": "Was sagt Jonas?",
+					"image": {
+						"src": "/img/a1-01-formular.svg",
+						"alt": {
+							"de": "Ein Formular mit der Überschrift „Name“. Bei „Herr“ und „Frau“ ist ein Kästchen angekreuzt. Darunter stehen zwei Zeilen: „Vorname“ und „Familienname“, beide ausgefüllt.",
+							"en": "A form headed “Name”. One of the boxes “Herr” and “Frau” is ticked. Below are two filled-in lines: “Vorname” and “Familienname”.",
+							"tl": "Isang form na may pamagat na “Name”. May ekis ang isa sa mga kahong “Herr” at “Frau”. Sa ibaba ay may dalawang linyang may sagot: “Vorname” at “Familienname”."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L02-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was ist richtig?",
+						"en": "Anna Gruber introduces herself. Listen. Which sentence is correct?",
+						"tl": "Nagpapakilala si Anna Gruber. Makinig. Aling pangungusap ang tama?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Ich heiße Anna Gruber.“ Der Vorname kommt zuerst: Anna ist der Vorname, Gruber ist der Familienname.",
+						"en": "You hear: “Ich heiße Anna Gruber.” The Vorname comes first: Anna is the Vorname, Gruber is the Familienname.",
+						"tl": "Naririnig mo: “Ich heiße Anna Gruber.” Una ang Vorname: Anna ang Vorname, Gruber ang Familienname."
+					},
+					"goals": [
+						"A1-01-G2"
+					],
+					"refs": [
+						"W-A1-0325",
+						"W-A1-0326",
+						"W-A1-0147"
+					],
+					"options": [
+						"Gruber ist der Vorname.",
+						"Anna ist der Vorname.",
+						"Anna ist der Familienname."
+					],
+					"answer": 1,
+					"audioText": "Ich heiße Anna Gruber.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L02-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Frau Gruber asks Jonas Huber for his name. Complete the dialogue with the words below.",
+						"tl": "Tinanong ni Frau Gruber si Jonas Huber tungkol sa pangalan niya. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Wie heißen Sie?“ – „Ich heiße …“. Bei „Sie“ endet das Verb auf -en, bei „ich“ auf -e. „heißt“ passt zu er/sie, nicht zu „Sie“ oder „ich“.",
+						"en": "Correct: “Wie heißen Sie?” – “Ich heiße …”. With “Sie” the verb ends in -en, with “ich” in -e. “heißt” goes with er/sie, not with “Sie” or “ich”.",
+						"tl": "Tama: “Wie heißen Sie?” – “Ich heiße …”. Sa “Sie”, nagtatapos sa -en ang verb; sa “ich”, sa -e. Ang “heißt” ay para sa er/sie, hindi sa “Sie” o “ich”."
+					},
+					"goals": [
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0147",
+						"W-A1-0041"
+					],
+					"text": "Frau Gruber: Wie {{1}} Sie?\nJonas: Ich {{2}} Jonas Huber.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"heißen"
+							],
+							"hint": "(heißen)"
+						},
+						"2": {
+							"accept": [
+								"heiße",
+								"bin"
+							],
+							"hint": "(heißen)"
+						}
+					},
+					"bank": [
+						"heißen",
+						"heiße",
+						"heißt"
+					]
+				},
+				{
+					"id": "A1-01-L02-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jonas and Anna greet each other politely. Complete the dialogue with the words below.",
+						"tl": "Magalang na nagbabatian sina Jonas at Anna. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: Jonas spricht mit Anna, einer Frau: „Frau Gruber“. Anna spricht mit Jonas, einem Mann: „Herr Huber“. Nach „Herr“ und „Frau“ steht der Familienname.",
+						"en": "Correct: Jonas speaks to Anna, a woman: “Frau Gruber”. Anna speaks to Jonas, a man: “Herr Huber”. After “Herr” and “Frau” comes the family name.",
+						"tl": "Tama: Kausap ni Jonas si Anna, isang babae: “Frau Gruber”. Kausap ni Anna si Jonas, isang lalaki: “Herr Huber”. Pagkatapos ng “Herr” at “Frau” ay ang apelyido."
+					},
+					"goals": [
+						"A1-01-G2"
+					],
+					"refs": [
+						"W-A1-0327",
+						"W-A1-0328"
+					],
+					"text": "Jonas: Grüß Gott, {{1}} Gruber!\nAnna: Grüß Gott, {{2}} Huber!",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Frau"
+							]
+						},
+						"2": {
+							"accept": [
+								"Herr"
+							]
+						}
+					},
+					"bank": [
+						"Frau",
+						"Herr",
+						"Name"
+					]
+				},
+				{
+					"id": "A1-01-L02-I6",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are Maria Santos. Frau Gruber asks you: “Wie heißen Sie?” What do you answer? Choose, then say it aloud.",
+						"tl": "Ikaw si Maria Santos. Tinanong ka ni Frau Gruber: “Wie heißen Sie?” Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Ich heiße Maria Santos.“ Bei „ich“ endet das Verb auf -e. „Frau“ sagen nur andere zu Ihnen, über sich selbst sagen Sie Vor- und Familienname. „ich heißen“ ist falsch: -en gehört zu „Sie“ und „wir“.",
+						"en": "Correct: “Ich heiße Maria Santos.” With “ich” the verb ends in -e. Only other people say “Frau” to you; about yourself you say first name and family name. “ich heißen” is wrong: -en goes with “Sie” and “wir”.",
+						"tl": "Tama: “Ich heiße Maria Santos.” Sa “ich”, nagtatapos sa -e ang verb. Ang “Frau” ay sinasabi lang ng ibang tao sa iyo; sa sarili mo, Vorname at Familienname ang sinasabi mo. Mali ang “ich heißen”: ang -en ay para sa “Sie” at “wir”."
+					},
+					"goals": [
+						"A1-01-G2",
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0006",
+						"W-A1-0147"
+					],
+					"options": [
+						"Ich heiße Frau Santos.",
+						"Ich heiße Maria Santos.",
+						"Ich heißen Maria Santos."
+					],
+					"answer": 1
+				},
+				{
+					"id": "A1-01-L02-I7",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Antwort.",
+						"en": "You are Jonas Huber. Frau Gruber asks you for your name. Write your answer as a full sentence.",
+						"tl": "Ikaw si Jonas Huber. Tinanong ka ni Frau Gruber tungkol sa pangalan mo. Isulat ang sagot mo bilang buong pangungusap."
+					},
+					"explanation": {
+						"de": "Richtig: „Ich heiße Jonas Huber.“ oder „Ich bin Jonas Huber.“ Bei „ich“ endet „heißen“ auf -e: ich heiße. Vorname zuerst, dann der Familienname.",
+						"en": "Correct: “Ich heiße Jonas Huber.” or “Ich bin Jonas Huber.” With “ich” the verb “heißen” ends in -e: ich heiße. First name first, then the family name.",
+						"tl": "Tama: “Ich heiße Jonas Huber.” o “Ich bin Jonas Huber.” Sa “ich”, nagtatapos sa -e ang “heißen”: ich heiße. Una ang Vorname, tapos ang Familienname."
+					},
+					"goals": [
+						"A1-01-G2",
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0147",
+						"W-A1-0006"
+					],
+					"prompt": "Frau Gruber: „Wie heißen Sie?“ – Sie: „…“",
+					"accept": [
+						"Ich heiße Jonas Huber.",
+						"Ich bin Jonas Huber."
+					]
+				}
 			]
 		},
 		{
@@ -817,99 +984,218 @@
 				"en": "du or Sie?",
 				"tl": "du o Sie?"
 			},
+			"intro": {
+				"situation": {
+					"de": "Maria Santos kommt aus den Philippinen. In Wien trifft sie Frau Gruber im Büro und ihren Freund Jose. Sagt sie „du“ oder „Sie“?",
+					"en": "Maria Santos is from the Philippines. In Vienna she meets Frau Gruber in the office and her friend Jose. Does she say “du” or “Sie”?",
+					"tl": "Taga-Pilipinas si Maria Santos. Sa Vienna, nakikilala niya si Frau Gruber sa opisina at ang kaibigan niyang si Jose. “du” ba o “Sie” ang sinasabi niya?"
+				},
+				"goal": {
+					"de": "höflich mit „Sie“ und unter Freunden mit „du“ fragen – und sagen, woher Sie kommen.",
+					"en": "ask questions politely with “Sie” and among friends with “du” – and say where you come from.",
+					"tl": "magtanong nang magalang gamit ang “Sie” at sa mga kaibigan gamit ang “du” – at sabihin kung taga-saan ka."
+				}
+			},
+			"introduces": [
+				"W-A1-0007",
+				"W-A1-0038",
+				"W-A1-0128",
+				"W-A1-0116",
+				"W-A1-0035",
+				"W-A1-0357",
+				"W-A1-0362"
+			],
 			"cards": [
 				{
-					"phrase": "Wie heißen Sie?",
+					"kind": "rule",
+					"phrase": "Sie = höflich · du = Freunde, Familie, Kinder",
 					"note": {
-						"de": "„Sie“ sagt man zu Erwachsenen, die man nicht gut kennt: im Amt, beim Arzt, in der Arbeit. „Sie“ schreibt man immer groß.",
-						"en": "Use “Sie” with adults you do not know well: at a government office, at the doctor's, at work. “Sie” always has a capital S.",
-						"tl": "“Sie” ang gamit sa mga nasa hustong gulang na hindi mo gaanong kilala: sa opisina ng gobyerno, sa doktor, sa trabaho. Laging malaking S."
-					}
+						"de": "„Sie“ sagen Sie zu Erwachsenen, die Sie nicht gut kennen: im Büro, im Amt, bei der Ärztin. „du“ sagen Sie zu Freunden, zur Familie und zu Kindern. „Sie“ (höflich) schreibt man immer groß.",
+						"en": "You say “Sie” to adults you do not know well: in an office, at an official’s desk, at the doctor’s. You say “du” to friends, family and children. The polite “Sie” is always written with a capital letter.",
+						"tl": "Ang “Sie” ay sinasabi sa mga matatandang hindi mo lubos na kilala: sa opisina, sa ahensya ng gobyerno, sa doktor. Ang “du” ay sa mga kaibigan, pamilya at bata. Ang magalang na “Sie” ay laging nakasulat nang malaki ang unang titik."
+					},
+					"examples": [
+						"Wie heißen Sie?",
+						"Wie heißt du?"
+					]
 				},
 				{
-					"phrase": "Wie heißt du?",
+					"kind": "rule",
+					"phrase": "ich komme · du kommst · Sie kommen",
 					"note": {
-						"de": "„du“ sagt man zu Freunden, zur Familie und zu Kindern.",
-						"en": "Use “du” with friends, family and children.",
-						"tl": "“du” ang gamit sa kaibigan, pamilya at mga bata."
-					}
+						"de": "Das Verb passt zur Person: bei „ich“ endet es auf -e, bei „du“ auf -st, bei „Sie“ auf -en. Darum: „Woher kommst du?“, aber „Woher kommen Sie?“.",
+						"en": "The verb matches the person: with “ich” it ends in -e, with “du” in -st, with “Sie” in -en. That is why: “Woher kommst du?”, but “Woher kommen Sie?”.",
+						"tl": "Ang verb ay ayon sa tao: sa “ich”, nagtatapos sa -e; sa “du”, sa -st; sa “Sie”, sa -en. Kaya: “Woher kommst du?”, pero “Woher kommen Sie?”."
+					},
+					"examples": [
+						"Ich komme aus Österreich.",
+						"Woher kommst du?",
+						"Woher kommen Sie?"
+					]
 				},
 				{
+					"kind": "phrase",
 					"phrase": "Woher kommen Sie? – Ich komme aus Österreich.",
 					"note": {
-						"de": "So fragt und sagt man, aus welchem Land man kommt.",
-						"en": "How to ask and say which country you are from.",
-						"tl": "Ganito itanong at sabihin kung saang bansa ka galing."
+						"de": "So fragen Sie nach dem Land und so antworten Sie: „Ich komme aus“ + Land. Lernen Sie den Satz jetzt als Ganzes. Das Wort „aus“ erklärt Kapitel 3.",
+						"en": "This is how you ask for the country and how you answer: “Ich komme aus” + country. Learn the sentence as a whole for now. Chapter 3 explains the word “aus”.",
+						"tl": "Ganito itanong ang bansa at ganito sumagot: “Ich komme aus” + bansa. Isaulo muna ang pangungusap bilang buo. Ipapaliwanag ng Kapitel 3 ang salitang “aus”."
 					}
 				},
 				{
-					"phrase": "Woher kommst du? – Ich komme von den Philippinen.",
+					"kind": "phrase",
+					"phrase": "Ich komme aus den Philippinen.",
 					"note": {
-						"de": "Bei den Philippinen sagt man „von den“ oder „aus den“.",
-						"en": "For the Philippines you say “von den” or “aus den”.",
-						"tl": "Para sa Pilipinas, “von den” o “aus den” ang ginagamit."
+						"de": "Bei den Philippinen heißt es „aus den Philippinen“ (nicht: „aus Philippinen“). Lernen Sie auch diesen Satz als Ganzes, Kapitel 3 erklärt, warum.",
+						"en": "For the Philippines you say “aus den Philippinen” (not “aus Philippinen”). Learn this sentence as a whole, too. Chapter 3 explains why.",
+						"tl": "Para sa Pilipinas, sinasabi ang “aus den Philippinen” (hindi “aus Philippinen”). Isaulo rin ang pangungusap na ito bilang buo. Ipapaliwanag ng Kapitel 3 kung bakit."
 					}
 				},
 				{
-					"phrase": "Wer sind Sie? – Ich bin Frau Huber.",
+					"kind": "rule",
+					"phrase": "ich bin · du bist · Sie sind",
 					"note": {
-						"de": "sein: ich bin – du bist – Sie sind.",
-						"en": "sein (to be): ich bin – du bist – Sie sind.",
-						"tl": "sein (maging / ay): ich bin – du bist – Sie sind."
-					}
+						"de": "Das Verb „sein“ ist besonders. Es endet nicht auf -e, -st, -en, sondern hat eigene Formen. Lernen Sie sie auswendig: ich bin – du bist – Sie sind.",
+						"en": "The verb “sein” is special. It does not follow the endings -e, -st, -en, but has its own forms. Learn them by heart: ich bin – du bist – Sie sind.",
+						"tl": "Espesyal ang verb na “sein”. Hindi nito sinusunod ang mga hulaping -e, -st, -en, kundi may sarili itong anyo. Isaulo: ich bin – du bist – Sie sind."
+					},
+					"examples": [
+						"Ich bin Maria.",
+						"Wer sind Sie? – Ich bin Jonas Huber.",
+						"Du bist Jose."
+					]
 				}
 			],
 			"items": [
 				{
 					"id": "A1-01-L03-I1",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Sie sind bei einer Ärztin. Was fragen Sie?",
-						"en": "You are at the doctor's. What do you ask?",
-						"tl": "Nasa doktor ka. Ano ang itatanong mo?"
+						"de": "Schauen Sie das Bild an.",
+						"en": "Maria Santos is in the office of Frau Gruber. She does not know her well. Look at picture 1. What does Maria ask?",
+						"tl": "Nasa opisina ni Frau Gruber si Maria Santos. Hindi niya siya lubos na kilala. Tingnan ang larawan 1. Ano ang itatanong ni Maria?"
 					},
-					"options": [
-						"Wie heißen Sie?",
-						"Wie heißt du?"
-					],
-					"answer": 0,
 					"explanation": {
-						"de": "Zu einer Ärztin sagt man „Sie“.",
-						"en": "You say “Sie” to a doctor.",
-						"tl": "“Sie” ang gamit sa doktor."
+						"de": "Richtig: „Wie heißen Sie?“ Frau Gruber arbeitet im Büro, Maria kennt sie nicht gut: Darum „Sie“, und das Verb endet auf -en. „Wie heißt du?“ ist für Freunde. „Wie heiße Sie?“ hat die falsche Endung (-e gehört zu „ich“).",
+						"en": "Correct: “Wie heißen Sie?” Frau Gruber works in the office and Maria does not know her well: so “Sie”, and the verb ends in -en. “Wie heißt du?” is for friends. “Wie heiße Sie?” has the wrong ending (-e goes with “ich”).",
+						"tl": "Tama: “Wie heißen Sie?” Nagtatrabaho si Frau Gruber sa opisina at hindi siya lubos na kilala ni Maria: kaya “Sie”, at nagtatapos sa -en ang verb. Ang “Wie heißt du?” ay para sa mga kaibigan. Mali ang hulapi ng “Wie heiße Sie?” (ang -e ay para sa “ich”)."
+					},
+					"goals": [
+						"A1-01-G3"
+					],
+					"refs": [
+						"W-A1-0013",
+						"W-A1-0041"
+					],
+					"options": [
+						"Wie heißt du?",
+						"Wie heißen Sie?",
+						"Wie heiße Sie?"
+					],
+					"answer": 1,
+					"prompt": "Bild 1: Was fragt Maria?",
+					"image": {
+						"src": "/img/a1-01-dusie.svg",
+						"alt": {
+							"de": "Zwei Bilder. Bild 1: Maria sagt „Grüß Gott!“ zu Frau Gruber, neben Frau Gruber steht ein Tisch. Bild 2: Maria sagt „Servus!“ zu Jose.",
+							"en": "Two pictures. Picture 1: Maria says “Grüß Gott!” to Frau Gruber, who stands next to a desk. Picture 2: Maria says “Servus!” to Jose.",
+							"tl": "Dalawang larawan. Larawan 1: Sinasabi ni Maria ang “Grüß Gott!” kay Frau Gruber, na nakatayo sa tabi ng mesa. Larawan 2: Sinasabi ni Maria ang “Servus!” kay Jose."
+						}
 					}
 				},
 				{
 					"id": "A1-01-L03-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Sie sprechen mit einem Kind. Was fragen Sie?",
-						"en": "You are talking to a child. What do you ask?",
-						"tl": "Kausap mo ang isang bata. Ano ang itatanong mo?"
+						"de": "Schauen Sie das Bild an.",
+						"en": "Look at picture 2. Maria and Jose are friends. Maria wants to know where Jose is from. What does she ask?",
+						"tl": "Tingnan ang larawan 2. Magkaibigan sina Maria at Jose. Gusto ni Maria na malaman kung taga-saan si Jose. Ano ang itatanong niya?"
 					},
-					"options": [
-						"Wie heißen Sie?",
-						"Wie heißt du?"
-					],
-					"answer": 1,
 					"explanation": {
-						"de": "Zu Kindern sagt man „du“.",
-						"en": "You say “du” to children.",
-						"tl": "“du” ang gamit sa mga bata."
+						"de": "Richtig: „Woher kommst du?“ Maria sagt „Servus“ zu Jose, sie sind Freunde: „du“. Bei „du“ endet das Verb auf -st. „Woher kommen Sie?“ wäre zu höflich. „kommt“ gehört zu er/sie, nicht zu „du“.",
+						"en": "Correct: “Woher kommst du?” Maria says “Servus” to Jose, they are friends: “du”. With “du” the verb ends in -st. “Woher kommen Sie?” would be too polite. “kommt” goes with er/sie, not with “du”.",
+						"tl": "Tama: “Woher kommst du?” Sinasabi ni Maria ang “Servus” kay Jose, magkaibigan sila: “du”. Sa “du”, nagtatapos sa -st ang verb. Masyadong magalang ang “Woher kommen Sie?”. Ang “kommt” ay para sa er/sie, hindi sa “du”."
+					},
+					"goals": [
+						"A1-01-G3",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0007",
+						"W-A1-0038",
+						"W-A1-0128"
+					],
+					"options": [
+						"Woher kommen Sie?",
+						"Woher kommt du?",
+						"Woher kommst du?"
+					],
+					"answer": 2,
+					"prompt": "Bild 2: Was fragt Maria?",
+					"image": {
+						"src": "/img/a1-01-dusie.svg",
+						"alt": {
+							"de": "Zwei Bilder. Bild 1: Maria sagt „Grüß Gott!“ zu Frau Gruber, neben Frau Gruber steht ein Tisch. Bild 2: Maria sagt „Servus!“ zu Jose.",
+							"en": "Two pictures. Picture 1: Maria says “Grüß Gott!” to Frau Gruber, who stands next to a desk. Picture 2: Maria says “Servus!” to Jose.",
+							"tl": "Dalawang larawan. Larawan 1: Sinasabi ni Maria ang “Grüß Gott!” kay Frau Gruber, na nakatayo sa tabi ng mesa. Larawan 2: Sinasabi ni Maria ang “Servus!” kay Jose."
+						}
 					}
 				},
 				{
 					"id": "A1-01-L03-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wen fragt Maria?",
+						"en": "Maria asks a question. Listen: is she asking Frau Gruber from the office or her friend Jose?",
+						"tl": "May itinatanong si Maria. Makinig: si Frau Gruber ba sa opisina ang tinatanong niya o ang kaibigan niyang si Jose?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Servus! Woher kommst du?“ „Servus“ und „kommst du“ gehören zu Freunden: Maria fragt Jose. Zu Frau Gruber würde sie „Grüß Gott! Woher kommen Sie?“ sagen.",
+						"en": "You hear: “Servus! Woher kommst du?” “Servus” and “kommst du” belong to friends: Maria asks Jose. To Frau Gruber she would say “Grüß Gott! Woher kommen Sie?”.",
+						"tl": "Naririnig mo: “Servus! Woher kommst du?” Ang “Servus” at “kommst du” ay para sa mga kaibigan: si Jose ang tinatanong ni Maria. Kay Frau Gruber, sasabihin niya ang “Grüß Gott! Woher kommen Sie?”."
+					},
+					"goals": [
+						"A1-01-G3"
+					],
+					"refs": [
+						"W-A1-0007",
+						"W-A1-0377"
+					],
+					"options": [
+						"Frau Gruber",
+						"Jose"
+					],
+					"answer": 1,
+					"prompt": "Maria fragt …",
+					"audioText": "Servus! Woher kommst du?",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L03-I4",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jose asks Maria where she is from. They are friends. Complete the dialogue with the words below.",
+						"tl": "Tinanong ni Jose si Maria kung taga-saan siya. Magkaibigan sila. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
-					"text": "Woher {{1}} du? – Ich {{2}} aus Österreich.",
+					"explanation": {
+						"de": "Richtig: „Woher kommst du?“ – „Ich komme …“. Bei „du“ endet das Verb auf -st, bei „ich“ auf -e. „kommen“ passt zu „Sie“ und „wir“.",
+						"en": "Correct: “Woher kommst du?” – “Ich komme …”. With “du” the verb ends in -st, with “ich” in -e. “kommen” goes with “Sie” and “wir”.",
+						"tl": "Tama: “Woher kommst du?” – “Ich komme …”. Sa “du”, nagtatapos sa -st ang verb; sa “ich”, sa -e. Ang “kommen” ay para sa “Sie” at “wir”."
+					},
+					"goals": [
+						"A1-01-G4",
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0128",
+						"W-A1-0038"
+					],
+					"text": "Jose: Woher {{1}} du?\nMaria: Ich {{2}} aus den Philippinen.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -922,22 +1208,34 @@
 							]
 						}
 					},
-					"explanation": {
-						"de": "du kommst (-st), ich komme (-e).",
-						"en": "du kommst (ending -st), ich komme (ending -e).",
-						"tl": "du kommst (dulo: -st), ich komme (dulo: -e)."
-					}
+					"bank": [
+						"kommst",
+						"komme",
+						"kommen"
+					]
 				},
 				{
-					"id": "A1-01-L03-I4",
+					"id": "A1-01-L03-I5",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Maria knocks at a door in the office. Frau Gruber asks who is there. Complete the dialogue with the words below.",
+						"tl": "Kumatok si Maria sa pinto ng opisina. Tinanong ni Frau Gruber kung sino iyon. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
-					"text": "Wer {{1}} Sie? – Ich {{2}} Herr Huber.",
+					"explanation": {
+						"de": "Richtig: „Wer sind Sie?“ – „Ich bin …“. Das Verb „sein“ ist besonders: ich bin, du bist, Sie sind. „bist“ gehört nur zu „du“.",
+						"en": "Correct: “Wer sind Sie?” – “Ich bin …”. The verb “sein” is special: ich bin, du bist, Sie sind. “bist” only goes with “du”.",
+						"tl": "Tama: “Wer sind Sie?” – “Ich bin …”. Espesyal ang verb na “sein”: ich bin, du bist, Sie sind. Ang “bist” ay para lang sa “du”."
+					},
+					"goals": [
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0116",
+						"W-A1-0035"
+					],
+					"text": "Frau Gruber: Wer {{1}} Sie?\nMaria: Ich {{2}} Maria Santos.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -950,65 +1248,70 @@
 							]
 						}
 					},
-					"explanation": {
-						"de": "Das Verb „sein“ ist besonders: ich bin, du bist, Sie sind.",
-						"en": "The verb “sein” is special: ich bin, du bist, Sie sind.",
-						"tl": "Espesyal ang pandiwang “sein”: ich bin, du bist, Sie sind."
-					}
-				},
-				{
-					"id": "A1-01-L03-I5",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Was passt?",
-						"en": "Which one fits?",
-						"tl": "Alin ang bagay?"
-					},
-					"options": [
-						"Sie",
-						"du",
-						"ich"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "„kommen“ endet auf -en. Das passt zu „Sie“: Woher kommen Sie?",
-						"en": "“kommen” ends in -en. That fits “Sie”: Woher kommen Sie?",
-						"tl": "-en ang dulo ng “kommen”. Bagay ito sa “Sie”: Woher kommen Sie?"
-					},
-					"prompt": "Woher kommen …?"
+					"bank": [
+						"sind",
+						"bin",
+						"bist"
+					]
 				},
 				{
 					"id": "A1-01-L03-I6",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "sprechen",
 					"instruction": {
-						"de": "Hören Sie. „du“ oder „Sie“?",
-						"en": "Listen. “du” or “Sie”?",
-						"tl": "Makinig. “du” o “Sie”?"
+						"de": "Was antworten Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are Maria Santos and come from the Philippines. Frau Gruber asks you: “Woher kommen Sie?” What do you answer? Choose, then say it aloud.",
+						"tl": "Ikaw si Maria Santos at taga-Pilipinas ka. Tinanong ka ni Frau Gruber: “Woher kommen Sie?” Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
 					},
-					"options": [
-						"du",
-						"Sie"
-					],
-					"answer": 0,
 					"explanation": {
-						"de": "Sie hören: „Woher kommst du?“",
-						"en": "You hear: “Woher kommst du?”",
-						"tl": "Narinig mo: “Woher kommst du?”"
+						"de": "Richtig: „Ich komme aus den Philippinen.“ Bei „ich“ endet das Verb auf -e. „kommst“ gehört zu „du“, „kommen“ zu „Sie“ und „wir“.",
+						"en": "Correct: “Ich komme aus den Philippinen.” With “ich” the verb ends in -e. “kommst” goes with “du”, “kommen” with “Sie” and “wir”.",
+						"tl": "Tama: “Ich komme aus den Philippinen.” Sa “ich”, nagtatapos sa -e ang verb. Ang “kommst” ay para sa “du”, ang “kommen” sa “Sie” at “wir”."
 					},
-					"audioText": "Woher kommst du?",
-					"audioOnly": true
+					"goals": [
+						"A1-01-G4",
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0128",
+						"W-A1-0362"
+					],
+					"options": [
+						"Ich kommst aus den Philippinen.",
+						"Ich kommen aus den Philippinen.",
+						"Ich komme aus den Philippinen."
+					],
+					"answer": 2
+				},
+				{
+					"id": "A1-01-L03-I7",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Frage.",
+						"en": "You are Maria. Your friend Jose is new in the course. Write your question to him with the words in the brackets.",
+						"tl": "Ikaw si Maria. Bago sa kurso ang kaibigan mong si Jose. Isulat ang tanong mo sa kanya gamit ang mga salita sa panaklong."
+					},
+					"explanation": {
+						"de": "Richtig: „Woher kommst du?“ Die Frage beginnt mit dem Fragewort „woher“, dann kommt das Verb mit der Endung -st: kommst, dann „du“.",
+						"en": "Correct: “Woher kommst du?” The question starts with the question word “woher”, then comes the verb with the ending -st: kommst, then “du”.",
+						"tl": "Tama: “Woher kommst du?” Nagsisimula ang tanong sa salitang pananong na “woher”, kasunod ang verb na may hulaping -st: kommst, tapos “du”."
+					},
+					"goals": [
+						"A1-01-G3",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0038",
+						"W-A1-0128",
+						"W-A1-0007"
+					],
+					"prompt": "Maria: „…?“ (woher – kommen – du)",
+					"accept": [
+						"Woher kommst du?",
+						"Woher kommst du, Jose?"
+					]
 				}
-			],
-			"introduces": [
-				"W-A1-0007",
-				"W-A1-0038",
-				"W-A1-0128",
-				"W-A1-0116",
-				"W-A1-0035",
-				"W-A1-0357",
-				"W-A1-0362"
 			]
 		},
 		{
@@ -1018,159 +1321,18 @@
 				"en": "How are you?",
 				"tl": "Kumusta?"
 			},
-			"cards": [
-				{
-					"phrase": "Wie geht's? – Danke, gut. Und dir?",
-					"note": {
-						"de": "Eine freundliche Frage unter Freunden. Man antwortet kurz und fragt zurück.",
-						"en": "A friendly question among friends. You answer briefly and ask back.",
-						"tl": "Magiliw na tanong sa magkaibigan. Maikli ang sagot, tapos magtanong pabalik."
-					}
+			"intro": {
+				"situation": {
+					"de": "Jonas Huber trifft Maria Santos vor dem Büro. Sie kennen sich schon. Jonas fragt: „Wie geht's?“",
+					"en": "Jonas Huber meets Maria Santos in front of the office. They already know each other. Jonas asks: “Wie geht’s?”",
+					"tl": "Nakasalubong ni Jonas Huber si Maria Santos sa harap ng opisina. Magkakilala na sila. Nagtanong si Jonas: “Wie geht’s?”"
 				},
-				{
-					"phrase": "Sehr gut, danke!",
-					"note": {
-						"de": "„sehr“ macht „gut“ stärker.",
-						"en": "“sehr” makes “gut” stronger.",
-						"tl": "Pinalalakas ng “sehr” ang “gut”."
-					}
-				},
-				{
-					"phrase": "Bitte! – Danke!",
-					"note": {
-						"de": "„Danke“ sagt man für etwas. Die Antwort ist „Bitte“.",
-						"en": "You say “Danke” to thank someone. The reply is “Bitte”.",
-						"tl": "“Danke” ang pasasalamat. “Bitte” ang sagot."
-					}
-				},
-				{
-					"phrase": "Entschuldigung!",
-					"note": {
-						"de": "Das sagt man bei einem Fehler oder wenn man jemanden etwas fragen will.",
-						"en": "You say this after a mistake or when you want to ask someone something.",
-						"tl": "Sinasabi kapag nagkamali o kapag may itatanong ka sa isang tao."
-					}
+				"goal": {
+					"de": "fragen, wie es jemandem geht, kurz antworten – und „Danke“, „Bitte“ und „Entschuldigung“ richtig sagen.",
+					"en": "ask how someone is, answer briefly – and say “Danke”, “Bitte” and “Entschuldigung” correctly.",
+					"tl": "magtanong kung kumusta ang isang tao, sumagot nang maikli – at sabihin nang tama ang “Danke”, “Bitte” at “Entschuldigung”."
 				}
-			],
-			"items": [
-				{
-					"id": "A1-01-L04-I1",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Was antworten Sie?",
-						"en": "What do you answer?",
-						"tl": "Ano ang isasagot mo?"
-					},
-					"options": [
-						"Danke, gut. Und dir?",
-						"Ich heiße Anna.",
-						"Auf Wiedersehen!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Auf „Wie geht's?“ antwortet man: „Danke, gut.“ Dann fragt man zurück: „Und dir?“",
-						"en": "You answer “Wie geht's?” with “Danke, gut.” Then you ask back: “Und dir?”",
-						"tl": "Sagot sa “Wie geht's?”: “Danke, gut.” Tapos tanong pabalik: “Und dir?”"
-					},
-					"prompt": "Wie geht's?",
-					"audioText": "Wie geht's?"
-				},
-				{
-					"id": "A1-01-L04-I2",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
-					},
-					"text": "Wie geht's? – {{1}}, gut. Und {{2}}?",
-					"gaps": {
-						"1": {
-							"accept": [
-								"Danke"
-							]
-						},
-						"2": {
-							"accept": [
-								"dir"
-							]
-						}
-					},
-					"explanation": {
-						"de": "„Danke, gut. Und dir?“ – „dir“ gehört zu „du“.",
-						"en": "“Danke, gut. Und dir?” – “dir” goes with “du”.",
-						"tl": "“Danke, gut. Und dir?” – ang “dir” ay para sa “du”."
-					}
-				},
-				{
-					"id": "A1-01-L04-I3",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Sie machen einen Fehler. Was sagen Sie?",
-						"en": "You make a mistake. What do you say?",
-						"tl": "Nagkamali ka. Ano ang sasabihin mo?"
-					},
-					"options": [
-						"Bitte!",
-						"Entschuldigung!",
-						"Servus!"
-					],
-					"answer": 1,
-					"explanation": {
-						"de": "Bei einem Fehler sagt man „Entschuldigung“.",
-						"en": "After a mistake you say “Entschuldigung”.",
-						"tl": "Kapag nagkamali, “Entschuldigung”."
-					}
-				},
-				{
-					"id": "A1-01-L04-I4",
-					"type": "choice",
-					"skill": "grammatikWortschatz",
-					"instruction": {
-						"de": "Was antworten Sie?",
-						"en": "What do you answer?",
-						"tl": "Ano ang isasagot mo?"
-					},
-					"options": [
-						"Bitte!",
-						"Entschuldigung!",
-						"Nein!"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Auf „Danke“ antwortet man „Bitte“.",
-						"en": "The reply to “Danke” is “Bitte”.",
-						"tl": "“Bitte” ang sagot sa “Danke”."
-					},
-					"prompt": "Danke!"
-				},
-				{
-					"id": "A1-01-L04-I5",
-					"type": "choice",
-					"skill": "hoeren",
-					"instruction": {
-						"de": "Hören Sie. Was antworten Sie?",
-						"en": "Listen. What do you answer?",
-						"tl": "Makinig. Ano ang isasagot mo?"
-					},
-					"options": [
-						"Grüß Gott, Herr Huber!",
-						"Sehr gut, danke!",
-						"Ich komme aus Österreich."
-					],
-					"answer": 1,
-					"explanation": {
-						"de": "Sie hören: „Wie geht's?“ Die Antwort: „Sehr gut, danke!“",
-						"en": "You hear: “Wie geht's?” The answer: “Sehr gut, danke!”",
-						"tl": "Narinig mo: “Wie geht's?” Sagot: “Sehr gut, danke!”"
-					},
-					"audioText": "Wie geht's?",
-					"audioOnly": true
-				}
-			],
+			},
 			"introduces": [
 				"W-A1-0387",
 				"W-A1-0092",
@@ -1180,6 +1342,285 @@
 				"W-A1-0386",
 				"W-A1-0017",
 				"W-A1-0046"
+			],
+			"cards": [
+				{
+					"kind": "phrase",
+					"phrase": "Wie geht's? – Danke, gut. Und dir?",
+					"note": {
+						"de": "So fragen Sie unter Freunden, wie es jemandem geht. Antworten Sie kurz und fragen Sie zurück: „Und dir?“ „dir“ gehört zu „du“. Mit „Sie“ heißt es „Wie geht es Ihnen?“ – das lernen Sie später.",
+						"en": "This is how you ask a friend how they are. Answer briefly and ask back: “Und dir?” “dir” goes with “du”. With “Sie” it is “Wie geht es Ihnen?” – you will learn that later.",
+						"tl": "Ganito itanong sa kaibigan kung kumusta siya. Sumagot nang maikli at magtanong pabalik: “Und dir?” Ang “dir” ay para sa “du”. Sa “Sie”, “Wie geht es Ihnen?” ang sinasabi – matututuhan mo iyon mamaya."
+					}
+				},
+				{
+					"kind": "rule",
+					"phrase": "sehr gut – „sehr“ steht vor „gut“",
+					"note": {
+						"de": "„sehr“ macht ein Wort stärker und steht davor: gut → sehr gut. Man sagt nicht „gut sehr“.",
+						"en": "“sehr” makes a word stronger and comes before it: gut → sehr gut. You do not say “gut sehr”.",
+						"tl": "Pinalalakas ng “sehr” ang salita at nasa unahan nito: gut → sehr gut. Hindi sinasabi ang “gut sehr”."
+					},
+					"examples": [
+						"Sehr gut, danke!",
+						"Danke, sehr gut. Und dir?"
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "Danke! – Bitte!",
+					"note": {
+						"de": "Für etwas sagen Sie „Danke“. Die Antwort ist „Bitte“, auch „Bitte sehr“ oder „Bitte schön“. „Bitte“ heißt außerdem „please“: So bitten Sie höflich um etwas.",
+						"en": "For something you receive you say “Danke”. The answer is “Bitte”, also “Bitte sehr” or “Bitte schön”. “Bitte” also means “please”: that is how you ask politely for something.",
+						"tl": "Para sa isang bagay na natanggap mo, sinasabi ang “Danke”. Ang sagot ay “Bitte”, o “Bitte sehr” o “Bitte schön”. Ang “Bitte” ay nangangahulugan ding “pakiusap”: ganito ka humihingi nang magalang."
+					},
+					"examples": [
+						"Danke! – Bitte!",
+						"Danke sehr! – Bitte sehr!"
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Entschuldigung!",
+					"note": {
+						"de": "Das sagen Sie bei einem kleinen Fehler, zum Beispiel wenn Sie jemanden anstoßen. Sie sagen es auch, wenn Sie jemanden etwas fragen wollen: „Entschuldigung, Frau Gruber!“",
+						"en": "You say this after a small mistake, for example when you bump into someone. You also say it when you want to ask someone something: “Entschuldigung, Frau Gruber!”",
+						"tl": "Sinasabi ito pagkatapos ng maliit na pagkakamali, halimbawa kapag nabangga mo ang isang tao. Sinasabi rin ito kapag may gusto kang itanong: “Entschuldigung, Frau Gruber!”"
+					}
+				}
+			],
+			"items": [
+				{
+					"id": "A1-01-L04-I1",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an.",
+						"en": "Look at picture 1. Herr Huber bumps into Frau Gruber by mistake. What does he say?",
+						"tl": "Tingnan ang larawan 1. Nabangga ni Herr Huber si Frau Gruber nang hindi sinasadya. Ano ang sinasabi niya?"
+					},
+					"explanation": {
+						"de": "Richtig: „Entschuldigung!“ Herr Huber macht einen kleinen Fehler: Er stößt gegen Frau Gruber. „Danke“ sagt man für etwas, das man bekommt. „Bitte“ ist die Antwort auf „Danke“.",
+						"en": "Correct: “Entschuldigung!” Herr Huber makes a small mistake: he bumps into Frau Gruber. You say “Danke” for something you receive. “Bitte” is the answer to “Danke”.",
+						"tl": "Tama: “Entschuldigung!” Nagkamali nang kaunti si Herr Huber: nabangga niya si Frau Gruber. Ang “Danke” ay para sa isang bagay na natanggap mo. Ang “Bitte” ay sagot sa “Danke”."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0386"
+					],
+					"options": [
+						"Entschuldigung!",
+						"Danke!",
+						"Bitte!"
+					],
+					"answer": 0,
+					"prompt": "Bild 1: Was sagt Herr Huber?",
+					"image": {
+						"src": "/img/a1-01-situationen.svg",
+						"alt": {
+							"de": "Zwei Bilder. Bild 1: Herr Huber stößt gegen Frau Gruber, ihr Papiersackerl ist offen und Äpfel fallen heraus. Bild 2: Jonas bringt Frau Santos eine Tasse Kaffee an den Tisch.",
+							"en": "Two pictures. Picture 1: Herr Huber bumps into Frau Gruber, her paper bag is open and apples fall out. Picture 2: Jonas brings Frau Santos a cup of coffee at her table.",
+							"tl": "Dalawang larawan. Larawan 1: Nabangga ni Herr Huber si Frau Gruber, bukas ang paper bag niya at nalalaglag ang mga mansanas. Larawan 2: Dinadalhan ni Jonas si Frau Santos ng tasa ng kape sa mesa niya."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L04-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an.",
+						"en": "Look at picture 2. Jonas brings Frau Santos her coffee. What does Frau Santos say?",
+						"tl": "Tingnan ang larawan 2. Dinadalhan ni Jonas si Frau Santos ng kape niya. Ano ang sinasabi ni Frau Santos?"
+					},
+					"explanation": {
+						"de": "Richtig: „Danke!“ Frau Santos bekommt etwas und bedankt sich. „Bitte“ sagt danach Jonas: Es ist die Antwort auf „Danke“. „Entschuldigung“ ist hier nicht nötig, es ist kein Fehler passiert.",
+						"en": "Correct: “Danke!” Frau Santos receives something and says thank you. After that Jonas says “Bitte”: it is the answer to “Danke”. “Entschuldigung” is not needed here, nothing went wrong.",
+						"tl": "Tama: “Danke!” May natanggap si Frau Santos at nagpapasalamat siya. Pagkatapos, sinasabi ni Jonas ang “Bitte”: ito ang sagot sa “Danke”. Hindi kailangan ang “Entschuldigung” dito, walang pagkakamaling nangyari."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0092",
+						"W-A1-0091"
+					],
+					"options": [
+						"Danke!",
+						"Bitte!",
+						"Entschuldigung!"
+					],
+					"answer": 0,
+					"prompt": "Bild 2: Was sagt Frau Santos?",
+					"image": {
+						"src": "/img/a1-01-situationen.svg",
+						"alt": {
+							"de": "Zwei Bilder. Bild 1: Herr Huber stößt gegen Frau Gruber, ihr Papiersackerl ist offen und Äpfel fallen heraus. Bild 2: Jonas bringt Frau Santos eine Tasse Kaffee an den Tisch.",
+							"en": "Two pictures. Picture 1: Herr Huber bumps into Frau Gruber, her paper bag is open and apples fall out. Picture 2: Jonas brings Frau Santos a cup of coffee at her table.",
+							"tl": "Dalawang larawan. Larawan 1: Nabangga ni Herr Huber si Frau Gruber, bukas ang paper bag niya at nalalaglag ang mga mansanas. Larawan 2: Dinadalhan ni Jonas si Frau Santos ng tasa ng kape sa mesa niya."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L04-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wie geht es Maria?",
+						"en": "Jonas asks Maria how she is. Listen: how is Maria?",
+						"tl": "Tinanong ni Jonas si Maria kung kumusta siya. Makinig: kumusta si Maria?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Wie geht’s, Maria? – Sehr gut, danke! Und dir?“ Maria sagt „sehr gut“, das ist mehr als „gut“. Danach fragt sie zurück: „Und dir?“",
+						"en": "You hear: “Wie geht’s, Maria? – Sehr gut, danke! Und dir?” Maria says “sehr gut”, which is more than “gut”. Then she asks back: “Und dir?”",
+						"tl": "Naririnig mo: “Wie geht’s, Maria? – Sehr gut, danke! Und dir?” Sinabi ni Maria ang “sehr gut”, na mas mataas kaysa sa “gut”. Pagkatapos, nagtatanong siya pabalik: “Und dir?”"
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0387",
+						"W-A1-0057",
+						"W-A1-0173"
+					],
+					"options": [
+						"Sehr gut.",
+						"Gut."
+					],
+					"answer": 0,
+					"prompt": "Wie geht es Maria?",
+					"audioText": "Wie geht's, Maria? – Sehr gut, danke! Und dir?",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L04-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Was antwortet Maria? Wählen Sie die richtige Antwort.",
+						"en": "Maria holds the door open for Herr Huber. He says: “Danke!” What does Maria answer?",
+						"tl": "Hinawakan ni Maria ang pinto para kay Herr Huber. Sinabi niya: “Danke!” Ano ang sagot ni Maria?"
+					},
+					"explanation": {
+						"de": "Richtig: Auf „Danke“ antwortet man „Bitte“. „Entschuldigung“ sagt man bei einem Fehler. „Hallo“ ist ein Gruß und keine Antwort auf „Danke“.",
+						"en": "Correct: the answer to “Danke” is “Bitte”. You say “Entschuldigung” after a mistake. “Hallo” is a greeting and not an answer to “Danke”.",
+						"tl": "Tama: ang sagot sa “Danke” ay “Bitte”. Ang “Entschuldigung” ay sinasabi pagkatapos ng pagkakamali. Ang “Hallo” ay pagbati at hindi sagot sa “Danke”."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0092",
+						"W-A1-0091"
+					],
+					"options": [
+						"Bitte!",
+						"Entschuldigung!",
+						"Hallo!"
+					],
+					"answer": 0,
+					"prompt": "Herr Huber: „Danke!“"
+				},
+				{
+					"id": "A1-01-L04-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jonas meets his friend Maria in front of the office. Complete the dialogue with the words below.",
+						"tl": "Nakasalubong ni Jonas ang kaibigan niyang si Maria sa harap ng opisina. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Wie geht’s dir?“ – „Danke, sehr gut!“ „dir“ gehört zu „du“: „Wie geht’s du?“ ist falsch. Auf die Frage antwortet man mit „Danke“. „Bitte“ ist die Antwort auf „Danke“.",
+						"en": "Correct: “Wie geht’s dir?” – “Danke, sehr gut!” “dir” goes with “du”: “Wie geht’s du?” is wrong. You answer the question with “Danke”. “Bitte” is the answer to “Danke”.",
+						"tl": "Tama: “Wie geht’s dir?” – “Danke, sehr gut!” Ang “dir” ay para sa “du”: mali ang “Wie geht’s du?”. Sa tanong, sumasagot ng “Danke”. Ang “Bitte” ay sagot sa “Danke”."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0017",
+						"W-A1-0092"
+					],
+					"text": "Jonas: Wie geht's {{1}}?\nMaria: {{2}}, sehr gut!",
+					"gaps": {
+						"1": {
+							"accept": [
+								"dir"
+							]
+						},
+						"2": {
+							"accept": [
+								"Danke"
+							]
+						}
+					},
+					"bank": [
+						"dir",
+						"Danke",
+						"du",
+						"Bitte"
+					]
+				},
+				{
+					"id": "A1-01-L04-I6",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Your friend Jose asks you: “Wie geht’s?” You are doing very well. What do you say? Choose, then say it aloud.",
+						"tl": "Tinanong ka ng kaibigan mong si Jose: “Wie geht’s?” Napakabuti ng lagay mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Sehr gut, danke! Und dir?“ „sehr“ steht vor „gut“. Auf die Frage antwortet man mit „danke“, nicht mit „bitte“. Dann fragt man zurück: „Und dir?“",
+						"en": "Correct: “Sehr gut, danke! Und dir?” “sehr” comes before “gut”. You answer the question with “danke”, not with “bitte”. Then you ask back: “Und dir?”",
+						"tl": "Tama: “Sehr gut, danke! Und dir?” Nasa unahan ng “gut” ang “sehr”. Sa tanong, sumasagot ng “danke”, hindi ng “bitte”. Pagkatapos, nagtatanong pabalik: “Und dir?”"
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0057",
+						"W-A1-0173",
+						"W-A1-0046"
+					],
+					"options": [
+						"Gut sehr, danke! Und dir?",
+						"Sehr gut, bitte! Und dir?",
+						"Sehr gut, danke! Und dir?"
+					],
+					"answer": 2
+				},
+				{
+					"id": "A1-01-L04-I7",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie, was Sie antworten.",
+						"en": "You help Jonas. He thanks you. Write your answer.",
+						"tl": "Tinulungan mo si Jonas. Nagpapasalamat siya sa iyo. Isulat ang sagot mo."
+					},
+					"explanation": {
+						"de": "Richtig: „Bitte!“ – auch „Bitte sehr!“ oder „Bitte schön!“ sind möglich. Auf „Danke“ antwortet man mit „Bitte“. „Bitte“ schreibt man am Anfang groß.",
+						"en": "Correct: “Bitte!” – “Bitte sehr!” or “Bitte schön!” are also possible. The answer to “Danke” is “Bitte”. “Bitte” is written with a capital letter at the beginning.",
+						"tl": "Tama: “Bitte!” – puwede rin ang “Bitte sehr!” o “Bitte schön!”. Ang sagot sa “Danke” ay “Bitte”. Nakasulat nang malaki ang unang titik ng “Bitte” sa simula."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0091",
+						"W-A1-0092"
+					],
+					"prompt": "Jonas: „Danke!“ – Sie: „…“",
+					"accept": [
+						"Bitte!",
+						"Bitte sehr!",
+						"Bitte schön!"
+					]
+				}
 			]
 		},
 		{
@@ -1189,6 +1630,18 @@
 				"en": "Who is that? – he and she",
 				"tl": "Sino iyan? – siya (lalaki/babae)"
 			},
+			"intro": {
+				"situation": {
+					"de": "Im Deutschkurs in Wien sitzen drei Personen. Maria fragt: „Wer ist das?“ Wie heißen sie? Woher kommen sie?",
+					"en": "Three people sit in the German course in Vienna. Maria asks: “Wer ist das?” What are their names? Where do they come from?",
+					"tl": "Tatlong tao ang nakaupo sa kursong German sa Vienna. Nagtanong si Maria: “Wer ist das?” Ano ang pangalan nila? Taga-saan sila?"
+				},
+				"goal": {
+					"de": "über andere Personen sprechen: „Wer ist das?“ – „Das ist Herr Huber. Er heißt Jonas. Er kommt aus Österreich.“",
+					"en": "talk about other people: “Wer ist das?” – “Das ist Herr Huber. Er heißt Jonas. Er kommt aus Österreich.”",
+					"tl": "pag-usapan ang ibang tao: “Wer ist das?” – “Das ist Herr Huber. Er heißt Jonas. Er kommt aus Österreich.”"
+				}
+			},
 			"introduces": [
 				"W-A1-0008",
 				"W-A1-0009",
@@ -1196,68 +1649,100 @@
 			],
 			"cards": [
 				{
+					"kind": "phrase",
 					"phrase": "Wer ist das? – Das ist Herr Huber.",
 					"note": {
-						"de": "So stellt man eine andere Person vor.",
-						"en": "This is how you introduce another person.",
-						"tl": "Ganito ipakilala ang ibang tao."
+						"de": "So fragen Sie nach einer anderen Person und so stellen Sie sie vor. „wer“ fragt immer nach Personen.",
+						"en": "This is how you ask about another person and how you introduce them. “wer” always asks about people.",
+						"tl": "Ganito itanong ang tungkol sa ibang tao at ganito siya ipakilala. Ang “wer” ay laging para sa mga tao."
 					}
 				},
 				{
-					"phrase": "Er heißt Jonas. Er kommt aus Österreich.",
+					"kind": "rule",
+					"phrase": "er = ein Mann · sie = eine Frau",
 					"note": {
-						"de": "„er“ steht für einen Mann.",
-						"en": "“er” stands for a man.",
-						"tl": "Ang “er” ay para sa lalaki."
-					}
+						"de": "Sie müssen den Namen nicht wiederholen: Für einen Mann sagen Sie „er“, für eine Frau „sie“.",
+						"en": "You do not have to repeat the name: for a man you say “er”, for a woman “sie”.",
+						"tl": "Hindi mo na kailangang ulitin ang pangalan: para sa lalaki, “er”; para sa babae, “sie”."
+					},
+					"examples": [
+						"Das ist Herr Huber. Er heißt Jonas.",
+						"Das ist Frau Gruber. Sie heißt Anna."
+					]
 				},
 				{
-					"phrase": "Sie heißt Anna. Sie ist Frau Gruber.",
+					"kind": "rule",
+					"phrase": "sie (eine Frau) ≠ Sie (höflich)",
 					"note": {
-						"de": "„sie“ steht für eine Frau. Klein geschrieben – „Sie“ mit großem S ist die höfliche Anrede.",
-						"en": "“sie” stands for a woman. It is written with a small s – “Sie” with a capital S is the polite “you”.",
-						"tl": "Ang “sie” ay para sa babae. Maliit na titik – ang “Sie” na malaki ang S ay magalang na “ikaw”."
-					}
+						"de": "Klein „sie“ meint eine Frau (über die Sie sprechen). Groß „Sie“ ist die höfliche Anrede für das Gegenüber. Am Satzanfang sieht man die Größe nicht, aber das Verb hilft: „Sie heißt“ (eine Frau) – „Sie heißen“ (zu Ihnen).",
+						"en": "A small “sie” means a woman (someone you talk about). A capital “Sie” is the polite form for the person you talk to. At the start of a sentence you cannot see the capital letter, but the verb helps: “Sie heißt” (a woman) – “Sie heißen” (you, polite).",
+						"tl": "Ang maliit na “sie” ay babae (pinag-uusapan mo). Ang malaking “Sie” ay magalang na pagtawag sa kausap. Sa simula ng pangungusap, hindi makikita ang laki ng titik, pero tumutulong ang verb: “Sie heißt” (babae) – “Sie heißen” (ikaw, magalang)."
+					},
+					"examples": [
+						"Sie heißt Anna Gruber.",
+						"Wie heißen Sie?"
+					]
 				},
 				{
+					"kind": "rule",
+					"phrase": "er heißt · sie kommt · er ist",
+					"note": {
+						"de": "Bei „er“ und „sie“ endet das Verb auf -t: er heißt, sie kommt. Besonders ist „sein“: er ist, sie ist.",
+						"en": "With “er” and “sie” the verb ends in -t: er heißt, sie kommt. “sein” is special: er ist, sie ist.",
+						"tl": "Sa “er” at “sie”, nagtatapos sa -t ang verb: er heißt, sie kommt. Espesyal ang “sein”: er ist, sie ist."
+					},
+					"examples": [
+						"Er heißt Jonas. Er kommt aus Österreich.",
+						"Sie ist Frau Gruber."
+					]
+				},
+				{
+					"kind": "phrase",
 					"phrase": "Wie geht es? – Es geht.",
 					"note": {
-						"de": "„es“ steht in festen Sätzen: „Wie geht es?“ – „Es geht.“ Das heißt: nicht sehr gut, aber auch nicht schlecht.",
-						"en": "“es” appears in fixed phrases: “Wie geht es?” (How is it going?) – “Es geht.” (It’s okay – not great, not bad.)",
-						"tl": "Ginagamit ang “es” sa mga nakapirming pahayag: “Wie geht es?” (Kumusta?) – “Es geht.” (Okay lang – hindi masyadong mabuti, hindi rin masama.)"
-					}
-				},
-				{
-					"phrase": "er heißt – sie kommt – er ist",
-					"note": {
-						"de": "Bei „er“ und „sie“ endet das Verb auf -t. Besonders: er ist, sie ist.",
-						"en": "With “er” and “sie” the verb ends in -t. Special: er ist, sie ist.",
-						"tl": "Kapag “er” at “sie”, -t ang dulo ng pandiwa. Espesyal: er ist, sie ist."
+						"de": "Auf die Frage „Wie geht es?“ antworten Sie manchmal „Es geht.“ Das heißt: nicht sehr gut, aber auch nicht schlecht. „es“ meint hier keine Person, es steht nur im Satz.",
+						"en": "You sometimes answer the question “Wie geht es?” with “Es geht.” It means: so-so, not very good, but not bad either. “es” does not mean a person here, it just stands in the sentence.",
+						"tl": "Minsan, ang sagot sa tanong na “Wie geht es?” ay “Es geht.” Ibig sabihin: so-so, hindi masyadong mabuti pero hindi rin masama. Hindi tao ang tinutukoy ng “es” dito, nasa pangungusap lang ito."
 					}
 				}
 			],
 			"items": [
 				{
 					"id": "A1-01-L05-I1",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
+					"type": "choice",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Schreiben Sie das fehlende Wort.",
-						"en": "Write the missing word.",
-						"tl": "Isulat ang nawawalang salita."
-					},
-					"text": "Das ist Herr Huber. {{1}} heißt Jonas.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"Er"
-							]
-						}
+						"de": "Schauen Sie das Bild an.",
+						"en": "Maria, Jonas and Anna sit in the course in Vienna. Look at the name signs and flags. Which sentence is correct?",
+						"tl": "Nakaupo sina Maria, Jonas at Anna sa kurso sa Vienna. Tingnan ang mga name sign at bandila. Aling pangungusap ang tama?"
 					},
 					"explanation": {
-						"de": "Herr Huber ist ein Mann: „er“. Am Satzanfang groß: Er.",
-						"en": "Mr Huber is a man: “er”. Capital letter at the start of the sentence: Er.",
-						"tl": "Lalaki si Herr Huber: “er”. Malaking titik sa simula ng pangungusap: Er."
+						"de": "Richtig: „Er kommt aus Österreich.“ Jonas ist ein Mann: „er“. Unter seinem Namensschild ist die österreichische Flagge. „Sie kommt …“ wäre für eine Frau, und die Flagge der Philippinen gehört zu Maria.",
+						"en": "Correct: “Er kommt aus Österreich.” Jonas is a man: “er”. Under his name sign is the Austrian flag. “Sie kommt …” would be for a woman, and the flag of the Philippines belongs to Maria.",
+						"tl": "Tama: “Er kommt aus Österreich.” Lalaki si Jonas: “er”. Sa ilalim ng name sign niya ay ang bandila ng Austria. Ang “Sie kommt …” ay para sa babae, at ang bandila ng Pilipinas ay kay Maria."
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0008",
+						"W-A1-0357"
+					],
+					"options": [
+						"Er kommt aus Österreich.",
+						"Sie kommt aus Österreich.",
+						"Er kommt aus den Philippinen."
+					],
+					"answer": 0,
+					"prompt": "Das ist Jonas Huber.",
+					"image": {
+						"src": "/img/a1-01-kurs.svg",
+						"alt": {
+							"de": "Drei Personen mit Namensschild. Maria Santos hat die Flagge der Philippinen und das Wort „Philippinen“ darunter. Jonas Huber und Anna Gruber haben die rot-weiß-rote Flagge und das Wort „Österreich“ darunter.",
+							"en": "Three people with name signs. Maria Santos has the flag of the Philippines and the word “Philippinen” under it. Jonas Huber and Anna Gruber have the red-white-red flag and the word “Österreich” under it.",
+							"tl": "Tatlong taong may name sign. Si Maria Santos ay may bandila ng Pilipinas at ang salitang “Philippinen” sa ilalim. Sina Jonas Huber at Anna Gruber ay may pula-puti-pulang bandila at ang salitang “Österreich” sa ilalim."
+						}
 					}
 				},
 				{
@@ -1265,56 +1750,112 @@
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie das fehlende Wort.",
-						"en": "Write the missing word.",
-						"tl": "Isulat ang nawawalang salita."
+						"de": "Schauen Sie das Bild an. Ergänzen Sie den Satz.",
+						"en": "Look at the picture again. Complete the sentences about Anna Gruber with the words below.",
+						"tl": "Tingnan muli ang larawan. Kumpletuhin ang mga pangungusap tungkol kay Anna Gruber gamit ang mga salita sa ibaba."
 					},
-					"text": "Das ist Frau Gruber. {{1}} kommt aus Österreich.",
+					"explanation": {
+						"de": "Richtig: „Sie kommt aus Österreich.“ Anna ist eine Frau: „sie“, und das Verb endet auf -t. Unter ihrem Namen ist die österreichische Flagge. „Er“ ist für einen Mann; „Philippinen“ gehört zu Maria.",
+						"en": "Correct: “Sie kommt aus Österreich.” Anna is a woman: “sie”, and the verb ends in -t. Under her name is the Austrian flag. “Er” is for a man; “Philippinen” belongs to Maria.",
+						"tl": "Tama: “Sie kommt aus Österreich.” Babae si Anna: “sie”, at nagtatapos sa -t ang verb. Sa ilalim ng pangalan niya ay ang bandila ng Austria. Ang “Er” ay para sa lalaki; ang “Philippinen” ay kay Maria."
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0009",
+						"W-A1-0128"
+					],
+					"text": "Das ist Anna Gruber. {{1}} kommt aus {{2}}.",
 					"gaps": {
 						"1": {
 							"accept": [
 								"Sie"
 							]
+						},
+						"2": {
+							"accept": [
+								"Österreich"
+							]
 						}
 					},
-					"explanation": {
-						"de": "Frau Gruber ist eine Frau: „sie“.",
-						"en": "Ms Gruber is a woman: “sie”.",
-						"tl": "Babae si Frau Gruber: “sie”."
+					"bank": [
+						"Sie",
+						"Er",
+						"Österreich",
+						"Philippinen"
+					],
+					"image": {
+						"src": "/img/a1-01-kurs.svg",
+						"alt": {
+							"de": "Drei Personen mit Namensschild. Maria Santos hat die Flagge der Philippinen und das Wort „Philippinen“ darunter. Jonas Huber und Anna Gruber haben die rot-weiß-rote Flagge und das Wort „Österreich“ darunter.",
+							"en": "Three people with name signs. Maria Santos has the flag of the Philippines and the word “Philippinen” under it. Jonas Huber and Anna Gruber have the red-white-red flag and the word “Österreich” under it.",
+							"tl": "Tatlong taong may name sign. Si Maria Santos ay may bandila ng Pilipinas at ang salitang “Philippinen” sa ilalim. Sina Jonas Huber at Anna Gruber ay may pula-puti-pulang bandila at ang salitang “Österreich” sa ilalim."
+						}
 					}
 				},
 				{
 					"id": "A1-01-L05-I3",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "hoeren",
 					"instruction": {
-						"de": "Was passt?",
-						"en": "Which one fits?",
-						"tl": "Alin ang bagay?"
+						"de": "Hören Sie. Wer ist das?",
+						"en": "Maria talks about one person in the picture. Listen: who is it?",
+						"tl": "May pinag-uusapang tao si Maria sa larawan. Makinig: sino iyon?"
 					},
+					"explanation": {
+						"de": "Sie hören: „Sie kommt aus Österreich.“ „sie“ = eine Frau, und sie kommt aus Österreich: Das ist Anna Gruber. Jonas Huber ist ein Mann („er“). Maria Santos ist eine Frau, kommt aber aus den Philippinen.",
+						"en": "You hear: “Sie kommt aus Österreich.” “sie” = a woman, and she comes from Austria: that is Anna Gruber. Jonas Huber is a man (“er”). Maria Santos is a woman, but she comes from the Philippines.",
+						"tl": "Naririnig mo: “Sie kommt aus Österreich.” “sie” = babae, at taga-Austria siya: si Anna Gruber iyon. Lalaki si Jonas Huber (“er”). Babae si Maria Santos, pero taga-Pilipinas siya."
+					},
+					"goals": [
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0009",
+						"W-A1-0035"
+					],
 					"options": [
-						"heiße",
-						"heißt",
-						"heißen"
+						"Jonas Huber",
+						"Anna Gruber",
+						"Maria Santos"
 					],
 					"answer": 1,
-					"explanation": {
-						"de": "Bei „er“ endet das Verb auf -t: er heißt.",
-						"en": "With “er” the verb ends in -t: er heißt.",
-						"tl": "Kapag “er”, -t ang dulo: er heißt."
-					},
-					"prompt": "Er … Jonas."
+					"prompt": "Wer ist das?",
+					"audioText": "Sie kommt aus Österreich.",
+					"audioOnly": true,
+					"image": {
+						"src": "/img/a1-01-kurs.svg",
+						"alt": {
+							"de": "Drei Personen mit Namensschild. Maria Santos hat die Flagge der Philippinen und das Wort „Philippinen“ darunter. Jonas Huber und Anna Gruber haben die rot-weiß-rote Flagge und das Wort „Österreich“ darunter.",
+							"en": "Three people with name signs. Maria Santos has the flag of the Philippines and the word “Philippinen” under it. Jonas Huber and Anna Gruber have the red-white-red flag and the word “Österreich” under it.",
+							"tl": "Tatlong taong may name sign. Si Maria Santos ay may bandila ng Pilipinas at ang salitang “Philippinen” sa ilalim. Sina Jonas Huber at Anna Gruber ay may pula-puti-pulang bandila at ang salitang “Österreich” sa ilalim."
+						}
+					}
 				},
 				{
 					"id": "A1-01-L05-I4",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jose points at Frau Gruber and asks Maria. Complete the dialogue with the words below.",
+						"tl": "Itinuro ni Jose si Frau Gruber at nagtanong kay Maria. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
-					"text": "Wer {{1}} das? – Das {{2}} Frau Gruber.",
+					"explanation": {
+						"de": "Richtig: „Wer ist das? – Das ist Frau Gruber.“ Bei „das“ steht „ist“. „sind“ gehört zu „Sie“ und „wir“, „bin“ nur zu „ich“.",
+						"en": "Correct: “Wer ist das? – Das ist Frau Gruber.” With “das” you use “ist”. “sind” goes with “Sie” and “wir”, “bin” only with “ich”.",
+						"tl": "Tama: “Wer ist das? – Das ist Frau Gruber.” Sa “das”, ang gamit ay “ist”. Ang “sind” ay para sa “Sie” at “wir”, ang “bin” ay para lang sa “ich”."
+					},
+					"goals": [
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0116",
+						"W-A1-0035"
+					],
+					"text": "Jose: Wer {{1}} das?\nMaria: Das {{2}} Frau Gruber.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1327,63 +1868,141 @@
 							]
 						}
 					},
-					"explanation": {
-						"de": "sein: ich bin, du bist, er ist, sie ist.",
-						"en": "sein (to be): ich bin, du bist, er ist, sie ist.",
-						"tl": "sein (maging / ay): ich bin, du bist, er ist, sie ist."
-					}
-				},
-				{
-					"id": "A1-01-L05-B1",
-					"type": "choice",
-					"skill": "lesen",
-					"instruction": {
-						"de": "Sehen Sie das Bild an. Wer ist das im Büro?",
-						"en": "Look at the picture. Who is that in the office?",
-						"tl": "Tingnan ang larawan. Sino ang nasa opisina?"
-					},
-					"options": [
-						"Sie heißt Anna Gruber. Er heißt Jonas Huber.",
-						"Er heißt Anna Gruber. Sie heißt Jonas Huber.",
-						"Sie heißt Anna Huber. Er heißt Jonas Gruber."
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Die Frau ist Anna Gruber („sie“), der Mann ist Jonas Huber („er“) – so steht es auf den Schildern.",
-						"en": "The woman is Anna Gruber (“sie”), the man is Jonas Huber (“er”) – as the signs say.",
-						"tl": "Ang babae ay si Anna Gruber (“sie”), ang lalaki ay si Jonas Huber (“er”) – gaya ng nasa mga karatula."
-					},
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					}
+					"bank": [
+						"ist",
+						"ist",
+						"sind",
+						"bin"
+					]
 				},
 				{
 					"id": "A1-01-L05-I5",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Hören Sie. Wer kommt aus Österreich?",
-						"en": "Listen. Who is from Austria?",
-						"tl": "Makinig. Sino ang galing sa Austria?"
+						"de": "Was passt? Wählen Sie die richtige Form.",
+						"en": "Maria talks about Jonas. Which verb form fits?",
+						"tl": "Pinag-uusapan ni Maria si Jonas. Aling anyo ng verb ang tama?"
 					},
-					"options": [
-						"Herr Huber",
-						"Frau Gruber",
-						"Maria"
-					],
-					"answer": 1,
 					"explanation": {
-						"de": "Sie hören: „Das ist Frau Gruber. Sie kommt aus Österreich.“",
-						"en": "You hear: “Das ist Frau Gruber. Sie kommt aus Österreich.”",
-						"tl": "Narinig mo: “Das ist Frau Gruber. Sie kommt aus Österreich.”"
+						"de": "Richtig: „Er heißt Jonas.“ Bei „er“ und „sie“ endet das Verb auf -t. „heiße“ gehört zu „ich“, „heißen“ zu „Sie“ und „wir“.",
+						"en": "Correct: “Er heißt Jonas.” With “er” and “sie” the verb ends in -t. “heiße” goes with “ich”, “heißen” with “Sie” and “wir”.",
+						"tl": "Tama: “Er heißt Jonas.” Sa “er” at “sie”, nagtatapos sa -t ang verb. Ang “heiße” ay para sa “ich”, ang “heißen” sa “Sie” at “wir”."
 					},
-					"audioText": "Das ist Frau Gruber. Sie kommt aus Österreich.",
-					"audioOnly": true
+					"goals": [
+						"A1-01-G5",
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0008",
+						"W-A1-0147"
+					],
+					"options": [
+						"heißt",
+						"heiße",
+						"heißen"
+					],
+					"answer": 0,
+					"prompt": "Er … Jonas."
+				},
+				{
+					"id": "A1-01-L05-I6",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Was antwortet Maria?",
+						"en": "Jonas asks Maria: “Wie geht’s?” Maria is neither happy nor sad, it is just so-so. What does she answer?",
+						"tl": "Tinanong ni Jonas si Maria: “Wie geht’s?” Hindi masaya at hindi rin malungkot si Maria, so-so lang. Ano ang sagot niya?"
+					},
+					"explanation": {
+						"de": "Richtig: „Es geht.“ Das heißt: nicht sehr gut, aber auch nicht schlecht. „Sehr gut“ und „Danke, gut“ sind klar positiv. „es“ meint hier keine Person, es steht nur im Satz.",
+						"en": "Correct: “Es geht.” It means: so-so, not very good, but not bad either. “Sehr gut” and “Danke, gut” are clearly positive. “es” does not mean a person here, it just stands in the sentence.",
+						"tl": "Tama: “Es geht.” Ibig sabihin: so-so, hindi masyadong mabuti pero hindi rin masama. Malinaw na positibo ang “Sehr gut” at “Danke, gut”. Hindi tao ang tinutukoy ng “es” dito, nasa pangungusap lang ito."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0010",
+						"W-A1-0387"
+					],
+					"options": [
+						"Es geht.",
+						"Sehr gut!",
+						"Danke, gut."
+					],
+					"answer": 0,
+					"prompt": "Jonas: „Wie geht’s?“"
+				},
+				{
+					"id": "A1-01-L05-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Jose asks you: “Wer ist das?” You point at Frau Gruber. What do you say? Choose, then say it aloud.",
+						"tl": "Tinanong ka ni Jose: “Wer ist das?” Itinuro mo si Frau Gruber. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Das ist Frau Gruber. Sie heißt Anna.“ Frau Gruber ist eine Frau: „sie“, Verb auf -t. „Er“ ist für einen Mann. „Sie heißen“ ist die höfliche Anrede für das Gegenüber, nicht für Frau Gruber.",
+						"en": "Correct: “Das ist Frau Gruber. Sie heißt Anna.” Frau Gruber is a woman: “sie”, verb ending in -t. “Er” is for a man. “Sie heißen” is the polite form for the person you talk to, not for Frau Gruber.",
+						"tl": "Tama: “Das ist Frau Gruber. Sie heißt Anna.” Babae si Frau Gruber: “sie”, verb na nagtatapos sa -t. Ang “Er” ay para sa lalaki. Ang “Sie heißen” ay magalang na pagtawag sa kausap, hindi kay Frau Gruber."
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0009",
+						"W-A1-0147"
+					],
+					"options": [
+						"Das ist Frau Gruber. Er heißt Anna.",
+						"Das ist Frau Gruber. Sie heißt Anna.",
+						"Das ist Frau Gruber. Sie heißen Anna."
+					],
+					"answer": 1
+				},
+				{
+					"id": "A1-01-L05-I8",
+					"type": "short",
+					"skill": "schreiben",
+					"instruction": {
+						"de": "Schreiben Sie die Antwort.",
+						"en": "Look at the picture. Maria points at the man and asks: “Wer ist das?” Write your answer.",
+						"tl": "Tingnan ang larawan. Itinuro ni Maria ang lalaki at nagtanong: “Wer ist das?” Isulat ang sagot mo."
+					},
+					"explanation": {
+						"de": "Richtig: z. B. „Das ist Jonas Huber.“ oder „Er heißt Jonas.“ Es ist ein Mann, darum „er“. Auf dem Namensschild steht „Jonas Huber“, höflich sagt man „Herr Huber“.",
+						"en": "Correct: for example “Das ist Jonas Huber.” or “Er heißt Jonas.” It is a man, so “er”. The name sign says “Jonas Huber”, and the polite form is “Herr Huber”.",
+						"tl": "Tama: halimbawa “Das ist Jonas Huber.” o “Er heißt Jonas.” Lalaki siya, kaya “er”. Nakasulat sa name sign ang “Jonas Huber”, at ang magalang na anyo ay “Herr Huber”."
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G2"
+					],
+					"refs": [
+						"W-A1-0035",
+						"W-A1-0008"
+					],
+					"prompt": "Maria: „Wer ist das?“ – Sie: „…“",
+					"accept": [
+						"Das ist Jonas Huber.",
+						"Das ist Herr Huber.",
+						"Das ist Jonas.",
+						"Er heißt Jonas Huber.",
+						"Er heißt Jonas.",
+						"Er ist Jonas Huber.",
+						"Er ist Herr Huber."
+					],
+					"image": {
+						"src": "/img/a1-01-kurs.svg",
+						"alt": {
+							"de": "Drei Personen mit Namensschild. Maria Santos hat die Flagge der Philippinen und das Wort „Philippinen“ darunter. Jonas Huber und Anna Gruber haben die rot-weiß-rote Flagge und das Wort „Österreich“ darunter.",
+							"en": "Three people with name signs. Maria Santos has the flag of the Philippines and the word “Philippinen” under it. Jonas Huber and Anna Gruber have the red-white-red flag and the word “Österreich” under it.",
+							"tl": "Tatlong taong may name sign. Si Maria Santos ay may bandila ng Pilipinas at ang salitang “Philippinen” sa ilalim. Sina Jonas Huber at Anna Gruber ay may pula-puti-pulang bandila at ang salitang “Österreich” sa ilalim."
+						}
+					}
 				}
 			]
 		},
@@ -1394,6 +2013,18 @@
 				"en": "Yes, no, me too",
 				"tl": "Oo, hindi, ako rin"
 			},
+			"intro": {
+				"situation": {
+					"de": "Im Kurs fragen sich die Leute: „Kommen Sie aus Österreich?“ oder „Heißen Sie Huber?“ Die Antwort ist „ja“ oder „nein“.",
+					"en": "In the course people ask each other: “Kommen Sie aus Österreich?” or “Heißen Sie Huber?” The answer is “ja” or “nein”.",
+					"tl": "Sa kurso, nagtatanungan ang mga tao: “Kommen Sie aus Österreich?” o “Heißen Sie Huber?” Ang sagot ay “ja” o “nein”."
+				},
+				"goal": {
+					"de": "Fragen mit „ja“, „nein“ oder „ich auch“ beantworten – und mit „wer“ und „was“ fragen.",
+					"en": "answer questions with “ja”, “nein” or “ich auch” – and ask with “wer” and “was”.",
+					"tl": "sagutin ang mga tanong gamit ang “ja”, “nein” o “ich auch” – at magtanong gamit ang “wer” at “was”."
+				}
+			},
 			"introduces": [
 				"W-A1-0051",
 				"W-A1-0052",
@@ -1402,72 +2033,183 @@
 			],
 			"cards": [
 				{
-					"phrase": "Heißen Sie Huber? – Ja, ich heiße Huber.",
+					"kind": "rule",
+					"phrase": "Frage ohne Fragewort: Verb zuerst → ja oder nein",
 					"note": {
-						"de": "Bei einer Frage ohne Fragewort steht das Verb vorne. Antwort: ja oder nein.",
-						"en": "In a question without a question word the verb comes first. Answer: ja or nein.",
-						"tl": "Sa tanong na walang salitang pananong, nauuna ang pandiwa. Sagot: ja o nein."
+						"de": "Bei „wer“, „wie“ und „woher“ steht das Fragewort vorne. Ohne Fragewort steht das Verb vorne, und Sie antworten mit „ja“ oder „nein“.",
+						"en": "With “wer”, “wie” and “woher” the question word comes first. Without a question word the verb comes first, and you answer with “ja” or “nein”.",
+						"tl": "Sa “wer”, “wie” at “woher”, nasa unahan ang salitang pananong. Kung walang salitang pananong, nasa unahan ang verb, at sumasagot ka ng “ja” o “nein”."
+					},
+					"examples": [
+						"Heißen Sie Huber? – Ja, ich heiße Huber.",
+						"Kommst du aus Österreich? – Ja, ich komme aus Österreich."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Kommen Sie aus Österreich? – Nein, ich komme aus den Philippinen.",
+					"note": {
+						"de": "Nach „nein“ sagen Sie kurz, was richtig ist. So hilft Ihre Antwort mehr als nur „nein“.",
+						"en": "After “nein” you briefly say what is correct. That way your answer helps more than just “nein”.",
+						"tl": "Pagkatapos ng “nein”, sabihin nang maikli kung ano ang tama. Mas nakakatulong ang sagot mo kaysa sa “nein” lang."
 					}
 				},
 				{
-					"phrase": "Kommen Sie aus Österreich? – Nein, ich komme von den Philippinen.",
+					"kind": "rule",
+					"phrase": "auch – bei mir ist es gleich",
 					"note": {
-						"de": "Nach „nein“ sagt man, was richtig ist.",
-						"en": "After “nein” you say what is correct.",
-						"tl": "Pagkatapos ng “nein”, sabihin kung ano ang tama."
-					}
+						"de": "„auch“ heißt: Bei mir ist es genauso. „Ich auch!“ ist eine kurze Antwort, wenn jemand etwas sagt und es bei Ihnen gleich ist.",
+						"en": "“auch” means: it is the same for me. “Ich auch!” is a short answer when someone says something and it is the same for you.",
+						"tl": "Ang “auch” ay nangangahulugang: pareho rin sa akin. Ang “Ich auch!” ay maikling sagot kapag may sinabi ang isang tao at pareho rin ito sa iyo."
+					},
+					"examples": [
+						"Ich heiße Maria. – Ich auch!",
+						"Anna kommt aus Österreich. Jonas kommt auch aus Österreich."
+					]
 				},
 				{
-					"phrase": "Ich komme aus Österreich. – Ich auch!",
+					"kind": "rule",
+					"phrase": "wer = Person · was = Ding",
 					"note": {
-						"de": "„auch“ heißt: bei mir ist es gleich.",
-						"en": "“auch” means: it is the same for me.",
-						"tl": "Ang “auch” ay: ganoon din ako."
-					}
-				},
-				{
-					"phrase": "Was ist das? – Das ist ein Name.",
-					"note": {
-						"de": "„was“ fragt nach Dingen, „wer“ fragt nach Personen.",
-						"en": "“was” asks about things, “wer” asks about people.",
-						"tl": "Ang “was” ay tanong tungkol sa bagay, ang “wer” ay tungkol sa tao."
-					}
+						"de": "„wer“ fragt nach Personen, „was“ fragt nach Dingen: Wer ist das? – Das ist Frau Gruber. Was ist das? – Das ist der Familienname.",
+						"en": "“wer” asks about people, “was” asks about things: Wer ist das? – Das ist Frau Gruber. Was ist das? – Das ist der Familienname.",
+						"tl": "Ang “wer” ay para sa mga tao, ang “was” ay para sa mga bagay: Wer ist das? – Das ist Frau Gruber. Was ist das? – Das ist der Familienname."
+					},
+					"examples": [
+						"Wer ist das? – Das ist Frau Gruber.",
+						"Was ist das? – Das ist der Familienname."
+					]
 				}
 			],
 			"items": [
 				{
 					"id": "A1-01-L06-I1",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Sie heißen Maria Santos. Was antworten Sie?",
-						"en": "Your name is Maria Santos. What do you answer?",
-						"tl": "Maria Santos ang pangalan mo. Ano ang isasagot mo?"
+						"de": "Schauen Sie das Bild an. Was antwortet Anna?",
+						"en": "Anna and Jonas talk about Maria. Jonas asks: “Kommt Maria aus Österreich?” Look at the picture. What does Anna answer?",
+						"tl": "Pinag-uusapan nina Anna at Jonas si Maria. Nagtanong si Jonas: “Kommt Maria aus Österreich?” Tingnan ang larawan. Ano ang sagot ni Anna?"
 					},
+					"explanation": {
+						"de": "Richtig: Maria hat die Flagge der Philippinen. Darum „Nein“ – und danach das richtige Land. „Ja, sie kommt aus Österreich“ stimmt nicht mit dem Bild überein. „Nein, sie kommt aus Österreich“ widerspricht sich: Nach „nein“ muss etwas anderes kommen.",
+						"en": "Correct: Maria has the flag of the Philippines. So “Nein” – and then the right country. “Ja, sie kommt aus Österreich” does not match the picture. “Nein, sie kommt aus Österreich” contradicts itself: after “nein” something different has to follow.",
+						"tl": "Tama: Ang bandila ni Maria ay ang bandila ng Pilipinas. Kaya “Nein” – at pagkatapos ang tamang bansa. Hindi tugma sa larawan ang “Ja, sie kommt aus Österreich”. Salungat sa sarili ang “Nein, sie kommt aus Österreich”: pagkatapos ng “nein”, dapat iba ang sunod."
+					},
+					"goals": [
+						"A1-01-G6",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0052",
+						"W-A1-0051"
+					],
 					"options": [
-						"Ja, ich heiße Huber.",
-						"Nein, ich heiße Santos.",
-						"Ich auch."
+						"Ja, sie kommt aus Österreich.",
+						"Nein, sie kommt aus den Philippinen.",
+						"Nein, sie kommt aus Österreich."
 					],
 					"answer": 1,
-					"explanation": {
-						"de": "Der Name stimmt nicht. Darum: „Nein, ich heiße Santos.“",
-						"en": "The name is wrong. So: “Nein, ich heiße Santos.”",
-						"tl": "Hindi tama ang pangalan. Kaya: “Nein, ich heiße Santos.”"
-					},
-					"prompt": "Heißen Sie Huber?",
-					"audioText": "Heißen Sie Huber?"
+					"prompt": "Jonas: „Kommt Maria aus Österreich?“",
+					"image": {
+						"src": "/img/a1-01-kurs.svg",
+						"alt": {
+							"de": "Drei Personen mit Namensschild. Maria Santos hat die Flagge der Philippinen und das Wort „Philippinen“ darunter. Jonas Huber und Anna Gruber haben die rot-weiß-rote Flagge und das Wort „Österreich“ darunter.",
+							"en": "Three people with name signs. Maria Santos has the flag of the Philippines and the word “Philippinen” under it. Jonas Huber and Anna Gruber have the red-white-red flag and the word “Österreich” under it.",
+							"tl": "Tatlong taong may name sign. Si Maria Santos ay may bandila ng Pilipinas at ang salitang “Philippinen” sa ilalim. Sina Jonas Huber at Anna Gruber ay may pula-puti-pulang bandila at ang salitang “Österreich” sa ilalim."
+						}
+					}
 				},
 				{
 					"id": "A1-01-L06-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
+						"en": "Look at the picture of the bedroom. Someone asks: “Ist es Nacht?” What is the right answer?",
+						"tl": "Tingnan ang larawan ng kuwarto. May nagtanong: “Ist es Nacht?” Ano ang tamang sagot?"
+					},
+					"explanation": {
+						"de": "Richtig: „Ja, es ist Nacht.“ Das Bild zeigt Mond und Sterne, die Uhr zeigt 21:00. Die Frage hat kein Fragewort, die Antwort beginnt mit „ja“. „Nein, es ist Morgen“ stimmt nicht mit dem Bild überein. „Ja, es ist Morgen“ widerspricht sich.",
+						"en": "Correct: “Ja, es ist Nacht.” The picture shows the moon and stars, and the clock shows 21:00. The question has no question word, so the answer begins with “ja”. “Nein, es ist Morgen” does not match the picture. “Ja, es ist Morgen” contradicts itself.",
+						"tl": "Tama: “Ja, es ist Nacht.” Ipinapakita ng larawan ang buwan at mga bituin, at 21:00 ang orasan. Walang salitang pananong ang tanong, kaya “ja” ang simula ng sagot. Hindi tugma sa larawan ang “Nein, es ist Morgen”. Salungat sa sarili ang “Ja, es ist Morgen”."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0051",
+						"W-A1-0052",
+						"W-A1-0010"
+					],
+					"options": [
+						"Nein, es ist Morgen.",
+						"Ja, es ist Morgen.",
+						"Ja, es ist Nacht."
+					],
+					"answer": 2,
+					"prompt": "Ist es Nacht?",
+					"image": {
+						"src": "/img/a1-01-nacht.svg",
+						"alt": {
+							"de": "Nacht im Kinderzimmer: Ein Kind liegt im Bett und schläft ein, die Mutter steht am Bett und winkt. Draußen sind Mond und Sterne, die Uhr zeigt 21:00.",
+							"en": "Night in a child’s bedroom: a child lies in bed and is falling asleep, the mother stands by the bed and waves. Outside there are the moon and stars, the clock shows 21:00.",
+							"tl": "Gabi sa kuwarto ng bata: nakahiga ang bata sa kama at patulog na, nakatayo ang nanay sa tabi ng kama at kumakaway. May buwan at mga bituin sa labas, 21:00 ang nasa orasan."
+						}
+					}
+				},
+				{
+					"id": "A1-01-L06-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Was antworten Sie?",
+						"en": "Frau Gruber asks you a question. You are Maria Santos. Listen. What do you answer?",
+						"tl": "May tanong si Frau Gruber sa iyo. Ikaw si Maria Santos. Makinig. Ano ang sagot mo?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Heißen Sie Huber?“ Sie heißen Santos, darum „Nein“ – und dann der richtige Name. „Ja, ich heiße Huber“ stimmt nicht. „Ich auch“ passt nur, wenn bei Ihnen etwas gleich ist wie bei der anderen Person.",
+						"en": "You hear: “Heißen Sie Huber?” Your name is Santos, so “Nein” – and then the right name. “Ja, ich heiße Huber” is not true. “Ich auch” only fits when something is the same for you as for the other person.",
+						"tl": "Naririnig mo: “Heißen Sie Huber?” Santos ang pangalan mo, kaya “Nein” – at pagkatapos ang tamang pangalan. Hindi totoo ang “Ja, ich heiße Huber”. Ang “Ich auch” ay bagay lang kapag pareho kayo ng ibang tao."
+					},
+					"goals": [
+						"A1-01-G6",
+						"A1-01-G2"
+					],
+					"refs": [
+						"W-A1-0052",
+						"W-A1-0147"
+					],
+					"options": [
+						"Nein, ich heiße Santos.",
+						"Ja, ich heiße Huber.",
+						"Ich auch."
+					],
+					"answer": 0,
+					"audioText": "Heißen Sie Huber?",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L06-I4",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie das fehlende Wort.",
-						"en": "Write the missing word.",
-						"tl": "Isulat ang nawawalang salita."
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jonas asks Anna a question. Anna comes from Austria. Complete the dialogue with the words below.",
+						"tl": "May itinanong si Jonas kay Anna. Taga-Austria si Anna. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
-					"text": "Kommst du aus Österreich? – {{1}}, ich komme aus Österreich.",
+					"explanation": {
+						"de": "Richtig: „Ja“. Anna kommt aus Österreich, also stimmt die Frage. „Nein, ich komme aus Österreich“ widerspricht sich. „Auch“ ist keine Antwort auf eine Frage mit „ja“ oder „nein“.",
+						"en": "Correct: “Ja”. Anna comes from Austria, so the question is right. “Nein, ich komme aus Österreich” contradicts itself. “Auch” is not an answer to a yes-or-no question.",
+						"tl": "Tama: “Ja”. Taga-Austria si Anna, kaya totoo ang tanong. Salungat sa sarili ang “Nein, ich komme aus Österreich”. Ang “Auch” ay hindi sagot sa tanong na “ja” o “nein” ang sagot."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0051"
+					],
+					"text": "Jonas: Kommst du aus Österreich?\nAnna: {{1}}, ich komme aus Österreich.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1475,22 +2217,33 @@
 							]
 						}
 					},
-					"explanation": {
-						"de": "Es stimmt, darum „Ja“.",
-						"en": "It is true, so “Ja”.",
-						"tl": "Totoo, kaya “Ja”."
-					}
+					"bank": [
+						"Ja",
+						"Nein",
+						"Auch"
+					]
 				},
 				{
-					"id": "A1-01-L06-I3",
+					"id": "A1-01-L06-I5",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie das fehlende Wort.",
-						"en": "Write the missing word.",
-						"tl": "Isulat ang nawawalang salita."
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jose and Maria both come from the Philippines. Complete the dialogue with the words below.",
+						"tl": "Parehong taga-Pilipinas sina Jose at Maria. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
-					"text": "Mir geht's gut. Und dir? – Mir {{1}}, danke!",
+					"explanation": {
+						"de": "Richtig: „Ich auch!“ Maria kommt auch aus den Philippinen: Bei ihr ist es gleich. „Ich ja“ und „Ich nein“ gibt es nicht: „ja“ und „nein“ beantworten Fragen.",
+						"en": "Correct: “Ich auch!” Maria also comes from the Philippines: it is the same for her. “Ich ja” and “Ich nein” do not exist: “ja” and “nein” answer questions.",
+						"tl": "Tama: “Ich auch!” Taga-Pilipinas din si Maria: pareho sa kanya. Walang “Ich ja” at “Ich nein”: ang “ja” at “nein” ay sagot sa mga tanong."
+					},
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0055"
+					],
+					"text": "Jose: Ich komme aus den Philippinen.\nMaria: Ich {{1}}!",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1498,91 +2251,107 @@
 							]
 						}
 					},
-					"explanation": {
-						"de": "Es ist gleich: „Mir auch.“",
-						"en": "It is the same: “Mir auch.”",
-						"tl": "Ganoon din: “Mir auch.”"
-					}
+					"bank": [
+						"auch",
+						"ja",
+						"nein"
+					]
 				},
 				{
-					"id": "A1-01-L06-I4",
-					"type": "choice",
+					"id": "A1-01-L06-I6",
+					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "„Wer“ oder „was“?",
-						"en": "“Wer” or “was”?",
-						"tl": "“Wer” o “was”?"
+						"de": "Ergänzen Sie die Fragen.",
+						"en": "Jose points first at Frau Gruber, then at a word on the form. Complete his two questions with the words below.",
+						"tl": "Una, itinuro ni Jose si Frau Gruber, tapos ang isang salita sa form. Kumpletuhin ang dalawa niyang tanong gamit ang mga salita sa ibaba."
 					},
-					"options": [
+					"explanation": {
+						"de": "Richtig: Frau Gruber ist eine Person: „Wer ist das?“ Der Familienname ist ein Ding: „Was ist das?“ „Wie“ passt hier nicht: Es fragt nach der Art, nicht nach Person oder Ding.",
+						"en": "Correct: Frau Gruber is a person: “Wer ist das?” The family name is a thing: “Was ist das?” “Wie” does not fit here: it asks how something is, not about a person or a thing.",
+						"tl": "Tama: Tao si Frau Gruber: “Wer ist das?” Bagay ang Familienname: “Was ist das?” Hindi bagay dito ang “Wie”: nagtatanong ito kung paano, hindi tungkol sa tao o bagay."
+					},
+					"goals": [
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0035",
+						"W-A1-0036"
+					],
+					"text": "„{{1}} ist das?“ – „Das ist Frau Gruber.“\n„{{2}} ist das?“ – „Das ist der Familienname.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Wer"
+							]
+						},
+						"2": {
+							"accept": [
+								"Was"
+							]
+						}
+					},
+					"bank": [
 						"Wer",
 						"Was",
 						"Wie"
-					],
-					"answer": 0,
-					"explanation": {
-						"de": "Frau Gruber ist eine Person. Nach Personen fragt man mit „wer“.",
-						"en": "Ms Gruber is a person. You ask about people with “wer”.",
-						"tl": "Tao si Frau Gruber. “wer” ang tanong para sa tao."
-					},
-					"prompt": "… ist das? – Das ist Frau Gruber."
+					]
 				},
 				{
-					"id": "A1-01-L06-B1",
+					"id": "A1-01-L06-I7",
 					"type": "choice",
-					"skill": "lesen",
+					"skill": "sprechen",
 					"instruction": {
-						"de": "Sehen Sie das Bild an. Ist der Satz richtig?",
-						"en": "Look at the picture. Is the sentence correct?",
-						"tl": "Tingnan ang larawan. Tama ba ang pangungusap?"
+						"de": "Was antworten Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are Maria Santos from the Philippines. Jonas asks you a question. What do you answer? Choose, then say it aloud.",
+						"tl": "Ikaw si Maria Santos mula sa Pilipinas. May tanong si Jonas sa iyo. Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
 					},
-					"options": [
-						"Ja.",
-						"Nein."
-					],
-					"answer": 1,
 					"explanation": {
-						"de": "Nein. Auf dem Schild steht „Jonas Huber“, nicht „Jonas Gruber“.",
-						"en": "No. The badge says “Jonas Huber”, not “Jonas Gruber”.",
-						"tl": "Hindi. “Jonas Huber” ang nakasulat sa karatula, hindi “Jonas Gruber”."
+						"de": "Richtig: „Nein, ich komme aus den Philippinen.“ Die Antwort auf die Frage ist „nein“, und danach sagen Sie, was richtig ist. „Ja, ich komme aus den Philippinen“ passt nicht zur Frage. „Nein, ich auch“ widerspricht sich.",
+						"en": "Correct: “Nein, ich komme aus den Philippinen.” The answer to the question is “nein”, and then you say what is correct. “Ja, ich komme aus den Philippinen” does not fit the question. “Nein, ich auch” contradicts itself.",
+						"tl": "Tama: “Nein, ich komme aus den Philippinen.” “Nein” ang sagot sa tanong, at pagkatapos ay sasabihin mo kung ano ang tama. Hindi bagay sa tanong ang “Ja, ich komme aus den Philippinen”. Salungat sa sarili ang “Nein, ich auch”."
 					},
-					"prompt": "Er heißt Jonas Gruber.",
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					}
+					"goals": [
+						"A1-01-G6",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0052",
+						"W-A1-0362"
+					],
+					"options": [
+						"Ja, ich komme aus den Philippinen.",
+						"Nein, ich auch.",
+						"Nein, ich komme aus den Philippinen."
+					],
+					"answer": 2,
+					"prompt": "Jonas: „Kommen Sie aus Österreich?“"
 				},
 				{
-					"id": "A1-01-L06-B2",
-					"type": "choice",
-					"skill": "lesen",
+					"id": "A1-01-L06-I8",
+					"type": "short",
+					"skill": "schreiben",
 					"instruction": {
-						"de": "Sehen Sie das Bild an. Ist der Satz richtig?",
-						"en": "Look at the picture. Is the sentence correct?",
-						"tl": "Tingnan ang larawan. Tama ba ang pangungusap?"
+						"de": "Schreiben Sie die Antwort.",
+						"en": "Anna also comes from Austria. Jonas says: “Ich komme aus Österreich.” Write what Anna answers.",
+						"tl": "Taga-Austria rin si Anna. Sinabi ni Jonas: “Ich komme aus Österreich.” Isulat ang sagot ni Anna."
 					},
-					"options": [
-						"Ja.",
-						"Nein."
-					],
-					"answer": 0,
 					"explanation": {
-						"de": "Ja. Es ist Nacht, das Kind schläft – man sagt „Gute Nacht“.",
-						"en": "Yes. It is night, the child is asleep – you say “Gute Nacht”.",
-						"tl": "Oo. Gabi na at tulog ang bata – “Gute Nacht” ang sinasabi."
+						"de": "Richtig: „Ich auch!“ Anna kommt auch aus Österreich, bei ihr ist es gleich. „auch“ steht hier nach „ich“.",
+						"en": "Correct: “Ich auch!” Anna also comes from Austria, it is the same for her. Here “auch” comes after “ich”.",
+						"tl": "Tama: “Ich auch!” Taga-Austria rin si Anna, pareho sa kanya. Dito, nasa likod ng “ich” ang “auch”."
 					},
-					"prompt": "Sie sagt: „Gute Nacht!“",
-					"image": {
-						"src": "/img/a1-01-nacht.svg",
-						"alt": {
-							"de": "Nacht im Kinderzimmer: Ein Kind liegt im Bett und schläft ein, die Mutter steht am Bett und winkt. Draußen sind Mond und Sterne, die Uhr zeigt 21:00.",
-							"en": "Night in a child's bedroom: a child lies in bed and is falling asleep, the mother stands by the bed and waves. Outside there are the moon and stars, the clock shows 21:00.",
-							"tl": "Gabi sa kuwarto ng bata: nakahiga ang bata sa kama at patulog na, nakatayo ang nanay sa tabi ng kama at kumakaway. May buwan at mga bituin sa labas, 21:00 ang nasa orasan."
-						}
-					}
+					"goals": [
+						"A1-01-G6"
+					],
+					"refs": [
+						"W-A1-0055"
+					],
+					"prompt": "Jonas: „Ich komme aus Österreich.“ – Anna: „…“",
+					"accept": [
+						"Ich auch!",
+						"Ich auch."
+					]
 				}
 			]
 		},
@@ -1593,6 +2362,18 @@
 				"en": "We introduce ourselves",
 				"tl": "Nagpapakilala kami"
 			},
+			"intro": {
+				"situation": {
+					"de": "Erster Tag im Deutschkurs in Wien. Maria und Jose stellen sich vor. Anna und Jonas fragen: „Woher kommt ihr?“",
+					"en": "First day of the German course in Vienna. Maria and Jose introduce themselves. Anna and Jonas ask: “Woher kommt ihr?”",
+					"tl": "Unang araw ng kursong German sa Vienna. Nagpapakilala sina Maria at Jose. Nagtanong sina Anna at Jonas: “Woher kommt ihr?”"
+				},
+				"goal": {
+					"de": "sich und andere vorstellen: „Ich stelle mich vor“, „Wir kommen aus …“ und „Woher kommt ihr?“",
+					"en": "introduce yourself and others: “Ich stelle mich vor”, “Wir kommen aus …” and “Woher kommt ihr?”",
+					"tl": "magpakilala ng sarili at ng iba: “Ich stelle mich vor”, “Wir kommen aus …” at “Woher kommt ihr?”"
+				}
+			},
 			"introduces": [
 				"W-A1-0011",
 				"W-A1-0012",
@@ -1601,107 +2382,285 @@
 			],
 			"cards": [
 				{
-					"phrase": "Ich stelle mich vor: Ich heiße Maria Santos.",
+					"kind": "phrase",
+					"phrase": "Ich stelle mich vor: Ich heiße Maria Santos. Ich komme aus den Philippinen.",
 					"note": {
-						"de": "So beginnt man, wenn man sich vorstellt – zum Beispiel im Kurs oder in der Prüfung.",
-						"en": "This is how you start introducing yourself – for example in class or in the exam.",
-						"tl": "Ganito magsimula kapag nagpapakilala – halimbawa sa klase o sa exam."
+						"de": "So stellen Sie sich vor: zuerst der Name, dann das Land. Das Verb heißt „sich vorstellen“.",
+						"en": "This is how you introduce yourself: first your name, then your country. The verb is “sich vorstellen”.",
+						"tl": "Ganito magpakilala: unang ang pangalan, tapos ang bansa. Ang verb ay “sich vorstellen”."
 					}
 				},
 				{
-					"phrase": "Wir kommen von den Philippinen.",
+					"kind": "rule",
+					"phrase": "ich stelle mich vor · wir stellen uns vor",
 					"note": {
-						"de": "„wir“ = ich und andere. Das Verb endet auf -en: wir kommen.",
-						"en": "“wir” = I and others. The verb ends in -en: wir kommen.",
-						"tl": "“wir” = ako at iba pa. -en ang dulo ng pandiwa: wir kommen."
-					}
+						"de": "Das Verb hat zwei Teile: „stelle … vor“. Der Teil „vor“ steht am Ende des Satzes. „mich“ gehört zu „ich“, „uns“ gehört zu „wir“.",
+						"en": "The verb has two parts: “stelle … vor”. The part “vor” comes at the end of the sentence. “mich” goes with “ich”, “uns” goes with “wir”.",
+						"tl": "Dalawang bahagi ang verb: “stelle … vor”. Ang bahaging “vor” ay nasa dulo ng pangungusap. Ang “mich” ay para sa “ich”, ang “uns” ay para sa “wir”."
+					},
+					"examples": [
+						"Ich stelle mich vor.",
+						"Wir stellen uns vor."
+					]
 				},
 				{
-					"phrase": "Woher kommt ihr? Wie heißt ihr?",
+					"kind": "rule",
+					"phrase": "wir kommen · ihr kommt",
 					"note": {
-						"de": "„ihr“ sagt man zu zwei oder mehr Freunden. Das Verb endet auf -t: ihr kommt.",
-						"en": "Use “ihr” when you talk to two or more friends. The verb ends in -t: ihr kommt.",
-						"tl": "“ihr” ang gamit sa dalawa o higit pang kaibigan. -t ang dulo: ihr kommt."
-					}
+						"de": "„wir“ heißt „ich und andere“: Das Verb endet auf -en (wir kommen). „ihr“ sagen Sie zu zwei oder mehr Freunden: Das Verb endet auf -t (ihr kommt).",
+						"en": "“wir” means “I and others”: the verb ends in -en (wir kommen). You say “ihr” to two or more friends: the verb ends in -t (ihr kommt).",
+						"tl": "Ang “wir” ay “ako at ang iba”: nagtatapos sa -en ang verb (wir kommen). Ang “ihr” ay sinasabi sa dalawa o higit pang kaibigan: nagtatapos sa -t ang verb (ihr kommt)."
+					},
+					"examples": [
+						"Wir kommen aus Österreich.",
+						"Woher kommt ihr?"
+					]
 				},
 				{
-					"phrase": "Wie geht's? – Mir geht's gut.",
+					"kind": "rule",
+					"phrase": "wir sind · ihr seid",
 					"note": {
-						"de": "„mir“ gehört zu „ich“: Mir geht's gut. Und dir?",
-						"en": "“mir” goes with “ich”: Mir geht's gut. Und dir?",
-						"tl": "Ang “mir” ay para sa “ich”: Mir geht's gut. Und dir?"
-					}
+						"de": "Auch hier ist „sein“ besonders: wir sind, ihr seid. Zu mehreren Personen, die Sie nicht gut kennen, sagen Sie weiter „Sie sind“.",
+						"en": "“sein” is special here, too: wir sind, ihr seid. To several people you do not know well you still say “Sie sind”.",
+						"tl": "Espesyal din dito ang “sein”: wir sind, ihr seid. Sa maraming taong hindi mo lubos na kilala, “Sie sind” pa rin ang sinasabi mo."
+					},
+					"examples": [
+						"Wir sind Anna und Jonas.",
+						"Seid ihr Maria und Jose?"
+					]
 				},
 				{
-					"phrase": "wir sind – ihr seid",
+					"kind": "phrase",
+					"phrase": "Wie geht's dir? – Mir geht's gut.",
 					"note": {
-						"de": "sein: wir sind, ihr seid, Sie sind.",
-						"en": "sein (to be): wir sind, ihr seid, Sie sind.",
-						"tl": "sein (maging / ay): wir sind, ihr seid, Sie sind."
+						"de": "„dir“ gehört zu „du“, „mir“ gehört zu „ich“: Wie geht’s dir? – Mir geht’s gut. Und dir?",
+						"en": "“dir” goes with “du”, “mir” goes with “ich”: Wie geht’s dir? – Mir geht’s gut. Und dir?",
+						"tl": "Ang “dir” ay para sa “du”, ang “mir” ay para sa “ich”: Wie geht’s dir? – Mir geht’s gut. Und dir?"
 					}
 				}
 			],
 			"items": [
 				{
 					"id": "A1-01-L07-I1",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
+					"type": "choice",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
-					},
-					"text": "Wir {{1}} Anna und Jonas. Wir {{2}} aus Österreich.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"sind",
-								"heißen"
-							]
-						},
-						"2": {
-							"accept": [
-								"kommen"
-							]
-						}
+						"de": "Schauen Sie das Bild an. Was antworten Maria und Jose?",
+						"en": "Anna and Jonas ask Maria and Jose: “Woher kommt ihr?” Look at the flags. What do Maria and Jose answer?",
+						"tl": "Tinanong nina Anna at Jonas sina Maria at Jose: “Woher kommt ihr?” Tingnan ang mga bandila. Ano ang sagot nina Maria at Jose?"
 					},
 					"explanation": {
-						"de": "Bei „wir“ endet das Verb auf -en: wir heißen, wir kommen. Besonders: wir sind.",
-						"en": "With “wir” the verb ends in -en: wir heißen, wir kommen. Special: wir sind.",
-						"tl": "Kapag “wir”, -en ang dulo: wir heißen, wir kommen. Espesyal: wir sind."
+						"de": "Richtig: „Wir kommen aus den Philippinen.“ Maria und Jose sind zu zweit: „wir“, das Verb endet auf -en. Ihre Flagge ist die der Philippinen. „aus Österreich“ gehört zu Anna und Jonas. „Ich komme …“ sagt nur eine Person.",
+						"en": "Correct: “Wir kommen aus den Philippinen.” Maria and Jose are two people: “wir”, and the verb ends in -en. Their flag is the flag of the Philippines. “aus Österreich” belongs to Anna and Jonas. “Ich komme …” is said by only one person.",
+						"tl": "Tama: “Wir kommen aus den Philippinen.” Dalawa sina Maria at Jose: “wir”, at nagtatapos sa -en ang verb. Ang bandila nila ay ang bandila ng Pilipinas. Ang “aus Österreich” ay kina Anna at Jonas. Ang “Ich komme …” ay sinasabi ng iisang tao lang."
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0011",
+						"W-A1-0362"
+					],
+					"options": [
+						"Wir kommen aus Österreich.",
+						"Ich komme aus den Philippinen.",
+						"Wir kommen aus den Philippinen."
+					],
+					"answer": 2,
+					"image": {
+						"src": "/img/a1-01-paare.svg",
+						"alt": {
+							"de": "Zwei Paare. Links Anna und Jonas mit der österreichischen Flagge, rechts Maria und Jose mit der Flagge der Philippinen. Über dem linken Paar steht die Sprechblase „Woher kommt ihr?“.",
+							"en": "Two pairs. On the left Anna and Jonas with the Austrian flag, on the right Maria and Jose with the flag of the Philippines. Above the left pair there is a speech bubble: “Woher kommt ihr?”.",
+							"tl": "Dalawang magkapareha. Sa kaliwa sina Anna at Jonas na may bandila ng Austria, sa kanan sina Maria at Jose na may bandila ng Pilipinas. Sa itaas ng kaliwang pares ay may speech bubble: “Woher kommt ihr?”."
+						}
 					}
 				},
 				{
 					"id": "A1-01-L07-I2",
-					"type": "choice",
+					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Sie fragen zwei Freunde. Was passt?",
-						"en": "You ask two friends. Which one fits?",
-						"tl": "Tinatanong mo ang dalawang kaibigan. Alin ang bagay?"
+						"de": "Schauen Sie das Bild an. Ergänzen Sie den Satz.",
+						"en": "Now Maria and Jose ask the same question, and Anna and Jonas answer. Look at the flags and complete the sentence with the words below.",
+						"tl": "Ngayon, sina Maria at Jose naman ang nagtanong, at sina Anna at Jonas ang sumasagot. Tingnan ang mga bandila at kumpletuhin ang pangungusap gamit ang mga salita sa ibaba."
 					},
-					"options": [
-						"Woher kommt ihr?",
-						"Woher kommst du?",
-						"Woher kommen wir?"
-					],
-					"answer": 0,
 					"explanation": {
-						"de": "Zu zwei Freunden sagt man „ihr“: Woher kommt ihr?",
-						"en": "To two friends you say “ihr”: Woher kommt ihr?",
-						"tl": "Sa dalawang kaibigan, “ihr”: Woher kommt ihr?"
+						"de": "Richtig: „Wir kommen aus Österreich.“ Bei „wir“ endet das Verb auf -en; „kommt“ gehört zu „ihr“. Anna und Jonas haben die österreichische Flagge. „Philippinen“ gehört zu Maria und Jose (und dort heißt es „aus den Philippinen“).",
+						"en": "Correct: “Wir kommen aus Österreich.” With “wir” the verb ends in -en; “kommt” goes with “ihr”. Anna and Jonas have the Austrian flag. “Philippinen” belongs to Maria and Jose (and there it is “aus den Philippinen”).",
+						"tl": "Tama: “Wir kommen aus Österreich.” Sa “wir”, nagtatapos sa -en ang verb; ang “kommt” ay para sa “ihr”. Ang bandila nina Anna at Jonas ay ang bandila ng Austria. Ang “Philippinen” ay kina Maria at Jose (at doon ay “aus den Philippinen”)."
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G5"
+					],
+					"refs": [
+						"W-A1-0011",
+						"W-A1-0128"
+					],
+					"text": "Anna und Jonas: Wir {{1}} aus {{2}}.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"kommen"
+							]
+						},
+						"2": {
+							"accept": [
+								"Österreich"
+							]
+						}
+					},
+					"bank": [
+						"kommen",
+						"kommt",
+						"Österreich",
+						"Philippinen"
+					],
+					"image": {
+						"src": "/img/a1-01-paare.svg",
+						"alt": {
+							"de": "Zwei Paare. Links Anna und Jonas mit der österreichischen Flagge, rechts Maria und Jose mit der Flagge der Philippinen. Über dem linken Paar steht die Sprechblase „Woher kommt ihr?“.",
+							"en": "Two pairs. On the left Anna and Jonas with the Austrian flag, on the right Maria and Jose with the flag of the Philippines. Above the left pair there is a speech bubble: “Woher kommt ihr?”.",
+							"tl": "Dalawang magkapareha. Sa kaliwa sina Anna at Jonas na may bandila ng Austria, sa kanan sina Maria at Jose na may bandila ng Pilipinas. Sa itaas ng kaliwang pares ay may speech bubble: “Woher kommt ihr?”."
+						}
 					}
 				},
 				{
 					"id": "A1-01-L07-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Wen fragt Jonas?",
+						"en": "Jonas asks a question. Listen: is he asking one person or two?",
+						"tl": "May itinatanong si Jonas. Makinig: isang tao ba o dalawa ang tinatanong niya?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Woher kommt ihr?“ „ihr“ sagt man zu zwei oder mehr Freunden, und das Verb endet auf -t. Bei nur einer Person würde Jonas sagen: „Woher kommst du?“",
+						"en": "You hear: “Woher kommt ihr?” You say “ihr” to two or more friends, and the verb ends in -t. For one person only, Jonas would say: “Woher kommst du?”",
+						"tl": "Naririnig mo: “Woher kommt ihr?” Ang “ihr” ay sinasabi sa dalawa o higit pang kaibigan, at nagtatapos sa -t ang verb. Kung iisang tao lang, sasabihin ni Jonas: “Woher kommst du?”"
+					},
+					"goals": [
+						"A1-01-G7",
+						"A1-01-G4"
+					],
+					"refs": [
+						"W-A1-0012",
+						"W-A1-0038"
+					],
+					"options": [
+						"Maria und Jose.",
+						"Maria."
+					],
+					"answer": 0,
+					"prompt": "Jonas fragt …",
+					"audioText": "Woher kommt ihr?",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-01-L07-I4",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie das fehlende Wort.",
-						"en": "Write the missing word.",
-						"tl": "Isulat ang nawawalang salita."
+						"de": "Ergänzen Sie den Text.",
+						"en": "Anna and Jonas introduce themselves in the course. Complete the text with the words below.",
+						"tl": "Nagpapakilala sina Anna at Jonas sa kurso. Kumpletuhin ang teksto gamit ang mga salita sa ibaba."
 					},
-					"text": "Wie geht's? – Danke, {{1}} geht's gut. Und dir?",
+					"explanation": {
+						"de": "Richtig: „Wir heißen Anna und Jonas. Wir kommen aus Österreich.“ Bei „wir“ endet das Verb auf -en. „heißt“ und „kommt“ gehören zu er/sie (und „kommt“ zu „ihr“).",
+						"en": "Correct: “Wir heißen Anna und Jonas. Wir kommen aus Österreich.” With “wir” the verb ends in -en. “heißt” and “kommt” go with er/sie (and “kommt” also with “ihr”).",
+						"tl": "Tama: “Wir heißen Anna und Jonas. Wir kommen aus Österreich.” Sa “wir”, nagtatapos sa -en ang verb. Ang “heißt” at “kommt” ay para sa er/sie (at ang “kommt” ay para rin sa “ihr”)."
+					},
+					"goals": [
+						"A1-01-G5",
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0011",
+						"W-A1-0147",
+						"W-A1-0128"
+					],
+					"text": "Wir stellen uns vor: Wir {{1}} Anna und Jonas. Wir {{2}} aus Österreich.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"heißen",
+								"sind"
+							],
+							"hint": "(heißen)"
+						},
+						"2": {
+							"accept": [
+								"kommen"
+							],
+							"hint": "(kommen)"
+						}
+					},
+					"bank": [
+						"heißen",
+						"kommen",
+						"heißt",
+						"kommt"
+					]
+				},
+				{
+					"id": "A1-01-L07-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie den Satz.",
+						"en": "Jonas asks Maria and Jose, two friends. Complete his question with the word below.",
+						"tl": "Tinatanong ni Jonas sina Maria at Jose, dalawang kaibigan. Kumpletuhin ang tanong niya gamit ang salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Woher kommt ihr?“ Das Verb „kommt“ mit -t gehört zu „ihr“. „du“ braucht „kommst“, und „wir“ braucht „kommen“.",
+						"en": "Correct: “Woher kommt ihr?” The verb “kommt” with -t goes with “ihr”. “du” needs “kommst”, and “wir” needs “kommen”.",
+						"tl": "Tama: “Woher kommt ihr?” Ang verb na “kommt” na may -t ay para sa “ihr”. Ang “du” ay nangangailangan ng “kommst”, at ang “wir” ng “kommen”."
+					},
+					"goals": [
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0012"
+					],
+					"text": "Jonas: Woher kommt {{1}}?",
+					"gaps": {
+						"1": {
+							"accept": [
+								"ihr"
+							]
+						}
+					},
+					"bank": [
+						"ihr",
+						"du",
+						"wir"
+					]
+				},
+				{
+					"id": "A1-01-L07-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie den Dialog.",
+						"en": "Jonas asks Maria how she is. Complete the dialogue with the words below.",
+						"tl": "Tinanong ni Jonas si Maria kung kumusta siya. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Mir geht’s gut.“ „mir“ gehört zu „ich“: Maria spricht über sich. „dir“ gehört zu „du“ (Jonas). „ich geht’s“ gibt es nicht.",
+						"en": "Correct: “Mir geht’s gut.” “mir” goes with “ich”: Maria talks about herself. “dir” goes with “du” (Jonas). “ich geht’s” does not exist.",
+						"tl": "Tama: “Mir geht’s gut.” Ang “mir” ay para sa “ich”: si Maria ay nagsasalita tungkol sa sarili. Ang “dir” ay para sa “du” (si Jonas). Walang “ich geht’s”."
+					},
+					"goals": [
+						"A1-01-G6",
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0016",
+						"W-A1-0017"
+					],
+					"text": "Jonas: Wie geht's dir?\nMaria: Danke, {{1}} geht's gut.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1709,103 +2668,68 @@
 							]
 						}
 					},
-					"explanation": {
-						"de": "„mir“ gehört zu „ich“, „dir“ gehört zu „du“.",
-						"en": "“mir” goes with “ich”, “dir” goes with “du”.",
-						"tl": "Ang “mir” ay para sa “ich”, ang “dir” ay para sa “du”."
-					}
+					"bank": [
+						"mir",
+						"dir",
+						"ich"
+					]
 				},
 				{
-					"id": "A1-01-L07-I4",
-					"type": "cloze",
-					"skill": "schreiben",
-					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
-					},
-					"text": "Ich stelle mich {{1}}: Ich {{2}} Maria Santos. Ich {{3}} von den Philippinen.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"vor"
-							]
-						},
-						"2": {
-							"accept": [
-								"heiße",
-								"bin"
-							]
-						},
-						"3": {
-							"accept": [
-								"komme"
-							]
-						}
-					},
-					"explanation": {
-						"de": "So stellt man sich vor: Name, dann Herkunft. „vorstellen“ teilt sich: Ich stelle mich vor.",
-						"en": "This is how you introduce yourself: name, then origin. “vorstellen” splits into two parts: Ich stelle mich vor.",
-						"tl": "Ganito magpakilala: pangalan, tapos pinagmulan. Nahahati ang “vorstellen”: Ich stelle mich vor."
-					}
-				},
-				{
-					"id": "A1-01-L07-I5",
+					"id": "A1-01-L07-I7",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "sprechen",
 					"instruction": {
-						"de": "Hören Sie. Woher kommen sie?",
-						"en": "Listen. Where are they from?",
-						"tl": "Makinig. Taga-saan sila?"
+						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are Maria Santos. It is the first day in the course and you introduce yourself. What do you say? Choose, then say it aloud.",
+						"tl": "Ikaw si Maria Santos. Unang araw sa kurso at nagpapakilala ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
-					"options": [
-						"aus Österreich",
-						"von den Philippinen"
-					],
-					"answer": 1,
 					"explanation": {
-						"de": "Sie hören: „Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.“",
-						"en": "You hear: “Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.”",
-						"tl": "Narinig mo: “Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.”"
+						"de": "Richtig: „Ich stelle mich vor.“ Das Verb hat zwei Teile: „stelle“ und „vor“. „vor“ steht am Ende. „mich“ gehört zu „ich“. „Ich stelle mich:“ ohne „vor“ ist unvollständig, und „vor mich“ steht an der falschen Stelle.",
+						"en": "Correct: “Ich stelle mich vor.” The verb has two parts: “stelle” and “vor”. “vor” comes at the end. “mich” goes with “ich”. “Ich stelle mich:” without “vor” is incomplete, and “vor mich” is in the wrong place.",
+						"tl": "Tama: “Ich stelle mich vor.” Dalawang bahagi ang verb: “stelle” at “vor”. Nasa dulo ang “vor”. Ang “mich” ay para sa “ich”. Kulang ang “Ich stelle mich:” kung walang “vor”, at mali ang puwesto ng “vor mich”."
 					},
-					"audioText": "Wir stellen uns vor: Wir heißen Maria und Jose. Wir kommen von den Philippinen.",
-					"audioOnly": true
+					"goals": [
+						"A1-01-G2",
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0389",
+						"W-A1-0006"
+					],
+					"options": [
+						"Ich stelle mich: Ich heiße Maria Santos.",
+						"Ich stelle mich vor: Ich heiße Maria Santos.",
+						"Ich stelle vor mich: Ich heiße Maria Santos."
+					],
+					"answer": 1
 				},
 				{
-					"id": "A1-01-L07-B1",
-					"type": "cloze",
+					"id": "A1-01-L07-I8",
+					"type": "short",
 					"skill": "schreiben",
 					"instruction": {
-						"de": "Sehen Sie das Bild an. Stellen Sie die zwei Personen vor.",
-						"en": "Look at the picture. Introduce the two people.",
-						"tl": "Tingnan ang larawan. Ipakilala ang dalawang tao."
-					},
-					"text": "{{1}} heißt Anna Gruber. {{2}} heißt Jonas Huber.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"Sie"
-							]
-						},
-						"2": {
-							"accept": [
-								"Er"
-							]
-						}
+						"de": "Schreiben Sie den Satz.",
+						"en": "You are Maria. You and your friend Jose introduce yourselves in the course. Write the sentence with the words in the brackets.",
+						"tl": "Ikaw si Maria. Magkasama kayo ng kaibigan mong si Jose na nagpapakilala sa kurso. Isulat ang pangungusap gamit ang mga salita sa panaklong."
 					},
 					"explanation": {
-						"de": "„sie“ für die Frau, „er“ für den Mann. Am Satzanfang groß.",
-						"en": "“sie” for the woman, “er” for the man. Capital letter at the start of a sentence.",
-						"tl": "“sie” para sa babae, “er” para sa lalaki. Malaking titik sa simula."
+						"de": "Richtig: „Wir heißen Maria und Jose.“ Bei „wir“ endet das Verb auf -en. „Wir sind Maria und Jose.“ ist auch richtig.",
+						"en": "Correct: “Wir heißen Maria und Jose.” With “wir” the verb ends in -en. “Wir sind Maria und Jose.” is also correct.",
+						"tl": "Tama: “Wir heißen Maria und Jose.” Sa “wir”, nagtatapos sa -en ang verb. Tama rin ang “Wir sind Maria und Jose.”"
 					},
-					"image": {
-						"src": "/img/a1-01-amt.svg",
-						"alt": {
-							"de": "Ein Büro am Vormittag. Eine Frau sitzt am Schreibtisch, ein Mann kommt herein und winkt. Beide haben ein Namensschild, an der Wand hängt eine Uhr.",
-							"en": "An office in the morning. A woman sits at a desk, a man comes in and waves. Both have a name sign, and there is a clock on the wall.",
-							"tl": "Isang opisina sa umaga. Nakaupo ang babae sa mesa, pumapasok ang lalaki at kumakaway. May name sign silang dalawa, at may orasan sa dingding."
-						}
-					}
+					"goals": [
+						"A1-01-G2",
+						"A1-01-G7"
+					],
+					"refs": [
+						"W-A1-0011",
+						"W-A1-0147"
+					],
+					"prompt": "(wir – heißen – Maria und Jose)",
+					"accept": [
+						"Wir heißen Maria und Jose.",
+						"Wir sind Maria und Jose."
+					]
 				}
 			]
 		}

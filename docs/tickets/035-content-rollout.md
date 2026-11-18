@@ -1,4 +1,4 @@
-# 035 – Content standard v2 rollout: lessons (batch 1: A1-02, A1-03 ✅ · batch 2: A1-04, A1-05)
+# 035 – Content standard v2 rollout: lessons (batch 1: A1-02, A1-03 ✅ · batch 2: A1-04, A1-05 ✅ · batch 3: A1-01)
 
 **Context = this file + `docs/content-standard.md` (read it whole, it is short) + the pilot.** Do not read other spec docs, do not read whole `src/lib/content/*.json` (grep / `python3 -c` with filters only).
 

@@ -49,8 +49,8 @@ describe('content rules per chapter', () => {
 		expect(items.some((i) => i.type === 'cloze')).toBe(true);
 		expect(items.filter((i) => i.image).length).toBeGreaterThanOrEqual(2);
 	});
-	// Andi, 16.11.2026: every lesson has at least one meaningful picture task (A1-01 gets its pictures in content run 2).
-	it.each(real.filter((c) => c.chapterId !== 'A1-01').map((c) => [c.chapterId, c] as const))('%s: every lesson has a picture task', (_id, chapter) => {
+	// Andi, 16.11.2026: every lesson has at least one meaningful picture task.
+	it.each(real.map((c) => [c.chapterId, c] as const))('%s: every lesson has a picture task', (_id, chapter) => {
 		for (const l of chapter.lessons) expect(l.items.some((i) => i.image), l.id).toBe(true);
 	});
 	// R-K3: real chapters need ≥ 2 twins per test item (the schema only asks for 1, the DEMO sandbox uses that).

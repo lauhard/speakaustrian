@@ -13,46 +13,45 @@ test('chapter A1-01: learn cards, tasks, lesson marked as done', async ({ page }
 	await page.getByTestId('lesson-A1-01-L02').click();
 	await page.getByTestId('to-tasks').click();
 
-	// Cloze with an accepted alternative
-	await page.getByTestId('gap-1').fill('bin');
+	// Picture task: read the form
+	await expect(page.getByTestId('item-image')).toBeVisible();
+	await page.getByRole('radio', { name: 'Der Vorname ist Maria. Der Familienname ist Santos.', exact: true }).check();
 	await page.getByTestId('check').click();
 	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'correct');
 	await page.getByTestId('next').click();
 
-	// Reading task
-	await page.getByRole('radio', { name: 'Santos' }).check();
+	await page.getByRole('radio', { name: 'Grüß Gott, Frau Santos!', exact: true }).check();
 	await page.getByTestId('check').click();
-	await page.getByTestId('next').click();
-
-	await page.getByRole('radio', { name: 'Grüß Gott, Herr Huber!' }).check();
-	await page.getByTestId('check').click();
-	await page.getByTestId('next').click();
-
-	// Cloze: one gap wrong, one with a spelling detail
-	await page.getByTestId('gap-1').fill('heißt');
-	await page.getByTestId('gap-2').fill('heisse');
-	await page.getByTestId('check').click();
-	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'wrong');
 	await page.getByTestId('next').click();
 
 	// Listening task (no speech engine in the test browser: answer directly)
-	await page.getByRole('radio', { name: 'Anna' }).check();
+	await page.getByRole('radio', { name: 'Anna ist der Vorname.', exact: true }).check();
 	await page.getByTestId('check').click();
 	await expect(page.getByTestId('feedback')).toContainText('Ich heiße Anna Gruber.');
 	await page.getByTestId('next').click();
 
-	// Picture tasks: gap-fill and a short description
-	await expect(page.getByTestId('item-image')).toBeVisible();
-	await page.getByTestId('gap-1').fill('Anna');
-	await page.getByTestId('gap-2').fill('Huber');
+	// Cloze with an accepted alternative (bin for heiße)
+	await page.getByTestId('gap-1').fill('heißen');
+	await page.getByTestId('gap-2').fill('bin');
+	await page.getByTestId('check').click();
+	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'correct');
+	await page.getByTestId('next').click();
+
+	// Cloze: both gaps swapped
+	await page.getByTestId('gap-1').fill('Herr');
+	await page.getByTestId('gap-2').fill('Frau');
+	await page.getByTestId('check').click();
+	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'wrong');
+	await page.getByTestId('next').click();
+
+	await page.getByRole('radio', { name: 'Ich heiße Maria Santos.', exact: true }).check();
 	await page.getByTestId('check').click();
 	await page.getByTestId('next').click();
-	await page.getByTestId('short-input').fill('er heisst Jonas Huber');
+
+	// Short answer with a spelling detail (ss for ß)
+	await page.getByTestId('short-input').fill('Ich heisse Jonas Huber.');
 	await page.getByTestId('check').click();
 	await expect(page.getByTestId('feedback')).toHaveAttribute('data-verdict', 'near');
-	await page.getByTestId('next').click();
-	await page.getByRole('radio', { name: 'Der Vorname von Herrn Huber ist Jonas.' }).check();
-	await page.getByTestId('check').click();
 	await page.getByTestId('next').click();
 
 	await expect(page.getByTestId('result')).toBeVisible();
@@ -77,13 +76,14 @@ test('review: cards from a finished lesson are due the next day', async ({ page 
 	await page.getByTestId('chapter-A1-01').click();
 	await page.getByTestId('lesson-A1-01-L04').click();
 	await page.getByTestId('to-tasks').click();
-	for (let i = 0; i < 5; i++) {
-		const radio = page.getByRole('radio').first();
-		if (await radio.isVisible()) await radio.check();
-		else {
-			await page.getByTestId('gap-1').fill('Danke');
-			await page.getByTestId('gap-2').fill('dir');
-		}
+	for (let i = 0; i < 7; i++) {
+		// Branch on the item id, not on what is visible right now: the next item may not be rendered yet.
+		const id = (await page.locator('form[data-item]').getAttribute('data-item')) ?? '';
+		if (id.endsWith('-I7')) await page.getByTestId('short-input').fill('Bitte!');
+		else if (id.endsWith('-I5')) {
+			await page.getByTestId('gap-1').fill('dir');
+			await page.getByTestId('gap-2').fill('Danke');
+		} else await page.getByRole('radio').first().check();
 		await page.getByTestId('check').click();
 		await page.getByTestId('next').click();
 	}
