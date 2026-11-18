@@ -78,10 +78,7 @@ body {
 	button.tile {
 		@apply cursor-pointer transition duration-150 hover:-translate-y-px hover:ring-brand/50 active:translate-y-px active:scale-[0.985];
 	}
-	/* "Do this now" marker: count badge on the corner + a soft pulse around the icon (never a ring: rings mean "selected"). */
-	.attn-count {
-		@apply absolute -top-2 -right-2 z-10 grid h-6 min-w-6 place-items-center rounded-full bg-brand px-1.5 text-xs font-black text-white ring-2 ring-paper;
-	}
+	/* "Do this now" marker: a soft pulse around the icon (never a ring on the tile: rings mean "selected"). The count is already in the tile text. */
 	.icon-tile.is-attn::after {
 		content: '';
 		@apply pointer-events-none absolute inset-0 rounded-[inherit] ring-2 ring-brand/45;

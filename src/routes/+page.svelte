@@ -160,7 +160,6 @@
 
 		<div class="grid grid-cols-2 gap-3 rise" style:animation-delay="120ms">
 			<a href={resolve('/review')} data-testid={dueCount > 0 ? 'review-due' : 'review-none'} class="tile">
-				{#if dueCount > 0}<span class="attn-count" aria-hidden="true">{dueCount}</span>{/if}
 				<span class="icon-tile {dueCount > 0 ? 'is-attn' : '!bg-ok-soft !text-ok'}">
 					{#if dueCount > 0}<RotateCcw size={20} strokeWidth={2.25} />{:else}<CircleCheck size={20} strokeWidth={2.25} />{/if}
 				</span>
