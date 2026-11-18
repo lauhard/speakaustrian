@@ -4,7 +4,7 @@
 	import { m } from '#lib/paraglide/messages.js';
 	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { chapterContent, course } from '#lib/content/index.ts';
-	import { accuracy } from '#lib/accuracy.svelte.ts';
+	import { flames, TIER_CLASS } from '#lib/flames.svelte.ts';
 	import { DAY_GOAL_SEC } from '#lib/core/day.ts';
 	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw, Zap, Snowflake, Info } from '@lucide/svelte';
 	import { planDay } from '#lib/core/reducer.ts';
@@ -109,7 +109,7 @@
 				<span class="flex items-center justify-between gap-2">
 					<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
 					<span class="flex items-center gap-1 text-sm font-extrabold text-muted" title={m.stat_flawless()} data-testid="flawless-run">
-						<Flame size={15} strokeWidth={2.5} class={accuracy.score > 0 ? 'fill-orange-400 text-orange-500' : ''} />{accuracy.score}<span class="font-semibold">· {m.stat_best()} {accuracy.best}</span>
+						<Flame size={15} strokeWidth={2.5} class={TIER_CLASS[flames.tier]} />{flames.chapterFlames}<span class="font-semibold">· {m.stat_best()} {flames.best}</span>
 					</span>
 				</span>
 			</span>

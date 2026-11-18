@@ -12,7 +12,7 @@
 	import Runner from '#lib/components/Runner.svelte';
 	import { chapterContent, findLesson, introducedBy } from '#lib/content/index.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
-	import { game, storeFor } from '#lib/game.svelte.ts';
+	import { flameChapter, game, storeFor } from '#lib/game.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const id = $derived(page.params.id ?? '');
@@ -91,6 +91,7 @@
 			backLabel={m.back_chapter()}
 			onfinish={finish}
 			passCheck={(correct, total) => store.policy.isLessonPassed({ correct, total })}
+			flameChapter={flameChapter(id)}
 		/>
 	{/key}
 {/if}
