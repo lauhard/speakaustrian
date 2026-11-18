@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { getLocale } from '#lib/paraglide/runtime.js';
 	import { Dumbbell, Flame, House, RotateCcw, Snowflake, Zap } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
@@ -45,7 +46,7 @@
 			<div class="side-stat" data-testid="side-xp">
 				<span class="icon-tile !bg-amber-100 !text-amber-600 text-base font-black">{xp.level.level}</span>
 				<span class="min-w-0 flex-1 space-y-1">
-					<span class="tile-title">{m.level_label({ level: xp.level.level })} <span class="text-sm font-semibold text-muted">{xp.level.into}/{xp.level.need} XP</span></span>
+					<span class="tile-title">{m.level_label({ level: xp.level.level })} <span class="text-sm font-semibold text-muted">{m.xp_total({ xp: xp.total.toLocaleString(getLocale()) })} · {m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span></span>
 					<span class="bar !h-2 block"><span class="!bg-amber-400" style="width: {(xp.level.into / xp.level.need) * 100}%"></span></span>
 					<span class="side-note">{m.xp_explain()}</span>
 				</span>
