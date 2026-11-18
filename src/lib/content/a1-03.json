@@ -322,8 +322,8 @@
 					"phrase": "Woher? → aus + Land",
 					"note": {
 						"de": "Viele Länder haben keinen Artikel. Dann sagen Sie nur „aus“ und das Land.",
-						"en": "Most countries have no article. Then you just say “aus” (from) and the country.",
-						"tl": "Karamihan sa mga bansa ay walang article. Kaya “aus” (mula sa) at ang bansa lang."
+						"en": "Many countries have no article. Then you just say “aus” (from) and the country.",
+						"tl": "Maraming bansa ang walang article. Kaya “aus” (mula sa) at ang bansa lang ang sasabihin."
 					},
 					"examples": [
 						"Ich komme aus Österreich.",
@@ -529,7 +529,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: „aus den Philippinen“ und „aus Österreich“. Die Philippinen haben einen Artikel (Plural): aus den. Österreich hat keinen Artikel. „in“ sagt, wo jemand ist – nicht, woher er kommt.",
-						"en": "Correct: “aus den Philippinen” and “aus Österreich”. The Philippines have an article (plural): aus den. Austria has none. “in” says where someone is – not where they come from.",
+						"en": "Correct: “aus den Philippinen” and “aus Österreich”. The Philippines has an article (plural in German): aus den. Austria has none. “in” says where someone is – not where they come from.",
 						"tl": "Tama: “aus den Philippinen” at “aus Österreich”. May article ang Pilipinas (plural): aus den. Walang article ang Austria. Ang “in” ay kung nasaan ang tao – hindi kung taga-saan."
 					},
 					"goals": [
@@ -696,7 +696,7 @@
 					"kind": "rule",
 					"phrase": "Mann: -er · Frau: -in",
 					"note": {
-						"de": "Für Männer hören die Wörter auf -er, für Frauen auf -in. So zeigt die Endung, ob die Person ein Mann oder eine Frau ist.",
+						"de": "Für Männer enden die Wörter auf -er, für Frauen auf -in. So zeigt die Endung, ob die Person ein Mann oder eine Frau ist.",
 						"en": "For men the words end in -er, for women in -in. So the ending tells you whether the person is a man or a woman.",
 						"tl": "Sa lalaki, nagtatapos sa -er ang salita; sa babae, sa -in. Kaya ipinapakita ng dulo kung lalaki o babae ang tao."
 					},
@@ -750,7 +750,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: Deutschland, Österreich und die Schweiz stehen auf der Karte. Die Philippinen sind nicht in Europa, darum sind sie nicht auf dieser Karte.",
-						"en": "Correct: Germany, Austria and Switzerland are on the map. The Philippines are not in Europe, so they are not on this map.",
+						"en": "Correct: Germany, Austria and Switzerland are on the map. The Philippines is not in Europe, so it is not on this map.",
 						"tl": "Tama: Deutschland, Österreich at die Schweiz ang nasa mapa. Wala sa Europa ang Pilipinas, kaya wala ito sa mapang ito."
 					},
 					"goals": [
@@ -843,9 +843,9 @@
 						"tl": "Sa kurso, ipinakikilala ni Herr Novak ang isang babae. Makinig at piliin ang tamang salita."
 					},
 					"explanation": {
-						"de": "Sie hören: „Das ist Frau Cruz. Sie kommt aus den Philippinen. Sie ist Philippinerin.“ Bei einer Frau hört man -in. „Philippiner“ ist ein Mann, „Österreicherin“ kommt aus Österreich.",
-						"en": "You hear: “Das ist Frau Cruz. Sie kommt aus den Philippinen. Sie ist Philippinerin.” For a woman you hear -in. “Philippiner” is a man, “Österreicherin” comes from Austria.",
-						"tl": "Naririnig mo: “Das ist Frau Cruz. Sie kommt aus den Philippinen. Sie ist Philippinerin.” Sa babae, naririnig ang -in. Ang “Philippiner” ay lalaki, ang “Österreicherin” ay taga-Austria."
+						"de": "Sie hören: „Das ist Frau Cruz. Sie kommt aus den Philippinen. Sie ist Philippinerin.“ Bei einer Frau hört man -in. „Philippiner“ ist die Form für einen Mann, „Österreicherin“ ist eine Frau aus Österreich.",
+						"en": "You hear: “Das ist Frau Cruz. Sie kommt aus den Philippinen. Sie ist Philippinerin.” For a woman you hear -in. “Philippiner” is the form for a man, “Österreicherin” is a woman from Austria.",
+						"tl": "Naririnig mo: “Das ist Frau Cruz. Sie kommt aus den Philippinen. Sie ist Philippinerin.” Sa babae, naririnig ang -in. Ang “Philippiner” ay anyo para sa lalaki, ang “Österreicherin” ay babaeng taga-Austria."
 					},
 					"goals": [
 						"A1-03-G1"
@@ -915,7 +915,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: Österreich. Das Ausland ist ein anderes Land – nicht das Heimatland. Jose ist in Österreich Ausländer. Die Philippinen sind sein Heimatland, nicht das Ausland.",
-						"en": "Correct: Österreich. The Ausland is another country – not your home country. Jose is an Ausländer in Austria. The Philippines are his Heimatland, not the Ausland.",
+						"en": "Correct: Österreich. Das Ausland means another country – not your home country. Jose is an Ausländer in Austria. The Philippines is his Heimatland, not the Ausland.",
 						"tl": "Tama: Österreich. Ang Ausland ay ibang bansa – hindi ang sariling bansa. Si Jose ay Ausländer sa Austria. Ang Pilipinas ang Heimatland niya, hindi ang Ausland."
 					},
 					"goals": [
@@ -932,7 +932,7 @@
 						"Österreich"
 					],
 					"answer": 2,
-					"prompt": "Ich heiße Jose. Ich komme aus den Philippinen. Die Philippinen sind mein Heimatland. Jetzt wohne ich in Österreich. Österreich ist für Jose das Ausland. – Was ist für Jose das Ausland?"
+					"prompt": "Ich heiße Jose. Ich komme aus den Philippinen. Die Philippinen sind mein Heimatland. Jetzt wohne ich in Österreich. Österreich ist für mich das Ausland. – Was ist für Jose das Ausland?"
 				},
 				{
 					"id": "A1-03-L02-I7",
@@ -1022,7 +1022,7 @@
 					"note": {
 						"de": "Zwei verschiedene Fragen: „Woher?“ fragt nach der Herkunft (aus + Land oder Ort). „Wo?“ fragt, wo man jetzt wohnt (in + Ort). Jose kommt aus Manila, aber er wohnt in Wien.",
 						"en": "Two different questions: “Woher?” asks for origin (aus + country or place). “Wo?” asks where you live now (in + place). Jose comes from Manila, but he lives in Vienna.",
-						"tl": "Dalawang magkaibang tanong: ang “Woher?” ay pinagmulan (aus + bansa o lugar). Ang “Wo?” ay kung saan ka nakatira ngayon (in + lugar). Taga-Manila si Jose, pero nakatira siya sa Wien."
+						"tl": "Dalawang magkaibang tanong: ang “Woher?” ay pinagmulan (aus + bansa o lugar). Ang “Wo?” ay kung saan ka nakatira ngayon (in + lugar). Taga-Manila si Jose, pero nakatira siya sa Vienna."
 					},
 					"examples": [
 						"Woher kommen Sie? – Aus Manila.",
@@ -1040,7 +1040,7 @@
 					"examples": [
 						"Ich wohne in Wien.",
 						"Du wohnst in Linz.",
-						"Lukas wohnt in Graz."
+						"Lukas wohnt in St. Georgen."
 					]
 				},
 				{
@@ -1201,7 +1201,7 @@
 					"refs": [
 						"W-A1-0148"
 					],
-					"text": "Tom: Ich {{1}} in Wien. Wo {{2}} du?\nJose: Ich wohne auch in Wien. Lukas {{3}} in Graz.",
+					"text": "Tom: Ich {{1}} in Graz. Wo {{2}} du?\nJose: Ich wohne in Wien. Lukas {{3}} in St. Georgen.",
 					"gaps": {
 						"1": {
 							"accept": [
@@ -1444,7 +1444,7 @@
 					"explanation": {
 						"de": "Richtig: 12. Die Hausnummer steht direkt nach der Straße: „Hauptstraße 12“. 8010 ist die Postleitzahl von Graz.",
 						"en": "Correct: 12. The house number comes right after the street: “Hauptstraße 12”. 8010 is the postcode of Graz.",
-						"tl": "Tama: 12. Nasa tabi mismo ng kalye ang numero ng bahay: “Hauptstraße 12”. Ang 8010 ay postal code ng Graz."
+						"tl": "Tama: 12. Kasunod mismo ng pangalan ng kalye ang numero ng bahay: “Hauptstraße 12”. Ang 8010 ay postal code ng Graz."
 					},
 					"goals": [
 						"A1-03-G2"
@@ -1480,7 +1480,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: maria.santos@gmx.at. Zuerst der Vorname, dann ein Punkt, dann der Familienname. Am Ende steht „.at“ für Österreich. Die anderen Adressen haben eine andere Reihenfolge oder „.de“ (Deutschland).",
-						"en": "Correct: maria.santos@gmx.at. First the first name, then a dot, then the family name. At the end “.at” stands for Austria. The other addresses have a different order or “.de” (Germany).",
+						"en": "Correct: maria.santos@gmx.at. First comes the first name, then a dot, then the family name. The “.at” at the end stands for Austria. The other addresses have a different order or “.de” (Germany).",
 						"tl": "Tama: maria.santos@gmx.at. Una ang pangalan, tapos tuldok, tapos apelyido. Sa dulo, ang “.at” ay para sa Austria. Ang iba ay magkaiba ang ayos o may “.de” (Germany)."
 					},
 					"goals": [
@@ -1579,7 +1579,7 @@
 					"type": "cloze",
 					"skill": "schreiben",
 					"instruction": {
-						"de": "Ali macht beim Kurs ein Formular. Lesen Sie den Text und ergänzen Sie das Formular.",
+						"de": "Ali füllt im Kurs ein Formular aus. Lesen Sie den Text und ergänzen Sie das Formular.",
 						"en": "Ali fills in a course form. Read the text and complete the form.",
 						"tl": "Pinupunan ni Ali ang form ng kurso. Basahin ang teksto at kumpletuhin ang form."
 					},
@@ -1731,7 +1731,7 @@
 					"explanation": {
 						"de": "Richtig: Jose. Nur bei Jose steht „Tagalog“. Anna und Tom sprechen Deutsch (Anna auch Englisch).",
 						"en": "Correct: Jose. Only Jose has “Tagalog”. Anna and Tom speak German (Anna also English).",
-						"tl": "Tama: Jose. Si Jose lang ang may “Tagalog”. Nagsasalita ng German sina Anna at Tom (si Anna ay English din)."
+						"tl": "Tama: Jose. Si Jose lang ang may “Tagalog”. Nagsasalita ng German sina Anna at Tom (marunong din ng English si Anna)."
 					},
 					"goals": [
 						"A1-03-G3"
@@ -1768,7 +1768,7 @@
 					"explanation": {
 						"de": "Richtig: Tom. Bei Tom steht nur „Deutsch“. Anna spricht auch Englisch, Jose spricht drei Sprachen.",
 						"en": "Correct: Tom. Tom has only “Deutsch”. Anna also speaks English, Jose speaks three languages.",
-						"tl": "Tama: Tom. “Deutsch” lang ang kay Tom. Si Anna ay English din, si Jose ay tatlong wika."
+						"tl": "Tama: Tom. “Deutsch” lang ang kay Tom. Marunong din ng English si Anna, at tatlong wika ang alam ni Jose."
 					},
 					"goals": [
 						"A1-03-G3"
@@ -1995,9 +1995,9 @@
 					"kind": "rule",
 					"phrase": "verstehen: ich verstehe · du verstehst · er versteht",
 					"note": {
-						"de": "„verstehen“ ist regelmäßig. Das Verb bleibt gleich, nur die Endung ändert sich: -e, -st, -t, -en.",
-						"en": "“verstehen” is regular. The verb stays the same, only the ending changes: -e, -st, -t, -en.",
-						"tl": "Regular ang “verstehen”. Pareho ang verb, ang dulo lang ang nagbabago: -e, -st, -t, -en."
+						"de": "„verstehen“ ist regelmäßig. Der Stamm „versteh-“ bleibt gleich, nur die Endung ändert sich: -e, -st, -t, -en.",
+						"en": "“verstehen” is regular. The stem “versteh-” stays the same; only the ending changes: -e, -st, -t, -en.",
+						"tl": "Regular ang “verstehen”. Hindi nagbabago ang stem na “versteh-”; ang dulo lang ang nagbabago: -e, -st, -t, -en."
 					},
 					"examples": [
 						"Ich verstehe nicht.",
@@ -2078,9 +2078,9 @@
 					"image": {
 						"src": "/img/a1-03-langsam.svg",
 						"alt": {
-							"de": "Ein Mann spricht mit offenem Mund, daneben Bewegungslinien. Ali schaut ernst und hat Fragezeichen.",
-							"en": "A man talks with an open mouth, motion lines next to him. Ali looks puzzled with question marks.",
-							"tl": "May lalaking nagsasalita na nakabukas ang bibig, may mga guhit ng galaw sa tabi. Nalilito si Ali at may mga tandang pananong."
+							"de": "Ein Mann spricht mit offenem Mund, daneben Bewegungslinien. Ali versteht nicht, über ihm sind Fragezeichen.",
+							"en": "A man talks with an open mouth, motion lines next to him. Ali does not understand; there are question marks above him.",
+							"tl": "May lalaking nagsasalita na nakabukas ang bibig, may mga guhit ng galaw sa tabi. Hindi nakakaintindi si Ali; may mga tandang pananong sa itaas niya."
 						}
 					}
 				},
@@ -2220,13 +2220,13 @@
 					"skill": "lesen",
 					"instruction": {
 						"de": "Anna fragt Ali im Kurs nach der Telefonnummer. Ali hört die Frage nicht gut.",
-						"en": "In the course Anna asks Ali for his phone number. Ali did not hear the question well. What does Ali say?",
-						"tl": "Tinanong ni Anna si Ali sa kurso tungkol sa telefonnumero. Hindi narinig nang mabuti ni Ali ang tanong. Ano ang sasabihin ni Ali?"
+						"en": "In the course Anna asks Ali for his phone number. Ali does not hear the question well. What does Ali say?",
+						"tl": "Sa kurso, tinanong ni Anna si Ali kung ano ang phone number niya. Hindi marinig nang mabuti ni Ali ang tanong. Ano ang sasabihin ni Ali?"
 					},
 					"explanation": {
 						"de": "Richtig: „Entschuldigung, ich verstehe nicht.“ Ali hat die Frage nicht verstanden. „Ich verstehe gut“ wäre das Gegenteil, „Ich wohne in Linz“ ist keine Antwort auf die Frage nach der Telefonnummer.",
 						"en": "Correct: “Entschuldigung, ich verstehe nicht.” Ali did not understand the question. “Ich verstehe gut” would be the opposite, “Ich wohne in Linz” does not answer a question about the phone number.",
-						"tl": "Tama: “Entschuldigung, ich verstehe nicht.” Hindi naintindihan ni Ali ang tanong. Ang “Ich verstehe gut” ay kabaligtaran; ang “Ich wohne in Linz” ay hindi sagot sa tanong tungkol sa telefonnumero."
+						"tl": "Tama: “Entschuldigung, ich verstehe nicht.” Hindi naintindihan ni Ali ang tanong. Ang “Ich verstehe gut” ay kabaligtaran; ang “Ich wohne in Linz” ay hindi sagot sa tanong tungkol sa phone number."
 					},
 					"goals": [
 						"A1-03-G4"
@@ -2250,7 +2250,7 @@
 					"instruction": {
 						"de": "Eine Frau fragt Sie nach der Telefonnummer. Sie hören die Zahlen nicht. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
 						"en": "A woman asks you for your phone number. You cannot hear the numbers. What do you say? Choose, then say it aloud.",
-						"tl": "Tinanong ka ng isang babae tungkol sa telefonnumero. Hindi mo marinig ang mga numero. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+						"tl": "Tinanong ka ng isang babae kung ano ang phone number mo. Hindi mo marinig ang mga numero. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
 						"de": "Richtig: „Wie bitte? Wiederholen Sie, bitte.“ Sie bitten höflich um Wiederholung. „Ich spreche langsam“ sagt etwas über Sie, nicht über die Frau. „Auf Wiedersehen“ ist ein Abschied.",
@@ -2312,7 +2312,7 @@
 					"kind": "rule",
 					"phrase": "W-Frage: Fragewort auf 1, Verb auf 2",
 					"note": {
-						"de": "Fragen mit „wo, woher, wer“ beginnen mit dem Fragewort. Das Verb steht danach auf Platz 2. Die Antwort ist keine ja/nein-Antwort, sondern eine Information.",
+						"de": "Fragen mit „wo, woher, wer“ beginnen mit dem Fragewort. Das Verb steht danach auf Platz 2. Die Antwort ist keine Ja/Nein-Antwort, sondern eine Information.",
 						"en": "Questions with “wo, woher, wer” start with the question word. The verb is in position 2. The answer is not yes/no but information.",
 						"tl": "Ang mga tanong na may “wo, woher, wer” ay nagsisimula sa salitang pananong. Nasa puwesto 2 ang verb. Impormasyon ang sagot, hindi oo/hindi."
 					},
@@ -2336,7 +2336,7 @@
 					"phrase": "Wortkarte: Sprache → Sprechen Sie Deutsch?",
 					"note": {
 						"de": "In der Prüfung (Sprechen, Teil 2) bekommen Sie eine Wortkarte und stellen eine Frage dazu. Zur Wortkarte „Wohnort“ passt: „Wo wohnen Sie?“",
-						"en": "In the exam (speaking part 2) you get a word card and ask a question about it. For the card “Wohnort” fits: “Wo wohnen Sie?”",
+						"en": "In the exam (speaking part 2) you get a word card and ask a question about it. For the card “Wohnort”, a good question is: “Wo wohnen Sie?”",
 						"tl": "Sa exam (speaking part 2), may word card ka at magtatanong ka tungkol dito. Sa card na “Wohnort” bagay ang: “Wo wohnen Sie?”"
 					}
 				}
@@ -2349,7 +2349,7 @@
 					"instruction": {
 						"de": "Maria schaut Annas Kurskarte an. Maria fragt Tom.",
 						"en": "Maria looks at Anna’s course card and asks Tom a yes/no question. What is the right answer?",
-						"tl": "Tinitingnan ni Maria ang kurskarte ni Anna at nagtanong kay Tom ng oo/hindi. Ano ang tamang sagot?"
+						"tl": "Tinitingnan ni Maria ang course card ni Anna at nagtanong kay Tom ng oo/hindi. Ano ang tamang sagot?"
 					},
 					"explanation": {
 						"de": "Richtig: „Ja, sie kommt aus Österreich.“ Auf der Karte steht bei „Land“: Österreich. Die Frage beginnt mit dem Verb („Kommt …?“) – darum antwortet man mit „ja“ oder „nein“.",
@@ -2386,7 +2386,7 @@
 					"instruction": {
 						"de": "Maria schaut die Kurskarte noch einmal an.",
 						"en": "Maria looks at the course card again and asks another question.",
-						"tl": "Tinitingnan muli ni Maria ang kurskarte at nagtanong ng isa pang tanong."
+						"tl": "Tinitingnan muli ni Maria ang course card at nagtanong ng isa pang tanong."
 					},
 					"explanation": {
 						"de": "Richtig: „Nein, sie wohnt in Wien.“ Bei „Wohnort“ steht Wien, nicht Graz. Darum „nein“. „Ja, sie wohnt in Wien“ passt nicht zur Frage: Die Frage fragt nach Graz.",
@@ -2608,7 +2608,7 @@
 					"kind": "rule",
 					"phrase": "Frage mit „nicht“ + positive Antwort: Doch!",
 					"note": {
-						"de": "In der Frage steht „nicht“, aber die Antwort ist positiv („ich wohne in Wien“). Dann sagen Sie „Doch!“ – das heißt: „Doch, das stimmt!“ Es gibt dieses Wort nur im Deutschen, nicht im Englischen.",
+						"de": "In der Frage steht „nicht“, aber die Antwort ist positiv („ich wohne in Wien“). Dann sagen Sie „Doch!“ – das heißt: „Doch, das stimmt!“ Im Englischen gibt es dafür kein eigenes Wort.",
 						"en": "The question has “nicht” (not), but the answer is positive (“I do live in Vienna”). Then you say “Doch!” – it means: “Yes, it is true!” English has no single word for this.",
 						"tl": "May “nicht” sa tanong, pero positibo ang sagot (“nakatira ako sa Wien”). Sasabihin mo ang “Doch!” – ibig sabihin: “Oo, totoo iyan!” Walang iisang salitang ganito sa English."
 					},
@@ -2621,13 +2621,13 @@
 					"kind": "rule",
 					"phrase": "Frage mit „nicht“ + negative Antwort: Nein",
 					"note": {
-						"de": "Wenn die Antwort wirklich negativ ist, sagen Sie „Nein“ – das bestätigt das „nicht“ in der Frage. Vorsicht: Im Englischen sagt man hier oft „Yes“ – im Deutschen sagt man dann „Nein“.",
-						"en": "If the answer really is negative, you say “Nein” – it confirms the “nicht” in the question. Careful: in English people often say “Yes” here – in German you say “Nein”.",
-						"tl": "Kung negatibo talaga ang sagot, “Nein” ang sasabihin – kinukumpirma nito ang “nicht” sa tanong. Mag-ingat: sa English, madalas “Yes” dito – sa German, “Nein”."
+						"de": "Wenn die Antwort wirklich negativ ist, sagen Sie „Nein“ – das bestätigt das „nicht“ in der Frage. Vorsicht: Auf Tagalog sagt man hier oft „Oo“ (ja) – im Deutschen sagt man „Nein“.",
+						"en": "If the answer really is negative, you say “Nein” – it confirms the “nicht” in the question, just like “No” in English. Careful: in Tagalog people often say “Oo” (yes) here – in German you say “Nein”.",
+						"tl": "Kung negatibo talaga ang sagot, “Nein” ang sasabihin – kinukumpirma nito ang “nicht” sa tanong, tulad ng “No” sa English. Mag-ingat: sa Tagalog, madalas “Oo” ang sagot dito (“Oo, hindi ako …”) – sa German, “Nein”."
 					},
 					"examples": [
 						"Sprechen Sie nicht Englisch? – Nein, nur Deutsch.",
-						"Wohnt Lukas nicht in Wien? – Nein, in Graz."
+						"Wohnt Lukas nicht in Wien? – Nein, in St. Georgen."
 					]
 				}
 			],
@@ -2639,7 +2639,7 @@
 					"instruction": {
 						"de": "Anna schaut Joses Kurskarte an. Maria fragt Anna.",
 						"en": "Anna looks at Jose’s course card. Maria asks Anna a question with “nicht”.",
-						"tl": "Tinitingnan ni Anna ang kurskarte ni Jose. Tinanong ni Maria si Anna ng tanong na may “nicht”."
+						"tl": "Tinitingnan ni Anna ang course card ni Jose. Tinanong ni Maria si Anna ng tanong na may “nicht”."
 					},
 					"explanation": {
 						"de": "Richtig: „Doch, er wohnt in Wien.“ Auf der Karte steht Wohnort: Wien. Die Frage hat „nicht“, die Antwort ist aber positiv → „Doch“. „Nein“ würde bedeuten: Er wohnt nicht in Wien. „Ja, … nicht“ widerspricht sich.",
@@ -2679,9 +2679,9 @@
 						"tl": "Tinanong ni Anna si Tom sa kurso. Taga-Germany si Tom. Ano ang sagot ni Tom?"
 					},
 					"explanation": {
-						"de": "Richtig: „Doch, ich komme aus Deutschland.“ Die Frage hat „nicht“, aber die Antwort ist positiv. „Nein“ würde das „nicht“ bestätigen und passt nicht zu „ich komme aus Deutschland“. Nach einer Frage mit „nicht“ ist „Doch“ die klare Antwort.",
-						"en": "Correct: “Doch, ich komme aus Deutschland.” The question has “nicht”, but the answer is positive. “Nein” would confirm the “nicht” and does not fit “ich komme aus Deutschland”. After a question with “nicht”, “Doch” is the clear answer.",
-						"tl": "Tama: “Doch, ich komme aus Deutschland.” May “nicht” ang tanong pero positibo ang sagot. Kukumpirmahin ng “Nein” ang “nicht” at hindi bagay sa “ich komme aus Deutschland”. Pagkatapos ng tanong na may “nicht”, “Doch” ang malinaw na sagot."
+						"de": "Richtig: „Doch, ich komme aus Deutschland.“ Die Frage hat „nicht“, aber die Antwort ist positiv. „Nein“ würde das „nicht“ bestätigen und passt nicht zu „ich komme aus Deutschland“. Auf eine Frage mit „nicht“ ist „Doch“ die klare positive Antwort.",
+						"en": "Correct: “Doch, ich komme aus Deutschland.” The question has “nicht”, but the answer is positive. “Nein” would confirm the “nicht” and does not fit “ich komme aus Deutschland”. To a question with “nicht”, “Doch” is the clear positive answer.",
+						"tl": "Tama: “Doch, ich komme aus Deutschland.” May “nicht” ang tanong pero positibo ang sagot. Kukumpirmahin ng “Nein” ang “nicht” at hindi bagay sa “ich komme aus Deutschland”. Sa tanong na may “nicht”, “Doch” ang malinaw na positibong sagot."
 					},
 					"goals": [
 						"A1-03-G5"
@@ -2709,7 +2709,7 @@
 					"explanation": {
 						"de": "Richtig: „Ja, ich wohne in Graz.“ Die Frage hat kein „nicht“. Bei einer normalen Frage sagt man „Ja“ oder „Nein“. „Doch“ braucht eine Frage mit „nicht“.",
 						"en": "Correct: “Ja, ich wohne in Graz.” The question has no “nicht”. With a normal question you say “Ja” or “Nein”. “Doch” needs a question with “nicht”.",
-						"tl": "Tama: “Ja, ich wohne in Graz.” Walang “nicht” ang tanong. Sa karaniwang tanong, “Ja” o “Nein”. Ang “Doch” ay kailangan ng tanong na may “nicht”."
+						"tl": "Tama: “Ja, ich wohne in Graz.” Walang “nicht” ang tanong. Sa karaniwang tanong, “Ja” o “Nein”. Kailangan ng “Doch” ang tanong na may “nicht”."
 					},
 					"goals": [
 						"A1-03-G5"
@@ -2730,14 +2730,14 @@
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Eine Frau fragt Ali im Kurs. Ali spricht nur Deutsch.",
-						"en": "A woman asks Ali in the course. Ali speaks only German. What does Ali answer?",
-						"tl": "May babaeng nagtanong kay Ali sa kurso. German lang ang alam ni Ali. Ano ang sagot ni Ali?"
+						"de": "Eine Frau fragt Tom im Kurs. Tom spricht nur Deutsch.",
+						"en": "A woman asks Tom in the course. Tom speaks only German. What does Tom answer?",
+						"tl": "May babaeng nagtanong kay Tom sa kurso. German lang ang alam ni Tom. Ano ang sagot ni Tom?"
 					},
 					"explanation": {
-						"de": "Richtig: „Nein, ich spreche nur Deutsch.“ Die Antwort ist negativ: Ali spricht nicht Englisch. „Nein“ bestätigt das „nicht“ der Frage. „Doch“ würde heißen: Ali spricht Englisch.",
-						"en": "Correct: “Nein, ich spreche nur Deutsch.” The answer is negative: Ali does not speak English. “Nein” confirms the “nicht” in the question. “Doch” would mean: Ali does speak English.",
-						"tl": "Tama: “Nein, ich spreche nur Deutsch.” Negatibo ang sagot: hindi nagsasalita ng English si Ali. Kinukumpirma ng “Nein” ang “nicht” ng tanong. Ang “Doch” ay nangangahulugang: nagsasalita si Ali ng English."
+						"de": "Richtig: „Nein, ich spreche nur Deutsch.“ Die Antwort ist negativ: Tom spricht nicht Englisch. „Nein“ bestätigt das „nicht“ der Frage. „Doch“ würde heißen: Tom spricht Englisch.",
+						"en": "Correct: “Nein, ich spreche nur Deutsch.” The answer is negative: Tom does not speak English. “Nein” confirms the “nicht” in the question. “Doch” would mean: Tom does speak English.",
+						"tl": "Tama: “Nein, ich spreche nur Deutsch.” Negatibo ang sagot: hindi nagsasalita ng English si Tom. Kinukumpirma ng “Nein” ang “nicht” ng tanong. Ang “Doch” ay nangangahulugang: nagsasalita si Tom ng English."
 					},
 					"goals": [
 						"A1-03-G5"
@@ -2752,7 +2752,7 @@
 						"Ja"
 					],
 					"answer": 1,
-					"prompt": "Frau: „Sprechen Sie nicht Englisch?“ – Ali: „…, ich spreche nur Deutsch.“"
+					"prompt": "Frau: „Sprechen Sie nicht Englisch?“ – Tom: „…, ich spreche nur Deutsch.“"
 				},
 				{
 					"id": "A1-03-L08-I5",
@@ -3523,7 +3523,7 @@
 					"kind": "rule",
 					"phrase": "suchen · finden: regelmäßig",
 					"note": {
-						"de": "ich suche, du suchst, er sucht – und ich finde, du findest, er findet. Bei „finden“ steht vor -st und -t ein -e-: findest, findet. Sonst kann man es nicht gut sprechen.",
+						"de": "ich suche, du suchst, er sucht – und ich finde, du findest, er findet. Bei „finden“ steht vor -st und -t ein -e-: findest, findet. Sonst kann man es schwer aussprechen.",
 						"en": "ich suche, du suchst, er sucht – and ich finde, du findest, er findet. With “finden” an -e- comes before -st and -t: findest, findet. Otherwise it is hard to pronounce.",
 						"tl": "ich suche, du suchst, er sucht – at ich finde, du findest, er findet. Sa “finden”, may -e- bago ang -st at -t: findest, findet. Kung hindi, mahirap bigkasin."
 					},
@@ -3537,9 +3537,9 @@
 					"kind": "rule",
 					"phrase": "suchen ≠ finden",
 					"note": {
-						"de": "„Suchen“ heißt: Ich bin noch dabei. „Finden“ heißt: Ich habe es. Wer eine Sache nicht findet, sucht weiter. Man sagt: „Ich suche die Adresse. Ich finde sie nicht.“",
-						"en": "“Suchen” means: I am still looking. “Finden” means: I have it. If you do not find something, you keep looking. You say: “Ich suche die Adresse. Ich finde sie nicht.”",
-						"tl": "Ang “suchen” ay: naghahanap pa ako. Ang “finden” ay: nakita ko na. Kapag hindi mo mahanap, patuloy kang maghahanap. Sinasabi: “Ich suche die Adresse. Ich finde sie nicht.”"
+						"de": "„suchen“ heißt: Ich habe es noch nicht. „finden“ heißt: Jetzt habe ich es. Wer eine Sache nicht findet, sucht weiter. Man sagt: „Ich suche die Adresse. Ich finde sie nicht.“",
+						"en": "“suchen” means: I do not have it yet. “finden” means: now I have it. If you do not find something, you keep looking. You say: “Ich suche die Adresse. Ich finde sie nicht.”",
+						"tl": "Ang “suchen” ay: wala pa sa akin, naghahanap pa ako. Ang “finden” ay: nakita ko na. Kapag hindi mo mahanap, patuloy kang maghahanap. Sinasabi: “Ich suche die Adresse. Ich finde sie nicht.”"
 					},
 					"examples": [
 						"Ich suche die Adresse.",
@@ -3723,9 +3723,9 @@
 						"tl": "Nasa Graz ka at hinahanap mo ang Bahnhofstraße. May lalaki sa tabi mo. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "Richtig: „Entschuldigung, ich suche die Bahnhofstraße.“ Sie haben die Straße noch nicht – darum „suchen“. „finden“ sagt man, wenn man die Straße schon hat, „geben“ passt nicht zu einer Straße.",
-						"en": "Correct: “Entschuldigung, ich suche die Bahnhofstraße.” You do not have the street yet – so “suchen”. You say “finden” when you already have it; “geben” does not fit a street.",
-						"tl": "Tama: “Entschuldigung, ich suche die Bahnhofstraße.” Wala ka pa sa kalye – kaya “suchen”. Sinasabi ang “finden” kapag nakita mo na; hindi bagay ang “geben” sa kalye."
+						"de": "Richtig: „Entschuldigung, ich suche die Bahnhofstraße.“ Sie haben die Straße noch nicht gefunden – darum „suchen“. „finden“ sagt man, wenn man die Straße gefunden hat. „geben“ passt nicht zu einer Straße.",
+						"en": "Correct: “Entschuldigung, ich suche die Bahnhofstraße.” You have not found the street yet – so “suchen”. You say “finden” when you have found it. “geben” does not fit a street.",
+						"tl": "Tama: “Entschuldigung, ich suche die Bahnhofstraße.” Hindi mo pa nakikita ang kalye – kaya “suchen”. Sinasabi ang “finden” kapag nakita mo na. Hindi bagay ang “geben” sa kalye."
 					},
 					"goals": [
 						"A1-03-G7",
@@ -3996,7 +3996,7 @@
 					"instruction": {
 						"de": "Hören Sie Herrn Novak und Frau Huber.",
 						"en": "Listen to Mr Novak and Mrs Huber. How are they talking to each other?",
-						"tl": "Pakinggan ang dalawang tao. Paano sila nag-uusap?"
+						"tl": "Pakinggan sina Herr Novak at Frau Huber. Paano sila nag-uusap?"
 					},
 					"explanation": {
 						"de": "Sie hören: „Danke, Frau Huber. Auf Wiederhören!“ „Auf Wiederhören“ sagt man nur am Telefon. Wenn die beiden zusammen wären, würden sie „Auf Wiedersehen“ sagen. Von Linz hört man nichts.",
@@ -4119,9 +4119,9 @@
 					"tl": "Sa kursong German, nag-uusap sina Anna, Jose at Tom tungkol sa Austria. Apat na mahalagang bagay ang natututunan nila: kabisera, pera, wika at EU."
 				},
 				"goal": {
-					"de": "vier Dinge über Österreich sagen: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU seit 1995.",
-					"en": "say four facts about Austria: capital Vienna, money euro, language German, in the EU since 1995.",
-					"tl": "sabihin ang apat na bagay tungkol sa Austria: kabisera Wien, pera euro, wika German, nasa EU mula 1995."
+					"de": "vier Dinge über Österreich sagen: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+					"en": "say four facts about Austria: capital Vienna, money euro, language German, in the EU.",
+					"tl": "sabihin ang apat na bagay tungkol sa Austria: kabisera Wien, pera euro, wika German, nasa EU."
 				}
 			},
 			"introduces": [],
@@ -4149,13 +4149,13 @@
 					"phrase": "Die Staatssprache ist Deutsch.",
 					"note": {
 						"de": "Auf dem Amt und in der Schule spricht man Deutsch. Deutsch hilft bei der Arbeit und im Alltag.",
-						"en": "German is the language of offices and schools. German helps at work and in everyday life.",
-						"tl": "German ang wika ng opisina at paaralan. Nakakatulong ang German sa trabaho at araw-araw."
+						"en": "German is the language of public offices and schools. German helps at work and in everyday life.",
+						"tl": "German ang wika ng opisina ng gobyerno at paaralan. Nakakatulong ang German sa trabaho at araw-araw."
 					}
 				},
 				{
 					"kind": "phrase",
-					"phrase": "Österreich ist seit 1995 in der EU.",
+					"phrase": "Österreich ist in der EU.",
 					"note": {
 						"de": "EU = Europäische Union. Auch Deutschland ist in der EU. Die Schweiz ist nicht in der EU.",
 						"en": "EU = European Union. Germany is in the EU too. Switzerland is not in the EU.",
@@ -4174,9 +4174,9 @@
 						"tl": "Sa kurso, nagpapakita si Anna ng larawan ng Austria. Ang pulang bituin sa mapa ay ang Wien."
 					},
 					"explanation": {
-						"de": "Richtig: Wien ist die Hauptstadt von Österreich. Der Stern im Bild zeigt die Hauptstadt. Die Hauptstadt von Deutschland ist Berlin, die der Schweiz ist Bern. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, seit 1995 in der EU.",
-						"en": "Correct: Wien is the capital of Austria. The star in the picture marks the capital. The capital of Germany is Berlin, that of Switzerland is Bern. Key facts: capital Vienna, money euro, language German, in the EU since 1995.",
-						"tl": "Tama: ang Wien ay kabisera ng Austria. Ipinapakita ng bituin sa larawan ang kabisera. Ang kabisera ng Germany ay Berlin, ng Switzerland ay Bern. Mahahalagang tala: kabisera Wien, pera euro, wika Deutsch, nasa EU mula 1995."
+						"de": "Richtig: Wien ist die Hauptstadt von Österreich. Der Stern im Bild zeigt die Hauptstadt. Die Hauptstadt von Deutschland ist Berlin, die der Schweiz ist Bern. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+						"en": "Correct: Wien is the capital of Austria. The star in the picture marks the capital. The capital of Germany is Berlin, that of Switzerland is Bern. Key facts: capital Vienna, money euro, language German, in the EU.",
+						"tl": "Tama: ang Wien ay kabisera ng Austria. Ipinapakita ng bituin sa larawan ang kabisera. Ang kabisera ng Germany ay Berlin, ng Switzerland ay Bern. Mahahalagang tala: kabisera Vienna, pera euro, wika German, nasa EU."
 					},
 					"goals": [
 						"A1-03-G8"
@@ -4215,9 +4215,9 @@
 						"tl": "Nagbabayad si Anna sa tindahan sa Wien. Anong pera ang gamit niya?"
 					},
 					"explanation": {
-						"de": "Richtig: der Euro. In Österreich zahlt man mit Euro und Cent. Der Dollar gilt in den USA, der Franken in der Schweiz. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, seit 1995 in der EU.",
-						"en": "Correct: the euro. In Austria you pay with euros and cents. The dollar is used in the USA, the franc in Switzerland. Key facts: capital Vienna, money euro, language German, in the EU since 1995.",
-						"tl": "Tama: ang euro. Sa Austria, euro at cent ang pambayad. Ang dollar ay sa USA, ang franc ay sa Switzerland. Mahahalagang tala: kabisera Wien, pera euro, wika Deutsch, nasa EU mula 1995."
+						"de": "Richtig: der Euro. In Österreich zahlt man mit Euro und Cent. Der Dollar gilt in den USA, der Franken in der Schweiz. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+						"en": "Correct: the euro. In Austria you pay with euros and cents. The dollar is used in the USA, the franc in Switzerland. Key facts: capital Vienna, money euro, language German, in the EU.",
+						"tl": "Tama: ang euro. Sa Austria, euro at cent ang pambayad. Ang dollar ay sa USA, ang franc ay sa Switzerland. Mahahalagang tala: kabisera Vienna, pera euro, wika German, nasa EU."
 					},
 					"goals": [
 						"A1-03-G8"
@@ -4243,13 +4243,13 @@
 					"skill": "werte",
 					"instruction": {
 						"de": "Jose fragt im Kurs: Welche Sprache spricht man am Amt in Österreich?",
-						"en": "In the course Jose asks: which language do people speak at the office in Austria?",
-						"tl": "Sa kurso, nagtanong si Jose: anong wika ang ginagamit sa opisina sa Austria?"
+						"en": "In the course Jose asks: which language do people speak at public offices in Austria?",
+						"tl": "Sa kurso, nagtanong si Jose: anong wika ang ginagamit sa opisina ng gobyerno sa Austria?"
 					},
 					"explanation": {
-						"de": "Richtig: Deutsch. Auf dem Amt und in der Schule spricht man Deutsch. Englisch und Tagalog sind keine Staatssprachen in Österreich. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, seit 1995 in der EU.",
-						"en": "Correct: German. At the office and in school people speak German. English and Tagalog are not official languages in Austria. Key facts: capital Vienna, money euro, language German, in the EU since 1995.",
-						"tl": "Tama: German. Sa opisina at paaralan, German ang ginagamit. Hindi opisyal na wika sa Austria ang English at Tagalog. Mahahalagang tala: kabisera Wien, pera euro, wika Deutsch, nasa EU mula 1995."
+						"de": "Richtig: Deutsch. Auf dem Amt und in der Schule spricht man Deutsch. Englisch und Tagalog sind keine Staatssprachen in Österreich. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+						"en": "Correct: German. At public offices and in school people speak German. English and Tagalog are not official languages in Austria. Key facts: capital Vienna, money euro, language German, in the EU.",
+						"tl": "Tama: German. Sa opisina ng gobyerno at paaralan, German ang ginagamit. Hindi opisyal na wika sa Austria ang English at Tagalog. Mahahalagang tala: kabisera Vienna, pera euro, wika German, nasa EU."
 					},
 					"goals": [
 						"A1-03-G8"
@@ -4274,14 +4274,14 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Tom liest über Europa. Österreich ist ein Land in der EU.",
-						"en": "Tom reads about Europe. Austria is a country in the EU. Since when?",
-						"tl": "Nagbabasa si Tom tungkol sa Europa. Ang Austria ay bansa sa EU. Mula kailan?"
+						"de": "Tom liest über Europa und die EU.",
+						"en": "Tom reads about Europe and the EU. Which country is in the EU?",
+						"tl": "Nagbabasa si Tom tungkol sa Europa at sa EU. Aling bansa ang nasa EU?"
 					},
 					"explanation": {
-						"de": "Richtig: 1995. Seit 1995 ist Österreich in der EU. 1985 und 2004 sind falsch. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, seit 1995 in der EU.",
-						"en": "Correct: 1995. Austria has been in the EU since 1995. 1985 and 2004 are wrong. Key facts: capital Vienna, money euro, language German, in the EU since 1995.",
-						"tl": "Tama: 1995. Mula 1995 nasa EU ang Austria. Mali ang 1985 at 2004. Mahahalagang tala: kabisera Wien, pera euro, wika Deutsch, nasa EU mula 1995."
+						"de": "Richtig: Österreich. Österreich ist in der EU, Deutschland auch. Die Schweiz ist nicht in der EU. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+						"en": "Correct: Austria. Austria is in the EU, and so is Germany. Switzerland is not in the EU. Key facts: capital Vienna, money euro, language German, in the EU.",
+						"tl": "Tama: Austria. Nasa EU ang Austria, pati ang Germany. Wala sa EU ang Switzerland. Mahahalagang tala: kabisera Vienna, pera euro, wika German, nasa EU."
 					},
 					"goals": [
 						"A1-03-G8"
@@ -4293,12 +4293,11 @@
 						"Q36"
 					],
 					"options": [
-						"1985",
-						"2004",
-						"1995"
+						"die Schweiz",
+						"Österreich"
 					],
-					"answer": 2,
-					"prompt": "Österreich ist in der EU seit …"
+					"answer": 1,
+					"prompt": "Welches Land ist in der EU?"
 				},
 				{
 					"id": "A1-03-L13-I5",
@@ -4310,9 +4309,9 @@
 						"tl": "Sumusulat si Anna ng maikling teksto tungkol sa Austria. Kumpletuhin ito gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Richtig: Österreich ist ein Land in Europa. Die Hauptstadt ist Wien (nicht Graz) und das Geld ist der Euro. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, seit 1995 in der EU.",
-						"en": "Correct: Austria is a country in Europe. The capital is Vienna (not Graz) and the money is the euro. Key facts: capital Vienna, money euro, language German, in the EU since 1995.",
-						"tl": "Tama: ang Austria ay bansa sa Europa. Ang kabisera ay Wien (hindi Graz) at ang pera ay euro. Mahahalagang tala: kabisera Wien, pera euro, wika Deutsch, nasa EU mula 1995."
+						"de": "Richtig: Österreich ist ein Land in Europa. Die Hauptstadt ist Wien (nicht Graz) und das Geld ist der Euro. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+						"en": "Correct: Austria is a country in Europe. The capital is Vienna (not Graz) and the money is the euro. Key facts: capital Vienna, money euro, language German, in the EU.",
+						"tl": "Tama: ang Austria ay bansa sa Europa. Ang kabisera ay Wien (hindi Graz) at ang pera ay euro. Mahahalagang tala: kabisera Vienna, pera euro, wika German, nasa EU."
 					},
 					"goals": [
 						"A1-03-G8"
@@ -4359,9 +4358,9 @@
 						"tl": "Naririnig mo si Anna sa kurso. Makinig at piliin kung alin ang tama."
 					},
 					"explanation": {
-						"de": "Sie hören: „Ich bin Anna. Ich wohne in Wien. Wien ist die Hauptstadt von Österreich.“ Also wohnt Anna in der Hauptstadt. Von Graz und der Schweiz spricht sie nicht. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, seit 1995 in der EU.",
-						"en": "You hear: “Ich bin Anna. Ich wohne in Wien. Wien ist die Hauptstadt von Österreich.” So Anna lives in the capital. She does not talk about Graz or Switzerland. Key facts: capital Vienna, money euro, language German, in the EU since 1995.",
-						"tl": "Naririnig mo: “Ich bin Anna. Ich wohne in Wien. Wien ist die Hauptstadt von Österreich.” Kaya nakatira si Anna sa kabisera. Hindi niya binanggit ang Graz o ang Switzerland. Mahahalagang tala: kabisera Wien, pera euro, wika Deutsch, nasa EU mula 1995."
+						"de": "Sie hören: „Ich bin Anna. Ich wohne in Wien. Wien ist die Hauptstadt von Österreich.“ Also wohnt Anna in der Hauptstadt. Von Graz und der Schweiz spricht sie nicht. Merksatz: Hauptstadt Wien, Geld Euro, Sprache Deutsch, in der EU.",
+						"en": "You hear: “Ich bin Anna. Ich wohne in Wien. Wien ist die Hauptstadt von Österreich.” So Anna lives in the capital. She does not talk about Graz or Switzerland. Key facts: capital Vienna, money euro, language German, in the EU.",
+						"tl": "Naririnig mo: “Ich bin Anna. Ich wohne in Wien. Wien ist die Hauptstadt von Österreich.” Kaya nakatira si Anna sa kabisera. Hindi niya binanggit ang Graz o ang Switzerland. Mahahalagang tala: kabisera Vienna, pera euro, wika German, nasa EU."
 					},
 					"goals": [
 						"A1-03-G8"

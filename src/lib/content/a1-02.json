@@ -439,8 +439,8 @@
 					"kind": "phrase",
 					"phrase": "A, B, C, D, E",
 					"note": {
-						"de": "So sagen Sie die Buchstaben: „a, be, ze, de, e“. Im Deutschen heißt jeder Buchstabe anders als im Englischen.",
-						"en": "This is how you say the letters: “a, be, ze, de, e”. In German, many letters have different names than in English.",
+						"de": "So sagen Sie die Buchstaben: „a, be, ze, de, e“. Viele Buchstaben heißen im Deutschen anders als im Englischen.",
+						"en": "This is how you say the letters: “a, be, ze, de, e” (roughly “ah, bay, tsay, day, ay”). Many letters have different names in German than in English.",
 						"tl": "Ganito sabihin ang mga titik: “a, be, ze, de, e”. Sa German, iba ang pangalan ng maraming titik kaysa sa English."
 					},
 					"audioText": "a, be, ze, de, e"
@@ -449,9 +449,9 @@
 					"kind": "rule",
 					"phrase": "E = „e“, I = „i“",
 					"note": {
-						"de": "Das deutsche E klingt wie „e“ in „sehr“ – nicht wie englisch „i“. Das deutsche I klingt wie „i“ in „Sie“ – nicht wie englisch „ai“. So verwechseln Sie E und I nicht.",
-						"en": "German E sounds like “e” in “sehr” – not like English “ee”. German I sounds like “i” in “Sie” – not like English “eye”. That way you won’t mix up E and I.",
-						"tl": "Ang E sa German ay parang “e” sa “sehr” – hindi “i” ng English. Ang I ay parang “i” sa “Sie” – hindi “ai” ng English. Kaya hindi mo malilito ang E at I."
+						"de": "Der Buchstabe E heißt „e“ – wie in „sehr“. Der Buchstabe I heißt „i“ – wie in „Sie“. Achtung: Im Englischen heißt E „i“ und I „ai“. Darum verwechselt man E und I leicht.",
+						"en": "The letter E is called “ay” in German – a long sound like “ay” in “say” (as in “sehr”). The letter I is called “ee” – like “ee” in “see” (as in “Sie”). Careful: in English, E is called “ee” and I is called “eye”. That is why E and I are easy to mix up.",
+						"tl": "Ang titik E ay tinatawag na “e” sa German – gaya sa “sehr”. Ang titik I ay tinatawag na “i” – gaya sa “Sie”. Ingat: sa English, ang E ay tinatawag na “i” at ang I ay “ai”. Kaya madaling malito ang E at I."
 					},
 					"examples": [
 						"Sie: S, I, E.",
@@ -462,9 +462,9 @@
 					"kind": "rule",
 					"phrase": "G = „ge“, J = „jot“",
 					"note": {
-						"de": "G und J klingen im Deutschen nicht wie im Englischen. G heißt „ge“, J heißt „jot“. Sie brauchen das für Namen wie „Jose“ und „Graz“.",
-						"en": "G and J do not sound like in English. G is “gay”, J is “yot”. You need this for names like “Jose” and “Graz”.",
-						"tl": "Iba ang tunog ng G at J sa English. Ang G ay “ge”, ang J ay “jot”. Kailangan mo ito para sa mga pangalan tulad ng “Jose” at “Graz”."
+						"de": "G und J heißen im Deutschen anders als im Englischen. G heißt „ge“, J heißt „jot“. Sie brauchen das für Namen wie „Jose“ und „Graz“.",
+						"en": "G and J have different names in German than in English. G is called “gay” (with a hard G as in “go”), J is called “yot” (with a Y as in “yes”). You need this for names like “Jose” and “Graz”.",
+						"tl": "Iba ang pangalan ng G at J sa German kaysa sa English. Ang G ay “ge”, ang J ay “jot”. Kailangan mo ito para sa mga pangalan tulad ng “Jose” at “Graz”."
 					},
 					"examples": [
 						"Jose: J, O, S, E.",
@@ -502,9 +502,9 @@
 						"tl": "Sa kurso, may sinasabing titik si Anna. Makinig: anong titik ito?"
 					},
 					"explanation": {
-						"de": "Richtig: E. Sie hören „e“ wie in „sehr“. Das I klingt höher und kürzer: „i“ wie in „Sie“. Das A klingt offener: „a“.",
-						"en": "Correct: E. You hear “e” as in “sehr”. I sounds higher and shorter: “i” as in “Sie”. A sounds more open: “a”.",
-						"tl": "Tama: E. Naririnig mo ang “e” gaya sa “sehr”. Mas mataas at mas maikli ang I: “i” gaya sa “Sie”. Mas bukas ang A: “a”."
+						"de": "Richtig: E. Sie hören „e“ wie in „sehr“. Das I klingt höher: „i“ wie in „Sie“. Das A klingt offener: „a“.",
+						"en": "Correct: E. You hear “ay”, as in “sehr”. I sounds higher: “ee”, as in “Sie”. A sounds more open: “ah”.",
+						"tl": "Tama: E. Naririnig mo ang “e” gaya sa “sehr”. Mas mataas ang I: “i” gaya sa “Sie”. Mas bukas ang A: “a”."
 					},
 					"goals": [
 						"A1-02-G1"
@@ -526,9 +526,9 @@
 					"type": "choice",
 					"skill": "hoeren",
 					"instruction": {
-						"de": "Jose sagt seinen Namen: Er beginnt mit einem Buchstaben. Hören Sie.",
-						"en": "Jose starts to say his name: it begins with a letter. Listen: which letter is it?",
-						"tl": "Sinasabi ni Jose ang pangalan niya: nagsisimula ito sa isang titik. Makinig: anong titik ito?"
+						"de": "Jose sagt den ersten Buchstaben von seinem Namen. Hören Sie.",
+						"en": "Jose says the first letter of his name. Listen: which letter is it?",
+						"tl": "Sinasabi ni Jose ang unang titik ng pangalan niya. Makinig: anong titik ito?"
 					},
 					"explanation": {
 						"de": "Richtig: J. „Jot“ ist J, wie in „Jose“. Das G heißt „ge“ und beginnt mit einem harten Laut.",
@@ -590,7 +590,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: H. Die Reihe ist F, G, H, I, J – nach G kommt H. K kommt erst nach J, E steht schon vor F.",
-						"en": "Correct: H. The row is F, G, H, I, J – H comes after G. K comes only after J, E is before F.",
+						"en": "Correct: H. The row is F, G, H, I, J – H comes after G. K only comes after J, and E comes before F.",
 						"tl": "Tama: H. Ang hilera ay F, G, H, I, J – ang H ay pagkatapos ng G. Ang K ay pagkatapos pa ng J, ang E ay bago ang F."
 					},
 					"goals": [
@@ -621,8 +621,8 @@
 					"skill": "grammatikWortschatz",
 					"instruction": {
 						"de": "Jose schreibt das Alphabet ab. Welche Buchstaben fehlen?",
-						"en": "Jose copies the alphabet. Which letters are missing? Use the words below.",
-						"tl": "Kinokopya ni Jose ang alpabeto. Anong mga titik ang kulang? Gamitin ang mga salita sa ibaba."
+						"en": "Jose copies the alphabet. Which letters are missing? Use the letters below.",
+						"tl": "Kinokopya ni Jose ang alpabeto. Anong mga titik ang kulang? Gamitin ang mga titik sa ibaba."
 					},
 					"explanation": {
 						"de": "Richtig: D und J. Das Alphabet geht der Reihe nach: C, D, E – und I, J, K. T kommt viel später, es steht nicht zwischen I und K.",
@@ -665,7 +665,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: „jot“. Im Deutschen heißt J „jot“. „Dschei“ ist der englische Name, „ge“ ist der Name von G.",
-						"en": "Correct: “jot”. In German, J is called “yot”. “Jay” is the English name; “gay” is the name of G.",
+						"en": "Correct: “jot” (say “yot”). That is the German name of J. “Dschei” (“jay”) is the English name; “ge” is the name of G.",
 						"tl": "Tama: “jot”. Sa German, ang J ay “jot”. Ang “dschei” ay pangalan sa English; ang “ge” ay pangalan ng G."
 					},
 					"goals": [
@@ -749,9 +749,9 @@
 					"kind": "rule",
 					"phrase": "V = „fau“, W = „we“",
 					"note": {
-						"de": "Im Deutschen ist es anders als im Englischen: V heißt „fau“ und klingt wie „f“. W heißt „we“ und klingt wie englisch „v“. Darum spricht man „Wien“ wie „Vien“.",
-						"en": "In German it is different from English: V is “fow” and sounds like “f”. W is “vay” and sounds like English “v”. That is why “Wien” sounds like “Vien”.",
-						"tl": "Iba ito sa English: ang V ay “fau” at parang “f” ang tunog. Ang W ay “we” at parang “v” ng English ang tunog. Kaya ang “Wien” ay tunog “Vien”."
+						"de": "Im Deutschen ist es anders als im Englischen: V heißt „fau“ und klingt meistens wie „f“. W heißt „we“ und klingt wie englisch „v“. Darum beginnt „Wien“ mit einem Laut wie englisch „v“.",
+						"en": "In German it is different from English: V is called “fow” (rhymes with “how”) and usually sounds like “f”. W is called “vay” and sounds like English “v”. That is why “Wien” sounds like “Veen”.",
+						"tl": "Iba ito sa English: ang V ay “fau” at kadalasang parang “f” ang tunog. Ang W ay “we” at parang “v” ng English ang tunog. Kaya ang “Wien” ay tunog “Viin”."
 					},
 					"examples": [
 						"Wien: W, I, E, N.",
@@ -763,7 +763,7 @@
 					"phrase": "W, X, Y, Z",
 					"note": {
 						"de": "X heißt „ix“, Y heißt „üpsilon“, Z heißt „zett“.",
-						"en": "X is “iks”, Y is “üpsilon”, Z is “tset”.",
+						"en": "X is “iks”, Y is “üpsilon” (with the German Ü sound), Z is “tset”.",
 						"tl": "Ang X ay “iks”, Y ay “üpsilon”, Z ay “tset”."
 					},
 					"audioText": "we, ix, üpsilon, zett"
@@ -773,7 +773,7 @@
 					"phrase": "Ä, Ö, Ü: zwei Punkte, anderer Klang",
 					"note": {
 						"de": "Zwei Punkte über A, O oder U ändern den Klang. Ö klingt wie in „Österreich“, Ü wie in „fünf“ und in „Grüß Gott“. Ä klingt fast wie E.",
-						"en": "Two dots over A, O or U change the sound. Ö sounds like in “Österreich”, Ü like in “fünf” and in “Grüß Gott”. Ä sounds almost like E.",
+						"en": "Two dots over A, O or U change the sound. Ö sounds like the Ö in “Österreich”, Ü like the Ü in “fünf” and “Grüß Gott”. Ä sounds almost like E.",
 						"tl": "Ang dalawang tuldok sa A, O o U ay nagbabago ng tunog. Ang Ö ay gaya sa “Österreich”, ang Ü gaya sa “fünf” at “Grüß Gott”. Ang Ä ay halos kapareho ng E."
 					},
 					"examples": [
@@ -786,9 +786,9 @@
 					"kind": "rule",
 					"phrase": "ß = „scharfes S“",
 					"note": {
-						"de": "Das ß heißt „scharfes S“ oder „Eszett“. Es klingt wie ein langes „s“ und steht zum Beispiel in „heißen“ und „Grüß Gott“.",
-						"en": "ß is called “sharp S” or “Eszett”. It sounds like a long “s” and is found e.g. in “heißen” and “Grüß Gott”.",
-						"tl": "Ang ß ay tinatawag na “matalim na S” o “Eszett”. Parang mahabang “s” ang tunog at makikita ito sa “heißen” at “Grüß Gott”."
+						"de": "Das ß heißt „scharfes S“ oder „Eszett“. Es klingt wie „ss“ und steht zum Beispiel in „heißen“ und „Grüß Gott“.",
+						"en": "ß is called “sharp S” or “Eszett”. It sounds like “ss” (as in “kiss”), for example in “heißen” and “Grüß Gott”.",
+						"tl": "Ang ß ay tinatawag na “matalim na S” o “Eszett”. Parang “ss” ang tunog, halimbawa sa “heißen” at “Grüß Gott”."
 					},
 					"examples": [
 						"Ich heiße Anna.",
@@ -817,7 +817,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: V. Sie hören „fau“. W heißt „we“. F heißt „ef“ – ein anderer Name. Hören Sie auf das „au“ am Ende von „fau“.",
-						"en": "Correct: V. You hear “fow”. W is “vay”. F is “ef” – listen for the “ow” at the end of “fau”.",
+						"en": "Correct: V. You hear “fow”. W is “vay”. F is “ef” – a different name. Listen for the “ow” at the end of “fau”.",
 						"tl": "Tama: V. Naririnig mo ang “fau”. Ang W ay “we”. Ang F ay “ef” – pakinggan ang “au” sa dulo ng “fau”."
 					},
 					"goals": [
@@ -874,9 +874,9 @@
 						"tl": "Sinasabi ni Jose ang huling titik ng alpabeto. Makinig: anong titik ito?"
 					},
 					"explanation": {
-						"de": "Richtig: Z. „Zett“ ist der letzte Buchstabe. S heißt „es“, C heißt „ze“ – sie haben kein „tt“ am Ende.",
-						"en": "Correct: Z. “Tset” is the last letter. S is “es”, C is “tse” – they do not end in “tt”.",
-						"tl": "Tama: Z. Ang “zett” ang huling titik. Ang S ay “es”, ang C ay “ze” – walang “tt” sa dulo nila."
+						"de": "Richtig: Z („zett“) ist der letzte Buchstabe. S heißt „es“, C heißt „ze“ – sie haben kein „tt“ am Ende.",
+						"en": "Correct: Z (“tset”) is the last letter. S is “es” and C is “tsay” – they do not end in a “t” sound.",
+						"tl": "Tama: Z (“zett”) ang huling titik. Ang S ay “es”, ang C ay “ze” – walang “tt” sa dulo nila."
 					},
 					"goals": [
 						"A1-02-G1"
@@ -940,8 +940,8 @@
 						"tl": "Sumusulat si Anna ng card kay Jose. Isinusulat niya ang pagbati. Alin ang tamang baybay?"
 					},
 					"explanation": {
-						"de": "Richtig: „Grüß Gott“ – mit Ü (zwei Punkte) und mit ß. „Gruß“ hat kein Ü, das klingt wie „Gruss“ mit „u“. „Grüs“ hat kein ß – nach langem Vokal steht hier ß.",
-						"en": "Correct: “Grüß Gott” – with Ü (two dots) and with ß. “Gruß” has no Ü, so it sounds like “u”. “Grüs” has no ß – after a long vowel ß is used here.",
+						"de": "Richtig: „Grüß Gott“ – mit Ü (zwei Punkte) und mit ß. „Gruß“ hat kein Ü – dann hört man ein „u“. „Grüs“ hat kein ß – nach langem Vokal steht hier ß.",
+						"en": "Correct: “Grüß Gott” – with Ü (two dots) and with ß. “Gruß” has no Ü – then you hear a “u” (like “oo”). “Grüs” has no ß – after a long vowel, ß is used here.",
 						"tl": "Tama: “Grüß Gott” – may Ü (dalawang tuldok) at may ß. Ang “Gruß” ay walang Ü, kaya tunog “u”. Ang “Grüs” ay walang ß – pagkatapos ng mahabang patinig, ß ang gamit dito."
 					},
 					"goals": [
@@ -964,8 +964,8 @@
 					"skill": "grammatikWortschatz",
 					"instruction": {
 						"de": "Jose schreibt das Alphabet ab. Welche Buchstaben fehlen?",
-						"en": "Jose copies the second half of the alphabet. Which letters are missing? Use the words below.",
-						"tl": "Kinokopya ni Jose ang ikalawang kalahati ng alpabeto. Anong mga titik ang kulang? Gamitin ang mga salita sa ibaba."
+						"en": "Jose copies the second half of the alphabet. Which letters are missing? Use the letters below.",
+						"tl": "Kinokopya ni Jose ang ikalawang kalahati ng alpabeto. Anong mga titik ang kulang? Gamitin ang mga titik sa ibaba."
 					},
 					"explanation": {
 						"de": "Richtig: R und U. Die Reihe ist Q, R, S – und T, U, V. Ä, Ö und Ü stehen nach dem Z – nicht zwischen T und V.",
@@ -1008,7 +1008,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: „Üpsilon“. So heißt Y im Deutschen. „Wai“ ist der englische Name. „Zett“ ist der Name von Z.",
-						"en": "Correct: “Üpsilon”. That is the German name of Y. “Why” is the English name. “Zett” is the name of Z.",
+						"en": "Correct: “Üpsilon”. That is the German name of Y. “Wai” (“why”) is the English name. “Zett” is the name of Z.",
 						"tl": "Tama: “Üpsilon”. Iyan ang pangalan ng Y sa German. Ang “wai” ay pangalan sa English. Ang “zett” ay pangalan ng Z."
 					},
 					"goals": [
@@ -1059,13 +1059,13 @@
 					"note": {
 						"de": "So fragen Sie nach einem Wort. Die Antwort: Sie buchstabieren, Buchstabe für Buchstabe.",
 						"en": "This is how you ask how a word is written. The answer: you spell it, letter by letter.",
-						"tl": "Ganito magtanong kung paano isinusulat ang isang salita. Ang sagot: i-spell ito, titik por titik."
+						"tl": "Ganito magtanong kung paano isinusulat ang isang salita. Ang sagot: i-spell ito, isa-isang titik."
 					},
 					"audioText": "Wie schreibt man das? ha, u, be, e, er"
 				},
 				{
 					"kind": "phrase",
-					"phrase": "Buchstabieren Sie, bitte.",
+					"phrase": "Buchstabieren Sie bitte.",
 					"note": {
 						"de": "So bitten Sie höflich mit „Sie“. Mit „du“ sagen Sie: „Buchstabier bitte.“",
 						"en": "This is the polite request with “Sie”. With “du” you say: “Buchstabier bitte.”",
@@ -1149,7 +1149,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: Meier. Sie hören M, E, I, E, R. „Mayer“ hat A und Y, „Maier“ hat A statt E. Alle drei klingen fast gleich – darum buchstabiert man.",
-						"en": "Correct: Meier. You hear M, E, I, E, R. “Mayer” has A and Y, “Maier” has A instead of E. All three sound almost the same – that is why people spell.",
+						"en": "Correct: Meier. You hear M, E, I, E, R. “Mayer” has A and Y, “Maier” has A instead of E. All three sound almost the same – that is why people spell names.",
 						"tl": "Tama: Meier. Naririnig mo ang M, E, I, E, R. Ang “Mayer” ay may A at Y, ang “Maier” ay may A sa halip na E. Halos pareho ang tunog ng tatlo – kaya nag-i-spell."
 					},
 					"goals": [
@@ -1250,7 +1250,7 @@
 						"tl": "May nagsabi ng pangalan at hindi mo naintindihan. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "Richtig: „Noch einmal, bitte.“ Dann sagt die Person den Namen noch einmal. „Danke, gut.“ ist die Antwort auf „Wie geht’s?“. „Ich heiße Bauer.“ sagt Ihren eigenen Namen, nicht eine Bitte.",
+						"de": "Richtig: „Noch einmal, bitte.“ Dann sagt die Person den Namen noch einmal. „Danke, gut.“ ist die Antwort auf „Wie geht’s?“. „Ich heiße Bauer.“ nennt Ihren eigenen Namen – das ist keine Bitte.",
 						"en": "Correct: “Noch einmal, bitte.” Then the person says the name again. “Danke, gut.” answers “Wie geht’s?”. “Ich heiße Bauer.” gives your own name – it is not a request.",
 						"tl": "Tama: “Noch einmal, bitte.” Uulitin ng tao ang pangalan. Ang “Danke, gut.” ay sagot sa “Wie geht’s?”. Ang “Ich heiße Bauer.” ay sarili mong pangalan – hindi ito pakiusap."
 					},
@@ -1314,7 +1314,7 @@
 						"tl": "Sinasabi ni Sofia ang apelyido niya at ini-spell. Makinig at isulat ang pangalan."
 					},
 					"explanation": {
-						"de": "Richtig: Berger. B, E, R, G, E, R. Namen schreibt man groß am Anfang. Achten Sie auf das G: Es heißt „ge“, nicht „jot“.",
+						"de": "Richtig: Berger. B, E, R, G, E, R. Namen schreibt man am Anfang groß. Achten Sie auf das G: Es heißt „ge“, nicht „jot“.",
 						"en": "Correct: Berger. B, E, R, G, E, R. Names start with a capital letter. Watch the G: it is “gay”, not “yot”.",
 						"tl": "Tama: Berger. B, E, R, G, E, R. Malaking titik ang simula ng pangalan. Pansinin ang G: “ge” ito, hindi “jot”."
 					},
@@ -1344,8 +1344,8 @@
 			"intro": {
 				"situation": {
 					"de": "Anna sucht die Bim Nummer 12. Sie hört Zahlen: elf, zwölf …",
-					"en": "Anna waits at a tram stop in Vienna. She is looking for tram number 12. She hears and reads numbers. In the course you need numbers for lines, rooms and dates.",
-					"tl": "Naghihintay si Anna sa hintuan sa Vienna. Hinahanap niya ang tram numero 12. Nakikinig at nagbabasa siya ng mga numero. Sa kurso, kailangan mo ng numero para sa linya, silid at petsa."
+					"en": "Anna waits at a tram stop in Vienna. She is looking for tram number 12. She hears and reads numbers. In everyday life you need numbers for tram lines, rooms and dates.",
+					"tl": "Naghihintay si Anna sa hintuan sa Vienna. Hinahanap niya ang tram numero 12. Nakikinig at nagbabasa siya ng mga numero. Sa araw-araw, kailangan mo ng numero para sa linya ng tram, silid at petsa."
 				},
 				"goal": {
 					"de": "die Zahlen von 0 bis 12 hören, lesen, sagen und schreiben",
@@ -1419,7 +1419,7 @@
 						"tl": "Sa hintuan, may nagsabi ng numero. Makinig: anong numero ito?"
 					},
 					"explanation": {
-						"de": "Richtig: 7. Sie hören „sieben“ – am Anfang „sii“. „Sechs“ beginnt mit „se“ und endet auf „ks“, „neun“ beginnt mit „n“.",
+						"de": "Richtig: 7. Sie hören „sieben“ – am Anfang ein langes „i“. „Sechs“ beginnt mit „se“ und endet auf „ks“, „neun“ beginnt mit „n“.",
 						"en": "Correct: 7. You hear “sieben” – it starts with “see”. “Sechs” starts with “se” and ends in “ks”; “neun” starts with “n”.",
 						"tl": "Tama: 7. Naririnig mo ang “sieben” – nagsisimula sa “sii”. Ang “sechs” ay nagsisimula sa “se” at nagtatapos sa “ks”; ang “neun” ay nagsisimula sa “n”."
 					},
@@ -1540,7 +1540,7 @@
 						"tl": "Sumusulat si Jose ng numero sa papel. Isulat ang numerong 5 sa salita."
 					},
 					"explanation": {
-						"de": "Richtig: fünf. Mit Ü (zwei Punkte). „Fünf“ ohne Punkte wäre „funf“ – das ist kein deutsches Wort.",
+						"de": "Richtig: fünf. Mit Ü (zwei Punkte). Ohne die Punkte steht da „funf“ – das ist kein deutsches Wort.",
 						"en": "Correct: fünf. With Ü (two dots). “Funf” without the dots is not a German word.",
 						"tl": "Tama: fünf. May Ü (dalawang tuldok). Ang “funf” na walang tuldok ay hindi salitang German."
 					},
@@ -1664,7 +1664,7 @@
 			"intro": {
 				"situation": {
 					"de": "Lukas hat eine Nummer: 18. Wie sagt man das?",
-					"en": "Lukas plays football. There is a number on his shirt: 18. Anna asks which number it is. Teens like 13 to 19 are everywhere: house numbers, shirts, prices.",
+					"en": "Lukas plays football. There is a number on his shirt: 18. Anna asks which number it is. Numbers from 13 to 19 are everywhere: house numbers, shirts, prices.",
 					"tl": "Naglalaro ng football si Lukas. May numero sa shirt niya: 18. Tinanong ni Anna kung anong numero ito. Nasa lahat ng dako ang 13 hanggang 19: numero ng bahay, shirt, presyo."
 				},
 				"goal": {
@@ -1853,7 +1853,7 @@
 					"type": "short",
 					"skill": "schreiben",
 					"instruction": {
-						"de": "Anna schreibt ihre Zahl auf ein Formular. Schreiben Sie die Zahl 16 in Worten.",
+						"de": "Anna füllt ein Formular aus. Schreiben Sie die Zahl 16 in Worten.",
 						"en": "Anna fills in a form. Write the number 16 in words.",
 						"tl": "Pinupunan ni Anna ang isang form. Isulat ang numerong 16 sa salita."
 					},
@@ -2018,8 +2018,8 @@
 					"kind": "phrase",
 					"phrase": "achtzig, neunzig, hundert",
 					"note": {
-						"de": "80, 90, 100. Bei „hundert“ sagen Sie auch „einhundert“, das ist aber nicht nötig.",
-						"en": "80, 90, 100. For “hundert” you can also say “einhundert”, but it is not necessary.",
+						"de": "80, 90, 100. Statt „hundert“ kann man auch „einhundert“ sagen – das ist aber nicht nötig.",
+						"en": "80, 90, 100. Instead of “hundert” you can also say “einhundert”, but you don’t have to.",
 						"tl": "80, 90, 100. Sa “hundert” puwede ring sabihin ang “einhundert”, pero hindi ito kailangan."
 					}
 				},
@@ -2306,7 +2306,7 @@
 					"kind": "rule",
 					"phrase": "einundzwanzig = ein + und + zwanzig",
 					"note": {
-						"de": "Im Deutschen sagt man bei 21 bis 99 zuerst die Einer, dann „und“, dann die Zehner: 21 = „ein-und-zwanzig“. Man liest also von hinten nach vorne – anders als im Englischen („twenty-one“).",
+						"de": "Im Deutschen sagt man bei 21 bis 99 zuerst die Einer, dann „und“, dann die Zehner: 21 = „ein-und-zwanzig“. Die Reihenfolge ist also anders als im Englischen („twenty-one“).",
 						"en": "In German, for 21 to 99 you say the ones first, then “und”, then the tens: 21 = “ein-und-zwanzig” (one-and-twenty). So the order is reversed compared to English (“twenty-one”).",
 						"tl": "Sa German, sa 21 hanggang 99 sinasabi muna ang ones, tapos “und”, tapos ang tens: 21 = “ein-und-zwanzig” (isa-at-dalawampu). Baligtad ito kumpara sa English (“twenty-one”)."
 					},
@@ -2360,7 +2360,7 @@
 					"explanation": {
 						"de": "Richtig: 47. Sie hören zuerst „sieben“ (7), dann „vierzig“ (40): sieben-und-vierzig. „Vierundsiebzig“ wäre 74, „vierzig“ allein wäre nur 40.",
 						"en": "Correct: 47. You first hear “sieben” (7), then “vierzig” (40): sieben-und-vierzig. “Vierundsiebzig” would be 74; “vierzig” alone would only be 40.",
-						"tl": "Tama: 47. Una mong naririnig ang “sieben” (7), tapos “vierzig” (40): sieben-und-vierzig. Ang “vierundsiebzig” ay 74; ang “vierzig” lang ay 40 lang."
+						"tl": "Tama: 47. Una mong naririnig ang “sieben” (7), tapos “vierzig” (40): sieben-und-vierzig. Ang “vierundsiebzig” ay 74; ang “vierzig” lang ay 40."
 					},
 					"goals": [
 						"A1-02-G2"
@@ -2506,7 +2506,7 @@
 					"type": "short",
 					"skill": "schreiben",
 					"instruction": {
-						"de": "Anna schreibt ihr Alter auf ein Formular. Schreiben Sie die Zahl 21 in Worten.",
+						"de": "Anna füllt ein Formular aus. Schreiben Sie die Zahl 21 in Worten.",
 						"en": "Anna fills in a form. Write the number 21 in words.",
 						"tl": "Pinupunan ni Anna ang isang form. Isulat ang numerong 21 sa salita."
 					},
@@ -2583,8 +2583,8 @@
 				},
 				"goal": {
 					"de": "Ihr Alter sagen und fragen: „Wie alt sind Sie?“ / „Wie alt bist du?“ – und sagen: „Er wird bald 40.“",
-					"en": "say and ask age: “Wie alt sind Sie?” / “Wie alt bist du?” – and say that someone will soon turn a year older",
-					"tl": "sabihin at itanong ang edad: “Wie alt sind Sie?” / “Wie alt bist du?” – at sabihing malapit nang mag-birthday ang isang tao"
+					"en": "say your age and ask about age: “Wie alt sind Sie?” / “Wie alt bist du?” – and say: “Er wird bald 40.”",
+					"tl": "sabihin ang edad mo at itanong ang edad: “Wie alt sind Sie?” / “Wie alt bist du?” – at sabihin: “Er wird bald 40.”"
 				}
 			},
 			"introduces": [
@@ -2609,7 +2609,7 @@
 					"note": {
 						"de": "Im Deutschen sagt man das Alter mit „sein“: „Ich bin 35 Jahre alt.“ Viele Sprachen sagen „haben“ (ich habe 35 Jahre), aber im Deutschen ist das falsch.",
 						"en": "In German you say age with “sein” (to be): “Ich bin 35 Jahre alt.” Many languages say “have” (I have 35 years), but in German that is wrong.",
-						"tl": "Sa German, ang edad ay sinasabi gamit ang “sein” (maging): “Ich bin 35 Jahre alt.” Maraming wika ang gumagamit ng “have” (I have 35 years), pero mali iyon sa German."
+						"tl": "Sa German, ang edad ay sinasabi gamit ang “sein” (to be): “Ich bin 35 Jahre alt.” Maraming wika ang gumagamit ng “have” (I have 35 years), pero mali iyon sa German."
 					},
 					"examples": [
 						"Ich bin zwanzig Jahre alt.",
@@ -2629,9 +2629,9 @@
 					"kind": "rule",
 					"phrase": "werden: ich werde, du wirst, er wird",
 					"note": {
-						"de": "„werden“ heißt: etwas kommt bald. „Er wird bald 40“ heißt: Er ist jetzt 39, und bald ist er 40. Die Formen sind unregelmäßig: du wirst, er/sie wird.",
-						"en": "“werden” means: something is coming. “Er wird bald 40” means: he is 39 now and his birthday is soon. The forms are irregular: du wirst, er/sie wird.",
-						"tl": "Ang “werden” ay nangangahulugang: malapit nang mangyari. “Er wird bald 40” = 39 na siya ngayon at malapit na ang birthday niya. Irregular ang mga anyo: du wirst, er/sie wird."
+						"de": "Mit „werden“ sagen Sie, dass sich etwas ändert. „Er wird bald 40“ heißt: Er ist jetzt 39, und bald ist er 40. Die Formen sind unregelmäßig: du wirst, er/sie wird.",
+						"en": "“werden” means “to become”: something changes. “Er wird bald 40” means: he is 39 now and will soon be 40. The forms are irregular: du wirst, er/sie wird.",
+						"tl": "Ang “werden” ay “maging” – may nagbabago. “Er wird bald 40” = 39 na siya ngayon at malapit na siyang mag-40. Irregular ang mga anyo: du wirst, er/sie wird."
 					},
 					"examples": [
 						"Ich werde bald vierzig.",
@@ -2646,8 +2646,8 @@
 					"skill": "lesen",
 					"instruction": {
 						"de": "Anna liest ein Formular im Kurs. Lesen Sie.",
-						"en": "Anna reads a form in the course. Read: who is described?",
-						"tl": "Binabasa ni Anna ang isang form sa kurso. Basahin: sino ang inilalarawan?"
+						"en": "Anna reads a form in the course. Read the form.",
+						"tl": "Binabasa ni Anna ang isang form sa kurso. Basahin ang form."
 					},
 					"explanation": {
 						"de": "Richtig: „Sie ist 31 Jahre alt.“ Das Alter sagt man mit „sein“. „Sie hat 31 Jahre alt“ ist falsch (nicht „haben“). „13“ steht nicht im Formular.",
@@ -2751,8 +2751,8 @@
 					"skill": "lesen",
 					"instruction": {
 						"de": "Bei Lukas ist heute ein Fest. Schauen Sie das Bild an.",
-						"en": "Lukas has a birthday soon. Look at the picture: the cake shows a number.",
-						"tl": "Malapit na ang birthday ni Lukas. Tingnan ang larawan: may numero sa cake."
+						"en": "Lukas is having a party today. Look at the picture: the cake shows a number.",
+						"tl": "May party si Lukas ngayon. Tingnan ang larawan: may numero sa cake."
 					},
 					"explanation": {
 						"de": "Richtig: vierzig. Auf den Kerzen steht 40: Lukas wird vierzig. „Vierzehn“ ist 14, „vier“ ist nur 4.",
@@ -2793,8 +2793,8 @@
 					},
 					"explanation": {
 						"de": "Richtig: „er wird“. „Werden“ ist unregelmäßig. „Wirst“ gehört zu „du“, „werde“ zu „ich“. „Er wird bald 40“ heißt: Er ist jetzt 39, und bald ist er 40.",
-						"en": "Correct: “er wird”. “Werden” is irregular. “Wirst” goes with “du”, “werde” with “ich”. “Er wird bald 40” means: his birthday is soon.",
-						"tl": "Tama: “er wird”. Irregular ang “werden”. Ang “wirst” ay para sa “du”, ang “werde” para sa “ich”. Ang “Er wird bald 40” = malapit na ang birthday niya."
+						"en": "Correct: “er wird”. “Werden” is irregular. “Wirst” goes with “du”, “werde” with “ich”. “Er wird bald 40” means: he is 39 now and will soon be 40.",
+						"tl": "Tama: “er wird”. Irregular ang “werden”. Ang “wirst” ay para sa “du”, ang “werde” para sa “ich”. Ang “Er wird bald 40” = 39 na siya ngayon at malapit na siyang mag-40."
 					},
 					"goals": [
 						"A1-02-G3"
@@ -3036,9 +3036,9 @@
 						"tl": "Pinupunan nina Herr at Frau Bauer ang isang form. Piliin ang tamang verb."
 					},
 					"explanation": {
-						"de": "Richtig: „haben“. Herr und Frau Bauer sind mehrere Personen = „sie“, darum „haben“. „Habt“ gehört zu „ihr“, „hat“ zu einer Person.",
-						"en": "Correct: “haben”. Mr and Mrs Bauer are several people = “sie”, so “haben”. “Habt” goes with “ihr”, “hat” with one person.",
-						"tl": "Tama: “haben”. Si Herr at Frau Bauer ay maraming tao = “sie”, kaya “haben”. Ang “habt” ay para sa “ihr”, ang “hat” para sa isang tao."
+						"de": "Richtig: „haben“. Herr und Frau Bauer sind zwei Personen = „sie“, darum „haben“. „Habt“ gehört zu „ihr“, „hat“ zu einer Person.",
+						"en": "Correct: “haben”. Mr and Mrs Bauer are two people = “sie” (they), so “haben”. “Habt” goes with “ihr”, “hat” with one person.",
+						"tl": "Tama: “haben”. Sina Herr at Frau Bauer ay dalawang tao = “sie”, kaya “haben”. Ang “habt” ay para sa “ihr”, ang “hat” para sa isang tao."
 					},
 					"goals": [
 						"A1-02-G6"
@@ -3220,8 +3220,8 @@
 					"phrase": "Telefonnummer: Zahl für Zahl",
 					"note": {
 						"de": "Eine Telefonnummer sagt man Zahl für Zahl, nicht als große Zahl. 0664 sagt man: „null, sechs, sechs, vier“ – nicht „sechshundertvierundsechzig“.",
-						"en": "You say a phone number digit by digit, not as one big number. 0664 is said “null, sechs, sechs, vier” – not “six hundred and sixty-four”.",
-						"tl": "Ang numero ng telepono ay sinasabi isa-isa, hindi bilang isang malaking numero. Ang 0664 ay sinasabing “null, sechs, sechs, vier” – hindi “anim na raan at animnapu’t apat”."
+						"en": "You say a phone number digit by digit, not as one big number. 0664 is said “null, sechs, sechs, vier” – not “sechshundertvierundsechzig” (six hundred and sixty-four).",
+						"tl": "Ang numero ng telepono ay sinasabi isa-isa, hindi bilang isang malaking numero. Ang 0664 ay sinasabing “null, sechs, sechs, vier” – hindi “sechshundertvierundsechzig” (anim na raan at animnapu’t apat)."
 					},
 					"examples": [
 						"Null, sechs, sechs, vier.",
@@ -3272,9 +3272,9 @@
 						"tl": "Sinasabi ni Sofia Berger kay Anna ang mobile number niya. Makinig: anong numero ito?"
 					},
 					"explanation": {
-						"de": "Richtig: 0676 384 21. Sie hören: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins. „0676 348 21“ hat 4 und 8 vertauscht, „0667“ hat die ersten Zahlen vertauscht. Bei Telefonnummern zählt jede Zahl.",
-						"en": "Correct: 0676 384 21. You hear: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins. “0676 348 21” swaps 4 and 8; “0667” swaps the first digits. With phone numbers every digit counts.",
-						"tl": "Tama: 0676 384 21. Naririnig mo: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins. Ang “0676 348 21” ay pinagpalit ang 4 at 8; ang “0667” ay pinagpalit ang unang mga digit. Sa numero ng telepono, mahalaga ang bawat digit."
+						"de": "Richtig: 0676 384 21. Sie hören: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins. „0676 348 21“ hat 4 und 8 vertauscht, „0667“ hat 7 und 6 vertauscht. Bei Telefonnummern zählt jede Zahl.",
+						"en": "Correct: 0676 384 21. You hear: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins. “0676 348 21” swaps 4 and 8; “0667” swaps 7 and 6. With phone numbers every digit counts.",
+						"tl": "Tama: 0676 384 21. Naririnig mo: null, sechs, sieben, sechs, drei, acht, vier, zwei, eins. Ang “0676 348 21” ay pinagpalit ang 4 at 8; ang “0667” ay pinagpalit ang 7 at 6. Sa numero ng telepono, mahalaga ang bawat digit."
 					},
 					"goals": [
 						"A1-02-G4",
@@ -3662,8 +3662,8 @@
 					"skill": "schreiben",
 					"instruction": {
 						"de": "Anna füllt ein Formular aus. Schreiben Sie die Zahlen in Ziffern.",
-						"en": "Anna fills in a form. Write the numbers in digits. Use the words below.",
-						"tl": "Pinupunan ni Anna ang isang form. Isulat ang mga numero gamit ang digits. Gamitin ang mga salita sa ibaba."
+						"en": "Anna fills in a form. Write the numbers in digits. Use the numbers below.",
+						"tl": "Pinupunan ni Anna ang isang form. Isulat ang mga numero gamit ang digits. Gamitin ang mga numero sa ibaba."
 					},
 					"explanation": {
 						"de": "Richtig: 12 und 1010. „Zwölf“ ist 12. Die Postleitzahl sagt man Zahl für Zahl: eins, null, eins, null = 1010. „21“ und „1001“ haben die Zahlen vertauscht.",
@@ -3708,7 +3708,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: 1010. Die Postleitzahl hat vier Zahlen und steht vor dem Ort (Wien). 12 ist die Hausnummer, 3 ist die Top-Nummer.",
-						"en": "Correct: 1010. The postcode has four digits and stands before the town (Wien). 12 is the house number, 3 is the Top number.",
+						"en": "Correct: 1010. The postcode has four digits and comes before the town (Wien). 12 is the house number, 3 is the Top number.",
 						"tl": "Tama: 1010. Apat na digit ang postal code at nauuna ito bago ang lugar (Wien). Ang 12 ay numero ng bahay, ang 3 ay numero ng Top."
 					},
 					"goals": [
@@ -3809,21 +3809,21 @@
 					"kind": "rule",
 					"phrase": "ein Euro, nicht „eins Euro“",
 					"note": {
-						"de": "Vor „Euro“ sagt man „ein“: 1,20 € = „ein Euro zwanzig“. „Eins“ sagt man nur, wenn man zählt oder allein steht: „eins, zwei, drei“.",
-						"en": "Before “Euro” you say “ein”: €1.20 = “ein Euro zwanzig”. You say “eins” only when counting or on its own: “eins, zwei, drei”.",
-						"tl": "Bago ang “Euro”, sinasabi ang “ein”: €1.20 = “ein Euro zwanzig”. Ang “eins” ay sinasabi lang kapag nagbibilang o mag-isa: “eins, zwei, drei”."
+						"de": "Vor „Euro“ sagt man „ein“: 1,20 € = „ein Euro zwanzig“. „Eins“ sagt man nur, wenn man zählt oder wenn die Zahl allein steht: „eins, zwei, drei“.",
+						"en": "Before “Euro” you say “ein”: €1.20 = “ein Euro zwanzig”. You say “eins” only when counting or when the number stands alone: “eins, zwei, drei”.",
+						"tl": "Bago ang “Euro”, sinasabi ang “ein”: €1.20 = “ein Euro zwanzig”. Ang “eins” ay sinasabi lang kapag nagbibilang o kapag mag-isa ang numero: “eins, zwei, drei”."
 					},
 					"examples": [
-						"Das kostet ein Euro zwanzig.",
-						"Das kostet ein Euro."
+						"Der Preis ist ein Euro zwanzig.",
+						"Der Preis ist ein Euro."
 					]
 				},
 				{
 					"kind": "rule",
 					"phrase": "Unter einem Euro: Cent",
 					"note": {
-						"de": "Weniger als ein Euro heißt „Cent“: 0,90 € = „neunzig Cent“. 100 Cent sind ein Euro.",
-						"en": "Less than one euro is said in “Cent”: €0.90 = “neunzig Cent”. 100 cents are one euro.",
+						"de": "Unter einem Euro sagt man „Cent“: 0,90 € = „neunzig Cent“. 100 Cent sind ein Euro.",
+						"en": "Amounts under one euro are said in “Cent”: €0.90 = “neunzig Cent”. 100 cents are one euro.",
 						"tl": "Kapag kulang sa isang euro, “Cent” ang gamit: €0.90 = “neunzig Cent”. Ang 100 cent ay isang euro."
 					},
 					"examples": [
@@ -4128,9 +4128,9 @@
 					"kind": "rule",
 					"phrase": "wie viele – Buchstaben, Euro, Namen",
 					"note": {
-						"de": "„Wie viele“ fragt nach Dingen im Plural, die man zählen kann: Buchstaben, Namen, Euro. Hier hat „viele“ ein „-e“ am Ende.",
-						"en": "“Wie viele” asks about plural things that you can count: letters, names, euros. Here “viele” has an “-e” at the end.",
-						"tl": "Ang “wie viele” ay nagtatanong tungkol sa mga bagay sa plural na mabibilang: titik, pangalan, euro. Dito, may “-e” sa dulo ang “viele”."
+						"de": "„Wie viele“ fragt nach Dingen im Plural, die man zählen kann: Buchstaben, Namen, Euro. Hier hat „viele“ ein „-e“ am Ende. Bei Euro hört man beides: „Wie viele Euro?“ und „Wie viel Euro?“",
+						"en": "“Wie viele” asks about plural things that you can count: letters, names, euros. Here “viele” has an “-e” at the end. With euros you hear both: “Wie viele Euro?” and “Wie viel Euro?”",
+						"tl": "Ang “wie viele” ay nagtatanong tungkol sa mga bagay sa plural na mabibilang: titik, pangalan, euro. Dito, may “-e” sa dulo ang “viele”. Sa euro, parehong naririnig: “Wie viele Euro?” at “Wie viel Euro?”"
 					},
 					"examples": [
 						"Wie viele Buchstaben hat der Name?",
@@ -4317,9 +4317,9 @@
 						"tl": "Gusto ni Maria na may bilhin. Basahin ang maikling kuwento."
 					},
 					"explanation": {
-						"de": "Richtig: Nein, sie hat nur 2 Euro. 2 Euro sind weniger als 5 Euro. Sie hat nicht genug und nicht mehr Geld als 5 Euro.",
-						"en": "Correct: No, she has only 2 euros. 2 euros are less than 5 euros. She does not have enough, and not more than 5 euros.",
-						"tl": "Tama: Hindi, 2 euro lang ang mayroon siya. Mas kaunti ang 2 euro kaysa 5 euro. Hindi sapat, at hindi mas marami sa 5 euro."
+						"de": "Richtig: Nein, sie hat nur 2 Euro. 2 Euro sind weniger als 5 Euro. Sie hat nicht genug – und auch nicht mehr.",
+						"en": "Correct: No, she has only 2 euros. 2 euros are less than 5 euros. She does not have enough – and certainly not more.",
+						"tl": "Tama: Hindi, 2 euro lang ang mayroon siya. Mas kaunti ang 2 euro kaysa 5 euro. Hindi sapat – at lalong hindi mas marami."
 					},
 					"goals": [
 						"A1-02-G5"
@@ -4344,7 +4344,7 @@
 					"instruction": {
 						"de": "Herr Bauer schaut in seine Tasche. Er hat 0 Euro. Wählen Sie das richtige Wort.",
 						"en": "Mr Bauer looks in his pocket. He has 0 euros. Choose the right word.",
-						"tl": "Tumingin si Herr Bauer sa bulsa niya. Wala siyang 0 euro. Piliin ang tamang salita."
+						"tl": "Tumingin si Herr Bauer sa bulsa niya. 0 euro ang mayroon siya. Piliin ang tamang salita."
 					},
 					"explanation": {
 						"de": "Richtig: „nichts“. 0 Euro = nichts (nothing). „Viel“ wäre sehr viel Geld, „etwas“ wäre ein bisschen Geld.",
@@ -4444,9 +4444,9 @@
 					"kind": "rule",
 					"phrase": "Zahlen und zurück",
 					"note": {
-						"de": "Sie geben 10 €. Es kostet 7 €. Dann bekommen Sie 3 € zurück: 10 − 7 = 3. „Zurück“ heißt: das Geld, das Sie noch bekommen.",
-						"en": "You give €10. It costs €7. Then you get €3 back: 10 − 7 = 3. “Zurück” (back) means: the money you still get.",
-						"tl": "Magbibigay ka ng €10. €7 ang presyo. Kaya €3 ang sukli: 10 − 7 = 3. Ang “zurück” ay nangangahulugang: ang perang matatanggap mo pa."
+						"de": "Sie geben 10 €. Es kostet 7 €. Dann bekommen Sie 3 € zurück: 10 − 7 = 3. „Zurück“ heißt hier: Sie bekommen Geld zurück.",
+						"en": "You give €10. It costs €7. Then you get €3 back: 10 − 7 = 3. “Zurück” (back) here means: you get money back.",
+						"tl": "Magbibigay ka ng €10. €7 ang presyo. Kaya €3 ang sukli: 10 − 7 = 3. Ang “zurück” (pabalik) dito ay: may perang ibinabalik sa iyo."
 					},
 					"examples": [
 						"Zehn Euro, bitte.",
@@ -4643,9 +4643,9 @@
 						"tl": "Hindi naintindihan ni Anna ang presyo. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Richtig: „wieder“ heißt „noch einmal“. Die Frau sagt den Preis noch einmal. „Allein“ heißt „ohne andere“, „genug“ heißt „nicht mehr nötig“ – beide passen nicht.",
-						"en": "Correct: “wieder” means “once more”. The woman says the price again. “Allein” means “without others”; “genug” means “enough” – neither fits.",
-						"tl": "Tama: Ang “wieder” ay “noch einmal” (ulit). Uulitin ng babae ang presyo. Ang “allein” ay “walang kasama”, ang “genug” ay “sapat” – hindi bagay ang dalawa."
+						"de": "Richtig: „wieder“ heißt „noch einmal“. Die Frau sagt den Preis noch einmal. „Allein“ heißt „ohne andere Personen“, „genug“ sagt man bei einer Menge (zum Beispiel Geld) – beide passen nicht.",
+						"en": "Correct: “wieder” means “again” (noch einmal). The woman says the price again. “Allein” means “without other people”; “genug” means “enough” and is about an amount (for example money) – neither fits.",
+						"tl": "Tama: Ang “wieder” ay “noch einmal” (ulit). Uulitin ng babae ang presyo. Ang “allein” ay “walang kasama”, ang “genug” ay “sapat” at tungkol sa dami (halimbawa, pera) – hindi bagay ang dalawa."
 					},
 					"goals": [
 						"A1-02-G6"
@@ -4707,7 +4707,7 @@
 					},
 					"explanation": {
 						"de": "Richtig: „Vielleicht.“ Das heißt: Ich bin nicht sicher. „Allein“ heißt „ohne andere“, „zurück“ sagt man beim Geld nach dem Zahlen – beide sind keine Antwort auf die Frage.",
-						"en": "Correct: “Vielleicht.” That means: I’m not sure. “Allein” means “without others”, “zurück” means “the money you still get” – neither answers the question.",
+						"en": "Correct: “Vielleicht.” That means: I’m not sure. “Allein” means “without others”, and you say “zurück” about change after paying – neither answers the question.",
 						"tl": "Tama: “Vielleicht.” Ibig sabihin: hindi ako sigurado. Ang “allein” ay “walang kasama”, ang “zurück” ay “sukli” – hindi sagot sa tanong ang dalawa."
 					},
 					"refs": [
@@ -4759,7 +4759,7 @@
 					"phrase": "133 – Polizei",
 					"note": {
 						"de": "Ein Diebstahl, Gewalt, Gefahr durch Menschen? Dann ist die Polizei richtig: 133.",
-						"en": "Theft, violence, danger from people? Then the police are right: 133.",
+						"en": "Theft, violence, danger from people? Then call the police: 133.",
 						"tl": "Nakawan, karahasan, panganib mula sa tao? Pulis ang tamang tawagan: 133."
 					}
 				},
@@ -4910,9 +4910,9 @@
 						"tl": "Si Jose ay nasa Italy at kailangan ng tulong. Anong numero ang gumagana sa buong Europe?"
 					},
 					"explanation": {
-						"de": "Richtig: 112 funktioniert in ganz Europa. 133 ist nur die Polizei in Österreich. 141 ist der Ärztenotdienst in Österreich. Notrufe in Österreich: 122 Feuerwehr, 133 Polizei, 144 Rettung, 112 Euro-Notruf.",
-						"en": "Correct: 112 works all over Europe. 133 is only the police in Austria. 141 is the doctor on call in Austria. Emergency numbers in Austria: 122 fire brigade, 133 police, 144 ambulance, 112 European emergency number.",
-						"tl": "Tama: gumagana ang 112 sa buong Europe. Ang 133 ay pulis sa Austria lang. Ang 141 ay doktor na naka-duty sa Austria. Mga emergency number sa Austria: 122 bumbero, 133 pulis, 144 ambulansya, 112 European emergency number."
+						"de": "Richtig: 112 funktioniert in ganz Europa. 133 ist die Polizei – aber nur in Österreich. 141 ist der Ärztenotdienst in Österreich. Notrufe in Österreich: 122 Feuerwehr, 133 Polizei, 144 Rettung, 112 Euro-Notruf.",
+						"en": "Correct: 112 works all over Europe. 133 is the police number in Austria only. 141 is the doctor on call in Austria. Emergency numbers in Austria: 122 fire brigade, 133 police, 144 ambulance, 112 European emergency number.",
+						"tl": "Tama: gumagana ang 112 sa buong Europe. Ang 133 ay numero ng pulis sa Austria lang. Ang 141 ay doktor na naka-duty sa Austria. Mga emergency number sa Austria: 122 bumbero, 133 pulis, 144 ambulansya, 112 European emergency number."
 					},
 					"goals": [
 						"A1-02-G8"

@@ -374,9 +374,9 @@
 					"tl": "Makinig. Anong mga wika ang alam ng tao?"
 				},
 				"explanation": {
-					"de": "Sie hören: „Ich spreche nur Tagalog und ein bisschen Englisch.“",
-					"en": "You hear: “Ich spreche nur Tagalog und ein bisschen Englisch.”",
-					"tl": "Naririnig mo: “Ich spreche nur Tagalog und ein bisschen Englisch.”"
+					"de": "Sie hören: „Ich spreche Tagalog und ein bisschen Englisch.“",
+					"en": "You hear: “Ich spreche Tagalog und ein bisschen Englisch.”",
+					"tl": "Naririnig mo: “Ich spreche Tagalog und ein bisschen Englisch.”"
 				},
 				"goals": [
 					"A1-03-G3"
@@ -386,11 +386,11 @@
 					"W-A1-0303"
 				],
 				"options": [
-					"nur Tagalog und ein bisschen Englisch",
+					"Tagalog und ein bisschen Englisch",
 					"nur Tagalog"
 				],
 				"answer": 0,
-				"audioText": "Ich spreche nur Tagalog und ein bisschen Englisch.",
+				"audioText": "Ich spreche Tagalog und ein bisschen Englisch.",
 				"audioOnly": true,
 				"family": "A1-03-P-HO3-3"
 			},
@@ -405,7 +405,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Wie heißen Sie?“ – passend ist: „Maria Santos.“",
-					"en": "You hear: “Wie heißen Sie?” – the fitting reply: “Maria Santos.”",
+					"en": "You hear: “Wie heißen Sie?” – a fitting reply is: “Maria Santos.”",
 					"tl": "Naririnig mo: “Wie heißen Sie?” – angkop: “Maria Santos.”"
 				},
 				"goals": [
@@ -437,7 +437,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Wie ist Ihre Adresse?“ – passend ist: „Hauptstraße 3.“",
-					"en": "You hear: “Wie ist Ihre Adresse?” – the fitting reply: “Hauptstraße 3.”",
+					"en": "You hear: “Wie ist Ihre Adresse?” – a fitting reply is: “Hauptstraße 3.”",
 					"tl": "Naririnig mo: “Wie ist Ihre Adresse?” – angkop: “Hauptstraße 3.”"
 				},
 				"goals": [
@@ -470,7 +470,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Auf Wiederhören!“ – passend ist: „Auf Wiederhören!“",
-					"en": "You hear: “Auf Wiederhören!” – the fitting reply: “Auf Wiederhören!”",
+					"en": "You hear: “Auf Wiederhören!” – a fitting reply is: “Auf Wiederhören!”",
 					"tl": "Naririnig mo: “Auf Wiederhören!” – angkop: “Auf Wiederhören!”"
 				},
 				"goals": [
@@ -502,7 +502,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Wohnen Sie nicht in Wien?“ – passend ist: „Doch, in Wien.“",
-					"en": "You hear: “Wohnen Sie nicht in Wien?” – the fitting reply: “Doch, in Wien.”",
+					"en": "You hear: “Wohnen Sie nicht in Wien?” – a fitting reply is: “Doch, in Wien.”",
 					"tl": "Naririnig mo: “Wohnen Sie nicht in Wien?” – angkop: “Doch, in Wien.”"
 				},
 				"goals": [
@@ -838,9 +838,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: 7.",
-					"en": "Read the card: 7.",
-					"tl": "Basahin ang card: 7."
+					"de": "Auf der Karte steht: 7.",
+					"en": "The card says: 7.",
+					"tl": "Nakasulat sa card: 7."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -856,7 +856,7 @@
 					"20"
 				],
 				"answer": 1,
-				"prompt": "Lukas Mayer\nRingstraße 7\n9020 Klagenfurt\nE-Mail: l.mayer@aon.at\nWas ist die Hausnummer?"
+				"prompt": "Lukas Mayer\nRingstraße 7\n9020 Klagenfurt\nE-Mail: l.mayer@aon.at\nWie ist die Hausnummer?"
 			},
 			{
 				"id": "A1-03-P-LE2-2",
@@ -868,9 +868,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: Feldweg.",
-					"en": "Read the card: Feldweg.",
-					"tl": "Basahin ang card: Feldweg."
+					"de": "Auf der Karte steht: Feldweg.",
+					"en": "The card says: Feldweg.",
+					"tl": "Nakasulat sa card: Feldweg."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -899,9 +899,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: 1010.",
-					"en": "Read the card: 1010.",
-					"tl": "Basahin ang card: 1010."
+					"de": "Auf der Karte steht: 1010.",
+					"en": "The card says: 1010.",
+					"tl": "Nakasulat sa card: 1010."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -929,9 +929,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: Innsbruck.",
-					"en": "Read the card: Innsbruck.",
-					"tl": "Basahin ang card: Innsbruck."
+					"de": "Auf der Karte steht: Innsbruck.",
+					"en": "The card says: Innsbruck.",
+					"tl": "Nakasulat sa card: Innsbruck."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -1504,7 +1504,7 @@
 					"W-A1-0148",
 					"W-A1-0131"
 				],
-				"text": "Hallo! Ich heiße Anna. Ich {{1}} (kommen) aus Österreich und {{2}} (wohnen) in Wien. Ich {{3}} (sprechen) Englisch.",
+				"text": "Hallo! Ich heiße Anna. Ich {{1}} (kommen) aus Österreich und {{2}} (wohnen) in Wien. Ich {{3}} (sprechen) Deutsch und Englisch.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -1620,7 +1620,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ich komme aus Österreich.“",
-					"en": "Fitting: “Ich komme aus Österreich.”",
+					"en": "A fitting answer: “Ich komme aus Österreich.”",
 					"tl": "Angkop: “Ich komme aus Österreich.”"
 				},
 				"goals": [
@@ -1652,7 +1652,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ich wohne in Wien.“",
-					"en": "Fitting: “Ich wohne in Wien.”",
+					"en": "A fitting answer: “Ich wohne in Wien.”",
 					"tl": "Angkop: “Ich wohne in Wien.”"
 				},
 				"goals": [
@@ -1685,7 +1685,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ja, ich spreche Englisch.“",
-					"en": "Fitting: “Ja, ich spreche Englisch.”",
+					"en": "A fitting answer: “Ja, ich spreche Englisch.”",
 					"tl": "Angkop: “Ja, ich spreche Englisch.”"
 				},
 				"goals": [
@@ -1717,7 +1717,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Deutschland.“",
-					"en": "Fitting: “Deutschland.”",
+					"en": "A fitting answer: “Deutschland.”",
 					"tl": "Angkop: “Deutschland.”"
 				},
 				"goals": [
@@ -1750,7 +1750,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „Adresse?“ passt: „Wie ist Ihre Adresse?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “Adresse?”: “Wie ist Ihre Adresse?” (exam: speaking part 2).",
+					"en": "For the word card “Adresse?”, ask: “Wie ist Ihre Adresse?” (exam: speaking part 2).",
 					"tl": "Para sa word card “Adresse?”: “Wie ist Ihre Adresse?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -1780,7 +1780,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „Hobby?“ passt: „Was ist Ihr Hobby?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “Hobby?”: “Was ist Ihr Hobby?” (exam: speaking part 2).",
+					"en": "For the word card “Hobby?”, ask: “Was ist Ihr Hobby?” (exam: speaking part 2).",
 					"tl": "Para sa word card “Hobby?”: “Was ist Ihr Hobby?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -1811,7 +1811,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „E-Mail?“ passt: „Wie ist Ihre E-Mail-Adresse?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “E-Mail?”: “Wie ist Ihre E-Mail-Adresse?” (exam: speaking part 2).",
+					"en": "For the word card “E-Mail?”, ask: “Wie ist Ihre E-Mail-Adresse?” (exam: speaking part 2).",
 					"tl": "Para sa word card “E-Mail?”: “Wie ist Ihre E-Mail-Adresse?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -1841,7 +1841,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „Name?“ passt: „Wie heißen Sie?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “Name?”: “Wie heißen Sie?” (exam: speaking part 2).",
+					"en": "For the word card “Name?”, ask: “Wie heißen Sie?” (exam: speaking part 2).",
 					"tl": "Para sa word card “Name?”: “Wie heißen Sie?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -1872,7 +1872,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Sprechen Sie Englisch?“",
-					"en": "Fitting: “Sprechen Sie Englisch?”",
+					"en": "A fitting answer: “Sprechen Sie Englisch?”",
 					"tl": "Angkop: “Sprechen Sie Englisch?”"
 				},
 				"goals": [
@@ -1901,7 +1901,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Auf Wiederhören!“",
-					"en": "Fitting: “Auf Wiederhören!”",
+					"en": "A fitting answer: “Auf Wiederhören!”",
 					"tl": "Angkop: “Auf Wiederhören!”"
 				},
 				"goals": [
@@ -1931,7 +1931,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ich verstehe nicht.“",
-					"en": "Fitting: “Ich verstehe nicht.”",
+					"en": "A fitting answer: “Ich verstehe nicht.”",
 					"tl": "Angkop: “Ich verstehe nicht.”"
 				},
 				"goals": [
@@ -1960,7 +1960,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Langsam, bitte!“",
-					"en": "Fitting: “Langsam, bitte!”",
+					"en": "A fitting answer: “Langsam, bitte!”",
 					"tl": "Angkop: “Langsam, bitte!”"
 				},
 				"goals": [
@@ -2933,9 +2933,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Wien ist die Hauptstadt. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Vienna is the capital. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Kabisera ang Vienna. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Wien ist die Hauptstadt. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Vienna is the capital. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Kabisera ang Vienna. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -2963,9 +2963,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Die Amtssprache ist Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "The official language is German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "German ang wika sa opisina. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Die Amtssprache ist Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "The official language is German. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "German ang wika sa opisina ng gobyerno. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -2994,9 +2994,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Österreich liegt in Europa. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Austria is in Europe. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Nasa Europa ang Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Österreich liegt in Europa. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Austria is in Europe. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Nasa Europa ang Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3024,9 +3024,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Auch Deutschland ist in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Germany is in the EU too. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Nasa EU rin ang Germany. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Auch Deutschland ist in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Germany is in the EU too. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Nasa EU rin ang Germany. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3055,9 +3055,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Mit Deutsch findet man leichter Arbeit. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "With German it is easier to find work. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Mas madaling makahanap ng trabaho kung marunong ng German. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Mit Deutsch findet man leichter Arbeit. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "With German it is easier to find work. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Mas madaling makahanap ng trabaho kung marunong ng German. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3085,9 +3085,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Auf dem Amt spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "At the office people speak German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "German ang gamit sa opisina. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Auf dem Amt spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "At public offices people speak German. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "German ang gamit sa opisina ng gobyerno. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3116,9 +3116,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3154,9 +3154,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Euro. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Euro. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Euro. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Euro. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Euro. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Euro. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3193,9 +3193,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3231,9 +3231,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "EU. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "EU. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "EU. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "EU. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3249,7 +3249,7 @@
 					"EU"
 				],
 				"answer": 1,
-				"prompt": "Im Bild ist die Flagge von Österreich und die Flagge der …",
+				"prompt": "Im Bild sind die Flagge von Österreich und die Flagge der …",
 				"image": {
 					"src": "/img/a1-03-oesterreich.svg",
 					"alt": {
@@ -3270,9 +3270,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Seit 1995. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Seit 1995. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Seit 1995. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Nur Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Nur Wien. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Nur Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3308,9 +3308,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Wien. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Wien. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -3614,7 +3614,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Woher kommen Sie?“ – passend ist: „Aus Graz.“",
-					"en": "You hear: “Woher kommen Sie?” – the fitting reply: “Aus Graz.”",
+					"en": "You hear: “Woher kommen Sie?” – a fitting reply is: “Aus Graz.”",
 					"tl": "Naririnig mo: “Woher kommen Sie?” – angkop: “Aus Graz.”"
 				},
 				"goals": [
@@ -3646,7 +3646,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Wo wohnen Sie?“ – passend ist: „In Linz.“",
-					"en": "You hear: “Wo wohnen Sie?” – the fitting reply: “In Linz.”",
+					"en": "You hear: “Wo wohnen Sie?” – a fitting reply is: “In Linz.”",
 					"tl": "Naririnig mo: “Wo wohnen Sie?” – angkop: “In Linz.”"
 				},
 				"goals": [
@@ -3679,7 +3679,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: „Welche Sprachen sprechen Sie?“ – passend ist: „Deutsch und Englisch.“",
-					"en": "You hear: “Welche Sprachen sprechen Sie?” – the fitting reply: “Deutsch und Englisch.”",
+					"en": "You hear: “Welche Sprachen sprechen Sie?” – a fitting reply is: “Deutsch und Englisch.”",
 					"tl": "Naririnig mo: “Welche Sprachen sprechen Sie?” – angkop: “Deutsch und Englisch.”"
 				},
 				"goals": [
@@ -3809,9 +3809,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: Gartengasse.",
-					"en": "Read the card: Gartengasse.",
-					"tl": "Basahin ang card: Gartengasse."
+					"de": "Auf der Karte steht: Gartengasse.",
+					"en": "The card says: Gartengasse.",
+					"tl": "Nakasulat sa card: Gartengasse."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -3839,9 +3839,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: Linz.",
-					"en": "Read the card: Linz.",
-					"tl": "Basahin ang card: Linz."
+					"de": "Auf der Karte steht: Linz.",
+					"en": "The card says: Linz.",
+					"tl": "Nakasulat sa card: Linz."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -3870,9 +3870,9 @@
 					"tl": "Basahin. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Lesen Sie die Karte: sofia.b@gmx.at.",
-					"en": "Read the card: sofia.b@gmx.at.",
-					"tl": "Basahin ang card: sofia.b@gmx.at."
+					"de": "Auf der Karte steht: sofia.b@gmx.at.",
+					"en": "The card says: sofia.b@gmx.at.",
+					"tl": "Nakasulat sa card: sofia.b@gmx.at."
 				},
 				"goals": [
 					"A1-03-G2"
@@ -3976,9 +3976,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Über Jose steht „Philippinen“.",
-					"en": "Jose has the flag of the Philippines.",
-					"tl": "May bandila ng Pilipinas si Jose."
+					"de": "Über Jose steht „Philippinen“, er hat die Flagge der Philippinen.",
+					"en": "Above Jose it says “Philippinen”; he has the flag of the Philippines.",
+					"tl": "Nakasulat ang “Philippinen” sa itaas ni Jose; may bandila siya ng Pilipinas."
 				},
 				"goals": [
 					"A1-03-G1"
@@ -4460,7 +4460,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ich komme aus den Philippinen.“",
-					"en": "Fitting: “Ich komme aus den Philippinen.”",
+					"en": "A fitting answer: “Ich komme aus den Philippinen.”",
 					"tl": "Angkop: “Ich komme aus den Philippinen.”"
 				},
 				"goals": [
@@ -4492,7 +4492,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ich wohne in Graz.“",
-					"en": "Fitting: “Ich wohne in Graz.”",
+					"en": "A fitting answer: “Ich wohne in Graz.”",
 					"tl": "Angkop: “Ich wohne in Graz.”"
 				},
 				"goals": [
@@ -4525,7 +4525,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Ich spreche Tagalog und Deutsch.“",
-					"en": "Fitting: “Ich spreche Tagalog und Deutsch.”",
+					"en": "A fitting answer: “Ich spreche Tagalog und Deutsch.”",
 					"tl": "Angkop: “Ich spreche Tagalog und Deutsch.”"
 				},
 				"goals": [
@@ -4558,7 +4558,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „Wohnort?“ passt: „Wo wohnen Sie?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “Wohnort?”: “Wo wohnen Sie?” (exam: speaking part 2).",
+					"en": "For the word card “Wohnort?”, ask: “Wo wohnen Sie?” (exam: speaking part 2).",
 					"tl": "Para sa word card “Wohnort?”: “Wo wohnen Sie?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -4588,7 +4588,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „Herkunft?“ passt: „Woher kommen Sie?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “Herkunft?”: “Woher kommen Sie?” (exam: speaking part 2).",
+					"en": "For the word card “Herkunft?”, ask: “Woher kommen Sie?” (exam: speaking part 2).",
 					"tl": "Para sa word card “Herkunft?”: “Woher kommen Sie?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -4619,7 +4619,7 @@
 				},
 				"explanation": {
 					"de": "Zur Wortkarte „Sprachen?“ passt: „Welche Sprachen sprechen Sie?“ (Prüfung: Sprechen Teil 2).",
-					"en": "For the word card “Sprachen?”: “Welche Sprachen sprechen Sie?” (exam: speaking part 2).",
+					"en": "For the word card “Sprachen?”, ask: “Welche Sprachen sprechen Sie?” (exam: speaking part 2).",
 					"tl": "Para sa word card “Sprachen?”: “Welche Sprachen sprechen Sie?” (exam: speaking part 2)."
 				},
 				"goals": [
@@ -4650,7 +4650,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Langsam, bitte!“",
-					"en": "Fitting: “Langsam, bitte!”",
+					"en": "A fitting answer: “Langsam, bitte!”",
 					"tl": "Angkop: “Langsam, bitte!”"
 				},
 				"goals": [
@@ -4679,7 +4679,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Wiederholen Sie, bitte.“",
-					"en": "Fitting: “Wiederholen Sie, bitte.”",
+					"en": "A fitting answer: “Wiederholen Sie, bitte.”",
 					"tl": "Angkop: “Wiederholen Sie, bitte.”"
 				},
 				"goals": [
@@ -4709,7 +4709,7 @@
 				},
 				"explanation": {
 					"de": "Passend: „Wie schreibt man das?“",
-					"en": "Fitting: “Wie schreibt man das?”",
+					"en": "A fitting answer: “Wie schreibt man das?”",
 					"tl": "Angkop: “Wie schreibt man das?”"
 				},
 				"goals": [
@@ -5166,7 +5166,7 @@
 				"refs": [
 					"W-A1-0138"
 				],
-				"text": "Sie {{1}} (nehmen) die Adresse.",
+				"text": "Maria {{1}} (nehmen) die Adresse.",
 				"gaps": {
 					"1": {
 						"accept": [
@@ -5361,9 +5361,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Hauptstadt: Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Capital: Vienna. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Kabisera: Vienna. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Hauptstadt: Wien. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Capital: Vienna. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Kabisera: Vienna. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5391,9 +5391,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Heute zahlt man in Österreich mit Euro. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Today you pay with euros in Austria. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Euro ang pambayad ngayon sa Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Heute zahlt man in Österreich mit Euro. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Today you pay with euros in Austria. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Euro ang pambayad ngayon sa Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5422,9 +5422,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Staatssprache: Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Official language: German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Opisyal na wika: German. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Staatssprache: Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Official language: German. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Opisyal na wika: German. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5453,9 +5453,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Österreich ist seit 1995 in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "Austria has been in the EU since 1995. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Nasa EU ang Austria mula 1995. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Österreich ist in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Austria is in the EU. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Nasa EU ang Austria. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5468,7 +5468,7 @@
 				],
 				"options": [
 					"Nein.",
-					"Ja, seit 1995."
+					"Ja."
 				],
 				"answer": 1,
 				"prompt": "Ist Österreich in der EU?"
@@ -5483,9 +5483,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Seit 1995 in der EU. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "In the EU since 1995. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "Nasa EU mula 1995. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Österreich ist in der EU, die Schweiz nicht. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "Austria is in the EU, Switzerland is not. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "Nasa EU ang Austria, ang Switzerland ay hindi. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5497,11 +5497,11 @@
 					"Q36"
 				],
 				"options": [
-					"1995",
-					"2005"
+					"Österreich",
+					"die Schweiz"
 				],
 				"answer": 0,
-				"prompt": "In der EU ist Österreich seit …",
+				"prompt": "Welches Land ist in der EU?",
 				"family": "A1-03-T-WE2-1"
 			},
 			{
@@ -5514,9 +5514,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "EU = Europäische Union. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "EU = European Union. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "EU = European Union. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "EU = Europäische Union. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "EU = European Union. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "EU = European Union. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5545,9 +5545,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Deutsch ist die Staatssprache. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "German is the official language. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "German ang opisyal na wika. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Deutsch ist die Staatssprache. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "German is the official language. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "German ang opisyal na wika. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5575,9 +5575,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "Auf dem Amt spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "At the office people speak German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "German ang gamit sa opisina. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "Auf dem Amt spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "At public offices people speak German. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "German ang gamit sa opisina ng gobyerno. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
@@ -5606,9 +5606,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In der Schule spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · seit 1995 in der EU. Deutsch hilft bei der Arbeit, beim Amt und in der Schule.",
-					"en": "At school people speak German. Austria: capital Vienna · money euro · official language German · in the EU since 1995. German helps at work, at offices and at school.",
-					"tl": "German ang gamit sa paaralan. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU mula 1995. Nakakatulong ang German sa trabaho, opisina at paaralan."
+					"de": "In der Schule spricht man Deutsch. Österreich: Hauptstadt Wien · Geld Euro · Staatssprache Deutsch · in der EU. Deutsch hilft bei der Arbeit, auf dem Amt und in der Schule.",
+					"en": "At school people speak German. Austria: capital Vienna · money euro · official language German · in the EU. German helps at work, at public offices and at school.",
+					"tl": "German ang gamit sa paaralan. Austria: kabisera Vienna · pera euro · opisyal na wika German · nasa EU. Nakakatulong ang German sa trabaho, sa opisina ng gobyerno at sa paaralan."
 				},
 				"goals": [
 					"A1-03-G8"
