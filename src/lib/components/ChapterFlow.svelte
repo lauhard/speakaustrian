@@ -1,6 +1,10 @@
 <script lang="ts">
 	import BankPoints from './BankPoints.svelte';
-	import { Check, Heart, Star, Trophy, X } from '@lucide/svelte';
+	import FlamePot from './FlamePot.svelte';
+	import { Check, Flame, Heart, Star, Trophy, X } from '@lucide/svelte';
+	import { flames, TIER_CLASS } from '#lib/flames.svelte.ts';
+	import { multiplier, tierOf } from '#lib/core/flames.ts';
+	import { untrack } from 'svelte';
 	import { accuracyPct, chapterStars } from '#lib/core/rating.ts';
 	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
@@ -10,7 +14,7 @@
 	import { chapterContent, findItem, poolItems, practiceParts, PREVIEW_CHAPTER } from '#lib/content/index.ts';
 	import type { Item } from '#lib/core/content/schema.ts';
 	import { gateDraw, nextGateItem, practiceItemAt, targetDraw, testDraw } from '#lib/core/flow.ts';
-	import type { game } from '#lib/game.svelte.ts';
+	import { flameChapter, type game } from '#lib/game.svelte.ts';
 
 	// Everything after the lessons of a chapter attempt (04a §4.2): practice → readiness round → test → correction → error review.
 	// The state machine lives in the core; this component only shows the current state and sends events.
@@ -29,6 +33,28 @@
 	// K6: trophy numbers; chapters passed before K6 have none.
 	const result = $derived(s.course.results[chapterId]);
 	const stars = $derived(result ? chapterStars(result.chapter) : 0);
+
+	// K8: flames only in the running course chapter; the error review after a failed test earns none.
+	const flameId = $derived(flameChapter(chapterId));
+	// K8: a round ends when the phase changes (practice round, readiness block, target stack, test) – the pot flies up.
+	// Only a perfect practice round can earn a shield here; lessons bank on their own result screen.
+	const phaseKey = $derived(`${run?.attemptNo ?? 0}:${attempt?.kind ?? (completed ? 'DONE' : '')}:${attempt && 'block' in attempt ? attempt.block : ''}`);
+	let lastPhase = untrack(() => phaseKey);
+	let lastKind = untrack(() => attempt?.kind);
+	let banking = $state<{ seq: number; shield: boolean }>({ seq: 0, shield: false });
+	$effect(() => {
+		const key = phaseKey;
+		if (key === lastPhase) return;
+		const ended = lastKind;
+		lastPhase = key;
+		lastKind = untrack(() => attempt?.kind);
+		untrack(() => (banking = { seq: banking.seq + 1, shield: ended === 'PRACTICE' }));
+	});
+	// K8: passing closes the chapter's flames (kept for the trophy and the XP multiplier in 030).
+	$effect(() => {
+		if (completed) untrack(() => flames.close(chapterId));
+	});
+	const closedFlames = $derived(completed ? flames.closedOf(chapterId) : undefined);
 	const tlMachine = $derived(content?.tlReviewStatus === 'machine');
 	// The flow is the chapter page itself, so "close" leads back to the course.
 	const backHref = resolve('/');
@@ -95,7 +121,10 @@
 </script>
 
 {#snippet label(text: string, phase: string)}
-	<p class="chip" data-testid="flow-phase" data-phase={phase}>{text}</p>
+	<div class="flex items-center justify-between gap-3">
+		<p class="chip" data-testid="flow-phase" data-phase={phase}>{text}</p>
+		{#if flameId && phase !== 'ERROR_REVIEW'}<FlamePot />{/if}
+	</div>
 {/snippet}
 
 {#snippet goalList(ids: readonly string[])}
@@ -114,6 +143,7 @@
 	{#key item.id + (reviewCardId ?? '') + tries}
 		<Runner
 			items={[item]}
+			flameChapter={attempt?.kind === 'ERROR_REVIEW' ? null : flameId}
 			bare
 			examMode={exam}
 			top={header}
@@ -161,6 +191,9 @@
 {/snippet}
 
 <section class="space-y-4" data-testid="chapter-flow">
+	{#key banking.seq}
+		{#if banking.seq > 0}<BankPoints shield={banking.shield} />{/if}
+	{/key}
 	{#if chapterId === PREVIEW_CHAPTER}<p class="text-sm text-muted">{m.flow_demo_note()}</p>{/if}
 
 	{#if practice && practiceItem}
@@ -220,7 +253,6 @@
 		{/if}
 	{:else if completed}
 		<div class="card space-y-4 text-center" data-testid="flow-passed">
-			<BankPoints />
 			<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-amber-100 text-amber-600"><Trophy size={40} strokeWidth={2} /></p>
 			<h2 class="h2">{m.flow_passed_title()}</h2>
 			{#if result}
@@ -228,6 +260,13 @@
 				<p class="flex items-center justify-center gap-1.5" data-testid="trophy-stars" data-stars={stars} aria-label={m.trophy_stars({ count: stars })}>
 					{#each [1, 2, 3] as n (n)}<Star size={34} strokeWidth={2} class={n <= stars ? 'fill-amber-400 text-amber-500' : 'text-line'} />{/each}
 				</p>
+				{#if closedFlames !== undefined}
+					<!-- K6/K8: the chapter flames and their multiplier (applied to XP in 030). -->
+					<p class="flex items-center justify-center gap-2 text-lg font-extrabold" data-testid="trophy-flames">
+						<Flame size={24} strokeWidth={2.25} class={TIER_CLASS[tierOf(closedFlames)]} />{m.trophy_flames({ count: closedFlames })}
+						<span class="text-sm font-bold text-muted">×{multiplier(closedFlames).toLocaleString(getLocale())}</span>
+					</p>
+				{/if}
 				<div class="grid grid-cols-2 gap-3 text-left" data-testid="trophy">
 					<div class="rounded-2xl bg-ok-soft p-3">
 						<p class="text-sm font-bold text-ok">{m.trophy_test()}</p>

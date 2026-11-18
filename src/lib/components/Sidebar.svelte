@@ -3,7 +3,7 @@
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 	import { m } from '#lib/paraglide/messages.js';
-	import { accuracy } from '#lib/accuracy.svelte.ts';
+	import { flames, TIER_CLASS } from '#lib/flames.svelte.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import { game } from '#lib/game.svelte.ts';
 
@@ -48,9 +48,9 @@
 				</span>
 			</div>
 			<div class="side-stat">
-				<span class="icon-tile !bg-orange-100 !text-orange-500" data-score-target><Flame size={20} strokeWidth={2.25} class={accuracy.score > 0 ? 'flame fill-orange-400' : ''} /></span>
+				<span class="icon-tile !bg-orange-100 !text-orange-500" data-score-target><Flame size={20} strokeWidth={2.25} class="{TIER_CLASS[flames.tier]} {flames.chapterFlames > 0 ? 'flame' : ''}" /></span>
 				<span class="min-w-0">
-					<span class="tile-title">{accuracy.score} <span class="text-sm font-semibold text-muted">{m.stat_flawless()} · {m.stat_best()} {accuracy.best}</span></span>
+					<span class="tile-title">{flames.chapterFlames} <span class="text-sm font-semibold text-muted">{m.stat_flawless()} · {m.stat_best()} {flames.best}</span></span>
 					<span class="side-note">{m.score_explain()}</span>
 				</span>
 			</div>

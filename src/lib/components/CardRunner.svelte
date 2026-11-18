@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { accuracy } from '#lib/accuracy.svelte.ts';
-	import BankPoints from './BankPoints.svelte';
 	import { fly } from 'svelte/transition';
 	import { cubicOut } from 'svelte/easing';
 	import { PartyPopper, Volume2 } from '@lucide/svelte';
@@ -64,7 +62,6 @@
 					: selected === question.answer
 						? 'correct'
 						: 'wrong';
-		accuracy.record(verdict !== 'wrong');
 		if (!repeated.includes(task.cardId)) onanswer?.(task, verdict !== 'wrong');
 	};
 
@@ -90,7 +87,6 @@
 
 {#if !task || !question}
 	<section class="space-y-6 pt-10 text-center" data-testid="cards-done">
-		<BankPoints />
 		<p class="pop mx-auto grid h-20 w-20 place-items-center rounded-full bg-ok-soft text-ok"><PartyPopper size={40} strokeWidth={2} /></p>
 		<h1 class="text-3xl font-black">{m.review_done()}</h1>
 		<a href={backHref} onclick={back} class="btn-primary">{backLabel}</a>

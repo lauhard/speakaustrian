@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { accuracy } from '#lib/accuracy.svelte.ts';
+	import { flames } from '#lib/flames.svelte.ts';
 	import BankPoints from './BankPoints.svelte';
 	import FlamePot from './FlamePot.svelte';
 	import { fly } from 'svelte/transition';
@@ -35,8 +35,10 @@
 		nextLabel?: string;
 		// Lessons (K1): decides pass/fail of the round; without it the result shows no verdict.
 		passCheck?: (correct: number, total: number) => boolean;
+		// K8: the running course chapter, where answers earn flames; null in free practice, demo and free mode.
+		flameChapter?: string | null;
 	};
-	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel, passCheck }: Props = $props();
+	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel, passCheck, flameChapter = null }: Props = $props();
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 
@@ -73,7 +75,7 @@
 		event.preventDefault();
 		if (!response || grade) return;
 		grade = gradeItem(item, response);
-		accuracy.record(passes(grade.verdict));
+		flames.record(flameChapter, passes(grade.verdict));
 		if (passes(grade.verdict)) {
 			correctCount += 1;
 		} else {
@@ -145,7 +147,7 @@
 
 {#if finished && !bare}
 	<section class="flex min-h-[calc(100dvh-10rem)] flex-col items-center justify-center gap-5 py-6 text-center" data-testid="result" data-passed={!failed}>
-		<BankPoints />
+		{#if flameChapter}<BankPoints shield />{/if}
 		<div
 			class="flex h-32 w-32 items-center justify-center rounded-full border-8 bg-white leading-none font-black {failed ? 'border-bad text-bad' : percent >= 80 ? 'border-ok text-ok' : 'border-warn text-warn'}"
 		>
@@ -189,7 +191,7 @@
 				<span style="width: {((index + (grade ? 1 : 0)) / items.length) * 100}%"></span>
 			</div>
 			<p class="flex shrink-0 items-center gap-2 text-sm font-extrabold">
-				<FlamePot />
+				{#if flameChapter}<FlamePot />{/if}
 				<span class="flex items-center gap-0.5 text-ok" data-testid="run-correct"><Check size={16} strokeWidth={3} />{correctCount}</span>
 				<span class="text-muted" aria-label={m.task_count({ current: index + 1, total: items.length })}>{index + 1}/{items.length}</span>
 			</p>

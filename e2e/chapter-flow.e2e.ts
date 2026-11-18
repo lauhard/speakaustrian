@@ -69,10 +69,8 @@ test('DEMO chapter: perfect run to the end (bonus life, restart)', async ({ page
 	await play(page, 'TEST');
 	await expect(page.getByTestId('flow-passed')).toBeVisible();
 	await expect(page.getByTestId('flow-passed')).toContainText(/Bonus|bonus/);
-	// Flame score: a perfect chapter banks its flames into the header score.
-	await expect(page.getByTestId('bank-points')).toBeVisible();
-	await expect.poll(async () => Number(await page.locator('header [data-testid="stat-score"] b').innerText())).toBeGreaterThan(0);
-	await page.screenshot({ path: 'test-results/flame-bank.png' });
+	// K8: the demo is not the running course chapter, so it earns no flames.
+	await expect(page.getByTestId('bank-points')).toHaveCount(0);
 	// K5/K6: the passed chapter shows the trophy step; the other steps stay reachable, one at a time.
 	await expect(page.getByTestId('trophy-test')).toHaveText('100%');
 	await expect(page.getByTestId('trophy-error-rate')).toHaveText('0%');

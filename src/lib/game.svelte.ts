@@ -111,3 +111,7 @@ export const isFreeMode = (chapterId: string) =>
 
 // The store a chapter runs in: the DEMO sandbox for the preview chapter, free mode for unlocked chapters, else the course.
 export const storeFor = (chapterId: string) => (chapterId === PREVIEW_CHAPTER ? demo : isFreeMode(chapterId) ? freeStore(chapterId) : game);
+
+// K8: flames count only in the running course chapter (not in the demo, free mode or a chapter already passed).
+export const flameChapter = (chapterId: string): string | null =>
+	storeFor(chapterId) === game && game.state.course.chapter?.id === chapterId ? chapterId : null;
