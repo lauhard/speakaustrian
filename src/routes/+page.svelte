@@ -1,5 +1,6 @@
 <script lang="ts">
 	import LevelRing from '#lib/components/LevelRing.svelte';
+	import Popover from '#lib/components/Popover.svelte';
 	import { xp } from '#lib/xp.svelte.ts';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
@@ -8,7 +9,7 @@
 	import { chapterContent, course } from '#lib/content/index.ts';
 	import { flames, TIER_CLASS } from '#lib/flames.svelte.ts';
 	import { DAY_GOAL_SEC } from '#lib/core/day.ts';
-	import { ArrowRight, CalendarDays, Check, Flame, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw, Zap, Snowflake, Info } from '@lucide/svelte';
+	import { ArrowRight, CalendarDays, Check, Flame, ChevronDown, ChevronRight, CircleCheck, Clock, Dumbbell, Lock, LockOpen, RotateCcw, Zap, Snowflake, Info } from '@lucide/svelte';
 	import { planDay } from '#lib/core/reducer.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import type { PensumMin } from '#lib/core/state.ts';
@@ -17,7 +18,6 @@
 	import { settings } from '#lib/settings.svelte.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
-	const levels = ['A1', 'A2'] as const;
 	const pensumOptions: { value: PensumMin; label: string }[] = [
 		{ value: 60, label: '1 h' },
 		{ value: 90, label: '1,5 h' },
@@ -55,15 +55,17 @@
 		return { meta, status: statusOf(run.id), next };
 	});
 
+	// Exam levels come from the chapter ids (A1-01 → A1), so a new level needs no UI change.
+	// Up to 3 levels fit a segmented control, more switch to a picker popover.
+	const levels = $derived([...new Set(course.chapters.map((c) => c.id.split('-')[0]))]);
 	// Level tab follows the running chapter until the learner picks one.
-	let picked = $state<(typeof levels)[number] | null>(null);
-	const level = $derived(picked ?? (run?.id.startsWith('A2') ? 'A2' : 'A1'));
+	let picked = $state<string | null>(null);
+	const level = $derived(picked ?? run?.id.split('-')[0] ?? levels[0]);
 	const levelChapters = $derived(course.chapters.filter((c) => c.id.startsWith(level)));
 	const passedCount = $derived(levelChapters.filter((c) => chapterContent(c.id) && statusOf(c.id).phase === 'passed').length);
 
 	// R-S1 day goal: active minutes today; the bar fills to 20 min (due reviews are named in the sub line).
 	const streak = $derived(game.state.streak.current);
-	let xpInfo = $state(false);
 	const goal = $derived.by(() => {
 		const day = game.state.days[game.today];
 		const min = Math.floor((day?.activeSec ?? 0) / 60);
@@ -97,7 +99,7 @@
 					<span class="nowrap-item"><Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}</span>
 				</p>
 				<!-- Level badge: total XP, level ring and the way to the next level; a tap explains XP. -->
-				<button type="button" class="hello-xp flex shrink-0 items-center gap-2.5 rounded-2xl text-right focus-visible:outline-2 focus-visible:outline-brand" aria-expanded={xpInfo} onclick={() => (xpInfo = !xpInfo)} data-testid="home-xp">
+				<button type="button" class="hello-xp flex shrink-0 cursor-pointer items-center gap-2.5 rounded-(--r-card) text-right transition active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-brand" popovertarget="xp-pop" data-testid="home-xp">
 					<span class="space-y-0.5">
 						<b class="block text-base leading-tight font-black" data-testid="home-xp-total">{xp.total.toLocaleString(getLocale())} XP</b>
 						<span class="block text-xs font-bold whitespace-nowrap text-muted">{m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span>
@@ -105,7 +107,6 @@
 					<LevelRing large />
 				</button>
 			</div>
-			{#if xpInfo}<p class="card-muted text-sm" data-testid="home-xp-info">{m.xp_explain()}</p>{/if}
 		</div>
 
 		<div class="tile goal-tile !flex-row !flex-wrap !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
@@ -121,17 +122,14 @@
 				<span class="flex flex-wrap items-center justify-between gap-x-2 gap-y-0.5">
 					<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
 					<span class="flex items-center gap-1 text-sm font-extrabold whitespace-nowrap text-muted" title={m.stat_flawless()} data-testid="flawless-run">
-						<Flame size={15} strokeWidth={2.5} class={TIER_CLASS[flames.tier]} />{flames.chapterFlames}<span class="font-semibold">· {m.stat_best()} {flames.best}</span>
+						<Flame size={15} strokeWidth={2.5} class={TIER_CLASS[flames.tier]} />{flames.chapterFlames}{#if flames.multiplier > 1}<span class="font-semibold">· ×{flames.multiplier.toLocaleString(getLocale())}</span>{/if}
 					</span>
 				</span>
 			</span>
-			<details class="group w-full border-t border-line pt-2.5 lg:hidden" data-testid="freeze-info">
-				<summary class="flex cursor-pointer list-none items-center gap-2 text-sm font-bold text-muted">
-					<Snowflake size={16} strokeWidth={2.25} class="text-sky-500" />{game.state.streak.freezes}/2 {m.stat_freezes()}
-					<Info size={14} strokeWidth={2.5} class="ml-auto" />
-				</summary>
-				<p class="mt-1.5 text-sm font-semibold text-muted">{m.freeze_explain()}</p>
-			</details>
+			<button type="button" class="flex w-full cursor-pointer items-center gap-2 border-t border-line pt-2.5 text-sm font-bold text-muted lg:hidden" popovertarget="freeze-pop" data-testid="freeze-info">
+				<Snowflake size={16} strokeWidth={2.25} class="text-sky-500" />{game.state.streak.freezes}/2 {m.stat_freezes()}
+				<Info size={14} strokeWidth={2.5} class="ml-auto" />
+			</button>
 		</div>
 
 		{#if current}
@@ -161,8 +159,9 @@
 		{/if}
 
 		<div class="grid grid-cols-2 gap-3 rise" style:animation-delay="120ms">
-			<a href={resolve('/review')} data-testid={dueCount > 0 ? 'review-due' : 'review-none'} class="tile {dueCount > 0 ? '!ring-2 !ring-brand/60' : ''}">
-				<span class="icon-tile {dueCount > 0 ? '' : '!bg-ok-soft !text-ok'}">
+			<a href={resolve('/review')} data-testid={dueCount > 0 ? 'review-due' : 'review-none'} class="tile">
+				{#if dueCount > 0}<span class="attn-count" aria-hidden="true">{dueCount}</span>{/if}
+				<span class="icon-tile {dueCount > 0 ? 'is-attn' : '!bg-ok-soft !text-ok'}">
 					{#if dueCount > 0}<RotateCcw size={20} strokeWidth={2.25} />{:else}<CircleCheck size={20} strokeWidth={2.25} />{/if}
 				</span>
 				<span class="min-w-0">
@@ -185,11 +184,15 @@
 					<h2 class="h2">{m.all_chapters()}</h2>
 					<p class="text-sm font-semibold text-muted">{m.chapters_passed({ done: passedCount, total: levelChapters.length })}</p>
 				</div>
-				<div class="seg w-32" role="group" aria-label={m.all_chapters()}>
-					{#each levels as l (l)}
-						<button type="button" aria-pressed={level === l} onclick={() => (picked = l)}>{l}</button>
-					{/each}
-				</div>
+				{#if levels.length <= 3}
+					<div class="seg" style:width="{levels.length * 4}rem" role="group" aria-label={m.all_chapters()}>
+						{#each levels as l (l)}
+							<button type="button" aria-pressed={level === l} onclick={() => (picked = l)}>{l}</button>
+						{/each}
+					</div>
+				{:else}
+					<button type="button" class="btn-ghost" popovertarget="level-pop" data-testid="level-picker">{level}<ChevronDown size={16} strokeWidth={2.5} /></button>
+				{/if}
 			</div>
 			<ol class="path">
 				{#each levelChapters as chapter, i (chapter.id)}
@@ -229,6 +232,29 @@
 			</ol>
 		</div>
 	</section>
+
+	<Popover id="xp-pop" title={m.xp_title()} testid="home-xp-info">
+		<div class="flex items-center gap-3 text-ink">
+			<LevelRing large />
+			<span class="space-y-0.5">
+				<b class="block text-lg font-black">{xp.total.toLocaleString(getLocale())} XP</b>
+				<span class="block text-sm font-bold text-muted">{m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span>
+			</span>
+		</div>
+		<p>{m.xp_explain()}</p>
+	</Popover>
+	<Popover id="freeze-pop" title={m.stat_freezes()}>
+		<p>{m.freeze_explain()}</p>
+	</Popover>
+	{#if levels.length > 3}
+		<Popover id="level-pop" title={m.all_chapters()}>
+			<div class="grid gap-2">
+				{#each levels as l (l)}
+					<button type="button" class="option justify-between" popovertarget="level-pop" popovertargetaction="hide" onclick={() => (picked = l)}>{l}{#if level === l}<Check size={18} strokeWidth={3} />{/if}</button>
+				{/each}
+			</div>
+		</Popover>
+	{/if}
 {:else}
 	<section class="space-y-6 pt-6">
 		<div class="space-y-3 text-center">
