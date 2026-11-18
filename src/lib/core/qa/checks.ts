@@ -71,12 +71,14 @@ export const germanTexts = (item: Item): string[] => {
 	return [...own, item.audioText ?? ''].filter((t) => t !== '');
 };
 
-// German text of the lessons: vocabulary, cards (phrase + note), titles, instructions and explanations count as introduced.
+// German text of the lessons: vocabulary, cards (phrase + note + examples), intro, titles, instructions and explanations
+// count as introduced (content standard v2 adds card examples and the lesson intro).
 const lessonTexts = (c: ChapterContent): string[] => [
 	...(c.vocab ?? []).map((v) => v.lemma),
 	...c.lessons.flatMap((l) => [
 		l.title.de,
-		...(l.cards ?? []).flatMap((card) => [card.phrase, card.note.de]),
+		...(l.intro ? [l.intro.situation.de, l.intro.goal.de] : []),
+		...(l.cards ?? []).flatMap((card) => [card.phrase, card.note.de, ...(card.examples ?? [])]),
 		...l.items.flatMap((i) => [...germanTexts(i), i.instruction.de, i.explanation.de])
 	])
 ];

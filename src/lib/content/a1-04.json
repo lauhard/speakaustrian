@@ -357,9 +357,9 @@
 					"kind": "rule",
 					"phrase": "der Sohn · die Tochter · das Kind",
 					"note": {
-						"de": "Sohn = Bub, Tochter = Mädchen. „das Kind“ ist beides: Sohn und Tochter sind Kinder. Das Wort „Kind“ hat den Artikel „das“.",
-						"en": "Sohn = boy, Tochter = girl. “das Kind” is both: son and daughter are children. “Kind” takes “das”.",
-						"tl": "Sohn = lalaki, Tochter = babae. Ang “das Kind” ay para sa dalawa: ang anak na lalaki at babae ay Kinder. “das” ang article ng “Kind”."
+						"de": "Sohn = männliches Kind, Tochter = weibliches Kind. „das Kind“ ist beides: Sohn und Tochter sind Kinder. Das Wort „Kind“ hat den Artikel „das“.",
+						"en": "Sohn = male child, Tochter = female child. “das Kind” covers both: son and daughter are children. “Kind” takes “das”.",
+						"tl": "Sohn = lalaking anak, Tochter = babaeng anak. Sakop ng “das Kind” ang dalawa: ang anak na lalaki at babae ay Kinder. “das” ang article ng “Kind”."
 					},
 					"examples": [
 						"Lukas ist der Sohn.",
@@ -710,9 +710,9 @@
 						"tl": "Ipinapakilala ni Maria ang mga kapatid niya. Tingnan ang larawan: si Maria ang nagsasalita."
 					},
 					"explanation": {
-						"de": "Richtig: zwei – Jose und Ana. Maria spricht und steht in der Mitte: Sie ist keine Schwester von sich selbst. „drei“ zählt Maria mit, das ist falsch.",
-						"en": "Correct: zwei – Jose and Ana. Maria is speaking, in the middle: she does not count herself. “drei” counts Maria too – wrong.",
-						"tl": "Tama: zwei – sina Jose at Ana. Si Maria ang nagsasalita sa gitna: hindi niya binibilang ang sarili niya. Ang “drei” ay kasama si Maria – mali."
+						"de": "Richtig: zwei – Jose und Ana. Maria spricht und steht in der Mitte: Sie zählt sich nicht selbst mit. „drei“ zählt Maria mit, das ist falsch.",
+						"en": "Correct: zwei – Jose and Ana. Maria is the one speaking, in the middle, and she does not count herself. “drei” counts Maria too – wrong.",
+						"tl": "Tama: zwei – sina Jose at Ana. Si Maria ang nagsasalita sa gitna at hindi niya binibilang ang sarili niya. Ang “drei” ay kasama si Maria – mali."
 					},
 					"goals": [
 						"A1-04-G1"
@@ -1327,7 +1327,7 @@
 					"note": {
 						"de": "Im Plural ist der Artikel immer „die“: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Das Nomen ändert sich: Lernen Sie den Plural zu jedem Wort mit!",
 						"en": "In the plural the article is always “die”: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. The noun changes: learn the plural with every word!",
-						"tl": "Sa plural, laging “die” ang article: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Nagbabago ang noun: isaulo ang plural ng bawat salita! (Sa Tagalog, “mga” lang ang idinadagdag.)"
+						"tl": "Sa plural, laging “die” ang article: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Nagbabago ang noun: isaulo ang plural ng bawat salita!"
 					},
 					"examples": [
 						"Ein Kind, zwei Kinder.",
@@ -1680,8 +1680,8 @@
 					"phrase": "mein Vater · meine Mutter",
 					"note": {
 						"de": "Wie bei „ein / eine“: bei „der“- und „das“-Wörtern sagen Sie „mein“ (mein Vater, mein Kind), bei „die“-Wörtern „meine“ (meine Mutter). Der Artikel bestimmt die Form, nicht, ob der Mensch männlich oder weiblich ist: mein Mädchen, aber meine Frau.",
-						"en": "Like “ein / eine”: for “der” and “das” words you say “mein” (mein Vater, mein Kind), for “die” words “meine” (meine Mutter). The article decides, not the sex of the person.",
-						"tl": "Tulad ng “ein / eine”: sa “der” at “das” na salita, “mein” (mein Vater, mein Kind); sa “die” na salita, “meine” (meine Mutter). Ang article ang nagpapasya."
+						"en": "Like “ein / eine”: for “der” and “das” words you say “mein” (mein Vater, mein Kind), for “die” words “meine” (meine Mutter). The article decides, not whether the person is male or female: mein Mädchen, but meine Frau.",
+						"tl": "Tulad ng “ein / eine”: sa “der” at “das” na salita, “mein” (mein Vater, mein Kind); sa “die” na salita, “meine” (meine Mutter). Ang article ang nagpapasya, hindi kung lalaki o babae ang tao: mein Mädchen, pero meine Frau."
 					},
 					"examples": [
 						"Das ist mein Vater.",
@@ -2055,7 +2055,7 @@
 					},
 					"examples": [
 						"Ich heirate bald.",
-						"Anna und Peter heiraten."
+						"Anna und Peter heiraten im Mai."
 					]
 				},
 				{
@@ -2775,7 +2775,7 @@
 						"tl": "Tingnan muli ang larawan. Tingnan ang mga mukha nila."
 					},
 					"explanation": {
-						"de": "Richtig: glücklich. Peter und Anna lachen, über ihnen sind Herzen. „traurig“ passt nicht zu den Gesichtern. „geschieden“ heißt: nicht mehr verheiratet – aber sie heiraten gerade.",
+						"de": "Richtig: glücklich. Peter und Anna lächeln, über ihnen sind Herzen. „traurig“ passt nicht zu den Gesichtern. „geschieden“ heißt: nicht mehr verheiratet – aber sie heiraten gerade.",
 						"en": "Correct: glücklich. Peter and Anna are smiling and there are hearts above them. “traurig” does not fit their faces. “geschieden” means no longer married – but they are just getting married.",
 						"tl": "Tama: glücklich. Nakangiti sina Peter at Anna at may mga puso sa itaas nila. Hindi bagay ang “traurig” sa mga mukha nila. Ang “geschieden” ay hindi na kasal – pero ikakasal pa lang sila."
 					},
@@ -3073,7 +3073,7 @@
 						"tl": "Magkakasama ang pamilyang Huber. Nandoon din ang isang kaibigan. Tingnan ang larawan at bilangin ang mga tao."
 					},
 					"explanation": {
-						"de": "Richtig: fünf Leute – Opa, Oma, Lena, Lukas und Sara. „Leute“ ist der Plural von „Mensch“: viele Menschen. Jeder Mensch hat ein Namensschild, so zählen Sie ohne Fehler.",
+						"de": "Richtig: fünf Leute – Opa, Oma, Lena, Lukas und Sara. „Leute“ heißt: viele Menschen. Jeder Mensch hat ein Namensschild, so zählen Sie ohne Fehler.",
 						"en": "Correct: fünf – Opa, Oma, Lena, Lukas and Sara. “Leute” means many people. Each person has a name tag, so you can count without mistakes.",
 						"tl": "Tama: fünf – sina Opa, Oma, Lena, Lukas at Sara. Ang “Leute” ay maraming tao. Bawat tao ay may name tag, kaya madali ang bilang."
 					},
@@ -3154,9 +3154,9 @@
 						"tl": "Itinuturo ni Lena sina Oma at Opa. Ano ang sinasabi niya?"
 					},
 					"explanation": {
-						"de": "Richtig: Großeltern. Oma und Opa sind Lenas Großeltern. „Eltern“ sind Peter und Anna. „Geschwister“ wären Lukas und Sara oder Bruder und Schwester, nicht Oma und Opa.",
-						"en": "Correct: Großeltern. Oma and Opa are Lena’s grandparents. “Eltern” are Peter and Anna. “Geschwister” would be brothers and sisters, not Oma and Opa.",
-						"tl": "Tama: Großeltern. Ang Oma at Opa ay mga lolo’t lola ni Lena. Ang “Eltern” ay sina Peter at Anna. Ang “Geschwister” ay magkapatid, hindi sina Oma at Opa."
+						"de": "Richtig: Großeltern. Oma und Opa sind Lenas Großeltern. „Eltern“ sind Peter und Anna. „Geschwister“ sind Bruder und Schwester, nicht Oma und Opa.",
+						"en": "Correct: Großeltern. Oma and Opa are Lena’s grandparents. “Eltern” are Peter and Anna. “Geschwister” are brothers and sisters, not Oma and Opa.",
+						"tl": "Tama: Großeltern. Ang Oma at Opa ay mga lolo’t lola ni Lena. Ang “Eltern” ay sina Peter at Anna. Ang “Geschwister” ay magkakapatid, hindi sina Oma at Opa."
 					},
 					"goals": [
 						"A1-04-G1"
@@ -3372,8 +3372,8 @@
 					"kind": "culture",
 					"phrase": "Familien in Österreich",
 					"note": {
-						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern und Patchwork-Familien (Eltern mit Kindern aus früheren Beziehungen).",
-						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, and patchwork families (parents with children from earlier relationships).",
+						"de": "In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder (ein Paar = zwei Menschen zusammen), eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern und Patchwork-Familien (Eltern mit Kindern aus einer früheren Beziehung).",
+						"en": "In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, and patchwork families (parents with children from an earlier relationship, eine frühere Beziehung).",
 						"tl": "Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, at patchwork na pamilya (magulang na may anak mula sa naunang relasyon)."
 					}
 				}

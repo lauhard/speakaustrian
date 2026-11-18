@@ -3809,13 +3809,13 @@
 					"kind": "rule",
 					"phrase": "ein Euro, nicht „eins Euro“",
 					"note": {
-						"de": "Vor „Euro“ sagt man „ein“: 1,20 € = „ein Euro zwanzig“. „Eins“ sagt man nur, wenn man zählt oder wenn die Zahl allein steht: „eins, zwei, drei“.",
-						"en": "Before “Euro” you say “ein”: €1.20 = “ein Euro zwanzig”. You say “eins” only when counting or when the number stands alone: “eins, zwei, drei”.",
-						"tl": "Bago ang “Euro”, sinasabi ang “ein”: €1.20 = “ein Euro zwanzig”. Ang “eins” ay sinasabi lang kapag nagbibilang o kapag mag-isa ang numero: “eins, zwei, drei”."
+						"de": "Vor „Euro“ sagt man „ein“: 1,20 € = „ein Euro zwanzig“. „Eins“ sagt man nur, wenn man zählt oder wenn die Zahl allein steht: „eins, zwei, drei“. Nach „kosten“ sagt man „einen“: Das kostet einen Euro.",
+						"en": "Before “Euro” you say “ein”: €1.20 = “ein Euro zwanzig”. You say “eins” only when counting or when the number stands alone: “eins, zwei, drei”. After “kosten” you say “einen”: Das kostet einen Euro.",
+						"tl": "Bago ang “Euro”, sinasabi ang “ein”: €1.20 = “ein Euro zwanzig”. Ang “eins” ay sinasabi lang kapag nagbibilang o kapag mag-isa ang numero: “eins, zwei, drei”. Pagkatapos ng “kosten”, sinasabi ang “einen”: Das kostet einen Euro."
 					},
 					"examples": [
 						"Der Preis ist ein Euro zwanzig.",
-						"Der Preis ist ein Euro."
+						"Das kostet einen Euro."
 					]
 				},
 				{

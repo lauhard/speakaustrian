@@ -160,8 +160,8 @@ FAM = lambda: img('familien', 'Drei Bilder mit drei Familien: Frau mit Kind; Man
 X = ''
 SEE = L('Schauen Sie das Bild an.', 'Look at the picture.', 'Tingnan ang larawan.')
 WOW = L('In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern, Patchwork-Familien.',
-        'In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, patchwork families.',
-        'Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork.')
+        'In Austria there are different family forms: parents with children, couples without children (a Paar = two people together), a mother or father alone with children, grandparents with grandchildren, patchwork families.',
+        'Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak (Paar = dalawang taong magkasama), nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, patchwork.')
 
 # L01 ------------------------------------------------------------------ Die Familie
 lesson(1, L('Die Familie', 'The family', 'Ang pamilya'), ['Familie', 'Mutter', 'Vater', 'Eltern', 'Sohn', 'Tochter', 'Kind'], [
@@ -172,9 +172,9 @@ lesson(1, L('Die Familie', 'The family', 'Ang pamilya'), ['Familie', 'Mutter', '
          'The parents are mother and father together. “Eltern” only exists in the plural: die Eltern.',
          'Ang Eltern ay nanay at tatay na magkasama. Plural lang ang “Eltern”: die Eltern.',
          ['Anna ist die Mutter. Peter ist der Vater.', 'Anna und Peter sind die Eltern.']),
-    RULE('der Sohn · die Tochter · das Kind', 'Sohn = Bub, Tochter = Mädchen. „das Kind“ ist beides: Sohn und Tochter sind Kinder. Das Wort „Kind“ hat den Artikel „das“.',
-         'Sohn = boy, Tochter = girl. “das Kind” is both: son and daughter are children. “Kind” takes “das”.',
-         'Sohn = lalaki, Tochter = babae. Ang “das Kind” ay para sa dalawa: ang anak na lalaki at babae ay Kinder. “das” ang article ng “Kind”.',
+    RULE('der Sohn · die Tochter · das Kind', 'Sohn = männliches Kind, Tochter = weibliches Kind. „das Kind“ ist beides: Sohn und Tochter sind Kinder. Das Wort „Kind“ hat den Artikel „das“.',
+         'Sohn = male child, Tochter = female child. “das Kind” covers both: son and daughter are children. “Kind” takes “das”.',
+         'Sohn = lalaking anak, Tochter = babaeng anak. Sakop ng “das Kind” ang dalawa: ang anak na lalaki at babae ay Kinder. “das” ang article ng “Kind”.',
          ['Lukas ist der Sohn.', 'Lena ist die Tochter.', 'Lukas und Lena sind die Kinder.']),
     PHRASE('Haben Sie Kinder? – Ja, ich habe zwei Kinder.', 'Mit „haben“ sagen Sie, wie viele Kinder Sie haben. „Ich bin zwei Kinder“ geht nicht: „sein“ sagt, wer Sie sind.',
            'With “haben” you say how many children you have. “Ich bin zwei Kinder” is wrong: “sein” says who you are.',
@@ -245,9 +245,9 @@ lesson(2, L('Geschwister', 'Siblings', 'Magkakapatid'), ['Bruder', 'Schwester', 
 ], [
     choice(X, 'lesen', L('Maria zeigt ihre Geschwister. Schauen Sie das Bild an: Maria spricht.', 'Maria shows her siblings. Look at the picture: Maria is the one speaking.', 'Ipinapakilala ni Maria ang mga kapatid niya. Tingnan ang larawan: si Maria ang nagsasalita.'),
            'Wie viele Geschwister hat Maria?', 'zwei', ['drei', 'eins'],
-           L('Richtig: zwei – Jose und Ana. Maria spricht und steht in der Mitte: Sie ist keine Schwester von sich selbst. „drei“ zählt Maria mit, das ist falsch.',
-             'Correct: zwei – Jose and Ana. Maria is speaking, in the middle: she does not count herself. “drei” counts Maria too – wrong.',
-             'Tama: zwei – sina Jose at Ana. Si Maria ang nagsasalita sa gitna: hindi niya binibilang ang sarili niya. Ang “drei” ay kasama si Maria – mali.'),
+           L('Richtig: zwei – Jose und Ana. Maria spricht und steht in der Mitte: Sie zählt sich nicht selbst mit. „drei“ zählt Maria mit, das ist falsch.',
+             'Correct: zwei – Jose and Ana. Maria is the one speaking, in the middle, and she does not count herself. “drei” counts Maria too – wrong.',
+             'Tama: zwei – sina Jose at Ana. Si Maria ang nagsasalita sa gitna at hindi niya binibilang ang sarili niya. Ang “drei” ay kasama si Maria – mali.'),
            [G1], R('Geschwister'),
            img=img('geschwister', 'Eine junge Frau in der Mitte sagt „Das sind meine Geschwister.“ Links und rechts steht je ein Mensch mit Namensschild.', 'A young woman in the middle says “Das sind meine Geschwister.” A person with a name tag stands on each side.', 'Isang dalaga sa gitna ang nagsasabi ng “Das sind meine Geschwister.” May taong may name tag sa magkabilang gilid.')),
     choice(X, 'lesen', L('Schauen Sie das Bild noch einmal an.', 'Look at the picture again.', 'Tingnan muli ang larawan.'),
@@ -368,7 +368,7 @@ PLURAL = lambda: img('plural', 'Drei Bilder: Nummer 1 zeigt Kinder, Nummer 2 zwe
 lesson(4, L('Ein Kind, zwei Kinder – der Plural', 'One child, two children – the plural', 'Isang anak, dalawang anak – plural'), [], [
     RULE('Plural: immer „die“', 'Im Plural ist der Artikel immer „die“: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Das Nomen ändert sich: Lernen Sie den Plural zu jedem Wort mit!',
          'In the plural the article is always “die”: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. The noun changes: learn the plural with every word!',
-         'Sa plural, laging “die” ang article: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Nagbabago ang noun: isaulo ang plural ng bawat salita! (Sa Tagalog, “mga” lang ang idinadagdag.)',
+         'Sa plural, laging “die” ang article: der Mann → die Männer, die Frau → die Frauen, das Kind → die Kinder. Nagbabago ang noun: isaulo ang plural ng bawat salita!',
          ['Ein Kind, zwei Kinder.', 'Ein Mann, zwei Männer.', 'Eine Frau, drei Frauen.']),
     RULE('-en / -n: die Frau → die Frauen', 'Viele „die“-Wörter haben im Plural die Endung -en oder -n: die Frau → die Frauen, die Schwester → die Schwestern, die Familie → die Familien.',
          'Many “die” words add -en or -n in the plural: die Frau → die Frauen, die Schwester → die Schwestern, die Familie → die Familien.',
@@ -443,8 +443,8 @@ lesson(5, L('Mein, meine – dein, Ihr', 'My – your', 'Aking – iyong'), ['me
            'This is how you introduce people from your family. “mein” and “meine” show: this belongs to me.',
            'Ganito mo ipakikilala ang mga tao sa pamilya mo. Ipinapakita ng “mein” at “meine”: sa akin ito.'),
     RULE('mein Vater · meine Mutter', 'Wie bei „ein / eine“: bei „der“- und „das“-Wörtern sagen Sie „mein“ (mein Vater, mein Kind), bei „die“-Wörtern „meine“ (meine Mutter). Der Artikel bestimmt die Form, nicht, ob der Mensch männlich oder weiblich ist: mein Mädchen, aber meine Frau.',
-         'Like “ein / eine”: for “der” and “das” words you say “mein” (mein Vater, mein Kind), for “die” words “meine” (meine Mutter). The article decides, not the sex of the person.',
-         'Tulad ng “ein / eine”: sa “der” at “das” na salita, “mein” (mein Vater, mein Kind); sa “die” na salita, “meine” (meine Mutter). Ang article ang nagpapasya.',
+         'Like “ein / eine”: for “der” and “das” words you say “mein” (mein Vater, mein Kind), for “die” words “meine” (meine Mutter). The article decides, not whether the person is male or female: mein Mädchen, but meine Frau.',
+         'Tulad ng “ein / eine”: sa “der” at “das” na salita, “mein” (mein Vater, mein Kind); sa “die” na salita, “meine” (meine Mutter). Ang article ang nagpapasya, hindi kung lalaki o babae ang tao: mein Mädchen, pero meine Frau.',
          ['Das ist mein Vater.', 'Das ist meine Mutter.', 'Das ist mein Kind.']),
     RULE('Plural: meine Eltern · meine Kinder', 'Im Plural sagen Sie immer „meine“, wie bei „die“: meine Eltern, meine Kinder, meine Geschwister.',
          'In the plural you always say “meine”, like “die”: meine Eltern, meine Kinder, meine Geschwister.',
@@ -520,7 +520,7 @@ lesson(6, L('Familienstand', 'Marital status', 'Civil status'), ['verheiratet', 
     RULE('heiraten: ich heirate · du heiratest · er heiratet', '„heiraten“ ist ein Verb: ich heirate, du heiratest, er heiratet, wir heiraten. Vor -st steht ein „e“, damit man es gut sprechen kann.',
          '“heiraten” (to marry) is a verb: ich heirate, du heiratest, er heiratet, wir heiraten. An “e” comes before -st so you can say it easily.',
          'Ang “heiraten” (magpakasal) ay verb: ich heirate, du heiratest, er heiratet, wir heiraten. May “e” bago ang -st para madaling bigkasin.',
-         ['Ich heirate bald.', 'Anna und Peter heiraten.']),
+         ['Ich heirate bald.', 'Anna und Peter heiraten im Mai.']),
     CULTURE('Familienstand auf Formularen', 'Auf vielen Formularen in Österreich steht „Familienstand“: ledig, verheiratet oder geschieden. Sie kreuzen an, was für Sie stimmt.',
             'On many forms in Austria you find “Familienstand”: ledig, verheiratet or geschieden. You tick what is true for you.',
             'Sa maraming form sa Austria may nakasulat na “Familienstand”: ledig, verheiratet o geschieden. Ie-ekis mo ang totoo para sa iyo.'),
@@ -668,7 +668,7 @@ lesson(8, L('Glücklich und traurig', 'Happy and sad', 'Masaya at malungkot'), [
            [G5], R('heiraten'), img=HOCH()),
     choice(X, 'lesen', L('Schauen Sie das Bild noch einmal an. Sehen Sie auf die Gesichter.', 'Look at the picture again. Look at their faces.', 'Tingnan muli ang larawan. Tingnan ang mga mukha nila.'),
            'Peter und Anna sind …', 'glücklich', ['traurig', 'geschieden'],
-           L('Richtig: glücklich. Peter und Anna lachen, über ihnen sind Herzen. „traurig“ passt nicht zu den Gesichtern. „geschieden“ heißt: nicht mehr verheiratet – aber sie heiraten gerade.',
+           L('Richtig: glücklich. Peter und Anna lächeln, über ihnen sind Herzen. „traurig“ passt nicht zu den Gesichtern. „geschieden“ heißt: nicht mehr verheiratet – aber sie heiraten gerade.',
              'Correct: glücklich. Peter and Anna are smiling and there are hearts above them. “traurig” does not fit their faces. “geschieden” means no longer married – but they are just getting married.',
              'Tama: glücklich. Nakangiti sina Peter at Anna at may mga puso sa itaas nila. Hindi bagay ang “traurig” sa mga mukha nila. Ang “geschieden” ay hindi na kasal – pero ikakasal pa lang sila.'),
            [G5], R('glücklich'), img=HOCH()),
@@ -731,7 +731,7 @@ lesson(9, L('Freunde, Verwandte, Leute', 'Friends, relatives, people', 'Kaibigan
 ], [
     choice(X, 'lesen', L('Die Familie Huber ist zusammen. Auch eine Freundin ist da. Schauen Sie das Bild an.', 'The Huber family is together. A friend is there too. Look at the picture and count the people.', 'Magkakasama ang pamilyang Huber. Nandoon din ang isang kaibigan. Tingnan ang larawan at bilangin ang mga tao.'),
            'Wie viele Leute sind im Bild?', 'fünf', ['vier', 'sechs'],
-           L('Richtig: fünf Leute – Opa, Oma, Lena, Lukas und Sara. „Leute“ ist der Plural von „Mensch“: viele Menschen. Jeder Mensch hat ein Namensschild, so zählen Sie ohne Fehler.',
+           L('Richtig: fünf Leute – Opa, Oma, Lena, Lukas und Sara. „Leute“ heißt: viele Menschen. Jeder Mensch hat ein Namensschild, so zählen Sie ohne Fehler.',
              'Correct: fünf – Opa, Oma, Lena, Lukas and Sara. “Leute” means many people. Each person has a name tag, so you can count without mistakes.',
              'Tama: fünf – sina Opa, Oma, Lena, Lukas at Sara. Ang “Leute” ay maraming tao. Bawat tao ay may name tag, kaya madali ang bilang.'),
            [G1], R('Leute'), img=LEUTE()),
@@ -743,9 +743,9 @@ lesson(9, L('Freunde, Verwandte, Leute', 'Friends, relatives, people', 'Kaibigan
            [G1], R('Großeltern', 'Oma', 'Opa'), img=LEUTE()),
     choice(X, 'grammatikWortschatz', L('Lena zeigt auf Oma und Opa. Was sagt sie?', 'Lena points at Oma and Opa. What does she say?', 'Itinuturo ni Lena sina Oma at Opa. Ano ang sinasabi niya?'),
            'Lena: „Das sind meine …“', 'Großeltern', ['Eltern', 'Geschwister'],
-           L('Richtig: Großeltern. Oma und Opa sind Lenas Großeltern. „Eltern“ sind Peter und Anna. „Geschwister“ wären Lukas und Sara oder Bruder und Schwester, nicht Oma und Opa.',
-             'Correct: Großeltern. Oma and Opa are Lena’s grandparents. “Eltern” are Peter and Anna. “Geschwister” would be brothers and sisters, not Oma and Opa.',
-             'Tama: Großeltern. Ang Oma at Opa ay mga lolo’t lola ni Lena. Ang “Eltern” ay sina Peter at Anna. Ang “Geschwister” ay magkapatid, hindi sina Oma at Opa.'),
+           L('Richtig: Großeltern. Oma und Opa sind Lenas Großeltern. „Eltern“ sind Peter und Anna. „Geschwister“ sind Bruder und Schwester, nicht Oma und Opa.',
+             'Correct: Großeltern. Oma and Opa are Lena’s grandparents. “Eltern” are Peter and Anna. “Geschwister” are brothers and sisters, not Oma and Opa.',
+             'Tama: Großeltern. Ang Oma at Opa ay mga lolo’t lola ni Lena. Ang “Eltern” ay sina Peter at Anna. Ang “Geschwister” ay magkakapatid, hindi sina Oma at Opa.'),
            [G1], R('Großeltern')),
     cloze(X, 'grammatikWortschatz', L('Anna und Peter sprechen über ihre Familie. Ergänzen Sie den Dialog. Nehmen Sie die Wörter unten.', 'Anna and Peter talk about their family. Complete the dialogue. Use the words below.', 'Nag-uusap sina Anna at Peter tungkol sa pamilya nila. Kumpletuhin ang dialogo. Gamitin ang mga salita sa ibaba.'),
           'Peter: Wo {{1}} deine Eltern? – Anna: In Manila. – Peter: Bleibst du in Wien? – Anna: Ja, ich {{2}} in Wien.', [['leben'], ['bleibe']],
@@ -789,8 +789,8 @@ lesson(10, L('Familien in Österreich', 'Families in Austria', 'Mga pamilya sa A
     PHRASE('Oma und Kind – das ist auch eine Familie.', 'Manchmal leben Großeltern und Enkelkinder zusammen. „Enkelkind“ heißt: das Kind von meinem Sohn oder von meiner Tochter.',
            'Sometimes grandparents and grandchildren live together. “Enkelkind” means: the child of my son or daughter.',
            'Minsan magkasama ang mga lolo’t lola at apo. Ang “Enkelkind” ay anak ng anak ko.'),
-    CULTURE('Familien in Österreich', 'In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder, eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern und Patchwork-Familien (Eltern mit Kindern aus früheren Beziehungen).',
-            'In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, and patchwork families (parents with children from earlier relationships).',
+    CULTURE('Familien in Österreich', 'In Österreich gibt es verschiedene Familienformen: Eltern mit Kindern, Paare ohne Kinder (ein Paar = zwei Menschen zusammen), eine Mutter oder ein Vater allein mit Kindern, Großeltern mit Enkelkindern und Patchwork-Familien (Eltern mit Kindern aus einer früheren Beziehung).',
+            'In Austria there are different family forms: parents with children, couples without children, a mother or father alone with children, grandparents with grandchildren, and patchwork families (parents with children from an earlier relationship, eine frühere Beziehung).',
             'Sa Austria may iba’t ibang anyo ng pamilya: magulang na may anak, mag-asawang walang anak, nanay o tatay na mag-isang may anak, lolo at lola kasama ang apo, at patchwork na pamilya (magulang na may anak mula sa naunang relasyon).'),
 ], [
     choice(X, 'werte', L('Sie sehen drei Familien im Park. Schauen Sie das Bild an.', 'You see three families in the park. Look at the picture.', 'May tatlong pamilya sa park. Tingnan ang larawan.'),
@@ -957,6 +957,16 @@ fam('LE4', lambda v, i: choice(i, 'lesen', READ, v[0], v[1], [v[2]], same(v[3]),
 fam('WE4', WQ, [], [('Ein Paar ohne Kinder: Ist das eine Familie?', 'Ja.', 'Nein.'), ('Eine Oma lebt mit ihrer Tochter und dem Baby. Ist das eine Familie?', 'Ja.', 'Nein.'),
                     ('Was ist eine Familie?', 'Menschen zusammen – in vielen Familienformen', 'nur Vater, Mutter und zwei Kinder'), ('Patchwork-Familie: Die Kinder kommen …', 'auch aus einer früheren Beziehung', 'immer aus dem Ausland'),
                     ('Eltern, Kinder und Oma wohnen zusammen. Ist das eine Familie?', 'Ja.', 'Nein.'), ('Sind alle Familien gleich groß?', 'Nein.', 'Ja.')])
+
+# local standard asserts (content standard v2 §1–§4)
+for _l in LESSONS:
+    assert _l.get('intro') and 3 <= len(_l['cards']) <= 6 and 6 <= len(_l['items']) <= 8, _l['id']
+    for _it in _l['items']:
+        assert all(_it['instruction'][k] for k in ('de', 'en', 'tl')) and all(_it['explanation'][k] for k in ('de', 'en', 'tl')), _it['id']
+        if _it['type'] == 'choice':
+            assert len(set(_it['options'])) == len(_it['options']) and 0 <= _it['answer'] < len(_it['options']), _it['id']
+        if _it['type'] == 'cloze':
+            assert _it.get('bank') or any(g.get('hint') for g in _it['gaps'].values()), _it['id']
 
 write_svgs('/tmp/a1-04.png')
 write_all(V, GOALS, {'lesen': 3, 'hoeren': 3, 'schreiben': 3, 'sprechen': 5, 'grammatikWortschatz': 3, 'werte': 3})

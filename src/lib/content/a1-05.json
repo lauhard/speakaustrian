@@ -543,9 +543,9 @@
 						"tl": "Nagsasalita ang guro sa iyo. Makinig."
 					},
 					"explanation": {
-						"de": "Sie hören: „Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.“ Eine Frau, die Lehrerin ist: Frau Huber. Von Anna oder von einem Herrn hören Sie nichts.",
-						"en": "You hear: “Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.” A woman who is the teacher: Frau Huber. You hear nothing about Anna or a man.",
-						"tl": "Naririnig mo: “Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.” Babaeng guro: si Frau Huber. Walang sinasabi tungkol kay Anna o sa lalaki."
+						"de": "Sie hören: „Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.“ Die Lehrerin heißt also Frau Huber. Von Anna oder von einem Herrn hören Sie nichts.",
+						"en": "You hear: “Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.” So the teacher is called Frau Huber. You hear nothing about Anna or about a man.",
+						"tl": "Naririnig mo: “Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.” Kaya si Frau Huber ang guro. Walang sinasabi tungkol kay Anna o sa isang lalaki."
 					},
 					"goals": [
 						"A1-05-G1"
@@ -836,8 +836,8 @@
 					"skill": "grammatikWortschatz",
 					"instruction": {
 						"de": "Maria sucht einen Stift zum Schreiben. Schauen Sie das Bild an.",
-						"en": "Maria needs a pen to write. Look at the picture.",
-						"tl": "Kailangan ni Maria ng pansulat. Tingnan ang larawan."
+						"en": "Maria is looking for a pen to write with. Look at the picture.",
+						"tl": "Naghahanap si Maria ng pansulat. Tingnan ang larawan."
 					},
 					"explanation": {
 						"de": "Richtig: Nummer 3 ist der Kugelschreiber (blau, mit schwarzer Spitze). Nummer 4 ist der Bleistift (gelb, mit Holzspitze). Nummer 2 ist ein Heft.",
@@ -984,8 +984,8 @@
 					"skill": "grammatikWortschatz",
 					"instruction": {
 						"de": "Tom sucht Papier. Ergänzen Sie den Dialog.",
-						"en": "Tom needs paper. Complete the dialogue with the words below.",
-						"tl": "Kailangan ni Tom ng papel. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+						"en": "Tom is looking for paper. Complete the dialogue with the words below.",
+						"tl": "Naghahanap si Tom ng papel. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
 						"de": "Richtig: „Ein Blatt Papier, bitte.“ Man sagt „ein Blatt Papier“ für ein Stück Papier. „Ein Buch Papier“ und „ein Kugelschreiber Papier“ sagt man nicht.",
@@ -1287,7 +1287,7 @@
 						"tl": "May instruction si Frau Huber. Kumpletuhin ang pangungusap gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Richtig: „auf Seite 12“ und „Aufgabe 3“. Das Buch hat Seiten, in der Seite stehen Aufgaben. „Satz 12“ und „auf Aufgabe“ passen nicht zu „öffnen“ und „machen“.",
+						"de": "Richtig: „auf Seite 12“ und „Aufgabe 3“. Das Buch hat Seiten, und auf der Seite stehen Aufgaben. „Satz 12“ und „auf Aufgabe“ passen nicht zu „öffnen“ und „machen“.",
 						"en": "Correct: “auf Seite 12” and “Aufgabe 3”. The book has pages, and on a page there are exercises. “Satz” does not fit “auf … 12” and “machen”.",
 						"tl": "Tama: “auf Seite 12” at “Aufgabe 3”. May mga pahina ang libro, at nasa pahina ang mga gawain. Ang “Satz” ay hindi angkop sa “auf … 12” at “machen”."
 					},
@@ -1733,9 +1733,9 @@
 					"kind": "phrase",
 					"phrase": "die Prüfung – der Test",
 					"note": {
-						"de": "Am Ende vom Kurs gibt es eine Prüfung, in Österreich zum Beispiel die Integrationsprüfung. Im Kurs machen Sie auch Tests.",
-						"en": "At the end of the course there is an exam (Prüfung), in Austria for example the Integrationsprüfung (integration exam). In the course you also take tests.",
-						"tl": "Sa dulo ng kurso may exam (Prüfung), sa Austria halimbawa ang Integrationsprüfung. Sa kurso may mga test (Test) din."
+						"de": "Am Ende vom Kurs gibt es eine Prüfung, in Österreich zum Beispiel die Integrationsprüfung. Zum Beispiel: Die Prüfung ist am 12. Mai. Im Kurs machen Sie auch Tests.",
+						"en": "At the end of the course there is an exam (Prüfung), in Austria for example the Integrationsprüfung (integration exam). For example: the exam is on 12 May. In the course you also take tests.",
+						"tl": "Sa dulo ng kurso may exam (Prüfung), sa Austria halimbawa ang Integrationsprüfung. Halimbawa: ang exam ay sa ika-12 ng Mayo. Sa kurso may mga test (Test) din."
 					}
 				}
 			],
@@ -2482,9 +2482,9 @@
 						"tl": "Nagtanong si Frau Huber kay Anna. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Richtig: „keine Frage“. „die Frage“ ist ein „die“-Wort: eine Frage → keine Frage. „kein“ passt zu „der“- und „das“-Wörtern, „nicht“ steht nicht vor einem Nomen mit „eine“.",
-						"en": "Correct: “keine Frage”. “die Frage” is a “die”-word: eine Frage → keine Frage. “kein” fits “der”- and “das”-words, “nicht” does not stand before a noun with “eine”.",
-						"tl": "Tama: “keine Frage”. Ang “die Frage” ay salitang “die”: eine Frage → keine Frage. Ang “kein” ay para sa “der” at “das”, ang “nicht” ay hindi nasa harap ng noun na may “eine”."
+						"de": "Richtig: „keine Frage“. „die Frage“ ist ein „die“-Wort: eine Frage → keine Frage. „kein“ passt zu „der“- und „das“-Wörtern, vor einem Nomen mit „eine“ sagt man „keine“, nicht „nicht eine“.",
+						"en": "Correct: “keine Frage”. “die Frage” is a “die”-word: eine Frage → keine Frage. “kein” fits “der”- and “das”-words, before a noun with “eine” you say “keine”, not “nicht eine”.",
+						"tl": "Tama: “keine Frage”. Ang “die Frage” ay salitang “die”: eine Frage → keine Frage. Ang “kein” ay para sa “der” at “das”, bago ang noun na may “eine”, “keine” ang sinasabi, hindi “nicht eine”."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -2559,9 +2559,9 @@
 						"tl": "Sabi ni Frau Huber: “Das ist ein Fehler.” Hindi sang-ayon si Tom. Ano ang sasabihin ni Tom?"
 					},
 					"explanation": {
-						"de": "Richtig: „kein Fehler“. „der Fehler“ ist ein „der“-Wort, nach „sein“ heißt es „kein“. „keine“ ist für „die“-Wörter. „nicht“ steht nicht vor einem Nomen.",
-						"en": "Correct: “kein Fehler”. “der Fehler” is a “der”-word, after “sein” it is “kein”. “keine” is for “die”-words. “nicht” does not stand before a noun.",
-						"tl": "Tama: “kein Fehler”. Ang “der Fehler” ay salitang “der”, pagkatapos ng “sein” ay “kein”. Ang “keine” ay para sa “die”. Ang “nicht” ay hindi nasa harap ng noun."
+						"de": "Richtig: „kein Fehler“. „der Fehler“ ist ein „der“-Wort, nach „sein“ heißt es „kein“. „keine“ ist für „die“-Wörter. Vor einem Nomen mit „ein“ sagt man „kein“ – nicht „nicht ein“.",
+						"en": "Correct: “kein Fehler”. “der Fehler” is a “der”-word, after “sein” it is “kein”. “keine” is for “die”-words. Before a noun with “ein” you say “kein” – not “nicht ein”.",
+						"tl": "Tama: “kein Fehler”. Ang “der Fehler” ay salitang “der”, pagkatapos ng “sein” ay “kein”. Ang “keine” ay para sa “die”. Bago ang noun na may “ein”, “kein” ang sinasabi – hindi “nicht ein”."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -2912,9 +2912,9 @@
 						"tl": "May instruction si Frau Huber. Makinig."
 					},
 					"explanation": {
-						"de": "Sie hören: „Öffnen Sie bitte das Buch.“ Das Verb ist „öffnen“. Bei „holen“ geht man das Buch suchen, bei „zeigen“ hält man es hoch.",
-						"en": "You hear: “Öffnen Sie bitte das Buch.” The verb is “öffnen”. With “holen” you go and get the book, with “zeigen” you hold it up.",
-						"tl": "Naririnig mo: “Öffnen Sie bitte das Buch.” Ang verb ay “öffnen”. Sa “holen”, kukunin mo ang libro, sa “zeigen”, itataas mo ito."
+						"de": "Sie hören: „Öffnen Sie bitte das Buch.“ Das Verb ist „öffnen“. Bei „holen“ nimmt man das Buch von einem anderen Ort, bei „zeigen“ hält man es hoch.",
+						"en": "You hear: “Öffnen Sie bitte das Buch.” The verb is “öffnen”. With “holen” you go and fetch the book from somewhere else, with “zeigen” you hold it up.",
+						"tl": "Naririnig mo: “Öffnen Sie bitte das Buch.” Ang verb ay “öffnen”. Sa “holen”, kukunin mo ang libro mula sa ibang lugar, sa “zeigen”, itataas mo ito."
 					},
 					"goals": [
 						"A1-05-G2"
@@ -3747,12 +3747,12 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Zwei Bilder zeigen zwei Menschen bei der Arbeit. Schauen Sie das Bild an.",
-						"en": "Two pictures show two people at work. Look at the picture.",
-						"tl": "Dalawang larawan ang nagpapakita ng dalawang taong nagtatrabaho. Tingnan ang larawan."
+						"de": "Zwei Bilder zeigen zwei Menschen mit ihrem Beruf. Schauen Sie das Bild an.",
+						"en": "Two pictures show two people with their jobs. Look at the picture.",
+						"tl": "Dalawang larawan ang nagpapakita ng dalawang tao at ng trabaho nila. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Richtig: eine Frau. In Bild 1 steht eine Frau mit langen Haaren bei einem Auto. Sie repariert das Auto – das ist ihr Beruf.",
+						"de": "Richtig: eine Frau. In Bild 1 steht eine Frau mit langen Haaren bei einem Auto. Sie repariert das Auto: Das ist ihr Beruf.",
 						"en": "Correct: eine Frau. In picture 1 a woman with long hair stands at a car. She repairs the car – that is her job.",
 						"tl": "Tama: eine Frau. Sa Bild 1, may babaeng mahaba ang buhok sa tabi ng kotse. Inaayos niya ang kotse – iyon ang trabaho niya."
 					},
@@ -3789,14 +3789,14 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Zwei Bilder zeigen zwei Menschen bei der Arbeit. Schauen Sie das Bild an.",
-						"en": "Two pictures show two people at work. Look at the picture.",
-						"tl": "Dalawang larawan ang nagpapakita ng dalawang taong nagtatrabaho. Tingnan ang larawan."
+						"de": "Zwei Bilder zeigen zwei Menschen mit ihrem Beruf. Schauen Sie das Bild an.",
+						"en": "Two pictures show two people with their jobs. Look at the picture.",
+						"tl": "Dalawang larawan ang nagpapakita ng dalawang tao at ng trabaho nila. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Richtig: ein Mann. In Bild 2 steht ein Mann im Krankenhaus mit einem roten Kreuz auf der Kleidung. Er arbeitet als Krankenpfleger – auch das ist ein Beruf für Männer.",
-						"en": "Correct: ein Mann. In picture 2 a man stands in a hospital with a red cross on his clothes. He works as a nurse – that is also a job for men.",
-						"tl": "Tama: ein Mann. Sa Bild 2, may lalaking nasa ospital na may pulang krus sa damit. Nars siya – trabaho rin ito para sa lalaki."
+						"de": "Richtig: ein Mann. In Bild 2 steht ein Mann mit einem roten Kreuz auf der Kleidung. Er ist Krankenpfleger (ein Beruf in der Pflege): Auch das ist ein Beruf für Männer.",
+						"en": "Correct: ein Mann. In picture 2 a man stands with a red cross on his clothes. He is a nurse: that is a job for men too.",
+						"tl": "Tama: ein Mann. Sa Bild 2, may lalaking may pulang krus sa damit. Nars siya: trabaho rin ito para sa lalaki."
 					},
 					"goals": [
 						"A1-05-G6"
@@ -3832,9 +3832,9 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Zwei Bilder zeigen zwei Menschen bei der Arbeit. Schauen Sie das Bild an.",
-						"en": "Two pictures show two people at work. Look at the picture.",
-						"tl": "Dalawang larawan ang nagpapakita ng dalawang taong nagtatrabaho. Tingnan ang larawan."
+						"de": "Zwei Bilder zeigen zwei Menschen mit ihrem Beruf. Schauen Sie das Bild an.",
+						"en": "Two pictures show two people with their jobs. Look at the picture.",
+						"tl": "Dalawang larawan ang nagpapakita ng dalawang tao at ng trabaho nila. Tingnan ang larawan."
 					},
 					"explanation": {
 						"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
@@ -3962,7 +3962,7 @@
 						"tl": "May sinabi si Frau Huber tungkol sa mga guro sa kurso. Makinig."
 					},
 					"explanation": {
-						"de": "Sie hören: „Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.“ Beide Berufe gibt es für Frauen und für Männer.",
+						"de": "Sie hören: „Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.“ Der Beruf „Lehrer“ ist für Frauen und für Männer.",
 						"en": "You hear: “Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.” Teaching is a job for women and for men.",
 						"tl": "Naririnig mo: “Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.” Trabaho ito para sa babae at para sa lalaki."
 					},
@@ -3979,7 +3979,7 @@
 					],
 					"options": [
 						"Nur Männer sind Lehrer.",
-						"Nur Frauen sind Lehrerinnen und Lehrer.",
+						"Frau Huber ist keine Lehrerin.",
 						"Es gibt Lehrerinnen und Lehrer."
 					],
 					"answer": 2,
