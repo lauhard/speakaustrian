@@ -68,7 +68,9 @@ const newRun = (policy: RulePolicy, s: GameState, id: ChapterId): ChapterRun => 
 	attempt: { kind: 'LESSONS', repeatMode: false, done: [] },
 	seenTestItemIds: [],
 	minutesSpent: 0,
-	tally: { correct: 0, total: 0 }
+	tally: { correct: 0, total: 0 },
+	practiceStreak: 0,
+	heartEarned: false
 });
 
 const enterPhase = (policy: RulePolicy, s: GameState, phase: CoursePhase): GameState => ({
@@ -250,7 +252,11 @@ const makeCoreReducer = (policy: RulePolicy, chapterOrder: readonly ChapterId[],
 			if (!run || run.attempt.kind !== 'PRACTICE') return s;
 			const answered = run.attempt.answered + 1;
 			const booked = graded(s, event.itemId, event.correct);
-			return withAttempt(booked, answered >= run.attempt.total ? gateBlock(1) : { ...run.attempt, answered });
+			const streaked: ChapterRun = { ...run, practiceStreak: event.correct ? run.practiceStreak + 1 : 0 };
+			const current: ChapterRun = policy.practiceHeart(streaked)
+				? { ...streaked, heartEarned: true, startLives: Math.min(policy.config.LIVES_MAX, streaked.startLives + 1) }
+				: streaked;
+			return withRun(booked, { ...current, attempt: answered >= run.attempt.total ? gateBlock(1) : { ...run.attempt, answered } });
 		}
 		case 'PRACTICE_SKIPPED':
 			// K3: practice is optional, skipping leads straight to the readiness round.

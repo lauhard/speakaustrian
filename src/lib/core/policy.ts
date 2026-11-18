@@ -22,6 +22,8 @@ export type RuleConfig = {
 	PRACTICE_ROUND_ITEMS: number;
 	GATE_MIN_CORRECT: number;
 	// K4: target stack after a missed readiness block.
+	// K7: correct practice answers in a row that earn +1 life for the chapter test (once per chapter).
+	PRACTICE_HEART_STREAK: number;
 	TARGET_PER_GOAL: number;
 	TARGET_MAX: number;
 	// K1 (concept xp-flammen-kapitelfluss): a lesson counts as passed from this share of correct answers, in percent.
@@ -42,6 +44,8 @@ export interface RulePolicy {
 	completionOnPass(s: GameState, c: ChapterId, run: ChapterRun, at: string): Completion;
 	testComposition(s: GameState, c: ChapterId): TestSpec;
 	startLives(s: GameState, c: ChapterId): number;
+	// K7: whether the practice streak of the run earns its heart now.
+	practiceHeart(run: ChapterRun): boolean;
 	isTestReady(gate: { correct: number; answered: number }): boolean;
 	// K1: whether a finished lesson round counts; the rounded percentage, as the result screen shows it.
 	isLessonPassed(score: { correct: number; total: number }): boolean;
@@ -66,6 +70,7 @@ export const defaultConfig: RuleConfig = {
 	PRACTICE_PART_ITEMS: 40,
 	PRACTICE_ROUND_ITEMS: 20,
 	GATE_MIN_CORRECT: 18,
+	PRACTICE_HEART_STREAK: 10,
 	TARGET_PER_GOAL: 2,
 	TARGET_MAX: 10,
 	LESSON_PASS_PCT: 51,
@@ -108,6 +113,8 @@ export const makeDefaultPolicy = (
 	},
 	// R-L1, R-L3: base lives plus the bonus earned in the previous chapter, capped.
 	startLives: (s) => Math.min(config.LIVES_MAX, config.LIVES_BASE + s.course.nextChapterBonus),
+	// K7: 10 right in a row in practice → +1 life for the next test of the chapter; once per chapter, the cap of 5 stays.
+	practiceHeart: (run) => !run.heartEarned && run.practiceStreak >= config.PRACTICE_HEART_STREAK,
 	// R-G2
 	isTestReady: (gate) => gate.answered >= config.GATE_ITEMS && gate.correct >= config.GATE_MIN_CORRECT,
 	// K1

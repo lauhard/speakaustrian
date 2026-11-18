@@ -118,7 +118,10 @@ export const ChapterRun = z.object({
 	// K6: all graded answers of the chapter over every attempt (lessons, practice, readiness, test, correction).
 	tally: Score.default({ correct: 0, total: 0 }),
 	// K6: score of the last finished test of this attempt.
-	lastTest: Score.optional()
+	lastTest: Score.optional(),
+	// K7: correct practice answers in a row, and whether this chapter's practice heart was already earned.
+	practiceStreak: z.number().int().nonnegative().default(0),
+	heartEarned: z.boolean().default(false)
 });
 export type ChapterRun = z.infer<typeof ChapterRun>;
 
