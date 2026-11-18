@@ -526,18 +526,23 @@ body {
 	opacity: 0;
 	transform: translateY(100%);
 	transition:
+		transform 0.14s ease-in,
+		opacity 0.12s ease-in,
+		overlay 0.14s allow-discrete,
+		display 0.14s allow-discrete;
+}
+.sheet-pop:popover-open {
+	opacity: 1;
+	transform: none;
+	transition:
 		transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
 		opacity 0.2s,
 		overlay 0.28s allow-discrete,
 		display 0.28s allow-discrete;
 }
-.sheet-pop:popover-open {
-	opacity: 1;
-	transform: none;
-}
 .sheet-pop::backdrop {
 	background: rgb(35 29 23 / 0);
-	transition: background 0.28s, overlay 0.28s allow-discrete, display 0.28s allow-discrete;
+	transition: background 0.14s, overlay 0.14s allow-discrete, display 0.14s allow-discrete;
 }
 .sheet-pop:popover-open::backdrop {
 	background: rgb(35 29 23 / 0.4);

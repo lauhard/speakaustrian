@@ -99,7 +99,7 @@
 					<span class="nowrap-item"><Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}</span>
 				</p>
 				<!-- Level badge: total XP, level ring and the way to the next level; a tap explains XP. -->
-				<button type="button" class="hello-xp flex shrink-0 cursor-pointer items-center gap-2.5 rounded-(--r-card) text-right transition active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-brand" popovertarget="xp-pop" data-testid="home-xp">
+				<button type="button" class="hello-xp flex shrink-0 cursor-pointer items-center gap-2.5 rounded-(--r-card) text-right transition active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand/40" popovertarget="xp-pop" data-testid="home-xp">
 					<span class="space-y-0.5">
 						<b class="block text-base leading-tight font-black" data-testid="home-xp-total">{xp.total.toLocaleString(getLocale())} XP</b>
 						<span class="block text-xs font-bold whitespace-nowrap text-muted">{m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span>
