@@ -15,7 +15,7 @@ const answer = async (page: Page, correct: boolean) => {
 };
 const headerFlames = (page: Page) => page.locator('header [data-testid="stat-flames"]');
 
-test('flames v2 (K8): a perfect lesson banks its flames and earns a shield; the shield catches the 2nd mistake', async ({ page }) => {
+test('flames v2 (K8) + XP (K9): a perfect lesson banks its flames and earns a shield; the shield catches the 2nd mistake', async ({ page }) => {
 	await page.goto('/');
 	await page.getByTestId('name-input').fill('Maria');
 	await page.getByTestId('start').click();
@@ -23,10 +23,25 @@ test('flames v2 (K8): a perfect lesson banks its flames and earns a shield; the 
 	await page.getByTestId('lesson-A1-01-L01').click();
 	await page.getByTestId('to-tasks').click();
 	await expect(page.getByTestId('flame-pot')).toBeVisible();
-	for (let i = 0; i < 8; i++) await answer(page, true);
+	for (let i = 0; i < 8; i++) {
+		if (i === 0) {
+			// K9: XP pop right at the answer.
+			const item = items[(await page.locator('form[data-item]').getAttribute('data-item')) ?? ''];
+			if (item.type === 'choice') {
+				await page.getByRole('radio').nth(item.answer!).check();
+				await page.getByTestId('check').click();
+				await expect(page.getByTestId('xp-gain')).toHaveText('+5 XP');
+				await page.getByTestId('next').click();
+				continue;
+			}
+		}
+		await answer(page, true);
+	}
 	await expect(page.getByTestId('bank-points')).toBeVisible();
 	await expect(headerFlames(page)).toHaveText('2');
 	await expect(page.locator('header [data-testid="stat-shields"] b')).toHaveText('1');
+	// K9: 8 × 5 XP + 20 first pass + 10 for 3 stars = 70 XP, level 1.
+	await expect(page.getByTestId('level-ring')).toHaveAttribute('aria-label', /Level 1 · 70\/100/);
 
 	await page.getByTestId('back').click();
 	await page.getByTestId('lesson-A1-01-L02').click();

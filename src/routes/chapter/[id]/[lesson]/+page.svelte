@@ -12,7 +12,9 @@
 	import Runner from '#lib/components/Runner.svelte';
 	import { chapterContent, findLesson, introducedBy } from '#lib/content/index.ts';
 	import type { SpeechOutPort } from '#lib/ports/speech-out.ts';
-	import { flameChapter, game, storeFor } from '#lib/game.svelte.ts';
+	import { flameChapter, game, storeFor, xpContext } from '#lib/game.svelte.ts';
+	import { xp } from '#lib/xp.svelte.ts';
+	import { XP_ANSWER } from '#lib/core/xp.ts';
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 	const id = $derived(page.params.id ?? '');
@@ -42,8 +44,15 @@
 		ttsFailed = !(await tts.speak(text)).ok;
 	};
 
+	// K9: an already passed lesson pays half (no farming); the first pass pays +20 (+10 with 3 stars).
+	const ctx = $derived.by(() => {
+		const base = xpContext(id);
+		return base && lesson ? { ...base, reduced: base.reduced || xp.hasLesson(lesson.id) } : base;
+	});
 	const finish = (correct: number, total: number) => {
-		if (lesson) lessonScores.record(lesson.id, Math.round((correct / Math.max(1, total)) * 100));
+		const percent = Math.round((correct / Math.max(1, total)) * 100);
+		if (lesson) lessonScores.record(lesson.id, percent);
+		if (lesson && store.policy.isLessonPassed({ correct, total })) xp.lessonPassed(lesson.id, percent, ctx);
 		// The reducer books the lesson only when it is passed (K1).
 		if (lesson) store.dispatch({ type: 'LESSON_COMPLETED', chapterId: id, lessonId: lesson.id, introduced: introducedBy(lesson), correct, total });
 	};
@@ -92,6 +101,7 @@
 			onfinish={finish}
 			passCheck={(correct, total) => store.policy.isLessonPassed({ correct, total })}
 			flameChapter={flameChapter(id)}
+			xp={ctx ? { amount: XP_ANSWER.lesson, ctx } : null}
 		/>
 	{/key}
 {/if}

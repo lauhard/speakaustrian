@@ -14,7 +14,9 @@
 	import { chapterContent, findItem, poolItems, practiceParts, PREVIEW_CHAPTER } from '#lib/content/index.ts';
 	import type { Item } from '#lib/core/content/schema.ts';
 	import { gateDraw, nextGateItem, practiceItemAt, targetDraw, testDraw } from '#lib/core/flow.ts';
-	import { flameChapter, type game } from '#lib/game.svelte.ts';
+	import { demo, flameChapter, xpContext, type game } from '#lib/game.svelte.ts';
+	import { xp } from '#lib/xp.svelte.ts';
+	import { XP_ANSWER, XP_GATE_PASS, type XpKind } from '#lib/core/xp.ts';
 
 	// Everything after the lessons of a chapter attempt (04a §4.2): practice → readiness round → test → correction → error review.
 	// The state machine lives in the core; this component only shows the current state and sends events.
@@ -48,12 +50,29 @@
 		const ended = lastKind;
 		lastPhase = key;
 		lastKind = untrack(() => attempt?.kind);
-		untrack(() => (banking = { seq: banking.seq + 1, shield: ended === 'PRACTICE' }));
+		untrack(() => {
+			banking = { seq: banking.seq + 1, shield: ended === 'PRACTICE' };
+			// K9: a passed readiness round pays +30.
+			if (ended === 'GATE' && attempt?.kind === 'TEST_READY') xp.award(XP_GATE_PASS, xpContext(chapterId));
+		});
 	});
-	// K8: passing closes the chapter's flames (kept for the trophy and the XP multiplier in 030).
+	// K9: XP per correct answer by phase; the error review pays none.
+	const XP_KIND: Partial<Record<string, XpKind>> = { PRACTICE: 'practice', GATE: 'gate', TARGETED_PRACTICE: 'target', TEST: 'test', CORRECTION: 'test' };
+	const answerXp = $derived.by(() => {
+		const kind = attempt ? XP_KIND[attempt.kind] : undefined;
+		const ctx = xpContext(chapterId);
+		return kind && ctx ? { amount: XP_ANSWER[kind], ctx } : null;
+	});
+	// K8: passing closes the chapter's flames; K9: then the test XP and the flame bonus are paid, once per chapter.
 	$effect(() => {
-		if (completed) untrack(() => flames.close(chapterId));
+		if (!completed || !result) return;
+		untrack(() => {
+			flames.close(chapterId);
+			const ctx = store === demo ? null : { chapterId: store.policy.id === 'free' ? null : chapterId, reduced: store.policy.id === 'free' };
+			xp.chapterPassed(chapterId, result.test.total > 0 && result.test.correct === result.test.total, multiplier(flames.closedOf(chapterId) ?? 0), ctx);
+		});
 	});
+	const closedXp = $derived(completed ? xp.closedOf(chapterId) : undefined);
 	const closedFlames = $derived(completed ? flames.closedOf(chapterId) : undefined);
 	const tlMachine = $derived(content?.tlReviewStatus === 'machine');
 	// The flow is the chapter page itself, so "close" leads back to the course.
@@ -143,6 +162,7 @@
 	{#key item.id + (reviewCardId ?? '') + tries}
 		<Runner
 			items={[item]}
+			xp={attempt?.kind === 'ERROR_REVIEW' ? null : answerXp}
 			flameChapter={attempt?.kind === 'ERROR_REVIEW' ? null : flameId}
 			bare
 			examMode={exam}
@@ -265,6 +285,12 @@
 					<p class="flex items-center justify-center gap-2 text-lg font-extrabold" data-testid="trophy-flames">
 						<Flame size={24} strokeWidth={2.25} class={TIER_CLASS[tierOf(closedFlames)]} />{m.trophy_flames({ count: closedFlames })}
 						<span class="text-sm font-bold text-muted">×{multiplier(closedFlames).toLocaleString(getLocale())}</span>
+					</p>
+				{/if}
+				{#if closedXp}
+					<p class="flex items-center justify-center gap-2 font-extrabold" data-testid="trophy-xp">
+						<span class="rounded-full bg-amber-100 px-3 py-1 text-amber-700">+{closedXp.xp + closedXp.bonus} XP</span>
+						{#if closedXp.bonus > 0}<span class="text-sm font-bold text-muted">{m.trophy_xp_bonus({ bonus: closedXp.bonus })}</span>{/if}
 					</p>
 				{/if}
 				<div class="grid grid-cols-2 gap-3 text-left" data-testid="trophy">

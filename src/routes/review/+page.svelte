@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { xp } from '#lib/xp.svelte.ts';
+	import { XP_ANSWER } from '#lib/core/xp.ts';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
@@ -38,12 +40,22 @@
 		});
 	});
 
-	const answer = (task: Task, correct: boolean) =>
+	// K9: a right review card pays 3 XP (course only, first answer per card).
+	const paid = new Set<string>();
+	const reviewXp = (cardId: string, correct: boolean) => {
+		if (!correct || store !== game || paid.has(cardId)) return;
+		paid.add(cardId);
+		xp.award(XP_ANSWER.review, { chapterId: null, reduced: false });
+	};
+	const answer = (task: Task, correct: boolean) => {
+		reviewXp(task.cardId, correct);
 		store.dispatch({ type: 'REVIEW_ANSWERED', cardId: task.cardId, direction: task.direction, correct });
+	};
 
 	// Only the first answer of an error card is booked (the reducer ignores later ones, R-W5).
 	const checked = (item: Item, correct: boolean) => {
 		const entry = errorItems.find((e) => e.item.id === item.id);
+		if (entry) reviewXp(entry.cardId, correct);
 		if (entry) store.dispatch({ type: 'REVIEW_ANSWERED', cardId: entry.cardId, direction: entry.direction, correct });
 		if (!correct) wrongNow = [...wrongNow, item.id];
 	};
