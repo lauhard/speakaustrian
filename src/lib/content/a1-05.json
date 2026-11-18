@@ -349,6 +349,18 @@
 				"en": "Welcome to the German course!",
 				"tl": "Maligayang pagdating sa kursong German!"
 			},
+			"intro": {
+				"situation": {
+					"de": "Erster Tag im Deutschkurs in Wien. Die Lehrerin heißt Frau Huber. Sie sagt: „Willkommen im Deutschkurs!“",
+					"en": "First day of the German course in Vienna. The teacher is called Frau Huber. She says: “Willkommen im Deutschkurs!”",
+					"tl": "Unang araw ng kursong German sa Vienna. Frau Huber ang pangalan ng guro. Sabi niya: “Willkommen im Deutschkurs!”"
+				},
+				"goal": {
+					"de": "im Kurs „Willkommen!“ und „Herein!“ sagen und die Lehrerin und den Kursraum benennen",
+					"en": "say “Willkommen!” and “Herein!” in the course and name the teacher and the classroom",
+					"tl": "sabihin ang “Willkommen!” at “Herein!” sa kurso at pangalanan ang guro at ang silid-aralan"
+				}
+			},
 			"introduces": [
 				"W-A1-0285",
 				"W-A1-0286",
@@ -359,43 +371,52 @@
 			],
 			"cards": [
 				{
-					"phrase": "Willkommen im Deutschkurs!",
+					"kind": "phrase",
+					"phrase": "Willkommen im Deutschkurs! – Danke!",
 					"note": {
-						"de": "So begrüßt die Lehrerin die Leute im Kurs.",
-						"en": "This is how the teacher welcomes people in the course.",
-						"tl": "Ganito bumabati ang guro sa klase."
+						"de": "So begrüßt die Lehrerin die Leute am ersten Tag. Sie antworten: „Danke!“ oder „Grüß Gott!“",
+						"en": "This is how the teacher welcomes people on the first day. You answer: “Danke!” or “Grüß Gott!”",
+						"tl": "Ganito binabati ng guro ang mga tao sa unang araw. Sasagot ka ng: “Danke!” o “Grüß Gott!”"
 					}
 				},
 				{
+					"kind": "rule",
 					"phrase": "der Lehrer – die Lehrerin",
 					"note": {
-						"de": "Mann: Lehrer, Frau: Lehrerin.",
-						"en": "Man: Lehrer, woman: Lehrerin.",
-						"tl": "Lalaki: Lehrer, babae: Lehrerin."
-					}
+						"de": "Mit -in wird aus dem Mann eine Frau: der Lehrer (Mann), die Lehrerin (Frau). So ist es bei vielen Wörtern für Menschen.",
+						"en": "With -in a man becomes a woman: der Lehrer (man), die Lehrerin (woman). Many words for people work like this.",
+						"tl": "Sa -in, ang lalaki ay nagiging babae: der Lehrer (lalaki), die Lehrerin (babae). Ganito rin ang maraming salita para sa tao."
+					},
+					"examples": [
+						"Frau Huber ist die Lehrerin.",
+						"Herr Bauer ist der Lehrer."
+					]
 				},
 				{
-					"phrase": "Herein!",
+					"kind": "phrase",
+					"phrase": "Herein! – Bitte, herein!",
 					"note": {
-						"de": "Jemand klopft an die Tür: „Herein!“",
-						"en": "Someone knocks at the door: “Herein!” (come in)",
-						"tl": "May kumakatok: “Herein!” (pasok)"
+						"de": "Jemand will in den Kursraum. Sie sagen: „Herein!“ So ist es höflich: „Bitte, herein!“",
+						"en": "Someone wants to come into the classroom. You say: “Herein!” (come in). Polite: “Bitte, herein!”",
+						"tl": "May gustong pumasok sa silid-aralan. Sabihin: “Herein!” (pasok). Magalang: “Bitte, herein!”"
 					}
 				},
 				{
-					"phrase": "der Kursraum – die Kursteilnehmer",
+					"kind": "phrase",
+					"phrase": "der Kurs – der Deutschkurs – der Kursraum",
 					"note": {
-						"de": "Im Kursraum sind die Kursteilnehmer und die Lehrerin.",
-						"en": "In the classroom (Kursraum) are the learners (Kursteilnehmer) and the teacher.",
-						"tl": "Nasa silid-aralan (Kursraum) ang mga estudyante (Kursteilnehmer) at ang guro."
+						"de": "Im Deutschkurs lernen Leute Deutsch. Der Kursraum ist der Raum für den Kurs. Die Leute im Kurs sind die Kursteilnehmer.",
+						"en": "In the German course (Deutschkurs) people learn German. The Kursraum is the classroom. The people in the course are the Kursteilnehmer (learners).",
+						"tl": "Sa Deutschkurs, nag-aaral ng German ang mga tao. Ang Kursraum ay ang silid-aralan. Ang mga tao sa kurso ay ang Kursteilnehmer (mga estudyante)."
 					}
 				},
 				{
+					"kind": "phrase",
 					"phrase": "der Unterricht – die Tafel",
 					"note": {
-						"de": "Der Unterricht beginnt um 9 Uhr. Die Lehrerin schreibt an die Tafel.",
-						"en": "Class (Unterricht) starts at 9. The teacher writes on the board (Tafel).",
-						"tl": "Nagsisimula ang klase (Unterricht) ng 9. Sumusulat ang guro sa pisara (Tafel)."
+						"de": "Der Unterricht ist die Zeit im Kurs, mit der Lehrerin. Die Lehrerin schreibt an die Tafel.",
+						"en": "Unterricht means class, the lesson with the teacher. The teacher writes on the board (Tafel).",
+						"tl": "Ang Unterricht ay ang klase kasama ang guro. Sumusulat ang guro sa pisara (Tafel)."
 					}
 				}
 			],
@@ -405,14 +426,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Erster Tag im Deutschkurs. Sie schauen an die Tafel.",
+						"en": "First day in the German course. You look at the board.",
+						"tl": "Unang araw sa Deutschkurs. Tumingin ka sa pisara."
 					},
 					"explanation": {
-						"de": "An der Tafel steht „Willkommen!“.",
-						"en": "Answer: An der Tafel steht „Willkommen!“.",
-						"tl": "Sagot: An der Tafel steht „Willkommen!“."
+						"de": "Richtig: „Willkommen!“ Die Lehrerin begrüßt die Leute im Kurs. „Herein!“ sagt man an der Tür, „Danke!“ sagt man als Antwort.",
+						"en": "Correct: “Willkommen!” The teacher welcomes the people in the course. “Herein!” is said at the door, “Danke!” is an answer.",
+						"tl": "Tama: “Willkommen!” Binabati ng guro ang mga tao sa kurso. Ang “Herein!” ay sinasabi sa pinto, ang “Danke!” ay sagot."
 					},
 					"goals": [
 						"A1-05-G1"
@@ -420,38 +441,80 @@
 					"refs": [
 						"W-A1-0276",
 						"W-A1-0317",
+						"W-A1-0092",
 						"W-A1-0036",
 						"W-A1-0001"
 					],
 					"options": [
 						"Herein!",
 						"Willkommen!",
-						"Pause!"
+						"Danke!"
 					],
 					"answer": 1,
 					"prompt": "Was steht an der Tafel?",
 					"image": {
 						"src": "/img/a1-05-kursraum.svg",
 						"alt": {
-							"de": "Ein Kursraum mit Tafel, einer Lehrerin und zwei Personen im Kurs.",
-							"en": "A classroom with a board, a teacher and two learners.",
-							"tl": "Silid-aralan na may pisara, guro at dalawang estudyante."
+							"de": "Ein Kursraum mit Tafel. Drei Leute sitzen an Tischen mit Namensschildern, die Lehrerin steht rechts.",
+							"en": "A classroom with a board. Three people sit at desks with name signs, the teacher stands on the right.",
+							"tl": "Silid-aralan na may pisara. Tatlong tao ang nakaupo sa mesa na may pangalan, nakatayo ang guro sa kanan."
 						}
 					}
 				},
 				{
 					"id": "A1-05-L01-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Sie sind neu im Kurs. Wer ist die Lehrerin? Lesen Sie die Namensschilder.",
+						"en": "You are new in the course. Who is the teacher? Read the name signs.",
+						"tl": "Bago ka sa kurso. Sino ang guro? Basahin ang mga pangalan."
 					},
 					"explanation": {
-						"de": "Frau → Lehrerin (mit -in).",
-						"en": "Woman → Lehrerin (with -in).",
-						"tl": "Babae → Lehrerin (may -in)."
+						"de": "Richtig: Frau Huber. Sie steht an der Tafel und hat das Namensschild „Frau Huber“. Anna sitzt im Kurs. „Herr Huber“ wäre ein Mann.",
+						"en": "Correct: Frau Huber. She stands at the board and wears the name sign “Frau Huber”. Anna sits in the course. “Herr Huber” would be a man.",
+						"tl": "Tama: Frau Huber. Nakatayo siya sa pisara at may pangalang “Frau Huber”. Nakaupo si Anna sa kurso. Ang “Herr Huber” ay lalaki."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0287",
+						"W-A1-0285",
+						"W-A1-0327",
+						"W-A1-0328",
+						"W-A1-0041",
+						"W-A1-0002"
+					],
+					"options": [
+						"Herr Huber",
+						"Anna",
+						"Frau Huber"
+					],
+					"answer": 2,
+					"prompt": "Wie heißt die Lehrerin?",
+					"image": {
+						"src": "/img/a1-05-kursraum.svg",
+						"alt": {
+							"de": "Ein Kursraum mit Tafel. Drei Leute sitzen an Tischen mit Namensschildern, die Lehrerin steht rechts.",
+							"en": "A classroom with a board. Three people sit at desks with name signs, the teacher stands on the right.",
+							"tl": "Silid-aralan na may pisara. Tatlong tao ang nakaupo sa mesa na may pangalan, nakatayo ang guro sa kanan."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L01-I3",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber stellt sich vor. Wählen Sie das richtige Wort.",
+						"en": "Frau Huber introduces herself. Choose the correct word.",
+						"tl": "Nagpapakilala si Frau Huber. Piliin ang tamang salita."
+					},
+					"explanation": {
+						"de": "Richtig: die Lehrerin. Frau Huber ist eine Frau, darum -in. „der Lehrer“ ist ein Mann, „die Lehrer“ sind mehrere Lehrer.",
+						"en": "Correct: die Lehrerin. Frau Huber is a woman, so -in. “der Lehrer” is a man, “die Lehrer” are several teachers.",
+						"tl": "Tama: die Lehrerin. Babae si Frau Huber, kaya -in. Ang “der Lehrer” ay lalaki, ang “die Lehrer” ay maraming guro."
 					},
 					"goals": [
 						"A1-05-G1"
@@ -459,48 +522,159 @@
 					"refs": [
 						"W-A1-0287",
 						"W-A1-0328",
-						"W-A1-0009",
-						"W-A1-0304"
+						"W-A1-0001",
+						"W-A1-0002"
 					],
 					"options": [
-						"Lehrer",
-						"Kurs",
-						"Lehrerin"
+						"der Lehrer",
+						"die Lehrer",
+						"die Lehrerin"
 					],
 					"answer": 2,
-					"prompt": "Eine Frau unterrichtet Deutsch. Sie ist …"
+					"prompt": "Frau Huber ist …"
 				},
 				{
-					"id": "A1-05-L01-I3",
+					"id": "A1-05-L01-I4",
 					"type": "choice",
 					"skill": "hoeren",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Die Lehrerin spricht zu Ihnen. Hören Sie.",
+						"en": "The teacher speaks to you. Listen.",
+						"tl": "Nagsasalita ang guro sa iyo. Makinig."
 					},
 					"explanation": {
-						"de": "Sie hören: „Der Unterricht beginnt um neun Uhr.“",
-						"en": "You hear: „Der Unterricht beginnt um neun Uhr.“",
-						"tl": "Naririnig mo: „Der Unterricht beginnt um neun Uhr.“"
+						"de": "Sie hören: „Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.“ Die Lehrerin heißt also Frau Huber. Von Anna oder von einem Herrn hören Sie nichts.",
+						"en": "You hear: “Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.” So the teacher is called Frau Huber. You hear nothing about Anna or about a man.",
+						"tl": "Naririnig mo: “Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.” Kaya si Frau Huber ang guro. Walang sinasabi tungkol kay Anna o sa isang lalaki."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0287",
+						"W-A1-0276",
+						"W-A1-0006",
+						"W-A1-0327",
+						"W-A1-0328",
+						"W-A1-0001"
+					],
+					"options": [
+						"Frau Huber ist Annas Tochter.",
+						"Frau Huber ist die Lehrerin.",
+						"Herr Huber ist der Lehrer."
+					],
+					"answer": 1,
+					"audioText": "Willkommen im Deutschkurs! Ich heiße Huber. Ich bin Ihre Lehrerin.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L01-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Jose kommt zum ersten Mal in den Kursraum. Ergänzen Sie den Dialog.",
+						"en": "Jose enters the classroom for the first time. Complete the dialogue with the words below.",
+						"tl": "Unang beses na pumasok si Jose sa silid-aralan. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Willkommen im Deutschkurs!“ und „Bitte, herein!“ Mit „Willkommen“ begrüßen Sie jemanden, mit „herein“ bitten Sie jemanden in den Raum. „Tafel“ ist ein Ding im Kursraum und passt in keine Lücke.",
+						"en": "Correct: “Willkommen im Deutschkurs!” and “Bitte, herein!” With “Willkommen” you welcome someone, with “herein” you ask someone to come in. “Tafel” is a thing in the classroom and fits neither gap.",
+						"tl": "Tama: “Willkommen im Deutschkurs!” at “Bitte, herein!” Ang “Willkommen” ay pagbati, ang “herein” ay pag-anyaya na pumasok. Ang “Tafel” ay bagay sa silid at hindi angkop sa alinmang patlang."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0276",
+						"W-A1-0933",
+						"W-A1-0376",
+						"W-A1-0328",
+						"W-A1-0092",
+						"W-A1-0091"
+					],
+					"text": "Frau Huber: „{{1}} im Deutschkurs!“ – Jose: „Danke! Grüß Gott.“ – Frau Huber: „Bitte, {{2}}!“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Willkommen"
+							]
+						},
+						"2": {
+							"accept": [
+								"herein",
+								"Herein"
+							]
+						}
+					},
+					"bank": [
+						"Willkommen",
+						"herein",
+						"Tafel"
+					]
+				},
+				{
+					"id": "A1-05-L01-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Anna schreibt eine Nachricht an Tom. Lesen Sie.",
+						"en": "Anna writes a message to Tom. Read it.",
+						"tl": "Nagsulat si Anna ng mensahe kay Tom. Basahin."
+					},
+					"explanation": {
+						"de": "Richtig: „Der Unterricht ist sehr gut.“ Anna ist im Kurs, die Lehrerin ist Frau Huber. Von Tom steht nur: Anna schreibt ihm.",
+						"en": "Correct: “Der Unterricht ist sehr gut.” Anna is in the course, the teacher is Frau Huber. About Tom, the text only says that Anna writes to him.",
+						"tl": "Tama: “Der Unterricht ist sehr gut.” Nasa kurso si Anna, ang guro ay si Frau Huber. Tungkol kay Tom, sinabi lang na sinusulatan siya ni Anna."
 					},
 					"goals": [
 						"A1-05-G1"
 					],
 					"refs": [
 						"W-A1-0321",
-						"W-A1-0379",
-						"W-A1-0803",
-						"W-A1-0804",
-						"W-A1-0001"
+						"W-A1-0287",
+						"W-A1-0286",
+						"W-A1-0378",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0173"
 					],
 					"options": [
-						"Der Unterricht beginnt um zehn.",
-						"Der Unterricht beginnt um neun."
+						"Anna ist die Lehrerin.",
+						"Anna findet den Unterricht sehr gut.",
+						"Die Lehrerin heißt Tom."
 					],
 					"answer": 1,
-					"audioText": "Guten Morgen! Der Unterricht beginnt um neun Uhr.",
-					"audioOnly": true
+					"prompt": "Anna: „Hallo Tom! Ich bin im Deutschkurs in Wien. Die Lehrerin heißt Frau Huber. Der Unterricht ist sehr gut.“\n\nWas ist richtig?"
+				},
+				{
+					"id": "A1-05-L01-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Sie sind Frau Huber. Jemand will in den Kursraum. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You are Frau Huber. Someone wants to come into the classroom. What do you say? Choose, then say it aloud.",
+						"tl": "Ikaw si Frau Huber. May gustong pumasok sa silid-aralan. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Bitte, herein!“ So laden Sie jemanden ein. „Auf Wiedersehen“ und „Gute Nacht“ sagt man beim Gehen.",
+						"en": "Correct: “Bitte, herein!” This is how you invite someone in. “Auf Wiedersehen” and “Gute Nacht” are said when leaving.",
+						"tl": "Tama: “Bitte, herein!” Ganito inaanyayahan ang tao. Ang “Auf Wiedersehen” at “Gute Nacht” ay sinasabi kapag aalis."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0933",
+						"W-A1-0382",
+						"W-A1-0383",
+						"W-A1-0091"
+					],
+					"options": [
+						"Auf Wiedersehen!",
+						"Gute Nacht!",
+						"Bitte, herein!"
+					],
+					"answer": 2
 				}
 			]
 		},
@@ -510,6 +684,18 @@
 				"de": "Buch, Heft, Stift",
 				"en": "Book, exercise book, pen",
 				"tl": "Libro, kuwaderno, panulat"
+			},
+			"intro": {
+				"situation": {
+					"de": "Anna und Jose sitzen im Deutschkurs. Frau Huber sagt: „Nehmen Sie ein Heft und einen Kugelschreiber.“",
+					"en": "Anna and Jose sit in the German course. Frau Huber says: “Take an exercise book and a pen.”",
+					"tl": "Nakaupo sina Anna at Jose sa Deutschkurs. Sabi ni Frau Huber: “Kunin ninyo ang isang kuwaderno at ballpen.”"
+				},
+				"goal": {
+					"de": "die Dinge im Kurs benennen: Buch, Heft, Kugelschreiber, Bleistift und ein Blatt Papier",
+					"en": "name the things in class: book, exercise book, ballpoint pen, pencil and a sheet of paper",
+					"tl": "pangalanan ang mga gamit sa kurso: libro, kuwaderno, ballpen, lapis at isang pirasong papel"
+				}
 			},
 			"introduces": [
 				"W-A1-0288",
@@ -522,27 +708,47 @@
 			],
 			"cards": [
 				{
-					"phrase": "das Buch – das Heft",
+					"kind": "phrase",
+					"phrase": "Das ist ein Buch. Das ist ein Heft.",
 					"note": {
-						"de": "Im Buch lesen Sie, ins Heft schreiben Sie.",
-						"en": "You read in the book (Buch) and write in the exercise book (Heft).",
-						"tl": "Nagbabasa sa libro (Buch), sumusulat sa kuwaderno (Heft)."
+						"de": "Im Buch lesen Sie. Ins Heft schreiben Sie.",
+						"en": "You read in the book (Buch: thick, hard cover). You write in the exercise book (Heft: thin, soft cover, here with a spiral).",
+						"tl": "Nagbabasa ka sa libro (Buch: makapal, matigas na takip). Sumusulat ka sa kuwaderno (Heft: manipis, malambot na takip, may spiral)."
 					}
 				},
 				{
-					"phrase": "der Kugelschreiber – der Bleistift – der Stift",
+					"kind": "rule",
+					"phrase": "das Buch · das Heft · das Papier · das Blatt",
 					"note": {
-						"de": "Kugelschreiber kurz: Kuli. Stift = Bleistift oder Kugelschreiber.",
-						"en": "Kugelschreiber, short: Kuli. Stift = pencil or pen.",
-						"tl": "Kugelschreiber, maikli: Kuli. Stift = lapis o ballpen."
-					}
+						"de": "Diese vier Wörter haben den Artikel „das“. Ein Blatt ist ein Stück Papier.",
+						"en": "These four words take “das”. A Blatt is one sheet of Papier.",
+						"tl": "Ang apat na salitang ito ay “das”. Ang Blatt ay isang pirasong Papier."
+					},
+					"examples": [
+						"Das Buch ist hier.",
+						"Ich habe ein Heft."
+					]
 				},
 				{
-					"phrase": "das Papier – das Blatt",
+					"kind": "rule",
+					"phrase": "der Kugelschreiber · der Bleistift · der Stift",
 					"note": {
-						"de": "Ein Blatt Papier, bitte.",
-						"en": "A sheet (Blatt) of paper, please.",
-						"tl": "Isang pirasong papel, please."
+						"de": "Diese drei Wörter haben den Artikel „der“. „Stift“ ist das große Wort: Ein Bleistift ist ein Stift, ein Kugelschreiber auch. Kurz sagt man „Kuli“.",
+						"en": "These three words take “der”. “Stift” is the general word: a Bleistift is a Stift, and so is a Kugelschreiber (ballpoint pen; short: Kuli).",
+						"tl": "Ang tatlong salitang ito ay “der”. Ang “Stift” ay pangkalahatang salita: Stift ang Bleistift at Stift din ang Kugelschreiber (ballpen; maikli: Kuli)."
+					},
+					"examples": [
+						"Der Bleistift ist hier.",
+						"Das ist ein Stift."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Ein Blatt Papier, bitte. – Hier, bitte.",
+					"note": {
+						"de": "So bitten Sie jemanden im Kurs um Papier. Die Antwort: „Hier, bitte.“",
+						"en": "This is how you ask someone in class for paper. The answer: “Hier, bitte.”",
+						"tl": "Ganito ka hihingi ng papel sa kurso. Ang sagot: “Hier, bitte.”"
 					}
 				}
 			],
@@ -552,31 +758,31 @@
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Frau Huber zeigt vier Dinge. Schauen Sie das Bild an.",
+						"en": "Frau Huber shows four things. Look at the picture.",
+						"tl": "Nagpapakita si Frau Huber ng apat na bagay. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "1 Buch, 2 Heft, 3 Kugelschreiber, 4 Bleistift.",
-						"en": "Answer: 1 Buch, 2 Heft, 3 Kugelschreiber, 4 Bleistift.",
-						"tl": "Sagot: 1 Buch, 2 Heft, 3 Kugelschreiber, 4 Bleistift."
+						"de": "Richtig: das Buch. Nummer 1 hat einen harten Einband und einen dicken Block aus Seiten. Nummer 2 ist das Heft: dünn, mit Spirale.",
+						"en": "Correct: das Buch. Number 1 has a hard cover and a thick block of pages. Number 2 is the Heft: thin, with a spiral.",
+						"tl": "Tama: das Buch. Ang Nummer 1 ay may matigas na takip at makapal na mga pahina. Ang Nummer 2 ay ang Heft: manipis, may spiral."
 					},
 					"goals": [
 						"A1-05-G1"
 					],
 					"refs": [
-						"W-A1-0290",
+						"W-A1-0288",
 						"W-A1-0820",
 						"W-A1-0001",
 						"W-A1-0003"
 					],
 					"options": [
-						"der Bleistift",
-						"der Kugelschreiber",
-						"das Heft"
+						"das Buch",
+						"das Heft",
+						"der Bleistift"
 					],
-					"answer": 1,
-					"prompt": "Nummer 3 ist …",
+					"answer": 0,
+					"prompt": "Nummer 1 ist …",
 					"image": {
 						"src": "/img/a1-05-sachen.svg",
 						"alt": {
@@ -591,30 +797,30 @@
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Frau Huber zeigt vier Dinge. Welches Ding ist ein Heft?",
+						"en": "Frau Huber shows four things. Which thing is a Heft?",
+						"tl": "Nagpapakita si Frau Huber ng apat na bagay. Alin ang Heft?"
 					},
 					"explanation": {
-						"de": "Nummer 1 ist das Buch.",
-						"en": "Answer: Nummer 1 ist das Buch.",
-						"tl": "Sagot: Nummer 1 ist das Buch."
+						"de": "Richtig: Nummer 2. Das Heft ist dünn und hat eine Spirale. Nummer 1 ist ein Buch, Nummer 3 ist ein Stift.",
+						"en": "Correct: number 2. The Heft is thin and has a spiral. Number 1 is a book, number 3 is a pen.",
+						"tl": "Tama: Nummer 2. Manipis ang Heft at may spiral. Ang Nummer 1 ay libro, ang Nummer 3 ay panulat."
 					},
 					"goals": [
 						"A1-05-G1"
 					],
 					"refs": [
-						"W-A1-0288",
+						"W-A1-0289",
 						"W-A1-0820",
 						"W-A1-0003"
 					],
 					"options": [
-						"das Heft",
-						"das Papier",
-						"das Buch"
+						"Nummer 1",
+						"Nummer 3",
+						"Nummer 2"
 					],
 					"answer": 2,
-					"prompt": "Nummer 1 ist …",
+					"prompt": "Das Heft ist …",
 					"image": {
 						"src": "/img/a1-05-sachen.svg",
 						"alt": {
@@ -626,44 +832,189 @@
 				},
 				{
 					"id": "A1-05-L02-I3",
-					"type": "cloze",
+					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Maria sucht einen Stift zum Schreiben. Schauen Sie das Bild an.",
+						"en": "Maria is looking for a pen to write with. Look at the picture.",
+						"tl": "Naghahanap si Maria ng pansulat. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "das Heft, der Bleistift, das Buch.",
-						"en": "das Heft, der Bleistift, das Buch (articles).",
-						"tl": "das Heft, der Bleistift, das Buch (mga article)."
+						"de": "Richtig: Nummer 3 ist der Kugelschreiber (blau, mit schwarzer Spitze). Nummer 4 ist der Bleistift (gelb, mit Holzspitze). Nummer 2 ist ein Heft.",
+						"en": "Correct: number 3 is the ballpoint pen (blue, black tip). Number 4 is the pencil (yellow, wooden tip). Number 2 is an exercise book.",
+						"tl": "Tama: Nummer 3 ang Kugelschreiber (asul, itim ang dulo). Ang Nummer 4 ay Bleistift (dilaw, kahoy ang dulo). Ang Nummer 2 ay Heft."
 					},
 					"goals": [
 						"A1-05-G1"
 					],
 					"refs": [
-						"W-A1-0289",
+						"W-A1-0290",
 						"W-A1-0291",
-						"W-A1-0288"
+						"W-A1-0820",
+						"W-A1-0001"
 					],
-					"text": "{{1}} Heft · {{2}} Bleistift · {{3}} Buch",
+					"options": [
+						"Nummer 3",
+						"Nummer 4",
+						"Nummer 2"
+					],
+					"answer": 0,
+					"prompt": "Welche Nummer ist der Kugelschreiber?",
+					"image": {
+						"src": "/img/a1-05-sachen.svg",
+						"alt": {
+							"de": "Ein Tisch mit vier Dingen mit Nummern: Buch, Heft, Kugelschreiber, Bleistift.",
+							"en": "A desk with four numbered things: book, exercise book, ballpoint pen, pencil.",
+							"tl": "Mesa na may apat na bagay na may numero: libro, kuwaderno, ballpen, lapis."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L02-I4",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Jose fragt Anna im Kurs. Hören Sie.",
+						"en": "Jose asks Anna in class. Listen.",
+						"tl": "Nagtanong si Jose kay Anna sa kurso. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Hast du einen Stift? – Ja, hier ist ein Bleistift.“ Anna gibt Jose einen Bleistift, keinen Kugelschreiber und kein Heft.",
+						"en": "You hear: “Hast du einen Stift? – Ja, hier ist ein Bleistift.” Anna gives Jose a pencil, not a pen and not an exercise book.",
+						"tl": "Naririnig mo: “Hast du einen Stift? – Ja, hier ist ein Bleistift.” Bleistift ang ibinigay ni Anna kay Jose, hindi ballpen at hindi kuwaderno."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0291",
+						"W-A1-0944",
+						"W-A1-0007",
+						"W-A1-0051",
+						"W-A1-0036",
+						"W-A1-0004"
+					],
+					"options": [
+						"einen Kugelschreiber",
+						"einen Bleistift",
+						"ein Heft"
+					],
+					"answer": 1,
+					"prompt": "Was hat Anna?",
+					"audioText": "Jose: Hast du einen Stift? – Anna: Ja, hier ist ein Bleistift.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L02-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Maria und Tom suchen Dinge im Kurs. Ergänzen Sie den Artikel.",
+						"en": "Maria and Tom look for things in class. Complete the article with the words below.",
+						"tl": "Naghahanap sina Maria at Tom ng mga gamit sa kurso. Kumpletuhin ang article gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: der Kugelschreiber, das Heft. Kugelschreiber ist „der“, Heft ist „das“. „die“ passt zu keinem der beiden Wörter.",
+						"en": "Correct: der Kugelschreiber, das Heft. Kugelschreiber takes “der”, Heft takes “das”. “die” fits neither word.",
+						"tl": "Tama: der Kugelschreiber, das Heft. Ang Kugelschreiber ay “der”, ang Heft ay “das”. Ang “die” ay hindi angkop sa alinman."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0290",
+						"W-A1-0289",
+						"W-A1-0046",
+						"W-A1-0037",
+						"W-A1-0073"
+					],
+					"text": "Maria: „Wo ist {{1}} Kugelschreiber?“ – Tom: „Hier! Und hier ist {{2}} Heft.“",
 					"gaps": {
 						"1": {
-							"accept": [
-								"das"
-							]
-						},
-						"2": {
 							"accept": [
 								"der"
 							]
 						},
-						"3": {
+						"2": {
 							"accept": [
 								"das"
 							]
 						}
-					}
+					},
+					"bank": [
+						"der",
+						"das",
+						"die"
+					]
+				},
+				{
+					"id": "A1-05-L02-I6",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Anna fragt Jose: „Hast du einen Stift?“ Jose gibt ihr einen Stift. Was gibt er ihr?",
+						"en": "Anna asks Jose: “Hast du einen Stift?” Jose gives her a Stift. What does he give her?",
+						"tl": "Tinanong ni Anna si Jose: “Hast du einen Stift?” Binigyan siya ni Jose ng Stift. Ano ang ibinigay niya?"
+					},
+					"explanation": {
+						"de": "Richtig: ein Kugelschreiber. Ein Stift ist ein Kugelschreiber oder ein Bleistift. Ein Heft oder ein Buch ist kein Stift.",
+						"en": "Correct: ein Kugelschreiber. A Stift is a ballpoint pen or a pencil. An exercise book or a book is not a Stift.",
+						"tl": "Tama: ein Kugelschreiber. Ang Stift ay ballpen o lapis. Ang Heft o Buch ay hindi Stift."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0944",
+						"W-A1-0290",
+						"W-A1-0004",
+						"W-A1-0073"
+					],
+					"options": [
+						"Kugelschreiber",
+						"Heft",
+						"Buch"
+					],
+					"answer": 0,
+					"prompt": "Jose: „Hier, ein …“"
+				},
+				{
+					"id": "A1-05-L02-I7",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Tom sucht Papier. Ergänzen Sie den Dialog.",
+						"en": "Tom is looking for paper. Complete the dialogue with the words below.",
+						"tl": "Naghahanap si Tom ng papel. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Ein Blatt Papier, bitte.“ Man sagt „ein Blatt Papier“ für ein Stück Papier. „Ein Buch Papier“ und „ein Kugelschreiber Papier“ sagt man nicht.",
+						"en": "Correct: “Ein Blatt Papier, bitte.” You say “ein Blatt Papier” for one sheet of paper. “Ein Buch Papier” and “ein Kugelschreiber Papier” are not said.",
+						"tl": "Tama: “Ein Blatt Papier, bitte.” Sinasabi ang “ein Blatt Papier” para sa isang pirasong papel. Hindi sinasabi ang “ein Buch Papier” at “ein Kugelschreiber Papier”."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0915",
+						"W-A1-0292",
+						"W-A1-0091",
+						"W-A1-0004",
+						"W-A1-0073"
+					],
+					"text": "Tom: „Ein {{1}} Papier, bitte.“ – Maria: „Hier, bitte.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Blatt"
+							]
+						}
+					},
+					"bank": [
+						"Blatt",
+						"Buch",
+						"Kugelschreiber"
+					]
 				}
 			]
 		},
@@ -673,6 +1024,18 @@
 				"de": "Wort, Satz, Text, Seite",
 				"en": "Word, sentence, text, page",
 				"tl": "Salita, pangungusap, teksto, pahina"
+			},
+			"intro": {
+				"situation": {
+					"de": "Frau Huber sagt im Deutschkurs: „Öffnen Sie das Buch auf Seite 12. Machen Sie Aufgabe 3.“ Anna und Jose suchen die Seite.",
+					"en": "In the German course Frau Huber says: “Open the book at page 12. Do exercise 3.” Anna and Jose look for the page.",
+					"tl": "Sa Deutschkurs sabi ni Frau Huber: “Buksan ang libro sa pahina 12. Gawin ang gawain 3.” Hinahanap nina Anna at Jose ang pahina."
+				},
+				"goal": {
+					"de": "im Buch die Seite und die Aufgabe finden und Wort, Satz und Text unterscheiden",
+					"en": "find the page and the exercise in the book and tell word, sentence and text apart",
+					"tl": "mahanap ang pahina at ang gawain sa libro at makilala ang salita, pangungusap at teksto"
+				}
 			},
 			"introduces": [
 				"W-A1-0294",
@@ -685,28 +1048,58 @@
 			],
 			"cards": [
 				{
-					"phrase": "das Wort – der Satz – der Text",
-					"note": {
-						"de": "Wörter bilden einen Satz. Sätze bilden einen Text.",
-						"en": "Words make a sentence. Sentences make a text.",
-						"tl": "Ang mga salita ay bumubuo ng pangungusap. Ang mga pangungusap ay bumubuo ng teksto."
-					}
-				},
-				{
+					"kind": "phrase",
 					"phrase": "Seite 12, Aufgabe 3",
 					"note": {
-						"de": "Öffnen Sie das Buch auf Seite 12. Machen Sie Aufgabe 3.",
-						"en": "Open the book at page 12. Do exercise 3.",
-						"tl": "Buksan ang libro sa pahina 12. Gawin ang gawain 3."
+						"de": "Frau Huber sagt: „Öffnen Sie das Buch auf Seite 12. Machen Sie Aufgabe 3.“",
+						"en": "Frau Huber says: “Open the book at page 12. Do exercise 3.”",
+						"tl": "Sabi ni Frau Huber: “Buksan ang libro sa pahina 12. Gawin ang gawain 3.”"
 					}
 				},
 				{
-					"phrase": "das Beispiel – das Thema",
+					"kind": "rule",
+					"phrase": "Wort → Satz → Text",
 					"note": {
-						"de": "Zuerst kommt ein Beispiel. Das Thema heute: Familie.",
-						"en": "First comes an example. Today’s topic: family.",
-						"tl": "Una ang halimbawa. Paksa ngayon: pamilya."
+						"de": "Ein Wort allein: „Heft“. Mehrere Wörter mit einem Verb sind ein Satz. Mehrere Sätze zusammen sind ein Text.",
+						"en": "One word alone: “Heft”. Several words with a verb make a sentence (Satz). Several sentences together make a text.",
+						"tl": "Isang salita: “Heft”. Ilang salita na may verb ay pangungusap (Satz). Ilang pangungusap ay teksto (Text)."
+					},
+					"examples": [
+						"„Heft“ ist ein Wort.",
+						"„Ich habe ein Heft.“ ist ein Satz.",
+						"Zwei oder drei Sätze sind ein Text."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "das Beispiel",
+					"note": {
+						"de": "Zuerst steht in der Aufgabe ein Beispiel. Dann machen Sie die Aufgabe.",
+						"en": "First the exercise has an example (Beispiel). Then you do the exercise.",
+						"tl": "Una, may halimbawa (Beispiel) sa gawain. Pagkatapos, gagawin mo ang gawain."
 					}
+				},
+				{
+					"kind": "phrase",
+					"phrase": "das Thema",
+					"note": {
+						"de": "Jeder Text hat ein Thema. Das Thema sagt: Worüber ist der Text? Zum Beispiel: Familie.",
+						"en": "Every text has a topic (Thema). It says what the text is about. For example: Familie.",
+						"tl": "May paksa (Thema) ang bawat teksto. Ito ang pinag-uusapan ng teksto. Halimbawa: Familie."
+					}
+				},
+				{
+					"kind": "rule",
+					"phrase": "auf Seite 12",
+					"note": {
+						"de": "Bei der Seite sagen Sie „auf Seite …“ und dann die Zahl.",
+						"en": "For the page you say “auf Seite …” and then the number.",
+						"tl": "Sa pahina, sasabihin mo ang “auf Seite …” at ang numero."
+					},
+					"examples": [
+						"Öffnen Sie das Buch auf Seite 20.",
+						"Wir sind auf Seite 12."
+					]
 				}
 			],
 			"items": [
@@ -715,14 +1108,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Anna öffnet das Buch. Schauen Sie die Seite an.",
+						"en": "Anna opens the book. Look at the page.",
+						"tl": "Binuksan ni Anna ang libro. Tingnan ang pahina."
 					},
 					"explanation": {
-						"de": "Unten steht: Seite 12.",
-						"en": "Answer: Unten steht: Seite 12.",
-						"tl": "Sagot: Unten steht: Seite 12."
+						"de": "Richtig: auf Seite 12. Unten auf der Seite steht „Seite 12“. Die 3 ist die Nummer der Aufgabe, nicht der Seite. Bei 21 sind die Ziffern vertauscht.",
+						"en": "Correct: auf Seite 12. At the bottom of the page it says “Seite 12”. The 3 is the number of the exercise, not of the page. In 21 the digits are swapped.",
+						"tl": "Tama: auf Seite 12. Sa ibaba ng pahina nakasulat ang “Seite 12”. Ang 3 ay numero ng gawain, hindi ng pahina. Sa 21, nagpalit ang mga digit."
 					},
 					"goals": [
 						"A1-05-G1"
@@ -732,82 +1125,235 @@
 						"W-A1-0300"
 					],
 					"options": [
-						"auf Seite 12",
 						"auf Seite 3",
+						"auf Seite 12",
 						"auf Seite 21"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Auf welcher Seite ist Aufgabe 3?",
 					"image": {
 						"src": "/img/a1-05-seite.svg",
 						"alt": {
-							"de": "Eine Buchseite mit „Aufgabe 3“ und einer Seitenzahl.",
-							"en": "A book page with “Aufgabe 3” and a page number.",
-							"tl": "Pahina ng libro na may “Aufgabe 3” at numero ng pahina."
+							"de": "Eine Buchseite mit „Aufgabe 3“, einem Beispiel im Kasten und einer Seitenzahl.",
+							"en": "A book page with “Aufgabe 3”, an example in a box and a page number.",
+							"tl": "Pahina ng libro na may “Aufgabe 3”, halimbawa sa kahon at numero ng pahina."
 						}
 					}
 				},
 				{
 					"id": "A1-05-L03-I2",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Tom liest die Aufgabe. Das Beispiel steht im gelben Kasten. Schauen Sie das Bild an.",
+						"en": "Tom reads the exercise. The example is in the yellow box. Look at the picture.",
+						"tl": "Binabasa ni Tom ang gawain. Nasa dilaw na kahon ang halimbawa. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Mehrere Wörter mit Verb = ein Satz.",
-						"en": "Several words with a verb = a sentence (Satz).",
-						"tl": "Ilang salita na may verb = pangungusap (Satz)."
+						"de": "Richtig: ein Satz. „Ich heiße Anna.“ hat mehrere Wörter und ein Verb (heiße). Ein Wort wäre nur „Anna“ oder „heiße“. Eine Seite ist ein Blatt im Buch.",
+						"en": "Correct: ein Satz. “Ich heiße Anna.” has several words and a verb (heiße). A single word would be only “Anna” or “heiße”. A page is a sheet in the book.",
+						"tl": "Tama: ein Satz. Ang “Ich heiße Anna.” ay may ilang salita at verb (heiße). Isang salita lang ang “Anna” o “heiße”. Ang pahina ay piraso ng libro."
 					},
 					"goals": [
 						"A1-05-G1"
 					],
 					"refs": [
 						"W-A1-0295",
+						"W-A1-0299",
 						"W-A1-0006",
-						"W-A1-0004",
-						"W-A1-0304"
+						"W-A1-0004"
 					],
 					"options": [
+						"ein Satz",
 						"ein Wort",
-						"eine Seite",
-						"ein Satz"
+						"eine Seite"
 					],
-					"answer": 2,
-					"prompt": "„Ich lerne Deutsch.“ ist …"
+					"answer": 0,
+					"prompt": "„Ich heiße Anna.“ ist …",
+					"image": {
+						"src": "/img/a1-05-seite.svg",
+						"alt": {
+							"de": "Eine Buchseite mit „Aufgabe 3“, einem Beispiel im Kasten und einer Seitenzahl.",
+							"en": "A book page with “Aufgabe 3”, an example in a box and a page number.",
+							"tl": "Pahina ng libro na may “Aufgabe 3”, halimbawa sa kahon at numero ng pahina."
+						}
+					}
 				},
 				{
 					"id": "A1-05-L03-I3",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Frau Huber schreibt ein Wort an die Tafel: „Heft“. Was ist das?",
+						"en": "Frau Huber writes one word on the board: “Heft”. What is it?",
+						"tl": "Nagsulat si Frau Huber ng isang salita sa pisara: “Heft”. Ano ito?"
 					},
 					"explanation": {
-						"de": "Sie hören: „Öffnen Sie das Buch auf Seite fünfzehn.“",
-						"en": "You hear: „Öffnen Sie das Buch auf Seite fünfzehn.“",
-						"tl": "Naririnig mo: „Öffnen Sie das Buch auf Seite fünfzehn.“"
+						"de": "Richtig: ein Wort. „Heft“ ist ein einzelnes Wort ohne Verb. Ein Satz hat mehrere Wörter und ein Verb. Eine Aufgabe sagt, was Sie machen sollen.",
+						"en": "Correct: ein Wort. “Heft” is a single word without a verb. A sentence has several words and a verb. An exercise tells you what to do.",
+						"tl": "Tama: ein Wort. Ang “Heft” ay iisang salita na walang verb. Ang pangungusap ay maraming salita at may verb. Ang gawain ay nagsasabi kung ano ang gagawin."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0294",
+						"W-A1-0004"
+					],
+					"options": [
+						"ein Wort",
+						"ein Satz",
+						"eine Aufgabe"
+					],
+					"answer": 0,
+					"prompt": "„Heft“ ist …"
+				},
+				{
+					"id": "A1-05-L03-I4",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie den Text von Jose. Frau Huber fragt: „Wie viele Sätze hat der Text?“",
+						"en": "Read Jose’s text. Frau Huber asks: “How many sentences does the text have?”",
+						"tl": "Basahin ang teksto ni Jose. Tanong ni Frau Huber: “Ilang pangungusap ang teksto?”"
+					},
+					"explanation": {
+						"de": "Richtig: vier Sätze. Jeder Punkt beendet einen Satz: Ich heiße Jose. / Ich komme … / Ich wohne … / Ich lerne … Das sind vier.",
+						"en": "Correct: vier Sätze. Each full stop ends a sentence: Ich heiße Jose. / Ich komme … / Ich wohne … / Ich lerne … That makes four.",
+						"tl": "Tama: vier Sätze. Ang bawat tuldok ay tapos ng pangungusap: Ich heiße Jose. / Ich komme … / Ich wohne … / Ich lerne … Apat iyon."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0296",
+						"W-A1-0295",
+						"W-A1-0006",
+						"W-A1-0362",
+						"W-A1-0797",
+						"W-A1-0798"
+					],
+					"options": [
+						"drei Sätze",
+						"vier Sätze",
+						"fünf Sätze"
+					],
+					"answer": 1,
+					"prompt": "Ich heiße Jose. Ich komme aus den Philippinen. Ich wohne in Wien. Ich lerne Deutsch.\n\nDer Text hat …"
+				},
+				{
+					"id": "A1-05-L03-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Frau Huber spricht im Kurs. Hören Sie.",
+						"en": "Frau Huber speaks in class. Listen.",
+						"tl": "Nagsasalita si Frau Huber sa kurso. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Öffnen Sie das Buch auf Seite fünfzehn. Machen Sie Aufgabe vier.“ fünfzehn = 15, nicht fünfzig (50); vier = 4, nicht vierzehn (14).",
+						"en": "You hear: “Öffnen Sie das Buch auf Seite fünfzehn. Machen Sie Aufgabe vier.” fünfzehn = 15, not fünfzig (50); vier = 4, not vierzehn (14).",
+						"tl": "Naririnig mo: “Öffnen Sie das Buch auf Seite fünfzehn. Machen Sie Aufgabe vier.” fünfzehn = 15, hindi fünfzig (50); vier = 4, hindi vierzehn (14)."
 					},
 					"goals": [
 						"A1-05-G2"
 					],
 					"refs": [
 						"W-A1-0293",
+						"W-A1-0300",
 						"W-A1-0157",
 						"W-A1-0009",
-						"W-A1-0003"
+						"W-A1-0036",
+						"W-A1-0126",
+						"W-A1-0798"
 					],
 					"options": [
-						"Seite 15",
-						"Seite 50"
+						"Seite 15, Aufgabe 4",
+						"Seite 50, Aufgabe 4",
+						"Seite 15, Aufgabe 14"
 					],
 					"answer": 0,
-					"audioText": "Öffnen Sie das Buch auf Seite fünfzehn.",
+					"prompt": "Was sollen Sie machen?",
+					"audioText": "Öffnen Sie das Buch auf Seite fünfzehn. Machen Sie Aufgabe vier.",
 					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L03-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber gibt eine Anweisung. Ergänzen Sie den Satz mit den Wörtern unten.",
+						"en": "Frau Huber gives an instruction. Complete the sentence with the words below.",
+						"tl": "May instruction si Frau Huber. Kumpletuhin ang pangungusap gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „auf Seite 12“ und „Aufgabe 3“. Das Buch hat Seiten, und auf der Seite stehen Aufgaben. „Satz 12“ und „auf Aufgabe“ passen nicht zu „öffnen“ und „machen“.",
+						"en": "Correct: “auf Seite 12” and “Aufgabe 3”. The book has pages, and on a page there are exercises. “Satz” does not fit “auf … 12” and “machen”.",
+						"tl": "Tama: “auf Seite 12” at “Aufgabe 3”. May mga pahina ang libro, at nasa pahina ang mga gawain. Ang “Satz” ay hindi angkop sa “auf … 12” at “machen”."
+					},
+					"goals": [
+						"A1-05-G1",
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0293",
+						"W-A1-0300",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0126",
+						"W-A1-0003"
+					],
+					"text": "Frau Huber: „Öffnen Sie das Buch auf {{1}} 12. Machen Sie {{2}} 3.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Seite"
+							]
+						},
+						"2": {
+							"accept": [
+								"Aufgabe"
+							]
+						}
+					},
+					"bank": [
+						"Seite",
+						"Aufgabe",
+						"Satz"
+					]
+				},
+				{
+					"id": "A1-05-L03-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie den Text. Frau Huber fragt: „Was ist das Thema?“",
+						"en": "Read the text. Frau Huber asks: “What is the topic?”",
+						"tl": "Basahin ang teksto. Tanong ni Frau Huber: “Ano ang paksa?”"
+					},
+					"explanation": {
+						"de": "Richtig: die Familie. Im Text stehen Mutter, Vater, Bruder und Schwester. Vom Deutschkurs oder von der Hausübung steht nichts im Text.",
+						"en": "Correct: die Familie. The text mentions mother, father, brother and sister. It says nothing about the German course or homework.",
+						"tl": "Tama: die Familie. Nasa teksto ang nanay, tatay, kapatid na lalaki at babae. Walang sinabi tungkol sa Deutschkurs o takdang-aralin."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0323",
+						"W-A1-0296",
+						"W-A1-0006",
+						"W-A1-0046",
+						"W-A1-0001",
+						"W-A1-0002"
+					],
+					"options": [
+						"der Deutschkurs",
+						"die Familie",
+						"die Hausübung"
+					],
+					"answer": 1,
+					"prompt": "Meine Mutter heißt Maria. Mein Vater heißt Jose. Ich habe einen Bruder und eine Schwester.\n\nDas Thema ist …"
 				}
 			]
 		},
@@ -818,49 +1364,70 @@
 				"en": "Tick! – instructions",
 				"tl": "Markahan! – mga instruction"
 			},
+			"intro": {
+				"situation": {
+					"de": "Anna macht einen Test im Deutschkurs. Auf dem Blatt steht: „Kreuzen Sie an.“ Anna kennt das Wort nicht.",
+					"en": "Anna takes a test in the German course. The sheet says: “Kreuzen Sie an.” Anna does not know the word.",
+					"tl": "Nagte-test si Anna sa Deutschkurs. Nakasulat sa papel: “Kreuzen Sie an.” Hindi niya alam ang salita."
+				},
+				"goal": {
+					"de": "die vier wichtigsten Anweisungen verstehen: ankreuzen, ergänzen, zuordnen, markieren",
+					"en": "understand the four most important instructions: ankreuzen, ergänzen, zuordnen, markieren",
+					"tl": "maintindihan ang apat na pinakamahalagang instruction: ankreuzen, ergänzen, zuordnen, markieren"
+				}
+			},
 			"introduces": [
 				"W-A1-0307",
 				"W-A1-0308"
 			],
 			"cards": [
 				{
-					"phrase": "Kreuzen Sie an.",
+					"kind": "phrase",
+					"phrase": "Kreuzen Sie die richtige Antwort an.",
 					"note": {
-						"de": "ankreuzen = ein Kreuz (x) machen. „Kreuzen Sie die richtige Antwort an.“",
-						"en": "ankreuzen = make a cross (x). “Tick the right answer.”",
-						"tl": "ankreuzen = lagyan ng ekis (x)."
+						"de": "ankreuzen = ein Kreuz (x) machen. So steht es oft in Tests.",
+						"en": "ankreuzen = make a cross (x). This is how it often reads in tests.",
+						"tl": "ankreuzen = lagyan ng ekis (x). Ganito ito madalas sa mga test."
 					}
 				},
 				{
-					"phrase": "Ergänzen Sie.",
+					"kind": "phrase",
+					"phrase": "Ergänzen Sie die Sätze.",
 					"note": {
-						"de": "ergänzen = die Lücke füllen: „Ich ___ Anna.“ → heiße.",
-						"en": "ergänzen = fill the gap.",
-						"tl": "ergänzen = punan ang patlang."
+						"de": "ergänzen = ein Wort in die Lücke schreiben. Zum Beispiel: Ich ___ Anna. → Ich heiße Anna.",
+						"en": "ergänzen = write a word into the gap. For example: Ich ___ Anna. → Ich heiße Anna.",
+						"tl": "ergänzen = isulat ang salita sa patlang. Halimbawa: Ich ___ Anna. → Ich heiße Anna."
 					}
 				},
 				{
-					"phrase": "Ordnen Sie zu.",
+					"kind": "rule",
+					"phrase": "Ordnen Sie zu. – Kreuzen Sie an.",
 					"note": {
-						"de": "zuordnen = Paare verbinden: 1 – b, 2 – a.",
-						"en": "zuordnen = match pairs: 1 – b, 2 – a.",
-						"tl": "zuordnen = itugma: 1 – b, 2 – a."
+						"de": "zuordnen und ankreuzen sind trennbare Verben: Die kleine Silbe (zu, an) steht am Ende vom Satz.",
+						"en": "zuordnen and ankreuzen are separable verbs: the small part (zu, an) goes to the end of the sentence.",
+						"tl": "Ang zuordnen at ankreuzen ay mga verb na nahahati: ang maliit na bahagi (zu, an) ay nasa dulo ng pangungusap."
+					},
+					"examples": [
+						"Ordnen Sie die Wörter zu.",
+						"Kreuzen Sie die Antwort an."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Markieren Sie das Wort.",
+					"note": {
+						"de": "markieren = ein Wort farbig machen, zum Beispiel gelb. So finden Sie es wieder.",
+						"en": "markieren = highlight a word, for example in yellow. This way you find it again.",
+						"tl": "markieren = kulayan ang salita, halimbawa ng dilaw. Para madali mo itong makita ulit."
 					}
 				},
 				{
-					"phrase": "Markieren Sie.",
+					"kind": "culture",
+					"phrase": "Anweisungen in der Prüfung",
 					"note": {
-						"de": "markieren = ein Wort farbig machen.",
-						"en": "markieren = highlight a word.",
-						"tl": "markieren = kulayan ang salita."
-					}
-				},
-				{
-					"phrase": "Diese Wörter kommen in der Prüfung!",
-					"note": {
-						"de": "In der Integrationsprüfung stehen die Anweisungen auf Deutsch.",
-						"en": "In the integration exam the instructions are in German.",
-						"tl": "Sa integration exam, nasa German ang instructions."
+						"de": "In der Prüfung stehen die Anweisungen nur auf Deutsch. Lernen Sie diese vier Wörter gut!",
+						"en": "In the exam the instructions are in German only. Learn these four words well!",
+						"tl": "Sa exam, German lang ang nakasulat sa instructions. Aralin nang mabuti ang apat na salitang ito!"
 					}
 				}
 			],
@@ -870,14 +1437,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Frau Huber zeigt vier Aufgaben. Schauen Sie das Bild an.",
+						"en": "Frau Huber shows four exercises. Look at the picture.",
+						"tl": "Nagpapakita si Frau Huber ng apat na gawain. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Bild 1 zeigt ein Kreuz: ankreuzen. 2 = ergänzen, 3 = zuordnen, 4 = markieren.",
-						"en": "Answer: Bild 1 zeigt ein Kreuz: ankreuzen. 2 = ergänzen, 3 = zuordnen, 4 = markieren.",
-						"tl": "Sagot: Bild 1 zeigt ein Kreuz: ankreuzen. 2 = ergänzen, 3 = zuordnen, 4 = markieren."
+						"de": "Richtig: ankreuzen. In Bild 1 steht ein Kreuz in einem Kästchen. Bild 2 = ergänzen (Wort in die Lücke), Bild 3 = zuordnen (Linien), Bild 4 = markieren.",
+						"en": "Correct: ankreuzen. In picture 1 there is a cross in a box. Picture 2 = ergänzen (word in the gap), picture 3 = zuordnen (lines), picture 4 = markieren.",
+						"tl": "Tama: ankreuzen. Sa Bild 1 may ekis sa kahon. Bild 2 = ergänzen (salita sa patlang), Bild 3 = zuordnen (mga linya), Bild 4 = markieren."
 					},
 					"goals": [
 						"A1-05-G2"
@@ -896,9 +1463,9 @@
 					"image": {
 						"src": "/img/a1-05-anweisungen.svg",
 						"alt": {
-							"de": "Vier Bilder: ein Kreuz im Kästchen, eine Lücke, Linien zwischen Punkten, ein farbiges Wort.",
-							"en": "Four pictures: a cross in a box, a gap, lines between dots, a highlighted word.",
-							"tl": "Apat na larawan: ekis sa kahon, patlang, linya sa pagitan ng tuldok, kulay na salita."
+							"de": "Vier Bilder: Kästchen mit einem Kreuz, ein Satz mit Lücke und Stift, Linien zwischen Zahlen und Buchstaben, ein farbig markiertes Wort.",
+							"en": "Four pictures: boxes with one cross, a sentence with a gap and a pencil, lines between numbers and letters, a highlighted word.",
+							"tl": "Apat na larawan: kahon na may ekis, pangungusap na may patlang at lapis, linya sa pagitan ng numero at titik, kulay na salita."
 						}
 					}
 				},
@@ -907,14 +1474,51 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
-						"en": "Read. Choose the correct answer.",
-						"tl": "Basahin. Piliin ang tamang sagot."
+						"de": "Frau Huber zeigt vier Aufgaben. Schauen Sie das Bild an.",
+						"en": "Frau Huber shows four exercises. Look at the picture.",
+						"tl": "Nagpapakita si Frau Huber ng apat na gawain. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "ergänzen = in die Lücke schreiben.",
-						"en": "ergänzen = write into the gap.",
-						"tl": "ergänzen = isulat sa patlang."
+						"de": "Richtig: markieren. In Bild 4 ist das Wort „Anna“ gelb. Bei „zuordnen“ verbindet man Paare mit Linien (Bild 3), bei „ergänzen“ schreibt man ein Wort in eine Lücke (Bild 2).",
+						"en": "Correct: markieren. In picture 4 the word “Anna” is yellow. With “zuordnen” you connect pairs with lines (picture 3), with “ergänzen” you write a word into a gap (picture 2).",
+						"tl": "Tama: markieren. Sa Bild 4, dilaw ang salitang “Anna”. Sa “zuordnen”, ikinokonekta ang mga pares ng linya (Bild 3), sa “ergänzen” may isusulat na salita sa patlang (Bild 2)."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0310",
+						"W-A1-0036"
+					],
+					"options": [
+						"zuordnen",
+						"markieren",
+						"ergänzen"
+					],
+					"answer": 1,
+					"prompt": "Bild 4: Was macht man?",
+					"image": {
+						"src": "/img/a1-05-anweisungen.svg",
+						"alt": {
+							"de": "Vier Bilder: Kästchen mit einem Kreuz, ein Satz mit Lücke und Stift, Linien zwischen Zahlen und Buchstaben, ein farbig markiertes Wort.",
+							"en": "Four pictures: boxes with one cross, a sentence with a gap and a pencil, lines between numbers and letters, a highlighted word.",
+							"tl": "Apat na larawan: kahon na may ekis, pangungusap na may patlang at lapis, linya sa pagitan ng numero at titik, kulay na salita."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L04-I3",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Sie sind im Deutschkurs. Auf dem Blatt steht die Anweisung. Lesen Sie.",
+						"en": "You are in the German course. The instruction is on the sheet. Read it.",
+						"tl": "Nasa Deutschkurs ka. Nasa papel ang instruction. Basahin."
+					},
+					"explanation": {
+						"de": "Richtig: Ich schreibe die Wörter in die Lücken. „ergänzen“ heißt: fehlende Wörter schreiben. Ein Kreuz machen Sie bei „ankreuzen“.",
+						"en": "Correct: Ich schreibe die Wörter in die Lücken. “ergänzen” means: write the missing words. You make a cross with “ankreuzen”.",
+						"tl": "Tama: Ich schreibe die Wörter in die Lücken. Ang “ergänzen” ay: isulat ang kulang na salita. Ang ekis ay para sa “ankreuzen”."
 					},
 					"goals": [
 						"A1-05-G2"
@@ -929,41 +1533,124 @@
 					"options": [
 						"Ich schreibe die Wörter in die Lücken.",
 						"Ich mache ein Kreuz.",
-						"Ich lese laut."
+						"Ich lese den Text."
 					],
 					"answer": 0,
-					"prompt": "Anweisung: „Ergänzen Sie die Wörter.“ Was machen Sie?"
+					"prompt": "Anweisung: „Ergänzen Sie die Wörter.“\n\nWas machen Sie?"
 				},
 				{
-					"id": "A1-05-L04-I3",
+					"id": "A1-05-L04-I4",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Auf dem Blatt von Frau Huber stehen zwei Anweisungen. Lesen Sie.",
+						"en": "Frau Huber’s note has two instructions. Read it.",
+						"tl": "May dalawang instruction sa papel ni Frau Huber. Basahin."
 					},
 					"explanation": {
-						"de": "ankreuzen = ein Kreuz machen.",
-						"en": "ankreuzen = make a cross.",
-						"tl": "ankreuzen = lagyan ng ekis."
+						"de": "Richtig: ein Kreuz bei „richtig“ oder „falsch“. „ankreuzen“ = ein Kreuz machen. Ein Wort in die Lücke schreiben Sie bei „ergänzen“, ein Wort gelb machen Sie bei „markieren“.",
+						"en": "Correct: a cross at “richtig” or “falsch”. “ankreuzen” = make a cross. You write a word in a gap with “ergänzen” and make a word yellow with “markieren”.",
+						"tl": "Tama: ekis sa “richtig” o “falsch”. “ankreuzen” = lagyan ng ekis. Ang pagsulat ng salita sa patlang ay “ergänzen”, ang pagkulay ng salita ay “markieren”."
+					},
+					"goals": [
+						"A1-05-G2",
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0307",
+						"W-A1-0144",
+						"W-A1-0185",
+						"W-A1-0186",
+						"W-A1-0006",
+						"W-A1-0009",
+						"W-A1-0036",
+						"W-A1-0126"
+					],
+					"options": [
+						"Ich schreibe ein Wort in die Lücke.",
+						"Ich mache ein Wort gelb.",
+						"Ich mache ein Kreuz bei „richtig“ oder „falsch“."
+					],
+					"answer": 2,
+					"prompt": "1. Lesen Sie den Text.\n2. Kreuzen Sie an: richtig oder falsch.\n\nWas machen Sie bei 2?"
+				},
+				{
+					"id": "A1-05-L04-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Frau Huber gibt eine Anweisung. Hören Sie.",
+						"en": "Frau Huber gives an instruction. Listen.",
+						"tl": "May instruction si Frau Huber. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Ordnen Sie die Wörter zu.“ Das Verb ist „zuordnen“. Die Silbe „zu“ steht am Ende. „ankreuzen“ hört man mit „an“, „ergänzen“ hat kein „zu“.",
+						"en": "You hear: “Ordnen Sie die Wörter zu.” The verb is “zuordnen”. The syllable “zu” is at the end. “ankreuzen” would end in “an”, “ergänzen” has no “zu”.",
+						"tl": "Naririnig mo: “Ordnen Sie die Wörter zu.” Ang verb ay “zuordnen”. Nasa dulo ang “zu”. Ang “ankreuzen” ay may “an”, ang “ergänzen” ay walang “zu”."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0309",
+						"W-A1-0009",
+						"W-A1-0036",
+						"W-A1-0126",
+						"W-A1-0002"
+					],
+					"options": [
+						"ankreuzen",
+						"ergänzen",
+						"zuordnen"
+					],
+					"answer": 2,
+					"prompt": "Was sollen Sie machen?",
+					"audioText": "Ordnen Sie die Wörter zu.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L04-I6",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber gibt zwei Anweisungen. Ergänzen Sie die kleinen Wörter.",
+						"en": "Frau Huber gives two instructions. Complete the small words with the words below.",
+						"tl": "May dalawang instruction si Frau Huber. Kumpletuhin ang maliliit na salita gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Kreuzen Sie … an.“ und „Ordnen Sie … zu.“ Die kleine Silbe gehört zum Verb: an-kreuzen, zu-ordnen. „auf“ passt zu keinem der beiden Verben.",
+						"en": "Correct: “Kreuzen Sie … an.” and “Ordnen Sie … zu.” The small syllable belongs to the verb: an-kreuzen, zu-ordnen. “auf” fits neither verb.",
+						"tl": "Tama: “Kreuzen Sie … an.” at “Ordnen Sie … zu.” Ang maliit na pantig ay bahagi ng verb: an-kreuzen, zu-ordnen. Ang “auf” ay hindi angkop sa alinman."
 					},
 					"goals": [
 						"A1-05-G2"
 					],
 					"refs": [
 						"W-A1-0307",
-						"W-A1-0126",
-						"W-A1-0004",
-						"W-A1-0093"
+						"W-A1-0309",
+						"W-A1-0009",
+						"W-A1-0002"
 					],
-					"options": [
-						"ergänzen",
-						"ankreuzen",
-						"markieren"
-					],
-					"answer": 1,
-					"prompt": "Ein x in einem Kästchen machen heißt …"
+					"text": "Kreuzen Sie die richtige Antwort {{1}}. Ordnen Sie die Wörter {{2}}.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"an"
+							],
+							"hint": "ankreuzen"
+						},
+						"2": {
+							"accept": [
+								"zu"
+							],
+							"hint": "zuordnen"
+						}
+					},
+					"bank": [
+						"an",
+						"zu",
+						"auf"
+					]
 				}
 			]
 		},
@@ -973,6 +1660,18 @@
 				"de": "Richtig oder falsch?",
 				"en": "Right or wrong?",
 				"tl": "Tama o mali?"
+			},
+			"intro": {
+				"situation": {
+					"de": "Frau Huber gibt einen Test. Anna liest: „Ist die Aussage richtig oder falsch?“ So ist es auch in der Prüfung.",
+					"en": "Frau Huber gives a test. Anna reads: “Ist die Aussage richtig oder falsch?” This is how it is in the exam too.",
+					"tl": "May test si Frau Huber. Binasa ni Anna: “Ist die Aussage richtig oder falsch?” Ganito rin sa exam."
+				},
+				"goal": {
+					"de": "einen kurzen Text lesen und sagen: Ist die Aussage richtig oder falsch?",
+					"en": "read a short text and say: is the statement right or wrong?",
+					"tl": "magbasa ng maikling teksto at sabihin: tama o mali ang pahayag?"
+				}
 			},
 			"introduces": [
 				"W-A1-0185",
@@ -987,35 +1686,56 @@
 			],
 			"cards": [
 				{
-					"phrase": "richtig – falsch",
+					"kind": "phrase",
+					"phrase": "Ist die Aussage richtig oder falsch?",
 					"note": {
-						"de": "In der Prüfung: „Ist die Aussage richtig oder falsch?“",
-						"en": "In the exam: “Is the statement right or wrong?”",
-						"tl": "Sa exam: “Tama o mali ang pahayag?”"
+						"de": "So fragt der Test. Eine Aussage ist ein Satz. Sie lesen den Text und kreuzen an: richtig oder falsch.",
+						"en": "This is how the test asks. A statement (Aussage) is a sentence. You read the text and tick: right or wrong.",
+						"tl": "Ganito magtanong ang test. Ang Aussage ay isang pangungusap. Babasahin mo ang teksto at markahan: tama o mali."
 					}
 				},
 				{
+					"kind": "rule",
+					"phrase": "Erst den Text, dann die Aussage",
+					"note": {
+						"de": "Suchen Sie die Stelle im Text. Steht dort dasselbe, ist die Aussage richtig. Steht dort etwas anderes, ist sie falsch.",
+						"en": "Find the place in the text. If it says the same, the statement is right. If it says something else, it is wrong.",
+						"tl": "Hanapin ang bahagi sa teksto. Kung pareho ang nakasulat, tama ang pahayag. Kung iba, mali."
+					},
+					"examples": [
+						"Der Text sagt: Tom hat ein Heft. Die Aussage „Tom hat ein Heft.“ ist richtig.",
+						"Die Aussage „Tom hat ein Buch.“ ist falsch."
+					]
+				},
+				{
+					"kind": "rule",
 					"phrase": "die Frage – die Antwort – die Lösung",
 					"note": {
-						"de": "Auf eine Frage gibt man eine Antwort. Die Lösung = die richtige Antwort.",
-						"en": "You give an answer to a question. Lösung = the correct answer.",
-						"tl": "Sumasagot sa tanong. Lösung = tamang sagot."
-					}
+						"de": "Eine Frage hat eine Antwort. Die Lösung ist die richtige Antwort.",
+						"en": "A question (Frage) has an answer (Antwort). The Lösung is the correct answer.",
+						"tl": "May sagot (Antwort) ang tanong (Frage). Ang Lösung ay ang tamang sagot."
+					},
+					"examples": [
+						"Das ist meine Frage.",
+						"Die Lösung ist Nummer 3."
+					]
 				},
 				{
+					"kind": "phrase",
 					"phrase": "der Fehler",
 					"note": {
-						"de": "Ein Fehler ist nicht schlimm – man lernt daraus.",
-						"en": "A mistake is not bad – you learn from it.",
-						"tl": "Hindi masama ang mali – natututo ka rito."
+						"de": "Ein Fehler ist eine falsche Antwort. Fehler sind im Kurs normal – man lernt daraus.",
+						"en": "A mistake (Fehler) is a wrong answer. Mistakes are normal in a course – you learn from them.",
+						"tl": "Ang Fehler ay maling sagot. Normal ang mali sa kurso – natututo ka rito."
 					}
 				},
 				{
+					"kind": "phrase",
 					"phrase": "die Prüfung – der Test",
 					"note": {
-						"de": "Am Ende vom Kurs gibt es eine Prüfung.",
-						"en": "At the end of the course there is an exam.",
-						"tl": "Sa dulo ng kurso may exam."
+						"de": "Am Ende vom Kurs gibt es eine Prüfung, in Österreich zum Beispiel die Integrationsprüfung. Zum Beispiel: Die Prüfung ist am 12. Mai. Im Kurs machen Sie auch Tests.",
+						"en": "At the end of the course there is an exam (Prüfung), in Austria for example the Integrationsprüfung (integration exam). For example: the exam is on 12 May. In the course you also take tests.",
+						"tl": "Sa dulo ng kurso may exam (Prüfung), sa Austria halimbawa ang Integrationsprüfung. Halimbawa: ang exam ay sa ika-12 ng Mayo. Sa kurso may mga test (Test) din."
 					}
 				}
 			],
@@ -1025,28 +1745,29 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Frau Huber gibt den Test zurück. Schauen Sie das Bild an.",
+						"en": "Frau Huber hands back the test. Look at the picture.",
+						"tl": "Ibinabalik ni Frau Huber ang test. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Bei Frage 2 ist ein Kreuz (✗): falsch.",
-						"en": "Answer: Bei Frage 2 ist ein Kreuz (✗): falsch.",
-						"tl": "Sagot: Bei Frage 2 ist ein Kreuz (✗): falsch."
+						"de": "Richtig: Frage 2. Bei Frage 2 steht ein Kreuz (✗): Die Antwort ist falsch. Bei Frage 1 und 3 steht ein Häkchen (✓): richtig.",
+						"en": "Correct: Frage 2. Question 2 has a cross (✗): the answer is wrong. Questions 1 and 3 have a tick (✓): right.",
+						"tl": "Tama: Frage 2. Sa Frage 2 may ekis (✗): mali ang sagot. Sa Frage 1 at 3 may tsek (✓): tama."
 					},
 					"goals": [
 						"A1-05-G5"
 					],
 					"refs": [
 						"W-A1-0186",
-						"W-A1-0297"
+						"W-A1-0297",
+						"W-A1-0302"
 					],
 					"options": [
-						"Frage 2",
 						"Frage 1",
-						"Frage 3"
+						"Frage 3",
+						"Frage 2"
 					],
-					"answer": 0,
+					"answer": 2,
 					"prompt": "Welche Antwort ist falsch?",
 					"image": {
 						"src": "/img/a1-05-test.svg",
@@ -1062,50 +1783,24 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
-						"en": "Read. Choose the correct answer.",
-						"tl": "Basahin. Piliin ang tamang sagot."
+						"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Read. Is the statement right or wrong?",
+						"tl": "Basahin. Tama o mali ang pahayag?"
 					},
 					"explanation": {
-						"de": "Ein Heft ist kein Buch: falsch.",
-						"en": "An exercise book is not a book: wrong.",
-						"tl": "Hindi libro ang kuwaderno: mali."
-					},
-					"goals": [
-						"A1-05-G5"
-					],
-					"refs": [
-						"W-A1-0186",
-						"W-A1-0289",
-						"W-A1-0004"
-					],
-					"options": [
-						"falsch",
-						"richtig"
-					],
-					"answer": 0,
-					"prompt": "Aussage: „Ein Heft ist ein Buch.“"
-				},
-				{
-					"id": "A1-05-L05-I3",
-					"type": "choice",
-					"skill": "lesen",
-					"instruction": {
-						"de": "Lesen Sie. Wählen Sie die richtige Antwort.",
-						"en": "Read. Choose the correct answer.",
-						"tl": "Basahin. Piliin ang tamang sagot."
-					},
-					"explanation": {
-						"de": "Ein Satz hat Wörter: richtig.",
-						"en": "A sentence has words: right.",
-						"tl": "May mga salita ang pangungusap: tama."
+						"de": "Richtig. Im Text steht: „Ich habe ein Heft und einen Kugelschreiber.“ Der Satz sagt genau das – darum ist die Aussage richtig.",
+						"en": "Right. The text says: “Ich habe ein Heft und einen Kugelschreiber.” That is exactly what the statement says – so it is right.",
+						"tl": "Tama. Sabi sa teksto: “Ich habe ein Heft und einen Kugelschreiber.” Iyon mismo ang sinasabi ng pahayag – kaya tama."
 					},
 					"goals": [
 						"A1-05-G5"
 					],
 					"refs": [
 						"W-A1-0185",
-						"W-A1-0295",
+						"W-A1-0911",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0046",
 						"W-A1-0004"
 					],
 					"options": [
@@ -1113,38 +1808,182 @@
 						"richtig"
 					],
 					"answer": 1,
-					"prompt": "Aussage: „Ein Satz hat Wörter.“"
+					"prompt": "Anna schreibt: „Ich bin im Deutschkurs. Meine Lehrerin heißt Frau Huber. Ich habe ein Heft und einen Kugelschreiber.“\n\nAussage: Anna hat einen Kugelschreiber."
+				},
+				{
+					"id": "A1-05-L05-I3",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Read. Is the statement right or wrong?",
+						"tl": "Basahin. Tama o mali ang pahayag?"
+					},
+					"explanation": {
+						"de": "Falsch. Anna hat einen Kugelschreiber und ein Heft. „nur einen Kugelschreiber“ heißt: sonst nichts. Das stimmt nicht.",
+						"en": "Wrong. Anna has a pen and an exercise book. “nur einen Kugelschreiber” means: nothing else. That is not true.",
+						"tl": "Mali. May ballpen at kuwaderno si Anna. Ang “nur einen Kugelschreiber” ay: wala nang iba. Hindi iyon totoo."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0186",
+						"W-A1-0911",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0046",
+						"W-A1-0056"
+					],
+					"options": [
+						"falsch",
+						"richtig"
+					],
+					"answer": 0,
+					"prompt": "Anna schreibt: „Ich bin im Deutschkurs. Meine Lehrerin heißt Frau Huber. Ich habe ein Heft und einen Kugelschreiber.“\n\nAussage: Anna hat nur einen Kugelschreiber."
 				},
 				{
 					"id": "A1-05-L05-I4",
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Frau Huber fragt: „Wie heißen Sie?“ Anna sagt: „Ich heiße Anna.“ Wie heißt „Ich heiße Anna.“?",
+						"en": "Frau Huber asks: “Wie heißen Sie?” Anna says: “Ich heiße Anna.” What is “Ich heiße Anna.”?",
+						"tl": "Tinanong ni Frau Huber: “Wie heißen Sie?” Sabi ni Anna: “Ich heiße Anna.” Ano ang “Ich heiße Anna.”?"
 					},
 					"explanation": {
-						"de": "Lösung = richtige Antwort.",
-						"en": "Lösung = the correct answer.",
-						"tl": "Lösung = tamang sagot."
+						"de": "Richtig: die Antwort. Frau Huber stellt die Frage, Anna gibt die Antwort. Eine Prüfung ist ein großer Test am Ende vom Kurs.",
+						"en": "Correct: die Antwort. Frau Huber asks the question, Anna gives the answer. A Prüfung is a big test at the end of the course.",
+						"tl": "Tama: die Antwort. Si Frau Huber ang nagtatanong (Frage), si Anna ang sumasagot (Antwort). Ang Prüfung ay malaking test sa dulo ng kurso."
 					},
 					"goals": [
 						"A1-05-G5"
 					],
 					"refs": [
-						"W-A1-0320",
-						"W-A1-0055",
-						"W-A1-0001",
+						"W-A1-0298",
+						"W-A1-0297",
+						"W-A1-0006",
 						"W-A1-0002"
 					],
 					"options": [
-						"die Lösung",
-						"der Fehler",
-						"die Frage"
+						"Frage",
+						"Antwort",
+						"Prüfung"
+					],
+					"answer": 1,
+					"prompt": "„Ich heiße Anna.“ ist die …"
+				},
+				{
+					"id": "A1-05-L05-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Tom schreibt „Ich bin Frau Anna.“ Das ist nicht gut. Frau Huber hilft. Ergänzen Sie.",
+						"en": "Tom writes “Ich bin Frau Anna.” That is not right. Frau Huber helps. Complete with the words below.",
+						"tl": "Sumulat si Tom ng “Ich bin Frau Anna.” Hindi iyon tama. Tumutulong si Frau Huber. Kumpletuhin gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „ein Fehler“ und „die richtige Lösung“. Ein Fehler ist falsch geschrieben oder falsch gesagt. Die Lösung ist die richtige Antwort. Eine „Frage“ ist es nicht: Tom hat nichts gefragt.",
+						"en": "Correct: “ein Fehler” and “die richtige Lösung”. A Fehler is something written or said wrongly. The Lösung is the correct answer. It is not a “Frage”: Tom did not ask anything.",
+						"tl": "Tama: “ein Fehler” at “die richtige Lösung”. Ang Fehler ay maling nasulat o nasabi. Ang Lösung ay ang tamang sagot. Hindi ito “Frage”: wala namang tinanong si Tom."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0319",
+						"W-A1-0320",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0002",
+						"W-A1-0003"
+					],
+					"text": "Frau Huber: „Das ist ein {{1}}. Die richtige {{2}} ist: Ich bin Anna.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Fehler"
+							]
+						},
+						"2": {
+							"accept": [
+								"Lösung",
+								"Antwort"
+							]
+						}
+					},
+					"bank": [
+						"Fehler",
+						"Lösung",
+						"Frage"
+					]
+				},
+				{
+					"id": "A1-05-L05-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Read. Is the statement right or wrong?",
+						"tl": "Basahin. Tama o mali ang pahayag?"
+					},
+					"explanation": {
+						"de": "Falsch. Im Text steht „zehn Fragen“, nicht „zwölf“. zehn = 10, zwölf = 12.",
+						"en": "Wrong. The text says “zehn Fragen”, not “zwölf”. zehn = 10, zwölf = 12.",
+						"tl": "Mali. Sabi sa teksto “zehn Fragen”, hindi “zwölf”. zehn = 10, zwölf = 12."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0186",
+						"W-A1-0302",
+						"W-A1-0297",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0046",
+						"W-A1-0011"
+					],
+					"options": [
+						"falsch",
+						"richtig"
 					],
 					"answer": 0,
-					"prompt": "Die richtige Antwort heißt auch …"
+					"prompt": "Frau Huber sagt: „Wir machen einen Test. Der Test hat zehn Fragen. Sie lesen die Aussage und kreuzen an: richtig oder falsch.“\n\nAussage: Der Test hat zwölf Fragen."
+				},
+				{
+					"id": "A1-05-L05-I7",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Hören Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Listen. Is the statement right or wrong?",
+						"tl": "Makinig. Tama o mali ang pahayag?"
+					},
+					"explanation": {
+						"de": "Sie hören: „Frage zwei ist falsch. Frage drei ist richtig.“ Die Aussage sagt dasselbe wie der zweite Satz: richtig.",
+						"en": "You hear: “Frage zwei ist falsch. Frage drei ist richtig.” The statement says the same as the second sentence: right.",
+						"tl": "Naririnig mo: “Frage zwei ist falsch. Frage drei ist richtig.” Pareho ang sinasabi ng pahayag at ng ikalawang pangungusap: tama."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0185",
+						"W-A1-0186",
+						"W-A1-0297",
+						"W-A1-0328",
+						"W-A1-0796",
+						"W-A1-0797"
+					],
+					"options": [
+						"richtig",
+						"falsch"
+					],
+					"answer": 0,
+					"prompt": "Aussage: Frage drei ist richtig.",
+					"audioText": "Frau Huber: Frage zwei ist falsch. Frage drei ist richtig.",
+					"audioOnly": true
 				}
 			]
 		},
@@ -1155,32 +1994,64 @@
 				"en": "not",
 				"tl": "hindi"
 			},
+			"intro": {
+				"situation": {
+					"de": "Frau Huber schaut in den Kursraum. Ein Platz ist leer. Sie fragt: „Ist Ali im Kurs?“ Die Antwort ist „Nein“.",
+					"en": "Frau Huber looks around the classroom. One seat is empty. She asks: “Ist Ali im Kurs?” The answer is “Nein”.",
+					"tl": "Tumingin si Frau Huber sa silid-aralan. May bakanteng upuan. Tanong niya: “Ist Ali im Kurs?” Ang sagot ay “Nein”."
+				},
+				"goal": {
+					"de": "„nicht“ richtig benutzen: „Ali ist nicht im Kurs.“ „Ich verstehe das nicht.“",
+					"en": "use “nicht” correctly: “Ali ist nicht im Kurs.” “Ich verstehe das nicht.”",
+					"tl": "gamitin nang tama ang “nicht”: “Ali ist nicht im Kurs.” “Ich verstehe das nicht.”"
+				}
+			},
 			"introduces": [
 				"W-A1-0053"
 			],
 			"cards": [
 				{
+					"kind": "phrase",
 					"phrase": "Ali ist nicht im Kurs.",
 					"note": {
-						"de": "„nicht“ verneint ein Verb, ein Adjektiv oder einen Ort.",
-						"en": "“nicht” negates a verb, an adjective or a place.",
-						"tl": "Ang “nicht” ay pantanggi sa verb, adjective o lugar."
+						"de": "„nicht“ sagt: Das stimmt nicht. Bei „sein“ steht „nicht“ vor dem Ort oder vor dem Wort: nicht im Kurs, nicht richtig.",
+						"en": "“nicht” says: that is not so. With “sein”, “nicht” goes before the place or the word: nicht im Kurs, nicht richtig.",
+						"tl": "Ang “nicht” ay nagsasabing: hindi totoo iyon. Sa “sein”, ang “nicht” ay bago ang lugar o salita: nicht im Kurs, nicht richtig."
 					}
 				},
 				{
-					"phrase": "Ich verstehe das nicht.",
+					"kind": "rule",
+					"phrase": "Verb + … + nicht",
 					"note": {
-						"de": "„nicht“ steht oft am Satzende.",
-						"en": "“nicht” often comes at the end of the sentence.",
-						"tl": "Madalas nasa dulo ng pangungusap ang “nicht”."
-					}
+						"de": "Bei den meisten Verben steht „nicht“ am Ende vom Satz.",
+						"en": "With most verbs, “nicht” comes at the end of the sentence.",
+						"tl": "Sa karamihan ng verb, ang “nicht” ay nasa dulo ng pangungusap."
+					},
+					"examples": [
+						"Ich verstehe das nicht.",
+						"Sofia wohnt nicht in Graz."
+					]
 				},
 				{
-					"phrase": "Das ist nicht richtig.",
+					"kind": "rule",
+					"phrase": "Ja oder nein?",
 					"note": {
-						"de": "nicht + Adjektiv: nicht richtig = falsch.",
-						"en": "nicht + adjective: nicht richtig = wrong.",
-						"tl": "nicht + adjective: nicht richtig = mali."
+						"de": "Auf eine Frage mit Verb am Anfang antworten Sie mit „Ja“ oder „Nein“. Bei „Nein“ steht danach oft „nicht“.",
+						"en": "You answer a question that starts with a verb with “Ja” or “Nein”. After “Nein” there is often a “nicht”.",
+						"tl": "Sa tanong na nagsisimula sa verb, sasagot ka ng “Ja” o “Nein”. Pagkatapos ng “Nein”, madalas may “nicht”."
+					},
+					"examples": [
+						"Kommt Ali? – Nein, er kommt nicht.",
+						"Ist das richtig? – Nein, das ist nicht richtig."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Ich verstehe das nicht. – Langsam, bitte.",
+					"note": {
+						"de": "Im Kurs sagen Sie das, wenn Sie etwas nicht verstehen. Dann hilft die Lehrerin.",
+						"en": "In class you say this when you do not understand something. Then the teacher helps.",
+						"tl": "Sa kurso sasabihin mo ito kapag hindi mo naiintindihan ang isang bagay. Tutulungan ka ng guro."
 					}
 				}
 			],
@@ -1190,14 +2061,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Frau Huber schaut in den Kursraum. Sie fragt: „Ist Ali im Kurs?“ Schauen Sie das Bild an.",
+						"en": "Frau Huber looks around the classroom. She asks: “Ist Ali im Kurs?” Look at the picture.",
+						"tl": "Tumingin si Frau Huber sa silid-aralan. Tanong niya: “Ist Ali im Kurs?” Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Der Sessel von Ali ist leer: Ali ist nicht im Kurs.",
-						"en": "Ali’s chair is empty: he is not in class.",
-						"tl": "Bakante ang upuan ni Ali: wala siya sa klase."
+						"de": "Richtig: „Nein, Ali ist nicht im Kurs.“ Der Platz von Ali ist leer. Bei „ist im Kurs“ steht „nicht“ vor dem Ort. „kein“ steht nur vor einem Nomen.",
+						"en": "Correct: “Nein, Ali ist nicht im Kurs.” Ali’s seat is empty. With “ist im Kurs”, “nicht” goes before the place. “kein” only stands before a noun.",
+						"tl": "Tama: “Nein, Ali ist nicht im Kurs.” Bakante ang upuan ni Ali. Sa “ist im Kurs”, ang “nicht” ay bago ang lugar. Ang “kein” ay nasa harap lang ng noun."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -1205,38 +2076,78 @@
 					"refs": [
 						"W-A1-0053",
 						"W-A1-0285",
+						"W-A1-0009",
 						"W-A1-0051",
-						"W-A1-0052"
+						"W-A1-0052",
+						"W-A1-0036"
 					],
 					"options": [
 						"Ja, Ali ist im Kurs.",
-						"Nein, Ali ist nicht im Kurs.",
-						"Nein, Ali ist kein im Kurs."
+						"Nein, Ali ist kein im Kurs.",
+						"Nein, Ali ist nicht im Kurs."
 					],
-					"answer": 1,
-					"prompt": "Ist Ali im Kurs?",
+					"answer": 2,
+					"prompt": "Was antworten Sie?",
 					"image": {
 						"src": "/img/a1-05-sessel.svg",
 						"alt": {
-							"de": "Drei Sessel: Jose und Anna sitzen, der Sessel von Ali ist leer.",
-							"en": "Three chairs: Jose and Anna sit, Ali’s chair is empty.",
-							"tl": "Tatlong upuan: nakaupo sina Jose at Anna, bakante ang kay Ali."
+							"de": "Drei Plätze mit Namensschildern: Jose und Anna sitzen, der Platz von Ali ist leer.",
+							"en": "Three places with name signs: Jose and Anna are sitting, Ali’s seat is empty.",
+							"tl": "Tatlong upuan na may pangalan: nakaupo sina Jose at Anna, bakante ang upuan ni Ali."
 						}
 					}
 				},
 				{
 					"id": "A1-05-L06-I2",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Frau Huber schaut in den Kursraum. Sie fragt: „Wer ist nicht da?“ Schauen Sie das Bild an.",
+						"en": "Frau Huber looks around the classroom. She asks: “Wer ist nicht da?” Look at the picture.",
+						"tl": "Tumingin si Frau Huber sa silid-aralan. Tanong niya: “Wer ist nicht da?” Tingnan ang larawan."
+					},
+					"explanation": {
+						"de": "Richtig: Ali. Jose und Anna sitzen an ihren Plätzen. Der Platz mit dem Namensschild „Ali“ ist leer.",
+						"en": "Correct: Ali. Jose and Anna sit at their places. The seat with the name sign “Ali” is empty.",
+						"tl": "Tama: Ali. Nakaupo sina Jose at Anna sa upuan nila. Bakante ang upuan na may pangalang “Ali”."
+					},
+					"goals": [
+						"A1-05-G4"
+					],
+					"refs": [
+						"W-A1-0053",
+						"W-A1-0285",
+						"W-A1-0035"
+					],
+					"options": [
+						"Jose",
+						"Ali",
+						"Anna"
+					],
+					"answer": 1,
+					"prompt": "Wer ist nicht im Kurs?",
+					"image": {
+						"src": "/img/a1-05-sessel.svg",
+						"alt": {
+							"de": "Drei Plätze mit Namensschildern: Jose und Anna sitzen, der Platz von Ali ist leer.",
+							"en": "Three places with name signs: Jose and Anna are sitting, Ali’s seat is empty.",
+							"tl": "Tatlong upuan na may pangalan: nakaupo sina Jose at Anna, bakante ang upuan ni Ali."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L06-I3",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Anna versteht die Aufgabe nicht. Ergänzen Sie den Dialog.",
+						"en": "Anna does not understand the exercise. Complete the dialogue with the words below.",
+						"tl": "Hindi naiintindihan ni Anna ang gawain. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Verb verneinen → nicht.",
-						"en": "Negating a verb → nicht.",
-						"tl": "Pantanggi sa verb → nicht."
+						"de": "Richtig: „ich verstehe das nicht“. Das Verb „verstehen“ verneinen Sie mit „nicht“ am Ende. „kein“ und „keine“ stehen vor einem Nomen, nicht nach einem Verb.",
+						"en": "Correct: “ich verstehe das nicht”. You negate the verb “verstehen” with “nicht” at the end. “kein” and “keine” stand before a noun, not after a verb.",
+						"tl": "Tama: “ich verstehe das nicht”. Ang verb na “verstehen” ay tinatanggihan ng “nicht” sa dulo. Ang “kein” at “keine” ay nasa harap ng noun, hindi pagkatapos ng verb."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -1245,45 +2156,151 @@
 						"W-A1-0053",
 						"W-A1-0134",
 						"W-A1-0006",
-						"W-A1-0003"
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0052"
 					],
-					"text": "Ich verstehe das {{1}}.",
+					"text": "Frau Huber: „Verstehen Sie das?“ – Anna: „Nein, ich verstehe das {{1}}.“",
 					"gaps": {
 						"1": {
 							"accept": [
 								"nicht"
 							]
 						}
-					}
+					},
+					"bank": [
+						"nicht",
+						"kein",
+						"keine"
+					]
 				},
 				{
-					"id": "A1-05-L06-I3",
+					"id": "A1-05-L06-I4",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Frau Huber fragt: „Wohnt Sofia in Graz?“ Sofia wohnt in Linz. Was sagt Anna?",
+						"en": "Frau Huber asks: “Wohnt Sofia in Graz?” Sofia lives in Linz. What does Anna say?",
+						"tl": "Tanong ni Frau Huber: “Wohnt Sofia in Graz?” Nakatira si Sofia sa Linz. Ano ang sinabi ni Anna?"
 					},
 					"explanation": {
-						"de": "Sie hören: „Tom kommt heute nicht. Er ist krank.“",
-						"en": "You hear: „Tom kommt heute nicht. Er ist krank.“",
-						"tl": "Naririnig mo: „Tom kommt heute nicht. Er ist krank.“"
+						"de": "Richtig: „Nein, Sofia wohnt nicht in Graz.“ Das Verb „wohnt“ steht an zweiter Stelle, „nicht“ kommt danach. „Ja“ passt nicht, weil Sofia in Linz wohnt.",
+						"en": "Correct: “Nein, Sofia wohnt nicht in Graz.” The verb “wohnt” is in second position, “nicht” follows. “Ja” does not fit because Sofia lives in Linz.",
+						"tl": "Tama: “Nein, Sofia wohnt nicht in Graz.” Nasa ikalawang posisyon ang verb na “wohnt”, kasunod ang “nicht”. Hindi angkop ang “Ja” dahil sa Linz nakatira si Sofia."
 					},
 					"goals": [
 						"A1-05-G4"
 					],
 					"refs": [
 						"W-A1-0053",
-						"W-A1-0008"
+						"W-A1-0148",
+						"W-A1-0051",
+						"W-A1-0052",
+						"W-A1-0093"
 					],
 					"options": [
-						"Tom kommt heute.",
-						"Tom kommt heute nicht."
+						"Nein, Sofia nicht wohnt in Graz.",
+						"Ja, Sofia wohnt nicht in Graz.",
+						"Nein, Sofia wohnt nicht in Graz."
+					],
+					"answer": 2
+				},
+				{
+					"id": "A1-05-L06-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Frau Huber spricht über Anna. Hören Sie.",
+						"en": "Frau Huber talks about Anna. Listen.",
+						"tl": "Nagsasalita si Frau Huber tungkol kay Anna. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Anna ist nicht im Kurs. Sie ist in Graz.“ Anna ist also in Graz, nicht im Kurs. „nicht in Graz“ wäre das Gegenteil.",
+						"en": "You hear: “Anna ist nicht im Kurs. Sie ist in Graz.” So Anna is in Graz, not in the course. “nicht in Graz” would be the opposite.",
+						"tl": "Naririnig mo: “Anna ist nicht im Kurs. Sie ist in Graz.” Nasa Graz si Anna, wala sa kurso. Ang “nicht in Graz” ay kabaligtaran."
+					},
+					"goals": [
+						"A1-05-G4"
+					],
+					"refs": [
+						"W-A1-0053",
+						"W-A1-0285",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0093"
+					],
+					"options": [
+						"Anna ist im Kurs.",
+						"Anna ist nicht im Kurs.",
+						"Anna ist nicht in Graz."
 					],
 					"answer": 1,
-					"audioText": "Tom kommt heute nicht. Er ist krank.",
+					"audioText": "Frau Huber: Anna ist nicht im Kurs. Sie ist in Graz.",
 					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L06-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Read. Is the statement right or wrong?",
+						"tl": "Basahin. Tama o mali ang pahayag?"
+					},
+					"explanation": {
+						"de": "Falsch. Ali schreibt: „Ich komme nicht in den Kurs. Ich bin in Linz.“ Er ist nicht im Kurs, er ist in Linz.",
+						"en": "Wrong. Ali writes: “Ich komme nicht in den Kurs. Ich bin in Linz.” He is not in the course, he is in Linz.",
+						"tl": "Mali. Sulat ni Ali: “Ich komme nicht in den Kurs. Ich bin in Linz.” Wala siya sa kurso, nasa Linz siya."
+					},
+					"goals": [
+						"A1-05-G4",
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0053",
+						"W-A1-0285",
+						"W-A1-0378",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0093"
+					],
+					"options": [
+						"richtig",
+						"falsch"
+					],
+					"answer": 1,
+					"prompt": "Ali schreibt: „Hallo Frau Huber! Ich komme nicht in den Kurs. Ich bin in Linz.“\n\nAussage: Ali ist im Kurs."
+				},
+				{
+					"id": "A1-05-L06-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Frau Huber zeigt ein Wort an der Tafel: „Heft“ und fragt Sie: „Ist das Wort richtig?“ Es ist falsch. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Frau Huber shows a word on the board and asks you: “Ist das Wort richtig?” It is wrong. What do you say? Choose, then say it aloud.",
+						"tl": "Nagpakita si Frau Huber ng salita sa pisara at tinanong ka: “Ist das Wort richtig?” Mali ito. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Nein, das ist nicht richtig.“ „Nein“ und „nicht“ passen zusammen. „Ja, … nicht richtig“ widerspricht sich. „richtig“ ist ein Adjektiv, davor steht „nicht“, nicht „kein“.",
+						"en": "Correct: “Nein, das ist nicht richtig.” “Nein” and “nicht” go together. “Ja, … nicht richtig” contradicts itself. “richtig” is an adjective, so “nicht” comes before it, not “kein”.",
+						"tl": "Tama: “Nein, das ist nicht richtig.” Magkasama ang “Nein” at “nicht”. Ang “Ja, … nicht richtig” ay magkasalungat. Ang “richtig” ay adjective, kaya “nicht” ang nasa unahan, hindi “kein”."
+					},
+					"goals": [
+						"A1-05-G4"
+					],
+					"refs": [
+						"W-A1-0053",
+						"W-A1-0185",
+						"W-A1-0051",
+						"W-A1-0052",
+						"W-A1-0003"
+					],
+					"options": [
+						"Ja, das ist nicht richtig.",
+						"Nein, das ist nicht richtig.",
+						"Nein, das ist kein richtig."
+					],
+					"answer": 1
 				}
 			]
 		},
@@ -1294,33 +2311,82 @@
 				"en": "no, not a",
 				"tl": "wala, hindi"
 			},
+			"intro": {
+				"situation": {
+					"de": "Maria und Tom machen eine Aufgabe. Maria hat ein Buch und ein Heft. Tom hat nur ein Heft. Frau Huber fragt: „Hat Tom ein Buch?“",
+					"en": "Maria and Tom do an exercise. Maria has a book and an exercise book. Tom has only an exercise book. Frau Huber asks: “Hat Tom ein Buch?”",
+					"tl": "Gumagawa ng gawain sina Maria at Tom. May libro at kuwaderno si Maria. Kuwaderno lang ang kay Tom. Tanong ni Frau Huber: “Hat Tom ein Buch?”"
+				},
+				"goal": {
+					"de": "sagen, was Sie nicht haben: „Ich habe kein Buch.“ – und „kein“ und „nicht“ unterscheiden",
+					"en": "say what you do not have: “Ich habe kein Buch.” – and tell “kein” and “nicht” apart",
+					"tl": "sabihin kung ano ang wala ka: “Ich habe kein Buch.” – at makilala ang “kein” at “nicht”"
+				}
+			},
 			"introduces": [
 				"W-A1-0005"
 			],
 			"cards": [
 				{
+					"kind": "phrase",
 					"phrase": "Ich habe kein Buch.",
 					"note": {
-						"de": "„kein“ verneint ein Nomen ohne Artikel oder mit ein/eine: ein Buch → kein Buch.",
-						"en": "“kein” negates a noun with ein/eine or no article: ein Buch → kein Buch.",
-						"tl": "Ang “kein” ay pantanggi sa noun na may ein/eine: ein Buch → kein Buch."
+						"de": "„kein“ sagt: Ich habe nichts davon. Aus „ein Buch“ wird „kein Buch“, aus „ein Heft“ wird „kein Heft“.",
+						"en": "“kein” says: I have none of it. “ein Buch” becomes “kein Buch”, “ein Heft” becomes “kein Heft”.",
+						"tl": "Ang “kein” ay nagsasabing: wala akong ganoon. Ang “ein Buch” ay nagiging “kein Buch”, ang “ein Heft” ay “kein Heft”."
 					}
 				},
 				{
-					"phrase": "eine Frage → keine Frage",
+					"kind": "rule",
+					"phrase": "ein → kein · eine → keine",
 					"note": {
-						"de": "die → keine. Plural: keine Bücher.",
-						"en": "die → keine. Plural: keine Bücher (no books).",
-						"tl": "die → keine. Plural: keine Bücher (walang libro)."
-					}
+						"de": "Vor einem Nomen mit „ein“ oder „eine“ steht bei „Nein“ das Wort „kein“ oder „keine“. Bei „die“-Wörtern: keine.",
+						"en": "Before a noun that has “ein” or “eine”, the negative is “kein” or “keine”. With “die”-words: keine.",
+						"tl": "Sa noun na may “ein” o “eine”, ang pagtanggi ay “kein” o “keine”. Sa mga salitang “die”: keine."
+					},
+					"examples": [
+						"Das ist kein Fehler.",
+						"Ich habe keine Frage."
+					]
 				},
 				{
+					"kind": "rule",
+					"phrase": "Ich habe einen Stift → keinen Stift",
+					"note": {
+						"de": "Bei „der“-Wörtern nach „haben“ wird aus „einen“ das Wort „keinen“. Nach „sein“ bleibt es „kein“: Das ist kein Stift.",
+						"en": "With “der”-words after “haben”, “einen” becomes “keinen”. After “sein” it stays “kein”: Das ist kein Stift.",
+						"tl": "Sa mga salitang “der” pagkatapos ng “haben”, ang “einen” ay nagiging “keinen”. Pagkatapos ng “sein”, “kein” pa rin: Das ist kein Stift."
+					},
+					"examples": [
+						"Ich habe keinen Kugelschreiber.",
+						"Das ist kein Bleistift."
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "Mehrzahl: keine Bücher",
+					"note": {
+						"de": "Bei der Mehrzahl (Plural) gibt es kein „ein“. Dann heißt die Verneinung immer „keine“: ein Buch → keine Bücher.",
+						"en": "In the plural there is no “ein”. The negative is then always “keine”: ein Buch → keine Bücher.",
+						"tl": "Sa plural walang “ein”. Ang pagtanggi ay laging “keine”: ein Buch → keine Bücher."
+					},
+					"examples": [
+						"Ich habe keine Bücher.",
+						"Wir haben keine Hefte."
+					]
+				},
+				{
+					"kind": "rule",
 					"phrase": "nicht oder kein?",
 					"note": {
-						"de": "Nomen mit ein/eine oder ohne Artikel → kein. Sonst → nicht.",
-						"en": "Noun with ein/eine or no article → kein. Otherwise → nicht.",
-						"tl": "Noun na may ein/eine o walang article → kein. Kung hindi → nicht."
-					}
+						"de": "„kein“ verneint ein Nomen: Ich habe kein Heft. „nicht“ verneint alles andere: Ich verstehe das nicht. Das ist nicht richtig.",
+						"en": "“kein” negates a noun: Ich habe kein Heft. “nicht” negates everything else: Ich verstehe das nicht. Das ist nicht richtig.",
+						"tl": "Ang “kein” ay para sa noun: Ich habe kein Heft. Ang “nicht” ay para sa lahat ng iba: Ich verstehe das nicht. Das ist nicht richtig."
+					},
+					"examples": [
+						"Ich habe kein Heft.",
+						"Ich habe das Heft nicht."
+					]
 				}
 			],
 			"items": [
@@ -1329,14 +2395,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Maria und Tom machen eine Aufgabe. Frau Huber fragt: „Hat Tom ein Buch?“ Schauen Sie das Bild an.",
+						"en": "Maria and Tom do an exercise. Frau Huber asks: “Hat Tom ein Buch?” Look at the picture.",
+						"tl": "Gumagawa ng gawain sina Maria at Tom. Tanong ni Frau Huber: “Hat Tom ein Buch?” Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Auf dem Tisch von Tom ist nur ein Heft: kein Buch.",
-						"en": "On Tom’s desk there is only an exercise book: no book.",
-						"tl": "Kuwaderno lang ang nasa mesa ni Tom: walang libro."
+						"de": "Richtig: „Nein, Tom hat kein Buch.“ Auf dem Tisch von Tom liegt nur ein Heft. „Buch“ ist ein Nomen (ein Buch), darum „kein Buch“. „nicht Buch“ sagt man nicht.",
+						"en": "Correct: “Nein, Tom hat kein Buch.” On Tom’s desk there is only an exercise book. “Buch” is a noun (ein Buch), so “kein Buch”. “nicht Buch” is not said.",
+						"tl": "Tama: “Nein, Tom hat kein Buch.” Kuwaderno lang ang nasa mesa ni Tom. Ang “Buch” ay noun (ein Buch), kaya “kein Buch”. Hindi sinasabi ang “nicht Buch”."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -1344,22 +2410,22 @@
 					"refs": [
 						"W-A1-0005",
 						"W-A1-0288",
-						"W-A1-0008",
+						"W-A1-0009",
 						"W-A1-0051",
 						"W-A1-0052",
-						"W-A1-0004"
+						"W-A1-0036"
 					],
 					"options": [
-						"Nein, er hat nicht Buch.",
-						"Nein, er hat kein Buch.",
-						"Ja, er hat ein Buch."
+						"Nein, Tom hat nicht Buch.",
+						"Nein, Tom hat kein Buch.",
+						"Ja, Tom hat ein Buch."
 					],
 					"answer": 1,
-					"prompt": "Hat Tom ein Buch?",
+					"prompt": "Was antworten Sie?",
 					"image": {
 						"src": "/img/a1-05-tische.svg",
 						"alt": {
-							"de": "Zwei Tische: Maria hat Buch und Heft, Tom hat nur ein Heft.",
+							"de": "Zwei Tische: Maria hat ein Buch und ein Heft, Tom hat nur ein Heft.",
 							"en": "Two desks: Maria has a book and an exercise book, Tom only an exercise book.",
 							"tl": "Dalawang mesa: may libro at kuwaderno si Maria, kuwaderno lang si Tom."
 						}
@@ -1367,52 +2433,135 @@
 				},
 				{
 					"id": "A1-05-L07-I2",
-					"type": "cloze",
-					"skill": "grammatikWortschatz",
+					"type": "choice",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Maria und Tom machen eine Aufgabe. Frau Huber fragt: „Hat Maria ein Heft?“ Schauen Sie das Bild an.",
+						"en": "Maria and Tom do an exercise. Frau Huber asks: “Hat Maria ein Heft?” Look at the picture.",
+						"tl": "Gumagawa ng gawain sina Maria at Tom. Tanong ni Frau Huber: “Hat Maria ein Heft?” Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "die Frage → keine Frage; das Heft → kein Heft.",
-						"en": "die Frage → keine Frage (no question); das Heft → kein Heft (no exercise book).",
-						"tl": "die Frage → keine Frage (walang tanong); das Heft → kein Heft (walang kuwaderno)."
+						"de": "Richtig: „Ja, Maria hat ein Heft.“ Auf dem Tisch von Maria liegt ein Heft (und ein Buch). Wer „Ja“ sagt, sagt dann „ein Heft“, nicht „kein Heft“.",
+						"en": "Correct: “Ja, Maria hat ein Heft.” On Maria’s desk there is an exercise book (and a book). Whoever says “Ja” then says “ein Heft”, not “kein Heft”.",
+						"tl": "Tama: “Ja, Maria hat ein Heft.” May kuwaderno (at libro) sa mesa ni Maria. Kapag “Ja” ang sagot, “ein Heft” ang kasunod, hindi “kein Heft”."
 					},
 					"goals": [
 						"A1-05-G4"
 					],
 					"refs": [
 						"W-A1-0005",
-						"W-A1-0006"
+						"W-A1-0289",
+						"W-A1-0009",
+						"W-A1-0051",
+						"W-A1-0052",
+						"W-A1-0036"
 					],
-					"text": "Ich habe {{1}} Frage. Ich habe {{2}} Heft.",
-					"gaps": {
-						"1": {
-							"accept": [
-								"keine"
-							]
-						},
-						"2": {
-							"accept": [
-								"kein"
-							]
+					"options": [
+						"Nein, Maria hat kein Heft.",
+						"Ja, Maria hat kein Heft.",
+						"Ja, Maria hat ein Heft."
+					],
+					"answer": 2,
+					"prompt": "Was antworten Sie?",
+					"image": {
+						"src": "/img/a1-05-tische.svg",
+						"alt": {
+							"de": "Zwei Tische: Maria hat ein Buch und ein Heft, Tom hat nur ein Heft.",
+							"en": "Two desks: Maria has a book and an exercise book, Tom only an exercise book.",
+							"tl": "Dalawang mesa: may libro at kuwaderno si Maria, kuwaderno lang si Tom."
 						}
 					}
 				},
 				{
 					"id": "A1-05-L07-I3",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber fragt Anna. Ergänzen Sie den Dialog mit den Wörtern unten.",
+						"en": "Frau Huber asks Anna. Complete the dialogue with the words below.",
+						"tl": "Nagtanong si Frau Huber kay Anna. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „keine Frage“. „die Frage“ ist ein „die“-Wort: eine Frage → keine Frage. „kein“ passt zu „der“- und „das“-Wörtern, vor einem Nomen mit „eine“ sagt man „keine“, nicht „nicht eine“.",
+						"en": "Correct: “keine Frage”. “die Frage” is a “die”-word: eine Frage → keine Frage. “kein” fits “der”- and “das”-words, before a noun with “eine” you say “keine”, not “nicht eine”.",
+						"tl": "Tama: “keine Frage”. Ang “die Frage” ay salitang “die”: eine Frage → keine Frage. Ang “kein” ay para sa “der” at “das”, bago ang noun na may “eine”, “keine” ang sinasabi, hindi “nicht eine”."
+					},
+					"goals": [
+						"A1-05-G4"
+					],
+					"refs": [
+						"W-A1-0005",
+						"W-A1-0297",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0052"
+					],
+					"text": "Frau Huber: „Haben Sie eine Frage?“ – Anna: „Nein, ich habe {{1}} Frage.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"keine"
+							]
+						}
+					},
+					"bank": [
+						"keine",
+						"kein",
+						"nicht"
+					]
+				},
+				{
+					"id": "A1-05-L07-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber zeigt ein Heft. Anna sagt, was es nicht ist. Ergänzen Sie.",
+						"en": "Frau Huber shows an exercise book. Anna says what it is not. Complete with the words below.",
+						"tl": "Nagpapakita si Frau Huber ng kuwaderno. Sinasabi ni Anna kung ano ito hindi. Kumpletuhin gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „kein Buch“. „das Buch“ ist ein „das“-Wort: ein Buch → kein Buch. „keine“ gehört zu „die“-Wörtern, „nicht Buch“ gibt es nicht.",
+						"en": "Correct: “kein Buch”. “das Buch” is a “das”-word: ein Buch → kein Buch. “keine” belongs to “die”-words, “nicht Buch” does not exist.",
+						"tl": "Tama: “kein Buch”. Ang “das Buch” ay salitang “das”: ein Buch → kein Buch. Ang “keine” ay para sa “die”, hindi umiiral ang “nicht Buch”."
+					},
+					"goals": [
+						"A1-05-G4"
+					],
+					"refs": [
+						"W-A1-0005",
+						"W-A1-0288",
+						"W-A1-0289",
+						"W-A1-0003",
+						"W-A1-0004"
+					],
+					"text": "Anna: „Das ist {{1}} Buch. Das ist ein Heft.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"kein"
+							]
+						}
+					},
+					"bank": [
+						"kein",
+						"keine",
+						"nicht"
+					]
+				},
+				{
+					"id": "A1-05-L07-I5",
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Frau Huber sagt: „Das ist ein Fehler.“ Tom sagt „Nein“. Was sagt Tom?",
+						"en": "Frau Huber says: “Das ist ein Fehler.” Tom disagrees. What does Tom say?",
+						"tl": "Sabi ni Frau Huber: “Das ist ein Fehler.” Hindi sang-ayon si Tom. Ano ang sasabihin ni Tom?"
 					},
 					"explanation": {
-						"de": "der Fehler → kein Fehler.",
-						"en": "der Fehler → kein Fehler (no mistake).",
-						"tl": "der Fehler → kein Fehler (walang mali)."
+						"de": "Richtig: „kein Fehler“. „der Fehler“ ist ein „der“-Wort, nach „sein“ heißt es „kein“. „keine“ ist für „die“-Wörter. Vor einem Nomen mit „ein“ sagt man „kein“ – nicht „nicht ein“.",
+						"en": "Correct: “kein Fehler”. “der Fehler” is a “der”-word, after “sein” it is “kein”. “keine” is for “die”-words. Before a noun with “ein” you say “kein” – not “nicht ein”.",
+						"tl": "Tama: “kein Fehler”. Ang “der Fehler” ay salitang “der”, pagkatapos ng “sein” ay “kein”. Ang “keine” ay para sa “die”. Bago ang noun na may “ein”, “kein” ang sinasabi – hindi “nicht ein”."
 					},
 					"goals": [
 						"A1-05-G4"
@@ -1420,15 +2569,80 @@
 					"refs": [
 						"W-A1-0005",
 						"W-A1-0319",
+						"W-A1-0052",
 						"W-A1-0003"
 					],
 					"options": [
+						"keine",
 						"kein",
-						"nicht",
-						"keine"
+						"nicht"
 					],
-					"answer": 0,
-					"prompt": "Das ist … Fehler."
+					"answer": 1,
+					"prompt": "Tom: „Nein, das ist … Fehler.“"
+				},
+				{
+					"id": "A1-05-L07-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Read. Is the statement right or wrong?",
+						"tl": "Basahin. Tama o mali ang pahayag?"
+					},
+					"explanation": {
+						"de": "Falsch. Jose schreibt: „Ich habe kein Heft.“ Er hat nur ein Buch. „kein Heft“ heißt: nicht ein einziges Heft.",
+						"en": "Wrong. Jose writes: “Ich habe kein Heft.” He only has a book. “kein Heft” means: not a single exercise book.",
+						"tl": "Mali. Sulat ni Jose: “Ich habe kein Heft.” Libro lang ang mayroon siya. Ang “kein Heft” ay: walang kahit isang kuwaderno."
+					},
+					"goals": [
+						"A1-05-G4",
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0005",
+						"W-A1-0289",
+						"W-A1-0378",
+						"W-A1-0006",
+						"W-A1-0328",
+						"W-A1-0046"
+					],
+					"options": [
+						"richtig",
+						"falsch"
+					],
+					"answer": 1,
+					"prompt": "Jose schreibt: „Hallo Frau Huber! Ich habe kein Heft und keinen Kugelschreiber. Ich habe nur ein Buch.“\n\nAussage: Jose hat ein Heft."
+				},
+				{
+					"id": "A1-05-L07-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Frau Huber fragt Sie: „Haben Sie einen Kugelschreiber?“ Sie haben keinen. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Frau Huber asks you: “Haben Sie einen Kugelschreiber?” You have none. What do you say? Choose, then say it aloud.",
+						"tl": "Tinanong ka ni Frau Huber: “Haben Sie einen Kugelschreiber?” Wala kang ballpen. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Nein, ich habe keinen Kugelschreiber.“ Der Kugelschreiber ist ein „der“-Wort, nach „haben“ heißt es „keinen“. „Ja“ und „keinen“ passen nicht zusammen.",
+						"en": "Correct: “Nein, ich habe keinen Kugelschreiber.” The Kugelschreiber is a “der”-word, after “haben” it is “keinen”. “Ja” and “keinen” do not go together.",
+						"tl": "Tama: “Nein, ich habe keinen Kugelschreiber.” Ang Kugelschreiber ay salitang “der”, pagkatapos ng “haben” ay “keinen”. Hindi magkasama ang “Ja” at “keinen”."
+					},
+					"goals": [
+						"A1-05-G4"
+					],
+					"refs": [
+						"W-A1-0005",
+						"W-A1-0290",
+						"W-A1-0006",
+						"W-A1-0051",
+						"W-A1-0052"
+					],
+					"options": [
+						"Nein, ich habe keinen Kugelschreiber.",
+						"Nein, ich habe nicht Kugelschreiber.",
+						"Ja, ich habe keinen Kugelschreiber."
+					],
+					"answer": 0
 				}
 			]
 		},
@@ -1438,6 +2652,18 @@
 				"de": "Verben im Kurs",
 				"en": "Verbs in class",
 				"tl": "Mga verb sa klase"
+			},
+			"intro": {
+				"situation": {
+					"de": "Frau Huber sagt oft: „Öffnen Sie das Buch.“ „Hören Sie zu.“ „Holen Sie ein Blatt Papier.“ Anna und Jose lernen diese Verben.",
+					"en": "Frau Huber often says: “Öffnen Sie das Buch.” “Hören Sie zu.” “Holen Sie ein Blatt Papier.” Anna and Jose learn these verbs.",
+					"tl": "Madalas sabihin ni Frau Huber: “Öffnen Sie das Buch.” “Hören Sie zu.” “Holen Sie ein Blatt Papier.” Pinag-aaralan nina Anna at Jose ang mga verb na ito."
+				},
+				"goal": {
+					"de": "Anweisungen im Kurs verstehen und die Verbformen sagen: ich lerne, er wartet, du öffnest",
+					"en": "understand instructions in class and say the verb forms: ich lerne, er wartet, du öffnest",
+					"tl": "maintindihan ang instructions sa kurso at sabihin ang mga anyo ng verb: ich lerne, er wartet, du öffnest"
+				}
 			},
 			"introduces": [
 				"W-A1-0157",
@@ -1452,35 +2678,57 @@
 			],
 			"cards": [
 				{
-					"phrase": "Öffnen Sie das Buch.",
+					"kind": "phrase",
+					"phrase": "Öffnen Sie das Buch. – Zeigen Sie das Heft.",
 					"note": {
-						"de": "„öffnen“: ich öffne, du öffnest, er öffnet.",
-						"en": "“öffnen” (open): ich öffne, du öffnest, er öffnet.",
-						"tl": "“öffnen” (buksan): ich öffne, du öffnest, er öffnet."
+						"de": "Frau Huber sagt „Sie“. Das Verb steht am Anfang: Öffnen Sie …, Zeigen Sie …, Bringen Sie …, Holen Sie …",
+						"en": "Frau Huber says “Sie”. The verb comes first: Öffnen Sie …, Zeigen Sie …, Bringen Sie …, Holen Sie …",
+						"tl": "Sinasabi ni Frau Huber ang “Sie”. Nasa unahan ang verb: Öffnen Sie …, Zeigen Sie …, Bringen Sie …, Holen Sie …"
 					}
 				},
 				{
-					"phrase": "Die Lehrerin zeigt auf die Tafel und erklärt.",
+					"kind": "rule",
+					"phrase": "warten → er wartet · öffnen → du öffnest",
 					"note": {
-						"de": "„zeigen“, „erklären“ – regelmäßig.",
-						"en": "“zeigen” (show), “erklären” (explain) – regular.",
-						"tl": "“zeigen” (ipakita), “erklären” (ipaliwanag) – regular."
+						"de": "Bei „warten“ und „öffnen“ kommt bei er/sie und du ein „e“ dazu. So kann man es besser sprechen.",
+						"en": "With “warten” and “öffnen” an “e” is added for er/sie and du. This makes it easier to say.",
+						"tl": "Sa “warten” at “öffnen”, may idinagdag na “e” sa er/sie at du. Mas madaling bigkasin."
+					},
+					"examples": [
+						"Tom wartet hier.",
+						"Du öffnest das Buch."
+					]
+				},
+				{
+					"kind": "rule",
+					"phrase": "zuhören: Ich höre zu.",
+					"note": {
+						"de": "zuhören ist ein trennbares Verb. Die kleine Silbe „zu“ steht am Ende vom Satz.",
+						"en": "zuhören is a separable verb. The small syllable “zu” goes to the end of the sentence.",
+						"tl": "Ang zuhören ay verb na nahahati. Ang maliit na pantig na “zu” ay nasa dulo ng pangungusap."
+					},
+					"examples": [
+						"Ich höre zu.",
+						"Hören Sie bitte gut zu.",
+						"Anna hört gut zu."
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "lernen · üben · erklären",
+					"note": {
+						"de": "Wir lernen Deutsch. Wir üben die Wörter. Frau Huber erklärt die Aufgabe.",
+						"en": "We learn German. We practise the words. Frau Huber explains the exercise.",
+						"tl": "Nag-aaral tayo ng German. Nagsasanay tayo ng mga salita. Ipinapaliwanag ni Frau Huber ang gawain."
 					}
 				},
 				{
-					"phrase": "Hören Sie zu! – Warten Sie, bitte.",
+					"kind": "phrase",
+					"phrase": "bringen · holen",
 					"note": {
-						"de": "„zuhören“: Ich höre zu (trennbar). „warten“: er wartet.",
-						"en": "“zuhören” (listen): Ich höre zu (separable). “warten” (wait): er wartet.",
-						"tl": "“zuhören”: Ich höre zu (nahahati). “warten”: er wartet."
-					}
-				},
-				{
-					"phrase": "Wir lernen und üben. Bringen Sie das Heft mit. Holen Sie ein Blatt.",
-					"note": {
-						"de": "lernen, üben, bringen, holen.",
-						"en": "learn, practise, bring, fetch.",
-						"tl": "mag-aral, magsanay, magdala, kumuha."
+						"de": "Bringen Sie das Buch. Holen Sie ein Blatt Papier.",
+						"en": "Bringen = take something to a place. Holen = go and get something from a place.",
+						"tl": "Bringen = dalhin sa isang lugar. Holen = kunin mula sa isang lugar."
 					}
 				}
 			],
@@ -1490,21 +2738,23 @@
 					"type": "choice",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Frau Huber zeigt vier Bilder. Schauen Sie das Bild an.",
+						"en": "Frau Huber shows four pictures. Look at the picture.",
+						"tl": "Nagpapakita si Frau Huber ng apat na larawan. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Bild 3 zeigt eine Uhr: warten. 1 = öffnen, 2 = zeigen, 4 = zuhören.",
-						"en": "Answer: Bild 3 zeigt eine Uhr: warten. 1 = öffnen, 2 = zeigen, 4 = zuhören.",
-						"tl": "Sagot: Bild 3 zeigt eine Uhr: warten. 1 = öffnen, 2 = zeigen, 4 = zuhören."
+						"de": "Richtig: warten. In Bild 3 sitzt ein Mensch neben einer Uhr und wartet. Bild 1 = öffnen (Buch), Bild 2 = zeigen, Bild 4 = zuhören.",
+						"en": "Correct: warten. In picture 3 a person sits next to a clock and waits. Picture 1 = öffnen (book), picture 2 = zeigen, picture 4 = zuhören.",
+						"tl": "Tama: warten. Sa Bild 3, may taong nakaupo sa tabi ng orasan at naghihintay. Bild 1 = öffnen (libro), Bild 2 = zeigen, Bild 4 = zuhören."
 					},
 					"goals": [
 						"A1-05-G2"
 					],
 					"refs": [
 						"W-A1-0152",
-						"W-A1-0036"
+						"W-A1-0036",
+						"W-A1-0001",
+						"W-A1-0350"
 					],
 					"options": [
 						"öffnen",
@@ -1512,84 +2762,272 @@
 						"warten"
 					],
 					"answer": 2,
-					"prompt": "Bild 3: Was macht man?",
+					"prompt": "Bild 3: Was macht der Mensch?",
 					"image": {
 						"src": "/img/a1-05-verben.svg",
 						"alt": {
-							"de": "Vier Bilder: ein offenes Buch, eine Hand zeigt auf die Tafel, eine Uhr, ein Ohr.",
-							"en": "Four pictures: an open book, a hand pointing at the board, a clock, an ear.",
-							"tl": "Apat na larawan: bukas na libro, kamay na nakaturo sa pisara, orasan, tainga."
+							"de": "Vier Bilder: ein Buch wird geöffnet, eine Lehrerin zeigt auf die Tafel, ein Mensch und eine Uhr, ein Mensch hört eine Person sprechen.",
+							"en": "Four pictures: a book is opened, a teacher points at the board, a person and a clock, a person hears someone speak.",
+							"tl": "Apat na larawan: binubuksan ang libro, itinuturo ng guro ang pisara, tao at orasan, tao na nakikinig sa nagsasalita."
 						}
 					}
 				},
 				{
 					"id": "A1-05-L08-I2",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber zeigt vier Bilder. Schauen Sie das Bild an.",
+						"en": "Frau Huber shows four pictures. Look at the picture.",
+						"tl": "Nagpapakita si Frau Huber ng apat na larawan. Tingnan ang larawan."
+					},
+					"explanation": {
+						"de": "Richtig: Sie zeigt auf die Tafel. In Bild 2 geht ihre Hand zur Tafel mit „A B C“. Das Buch öffnen (Bild 1) und warten (Bild 3) sind andere Bilder.",
+						"en": "Correct: Sie zeigt auf die Tafel. In picture 2 her hand points to the board with “A B C”. Opening the book (picture 1) and waiting (picture 3) are other pictures.",
+						"tl": "Tama: Sie zeigt auf die Tafel. Sa Bild 2, nakaturo ang kamay niya sa pisara na may “A B C”. Ang pagbukas ng libro (Bild 1) at paghihintay (Bild 3) ay ibang larawan."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0156",
+						"W-A1-0317",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0036",
+						"W-A1-0002"
+					],
+					"options": [
+						"Sie öffnet das Buch.",
+						"Sie wartet.",
+						"Sie zeigt auf die Tafel."
+					],
+					"answer": 2,
+					"prompt": "Bild 2: Was macht Frau Huber?",
+					"image": {
+						"src": "/img/a1-05-verben.svg",
+						"alt": {
+							"de": "Vier Bilder: ein Buch wird geöffnet, eine Lehrerin zeigt auf die Tafel, ein Mensch und eine Uhr, ein Mensch hört eine Person sprechen.",
+							"en": "Four pictures: a book is opened, a teacher points at the board, a person and a clock, a person hears someone speak.",
+							"tl": "Apat na larawan: binubuksan ang libro, itinuturo ng guro ang pisara, tao at orasan, tao na nakikinig sa nagsasalita."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L08-I3",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Frau Huber und Anna im Kurs. Ergänzen Sie das richtige Verb.",
+						"en": "Frau Huber and Anna in class. Complete with the correct verb.",
+						"tl": "Sina Frau Huber at Anna sa kurso. Kumpletuhin ang tamang verb."
 					},
 					"explanation": {
-						"de": "sie erklärt, er wartet (mit -et).",
-						"en": "sie erklärt, er wartet (with -et).",
-						"tl": "sie erklärt, er wartet (may -et)."
+						"de": "Richtig: „Frau Huber erklärt die Aufgabe. Anna hört gut zu.“ Die Lehrerin erklärt, Anna hört zu. „zuhören“ ist trennbar: hört … zu. „wartet“ passt zu keiner Lücke.",
+						"en": "Correct: “Frau Huber erklärt die Aufgabe. Anna hört gut zu.” The teacher explains, Anna listens. “zuhören” is separable: hört … zu. “wartet” fits neither gap.",
+						"tl": "Tama: “Frau Huber erklärt die Aufgabe. Anna hört gut zu.” Ang guro ay nagpapaliwanag, nakikinig si Anna. Ang “zuhören” ay nahahati: hört … zu. Ang “wartet” ay hindi angkop sa alinmang patlang."
 					},
 					"goals": [
 						"A1-05-G2"
 					],
 					"refs": [
 						"W-A1-0313",
-						"W-A1-0152",
-						"W-A1-0008",
+						"W-A1-0947",
+						"W-A1-0328",
+						"W-A1-0173",
 						"W-A1-0002"
 					],
-					"text": "Die Lehrerin {{1}} (erklären) die Aufgabe. Er {{2}} (warten).",
+					"text": "Frau Huber {{1}} die Aufgabe. Anna {{2}} gut zu.",
 					"gaps": {
 						"1": {
 							"accept": [
 								"erklärt"
-							]
+							],
+							"hint": "erklären"
 						},
 						"2": {
 							"accept": [
-								"wartet"
-							]
+								"hört"
+							],
+							"hint": "zuhören"
 						}
-					}
+					},
+					"bank": [
+						"erklärt",
+						"hört",
+						"wartet"
+					]
 				},
 				{
-					"id": "A1-05-L08-I3",
-					"type": "choice",
-					"skill": "hoeren",
+					"id": "A1-05-L08-I4",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Tom und Jose im Kurs. Ergänzen Sie die Verbformen mit den Wörtern unten.",
+						"en": "Tom and Jose in class. Complete the verb forms with the words below.",
+						"tl": "Sina Tom at Jose sa kurso. Kumpletuhin ang mga anyo ng verb gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Sie hören: „Bitte hören Sie gut zu.“",
-						"en": "You hear: „Bitte hören Sie gut zu.“",
-						"tl": "Naririnig mo: „Bitte hören Sie gut zu.“"
+						"de": "Richtig: „Tom wartet hier. Jose, du öffnest das Buch.“ Bei „Tom“ (er) endet das Verb auf -et, bei „du“ auf -est. „wartest“ und „öffnet“ gehören zu den anderen Personen.",
+						"en": "Correct: “Tom wartet hier. Jose, du öffnest das Buch.” With “Tom” (er) the verb ends in -et, with “du” in -est. “wartest” and “öffnet” belong to the other persons.",
+						"tl": "Tama: “Tom wartet hier. Jose, du öffnest das Buch.” Sa “Tom” (er), nagtatapos sa -et ang verb, sa “du” sa -est. Ang “wartest” at “öffnet” ay para sa ibang tao."
 					},
 					"goals": [
 						"A1-05-G2"
 					],
 					"refs": [
-						"W-A1-0947",
+						"W-A1-0152",
+						"W-A1-0157",
+						"W-A1-0007",
+						"W-A1-0003",
+						"W-A1-0073"
+					],
+					"text": "Tom {{1}} hier. Jose, du {{2}} das Buch.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"wartet"
+							]
+						},
+						"2": {
+							"accept": [
+								"öffnest"
+							]
+						}
+					},
+					"bank": [
+						"wartet",
+						"öffnest",
+						"wartest",
+						"öffnet"
+					]
+				},
+				{
+					"id": "A1-05-L08-I5",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Frau Huber gibt eine Anweisung. Hören Sie.",
+						"en": "Frau Huber gives an instruction. Listen.",
+						"tl": "May instruction si Frau Huber. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Öffnen Sie bitte das Buch.“ Das Verb ist „öffnen“. Bei „holen“ nimmt man das Buch von einem anderen Ort, bei „zeigen“ hält man es hoch.",
+						"en": "You hear: “Öffnen Sie bitte das Buch.” The verb is “öffnen”. With “holen” you go and fetch the book from somewhere else, with “zeigen” you hold it up.",
+						"tl": "Naririnig mo: “Öffnen Sie bitte das Buch.” Ang verb ay “öffnen”. Sa “holen”, kukunin mo ang libro mula sa ibang lugar, sa “zeigen”, itataas mo ito."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0157",
 						"W-A1-0009",
 						"W-A1-0091",
-						"W-A1-0173",
-						"W-A1-0011"
+						"W-A1-0036",
+						"W-A1-0126"
 					],
 					"options": [
-						"Wir sollen schreiben.",
-						"Wir sollen zuhören."
+						"das Buch öffnen",
+						"das Buch holen",
+						"das Buch zeigen"
+					],
+					"answer": 0,
+					"prompt": "Was sollen Sie machen?",
+					"audioText": "Öffnen Sie bitte das Buch.",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L08-I6",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Anna sagt über sich: Sie lernt Deutsch. Wählen Sie das richtige Verb.",
+						"en": "Anna says about herself: she learns German. Choose the correct verb.",
+						"tl": "Sinasabi ni Anna ang tungkol sa sarili: nag-aaral siya ng German. Piliin ang tamang verb."
+					},
+					"explanation": {
+						"de": "Richtig: „Ich lerne Deutsch.“ Bei „ich“ endet das Verb auf -e. „lernen“ passt zu wir/Sie, „lernt“ zu er/sie/ihr.",
+						"en": "Correct: “Ich lerne Deutsch.” With “ich” the verb ends in -e. “lernen” goes with wir/Sie, “lernt” with er/sie/ihr.",
+						"tl": "Tama: “Ich lerne Deutsch.” Sa “ich”, nagtatapos sa -e ang verb. Ang “lernen” ay para sa wir/Sie, ang “lernt” sa er/sie/ihr."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0146",
+						"W-A1-0006",
+						"W-A1-0304"
+					],
+					"options": [
+						"lernen",
+						"lerne",
+						"lernt"
 					],
 					"answer": 1,
-					"audioText": "Bitte hören Sie gut zu.",
-					"audioOnly": true
+					"prompt": "Anna: „Ich … Deutsch.“"
+				},
+				{
+					"id": "A1-05-L08-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Frau Huber gibt Ihnen ein Blatt. Lesen Sie.",
+						"en": "Frau Huber puts a note on the desk. Read it.",
+						"tl": "Nag-iwan si Frau Huber ng papel sa mesa. Basahin."
+					},
+					"explanation": {
+						"de": "Richtig: ein Blatt Papier. „Holen Sie“ steht bei „ein Blatt Papier“. Das Buch bringen Sie (Sie haben es schon). Vom Heft steht nichts auf dem Zettel.",
+						"en": "Correct: ein Blatt Papier. “Holen Sie” goes with “ein Blatt Papier”. You bring the book (you already have it). The note says nothing about the exercise book.",
+						"tl": "Tama: ein Blatt Papier. Ang “Holen Sie” ay para sa “ein Blatt Papier”. Dadalhin mo ang libro (mayroon ka na nito). Walang sinabi ang papel tungkol sa kuwaderno."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0155",
+						"W-A1-0154",
+						"W-A1-0328",
+						"W-A1-0009",
+						"W-A1-0091",
+						"W-A1-0036"
+					],
+					"options": [
+						"ein Blatt Papier",
+						"das Buch",
+						"das Heft"
+					],
+					"answer": 0,
+					"prompt": "Blatt von Frau Huber: „Holen Sie bitte ein Blatt Papier. Bringen Sie das Buch.“\n\nWas holen Sie?"
+				},
+				{
+					"id": "A1-05-L08-I8",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Frau Huber sagt: „Warten Sie hier, bitte.“ Sie antworten höflich. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Frau Huber says: “Warten Sie hier, bitte.” You answer politely. What do you say? Choose, then say it aloud.",
+						"tl": "Sabi ni Frau Huber: “Warten Sie hier, bitte.” Sumagot ka nang magalang. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „ich warte“. Bei „ich“ endet das Verb auf -e. „wartet“ ist für er/sie/ihr, „warten“ für wir/Sie.",
+						"en": "Correct: “ich warte”. With “ich” the verb ends in -e. “wartet” is for er/sie/ihr, “warten” for wir/Sie.",
+						"tl": "Tama: “ich warte”. Sa “ich”, nagtatapos sa -e ang verb. Ang “wartet” ay para sa er/sie/ihr, ang “warten” ay para sa wir/Sie."
+					},
+					"goals": [
+						"A1-05-G2"
+					],
+					"refs": [
+						"W-A1-0152",
+						"W-A1-0006",
+						"W-A1-0092",
+						"W-A1-0073"
+					],
+					"options": [
+						"Danke, ich wartet hier.",
+						"Danke, ich warte hier.",
+						"Danke, ich warten hier."
+					],
+					"answer": 1
 				}
 			]
 		},
@@ -1600,25 +3038,70 @@
 				"en": "Homework and break",
 				"tl": "Takdang-aralin at pahinga"
 			},
+			"intro": {
+				"situation": {
+					"de": "Im Kursraum ist ein Plan. Anna liest: Unterricht, Pause, Hausübung. Sie fragt: Was ist die Hausübung?",
+					"en": "There is a plan in the classroom. Anna reads: Unterricht, Pause, Hausübung. She wants to know: what is the homework?",
+					"tl": "May plano sa silid-aralan. Binasa ni Anna: Unterricht, Pause, Hausübung. Gusto niyang malaman: ano ang takdang-aralin?"
+				},
+				"goal": {
+					"de": "einen Kursplan lesen und Unterricht, Pause und Hausübung darin finden",
+					"en": "read a course plan and find class, break and homework in it",
+					"tl": "basahin ang plano ng kurso at hanapin ang klase, pahinga at takdang-aralin"
+				}
+			},
 			"introduces": [
 				"W-A1-0316",
 				"W-A1-0318"
 			],
 			"cards": [
 				{
+					"kind": "phrase",
 					"phrase": "die Hausübung",
 					"note": {
-						"de": "In Österreich sagt man „Hausübung“. (in Deutschland: „Hausaufgabe“)",
-						"en": "In Austria you say “Hausübung” (in Germany: “Hausaufgabe”).",
-						"tl": "Sa Austria: “Hausübung” (sa Germany: “Hausaufgabe”)."
+						"de": "Die Hausübung machen Sie zu Hause, nicht im Unterricht. Frau Huber sagt: „Die Hausübung ist Seite 20.“",
+						"en": "You do the Hausübung (homework) at home, not in class. Frau Huber says: “Die Hausübung ist Seite 20.”",
+						"tl": "Ginagawa mo ang Hausübung (takdang-aralin) sa bahay, hindi sa klase. Sabi ni Frau Huber: “Die Hausübung ist Seite 20.”"
 					}
 				},
 				{
+					"kind": "culture",
+					"phrase": "Hausübung (in Deutschland: Hausaufgabe)",
+					"note": {
+						"de": "In Österreich sagt man „die Hausübung“. In Deutschland sagt man „die Hausaufgabe“. Beide Wörter sind „die“-Wörter.",
+						"en": "In Austria people say “die Hausübung”. In Germany they say “die Hausaufgabe”. Both words take “die”.",
+						"tl": "Sa Austria, “die Hausübung” ang sinasabi. Sa Germany, “die Hausaufgabe”. Parehong “die” ang dalawang salita."
+					}
+				},
+				{
+					"kind": "rule",
+					"phrase": "die Übung → die Hausübung",
+					"note": {
+						"de": "Bei langen Wörtern gilt der Artikel vom letzten Teil: Haus + die Übung = die Hausübung.",
+						"en": "In long words the article comes from the last part: Haus + die Übung = die Hausübung.",
+						"tl": "Sa mahahabang salita, ang article ay mula sa huling bahagi: Haus + die Übung = die Hausübung."
+					},
+					"examples": [
+						"Die Hausübung ist Seite 20.",
+						"Ich mache die Hausübung."
+					]
+				},
+				{
+					"kind": "phrase",
 					"phrase": "die Pause",
 					"note": {
-						"de": "Um 10:30 Uhr ist Pause.",
-						"en": "At 10:30 there is a break.",
-						"tl": "Pahinga ng 10:30."
+						"de": "In der Pause machen alle Pause. Dann lernen Sie nicht. Nach der Pause ist wieder Unterricht.",
+						"en": "In the break (Pause) everybody takes a break. You do not study. After the break class starts again.",
+						"tl": "Sa Pause, nagpapahinga ang lahat. Hindi ka nag-aaral. Pagkatapos ng Pause, may klase ulit."
+					}
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Wann ist Pause? – Um 10:30 Uhr.",
+					"note": {
+						"de": "Ein Kurs hat einen Plan mit Zeiten wie 9:00 oder 10:30. Mit „Wann?“ fragen Sie nach der Zeit. Die Antwort: „Um 10:30 Uhr.“",
+						"en": "A course has a plan with times like 9:00 or 10:30. With “Wann?” you ask for the time. The answer: “Um 10:30 Uhr.” (at 10:30)",
+						"tl": "May plano ang kurso na may oras tulad ng 9:00 o 10:30. Sa “Wann?” itinatanong ang oras. Ang sagot: “Um 10:30 Uhr.” (ng 10:30)"
 					}
 				}
 			],
@@ -1628,14 +3111,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Anna liest den Plan im Kursraum. Schauen Sie das Bild an.",
+						"en": "Anna reads the plan in the classroom. Look at the picture.",
+						"tl": "Binabasa ni Anna ang plano sa silid-aralan. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Im Plan: „Hausübung: Seite 20“.",
-						"en": "The plan says: „Hausübung: Seite 20“.",
-						"tl": "Sabi sa plano: „Hausübung: Seite 20“."
+						"de": "Richtig: Seite 20. Im Plan steht: „Hausübung: Seite 20“. Seite 12 und Aufgabe 3 stehen nicht im Plan.",
+						"en": "Correct: Seite 20. The plan says: “Hausübung: Seite 20”. Seite 12 and Aufgabe 3 are not in the plan.",
+						"tl": "Tama: Seite 20. Sabi sa plano: “Hausübung: Seite 20”. Wala sa plano ang Seite 12 at Aufgabe 3."
 					},
 					"goals": [
 						"A1-05-G5"
@@ -1647,11 +3130,11 @@
 						"W-A1-0002"
 					],
 					"options": [
-						"Seite 20",
 						"Seite 12",
+						"Seite 20",
 						"Aufgabe 3"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Was ist die Hausübung?",
 					"image": {
 						"src": "/img/a1-05-plan.svg",
@@ -1667,14 +3150,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Anna liest den Plan im Kursraum. Schauen Sie das Bild an.",
+						"en": "Anna reads the plan in the classroom. Look at the picture.",
+						"tl": "Binabasa ni Anna ang plano sa silid-aralan. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Im Plan: „Pause: 10:30“.",
-						"en": "The plan says: „Pause: 10:30“.",
-						"tl": "Sabi sa plano: „Pause: 10:30“."
+						"de": "Richtig: um 10:30 Uhr. Im Plan steht: „Pause: 10:30“. 9:00 steht neben „Unterricht“, 12:00 neben „Ende“.",
+						"en": "Correct: um 10:30 Uhr. The plan says: “Pause: 10:30”. 9:00 is next to “Unterricht”, 12:00 next to “Ende”.",
+						"tl": "Tama: um 10:30 Uhr. Sabi sa plano: “Pause: 10:30”. Ang 9:00 ay katabi ng “Unterricht”, ang 12:00 ay katabi ng “Ende”."
 					},
 					"goals": [
 						"A1-05-G5"
@@ -1683,11 +3166,11 @@
 						"W-A1-0318"
 					],
 					"options": [
-						"um 9:00 Uhr",
 						"um 10:30 Uhr",
+						"um 9:00 Uhr",
 						"um 12:00 Uhr"
 					],
-					"answer": 1,
+					"answer": 0,
 					"prompt": "Wann ist Pause?",
 					"image": {
 						"src": "/img/a1-05-plan.svg",
@@ -1701,33 +3184,174 @@
 				{
 					"id": "A1-05-L09-I3",
 					"type": "choice",
-					"skill": "grammatikWortschatz",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Anna liest den Plan im Kursraum. Schauen Sie das Bild an.",
+						"en": "Anna reads the plan in the classroom. Look at the picture.",
+						"tl": "Binabasa ni Anna ang plano sa silid-aralan. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "die Übung → die Hausübung.",
-						"en": "die Übung (exercise) → die Hausübung (homework).",
-						"tl": "die Übung → die Hausübung (takdang-aralin)."
+						"de": "Richtig: 9:00. Im Plan steht: „Unterricht: 9:00“. 10:30 ist bei „Pause“, 12:00 bei „Ende“.",
+						"en": "Correct: 9:00. The plan says: “Unterricht: 9:00”. 10:30 is at “Pause”, 12:00 at “Ende”.",
+						"tl": "Tama: 9:00. Sabi sa plano: “Unterricht: 9:00”. Ang 10:30 ay sa “Pause”, ang 12:00 sa “Ende”."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0321"
+					],
+					"options": [
+						"10:30",
+						"12:00",
+						"9:00"
+					],
+					"answer": 2,
+					"prompt": "Neben „Unterricht“ steht …",
+					"image": {
+						"src": "/img/a1-05-plan.svg",
+						"alt": {
+							"de": "Ein Plan für den Deutschkurs mit Uhrzeiten und der Hausübung.",
+							"en": "A plan for the German course with times and the homework.",
+							"tl": "Plano ng kursong German na may oras at takdang-aralin."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L09-I4",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Anna sagt zu Frau Huber, was sie macht. Wählen Sie den richtigen Artikel.",
+						"en": "Anna tells Frau Huber what she does. Choose the correct article.",
+						"tl": "Sinasabi ni Anna kay Frau Huber ang ginagawa niya. Piliin ang tamang article."
+					},
+					"explanation": {
+						"de": "Richtig: die Hausübung. Das Wort endet mit „Übung“, und „die Übung“ ist ein „die“-Wort. Darum auch „die Hausübung“.",
+						"en": "Correct: die Hausübung. The word ends in “Übung”, and “die Übung” is a “die”-word. So “die Hausübung” too.",
+						"tl": "Tama: die Hausübung. Nagtatapos ang salita sa “Übung”, at ang “die Übung” ay salitang “die”. Kaya “die Hausübung” din."
 					},
 					"goals": [
 						"A1-05-G1"
 					],
 					"refs": [
 						"W-A1-0316",
+						"W-A1-0006",
 						"W-A1-0001",
 						"W-A1-0002",
 						"W-A1-0003"
 					],
 					"options": [
-						"die",
 						"der",
+						"die",
 						"das"
 					],
+					"answer": 1,
+					"prompt": "Anna: „Ich mache … Hausübung.“"
+				},
+				{
+					"id": "A1-05-L09-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Frau Huber sagt Anna, was sie machen soll. Ergänzen Sie das Wort mit den Wörtern unten.",
+						"en": "Frau Huber tells Anna what to do. Complete the word with the words below.",
+						"tl": "Sinasabi ni Frau Huber kay Anna ang gagawin. Kumpletuhin ang salita gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „die Hausübung“. In Österreich sagt man „Hausübung“ für die Aufgabe nach dem Kurs. Eine „Pause“ hat keine Seite, und eine „Prüfung“ ist nicht „Seite 20“.",
+						"en": "Correct: “die Hausübung”. In Austria people say “Hausübung” for the work after the course. A “Pause” has no page, and a “Prüfung” is not “Seite 20”.",
+						"tl": "Tama: “die Hausübung”. Sa Austria, “Hausübung” ang sinasabi para sa gawain pagkatapos ng kurso. Ang “Pause” ay walang pahina, at ang “Prüfung” ay hindi “Seite 20”."
+					},
+					"goals": [
+						"A1-05-G1"
+					],
+					"refs": [
+						"W-A1-0316",
+						"W-A1-0328",
+						"W-A1-0092",
+						"W-A1-0002"
+					],
+					"text": "Frau Huber: „Die {{1}} ist Seite 20.“ – Anna: „Danke, Frau Huber.“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Hausübung"
+							]
+						}
+					},
+					"bank": [
+						"Hausübung",
+						"Pause",
+						"Prüfung"
+					]
+				},
+				{
+					"id": "A1-05-L09-I6",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Frau Huber sagt am Ende vom Unterricht etwas. Hören Sie.",
+						"en": "Frau Huber says something at the end of class. Listen.",
+						"tl": "May sinabi si Frau Huber sa dulo ng klase. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Die Hausübung ist Seite zwanzig. Danke und auf Wiedersehen!“ zwanzig = 20. zwölf (12) und zweiundzwanzig (22) hören Sie nicht.",
+						"en": "You hear: “Die Hausübung ist Seite zwanzig. Danke und auf Wiedersehen!” zwanzig = 20. You do not hear zwölf (12) or zweiundzwanzig (22).",
+						"tl": "Naririnig mo: “Die Hausübung ist Seite zwanzig. Danke und auf Wiedersehen!” zwanzig = 20. Hindi mo naririnig ang zwölf (12) o zweiundzwanzig (22)."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0316",
+						"W-A1-0293",
+						"W-A1-0383",
+						"W-A1-0328",
+						"W-A1-0092",
+						"W-A1-0046"
+					],
+					"options": [
+						"Seite 12",
+						"Seite 20",
+						"Seite 22"
+					],
+					"answer": 1,
+					"prompt": "Was ist die Hausübung?",
+					"audioText": "Frau Huber: Die Hausübung ist Seite zwanzig. Danke und auf Wiedersehen!",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L09-I7",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Lesen Sie. Ist die Aussage richtig oder falsch?",
+						"en": "Read. Is the statement right or wrong?",
+						"tl": "Basahin. Tama o mali ang pahayag?"
+					},
+					"explanation": {
+						"de": "Richtig. Im Text steht: „Ich mache die Aufgabe in der Pause.“ Die Aussage sagt dasselbe.",
+						"en": "Right. The text says: “Ich mache die Aufgabe in der Pause.” The statement says the same.",
+						"tl": "Tama. Sabi sa teksto: “Ich mache die Aufgabe in der Pause.” Pareho ang sinasabi ng pahayag."
+					},
+					"goals": [
+						"A1-05-G5"
+					],
+					"refs": [
+						"W-A1-0318",
+						"W-A1-0316",
+						"W-A1-0006",
+						"W-A1-0001",
+						"W-A1-0002",
+						"W-A1-0003"
+					],
+					"options": [
+						"richtig",
+						"falsch"
+					],
 					"answer": 0,
-					"prompt": "… Hausübung"
+					"prompt": "Tom schreibt: „Die Hausübung ist Seite 20. Ich habe das Heft hier. Ich mache die Aufgabe in der Pause.“\n\nAussage: Tom macht die Aufgabe in der Pause."
 				}
 			]
 		},
@@ -1738,32 +3362,61 @@
 				"en": "What does that mean?",
 				"tl": "Ano ang ibig sabihin niyan?"
 			},
+			"intro": {
+				"situation": {
+					"de": "Ali versteht ein Wort nicht. Er hebt die Hand und fragt Frau Huber: „Was bedeutet „Thema“?“",
+					"en": "Ali does not understand a word. He raises his hand and asks Frau Huber: “Was bedeutet “Thema”?”",
+					"tl": "Hindi naiintindihan ni Ali ang isang salita. Itinaas niya ang kamay at tinanong si Frau Huber: “Was bedeutet “Thema”?”"
+				},
+				"goal": {
+					"de": "im Kurs nachfragen: „Was bedeutet …?“, „Wie sagt man … auf Deutsch?“ und „Wiederholen Sie bitte.“",
+					"en": "ask in class: “Was bedeutet …?”, “Wie sagt man … auf Deutsch?” and “Wiederholen Sie bitte.”",
+					"tl": "magtanong sa kurso: “Was bedeutet …?”, “Wie sagt man … auf Deutsch?” at “Wiederholen Sie bitte.”"
+				}
+			},
 			"introduces": [
 				"W-A1-0315"
 			],
 			"cards": [
 				{
+					"kind": "phrase",
 					"phrase": "Was bedeutet „Thema“?",
 					"note": {
-						"de": "Sie kennen ein Wort nicht? Fragen Sie!",
-						"en": "You don’t know a word? Ask!",
-						"tl": "Hindi mo alam ang salita? Magtanong!"
+						"de": "So fragen Sie nach der Bedeutung. Frau Huber erklärt das Wort. Sie fragen mit „Was bedeutet …?“",
+						"en": "This is how you ask for the meaning. Frau Huber explains the word. You ask with “Was bedeutet …?”",
+						"tl": "Ganito magtanong ng kahulugan. Ipapaliwanag ni Frau Huber ang salita. Magtatanong ka ng “Was bedeutet …?”"
 					}
 				},
 				{
-					"phrase": "Wie sagt man „book“ auf Deutsch?",
+					"kind": "rule",
+					"phrase": "Was bedeutet …? · Wie sagt man …? · Wie schreibt man …?",
 					"note": {
-						"de": "Antwort: „das Buch“.",
-						"en": "Answer: “das Buch”.",
-						"tl": "Sagot: “das Buch”."
+						"de": "Mit „Was bedeutet …?“ fragen Sie nach der Bedeutung. Mit „Wie sagt man …?“ fragen Sie nach dem deutschen Wort. Mit „Wie schreibt man …?“ fragen Sie nach den Buchstaben.",
+						"en": "With “Was bedeutet …?” you ask for the meaning. With “Wie sagt man …?” you ask for the German word. With “Wie schreibt man …?” you ask for the letters.",
+						"tl": "Sa “Was bedeutet …?” itinatanong ang kahulugan. Sa “Wie sagt man …?” itinatanong ang salitang German. Sa “Wie schreibt man …?” itinatanong ang mga titik."
+					},
+					"examples": [
+						"Was bedeutet „Heft“?",
+						"Wie sagt man „book“ auf Deutsch?",
+						"Wie schreibt man „Kugelschreiber“?"
+					]
+				},
+				{
+					"kind": "phrase",
+					"phrase": "Wie sagt man „book“ auf Deutsch? – Das Buch.",
+					"note": {
+						"de": "Sie kennen das Wort auf Englisch oder Tagalog, aber nicht auf Deutsch? Dann fragen Sie so. Die Antwort: „Das Buch.“",
+						"en": "You know the word in English or Tagalog but not in German? Then ask like this. The answer: “Das Buch.”",
+						"tl": "Alam mo ang salita sa English o Tagalog pero hindi sa German? Ganito ang tanong. Ang sagot: “Das Buch.”"
 					}
 				},
 				{
-					"phrase": "Können Sie das bitte erklären?",
+					"kind": "phrase",
+					"phrase": "Wiederholen Sie bitte. – Langsam, bitte.",
 					"note": {
-						"de": "Höfliche Bitte an die Lehrerin.",
-						"en": "A polite request to the teacher.",
-						"tl": "Magalang na pakiusap sa guro."
+						"de": "Frau Huber spricht schnell? Dann bitten Sie: „Wiederholen Sie bitte.“ oder „Langsam, bitte.“",
+						"en": "Frau Huber speaks fast? Then ask: “Wiederholen Sie bitte.” (please repeat) or “Langsam, bitte.” (slowly, please)",
+						"tl": "Mabilis magsalita si Frau Huber? Sabihin: “Wiederholen Sie bitte.” (pakiulit) o “Langsam, bitte.” (dahan-dahan, please)"
 					}
 				}
 			],
@@ -1773,14 +3426,14 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Ali hat eine Frage an Frau Huber. Schauen Sie das Bild an.",
+						"en": "Ali has a question for Frau Huber. Look at the picture.",
+						"tl": "May tanong si Ali kay Frau Huber. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "Ali fragt: „Was bedeutet „Thema“?“",
-						"en": "Answer: Ali fragt: „Was bedeutet „Thema“?“",
-						"tl": "Sagot: Ali fragt: „Was bedeutet „Thema“?“"
+						"de": "Richtig: was „Thema“ bedeutet. In der Sprechblase steht: „Was bedeutet „Thema“?“ Nach der Schreibweise würde Ali mit „Wie schreibt man …?“ fragen.",
+						"en": "Correct: was “Thema” bedeutet. The speech bubble says: “Was bedeutet “Thema”?” For the spelling Ali would ask “Wie schreibt man …?”",
+						"tl": "Tama: was “Thema” bedeutet. Nakasulat sa bubble: “Was bedeutet “Thema”?” Para sa baybay, magtatanong si Ali ng “Wie schreibt man …?”"
 					},
 					"goals": [
 						"A1-05-G3"
@@ -1788,24 +3441,24 @@
 					"refs": [
 						"W-A1-0315",
 						"W-A1-0323",
+						"W-A1-0328",
 						"W-A1-0041",
 						"W-A1-0036",
-						"W-A1-0135",
-						"W-A1-0002"
+						"W-A1-0135"
 					],
 					"options": [
-						"was „Thema“ bedeutet",
 						"wie man „Thema“ schreibt",
-						"wo die Lehrerin wohnt"
+						"wo Frau Huber wohnt",
+						"was „Thema“ bedeutet"
 					],
-					"answer": 0,
+					"answer": 2,
 					"prompt": "Was möchte Ali wissen?",
 					"image": {
 						"src": "/img/a1-05-frage.svg",
 						"alt": {
-							"de": "Ali zeigt auf und fragt die Lehrerin etwas.",
+							"de": "Ali hebt die Hand und fragt die Lehrerin etwas.",
 							"en": "Ali raises his hand and asks the teacher something.",
-							"tl": "Nagtaas ng kamay si Ali at may tinatanong sa guro."
+							"tl": "Itinaas ni Ali ang kamay at may tinatanong sa guro."
 						}
 					}
 				},
@@ -1814,46 +3467,44 @@
 					"type": "choice",
 					"skill": "sprechen",
 					"instruction": {
-						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
-						"en": "What do you say? Choose, then say it aloud.",
-						"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+						"de": "Sie verstehen das Wort „Heft“ nicht. Sie fragen Frau Huber. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You do not understand the word “Heft”. You ask Frau Huber. What do you say? Choose, then say it aloud.",
+						"tl": "Hindi mo naiintindihan ang salitang “Heft”. Tinanong mo si Frau Huber. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "Nach der Bedeutung fragen: „Was bedeutet …?“",
-						"en": "Ask for the meaning: “Was bedeutet …?”",
-						"tl": "Itanong ang kahulugan: “Was bedeutet …?”"
+						"de": "Richtig: „Was bedeutet „Heft“?“ Sie wollen die Bedeutung wissen. „Wie schreibt man …?“ fragt nach den Buchstaben, „Wo ist …?“ fragt nach dem Ort.",
+						"en": "Correct: “Was bedeutet “Heft”?” You want to know the meaning. “Wie schreibt man …?” asks for the letters, “Wo ist …?” asks for the place.",
+						"tl": "Tama: “Was bedeutet “Heft”?” Gusto mong malaman ang kahulugan. Ang “Wie schreibt man …?” ay tungkol sa mga titik, ang “Wo ist …?” ay tungkol sa lugar."
 					},
 					"goals": [
 						"A1-05-G3"
 					],
 					"refs": [
 						"W-A1-0315",
-						"W-A1-0006",
-						"W-A1-0009",
+						"W-A1-0041",
 						"W-A1-0036",
-						"W-A1-0003"
+						"W-A1-0037"
 					],
 					"options": [
+						"Wie schreibt man „Heft“?",
 						"Wo ist „Heft“?",
-						"Ich heiße „Heft“.",
 						"Was bedeutet „Heft“?"
 					],
-					"answer": 2,
-					"prompt": "Sie verstehen das Wort „Heft“ nicht."
+					"answer": 2
 				},
 				{
 					"id": "A1-05-L10-I3",
 					"type": "choice",
 					"skill": "sprechen",
 					"instruction": {
-						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
-						"en": "What do you say? Choose, then say it aloud.",
-						"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+						"de": "Sie wissen das deutsche Wort für „pen“ nicht. Sie fragen Anna. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "You do not know the German word for “pen”. You ask Anna. What do you say? Choose, then say it aloud.",
+						"tl": "Hindi mo alam ang salitang German para sa “pen”. Tinanong mo si Anna. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "„Wie sagt man … auf Deutsch?“",
-						"en": "“Wie sagt man … auf Deutsch?”",
-						"tl": "“Wie sagt man … auf Deutsch?”"
+						"de": "Richtig: „Wie sagt man „pen“ auf Deutsch?“ Sie suchen das deutsche Wort. „Wie schreibt man …?“ fragt nach den Buchstaben von einem Wort, das Sie schon kennen.",
+						"en": "Correct: “Wie sagt man “pen” auf Deutsch?” You are looking for the German word. “Wie schreibt man …?” asks for the letters of a word you already know.",
+						"tl": "Tama: “Wie sagt man “pen” auf Deutsch?” Hinahanap mo ang salitang German. Ang “Wie schreibt man …?” ay tungkol sa mga titik ng salitang alam mo na."
 					},
 					"goals": [
 						"A1-05-G3"
@@ -1862,17 +3513,160 @@
 						"W-A1-0130",
 						"W-A1-0304",
 						"W-A1-0041",
-						"W-A1-0009",
-						"W-A1-0036",
-						"W-A1-0135"
+						"W-A1-0037"
 					],
 					"options": [
-						"Was bedeutet Deutsch?",
-						"Wie sagt man „pen“ auf Deutsch?",
-						"Wie schreibt man „pen“?"
+						"Wie schreibt man „pen“?",
+						"Wo ist „pen“?",
+						"Wie sagt man „pen“ auf Deutsch?"
+					],
+					"answer": 2
+				},
+				{
+					"id": "A1-05-L10-I4",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Anna fragt Frau Huber etwas. Hören Sie.",
+						"en": "Anna asks Frau Huber something. Listen.",
+						"tl": "May tinanong si Anna kay Frau Huber. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Frau Huber, was bedeutet „Aufgabe“?“ Anna fragt nach der Bedeutung. Von Buchstaben und vom Ort sagt sie nichts.",
+						"en": "You hear: “Frau Huber, was bedeutet “Aufgabe”?” Anna asks for the meaning. She says nothing about letters or place.",
+						"tl": "Naririnig mo: “Frau Huber, was bedeutet “Aufgabe”?” Kahulugan ang tinatanong ni Anna. Walang sinabi tungkol sa titik o lugar."
+					},
+					"goals": [
+						"A1-05-G3"
+					],
+					"refs": [
+						"W-A1-0315",
+						"W-A1-0300",
+						"W-A1-0328",
+						"W-A1-0041",
+						"W-A1-0036",
+						"W-A1-0002"
+					],
+					"options": [
+						"Wie man „Aufgabe“ schreibt.",
+						"Was „Aufgabe“ bedeutet.",
+						"Wo die Aufgabe ist."
 					],
 					"answer": 1,
-					"prompt": "Sie wissen das deutsche Wort für „pen“ nicht."
+					"prompt": "Was fragt Anna?",
+					"audioText": "Anna: Frau Huber, was bedeutet „Aufgabe“?",
+					"audioOnly": true
+				},
+				{
+					"id": "A1-05-L10-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ali und Anna fragen im Kurs. Ergänzen Sie die Fragen mit den Wörtern unten.",
+						"en": "Ali and Anna ask questions in class. Complete the questions with the words below.",
+						"tl": "Nagtatanong sina Ali at Anna sa kurso. Kumpletuhin ang mga tanong gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „Was bedeutet …?“ und „Wie sagt man …?“ Zu „was“ passt „bedeutet“ (er/sie/es), zu „man“ passt „sagt“. „bedeuten“ und „sagen“ sind die Formen für wir/Sie.",
+						"en": "Correct: “Was bedeutet …?” and “Wie sagt man …?” “was” goes with “bedeutet” (er/sie/es), “man” goes with “sagt”. “bedeuten” and “sagen” are the forms for wir/Sie.",
+						"tl": "Tama: “Was bedeutet …?” at “Wie sagt man …?” Ang “was” ay sinasamahan ng “bedeutet” (er/sie/es), ang “man” ng “sagt”. Ang “bedeuten” at “sagen” ay mga anyo para sa wir/Sie."
+					},
+					"goals": [
+						"A1-05-G3"
+					],
+					"refs": [
+						"W-A1-0315",
+						"W-A1-0130",
+						"W-A1-0041",
+						"W-A1-0386",
+						"W-A1-0036",
+						"W-A1-0304"
+					],
+					"text": "Ali: „Entschuldigung, was {{1}} „Pause“?“ – Anna: „Wie {{2}} man „book“ auf Deutsch?“",
+					"gaps": {
+						"1": {
+							"accept": [
+								"bedeutet"
+							]
+						},
+						"2": {
+							"accept": [
+								"sagt"
+							]
+						}
+					},
+					"bank": [
+						"bedeutet",
+						"sagt",
+						"bedeuten",
+						"sagen"
+					]
+				},
+				{
+					"id": "A1-05-L10-I6",
+					"type": "choice",
+					"skill": "lesen",
+					"instruction": {
+						"de": "Tom und Maria sprechen im Kurs. Lesen Sie.",
+						"en": "Tom and Maria talk in class. Read it.",
+						"tl": "Nag-uusap sina Tom at Maria sa kurso. Basahin."
+					},
+					"explanation": {
+						"de": "Richtig: wie man „Kugelschreiber“ schreibt. Tom fragt „Wie schreibt man …?“ und Maria sagt die Buchstaben. Nach der Bedeutung fragt man mit „Was bedeutet …?“.",
+						"en": "Correct: how “Kugelschreiber” is written. Tom asks “Wie schreibt man …?” and Maria says the letters. For the meaning you ask “Was bedeutet …?”.",
+						"tl": "Tama: kung paano isulat ang “Kugelschreiber”. Nagtanong si Tom ng “Wie schreibt man …?” at sinabi ni Maria ang mga titik. Para sa kahulugan, “Was bedeutet …?” ang tanong."
+					},
+					"goals": [
+						"A1-05-G3"
+					],
+					"refs": [
+						"W-A1-0145",
+						"W-A1-0290",
+						"W-A1-0322",
+						"W-A1-0041",
+						"W-A1-0386",
+						"W-A1-0036",
+						"W-A1-0001"
+					],
+					"options": [
+						"was „Kugelschreiber“ bedeutet",
+						"wie man „Kugelschreiber“ schreibt",
+						"wo der Kugelschreiber ist"
+					],
+					"answer": 1,
+					"prompt": "Tom: Entschuldigung, wie schreibt man „Kugelschreiber“?\nMaria: K-U-G-E-L-S-C-H-R-E-I-B-E-R.\n\nWas fragt Tom?"
+				},
+				{
+					"id": "A1-05-L10-I7",
+					"type": "choice",
+					"skill": "sprechen",
+					"instruction": {
+						"de": "Frau Huber spricht sehr schnell. Sie verstehen nichts. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "Frau Huber speaks very fast. You understand nothing. What do you say? Choose, then say it aloud.",
+						"tl": "Napakabilis magsalita ni Frau Huber. Wala kang maintindihan. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+					},
+					"explanation": {
+						"de": "Richtig: „Langsam, bitte. Wiederholen Sie bitte.“ So bitten Sie um langsames Sprechen und um Wiederholung. „Auf Wiedersehen“ sagt man beim Gehen, „keine Hausübung“ passt nicht zur Situation.",
+						"en": "Correct: “Langsam, bitte. Wiederholen Sie bitte.” This is how you ask for slower speech and a repeat. “Auf Wiedersehen” is said when leaving, “keine Hausübung” does not fit the situation.",
+						"tl": "Tama: “Langsam, bitte. Wiederholen Sie bitte.” Ganito humiling ng mas mabagal na pagsasalita at pag-ulit. Ang “Auf Wiedersehen” ay sinasabi kapag aalis, ang “keine Hausübung” ay hindi angkop sa sitwasyon."
+					},
+					"goals": [
+						"A1-05-G3"
+					],
+					"refs": [
+						"W-A1-0311",
+						"W-A1-0184",
+						"W-A1-0383",
+						"W-A1-0006",
+						"W-A1-0009",
+						"W-A1-0092"
+					],
+					"options": [
+						"Danke, auf Wiedersehen.",
+						"Langsam, bitte. Wiederholen Sie bitte.",
+						"Ich habe keine Hausübung."
+					],
+					"answer": 1
 				}
 			]
 		},
@@ -1883,30 +3677,67 @@
 				"en": "Learning for everyone",
 				"tl": "Pag-aaral para sa lahat"
 			},
+			"intro": {
+				"situation": {
+					"de": "Im Deutschkurs in Wien sitzen Frauen und Männer zusammen. Anna und Tom lernen beide Deutsch. Frau Huber ist die Lehrerin, Herr Bauer ist auch Lehrer.",
+					"en": "In the German course in Vienna women and men sit together. Anna and Tom both learn German. Frau Huber is a teacher, Herr Bauer is a teacher too.",
+					"tl": "Sa Deutschkurs sa Vienna, magkasamang nakaupo ang mga babae at lalaki. Parehong nag-aaral ng German sina Anna at Tom. Si Frau Huber ay guro, si Herr Bauer ay guro rin."
+				},
+				"goal": {
+					"de": "sagen, dass Frauen und Männer in Österreich gleiche Rechte haben und alle Berufe lernen können",
+					"en": "say that women and men in Austria have equal rights and can learn all professions",
+					"tl": "sabihin na pantay ang karapatan ng babae at lalaki sa Austria at puwede silang mag-aral ng lahat ng propesyon"
+				}
+			},
 			"introduces": [],
 			"cards": [
 				{
-					"phrase": "Frauen und Männer können alle Berufe lernen.",
+					"kind": "phrase",
+					"phrase": "Frauen und Männer lernen zusammen.",
 					"note": {
-						"de": "Eine Frau kann Mechanikerin sein, ein Mann Krankenpfleger.",
-						"en": "A woman can be a mechanic, a man a nurse.",
-						"tl": "Puwedeng mekaniko ang babae, nars ang lalaki."
+						"de": "Im Deutschkurs sitzen Frauen und Männer zusammen. Eine Frau und ein Mann können beide Deutsch lernen.",
+						"en": "In the German course women and men sit together. A woman and a man can both learn German.",
+						"tl": "Sa Deutschkurs, magkasamang nakaupo ang mga babae at lalaki. Parehong puwedeng mag-aral ng German ang babae at lalaki."
 					}
 				},
 				{
+					"kind": "rule",
+					"phrase": "die Frau – die Frauen · der Mann – die Männer",
+					"note": {
+						"de": "Die Mehrzahl (Plural) von „Frau“ ist „Frauen“, von „Mann“ ist „Männer“. Beide Wörter haben bei der Mehrzahl „die“.",
+						"en": "The plural of “Frau” is “Frauen”, of “Mann” it is “Männer”. Both take “die” in the plural.",
+						"tl": "Ang plural ng “Frau” ay “Frauen”, ng “Mann” ay “Männer”. Parehong “die” sa plural."
+					},
+					"examples": [
+						"Im Kurs sind Frauen und Männer.",
+						"Die Männer und die Frauen lernen Deutsch."
+					]
+				},
+				{
+					"kind": "phrase",
 					"phrase": "der Beruf – die Berufe",
 					"note": {
-						"de": "Lehrerin, Lehrer – und alle anderen Berufe: für Frauen und für Männer.",
-						"en": "Teacher (woman, man) – and all other jobs: for women and for men.",
-						"tl": "Guro (babae, lalaki) – at lahat ng ibang trabaho: para sa babae at lalaki."
+						"de": "Lehrerin ist ein Beruf. Lehrer ist auch ein Beruf. Ein Beruf ist die Arbeit, die man gelernt hat.",
+						"en": "Lehrerin is a profession (Beruf). Lehrer is a profession too. A Beruf is the work you have learned.",
+						"tl": "Ang Lehrerin ay isang Beruf (propesyon). Ang Lehrer ay Beruf din. Ang Beruf ay trabahong pinag-aralan mo."
 					}
 				},
 				{
+					"kind": "phrase",
 					"phrase": "Deutsch lernen hilft.",
 					"note": {
-						"de": "Mit Deutsch verstehen Sie Briefe, Ärztinnen, Lehrer und Kolleginnen.",
-						"en": "With German you understand letters, doctors, teachers and colleagues.",
-						"tl": "Sa German, maiintindihan mo ang mga sulat, doktor, guro at katrabaho."
+						"de": "Mit Deutsch verstehen Sie die Leute in Österreich. Sie verstehen auch Briefe und E-Mails.",
+						"en": "With German you understand the people in Austria. You also understand letters and e-mails.",
+						"tl": "Sa German, maiintindihan mo ang mga tao sa Austria. Maiintindihan mo rin ang mga sulat (Briefe) at e-mail."
+					}
+				},
+				{
+					"kind": "culture",
+					"phrase": "Frauen und Männer in Österreich",
+					"note": {
+						"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen. Eine Frau kann Lehrerin sein, ein Mann kann Lehrer sein – und alle anderen Berufe auch.",
+						"en": "In Austria women and men have equal rights. Women and men can learn all professions. A woman can be a teacher, a man can be a teacher – and every other profession too.",
+						"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng matutunan ng babae at lalaki ang lahat ng propesyon. Puwedeng guro ang babae at guro rin ang lalaki – at lahat ng ibang propesyon din."
 					}
 				}
 			],
@@ -1916,14 +3747,14 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Zwei Bilder zeigen zwei Menschen mit ihrem Beruf. Schauen Sie das Bild an.",
+						"en": "Two pictures show two people with their jobs. Look at the picture.",
+						"tl": "Dalawang larawan ang nagpapakita ng dalawang tao at ng trabaho nila. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-						"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-						"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+						"de": "Richtig: eine Frau. In Bild 1 steht eine Frau mit langen Haaren bei einem Auto. Sie repariert das Auto: Das ist ihr Beruf.",
+						"en": "Correct: eine Frau. In picture 1 a woman with long hair stands at a car. She repairs the car – that is her job.",
+						"tl": "Tama: eine Frau. Sa Bild 1, may babaeng mahaba ang buhok sa tabi ng kotse. Inaayos niya ang kotse – iyon ang trabaho niya."
 					},
 					"goals": [
 						"A1-05-G6"
@@ -1931,18 +3762,19 @@
 					"refs": [
 						"W-A1-0328",
 						"W-A1-0035",
-						"W-A1-0004",
-						"W-A1-0073"
+						"W-A1-0003",
+						"W-A1-0004"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
 						"ein Mann",
-						"eine Frau"
+						"eine Frau",
+						"ein Kind"
 					],
 					"answer": 1,
-					"prompt": "Bild 1: Wer arbeitet hier?",
+					"prompt": "Bild 1: Wer ist das?",
 					"image": {
 						"src": "/img/a1-05-berufe.svg",
 						"alt": {
@@ -1957,34 +3789,35 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Zwei Bilder zeigen zwei Menschen mit ihrem Beruf. Schauen Sie das Bild an.",
+						"en": "Two pictures show two people with their jobs. Look at the picture.",
+						"tl": "Dalawang larawan ang nagpapakita ng dalawang tao at ng trabaho nila. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-						"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-						"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+						"de": "Richtig: ein Mann. In Bild 2 steht ein Mann mit einem roten Kreuz auf der Kleidung. Er ist Krankenpfleger (ein Beruf in der Pflege): Auch das ist ein Beruf für Männer.",
+						"en": "Correct: ein Mann. In picture 2 a man stands with a red cross on his clothes. He is a nurse: that is a job for men too.",
+						"tl": "Tama: ein Mann. Sa Bild 2, may lalaking may pulang krus sa damit. Nars siya: trabaho rin ito para sa lalaki."
 					},
 					"goals": [
 						"A1-05-G6"
 					],
 					"refs": [
 						"W-A1-0329",
-						"W-A1-0046",
-						"W-A1-0036",
-						"W-A1-0056",
-						"W-A1-0093"
+						"W-A1-0328",
+						"W-A1-0035",
+						"W-A1-0003",
+						"W-A1-0004"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"Berufe sind nur für Männer.",
-						"Frauen und Männer arbeiten in allen Berufen."
+						"eine Frau",
+						"ein Mann",
+						"ein Kind"
 					],
 					"answer": 1,
-					"prompt": "Was zeigen Bild 1 und Bild 2?",
+					"prompt": "Bild 2: Wer ist das?",
 					"image": {
 						"src": "/img/a1-05-berufe.svg",
 						"alt": {
@@ -1999,35 +3832,200 @@
 					"type": "choice",
 					"skill": "werte",
 					"instruction": {
-						"de": "Wählen Sie die richtige Antwort.",
-						"en": "Choose the correct answer.",
-						"tl": "Piliin ang tamang sagot."
+						"de": "Zwei Bilder zeigen zwei Menschen mit ihrem Beruf. Schauen Sie das Bild an.",
+						"en": "Two pictures show two people with their jobs. Look at the picture.",
+						"tl": "Dalawang larawan ang nagpapakita ng dalawang tao at ng trabaho nila. Tingnan ang larawan."
 					},
 					"explanation": {
-						"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-						"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-						"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+						"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+						"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+						"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 					},
 					"goals": [
 						"A1-05-G6"
 					],
 					"refs": [
-						"W-A1-0304",
-						"W-A1-0146",
-						"W-A1-0357",
+						"W-A1-0328",
+						"W-A1-0329",
 						"W-A1-0046",
-						"W-A1-0010",
+						"W-A1-0036",
+						"W-A1-0030",
 						"W-A1-0056"
 					],
 					"sourceIds": [
 						"Q36"
 					],
 					"options": [
-						"Man braucht es nur im Kurs.",
-						"Es hilft bei der Arbeit und im Alltag."
+						"Berufe sind nur für Männer.",
+						"Frauen und Männer können alle Berufe lernen.",
+						"Berufe sind nur für Frauen."
 					],
 					"answer": 1,
-					"prompt": "Warum ist Deutsch lernen in Österreich wichtig?"
+					"prompt": "Was zeigen Bild 1 und Bild 2 zusammen?",
+					"image": {
+						"src": "/img/a1-05-berufe.svg",
+						"alt": {
+							"de": "Bild 1: eine Frau repariert ein Auto. Bild 2: ein Mann arbeitet als Krankenpfleger.",
+							"en": "Picture 1: a woman repairs a car. Picture 2: a man works as a nurse.",
+							"tl": "Larawan 1: babaeng nag-aayos ng kotse. Larawan 2: lalaking nars."
+						}
+					}
+				},
+				{
+					"id": "A1-05-L11-I4",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Anna und Tom sind im Deutschkurs. Frau Huber fragt: „Wer lernt in Österreich Deutsch?“ Was ist richtig?",
+						"en": "Anna and Tom are in the German course. Frau Huber asks: “Who learns German in Austria?” What is correct?",
+						"tl": "Nasa Deutschkurs sina Anna at Tom. Tanong ni Frau Huber: “Wer lernt in Österreich Deutsch?” Ano ang tama?"
+					},
+					"explanation": {
+						"de": "Richtig: Frauen und Männer lernen zusammen Deutsch. In Österreich sind Frauen und Männer gleichberechtigt – das gilt auch im Kurs. „Nur Männer“ oder „nur Frauen“ stimmt nicht.",
+						"en": "Correct: women and men learn German together. In Austria women and men have equal rights – this is true in the course too. “Only men” or “only women” is not true.",
+						"tl": "Tama: sabay na nag-aaral ng German ang babae at lalaki. Sa Austria, pantay ang karapatan ng babae at lalaki – totoo rin ito sa kurso. Hindi totoo ang “nur Männer” o “nur Frauen”."
+					},
+					"goals": [
+						"A1-05-G6"
+					],
+					"refs": [
+						"W-A1-0328",
+						"W-A1-0329",
+						"W-A1-0304",
+						"W-A1-0046",
+						"W-A1-0056",
+						"W-A1-0086"
+					],
+					"sourceIds": [
+						"Q36"
+					],
+					"options": [
+						"Nur Männer lernen Deutsch.",
+						"Frauen und Männer lernen zusammen Deutsch.",
+						"Nur Frauen lernen Deutsch."
+					],
+					"answer": 1
+				},
+				{
+					"id": "A1-05-L11-I5",
+					"type": "cloze",
+					"skill": "werte",
+					"instruction": {
+						"de": "Im Kurs: Frau Huber beschreibt die Leute. Ergänzen Sie mit den Wörtern unten.",
+						"en": "In the course: Frau Huber describes the people. Complete with the words below.",
+						"tl": "Sa kurso: inilalarawan ni Frau Huber ang mga tao. Kumpletuhin gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: eine Frau und ein Mann. „Frau“ ist ein „die“-Wort (eine Frau), „Mann“ ist ein „der“-Wort (ein Mann). „Kind“ ist ein „das“-Wort: Es heißt „ein Kind“, nicht „eine Kind“. Außerdem ist ein Kind keine Frau und kein Mann.",
+						"en": "Correct: eine Frau and ein Mann. “Frau” is a “die”-word (eine Frau), “Mann” is a “der”-word (ein Mann). “Kind” is a “das”-word: “ein Kind”, not “eine Kind”. Also a child is neither a woman nor a man.",
+						"tl": "Tama: eine Frau at ein Mann. Ang “Frau” ay salitang “die” (eine Frau), ang “Mann” ay “der” (ein Mann). Ang “Kind” ay salitang “das”: “ein Kind”, hindi “eine Kind”. At ang bata ay hindi babae o lalaki."
+					},
+					"goals": [
+						"A1-05-G6"
+					],
+					"refs": [
+						"W-A1-0328",
+						"W-A1-0329",
+						"W-A1-0046",
+						"W-A1-0004",
+						"W-A1-0304"
+					],
+					"sourceIds": [
+						"Q36"
+					],
+					"text": "Im Kurs sind eine {{1}} und ein {{2}}. Beide lernen Deutsch.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"Frau"
+							]
+						},
+						"2": {
+							"accept": [
+								"Mann"
+							]
+						}
+					},
+					"bank": [
+						"Frau",
+						"Mann",
+						"Kind"
+					]
+				},
+				{
+					"id": "A1-05-L11-I6",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Frau Huber sagt im Kurs etwas über Lehrer. Hören Sie.",
+						"en": "Frau Huber says something about teachers in class. Listen.",
+						"tl": "May sinabi si Frau Huber tungkol sa mga guro sa kurso. Makinig."
+					},
+					"explanation": {
+						"de": "Sie hören: „Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.“ Der Beruf „Lehrer“ ist für Frauen und für Männer.",
+						"en": "You hear: “Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.” Teaching is a job for women and for men.",
+						"tl": "Naririnig mo: “Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.” Trabaho ito para sa babae at para sa lalaki."
+					},
+					"goals": [
+						"A1-05-G6"
+					],
+					"refs": [
+						"W-A1-0287",
+						"W-A1-0328",
+						"W-A1-0329",
+						"W-A1-0006",
+						"W-A1-0327",
+						"W-A1-0357"
+					],
+					"options": [
+						"Nur Männer sind Lehrer.",
+						"Frau Huber ist keine Lehrerin.",
+						"Es gibt Lehrerinnen und Lehrer."
+					],
+					"answer": 2,
+					"prompt": "Was ist richtig?",
+					"audioText": "Frau Huber: Ich bin Lehrerin. Herr Bauer ist auch Lehrer. In Österreich gibt es Lehrerinnen und Lehrer.",
+					"audioOnly": true,
+					"sourceIds": [
+						"Q36"
+					]
+				},
+				{
+					"id": "A1-05-L11-I7",
+					"type": "choice",
+					"skill": "werte",
+					"instruction": {
+						"de": "Anna lebt in Wien. Sie lernt im Kurs Deutsch. Was ist richtig?",
+						"en": "Anna lives in Vienna. She learns German in the course. What is correct?",
+						"tl": "Nakatira si Anna sa Vienna. Nag-aaral siya ng German sa kurso. Ano ang tama?"
+					},
+					"explanation": {
+						"de": "Richtig: die Leute in Wien. In Österreich sprechen die Leute Deutsch. Wer Deutsch lernt, versteht die Leute – nicht nur die Lehrerin oder das Buch.",
+						"en": "Correct: die Leute in Wien. In Austria people speak German. Anyone who learns German understands the people – not only the teacher or the book.",
+						"tl": "Tama: die Leute in Wien. Sa Austria, German ang sinasalita ng mga tao. Ang nag-aaral ng German ay nakakaintindi sa mga tao – hindi lang sa guro o sa libro."
+					},
+					"goals": [
+						"A1-05-G6"
+					],
+					"refs": [
+						"W-A1-0349",
+						"W-A1-0304",
+						"W-A1-0146",
+						"W-A1-0056",
+						"W-A1-0002",
+						"W-A1-0003",
+						"W-A1-0093"
+					],
+					"sourceIds": [
+						"Q36"
+					],
+					"options": [
+						"nur die Lehrerin",
+						"die Leute in Wien",
+						"nur das Buch"
+					],
+					"answer": 1,
+					"prompt": "Mit Deutsch versteht Anna …"
 				}
 			]
 		}

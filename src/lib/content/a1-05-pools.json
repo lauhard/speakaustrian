@@ -58,10 +58,10 @@
 					"W-A1-0349"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Liebe Leute!\nMorgen ist kein Unterricht. Die Lehrerin ist krank. Die Hausübung: Seite 30, Aufgabe 2.\nViele Grüße, Anna Huber\n\nAussage: Die Hausübung ist auf Seite 30."
 			},
 			{
@@ -123,10 +123,10 @@
 					"W-A1-0012"
 				],
 				"options": [
-					"falsch",
-					"richtig"
+					"richtig",
+					"falsch"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Leute!\nDie Prüfung ist am 12. Mai um 9 Uhr. Bringen Sie bitte einen Kugelschreiber. Schreiben Sie nicht mit Bleistift.\nIhr Lehrer, Herr Bauer\n\nAussage: Die Prüfung beginnt um 9 Uhr."
 			},
 			{
@@ -186,10 +186,10 @@
 					"W-A1-0091"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Hallo Maria!\nIch komme heute nicht in den Deutschkurs. Ich habe einen Test in der Arbeit. Bitte bring mir morgen die Hausübung.\nDanke! Tom\n\nAussage: Maria gibt Tom die Prüfung."
 			},
 			{
@@ -218,10 +218,10 @@
 					"W-A1-0012"
 				],
 				"options": [
-					"falsch",
-					"richtig"
+					"richtig",
+					"falsch"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Leute!\nDie Prüfung ist am 12. Mai um 9 Uhr. Bringen Sie bitte einen Kugelschreiber. Schreiben Sie nicht mit Bleistift.\nIhr Lehrer, Herr Bauer\n\nAussage: Für die Prüfung bringt man einen Kugelschreiber.",
 				"family": "A1-05-P-LE1-5"
 			},
@@ -281,11 +281,11 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"das Heft",
 					"das Buch",
+					"das Heft",
 					"nichts"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Im Kursraum steht:\n„Die Bücher bleiben hier. Die Hefte nehmen Sie mit.“\n\nWas nehmen Sie mit?",
 				"family": "A1-05-P-LE2-1"
 			},
@@ -314,11 +314,11 @@
 					"W-A1-0001"
 				],
 				"options": [
+					"Herr Bauer",
 					"Frau Huber",
-					"Herr Huber",
-					"Herr Bauer"
+					"Herr Huber"
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "Im Kursraum steht:\n„Kurs A1: Frau Huber · Kurs A2: Herr Bauer“\n\nWer ist der Lehrer im Kurs A2?"
 			},
 			{
@@ -346,11 +346,11 @@
 					"W-A1-0087"
 				],
 				"options": [
+					"Sie fragen die Lehrerin.",
 					"Sie warten allein.",
-					"Sie machen Pause.",
-					"Sie fragen die Lehrerin."
+					"Sie machen Pause."
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "Im Kursraum steht:\n„Neu im Kurs? Bitte die Lehrerin fragen.“\n\nWas machen neue Leute im Kurs?",
 				"family": "A1-05-P-LE2-3"
 			},
@@ -379,11 +379,11 @@
 					"W-A1-0126"
 				],
 				"options": [
-					"Ich schreibe neue Verben.",
 					"Ich mache die Verben farbig.",
+					"Ich schreibe neue Verben.",
 					"Ich lese die Verben nicht."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Anweisung: „Markieren Sie die Verben im Text.“\nWas machen Sie?"
 			},
 			{
@@ -445,10 +445,10 @@
 				],
 				"options": [
 					"Ich höre und warte.",
-					"Ich lese und schreibe Antworten.",
-					"Ich mache Pause."
+					"Ich mache Pause.",
+					"Ich lese und schreibe Antworten."
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Anweisung: „Lesen Sie den Text. Antworten Sie auf die Fragen.“\nWas machen Sie?"
 			},
 			{
@@ -476,11 +476,11 @@
 					"W-A1-0086"
 				],
 				"options": [
-					"Ich übe allein.",
 					"Ich übe mit einer Person zusammen.",
+					"Ich übe allein.",
 					"Ich mache Pause."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Anweisung: „Üben Sie mit einem Partner.“\nWas machen Sie?",
 				"family": "A1-05-P-LE3-3"
 			},
@@ -547,11 +547,11 @@
 					"W-A1-0003"
 				],
 				"options": [
+					"der Bleistift",
 					"der Kugelschreiber",
-					"das Buch",
-					"der Bleistift"
+					"das Buch"
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "Nummer 4 ist …",
 				"image": {
 					"src": "/img/a1-05-sachen.svg",
@@ -625,11 +625,11 @@
 					"W-A1-0001"
 				],
 				"options": [
-					"Deutschkurs A1",
 					"Prüfung A2",
+					"Deutschkurs A1",
 					"Hausübung"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Wie heißt der Kurs im Plan?",
 				"image": {
 					"src": "/img/a1-05-plan.svg",
@@ -667,10 +667,10 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"falsch",
-					"richtig"
+					"richtig",
+					"falsch"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Die Hausübung ist nicht schwer. Ich mache sie in der Pause.\n\nAussage: Die Hausübung ist schwer."
 			},
 			{
@@ -755,10 +755,10 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"falsch",
-					"richtig"
+					"richtig",
+					"falsch"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Tom hat einen Fehler im Test. Die Lehrerin erklärt die Lösung.\n\nAussage: Die Lehrerin erklärt die Lösung.",
 				"family": "A1-05-P-LE5-3"
 			},
@@ -913,12 +913,12 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Dort, bitte.",
 					"Auf Seite zwölf.",
 					"Ja, hier ist sie.",
+					"Dort, bitte.",
 					"Nein, bitte erklären Sie das noch einmal."
 				],
-				"answer": 0,
+				"answer": 2,
 				"audioText": "Wo ist Kursraum drei?",
 				"audioOnly": true
 			},
@@ -948,11 +948,11 @@
 				],
 				"options": [
 					"Dort, bitte.",
-					"Ja, hier, bitte.",
 					"Auf Seite zwölf.",
+					"Ja, hier, bitte.",
 					"Pause bedeutet: nicht lernen."
 				],
-				"answer": 1,
+				"answer": 2,
 				"audioText": "Hast du einen Kugelschreiber für mich?",
 				"audioOnly": true,
 				"family": "A1-05-P-HO2-1"
@@ -982,12 +982,12 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Nein, bitte erklären Sie das noch einmal.",
 					"Dort, bitte.",
 					"Ja, hier, bitte.",
-					"Auf Seite zwölf."
+					"Auf Seite zwölf.",
+					"Nein, bitte erklären Sie das noch einmal."
 				],
-				"answer": 0,
+				"answer": 3,
 				"audioText": "Verstehen Sie die Aufgabe?",
 				"audioOnly": true
 			},
@@ -1049,10 +1049,10 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"falsch",
-					"richtig"
+					"richtig",
+					"falsch"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Aussage: Die Pause ist heute nicht kurz.",
 				"audioText": "Die Pause ist heute kurz.",
 				"audioOnly": true
@@ -1116,10 +1116,10 @@
 					"W-A1-0804"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Aussage: Der Test hat zehn Fragen.",
 				"audioText": "Der Test ist nicht schwer. Es gibt nur zehn Fragen.",
 				"audioOnly": true
@@ -1150,10 +1150,10 @@
 					"W-A1-0001"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Aussage: Der Kurs ist heute in Kursraum zwei.",
 				"audioText": "Heute sind wir nicht in Kursraum zwei. Wir sind in Kursraum vier.",
 				"audioOnly": true,
@@ -1665,11 +1665,11 @@
 					"W-A1-0059"
 				],
 				"options": [
-					"Langsam, bitte. Noch einmal, bitte.",
 					"Wie schreibt man „Kugelschreiber“?",
-					"Was bedeutet „Blatt“?"
+					"Was bedeutet „Blatt“?",
+					"Langsam, bitte. Noch einmal, bitte."
 				],
-				"answer": 0,
+				"answer": 2,
 				"family": "A1-05-P-SP1-1"
 			},
 			{
@@ -1698,10 +1698,10 @@
 				],
 				"options": [
 					"Wie schreibt man „Kugelschreiber“?",
-					"Auf welcher Seite sind wir?",
-					"Langsam, bitte. Noch einmal, bitte."
+					"Langsam, bitte. Noch einmal, bitte.",
+					"Auf welcher Seite sind wir?"
 				],
-				"answer": 1
+				"answer": 2
 			},
 			{
 				"id": "A1-05-P-SP1-4",
@@ -1728,11 +1728,11 @@
 					"W-A1-0059"
 				],
 				"options": [
-					"Was bedeutet „Blatt“?",
 					"Langsam, bitte. Noch einmal, bitte.",
+					"Was bedeutet „Blatt“?",
 					"Wie schreibt man „Kugelschreiber“?"
 				],
-				"answer": 0,
+				"answer": 1,
 				"family": "A1-05-P-SP1-3"
 			},
 			{
@@ -1761,11 +1761,11 @@
 					"W-A1-0386"
 				],
 				"options": [
-					"Entschuldigung, ich habe keinen Stift.",
 					"Entschuldigung, ich habe nicht Stift.",
+					"Entschuldigung, ich habe keinen Stift.",
 					"Ich schreibe kein."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Schreiben Sie bitte."
 			},
 			{
@@ -1795,10 +1795,10 @@
 				],
 				"options": [
 					"Nein, das verstehe ich kein.",
-					"Nein, das verstehe ich nicht.",
-					"Ja, nicht."
+					"Ja, nicht.",
+					"Nein, das verstehe ich nicht."
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Verstehen Sie das Beispiel?",
 				"family": "A1-05-P-SP2-1"
 			},
@@ -1922,10 +1922,10 @@
 				],
 				"options": [
 					"Wir lernen kein heute.",
-					"Wir lernen heute nicht.",
-					"Wir nicht lernen heute."
+					"Wir nicht lernen heute.",
+					"Wir lernen heute nicht."
 				],
-				"answer": 1,
+				"answer": 2,
 				"family": "A1-05-P-SP3-1"
 			},
 			{
@@ -1953,10 +1953,10 @@
 				],
 				"options": [
 					"Das ist nicht ein Fehler.",
-					"Das nicht ist Fehler.",
-					"Das ist kein Fehler."
+					"Das ist kein Fehler.",
+					"Das nicht ist Fehler."
 				],
-				"answer": 2
+				"answer": 1
 			},
 			{
 				"id": "A1-05-P-SP3-4",
@@ -1982,10 +1982,10 @@
 				],
 				"options": [
 					"Der Test ist kein schwer.",
-					"Der Test nicht ist schwer.",
-					"Der Test ist nicht schwer."
+					"Der Test ist nicht schwer.",
+					"Der Test nicht ist schwer."
 				],
-				"answer": 2,
+				"answer": 1,
 				"family": "A1-05-P-SP3-3"
 			},
 			{
@@ -2011,11 +2011,11 @@
 					"W-A1-0008"
 				],
 				"options": [
-					"kein",
 					"nicht",
+					"kein",
 					"keine"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Er kommt heute …"
 			},
 			{
@@ -2073,11 +2073,11 @@
 					"W-A1-0003"
 				],
 				"options": [
-					"nicht",
 					"kein",
+					"nicht",
 					"keine"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Das ist … richtig."
 			},
 			{
@@ -2135,10 +2135,10 @@
 					"W-A1-0007"
 				],
 				"options": [
-					"nicht",
-					"kein"
+					"kein",
+					"nicht"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Maria, ich habe ___ Buch. Bringst du deins? Jose"
 			},
 			{
@@ -2167,10 +2167,10 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"verstehen",
-					"verstehe"
+					"verstehe",
+					"verstehen"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Hallo Herr Bauer, ich ___ die Aufgabe nicht. Sofia",
 				"family": "A1-05-P-GW2-1"
 			},
@@ -2199,10 +2199,10 @@
 					"W-A1-0093"
 				],
 				"options": [
-					"auf",
-					"in"
+					"in",
+					"auf"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Hallo! Die Hausübung ist ___ Seite 20. Lukas"
 			},
 			{
@@ -2230,10 +2230,10 @@
 					"W-A1-0349"
 				],
 				"options": [
-					"nicht",
-					"keine"
+					"keine",
+					"nicht"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Leute, heute haben wir ___ Pause. Ihre Lehrerin",
 				"family": "A1-05-P-GW2-3"
 			},
@@ -2260,11 +2260,11 @@
 					"W-A1-0003"
 				],
 				"options": [
+					"Wörter",
 					"Worts",
-					"Worte",
-					"Wörter"
+					"Worte"
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "das Wort → die …"
 			},
 			{
@@ -2291,10 +2291,10 @@
 				],
 				"options": [
 					"Satzen",
-					"Sätze",
-					"Satzs"
+					"Satzs",
+					"Sätze"
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "der Satz → die …",
 				"family": "A1-05-P-GW3-1"
 			},
@@ -2350,11 +2350,11 @@
 					"W-A1-0002"
 				],
 				"options": [
+					"Fehler",
 					"Fehlers",
-					"Fehlern",
-					"Fehler"
+					"Fehlern"
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "der Fehler → die …",
 				"family": "A1-05-P-GW3-3"
 			},
@@ -2495,9 +2495,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2529,9 +2529,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2564,9 +2564,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2598,9 +2598,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2616,10 +2616,10 @@
 					"Q36"
 				],
 				"options": [
-					"nur Männer",
-					"Frauen und Männer"
+					"Frauen und Männer",
+					"nur Männer"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wer lernt in Österreich Deutsch?",
 				"family": "A1-05-P-WE2-1"
 			},
@@ -2633,9 +2633,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2676,9 +2676,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2695,10 +2695,10 @@
 					"Q36"
 				],
 				"options": [
-					"Ja.",
-					"Nein, auch für Männer."
+					"Nein, auch für Männer.",
+					"Ja."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Bild 2: Ist das ein Beruf nur für Frauen?",
 				"image": {
 					"src": "/img/a1-05-berufe.svg",
@@ -2720,9 +2720,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2738,10 +2738,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Ist ein Beruf nur für Männer?"
 			},
 			{
@@ -2754,9 +2754,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2772,10 +2772,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Ist ein Beruf nur für Frauen?",
 				"family": "A1-05-P-WE4-1"
 			},
@@ -2789,9 +2789,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2807,10 +2807,10 @@
 					"Q36"
 				],
 				"options": [
-					"Ja.",
-					"Nein."
+					"Nein.",
+					"Ja."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Kann eine Frau Lehrerin werden?"
 			},
 			{
@@ -2823,9 +2823,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2841,10 +2841,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Kann ein Mann Lehrer werden?",
 				"family": "A1-05-P-WE4-3"
 			},
@@ -2858,9 +2858,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2876,10 +2876,10 @@
 					"Q36"
 				],
 				"options": [
-					"Ja, alle Berufe.",
-					"Nein, nur Männer."
+					"Nein, nur Männer.",
+					"Ja, alle Berufe."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Lernen Frauen und Männer Berufe?"
 			},
 			{
@@ -2892,9 +2892,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -2943,10 +2943,10 @@
 					"W-A1-0349"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Leute!\nMorgen ist kein Unterricht. Die Lehrerin ist krank. Die Hausübung: Seite 30, Aufgabe 2.\nViele Grüße, Anna Huber\n\nAussage: Morgen ist Unterricht."
 			},
 			{
@@ -3008,10 +3008,10 @@
 					"W-A1-0012"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Leute!\nDie Prüfung ist am 12. Mai um 9 Uhr. Bringen Sie bitte einen Kugelschreiber. Schreiben Sie nicht mit Bleistift.\nIhr Lehrer, Herr Bauer\n\nAussage: In der Prüfung schreibt man mit Bleistift.",
 				"family": "A1-05-T-LE1-1"
 			},
@@ -3036,11 +3036,11 @@
 					"W-A1-0285"
 				],
 				"options": [
-					"um 10:30",
 					"um 9:00",
+					"um 10:30",
 					"um 12:00"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Im Kursraum steht:\n„Deutschkurs A1: 9:00–12:00. Pause: 10:30.“\n\nWann ist Pause?"
 			},
 			{
@@ -3068,10 +3068,10 @@
 				],
 				"options": [
 					"Ja.",
-					"Ja, um 9 Uhr.",
-					"Nein."
+					"Nein.",
+					"Ja, um 9 Uhr."
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Im Kursraum steht:\n„Heute kein Kurs! Der Kurs ist morgen.“\n\nIst heute Kurs?",
 				"family": "A1-05-T-LE2-1"
 			},
@@ -3101,10 +3101,10 @@
 				],
 				"options": [
 					"Ja.",
-					"Nein.",
-					"Ja, in der Pause."
+					"Ja, in der Pause.",
+					"Nein."
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Im Kursraum steht:\n„Bitte keine Zigaretten im Haus!“\n\nZigaretten im Haus – ja oder nein?",
 				"family": "A1-05-T-LE2-1"
 			},
@@ -3133,11 +3133,11 @@
 					"W-A1-0126"
 				],
 				"options": [
+					"Ich mache ein Kreuz bei der richtigen Antwort.",
 					"Ich schreibe einen Text.",
-					"Ich lese den Text.",
-					"Ich mache ein Kreuz bei der richtigen Antwort."
+					"Ich lese den Text."
 				],
-				"answer": 2,
+				"answer": 0,
 				"prompt": "Anweisung: „Kreuzen Sie die richtige Antwort an.“\nWas machen Sie?"
 			},
 			{
@@ -3229,11 +3229,11 @@
 					"W-A1-0001"
 				],
 				"options": [
-					"um 10:30 Uhr",
 					"um 12:00 Uhr",
+					"um 10:30 Uhr",
 					"um 9:00 Uhr"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wann endet der Unterricht?",
 				"image": {
 					"src": "/img/a1-05-plan.svg",
@@ -3311,11 +3311,11 @@
 					"W-A1-0132"
 				],
 				"options": [
-					"drei",
 					"zwei",
+					"drei",
 					"eine"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Wie viele Fragen sind richtig?",
 				"image": {
 					"src": "/img/a1-05-test.svg",
@@ -3353,10 +3353,10 @@
 					"W-A1-0796"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Ich heiße Jose. Ich lerne seit zwei Jahren Deutsch. Mein Kurs ist am Abend. Die Lehrerin erklärt sehr gut.\n\nAussage: Jose lernt am Morgen Deutsch."
 			},
 			{
@@ -3385,10 +3385,10 @@
 					"W-A1-0131"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Im Deutschkurs sind zwölf Leute. Sie sprechen viele Sprachen. Im Kurs sprechen alle Deutsch.\n\nAussage: Im Kurs sind zwölf Personen.",
 				"family": "A1-05-T-LE5-1"
 			},
@@ -3448,10 +3448,10 @@
 					"W-A1-0003"
 				],
 				"options": [
-					"Seite 42",
-					"Seite 24"
+					"Seite 24",
+					"Seite 42"
 				],
-				"answer": 1,
+				"answer": 0,
 				"audioText": "Öffnen Sie das Buch auf Seite vierundzwanzig.",
 				"audioOnly": true
 			},
@@ -3512,10 +3512,10 @@
 					"W-A1-0145"
 				],
 				"options": [
-					"ins Buch schreiben",
-					"ins Heft schreiben"
+					"ins Heft schreiben",
+					"ins Buch schreiben"
 				],
-				"answer": 1,
+				"answer": 0,
 				"audioText": "Schreiben Sie die Wörter ins Heft.",
 				"audioOnly": true,
 				"family": "A1-05-T-HO1-1"
@@ -3547,10 +3547,10 @@
 				"options": [
 					"Dort, bitte.",
 					"Ja, hier ist sie.",
-					"Pause bedeutet: nicht lernen.",
-					"Auf Seite zwölf."
+					"Auf Seite zwölf.",
+					"Pause bedeutet: nicht lernen."
 				],
-				"answer": 2,
+				"answer": 3,
 				"audioText": "Was bedeutet „Pause“?",
 				"audioOnly": true
 			},
@@ -3579,12 +3579,12 @@
 					"W-A1-0117"
 				],
 				"options": [
-					"Ja, hier ist sie.",
 					"Pause bedeutet: nicht lernen.",
 					"Dort, bitte.",
+					"Ja, hier ist sie.",
 					"Ja, hier, bitte."
 				],
-				"answer": 0,
+				"answer": 2,
 				"audioText": "Haben Sie die Hausübung?",
 				"audioOnly": true,
 				"family": "A1-05-T-HO2-1"
@@ -3616,10 +3616,10 @@
 				"options": [
 					"Ja, hier ist sie.",
 					"Pause bedeutet: nicht lernen.",
-					"Auf Seite zwölf.",
-					"Herein!"
+					"Herein!",
+					"Auf Seite zwölf."
 				],
-				"answer": 2,
+				"answer": 3,
 				"audioText": "Auf welcher Seite sind wir?",
 				"audioOnly": true,
 				"family": "A1-05-T-HO2-1"
@@ -3681,10 +3681,10 @@
 					"W-A1-0002"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Aussage: Die Prüfung ist heute.",
 				"audioText": "Die Prüfung ist nicht heute, sie ist morgen.",
 				"audioOnly": true,
@@ -3716,10 +3716,10 @@
 					"W-A1-0012"
 				],
 				"options": [
-					"richtig",
-					"falsch"
+					"falsch",
+					"richtig"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Aussage: Morgen braucht man kein Heft.",
 				"audioText": "Bitte bringen Sie morgen Ihr Buch und Ihr Heft mit.",
 				"audioOnly": true,
@@ -4138,11 +4138,11 @@
 					"W-A1-0304"
 				],
 				"options": [
-					"Wie sagt man „question“ auf Deutsch?",
 					"Was bedeutet „Blatt“?",
+					"Wie sagt man „question“ auf Deutsch?",
 					"Wie schreibt man „Kugelschreiber“?"
 				],
-				"answer": 0,
+				"answer": 1,
 				"family": "A1-05-T-SP1-1"
 			},
 			{
@@ -4203,11 +4203,11 @@
 					"W-A1-0052"
 				],
 				"options": [
-					"Nein, die habe ich nicht.",
 					"Ja, die habe ich nicht.",
+					"Nein, die habe ich nicht.",
 					"Nein, ich bin Hausübung."
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Haben Sie die Hausübung?"
 			},
 			{
@@ -4236,11 +4236,11 @@
 					"W-A1-0022"
 				],
 				"options": [
-					"Ich habe heute kein Buch.",
 					"Ich habe heute nicht Buch.",
-					"Mein Buch ist kein."
+					"Mein Buch ist kein.",
+					"Ich habe heute kein Buch."
 				],
-				"answer": 0,
+				"answer": 2,
 				"prompt": "Wo ist Ihr Buch?",
 				"family": "A1-05-T-SP2-1"
 			},
@@ -4271,10 +4271,10 @@
 				],
 				"options": [
 					"Nein, ich verstehe kein.",
-					"Doch, ich verstehe sie nicht.",
-					"Nein, ich verstehe sie nicht."
+					"Nein, ich verstehe sie nicht.",
+					"Doch, ich verstehe sie nicht."
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Verstehen Sie die Frage?",
 				"family": "A1-05-T-SP2-1"
 			},
@@ -4303,10 +4303,10 @@
 				],
 				"options": [
 					"Ich habe nicht ein Heft.",
-					"Ich nicht habe Heft.",
-					"Ich habe kein Heft."
+					"Ich habe kein Heft.",
+					"Ich nicht habe Heft."
 				],
-				"answer": 2
+				"answer": 1
 			},
 			{
 				"id": "A1-05-T-SP3-2",
@@ -4361,11 +4361,11 @@
 					"W-A1-0003"
 				],
 				"options": [
+					"Das ist nicht richtig.",
 					"Das ist kein richtig.",
-					"Das nicht ist richtig.",
-					"Das ist nicht richtig."
+					"Das nicht ist richtig."
 				],
-				"answer": 2,
+				"answer": 0,
 				"family": "A1-05-T-SP3-1"
 			},
 			{
@@ -4423,10 +4423,10 @@
 				],
 				"options": [
 					"nicht",
-					"kein",
-					"keine"
+					"keine",
+					"kein"
 				],
-				"answer": 1,
+				"answer": 2,
 				"prompt": "Das ist … Buch.",
 				"family": "A1-05-T-GW1-1"
 			},
@@ -4454,10 +4454,10 @@
 				],
 				"options": [
 					"nicht",
-					"kein",
-					"keine"
+					"keine",
+					"kein"
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "Ich habe … Frage.",
 				"family": "A1-05-T-GW1-1"
 			},
@@ -4515,10 +4515,10 @@
 					"W-A1-0328"
 				],
 				"options": [
-					"kein",
-					"nicht"
+					"nicht",
+					"kein"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Liebe Kursteilnehmer, morgen ist ___ Unterricht. Frau Huber",
 				"family": "A1-05-T-GW2-1"
 			},
@@ -4547,10 +4547,10 @@
 					"W-A1-0003"
 				],
 				"options": [
-					"kein",
-					"nicht"
+					"nicht",
+					"kein"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Liebe Frau Huber, ich verstehe das Beispiel ___. Ali",
 				"family": "A1-05-T-GW2-1"
 			},
@@ -4607,11 +4607,11 @@
 					"W-A1-0003"
 				],
 				"options": [
-					"Hefte",
 					"Hefts",
-					"Heften"
+					"Heften",
+					"Hefte"
 				],
-				"answer": 0,
+				"answer": 2,
 				"prompt": "das Heft → die …",
 				"family": "A1-05-T-GW3-1"
 			},
@@ -4639,10 +4639,10 @@
 				],
 				"options": [
 					"Frages",
-					"Frage",
-					"Fragen"
+					"Fragen",
+					"Frage"
 				],
-				"answer": 2,
+				"answer": 1,
 				"prompt": "die Frage → die …",
 				"family": "A1-05-T-GW3-1"
 			},
@@ -4751,9 +4751,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4785,9 +4785,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4803,10 +4803,10 @@
 					"Q36"
 				],
 				"options": [
-					"Nein.",
-					"Ja."
+					"Ja.",
+					"Nein."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Kann ein Mann in Österreich alle Berufe lernen?",
 				"family": "A1-05-T-WE1-1"
 			},
@@ -4820,9 +4820,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4838,10 +4838,10 @@
 					"Q36"
 				],
 				"options": [
-					"nur wenige Berufe",
-					"alle Berufe"
+					"alle Berufe",
+					"nur wenige Berufe"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Welche Berufe können Frauen in Österreich lernen?",
 				"family": "A1-05-T-WE1-1"
 			},
@@ -4855,9 +4855,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4889,9 +4889,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4907,10 +4907,10 @@
 					"Q36"
 				],
 				"options": [
-					"nichts machen",
-					"Deutsch lernen und üben"
+					"Deutsch lernen und üben",
+					"nichts machen"
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Was hilft bei der Integrationsprüfung?",
 				"family": "A1-05-T-WE2-1"
 			},
@@ -4924,9 +4924,9 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4959,9 +4959,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -4976,10 +4976,10 @@
 					"Q36"
 				],
 				"options": [
-					"eine Frau",
-					"ein Mann"
+					"ein Mann",
+					"eine Frau"
 				],
-				"answer": 0,
+				"answer": 1,
 				"prompt": "Bild 1: Ist das eine Frau oder ein Mann?",
 				"image": {
 					"src": "/img/a1-05-berufe.svg",
@@ -5000,9 +5000,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -5042,9 +5042,9 @@
 					"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "In Österreich können Frauen und Männer alle Berufe lernen und ausüben. Deutsch lernen hilft bei der Arbeit, im Alltag und bei der Prüfung.",
-					"en": "In Austria women and men can learn and work in all professions. Learning German helps at work, in everyday life and in the exam.",
-					"tl": "Sa Austria, puwedeng mag-aral at magtrabaho ang babae at lalaki sa lahat ng propesyon. Nakakatulong ang German sa trabaho, araw-araw at sa exam."
+					"de": "In Österreich sind Frauen und Männer gleichberechtigt. Frauen und Männer können alle Berufe lernen.",
+					"en": "In Austria women and men have equal rights. Women and men can learn all professions.",
+					"tl": "Sa Austria, pantay ang karapatan ng babae at lalaki. Puwedeng mag-aral ng lahat ng propesyon ang babae at lalaki."
 				},
 				"goals": [
 					"A1-05-G6"
@@ -5061,10 +5061,10 @@
 					"Q36"
 				],
 				"options": [
-					"Berufe sind nur für Frauen.",
-					"Frauen und Männer können alle Berufe lernen."
+					"Frauen und Männer können alle Berufe lernen.",
+					"Berufe sind nur für Frauen."
 				],
-				"answer": 1,
+				"answer": 0,
 				"prompt": "Was zeigen Bild 1 und Bild 2 zusammen?",
 				"image": {
 					"src": "/img/a1-05-berufe.svg",
