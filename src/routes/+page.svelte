@@ -89,22 +89,18 @@
 	<p aria-busy="true" class="pt-10 text-center text-muted">…</p>
 {:else if profile}
 	<section class="space-y-6">
-		<div class="rise space-y-2">
-			<div class="flex items-start justify-between gap-3">
-				<div class="min-w-0">
-					<h1 class="h1">{m.welcome_back({ name: profile.name })}</h1>
-					<p class="mt-1 flex items-center gap-1.5 text-sm font-bold text-muted">
-						<CalendarDays size={16} strokeWidth={2.25} />
-						<span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span>
-						<span aria-hidden="true">·</span>
-						<Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}
-					</p>
-				</div>
+		<div class="hello rise space-y-2">
+			<div class="hello-grid">
+				<h1 class="h1 hello-name">{m.welcome_back({ name: profile.name })}</h1>
+				<p class="hello-meta text-sm font-bold text-muted">
+					<span class="nowrap-item"><CalendarDays size={16} strokeWidth={2.25} /><span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span></span>
+					<span class="nowrap-item"><Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}</span>
+				</p>
 				<!-- Level badge: total XP, level ring and the way to the next level; a tap explains XP. -->
-				<button type="button" class="flex shrink-0 items-center gap-2.5 rounded-2xl text-right focus-visible:outline-2 focus-visible:outline-brand" aria-expanded={xpInfo} onclick={() => (xpInfo = !xpInfo)} data-testid="home-xp">
+				<button type="button" class="hello-xp flex shrink-0 items-center gap-2.5 rounded-2xl text-right focus-visible:outline-2 focus-visible:outline-brand" aria-expanded={xpInfo} onclick={() => (xpInfo = !xpInfo)} data-testid="home-xp">
 					<span class="space-y-0.5">
 						<b class="block text-base leading-tight font-black" data-testid="home-xp-total">{xp.total.toLocaleString(getLocale())} XP</b>
-						<span class="block text-xs font-bold text-muted">{m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span>
+						<span class="block text-xs font-bold whitespace-nowrap text-muted">{m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span>
 					</span>
 					<LevelRing large />
 				</button>
@@ -112,19 +108,19 @@
 			{#if xpInfo}<p class="card-muted text-sm" data-testid="home-xp-info">{m.xp_explain()}</p>{/if}
 		</div>
 
-		<div class="tile !flex-row !flex-wrap !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
+		<div class="tile goal-tile !flex-row !flex-wrap !items-center rise" style:animation-delay="40ms" data-testid="day-goal">
 			<span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl {streak > 0 ? 'bg-amber-100 text-amber-500' : 'bg-stone-100 text-stone-400'}">
 				<Zap size={26} strokeWidth={2.25} class={streak > 0 ? 'fill-amber-400' : ''} />
 			</span>
 			<span class="min-w-0 flex-1 space-y-1.5">
 				<span class="flex items-baseline justify-between gap-2">
-					<span class="tile-title">{streak} {m.stat_streak()} <span class="text-sm font-semibold text-muted">· {m.stat_best()} {game.state.streak.best}</span></span>
-					<span class="text-xs font-extrabold tracking-wider text-muted uppercase">{m.goal_title()}</span>
+					<span class="tile-title flex flex-wrap gap-x-1.5"><span class="whitespace-nowrap">{streak} {m.stat_streak()}</span><span class="text-sm font-semibold whitespace-nowrap text-muted">· {m.stat_best()} {game.state.streak.best}</span></span>
+					<span class="goal-label text-xs font-extrabold tracking-wider whitespace-nowrap text-muted uppercase">{m.goal_title()}</span>
 				</span>
 				<span class="bar !h-2 block"><span class={goal.met ? '!bg-ok' : '!bg-amber-400'} style="width: {goal.pct}%"></span></span>
-				<span class="flex items-center justify-between gap-2">
+				<span class="flex flex-wrap items-center justify-between gap-x-2 gap-y-0.5">
 					<span class="tile-sub">{goal.met ? m.goal_met() : dueCount > 0 && goal.min >= DAY_GOAL_SEC / 60 ? m.goal_due({ count: dueCount }) : m.goal_progress({ done: goal.min, goal: DAY_GOAL_SEC / 60 })}</span>
-					<span class="flex items-center gap-1 text-sm font-extrabold text-muted" title={m.stat_flawless()} data-testid="flawless-run">
+					<span class="flex items-center gap-1 text-sm font-extrabold whitespace-nowrap text-muted" title={m.stat_flawless()} data-testid="flawless-run">
 						<Flame size={15} strokeWidth={2.5} class={TIER_CLASS[flames.tier]} />{flames.chapterFlames}<span class="font-semibold">· {m.stat_best()} {flames.best}</span>
 					</span>
 				</span>

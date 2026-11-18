@@ -463,3 +463,68 @@ body {
 		opacity: 0;
 	}
 }
+
+/* Responsive pass (036): container queries instead of viewport breakpoints, so a component adapts to the
+   space it really gets (narrow phones, sidebar on desktop). Items never break inside, only between. */
+@layer components {
+	.nowrap-item {
+		@apply inline-flex items-center gap-1 whitespace-nowrap;
+	}
+	.app-header {
+		container: header / inline-size;
+	}
+	.app-header-row {
+		@apply grid items-center gap-2;
+		grid-template-columns: auto minmax(0, 1fr);
+	}
+	.hello {
+		container: hello / inline-size;
+	}
+	.hello-grid {
+		@apply grid items-center gap-x-3 gap-y-1;
+		grid-template-columns: minmax(0, 1fr) auto;
+		grid-template-areas: 'name xp' 'meta xp';
+	}
+	.hello-name {
+		grid-area: name;
+		text-wrap: balance;
+	}
+	.hello-meta {
+		grid-area: meta;
+		@apply flex flex-wrap gap-x-3 gap-y-0.5;
+	}
+	.hello-xp {
+		grid-area: xp;
+	}
+}
+@container header (max-width: 26rem) {
+	.backpill {
+		@apply pr-2.5;
+	}
+	.back-label {
+		@apply sr-only;
+	}
+	.stat {
+		@apply gap-1 px-2;
+	}
+}
+@container header (max-width: 22.5rem) {
+	[data-testid='stat-multiplier'] {
+		display: none;
+	}
+}
+/* Narrow: the greeting gets the full width, the XP badge moves next to the plan meta. */
+@container hello (max-width: 19.5rem) {
+	.hello-grid {
+		grid-template-areas: 'name name' 'meta xp';
+	}
+}
+.goal-tile {
+	container: goal / inline-size;
+}
+/* Narrow: the "Daily goal" label goes, the bar already says it. */
+@container goal (max-width: 19rem) {
+	.goal-label {
+		display: none;
+	}
+}

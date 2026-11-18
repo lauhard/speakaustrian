@@ -64,10 +64,11 @@
 		<Sidebar />
 	</aside>
 	<div class="flex min-h-dvh flex-col">
-		<header class="sticky top-0 z-30 -mx-4 flex items-center justify-between gap-3 bg-paper/95 px-4 py-3">
+		<header class="app-header sticky top-0 z-30 -mx-4 bg-paper/95 px-4 py-3">
+			<div class="app-header-row">
 			{#if back}
 				<a href={back.href} class="backpill" data-testid="header-back">
-					<ChevronLeft size={18} strokeWidth={2.5} />{back.label()}
+					<ChevronLeft size={18} strokeWidth={2.5} /><span class="back-label">{back.label()}</span>
 				</a>
 			{:else}
 				<a href={resolve('/')} class="flex items-center gap-2 no-underline lg:invisible">
@@ -75,11 +76,12 @@
 					<span class="display text-xl text-ink">{m.app_title()}</span>
 				</a>
 			{/if}
-			<div class="flex items-center gap-2">
-				{#if page.url.pathname !== '/'}<span class="lg:hidden"><StatBar /></span>{/if}
+			<div class="flex min-w-0 items-center justify-end gap-2">
+				{#if page.url.pathname !== '/'}<span class="min-w-0 lg:hidden"><StatBar /></span>{/if}
 				{#if game.ready && game.state.profile && page.url.pathname !== '/'}<LevelRing />{/if}
 				<Menu />
 			</div>
+		</div>
 		</header>
 		<main class="page flex-1 pt-3 pb-8">
 			{@render children()}
