@@ -58,6 +58,9 @@ test('flames v2 (K8) + XP (K9): a perfect lesson banks its flames and earns a sh
 	await expect(page.getByTestId('level-ring')).toHaveCount(0);
 	await page.getByTestId('home-xp').click();
 	await expect(page.getByTestId('home-xp-info')).toBeVisible();
+	// Popover: ESC (light dismiss) closes it again.
+	await page.keyboard.press('Escape');
+	await expect(page.getByTestId('home-xp-info')).toBeHidden();
 });
 
 test('flames v2 (K8): the demo and the review earn no flames', async ({ page }) => {

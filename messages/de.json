@@ -187,5 +187,7 @@
 	"score_explain": "Je 3 Richtige in Folge eine Flamme. Ein Fehler kostet die Flammen der Runde, ein zweiter die Flammen des Kapitels – außer ein Flammenschutz fängt ihn ab. Eine Lektion oder Übung mit 100 % gibt einen Schutz (max. 2).",
 	"side_progress": "Dein Fortschritt",
 	"update_available": "Neue Version verfügbar",
-	"update_reload": "Neu laden"
+	"update_reload": "Neu laden",
+	"popover_close": "Schließen",
+	"xp_title": "Level & XP"
 }

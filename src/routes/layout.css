@@ -24,6 +24,27 @@
 	--color-bad-soft: #fdeceb;
 }
 
+/* Corner tokens. Squircle (superellipse) corners where the browser supports `corner-shape`, plain rounding elsewhere.
+   Components use these instead of rounded-xl/2xl/3xl so the whole UI stays one shape language. */
+:root {
+	--r-control: 0.75rem; /* buttons, options, inputs, small tiles */
+	--r-card: 1rem; /* cards, list groups, tiles, toasts */
+	--r-hero: 1.5rem; /* hero surface */
+	--r-sheet: 1.75rem; /* bottom sheets, popovers */
+}
+@supports (corner-shape: squircle) {
+	:root {
+		--r-control: 1.05rem;
+		--r-card: 1.4rem;
+		--r-hero: 2.1rem;
+		--r-sheet: 2.4rem;
+	}
+	.icon-tile, .tile, .list, .toast, .sheet, .cloze, .btn-primary, .btn-secondary, .btn-hero, .hero, .card, .card-link, .card-muted,
+	.option, .field, .feedback, .navtile, .burger, .side-stat, .sheet-pop {
+		corner-shape: squircle;
+	}
+}
+
 /* Slightly larger type on phones; Nunito reads thin below 500. */
 html {
 	font-size: 106.25%;
@@ -47,10 +68,24 @@ body {
 	}
 	/* Tinted square that holds a Lucide icon. */
 	.icon-tile {
-		@apply grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-brand-soft text-brand;
+		@apply relative grid h-10 w-10 shrink-0 place-items-center rounded-(--r-control) bg-brand-soft text-brand;
 	}
+	/* Tile: flat surface. Only <a>/<button> tiles are clickable: ring + lift on hover, press on tap (transform only, no layout shift). */
 	.tile {
-		@apply flex flex-col items-start gap-2.5 rounded-2xl bg-white p-3.5 text-ink no-underline ring-1 ring-line transition sm:flex-row sm:items-center sm:gap-3 hover:ring-brand/50 hover:shadow-md active:scale-[0.98];
+		@apply relative flex flex-col items-start gap-2.5 rounded-(--r-card) bg-white p-3.5 text-ink no-underline ring-1 ring-line sm:flex-row sm:items-center sm:gap-3;
+	}
+	a.tile,
+	button.tile {
+		@apply cursor-pointer transition duration-150 hover:-translate-y-px hover:ring-brand/50 active:translate-y-px active:scale-[0.985];
+	}
+	/* "Do this now" marker: count badge on the corner + a soft pulse around the icon (never a ring: rings mean "selected"). */
+	.attn-count {
+		@apply absolute -top-2 -right-2 z-10 grid h-6 min-w-6 place-items-center rounded-full bg-brand px-1.5 text-xs font-black text-white ring-2 ring-paper;
+	}
+	.icon-tile.is-attn::after {
+		content: '';
+		@apply pointer-events-none absolute inset-0 rounded-[inherit] ring-2 ring-brand/45;
+		animation: ring-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 	}
 	.tile-title {
 		@apply block leading-tight font-extrabold;
@@ -63,7 +98,7 @@ body {
 		@apply mb-2 px-1 text-xs font-extrabold tracking-wider text-muted uppercase;
 	}
 	.list {
-		@apply divide-y divide-line overflow-hidden rounded-2xl bg-white ring-1 ring-line;
+		@apply divide-y divide-line overflow-hidden rounded-(--r-card) bg-white ring-1 ring-line;
 	}
 	.list-row {
 		@apply flex min-h-14 w-full items-center gap-3 px-4 py-3 text-left text-ink no-underline;
@@ -96,11 +131,11 @@ body {
 		transform: translateX(1.25rem);
 	}
 	.toast {
-		@apply flex w-full max-w-sm items-center gap-3 rounded-2xl bg-white/95 px-3 py-2.5 text-ink shadow-xl ring-1 ring-line backdrop-blur;
+		@apply flex w-full max-w-sm items-center gap-3 rounded-(--r-card) bg-white/95 px-3 py-2.5 text-ink shadow-xl ring-1 ring-line backdrop-blur;
 	}
 	/* Answer sheet: slides up at the bottom, colored by verdict, stays until "next". */
 	.sheet {
-		@apply sticky bottom-0 z-20 -mx-4 space-y-3 rounded-t-3xl border-t-2 px-4 pt-4 pb-5 shadow-[0_-8px_24px_rgb(0_0_0/0.06)];
+		@apply sticky bottom-0 z-20 -mx-4 space-y-3 rounded-t-(--r-sheet) border-t-2 px-4 pt-4 pb-5 shadow-[0_-8px_24px_rgb(0_0_0/0.06)];
 	}
 	.sheet[data-verdict='correct'] {
 		@apply border-ok bg-ok-soft;
@@ -131,14 +166,14 @@ body {
 		@apply flex items-center gap-3 rounded-xl px-3 py-2.5 font-extrabold text-muted no-underline transition hover:bg-white hover:text-ink aria-[current=page]:bg-white aria-[current=page]:text-brand aria-[current=page]:shadow-sm aria-[current=page]:ring-1 aria-[current=page]:ring-line;
 	}
 	.side-stat {
-		@apply flex items-start gap-3 rounded-2xl bg-white p-3 ring-1 ring-line;
+		@apply flex items-start gap-3 rounded-(--r-card) bg-white p-3 ring-1 ring-line;
 	}
 	.side-note {
 		@apply mt-0.5 block text-xs leading-snug font-semibold text-muted;
 	}
 	/* Gap fill: the sentence on a card, blanks as inline slots sized to the answer. */
 	.cloze {
-		@apply rounded-2xl bg-white px-5 py-4 text-xl leading-[3rem] font-semibold ring-1 ring-line;
+		@apply rounded-(--r-card) bg-white px-5 py-4 text-xl leading-[3rem] font-semibold ring-1 ring-line;
 	}
 	.gap {
 		@apply mx-1 inline-block h-10 rounded-lg border-0 border-b-[3px] border-brand/40 bg-brand-soft px-2 text-center align-baseline text-xl font-extrabold text-brand transition outline-none focus:border-brand focus:bg-white focus:ring-2 focus:ring-brand/20;
@@ -184,7 +219,7 @@ body {
 	}
 	.btn-primary,
 	.btn-secondary {
-		@apply flex min-h-14 w-full items-center justify-center gap-2 rounded-xl px-5 py-3 text-center text-lg font-extrabold no-underline transition active:translate-y-0.5;
+		@apply flex min-h-14 w-full items-center justify-center gap-2 rounded-(--r-control) px-5 py-3 text-center text-lg font-extrabold no-underline transition active:translate-y-0.5;
 	}
 	.btn-primary {
 		@apply bg-brand text-white shadow-[0_4px_0_var(--color-brand-dark)] hover:brightness-105 active:shadow-none disabled:cursor-not-allowed disabled:bg-stone-300 disabled:text-stone-500 disabled:shadow-none;
@@ -196,7 +231,7 @@ body {
 		@apply inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-ink ring-1 ring-line hover:ring-brand;
 	}
 	.hero {
-		@apply relative isolate overflow-hidden rounded-3xl bg-gradient-to-br from-brand to-brand-dark p-5 text-white shadow-lg shadow-brand/20;
+		@apply relative isolate overflow-hidden rounded-(--r-hero) bg-gradient-to-br from-brand to-brand-dark p-5 text-white shadow-lg shadow-brand/20;
 	}
 	.hero::after {
 		content: '';
@@ -204,17 +239,24 @@ body {
 		background: url('/img/edelweiss-mark.svg') center / contain no-repeat;
 	}
 	.btn-hero {
-		@apply inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-white px-5 text-base font-extrabold text-brand no-underline shadow-sm transition hover:gap-3 active:scale-[0.98] lg:w-auto lg:min-h-11 lg:px-5 lg:text-sm;
+		@apply inline-flex min-h-13 w-full items-center justify-center gap-2 rounded-(--r-control) bg-white px-5 text-base font-extrabold text-brand no-underline transition active:scale-[0.98] lg:w-auto lg:min-h-11 lg:px-5 lg:text-sm;
 	}
+	.btn-hero .lucide {
+		@apply transition-transform duration-200;
+	}
+	.btn-hero:hover .lucide {
+		transform: translateX(3px);
+	}
+	/* Cards are flat (border only). Soft shadows are reserved for floating layers: popover, toast, sheet. */
 	.card,
 	.card-link {
-		@apply rounded-xl border border-line bg-white p-4 shadow-sm;
+		@apply rounded-(--r-card) border border-line bg-white p-4;
 	}
 	.card-link {
-		@apply block no-underline transition hover:border-brand hover:shadow-md active:translate-y-0.5;
+		@apply block no-underline transition duration-150 hover:-translate-y-px hover:border-brand active:translate-y-px;
 	}
 	.card-muted {
-		@apply rounded-xl border border-dashed border-line px-4 py-3 text-muted;
+		@apply rounded-(--r-card) border border-dashed border-line px-4 py-3 text-muted;
 	}
 	.chip {
 		@apply inline-flex items-center gap-1 rounded-full bg-brand-soft px-3 py-1 text-sm font-bold text-brand;
@@ -223,7 +265,7 @@ body {
 		@apply flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-soft text-sm font-extrabold text-brand;
 	}
 	.option {
-		@apply relative flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border-2 border-line bg-white px-4 py-3 text-lg font-semibold transition has-[:checked]:border-brand has-[:checked]:bg-brand-soft;
+		@apply relative flex min-h-14 cursor-pointer items-center gap-3 rounded-(--r-control) border-2 border-line bg-white px-4 py-3 text-lg font-semibold transition has-[:checked]:border-brand has-[:checked]:bg-brand-soft;
 	}
 	.letter {
 		@apply grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-paper text-sm font-extrabold text-muted ring-1 ring-line transition;
@@ -258,7 +300,7 @@ body {
 		@apply border-bad bg-bad-soft;
 	}
 	.field {
-		@apply rounded-xl border-2 border-line bg-white text-lg font-semibold focus:border-brand focus:ring-brand;
+		@apply rounded-(--r-control) border-2 border-line bg-white text-lg font-semibold focus:border-brand focus:ring-brand;
 	}
 	.field.is-right {
 		@apply border-ok bg-ok-soft;
@@ -270,7 +312,7 @@ body {
 		@apply border-bad bg-bad-soft;
 	}
 	.feedback {
-		@apply space-y-2 rounded-xl border-2 p-4;
+		@apply space-y-2 rounded-(--r-control) border-2 p-4;
 	}
 	.feedback[data-verdict='correct'] {
 		@apply border-ok bg-ok-soft;
@@ -293,6 +335,8 @@ body {
 		.shake,
 		.rise,
 		.flame,
+		.icon-tile.is-attn::after,
+		.sheet-pop,
 		.splash-logo,
 		.splash-text {
 			animation: none;
@@ -326,7 +370,7 @@ body {
 	}
 	/* Hamburger: three bars that morph into an X. */
 	.burger {
-		@apply relative grid h-10 w-10 place-items-center rounded-xl bg-white ring-1 ring-line transition hover:ring-brand active:scale-95;
+		@apply relative grid h-10 w-10 place-items-center rounded-(--r-control) bg-white ring-1 ring-line transition hover:ring-brand active:scale-95;
 	}
 	.burger > span {
 		@apply absolute h-0.5 w-5 rounded-full bg-ink transition duration-300;
@@ -357,7 +401,7 @@ body {
 		animation: flicker 2.4s ease-in-out infinite;
 	}
 	.navtile {
-		@apply flex flex-col gap-1 rounded-xl bg-white p-3 text-sm font-extrabold text-ink no-underline ring-1 ring-line transition hover:ring-brand active:scale-[0.98] aria-[current=page]:ring-2 aria-[current=page]:ring-brand;
+		@apply flex flex-col gap-1 rounded-(--r-control) bg-white p-3 text-sm font-extrabold text-ink no-underline ring-1 ring-line transition hover:ring-brand active:scale-[0.98] aria-[current=page]:ring-2 aria-[current=page]:ring-brand;
 	}
 	/* Staggered entrance; set animation-delay inline. */
 	.rise {
@@ -461,6 +505,72 @@ body {
 	100% {
 		transform: scale(1.5);
 		opacity: 0;
+	}
+}
+
+/* Popover (native `popover`): bottom sheet on phones, centered card from 640px. Light dismiss + ESC come from the browser. */
+.sheet-pop {
+	position: fixed;
+	inset: auto 0 0 0;
+	margin: 0;
+	width: 100%;
+	max-width: none;
+	max-height: 85dvh;
+	overflow: auto;
+	border: 0;
+	background: white;
+	color: var(--color-ink);
+	padding: 1.25rem 1.25rem calc(1.25rem + env(safe-area-inset-bottom));
+	border-radius: var(--r-sheet) var(--r-sheet) 0 0;
+	box-shadow: 0 -12px 40px rgb(0 0 0 / 0.18);
+	opacity: 0;
+	transform: translateY(100%);
+	transition:
+		transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+		opacity 0.2s,
+		overlay 0.28s allow-discrete,
+		display 0.28s allow-discrete;
+}
+.sheet-pop:popover-open {
+	opacity: 1;
+	transform: none;
+}
+.sheet-pop::backdrop {
+	background: rgb(35 29 23 / 0);
+	transition: background 0.28s, overlay 0.28s allow-discrete, display 0.28s allow-discrete;
+}
+.sheet-pop:popover-open::backdrop {
+	background: rgb(35 29 23 / 0.4);
+}
+@starting-style {
+	.sheet-pop:popover-open {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	.sheet-pop:popover-open::backdrop {
+		background: rgb(35 29 23 / 0);
+	}
+}
+@media (min-width: 640px) {
+	.sheet-pop {
+		inset: 0;
+		margin: auto;
+		width: min(26rem, calc(100% - 2rem));
+		height: fit-content;
+		border-radius: var(--r-sheet);
+		box-shadow: 0 20px 50px rgb(0 0 0 / 0.22);
+		transform: translateY(12px) scale(0.97);
+	}
+	@starting-style {
+		.sheet-pop:popover-open {
+			transform: translateY(12px) scale(0.97);
+		}
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.sheet-pop,
+	.sheet-pop::backdrop {
+		transition: none;
 	}
 }
 

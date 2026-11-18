@@ -187,5 +187,7 @@
 	"score_explain": "Bawat 3 tamang sunod-sunod ay isang apoy. Ang isang mali ay bawas sa apoy ng round, ang ikalawa sa apoy ng kabanata – maliban kung may flame shield. Ang lesson o practice na 100 % ay nagbibigay ng shield (max. 2).",
 	"side_progress": "Ang iyong progreso",
 	"update_available": "May bagong bersyon",
-	"update_reload": "I-reload"
+	"update_reload": "I-reload",
+	"popover_close": "Isara",
+	"xp_title": "Level at XP"
 }
