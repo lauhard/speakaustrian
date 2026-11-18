@@ -239,9 +239,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Es ist Abend: Man sagt „Guten Abend!“. „Auf Wiedersehen!“ passt nicht.",
-					"en": "It is evening: you say “Guten Abend!”. “Auf Wiedersehen!” does not fit.",
-					"tl": "Sa gabi, sinasabi ang “Guten Abend!”. Hindi bagay ang “Auf Wiedersehen!”."
+					"de": "Es ist Abend: Man sagt „Guten Abend!“ „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is evening: you say “Guten Abend!” “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa gabi, sinasabi ang “Guten Abend!” Hindi bagay ang “Auf Wiedersehen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -271,9 +271,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Es ist Morgen: Man sagt „Guten Morgen!“. „Auf Wiedersehen!“ passt nicht.",
-					"en": "It is morning: you say “Guten Morgen!”. “Auf Wiedersehen!” does not fit.",
-					"tl": "Sa umaga, sinasabi ang “Guten Morgen!”. Hindi bagay ang “Auf Wiedersehen!”."
+					"de": "Es ist Morgen: Man sagt „Guten Morgen!“ „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is morning: you say “Guten Morgen!” “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa umaga, sinasabi ang “Guten Morgen!” Hindi bagay ang “Auf Wiedersehen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -304,9 +304,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Es ist Tag: Man sagt „Guten Tag!“. „Auf Wiedersehen!“ passt nicht.",
-					"en": "It is daytime: you say “Guten Tag!”. “Auf Wiedersehen!” does not fit.",
-					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag!”. Hindi bagay ang “Auf Wiedersehen!”."
+					"de": "Es ist Tag: Man sagt „Guten Tag!“ „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is daytime: you say “Guten Tag!” “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag!” Hindi bagay ang “Auf Wiedersehen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -622,9 +622,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie hören: „Grüß Gott, Herr Mayer!“ Der Gruß ist „Grüß Gott!“.",
-					"en": "You hear: “Grüß Gott, Herr Mayer!” The greeting is “Grüß Gott!”.",
-					"tl": "Narinig mo: “Grüß Gott, Herr Mayer!” Ang pagbati ay “Grüß Gott!”."
+					"de": "Sie hören: „Grüß Gott, Herr Mayer!“ Der Gruß ist „Grüß Gott!“",
+					"en": "You hear: “Grüß Gott, Herr Mayer!” The greeting is “Grüß Gott!”",
+					"tl": "Narinig mo: “Grüß Gott, Herr Mayer!” Ang pagbati ay “Grüß Gott!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -658,9 +658,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie hören: „Servus, Anna!“ Der Gruß ist „Servus!“.",
-					"en": "You hear: “Servus, Anna!” The greeting is “Servus!”.",
-					"tl": "Narinig mo: “Servus, Anna!” Ang pagbati ay “Servus!”."
+					"de": "Sie hören: „Servus, Anna!“ Der Gruß ist „Servus!“",
+					"en": "You hear: “Servus, Anna!” The greeting is “Servus!”",
+					"tl": "Narinig mo: “Servus, Anna!” Ang pagbati ay “Servus!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -695,9 +695,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie hören: „Gute Nacht, Lukas!“ Der Gruß ist „Gute Nacht!“.",
-					"en": "You hear: “Gute Nacht, Lukas!” The greeting is “Gute Nacht!”.",
-					"tl": "Narinig mo: “Gute Nacht, Lukas!” Ang pagbati ay “Gute Nacht!”."
+					"de": "Sie hören: „Gute Nacht, Lukas!“ Der Gruß ist „Gute Nacht!“",
+					"en": "You hear: “Gute Nacht, Lukas!” The greeting is “Gute Nacht!”",
+					"tl": "Narinig mo: “Gute Nacht, Lukas!” Ang pagbati ay “Gute Nacht!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -926,7 +926,7 @@
 				"answer": 2,
 				"explanation": {
 					"de": "Sie hören: „Woher kommen Sie?“ Achten Sie auf: kommen Sie (Sie-Form).",
-					"en": "You hear: “Woher kommen Sie?” Listen for: kommen Sie (Sie-Form).",
+					"en": "You hear: “Woher kommen Sie?” Listen for: kommen Sie (Sie form).",
 					"tl": "Narinig mo: “Woher kommen Sie?” Pakinggan ang: kommen Sie (Sie-Form)."
 				},
 				"goals": [
@@ -958,9 +958,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie hören: „Wie geht's dir?“ Achten Sie auf: „dir“ sagt man zu einer Person mit „du“.",
-					"en": "You hear: “Wie geht's dir?” Listen for: „dir“ sagt man zu einer Person mit „du“.",
-					"tl": "Narinig mo: “Wie geht's dir?” Pakinggan ang: „dir“ sagt man zu einer Person mit „du“."
+					"de": "Sie hören: „Wie geht's dir?“ Achten Sie auf „dir“: „dir“ sagt man zu einer Person, zu der man „du“ sagt.",
+					"en": "You hear: “Wie geht's dir?” Listen for “dir”: you use “dir” with a person you call “du”.",
+					"tl": "Narinig mo: “Wie geht's dir?” Pakinggan ang “dir”: ginagamit ang “dir” sa taong kinakausap mo nang “du”."
 				},
 				"goals": [
 					"A1-01-G3",
@@ -992,9 +992,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Sie hören: „Woher kommt sie?“ Achten Sie auf: kommt sie (sie, eine Frau).",
-					"en": "You hear: “Woher kommt sie?” Listen for: kommt sie (sie, eine Frau).",
-					"tl": "Narinig mo: “Woher kommt sie?” Pakinggan ang: kommt sie (sie, eine Frau)."
+					"de": "Sie hören: „Woher kommt sie?“ Achten Sie auf: kommt sie (sie = eine Frau).",
+					"en": "You hear: “Woher kommt sie?” Listen for: kommt sie (sie = a woman).",
+					"tl": "Narinig mo: “Woher kommt sie?” Pakinggan ang: kommt sie (sie = isang babae)."
 				},
 				"goals": [
 					"A1-01-G3",
@@ -1538,9 +1538,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
-					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+					"de": "Sie sprechen über sich: „Ich heiße …“. Bei „Sie heißt …“ geht es um eine andere Person (eine Frau).",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt …” is about another person (a woman).",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt …” ay tungkol sa ibang tao (babae)."
 				},
 				"goals": [
 					"A1-01-G2"
@@ -1568,9 +1568,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
-					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+					"de": "Sie sprechen über sich: „Ich heiße …“. Bei „Sie heißt …“ geht es um eine andere Person (eine Frau).",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt …” is about another person (a woman).",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt …” ay tungkol sa ibang tao (babae)."
 				},
 				"goals": [
 					"A1-01-G2"
@@ -1599,9 +1599,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
-					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+					"de": "Sie sprechen über sich: „Ich heiße …“. Bei „Sie heißt …“ geht es um eine andere Person (eine Frau).",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt …” is about another person (a woman).",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt …” ay tungkol sa ibang tao (babae)."
 				},
 				"goals": [
 					"A1-01-G2"
@@ -1829,9 +1829,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Zum Abschied sagt man „Servus, Anna!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
-					"en": "To say goodbye you say “Servus, Anna!”. The other sentences fit arriving or asking a question.",
-					"tl": "Sa pagpapaalam sinasabi ang “Servus, Anna!”. Ang iba ay bagay sa pagdating o sa tanong."
+					"de": "Zum Abschied sagt man „Servus, Anna!“ Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Servus, Anna!” The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Servus, Anna!” Ang iba ay bagay sa pagdating o sa tanong."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -1844,7 +1844,7 @@
 					"W-A1-0007",
 					"W-A1-0013"
 				],
-				"prompt": "Anna sagt: „Servus!“ Sie sagen „du“. Was sagen Sie?"
+				"prompt": "Anna geht und sagt: „Servus!“ Sie sagen „du“. Was sagen Sie?"
 			},
 			{
 				"id": "A1-01-P-SP5-2",
@@ -1862,9 +1862,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Zum Abschied sagt man „Auf Wiedersehen, Herr Mayer!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
-					"en": "To say goodbye you say “Auf Wiedersehen, Herr Mayer!”. The other sentences fit arriving or asking a question.",
-					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Herr Mayer!”. Ang iba ay bagay sa pagdating o sa tanong."
+					"de": "Zum Abschied sagt man „Auf Wiedersehen, Herr Mayer!“ Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Auf Wiedersehen, Herr Mayer!” The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Herr Mayer!” Ang iba ay bagay sa pagdating o sa tanong."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -1896,9 +1896,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Zum Abschied sagt man „Tschüss, Ali!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
-					"en": "To say goodbye you say “Tschüss, Ali!”. The other sentences fit arriving or asking a question.",
-					"tl": "Sa pagpapaalam sinasabi ang “Tschüss, Ali!”. Ang iba ay bagay sa pagdating o sa tanong."
+					"de": "Zum Abschied sagt man „Tschüss, Ali!“ Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Tschüss, Ali!” The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Tschüss, Ali!” Ang iba ay bagay sa pagdating o sa tanong."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -1930,9 +1930,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
-					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is another person, “wir kommen” is several people.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (galing ako sa Pilipinas.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ Bei „Sie kommt“ geht es um eine andere Person, bei „wir kommen“ um mehrere Personen.",
+					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is about another person, “wir kommen” about several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (Galing ako sa Pilipinas.) Ang “Sie kommt” ay tungkol sa ibang tao, ang “wir kommen” ay tungkol sa ilang tao."
 				},
 				"goals": [
 					"A1-01-G4",
@@ -1963,9 +1963,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
-					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is another person, “wir kommen” is several people.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (galing ako sa Austria.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ Bei „Sie kommt“ geht es um eine andere Person, bei „wir kommen“ um mehrere Personen.",
+					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is about another person, “wir kommen” about several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (Galing ako sa Austria.) Ang “Sie kommt” ay tungkol sa ibang tao, ang “wir kommen” ay tungkol sa ilang tao."
 				},
 				"goals": [
 					"A1-01-G4",
@@ -1997,9 +1997,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
-					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is another person, “wir kommen” is several people.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (galing ako sa Pilipinas.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ Bei „Sie kommt“ geht es um eine andere Person, bei „wir kommen“ um mehrere Personen.",
+					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is about another person, “wir kommen” about several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (Galing ako sa Pilipinas.) Ang “Sie kommt” ay tungkol sa ibang tao, ang “wir kommen” ay tungkol sa ilang tao."
 				},
 				"goals": [
 					"A1-01-G4",
@@ -2328,7 +2328,7 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen, zu denen man „du“ sagt.",
 					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
 					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
 				},
@@ -2360,7 +2360,7 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen, zu denen man „du“ sagt.",
 					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
 					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
 				},
@@ -2393,7 +2393,7 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen, zu denen man „du“ sagt.",
 					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
 					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
 				},
@@ -2518,9 +2518,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„auch“ heißt: ich ebenfalls.",
-					"en": "“auch” means: me too.",
-					"tl": "Ang “auch” ay: ako rin."
+					"de": "„auch“ heißt: bei mir ist es gleich.",
+					"en": "“auch” means: it is the same for me (me too).",
+					"tl": "Ang “auch” ay: ganoon din ako (ako rin)."
 				},
 				"goals": [
 					"A1-01-G6"
@@ -2550,9 +2550,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Auf „Danke!“ antwortet man „Bitte!“.",
-					"en": "You answer “Danke!” with “Bitte!”.",
-					"tl": "Sa “Danke!” sumasagot ng “Bitte!”."
+					"de": "Auf „Danke!“ antwortet man „Bitte!“",
+					"en": "You answer “Danke!” with “Bitte!”",
+					"tl": "Sa “Danke!” sumasagot ng “Bitte!”"
 				},
 				"goals": [
 					"A1-01-G6"
@@ -2605,7 +2605,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sehen die Person zum ersten Mal.",
 					"en": "Choose the correct answer. You meet this adult for the first time.",
 					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
 				},
@@ -2639,7 +2639,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sehen die Person zum ersten Mal.",
 					"en": "Choose the correct answer. You meet this adult for the first time.",
 					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
 				},
@@ -2674,7 +2674,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sehen die Person zum ersten Mal.",
 					"en": "Choose the correct answer. You meet this adult for the first time.",
 					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
 				},
@@ -2709,7 +2709,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie grüßen eine erwachsene Person. Sie kennen sie nicht.",
 					"en": "Choose the correct answer. You greet an adult you do not know.",
 					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
 				},
@@ -2720,9 +2720,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
-					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
-					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ sagt man, wenn man schlafen geht, „Auf Wiedersehen“ beim Gehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. “Gute Nacht” is for going to bed, “Auf Wiedersehen” is for leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” ay kapag matutulog na, ang “Auf Wiedersehen” ay sa pag-alis."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -2746,7 +2746,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie grüßen eine erwachsene Person. Sie kennen sie nicht.",
 					"en": "Choose the correct answer. You greet an adult you do not know.",
 					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
 				},
@@ -2757,9 +2757,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
-					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
-					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ sagt man, wenn man schlafen geht, „Auf Wiedersehen“ beim Gehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. “Gute Nacht” is for going to bed, “Auf Wiedersehen” is for leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” ay kapag matutulog na, ang “Auf Wiedersehen” ay sa pag-alis."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -2784,7 +2784,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie grüßen eine erwachsene Person. Sie kennen sie nicht.",
 					"en": "Choose the correct answer. You greet an adult you do not know.",
 					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
 				},
@@ -2795,9 +2795,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
-					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
-					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ sagt man, wenn man schlafen geht, „Auf Wiedersehen“ beim Gehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. “Gute Nacht” is for going to bed, “Auf Wiedersehen” is for leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” ay kapag matutulog na, ang “Auf Wiedersehen” ay sa pag-alis."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -2822,7 +2822,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sagen „Sie“ zu der Person.",
 					"en": "Choose the correct answer. You say “Sie” to this person.",
 					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
 				},
@@ -2857,7 +2857,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sagen „Sie“ zu der Person.",
 					"en": "Choose the correct answer. You say “Sie” to this person.",
 					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
 				},
@@ -2893,7 +2893,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sagen „Sie“ zu der Person.",
 					"en": "Choose the correct answer. You say “Sie” to this person.",
 					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
 				},
@@ -2929,7 +2929,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Die zwei sind Freunde und sagen „du“ zueinander.",
 					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
 					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
 				},
@@ -2964,7 +2964,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Die zwei sind Freunde und sagen „du“ zueinander.",
 					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
 					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
 				},
@@ -3000,7 +3000,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Die zwei sind Freunde und sagen „du“ zueinander.",
 					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
 					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
 				},
@@ -3233,9 +3233,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Es ist Morgen: Man sagt „Guten Morgen!“. „Auf Wiedersehen!“ passt nicht.",
-					"en": "It is morning: you say “Guten Morgen!”. “Auf Wiedersehen!” does not fit.",
-					"tl": "Sa umaga, sinasabi ang “Guten Morgen!”. Hindi bagay ang “Auf Wiedersehen!”."
+					"de": "Es ist Morgen: Man sagt „Guten Morgen!“ „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is morning: you say “Guten Morgen!” “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa umaga, sinasabi ang “Guten Morgen!” Hindi bagay ang “Auf Wiedersehen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -3265,9 +3265,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Es ist Abend: Man sagt „Guten Abend!“. „Auf Wiedersehen!“ passt nicht.",
-					"en": "It is evening: you say “Guten Abend!”. “Auf Wiedersehen!” does not fit.",
-					"tl": "Sa gabi, sinasabi ang “Guten Abend!”. Hindi bagay ang “Auf Wiedersehen!”."
+					"de": "Es ist Abend: Man sagt „Guten Abend!“ „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is evening: you say “Guten Abend!” “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa gabi, sinasabi ang “Guten Abend!” Hindi bagay ang “Auf Wiedersehen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -3298,9 +3298,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Es ist Tag: Man sagt „Guten Tag!“. „Auf Wiedersehen!“ passt nicht.",
-					"en": "It is daytime: you say “Guten Tag!”. “Auf Wiedersehen!” does not fit.",
-					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag!”. Hindi bagay ang “Auf Wiedersehen!”."
+					"de": "Es ist Tag: Man sagt „Guten Tag!“ „Auf Wiedersehen!“ passt nicht.",
+					"en": "It is daytime: you say “Guten Tag!” “Auf Wiedersehen!” does not fit.",
+					"tl": "Sa araw (daytime), sinasabi ang “Guten Tag!” Hindi bagay ang “Auf Wiedersehen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -3616,9 +3616,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Sie hören: „Guten Abend, Frau Gruber!“ Der Gruß ist „Guten Abend!“.",
-					"en": "You hear: “Guten Abend, Frau Gruber!” The greeting is “Guten Abend!”.",
-					"tl": "Narinig mo: “Guten Abend, Frau Gruber!” Ang pagbati ay “Guten Abend!”."
+					"de": "Sie hören: „Guten Abend, Frau Gruber!“ Der Gruß ist „Guten Abend!“",
+					"en": "You hear: “Guten Abend, Frau Gruber!” The greeting is “Guten Abend!”",
+					"tl": "Narinig mo: “Guten Abend, Frau Gruber!” Ang pagbati ay “Guten Abend!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -3652,9 +3652,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie hören: „Guten Morgen, Herr Huber!“ Der Gruß ist „Guten Morgen!“.",
-					"en": "You hear: “Guten Morgen, Herr Huber!” The greeting is “Guten Morgen!”.",
-					"tl": "Narinig mo: “Guten Morgen, Herr Huber!” Ang pagbati ay “Guten Morgen!”."
+					"de": "Sie hören: „Guten Morgen, Herr Huber!“ Der Gruß ist „Guten Morgen!“",
+					"en": "You hear: “Guten Morgen, Herr Huber!” The greeting is “Guten Morgen!”",
+					"tl": "Narinig mo: “Guten Morgen, Herr Huber!” Ang pagbati ay “Guten Morgen!”"
 				},
 				"goals": [
 					"A1-01-G1"
@@ -3689,9 +3689,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie hören: „Auf Wiedersehen, Frau Berger!“ Der Gruß ist „Auf Wiedersehen!“.",
-					"en": "You hear: “Auf Wiedersehen, Frau Berger!” The greeting is “Auf Wiedersehen!”.",
-					"tl": "Narinig mo: “Auf Wiedersehen, Frau Berger!” Ang pagbati ay “Auf Wiedersehen!”."
+					"de": "Sie hören: „Auf Wiedersehen, Frau Berger!“ Das ist „Auf Wiedersehen!“ – das sagt man beim Gehen.",
+					"en": "You hear: “Auf Wiedersehen, Frau Berger!” That is “Auf Wiedersehen!” – you say it when you leave.",
+					"tl": "Narinig mo: “Auf Wiedersehen, Frau Berger!” Iyon ay “Auf Wiedersehen!” – sinasabi ito kapag aalis."
 				},
 				"goals": [
 					"A1-01-G1"
@@ -3920,7 +3920,7 @@
 				"answer": 1,
 				"explanation": {
 					"de": "Sie hören: „Wie heißen Sie?“ Achten Sie auf: heißen Sie (Sie-Form).",
-					"en": "You hear: “Wie heißen Sie?” Listen for: heißen Sie (Sie-Form).",
+					"en": "You hear: “Wie heißen Sie?” Listen for: heißen Sie (Sie form).",
 					"tl": "Narinig mo: “Wie heißen Sie?” Pakinggan ang: heißen Sie (Sie-Form)."
 				},
 				"goals": [
@@ -3953,7 +3953,7 @@
 				"answer": 0,
 				"explanation": {
 					"de": "Sie hören: „Woher kommst du?“ Achten Sie auf: kommst du (du-Form).",
-					"en": "You hear: “Woher kommst du?” Listen for: kommst du (du-Form).",
+					"en": "You hear: “Woher kommst du?” Listen for: kommst du (du form).",
 					"tl": "Narinig mo: “Woher kommst du?” Pakinggan ang: kommst du (du-Form)."
 				},
 				"goals": [
@@ -3987,7 +3987,7 @@
 				"answer": 0,
 				"explanation": {
 					"de": "Sie hören: „Wie heißt du?“ Achten Sie auf: heißt du (du-Form).",
-					"en": "You hear: “Wie heißt du?” Listen for: heißt du (du-Form).",
+					"en": "You hear: “Wie heißt du?” Listen for: heißt du (du form).",
 					"tl": "Narinig mo: “Wie heißt du?” Pakinggan ang: heißt du (du-Form)."
 				},
 				"goals": [
@@ -4532,9 +4532,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
-					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+					"de": "Sie sprechen über sich: „Ich heiße …“. Bei „Sie heißt …“ geht es um eine andere Person (eine Frau).",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt …” is about another person (a woman).",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt …” ay tungkol sa ibang tao (babae)."
 				},
 				"goals": [
 					"A1-01-G2"
@@ -4562,9 +4562,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
-					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+					"de": "Sie sprechen über sich: „Ich heiße …“. Bei „Sie heißt …“ geht es um eine andere Person (eine Frau).",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt …” is about another person (a woman).",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt …” ay tungkol sa ibang tao (babae)."
 				},
 				"goals": [
 					"A1-01-G2"
@@ -4593,9 +4593,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich heiße …“. „Sie heißt“ ist eine andere Person.",
-					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt” is another person.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt” ay ibang tao."
+					"de": "Sie sprechen über sich: „Ich heiße …“. Bei „Sie heißt …“ geht es um eine andere Person (eine Frau).",
+					"en": "You talk about yourself: “Ich heiße …”. “Sie heißt …” is about another person (a woman).",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich heiße …”. Ang “Sie heißt …” ay tungkol sa ibang tao (babae)."
 				},
 				"goals": [
 					"A1-01-G2"
@@ -4823,9 +4823,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Zum Abschied sagt man „Auf Wiedersehen, Herr Huber!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
-					"en": "To say goodbye you say “Auf Wiedersehen, Herr Huber!”. The other sentences fit arriving or asking a question.",
-					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Herr Huber!”. Ang iba ay bagay sa pagdating o sa tanong."
+					"de": "Zum Abschied sagt man „Auf Wiedersehen, Herr Huber!“ Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Auf Wiedersehen, Herr Huber!” The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Herr Huber!” Ang iba ay bagay sa pagdating o sa tanong."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -4856,9 +4856,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Zum Abschied sagt man „Tschüss, Lukas!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
-					"en": "To say goodbye you say “Tschüss, Lukas!”. The other sentences fit arriving or asking a question.",
-					"tl": "Sa pagpapaalam sinasabi ang “Tschüss, Lukas!”. Ang iba ay bagay sa pagdating o sa tanong."
+					"de": "Zum Abschied sagt man „Tschüss, Lukas!“ Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Tschüss, Lukas!” The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Tschüss, Lukas!” Ang iba ay bagay sa pagdating o sa tanong."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -4890,9 +4890,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Zum Abschied sagt man „Auf Wiedersehen, Frau Gruber!“. Die anderen Sätze passen beim Kommen oder bei einer Frage.",
-					"en": "To say goodbye you say “Auf Wiedersehen, Frau Gruber!”. The other sentences fit arriving or asking a question.",
-					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Frau Gruber!”. Ang iba ay bagay sa pagdating o sa tanong."
+					"de": "Zum Abschied sagt man „Auf Wiedersehen, Frau Gruber!“ Die anderen Sätze passen beim Kommen oder bei einer Frage.",
+					"en": "To say goodbye you say “Auf Wiedersehen, Frau Gruber!” The other sentences fit arriving or asking a question.",
+					"tl": "Sa pagpapaalam sinasabi ang “Auf Wiedersehen, Frau Gruber!” Ang iba ay bagay sa pagdating o sa tanong."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -4924,9 +4924,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
-					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is another person, “wir kommen” is several people.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (galing ako sa Austria.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ Bei „Sie kommt“ geht es um eine andere Person, bei „wir kommen“ um mehrere Personen.",
+					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is about another person, “wir kommen” about several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (Galing ako sa Austria.) Ang “Sie kommt” ay tungkol sa ibang tao, ang “wir kommen” ay tungkol sa ilang tao."
 				},
 				"goals": [
 					"A1-01-G4",
@@ -4957,9 +4957,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
-					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is another person, “wir kommen” is several people.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (galing ako sa Pilipinas.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+					"de": "Sie sprechen über sich: „Ich komme aus den Philippinen.“ Bei „Sie kommt“ geht es um eine andere Person, bei „wir kommen“ um mehrere Personen.",
+					"en": "You talk about yourself: “Ich komme aus den Philippinen.” (I come from the Philippines.) “Sie kommt” is about another person, “wir kommen” about several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus den Philippinen.” (Galing ako sa Pilipinas.) Ang “Sie kommt” ay tungkol sa ibang tao, ang “wir kommen” ay tungkol sa ilang tao."
 				},
 				"goals": [
 					"A1-01-G4",
@@ -4991,9 +4991,9 @@
 				],
 				"answer": 1,
 				"explanation": {
-					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ „Sie kommt“ ist eine andere Person, „wir kommen“ sind mehrere.",
-					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is another person, “wir kommen” is several people.",
-					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (galing ako sa Austria.) Ang “Sie kommt” ay ibang tao, ang “wir kommen” ay marami."
+					"de": "Sie sprechen über sich: „Ich komme aus Österreich.“ Bei „Sie kommt“ geht es um eine andere Person, bei „wir kommen“ um mehrere Personen.",
+					"en": "You talk about yourself: “Ich komme aus Österreich.” (I come from Austria.) “Sie kommt” is about another person, “wir kommen” about several people.",
+					"tl": "Sarili mo ang pinag-uusapan: “Ich komme aus Österreich.” (Galing ako sa Austria.) Ang “Sie kommt” ay tungkol sa ibang tao, ang “wir kommen” ay tungkol sa ilang tao."
 				},
 				"goals": [
 					"A1-01-G4",
@@ -5322,7 +5322,7 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen, zu denen man „du“ sagt.",
 					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
 					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
 				},
@@ -5354,7 +5354,7 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen, zu denen man „du“ sagt.",
 					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
 					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
 				},
@@ -5387,7 +5387,7 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen mit „du“.",
+					"de": "„er“ ist ein Mann, „sie“ ist eine Frau, „wir“ sind ich und andere, „ihr“ sind mehrere Personen, zu denen man „du“ sagt.",
 					"en": "“er” is a man, “sie” is a woman, “wir” is me and others, “ihr” is several people you call “du”.",
 					"tl": "Ang “er” ay lalaki, ang “sie” ay babae, ang “wir” ay ako at ang iba, ang “ihr” ay ilang tao na tinatawag mong “du”."
 				},
@@ -5512,9 +5512,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Die Antwort bestätigt die Frage: „Ja“.",
-					"en": "The answer confirms the question: “Ja”.",
-					"tl": "Oo ang sagot sa tanong: “Ja”."
+					"de": "Es stimmt, darum „Ja“.",
+					"en": "It is true, so “Ja”.",
+					"tl": "Totoo, kaya “Ja”."
 				},
 				"goals": [
 					"A1-01-G6"
@@ -5577,9 +5577,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "Die Antwort bestätigt die Frage: „Ja“.",
-					"en": "The answer confirms the question: “Ja”.",
-					"tl": "Oo ang sagot sa tanong: “Ja”."
+					"de": "Es stimmt, darum „Ja“.",
+					"en": "It is true, so “Ja”.",
+					"tl": "Totoo, kaya “Ja”."
 				},
 				"goals": [
 					"A1-01-G6"
@@ -5599,7 +5599,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sehen die Person zum ersten Mal.",
 					"en": "Choose the correct answer. You meet this adult for the first time.",
 					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
 				},
@@ -5633,7 +5633,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sehen die Person zum ersten Mal.",
 					"en": "Choose the correct answer. You meet this adult for the first time.",
 					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
 				},
@@ -5668,7 +5668,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sehen die Person zum ersten Mal.",
 					"en": "Choose the correct answer. You meet this adult for the first time.",
 					"tl": "Piliin ang tamang sagot. Ito ang unang pagkikita ninyo ng taong ito (nasa hustong gulang)."
 				},
@@ -5703,7 +5703,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie grüßen eine erwachsene Person. Sie kennen sie nicht.",
 					"en": "Choose the correct answer. You greet an adult you do not know.",
 					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
 				},
@@ -5714,9 +5714,9 @@
 				],
 				"answer": 0,
 				"explanation": {
-					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
-					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
-					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ sagt man, wenn man schlafen geht, „Auf Wiedersehen“ beim Gehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. “Gute Nacht” is for going to bed, “Auf Wiedersehen” is for leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” ay kapag matutulog na, ang “Auf Wiedersehen” ay sa pag-alis."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -5740,7 +5740,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie grüßen eine erwachsene Person. Sie kennen sie nicht.",
 					"en": "Choose the correct answer. You greet an adult you do not know.",
 					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
 				},
@@ -5751,9 +5751,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
-					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
-					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ sagt man, wenn man schlafen geht, „Auf Wiedersehen“ beim Gehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. “Gute Nacht” is for going to bed, “Auf Wiedersehen” is for leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” ay kapag matutulog na, ang “Auf Wiedersehen” ay sa pag-alis."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -5778,7 +5778,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie grüßen eine erwachsene Person. Sie kennen sie nicht.",
 					"en": "Choose the correct answer. You greet an adult you do not know.",
 					"tl": "Piliin ang tamang sagot. Binabati mo ang isang taong nasa hustong gulang na hindi mo kilala."
 				},
@@ -5789,9 +5789,9 @@
 				],
 				"answer": 2,
 				"explanation": {
-					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ und „Auf Wiedersehen“ sagt man beim Weggehen.",
-					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. You say “Gute Nacht” and “Auf Wiedersehen” when leaving.",
-					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” at “Auf Wiedersehen” ay sinasabi sa pag-alis."
+					"de": "„Grüß Gott“ passt in Österreich zu jeder Tageszeit. „Servus“ sagt man zu Personen mit „du“. „Gute Nacht“ sagt man, wenn man schlafen geht, „Auf Wiedersehen“ beim Gehen.",
+					"en": "In Austria “Grüß Gott” fits at any time of day. You say “Servus” to people you call “du”. “Gute Nacht” is for going to bed, “Auf Wiedersehen” is for leaving.",
+					"tl": "Sa Austria, bagay ang “Grüß Gott” sa anumang oras. Ang “Servus” ay para sa mga taong tinatawag mong “du”. Ang “Gute Nacht” ay kapag matutulog na, ang “Auf Wiedersehen” ay sa pag-alis."
 				},
 				"goals": [
 					"A1-01-G1",
@@ -5816,7 +5816,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sagen „Sie“ zu der Person.",
 					"en": "Choose the correct answer. You say “Sie” to this person.",
 					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
 				},
@@ -5851,7 +5851,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sagen „Sie“ zu der Person.",
 					"en": "Choose the correct answer. You say “Sie” to this person.",
 					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
 				},
@@ -5887,7 +5887,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Sie sagen „Sie“ zu der Person.",
 					"en": "Choose the correct answer. You say “Sie” to this person.",
 					"tl": "Piliin ang tamang sagot. “Sie” ang sinasabi mo sa taong ito."
 				},
@@ -5923,7 +5923,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Die zwei sind Freunde und sagen „du“ zueinander.",
 					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
 					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
 				},
@@ -5958,7 +5958,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Die zwei sind Freunde und sagen „du“ zueinander.",
 					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
 					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
 				},
@@ -5994,7 +5994,7 @@
 				"type": "choice",
 				"skill": "werte",
 				"instruction": {
-					"de": "Wählen Sie die richtige Antwort.",
+					"de": "Wählen Sie die richtige Antwort. Die zwei sind Freunde und sagen „du“ zueinander.",
 					"en": "Choose the correct answer. The two people are friends and say “du” to each other.",
 					"tl": "Piliin ang tamang sagot. Magkaibigan ang dalawang tao at “du” ang sinasabi nila sa isa't isa."
 				},

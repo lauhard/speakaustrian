@@ -148,7 +148,7 @@ NOTRUF = {'Feuerwehr': '122', 'Polizei': '133', 'Rettung': '144'}
 GOALS = {
     'A1-02-G1': L('Buchstabieren und Buchstaben verstehen', 'Spelling and understanding letters', 'Mag-spell at umintindi ng mga titik'),
     'A1-02-G2': L('Zahlen von 0 bis 100 verstehen und sagen', 'Understanding and saying numbers from 0 to 100', 'Umintindi at magsabi ng numero mula 0 hanggang 100'),
-    'A1-02-G3': L('Das Alter sagen und fragen', 'Saying and asking age', 'Sabihin at itanong ang edad'),
+    'A1-02-G3': L('Das Alter sagen und fragen', 'Saying your age and asking about age', 'Sabihin at itanong ang edad'),
     'A1-02-G4': L('Telefonnummer, Hausnummer, Postleitzahl', 'Phone number, house number, postcode', 'Numero ng telepono, numero ng bahay, postal code'),
     'A1-02-G5': L('Preise in Euro und Cent', 'Prices in euros and cents', 'Presyo sa euro at cent'),
     'A1-02-G6': L('Die Verben sein und haben', 'The verbs sein and haben', 'Ang mga verb na sein at haben'),

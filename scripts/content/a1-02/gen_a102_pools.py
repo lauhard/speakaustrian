@@ -21,6 +21,7 @@ def fam(code, fn, test, practice):
 
 E3 = lambda de_, en, tl: L(de_, en, tl)
 swap = lambda n: int(str(n)[::-1])
+acc = lambda w: 'einen' + w[3:] if w.startswith('ein Euro') else w  # 'kosten' + accusative: 'Das kostet einen Euro …'
 
 # ================================================================ HÖREN (exam format A1-HOE-T2: a/b)
 fam('HO1', lambda v, i: choice(i, 'hoeren', L('Hören Sie. Wie viel kostet das?', 'Listen. How much does it cost?', 'Makinig. Magkano ito?'), None, euro(v[0])[0], [euro(v[1])[0]],
@@ -34,7 +35,7 @@ fam('HO2', lambda v, i: choice(i, 'hoeren', L('Hören Sie. Wie ist die Telefonnu
     [('0650 38 42', '0650 83 42'), ('0664 11 79', '0664 11 97'), ('0676 25 05', '0676 52 05'), ('0699 40 13', '0699 40 31')])
 
 fam('HO3', lambda v, i: choice(i, 'hoeren', L('Hören Sie. Jemand buchstabiert den Familiennamen. Wie schreibt man den Namen?', 'Listen. Someone spells the family name. How is it written?', 'Makinig. May nag-i-spell ng apelyido. Paano ito isinusulat?'), None, v[0], v[1],
-    E3(f'Sie hören: {spell(v[0])[:-1]}. Die Namen klingen ähnlich – darum buchstabiert man.', f'You hear: {spell(v[0])[:-1]}. The names sound alike – that is why people spell.', f'Naririnig mo: {spell(v[0])[:-1]}. Magkatunog ang mga pangalan – kaya nag-i-spell.'),
+    E3(f'Sie hören: {spell(v[0])[:-1]}. Die Namen klingen ähnlich – darum buchstabiert man.', f'You hear: {spell(v[0])[:-1]}. The names sound alike – that is why people spell names.', f'Naririnig mo: {spell(v[0])[:-1]}. Magkatunog ang mga pangalan – kaya nag-i-spell.'),
     [G1], R('buchstabieren', 'Familienname'), audio=f'Der Familienname: {spell_audio(v[0])}'),
     [('Schmid', ['Schmidt']), ('Mayer', ['Maier']), ('Lehner', ['Lener'])],
     [('Fischer', ['Vischer']), ('Novak', ['Nowak']), ('Reyes', ['Reies']), ('Cruz', ['Kruz']), ('Fuchs', ['Fux']), ('Seidl', ['Seidel'])])
@@ -57,8 +58,8 @@ fam('HO7', lambda v, i: choice(i, 'hoeren', L('Hören Sie. Wie ist die Postleitz
     [], [('4020', '4200'), ('5020', '5002'), ('9020', '9200'), ('1100', '1010')])
 
 fam('HO8', lambda v, i: choice(i, 'hoeren', L('Hören Sie. Wie viel kostet das zusammen?', 'Listen. How much is it in total?', 'Makinig. Magkano lahat-lahat?'), None, euro(v[0] + v[1])[0], [euro(v[0])[0]],
-    E3(f'{euro(v[0])[0]} + {euro(v[1])[0]} = {euro(v[0] + v[1])[0]}. „Zusammen“ heißt: alles.', f'{euro(v[0])[0]} + {euro(v[1])[0]} = {euro(v[0] + v[1])[0]}. “Zusammen” means: everything.', f'{euro(v[0])[0]} + {euro(v[1])[0]} = {euro(v[0] + v[1])[0]}. “Zusammen” = lahat.'),
-    [G5], R('zusammen', 'kosten'), audio=f'Das kostet {euro(v[0])[1]} und das kostet {euro(v[1])[1]}. Zusammen {euro(v[0] + v[1])[1]}.'),
+    E3(f'{euro(v[0])[0]} + {euro(v[1])[0]} = {euro(v[0] + v[1])[0]}. „Zusammen“ heißt: alles zusammen.', f'{euro(v[0])[0]} + {euro(v[1])[0]} = {euro(v[0] + v[1])[0]}. “Zusammen” means: all together.', f'{euro(v[0])[0]} + {euro(v[1])[0]} = {euro(v[0] + v[1])[0]}. “Zusammen” = lahat-lahat.'),
+    [G5], R('zusammen', 'kosten'), audio=f'Das kostet {acc(euro(v[0])[1])} und das kostet {acc(euro(v[1])[1])}. Zusammen {euro(v[0] + v[1])[1]}.'),
     [], [(300, 200), (150, 250), (400, 120), (90, 210)])
 
 # ================================================================ LESEN
@@ -68,7 +69,7 @@ fam('LE1', lambda v, i: choice(i, 'lesen', READ, f'Das kostet {euro(v[0])[1]}.',
 
 AGE = lambda v, i: choice(i, 'lesen', READ, f'Herr {v[0]} ist {v[1]} Jahre alt. Frau {v[0]} ist {v[2]}. Wie alt ist {v[3]} {v[0]}?',
                           str(v[1] if v[3] == 'Herr' else v[2]), [str(v[2] if v[3] == 'Herr' else v[1]), str((v[1] if v[3] == 'Herr' else v[2]) + 10)],
-                          E3(f'Lesen Sie genau: {v[3]} {v[0]} ist {v[1] if v[3] == "Herr" else v[2]}.', f'Read carefully: {v[3]} {v[0]} is {v[1] if v[3] == "Herr" else v[2]}.', f'Basahin mabuti: si {v[3]} {v[0]} ay {v[1] if v[3] == "Herr" else v[2]}.'), [G3], R('Jahre alt', 'Herr', 'Frau'))
+                          E3(f'Lesen Sie genau: {v[3]} {v[0]} ist {v[1] if v[3] == "Herr" else v[2]}.', f'Read carefully: {v[3]} {v[0]} is {v[1] if v[3] == "Herr" else v[2]}.', f'Basahing mabuti: si {v[3]} {v[0]} ay {v[1] if v[3] == "Herr" else v[2]}.'), [G3], R('Jahre alt', 'Herr', 'Frau'))
 fam('LE2', AGE, [('Gruber', 71, 68, 'Herr'), ('Santos', 34, 43, 'Frau'), ('Huber', 59, 55, 'Herr')],
     [('Berger', 62, 26, 'Frau'), ('Mayer', 45, 54, 'Herr'), ('Bauer', 38, 83, 'Frau'), ('Reyes', 27, 72, 'Herr')])
 
@@ -129,7 +130,7 @@ fam('SC4', PRICE_W, [], [(350), (1290), (480), (2015)])
 # ================================================================ SPRECHEN (A1-SPR-T1: introduce, spell, number)
 fam('SP1', lambda v, i: choice(i, 'sprechen', L(f'Sie sind {v} Jahre alt. Was sagen Sie? Wählen Sie, dann sagen Sie es laut.', f'You are {v} years old. What do you say? Choose, then say it aloud.', f'{v} taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas.'),
     'Wie alt sind Sie?', f'Ich bin {de(v)} Jahre alt.', [f'Ich habe {de(v)} Jahre.', f'Ich habe {de(v)}.'],
-    E3('Alter immer mit „sein“: „Ich bin … Jahre alt.“', 'Age always with “sein”: “Ich bin … Jahre alt.”', 'Edad laging may “sein”: “Ich bin … Jahre alt.”'), [G3, G6], R('Jahre alt', 'sein')),
+    E3('Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“', 'You always say your age with “sein”: “Ich bin … Jahre alt.”', 'Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”'), [G3, G6], R('Jahre alt', 'sein')),
     [35, 52, 27], [44, 19, 61, 30])
 
 ASK = {'Name': ('Sie verstehen den Namen nicht.', 'You don’t understand the name.', 'Hindi mo naintindihan ang pangalan.', 'Wie bitte? Noch einmal, bitte.'),
@@ -140,7 +141,7 @@ ASK = {'Name': ('Sie verstehen den Namen nicht.', 'You don’t understand the na
        'plz': ('Sie möchten die Postleitzahl wissen.', 'You want to know the postcode.', 'Gusto mong malaman ang postal code.', 'Wie ist die Postleitzahl?'),
        'pay': ('Sie möchten alles auf einmal zahlen.', 'You want to pay for everything at once.', 'Gusto mong bayaran lahat nang sabay.', 'Zusammen, bitte.')}
 fam('SP2', lambda v, i: choice(i, 'sprechen', L(ASK[v[0]][0] + ' Was sagen Sie? Wählen Sie, dann sagen Sie es laut.', ASK[v[0]][1] + ' What do you say? Choose, then say it aloud.', ASK[v[0]][2] + ' Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas.'),
-    None, ASK[v[0]][3], [ASK[k][3] for k in v[1]], E3(f'Passend ist: „{ASK[v[0]][3]}“', f'The fitting sentence: “{ASK[v[0]][3]}”', f'Ang angkop: “{ASK[v[0]][3]}”'), [G7], R('wie', 'bitte')),
+    None, ASK[v[0]][3], [ASK[k][3] for k in v[1]], E3(f'Passend ist: „{ASK[v[0]][3]}“', f'The right sentence is: “{ASK[v[0]][3]}”', f'Ang angkop: “{ASK[v[0]][3]}”'), [G7], R('wie', 'bitte')),
     [('Name', ['price', 'age']), ('spell', ['Name', 'phone']), ('price', ['spell', 'plz'])],
     [('age', ['phone', 'pay']), ('phone', ['age', 'plz']), ('plz', ['price', 'Name']), ('pay', ['spell', 'age'])])
 
@@ -167,12 +168,12 @@ fam('GW2', lambda v, i: cloze(i, 'grammatikWortschatz', GAPS, v[0], [v[1]], HABE
     [('Frau Berger {{1}} etwas.', ['hat']), ('Wir {{1}} zusammen zwanzig Euro.', ['haben']), ('Er {{1}} die Postleitzahl.', ['hat']), ('Du {{1}} mehr als ich.', ['hast'])])
 
 WQ = lambda v, i: choice(i, 'grammatikWortschatz', L('Welche Frage ist richtig?', 'Which question is correct?', 'Aling tanong ang tama?'), None, v[0], v[1],
-                         E3('W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.', 'W-question: question word in position 1, verb in position 2.', 'W-question: tanong na salita sa 1, verb sa 2.'), [G7], R('wie'))
+                         E3('W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.', 'W-question: question word in position 1, verb in position 2.', 'W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2.'), [G7], R('wie'))
 fam('GW3', WQ, [('Wie alt sind Sie?', ['Wie alt Sie sind?', 'Sind wie alt Sie?']), ('Wie ist die Postleitzahl?', ['Wie die Postleitzahl ist?', 'Die Postleitzahl wie ist?']), ('Wie viele Buchstaben hat das?', ['Wie viele Buchstaben das hat?', 'Hat das wie viele Buchstaben?'])],
     [('Wie schreibt man das?', ['Wie man das schreibt?', 'Man schreibt wie das?']), ('Wie ist die Hausnummer?', ['Wie die Hausnummer ist?', 'Ist wie die Hausnummer?']), ('Wie heißen Sie?', ['Wie Sie heißen?', 'Heißen wie Sie?']), ('Was kostet das?', ['Was das kostet?', 'Kostet was das?'])])
 
 WV = lambda v, i: choice(i, 'grammatikWortschatz', CHOOSE, v[0], v[1], ['Wie viele' if v[1] == 'Wie viel' else 'Wie viel'],
-                         E3('„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.', '“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.', 'Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan.'), [G7], R('wie viel', 'wie viele'))
+                         E3('„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.', '“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.', 'Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan.'), [G7], R('wie viel', 'wie viele'))
 fam('GW4', WV, [('… Buchstaben hat „Alter“?', 'Wie viele'), ('… kostet das zusammen?', 'Wie viel'), ('… Buchstaben hat „Postleitzahl“?', 'Wie viele')],
     [('… Buchstaben hat „Cent“?', 'Wie viele'), ('… kostet die Milch?', 'Wie viel'), ('… Namen hat Herr Bauer?', 'Wie viele'), ('… kostet das Brot?', 'Wie viel')])
 
@@ -181,8 +182,8 @@ fam('GW5', lambda v, i: choice(i, 'grammatikWortschatz', CHOOSE, f'{de(v)} = ?',
     [67, 84, 52], [79, 31, 46, 28])
 
 QUANT = lambda v, i: choice(i, 'grammatikWortschatz', CHOOSE, v[0], v[1], v[2], v[3], [G5], R(v[1], *v[2]))
-fam('GW6', QUANT, [], [('Das kostet hundert Euro. Das ist …', 'viel', ['wenig', 'nichts'], L('100 Euro ist viel Geld.', '100 euros is a lot (viel).', 'Marami (viel) ang 100 euro.')),
-                       ('Das kostet zehn Cent. Das ist …', 'wenig', ['viel', 'genug'], L('10 Cent ist wenig.', '10 cents is little (wenig).', 'Kaunti (wenig) ang 10 cent.')),
+fam('GW6', QUANT, [], [('Das kostet hundert Euro. Das ist …', 'viel', ['wenig', 'nichts'], L('100 Euro sind viel.', '100 euros are a lot (viel).', 'Marami (viel) ang 100 euro.')),
+                       ('Das kostet zehn Cent. Das ist …', 'wenig', ['viel', 'genug'], L('10 Cent sind wenig.', '10 cents are little (wenig).', 'Kaunti (wenig) ang 10 cent.')),
                        ('Ich habe null Euro. Ich habe …', 'nichts', ['alle', 'etwas'], L('0 Euro = nichts.', '0 euros = nothing (nichts).', '0 euro = wala (nichts).')),
                        ('Ich habe fünf Euro. Das kostet fünf Euro. Ich habe …', 'genug', ['nichts', 'wenig'], L('5 € für 5 €: Das ist genug.', '€5 for €5: that is enough (genug).', '€5 para sa €5: sapat (genug).'))])
 
@@ -190,7 +191,7 @@ fam('GW6', QUANT, [], [('Das kostet hundert Euro. Das ist …', 'viel', ['wenig'
 case = lambda n, extra=('', '', ''): L(f'{n}: {SERV[n]}.{extra[0]} ' + WEXP['de'], f'{n}: {SERV_EN[n]}.{extra[1]} ' + WEXP['en'], f'{n}: {SERV_TL[n]}.{extra[2]} ' + WEXP['tl'])
 WEXP = L('Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.',
          'Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.',
-         'Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline.')
+         'Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline.')
 SERV_EN = {'122': 'the fire brigade', '133': 'the police', '144': 'the ambulance', '141': 'the doctor on call', '1450': 'the health advice line', '112': 'the European emergency number'}
 SERV_TL = {'122': 'bumbero', '133': 'pulis', '144': 'ambulansya', '141': 'doktor na naka-duty', '1450': 'health hotline', '112': 'European emergency number'}
 SERV = {'122': 'die Feuerwehr', '133': 'die Polizei', '144': 'die Rettung', '141': 'der Ärztenotdienst', '1450': 'die Gesundheitsberatung am Telefon', '112': 'der Euro-Notruf'}

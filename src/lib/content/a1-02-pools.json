@@ -13,7 +13,7 @@
 		},
 		"A1-02-G3": {
 			"de": "Das Alter sagen und fragen",
-			"en": "Saying and asking age",
+			"en": "Saying your age and asking about age",
 			"tl": "Sabihin at itanong ang edad"
 		},
 		"A1-02-G4": {
@@ -366,7 +366,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: F, I, S, C, H, E, R. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: F, I, S, C, H, E, R. The names sound alike – that is why people spell.",
+					"en": "You hear: F, I, S, C, H, E, R. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: F, I, S, C, H, E, R. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -395,7 +395,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: N, O, V, A, K. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: N, O, V, A, K. The names sound alike – that is why people spell.",
+					"en": "You hear: N, O, V, A, K. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: N, O, V, A, K. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -425,7 +425,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: R, E, Y, E, S. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: R, E, Y, E, S. The names sound alike – that is why people spell.",
+					"en": "You hear: R, E, Y, E, S. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: R, E, Y, E, S. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -454,7 +454,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: C, R, U, Z. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: C, R, U, Z. The names sound alike – that is why people spell.",
+					"en": "You hear: C, R, U, Z. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: C, R, U, Z. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -484,7 +484,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: F, U, C, H, S. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: F, U, C, H, S. The names sound alike – that is why people spell.",
+					"en": "You hear: F, U, C, H, S. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: F, U, C, H, S. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -513,7 +513,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: S, E, I, D, L. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: S, E, I, D, L. The names sound alike – that is why people spell.",
+					"en": "You hear: S, E, I, D, L. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: S, E, I, D, L. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -1175,9 +1175,9 @@
 					"tl": "Makinig. Magkano lahat-lahat?"
 				},
 				"explanation": {
-					"de": "3,00 € + 2,00 € = 5,00 €. „Zusammen“ heißt: alles.",
-					"en": "3,00 € + 2,00 € = 5,00 €. “Zusammen” means: everything.",
-					"tl": "3,00 € + 2,00 € = 5,00 €. “Zusammen” = lahat."
+					"de": "3,00 € + 2,00 € = 5,00 €. „Zusammen“ heißt: alles zusammen.",
+					"en": "3,00 € + 2,00 € = 5,00 €. “Zusammen” means: all together.",
+					"tl": "3,00 € + 2,00 € = 5,00 €. “Zusammen” = lahat-lahat."
 				},
 				"goals": [
 					"A1-02-G5"
@@ -1204,9 +1204,9 @@
 					"tl": "Makinig. Magkano lahat-lahat?"
 				},
 				"explanation": {
-					"de": "1,50 € + 2,50 € = 4,00 €. „Zusammen“ heißt: alles.",
-					"en": "1,50 € + 2,50 € = 4,00 €. “Zusammen” means: everything.",
-					"tl": "1,50 € + 2,50 € = 4,00 €. “Zusammen” = lahat."
+					"de": "1,50 € + 2,50 € = 4,00 €. „Zusammen“ heißt: alles zusammen.",
+					"en": "1,50 € + 2,50 € = 4,00 €. “Zusammen” means: all together.",
+					"tl": "1,50 € + 2,50 € = 4,00 €. “Zusammen” = lahat-lahat."
 				},
 				"goals": [
 					"A1-02-G5"
@@ -1220,7 +1220,7 @@
 					"1,50 €"
 				],
 				"answer": 0,
-				"audioText": "Das kostet ein Euro fünfzig und das kostet zwei Euro fünfzig. Zusammen vier Euro.",
+				"audioText": "Das kostet einen Euro fünfzig und das kostet zwei Euro fünfzig. Zusammen vier Euro.",
 				"audioOnly": true,
 				"family": "A1-02-P-HO8-1"
 			},
@@ -1234,9 +1234,9 @@
 					"tl": "Makinig. Magkano lahat-lahat?"
 				},
 				"explanation": {
-					"de": "4,00 € + 1,20 € = 5,20 €. „Zusammen“ heißt: alles.",
-					"en": "4,00 € + 1,20 € = 5,20 €. “Zusammen” means: everything.",
-					"tl": "4,00 € + 1,20 € = 5,20 €. “Zusammen” = lahat."
+					"de": "4,00 € + 1,20 € = 5,20 €. „Zusammen“ heißt: alles zusammen.",
+					"en": "4,00 € + 1,20 € = 5,20 €. “Zusammen” means: all together.",
+					"tl": "4,00 € + 1,20 € = 5,20 €. “Zusammen” = lahat-lahat."
 				},
 				"goals": [
 					"A1-02-G5"
@@ -1250,7 +1250,7 @@
 					"4,00 €"
 				],
 				"answer": 0,
-				"audioText": "Das kostet vier Euro und das kostet ein Euro zwanzig. Zusammen fünf Euro zwanzig.",
+				"audioText": "Das kostet vier Euro und das kostet einen Euro zwanzig. Zusammen fünf Euro zwanzig.",
 				"audioOnly": true
 			},
 			{
@@ -1263,9 +1263,9 @@
 					"tl": "Makinig. Magkano lahat-lahat?"
 				},
 				"explanation": {
-					"de": "0,90 € + 2,10 € = 3,00 €. „Zusammen“ heißt: alles.",
-					"en": "0,90 € + 2,10 € = 3,00 €. “Zusammen” means: everything.",
-					"tl": "0,90 € + 2,10 € = 3,00 €. “Zusammen” = lahat."
+					"de": "0,90 € + 2,10 € = 3,00 €. „Zusammen“ heißt: alles zusammen.",
+					"en": "0,90 € + 2,10 € = 3,00 €. “Zusammen” means: all together.",
+					"tl": "0,90 € + 2,10 € = 3,00 €. “Zusammen” = lahat-lahat."
 				},
 				"goals": [
 					"A1-02-G5"
@@ -1421,7 +1421,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Frau Berger ist 26.",
 					"en": "Read carefully: Frau Berger is 26.",
-					"tl": "Basahin mabuti: si Frau Berger ay 26."
+					"tl": "Basahing mabuti: si Frau Berger ay 26."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -1451,7 +1451,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Herr Mayer ist 45.",
 					"en": "Read carefully: Herr Mayer is 45.",
-					"tl": "Basahin mabuti: si Herr Mayer ay 45."
+					"tl": "Basahing mabuti: si Herr Mayer ay 45."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -1482,7 +1482,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Frau Bauer ist 83.",
 					"en": "Read carefully: Frau Bauer is 83.",
-					"tl": "Basahin mabuti: si Frau Bauer ay 83."
+					"tl": "Basahing mabuti: si Frau Bauer ay 83."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -1512,7 +1512,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Herr Reyes ist 27.",
 					"en": "Read carefully: Herr Reyes is 27.",
-					"tl": "Basahin mabuti: si Herr Reyes ay 27."
+					"tl": "Basahing mabuti: si Herr Reyes ay 27."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -2593,9 +2593,9 @@
 					"tl": "44 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -2623,9 +2623,9 @@
 					"tl": "19 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -2654,9 +2654,9 @@
 					"tl": "61 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -2684,9 +2684,9 @@
 					"tl": "30 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -2716,7 +2716,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Wie alt sind Sie?“",
-					"en": "The fitting sentence: “Wie alt sind Sie?”",
+					"en": "The right sentence is: “Wie alt sind Sie?”",
 					"tl": "Ang angkop: “Wie alt sind Sie?”"
 				},
 				"goals": [
@@ -2744,7 +2744,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Wie ist Ihre Telefonnummer?“",
-					"en": "The fitting sentence: “Wie ist Ihre Telefonnummer?”",
+					"en": "The right sentence is: “Wie ist Ihre Telefonnummer?”",
 					"tl": "Ang angkop: “Wie ist Ihre Telefonnummer?”"
 				},
 				"goals": [
@@ -2773,7 +2773,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Wie ist die Postleitzahl?“",
-					"en": "The fitting sentence: “Wie ist die Postleitzahl?”",
+					"en": "The right sentence is: “Wie ist die Postleitzahl?”",
 					"tl": "Ang angkop: “Wie ist die Postleitzahl?”"
 				},
 				"goals": [
@@ -2801,7 +2801,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Zusammen, bitte.“",
-					"en": "The fitting sentence: “Zusammen, bitte.”",
+					"en": "The right sentence is: “Zusammen, bitte.”",
 					"tl": "Ang angkop: “Zusammen, bitte.”"
 				},
 				"goals": [
@@ -3315,7 +3315,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3342,7 +3342,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3370,7 +3370,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3397,7 +3397,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3425,7 +3425,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3453,7 +3453,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3482,7 +3482,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3510,7 +3510,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -3651,8 +3651,8 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "100 Euro ist viel Geld.",
-					"en": "100 euros is a lot (viel).",
+					"de": "100 Euro sind viel.",
+					"en": "100 euros are a lot (viel).",
 					"tl": "Marami (viel) ang 100 euro."
 				},
 				"goals": [
@@ -3681,8 +3681,8 @@
 					"tl": "Piliin ang tamang sagot."
 				},
 				"explanation": {
-					"de": "10 Cent ist wenig.",
-					"en": "10 cents is little (wenig).",
+					"de": "10 Cent sind wenig.",
+					"en": "10 cents are little (wenig).",
 					"tl": "Kaunti (wenig) ang 10 cent."
 				},
 				"goals": [
@@ -3775,7 +3775,7 @@
 				"explanation": {
 					"de": "144: die Rettung. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "144: the ambulance. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3805,7 +3805,7 @@
 				"explanation": {
 					"de": "122: die Feuerwehr. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "122: the fire brigade. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3836,7 +3836,7 @@
 				"explanation": {
 					"de": "133: die Polizei. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "133: the police. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3866,7 +3866,7 @@
 				"explanation": {
 					"de": "112: der Euro-Notruf. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "112: the European emergency number. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3897,7 +3897,7 @@
 				"explanation": {
 					"de": "141: der Ärztenotdienst. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "141: the doctor on call. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "141: doktor na naka-duty. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "141: doktor na naka-duty. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3928,7 +3928,7 @@
 				"explanation": {
 					"de": "1450: die Gesundheitsberatung am Telefon. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "1450: the health advice line. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "1450: health hotline. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "1450: health hotline. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3960,7 +3960,7 @@
 				"explanation": {
 					"de": "112: der Euro-Notruf. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "112: the European emergency number. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -3991,7 +3991,7 @@
 				"explanation": {
 					"de": "133: die Polizei. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "133: the police. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -4023,7 +4023,7 @@
 				"explanation": {
 					"de": "144: die Rettung. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "144: the ambulance. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -4054,7 +4054,7 @@
 				"explanation": {
 					"de": "122: die Feuerwehr. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "122: the fire brigade. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -4086,7 +4086,7 @@
 				"explanation": {
 					"de": "122: die Feuerwehr. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "122: the fire brigade. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -4125,7 +4125,7 @@
 				"explanation": {
 					"de": "112: der Euro-Notruf. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "112: the European emergency number. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -4353,7 +4353,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: S, C, H, M, I, D. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: S, C, H, M, I, D. The names sound alike – that is why people spell.",
+					"en": "You hear: S, C, H, M, I, D. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: S, C, H, M, I, D. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -4382,7 +4382,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: M, A, Y, E, R. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: M, A, Y, E, R. The names sound alike – that is why people spell.",
+					"en": "You hear: M, A, Y, E, R. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: M, A, Y, E, R. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -4412,7 +4412,7 @@
 				},
 				"explanation": {
 					"de": "Sie hören: L, E, H, N, E, R. Die Namen klingen ähnlich – darum buchstabiert man.",
-					"en": "You hear: L, E, H, N, E, R. The names sound alike – that is why people spell.",
+					"en": "You hear: L, E, H, N, E, R. The names sound alike – that is why people spell names.",
 					"tl": "Naririnig mo: L, E, H, N, E, R. Magkatunog ang mga pangalan – kaya nag-i-spell."
 				},
 				"goals": [
@@ -4799,7 +4799,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Herr Gruber ist 71.",
 					"en": "Read carefully: Herr Gruber is 71.",
-					"tl": "Basahin mabuti: si Herr Gruber ay 71."
+					"tl": "Basahing mabuti: si Herr Gruber ay 71."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -4829,7 +4829,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Frau Santos ist 43.",
 					"en": "Read carefully: Frau Santos is 43.",
-					"tl": "Basahin mabuti: si Frau Santos ay 43."
+					"tl": "Basahing mabuti: si Frau Santos ay 43."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -4860,7 +4860,7 @@
 				"explanation": {
 					"de": "Lesen Sie genau: Herr Huber ist 59.",
 					"en": "Read carefully: Herr Huber is 59.",
-					"tl": "Basahin mabuti: si Herr Huber ay 59."
+					"tl": "Basahing mabuti: si Herr Huber ay 59."
 				},
 				"goals": [
 					"A1-02-G3"
@@ -5478,9 +5478,9 @@
 					"tl": "35 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -5508,9 +5508,9 @@
 					"tl": "52 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -5539,9 +5539,9 @@
 					"tl": "27 taong gulang ka. Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
 				},
 				"explanation": {
-					"de": "Alter immer mit „sein“: „Ich bin … Jahre alt.“",
-					"en": "Age always with “sein”: “Ich bin … Jahre alt.”",
-					"tl": "Edad laging may “sein”: “Ich bin … Jahre alt.”"
+					"de": "Das Alter sagt man immer mit „sein“: „Ich bin … Jahre alt.“",
+					"en": "You always say your age with “sein”: “Ich bin … Jahre alt.”",
+					"tl": "Ang edad ay laging sinasabi gamit ang “sein”: “Ich bin … Jahre alt.”"
 				},
 				"goals": [
 					"A1-02-G3",
@@ -5571,7 +5571,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Wie bitte? Noch einmal, bitte.“",
-					"en": "The fitting sentence: “Wie bitte? Noch einmal, bitte.”",
+					"en": "The right sentence is: “Wie bitte? Noch einmal, bitte.”",
 					"tl": "Ang angkop: “Wie bitte? Noch einmal, bitte.”"
 				},
 				"goals": [
@@ -5599,7 +5599,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Wie schreibt man das?“",
-					"en": "The fitting sentence: “Wie schreibt man das?”",
+					"en": "The right sentence is: “Wie schreibt man das?”",
 					"tl": "Ang angkop: “Wie schreibt man das?”"
 				},
 				"goals": [
@@ -5628,7 +5628,7 @@
 				},
 				"explanation": {
 					"de": "Passend ist: „Was kostet das?“",
-					"en": "The fitting sentence: “Was kostet das?”",
+					"en": "The right sentence is: “Was kostet das?”",
 					"tl": "Ang angkop: “Was kostet das?”"
 				},
 				"goals": [
@@ -5934,7 +5934,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -5961,7 +5961,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -5989,7 +5989,7 @@
 				"explanation": {
 					"de": "W-Frage: Fragewort auf Platz 1, Verb auf Platz 2.",
 					"en": "W-question: question word in position 1, verb in position 2.",
-					"tl": "W-question: tanong na salita sa 1, verb sa 2."
+					"tl": "W-question: ang tanong na salita sa posisyon 1, ang verb sa posisyon 2."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -6017,7 +6017,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -6045,7 +6045,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -6074,7 +6074,7 @@
 				"explanation": {
 					"de": "„Wie viel kostet …?“ fragt nach dem Preis. „Wie viele“ steht vor Dingen im Plural, die man zählt: Buchstaben, Zahlen, Namen.",
 					"en": "“Wie viel kostet …?” asks for the price. “Wie viele” comes before plural things you count: letters, numbers, names.",
-					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay bago ng mga bagay na binibilang: titik, numero, pangalan."
+					"tl": "Ang “Wie viel kostet …?” ay tanong sa presyo. Ang “wie viele” ay ginagamit bago ang mga bagay sa plural na binibilang: titik, numero, pangalan."
 				},
 				"goals": [
 					"A1-02-G7"
@@ -6189,7 +6189,7 @@
 				"explanation": {
 					"de": "122: die Feuerwehr. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "122: the fire brigade. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6219,7 +6219,7 @@
 				"explanation": {
 					"de": "133: die Polizei. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "133: the police. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6250,7 +6250,7 @@
 				"explanation": {
 					"de": "144: die Rettung. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "144: the ambulance. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6281,7 +6281,7 @@
 				"explanation": {
 					"de": "122: die Feuerwehr. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "122: the fire brigade. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "122: bumbero. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6312,7 +6312,7 @@
 				"explanation": {
 					"de": "133: die Polizei. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "133: the police. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "133: pulis. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6344,7 +6344,7 @@
 				"explanation": {
 					"de": "144: die Rettung. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "144: the ambulance. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "144: ambulansya. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6376,7 +6376,7 @@
 				"explanation": {
 					"de": "1450: die Gesundheitsberatung am Telefon. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "1450: the health advice line. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "1450: health hotline. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "1450: health hotline. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6407,7 +6407,7 @@
 				"explanation": {
 					"de": "141: der Ärztenotdienst. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "141: the doctor on call. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "141: doktor na naka-duty. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "141: doktor na naka-duty. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
@@ -6439,7 +6439,7 @@
 				"explanation": {
 					"de": "112: der Euro-Notruf. Notrufe in Österreich: 122 Feuerwehr · 133 Polizei · 144 Rettung · 112 Euro-Notruf · 141 Ärztenotdienst · 1450 Gesundheitsberatung.",
 					"en": "112: the European emergency number. Emergency numbers in Austria: 122 fire brigade · 133 police · 144 ambulance · 112 European emergency number · 141 doctor on call · 1450 health advice line.",
-					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency · 141 doktor na naka-duty · 1450 health hotline."
+					"tl": "112: European emergency number. Mga emergency number sa Austria: 122 bumbero · 133 pulis · 144 ambulansya · 112 European emergency number · 141 doktor na naka-duty · 1450 health hotline."
 				},
 				"goals": [
 					"A1-02-G8"
