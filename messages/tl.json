@@ -174,6 +174,8 @@
 	"level_title": "Level {level} · {into}/{need} XP sa susunod na level",
 	"level_label": "Level {level}",
 	"xp_explain": "May XP sa bawat tamang sagot, mas marami sa mga gawaing parang test. Pinaparami ng apoy ang XP ng kabanata kapag pumasa.",
+	"xp_to_next": "{xp} pa bago Level {level}",
+	"xp_total": "{xp} XP lahat",
 	"stat_flames": "apoy sa round na ito",
 	"freeze_explain": "Kapag may araw kang nalaktawan, 1 freeze ang magagamit at mananatili ang streak mo. May bago tuwing 7 araw ng streak, hanggang 2.",
 	"streak_explain": "Mga araw na may 20 min na pag-aaral at tapos ang lahat ng pag-uulit.",

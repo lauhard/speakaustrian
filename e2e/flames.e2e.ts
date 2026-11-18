@@ -51,6 +51,13 @@ test('flames v2 (K8) + XP (K9): a perfect lesson banks its flames and earns a sh
 	// The shield broke, the chapter flames stay.
 	await expect(headerFlames(page)).toHaveText('2');
 	await expect(page.locator('header [data-testid="stat-shields"] b')).toHaveText('0');
+
+	// The home page shows the total XP next to the greeting; a tap explains them.
+	await page.goto('/');
+	await expect(page.getByTestId('home-xp-total')).toHaveText('70 XP');
+	await expect(page.getByTestId('level-ring')).toHaveCount(0);
+	await page.getByTestId('home-xp').click();
+	await expect(page.getByTestId('home-xp-info')).toBeVisible();
 });
 
 test('flames v2 (K8): the demo and the review earn no flames', async ({ page }) => {

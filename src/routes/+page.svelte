@@ -1,4 +1,6 @@
 <script lang="ts">
+	import LevelRing from '#lib/components/LevelRing.svelte';
+	import { xp } from '#lib/xp.svelte.ts';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { m } from '#lib/paraglide/messages.js';
@@ -61,6 +63,7 @@
 
 	// R-S1 day goal: active minutes today; the bar fills to 20 min (due reviews are named in the sub line).
 	const streak = $derived(game.state.streak.current);
+	let xpInfo = $state(false);
 	const goal = $derived.by(() => {
 		const day = game.state.days[game.today];
 		const min = Math.floor((day?.activeSec ?? 0) / 60);
@@ -86,14 +89,28 @@
 	<p aria-busy="true" class="pt-10 text-center text-muted">…</p>
 {:else if profile}
 	<section class="space-y-6">
-		<div class="rise">
-			<h1 class="h1">{m.welcome_back({ name: profile.name })}</h1>
-			<p class="mt-1 flex items-center gap-1.5 text-sm font-bold text-muted">
-				<CalendarDays size={16} strokeWidth={2.25} />
-				<span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span>
-				<span aria-hidden="true">·</span>
-				<Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}
-			</p>
+		<div class="rise space-y-2">
+			<div class="flex items-start justify-between gap-3">
+				<div class="min-w-0">
+					<h1 class="h1">{m.welcome_back({ name: profile.name })}</h1>
+					<p class="mt-1 flex items-center gap-1.5 text-sm font-bold text-muted">
+						<CalendarDays size={16} strokeWidth={2.25} />
+						<span data-testid="plan-day">{m.day_x({ day: planDay(profile.startDate, game.today) })}</span>
+						<span aria-hidden="true">·</span>
+						<Clock size={16} strokeWidth={2.25} />{m.per_day({ time: pensumLabel })}
+					</p>
+				</div>
+				<!-- Level badge: total XP, level ring and the way to the next level; a tap explains XP. -->
+				<button type="button" class="flex shrink-0 items-center gap-2.5 rounded-2xl text-right focus-visible:outline-2 focus-visible:outline-brand" aria-expanded={xpInfo} onclick={() => (xpInfo = !xpInfo)} data-testid="home-xp">
+					<span class="space-y-1">
+						<b class="block text-lg leading-none font-black" data-testid="home-xp-total">{xp.total.toLocaleString(getLocale())} XP</b>
+						<span class="bar !h-1.5 block w-24"><span class="!bg-amber-400" style="width: {(xp.level.into / xp.level.need) * 100}%"></span></span>
+						<span class="block text-xs font-bold text-muted">{m.xp_to_next({ xp: (xp.level.need - xp.level.into).toLocaleString(getLocale()), level: xp.level.level + 1 })}</span>
+					</span>
+					<LevelRing large />
+				</button>
+			</div>
+			{#if xpInfo}<p class="card-muted text-sm" data-testid="home-xp-info">{m.xp_explain()}</p>{/if}
 		</div>
 
 		<div class="tile !flex-row !flex-wrap !items-center rise" style:animation-delay="40ms" data-testid="day-goal">

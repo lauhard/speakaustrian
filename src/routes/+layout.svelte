@@ -77,7 +77,7 @@
 			{/if}
 			<div class="flex items-center gap-2">
 				{#if page.url.pathname !== '/'}<span class="lg:hidden"><StatBar /></span>{/if}
-				{#if game.ready && game.state.profile}<LevelRing />{/if}
+				{#if game.ready && game.state.profile && page.url.pathname !== '/'}<LevelRing />{/if}
 				<Menu />
 			</div>
 		</header>
