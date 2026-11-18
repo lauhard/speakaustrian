@@ -1,3 +1,4 @@
+import type { XpContext } from './core/xp.ts';
 import { createLocalStorage } from './adapters/web/local-storage.ts';
 import { contentInfo, course, PREVIEW_CHAPTER } from './content/index.ts';
 import { legacyEvents } from './core/migrate.ts';
@@ -115,3 +116,10 @@ export const storeFor = (chapterId: string) => (chapterId === PREVIEW_CHAPTER ? 
 // K8: flames count only in the running course chapter (not in the demo, free mode or a chapter already passed).
 export const flameChapter = (chapterId: string): string | null =>
 	storeFor(chapterId) === game && game.state.course.chapter?.id === chapterId ? chapterId : null;
+
+// K9: where XP are paid. The demo sandbox pays none; free mode pays half; the running course chapter feeds the flame bonus.
+export const xpContext = (chapterId: string): XpContext | null => {
+	const store = storeFor(chapterId);
+	if (store === demo) return null;
+	return { chapterId: flameChapter(chapterId), reduced: store !== game };
+};

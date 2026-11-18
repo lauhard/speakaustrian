@@ -4,6 +4,7 @@
 	import { page } from '$app/state';
 	import { m } from '#lib/paraglide/messages.js';
 	import { flames, TIER_CLASS } from '#lib/flames.svelte.ts';
+	import { xp } from '#lib/xp.svelte.ts';
 	import { dueQueue } from '#lib/core/review.ts';
 	import { game } from '#lib/game.svelte.ts';
 
@@ -40,6 +41,15 @@
 	{#if game.ready && game.state.profile}
 		<section class="space-y-2">
 			<h2 class="list-label">{m.side_progress()}</h2>
+			<!-- K9: level and XP towards the next level. -->
+			<div class="side-stat" data-testid="side-xp">
+				<span class="icon-tile !bg-amber-100 !text-amber-600 text-base font-black">{xp.level.level}</span>
+				<span class="min-w-0 flex-1 space-y-1">
+					<span class="tile-title">{m.level_label({ level: xp.level.level })} <span class="text-sm font-semibold text-muted">{xp.level.into}/{xp.level.need} XP</span></span>
+					<span class="bar !h-2 block"><span class="!bg-amber-400" style="width: {(xp.level.into / xp.level.need) * 100}%"></span></span>
+					<span class="side-note">{m.xp_explain()}</span>
+				</span>
+			</div>
 			<div class="side-stat">
 				<span class="icon-tile !bg-amber-100 !text-amber-500"><Zap size={20} strokeWidth={2.25} class={st.current > 0 ? 'fill-amber-400' : ''} /></span>
 				<span class="min-w-0">

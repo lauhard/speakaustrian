@@ -1,4 +1,8 @@
 <script lang="ts">
+	import { xp } from '#lib/xp.svelte.ts';
+	import { XP_ANSWER } from '#lib/core/xp.ts';
+	// K9: free practice pays half and never feeds a chapter bonus.
+	const FREE = { chapterId: null, reduced: true };
 	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 	import { practiceKinds } from '#lib/skills.ts';
 	import { resolve } from '$app/paths';
@@ -54,14 +58,14 @@
 
 {#if words}
 	{#key roundNo}
-		<CardRunner tasks={words} pool={allVocab()} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (words = null)} />
+		<CardRunner tasks={words} pool={allVocab()} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (words = null)} onanswer={(_, ok) => ok && xp.award(XP_ANSWER.review, FREE)} />
 	{/key}
 	<button type="button" class="backlink mt-6" onclick={() => (words = null)}>
 		<ChevronLeft size={18} strokeWidth={2.5} />{m.free_practice()}
 	</button>
 {:else if round}
 	{#key roundNo}
-		<Runner items={round} {tlMachine} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (round = null)} />
+		<Runner items={round} {tlMachine} backHref={resolve('/practice')} backLabel={m.free_practice()} onback={() => (round = null)} xp={{ amount: XP_ANSWER.lesson, ctx: FREE }} />
 	{/key}
 	<button type="button" class="backlink mt-6" onclick={() => (round = null)}>
 		<ChevronLeft size={18} strokeWidth={2.5} />{m.free_practice()}

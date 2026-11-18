@@ -62,7 +62,7 @@ XP kommen **sofort** („+5“ an der Antwort), der Flammen-Bonus **beim Bestehe
 
 **Rechenbeispiel Kapitel A1-01** (7 Lektionen à ~7 Aufgaben, 20 Übung, 20 Testreife, 20 Test, ~85 % richtig, 18 Flammen):
 - Antworten: 42×5 + 17×5 + 17×8 + 18×10 = 611 · Lektionen 7×20 + 3×10 = 170 · Testreife 30 · Test 100 → **911 XP**
-- Bonus ×1,36 → **+328 XP** · Summe **1.239 XP** → von Level 1 auf Level 4.
+- Bonus ×1,36 → **+328 XP** · Summe **1.239 XP** → von Level 1 auf Level 5 (100 + 200 + 300 + 400 = 1.000 XP bis Level 5; korrigiert in 030).
 
 ## 4. Warum es motiviert, ohne falsche Anreize
 - **Sofortiges Feedback** (+XP, Flamme springt) bei jeder richtigen Antwort.

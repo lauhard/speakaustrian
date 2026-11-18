@@ -14,6 +14,8 @@
 	import Sidebar from '#lib/components/Sidebar.svelte';
 	import Splash from '#lib/components/Splash.svelte';
 	import StatBar from '#lib/components/StatBar.svelte';
+	import LevelRing from '#lib/components/LevelRing.svelte';
+	import { xp } from '#lib/xp.svelte.ts';
 	import './layout.css';
 	import type { LayoutProps } from './$types';
 
@@ -41,6 +43,10 @@
 				await navigation.complete;
 			});
 		});
+	});
+	// K9: the day goal pays +25 XP once per day.
+	$effect(() => {
+		if (game.ready && game.state.days[game.today]?.goalMet) xp.dayGoal(game.today);
 	});
 </script>
 
@@ -71,6 +77,7 @@
 			{/if}
 			<div class="flex items-center gap-2">
 				{#if page.url.pathname !== '/'}<span class="lg:hidden"><StatBar /></span>{/if}
+				{#if game.ready && game.state.profile}<LevelRing />{/if}
 				<Menu />
 			</div>
 		</header>

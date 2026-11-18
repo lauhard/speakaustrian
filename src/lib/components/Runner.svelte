@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { flames } from '#lib/flames.svelte.ts';
+	import { xp as xpStore } from '#lib/xp.svelte.ts';
+	import type { XpContext } from '#lib/core/xp.ts';
 	import BankPoints from './BankPoints.svelte';
 	import FlamePot from './FlamePot.svelte';
 	import { fly } from 'svelte/transition';
@@ -37,8 +39,10 @@
 		passCheck?: (correct: number, total: number) => boolean;
 		// K8: the running course chapter, where answers earn flames; null in free practice, demo and free mode.
 		flameChapter?: string | null;
+		// K9: XP per correct answer (before scaling) and where they are paid; null pays none (demo).
+		xp?: { amount: number; ctx: XpContext } | null;
 	};
-	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel, passCheck, flameChapter = null }: Props = $props();
+	let { items, tlMachine, backHref, backLabel, onback, onfinish, bare = false, examMode = false, top, onchecked, nextLabel, passCheck, flameChapter = null, xp = null }: Props = $props();
 
 	const helpLocale: 'de' | 'en' | 'tl' = getLocale();
 
@@ -50,6 +54,7 @@
 	let gaps = $state<Record<string, string>>({});
 	let shortText = $state('');
 	let grade = $state<Grade | null>(null);
+	let gained = $state(0);
 	let correctCount = $state(0);
 	// Current run of correct answers and the misses of this round, for the header and the result screen.
 	let misses = $state<{ id: string; text: string; expected: string }[]>([]);
@@ -76,6 +81,8 @@
 		if (!response || grade) return;
 		grade = gradeItem(item, response);
 		flames.record(flameChapter, passes(grade.verdict));
+		if (passes(grade.verdict) && xp) xpStore.award(xp.amount, xp.ctx);
+		gained = passes(grade.verdict) && xp ? xpStore.fx.gain : 0;
 		if (passes(grade.verdict)) {
 			correctCount += 1;
 		} else {
@@ -301,7 +308,10 @@
 				role="status"
 				class="max-h-[45dvh] space-y-2 overflow-y-auto {grade.verdict === 'wrong' ? 'shake' : ''}"
 			>
-				<p class="sheet-title">{#if grade.verdict === 'wrong'}<CircleX size={24} strokeWidth={2.5} />{:else}<CircleCheck size={24} strokeWidth={2.5} />{/if}{verdictText(grade)}</p>
+				<p class="sheet-title">
+					{#if grade.verdict === 'wrong'}<CircleX size={24} strokeWidth={2.5} />{:else}<CircleCheck size={24} strokeWidth={2.5} />{/if}{verdictText(grade)}
+					{#if gained > 0}<span class="pop ml-auto rounded-full bg-amber-100 px-2.5 py-0.5 text-sm font-black text-amber-700" data-testid="xp-gain">+{gained} XP</span>{/if}
+				</p>
 				{#if grade.verdict !== 'correct'}
 					<p lang="de">{m.expected({ answer: Object.values(grade.expected).join(' · ') })}</p>
 				{/if}
