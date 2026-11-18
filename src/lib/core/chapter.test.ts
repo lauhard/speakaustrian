@@ -329,3 +329,25 @@ describe('chapter result (K6)', () => {
 		expect(parsed.course.chapter?.tally).toEqual({ correct: 0, total: 0 });
 	});
 });
+
+describe('practice heart (K7)', () => {
+	const big: ContentInfo = { ...content, chapter: (c) => (content.chapter(c) ? { ...content.chapter(c)!, practiceTotal: 40 } : undefined) };
+	const p = (correct: boolean, i: number) => ev({ type: 'PRACTICE_ANSWERED', itemId: `p${i}`, correct });
+	const go = (answers: boolean[], from = newGame(policy)) =>
+		[profile, ...lessons('A1-01'), ...answers.map(p)].reduce(makeReducer(policy, order, big), from);
+	it('10 right in a row earn +1 life for the test; a mistake resets the streak', () => {
+		const base = go([]).course.chapter!.startLives;
+		const nine = go([...Array(9).fill(true), false, ...Array(9).fill(true)]);
+		expect(nine.course.chapter).toMatchObject({ practiceStreak: 9, heartEarned: false, startLives: base });
+		const ten = go([...Array(9).fill(true), false, ...Array(10).fill(true)]);
+		expect(ten.course.chapter).toMatchObject({ heartEarned: true, startLives: base + 1 });
+	});
+	it('only one heart per chapter, and the cap of 5 lives stays', () => {
+		const base = go([]).course.chapter!.startLives;
+		expect(go(Array(30).fill(true)).course.chapter?.startLives).toBe(base + 1);
+		const s = go([]);
+		const full = { ...s, course: { ...s.course, chapter: { ...s.course.chapter!, startLives: policy.config.LIVES_MAX } } };
+		const after = Array(10).fill(true).map(p).reduce(makeReducer(policy, order, big), full);
+		expect(after.course.chapter).toMatchObject({ heartEarned: true, startLives: policy.config.LIVES_MAX });
+	});
+});

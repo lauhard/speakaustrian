@@ -180,6 +180,9 @@
 {#snippet practiceTop()}
 	<div class="flex items-center justify-between gap-3">
 		{@render label(m.flow_practice({ current: (practice?.answered ?? 0) + 1, total: practice?.total ?? 0 }), 'PRACTICE')}
+		{#if run?.heartEarned}
+			<span class="pop inline-flex items-center gap-1 rounded-full bg-brand-soft px-2.5 py-0.5 text-xs font-extrabold text-brand" data-testid="practice-heart"><Heart size={13} strokeWidth={2.5} class="fill-brand" />{m.flow_heart_earned()}</span>
+		{/if}
 		<button type="button" class="text-sm font-bold text-muted underline underline-offset-4 hover:text-brand" data-testid="flow-skip-practice" onclick={() => store.dispatch({ type: 'PRACTICE_SKIPPED' })}>{m.flow_practice_skip()} →</button>
 	</div>
 {/snippet}
