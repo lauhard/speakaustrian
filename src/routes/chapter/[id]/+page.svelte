@@ -125,6 +125,7 @@
 					{#each content.lessons as lesson, i (lesson.id)}
 						{@const isDone = done.includes(lesson.id)}
 						{@const pct = lessonScores.of(lesson.id)}
+						{@const retry = !isDone && pct !== undefined && pct < STARS[0]}
 						<li>
 							<a
 								href={resolve('/chapter/[id]/[lesson]', { id, lesson: lesson.id })}
@@ -132,7 +133,8 @@
 								data-done={isDone}
 								class="card-link flex items-center gap-3"
 							>
-								<span class="node {isDone ? 'is-passed' : ''}">{#if isDone}<Check size={18} strokeWidth={3} />{:else}{i + 1}{/if}</span>
+								<!-- A failed lesson shows a retry mark instead of its number (with the red score next to it). -->
+								<span class="node {isDone ? 'is-passed' : retry ? '!bg-bad-soft !text-bad !ring-bad/40' : ''}" data-testid="lesson-node" data-retry={retry}>{#if isDone}<Check size={18} strokeWidth={3} />{:else if retry}<RotateCcw size={17} strokeWidth={2.75} />{:else}{i + 1}{/if}</span>
 								<span class="flex-1">
 									<span class="block text-lg font-extrabold" lang="de">{lesson.title.de}</span>
 									{#if showTr}<span class="block text-sm text-muted">{lesson.title[helpLocale]}</span>{/if}

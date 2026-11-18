@@ -176,6 +176,7 @@ test('DEMO chapter: a lesson below 51 % stays open and keeps practice locked, pr
 	await expect(page.getByTestId('misses')).not.toContainText('✓');
 	await page.getByTestId('back').click();
 	await expect(page.getByTestId('lesson-DEMO-01')).toHaveAttribute('data-done', 'false');
+	await expect(page.getByTestId('lesson-DEMO-01').getByTestId('lesson-node')).toHaveAttribute('data-retry', 'true');
 	await expect(page.getByTestId('chapter-flow')).toHaveCount(0);
 
 	// Second try with 4 of 6 (67 %) passes and opens practice.
