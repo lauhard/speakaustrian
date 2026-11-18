@@ -154,3 +154,10 @@ Format:
 - Problem: agents may not invent the numbers. The trophy step shows test %, right/wrong and the chapter error rate, but no stars yet.
 - Options: A like lessons on chapter accuracy (all graded answers): 1 star = passed, 2 ≥ 70 %, 3 ≥ 90 % · B 1 = passed, 2 = test passed in the 1st attempt, 3 = 1st attempt and test without errors (perfect, like the lives bonus) · C combination: 3 only with a perfect 1st attempt and ≥ 90 % accuracy.
 - Blocks: stars in the trophy step (027); flames/XP follow in 029/030.
+
+## G-020 – WOW fact „seit 1995 in der EU“ without a source in 00-quellen   (status: open)
+- Found in: ticket 035 spot check, `A1-03-L13` (Merksatz in four `werte` explanations, carried over from the first content run).
+- Spec says: exam/WOW facts only from `00-quellen.md` with source; the items carry `sourceIds: ['Q36']`, but `00-quellen.md` lists no EU accession year.
+- Problem: the fact is true, but unverified against our sources.
+- Options: A add the source (e.g. the ÖIF Werte- und Orientierungswissen material) to `00-quellen.md` · B drop „seit 1995“ from the Merksatz.
+- Blocks: nothing (content stays as is until decided).

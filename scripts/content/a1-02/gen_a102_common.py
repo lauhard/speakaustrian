@@ -100,10 +100,12 @@ def choice(i, skill, instr, prompt, correct, others, exp, goals=None, refs=None,
     return it
 
 
-def cloze(i, skill, instr, text, gaps, exp, goals=None, refs=None, audio=None, img=None):
+def cloze(i, skill, instr, text, gaps, exp, goals=None, refs=None, audio=None, img=None, bank=None, hints=None):
     it = _base(i, 'cloze', skill, instr, exp, goals, refs)
     it['text'] = text
-    it['gaps'] = {str(n): {'accept': a} for n, a in enumerate(gaps, 1)}
+    it['gaps'] = {str(n): {'accept': a, **({'hint': hints[n - 1]} if hints and hints[n - 1] else {})} for n, a in enumerate(gaps, 1)}
+    if bank:
+        it['bank'] = bank  # content standard v2 §3: correct words + 1–2 distractors
     if audio:
         it.update(audioText=audio, audioOnly=True)
     if img:

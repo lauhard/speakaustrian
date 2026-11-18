@@ -4,7 +4,7 @@ HEAD = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img"
 SKIN = {'a': '#f1c9a5', 'b': '#c68a5c', 'c': '#8d5a3b'}
 
 
-def person(x, shirt, skin='a', hair='#4a2f1c', y=0, long=False):
+def person(x, shirt, skin='a', hair='#4a2f1c', y=0, long=False, mood='smile'):
     """Simple bust: body at y+150..260, head at y+112."""
     s = SKIN[skin]
     h = f'<path d="M{x-24} {y+116}q-2-34 24-34t24 34q-6-16-24-16t-24 16z" fill="{hair}"/>'
@@ -13,7 +13,9 @@ def person(x, shirt, skin='a', hair='#4a2f1c', y=0, long=False):
     return (f'<path d="M{x-40} {y+260}v-60q0-44 40-44t40 44v60z" fill="{shirt}"/>'
             f'<circle cx="{x}" cy="{y+118}" r="26" fill="{s}"/>{h}'
             f'<circle cx="{x-9}" cy="{y+118}" r="3" fill="#222"/><circle cx="{x+9}" cy="{y+118}" r="3" fill="#222"/>'
-            f'<path d="M{x-8} {y+130}q8 6 16 0" stroke="#222" stroke-width="2.5" fill="none"/>')
+            + {'smile': f'<path d="M{x-8} {y+130}q8 6 16 0" stroke="#222" stroke-width="2.5" fill="none"/>',
+               'frown': f'<path d="M{x-8} {y+134}q8 -6 16 0" stroke="#222" stroke-width="2.5" fill="none"/>',
+               'open': f'<ellipse cx="{x}" cy="{y+132}" rx="6" ry="5" fill="#7a2d2d"/>'}[mood])
 
 
 def bubble(x, y, w, text, size=15, color='#34506b', tail='down'):
@@ -79,60 +81,112 @@ def geo_map(v, labels, dots, clip):
 D = GEO['dach']
 cx = lambda n, dx=0, dy=0: (D['centroids'][n][0] + dx, D['centroids'][n][1] + dy)
 PICS['karte'] = geo_map(D, [(*cx('Germany', 0, 10), 'Deutschland', 18, '#5b4a1c'), (*cx('Austria', 4, 6), 'Österreich', 15, '#c8102e'), (*cx('Switzerland', 0, 5), 'Schweiz', 13, '#3f5a1c')], ['Wien'], 'clip-dach')
-# L03: city Graz (left) vs village St. Georgen (right), Maria and Lukas
-PICS['wohnort'] = ('<rect x="0" y="210" width="400" height="50" fill="#c9b18e"/>'
-                   '<g fill="#b8bec6"><rect x="20" y="90" width="40" height="120"/><rect x="66" y="60" width="44" height="150"/><rect x="116" y="110" width="40" height="100"/></g>'
-                   '<g fill="#9ed8ff">' + ''.join(f'<rect x="{x}" y="{y}" width="10" height="12"/>' for x in (28, 44, 74, 92, 124, 140) for y in (120, 150, 180)) + '</g>'
-                   + '<rect x="40" y="20" width="96" height="30" rx="4" fill="#fff" stroke="#1d4e89" stroke-width="3"/>' + label(88, 42, 'Graz', 18, '#1d4e89')
-                   + house(230, 150, 50) + house(310, 160, 44, '#f2e2b8', '#7a4e2d')
-                   + '<rect x="244" y="20" width="132" height="30" rx="4" fill="#ffd23f" stroke="#1f2937" stroke-width="2"/>' + label(310, 42, 'St. Georgen', 16)
-                   + '<g transform="translate(64 116) scale(0.4)">' + person(60, '#c8102e', 'b', '#222', long=True) + '</g>'
-                   + '<g transform="translate(350 120) scale(0.38)">' + person(60, '#1d4e89', 'a', '#7a4e2d') + '</g>'
-                   + label(88, 236, 'Maria', 15, '#1f2937') + label(372, 236, 'Lukas', 15, '#1f2937'))
-# L04: envelope with an address and an e-mail card
-PICS['adresse'] = ('<rect x="30" y="40" width="250" height="160" rx="6" fill="#fff" stroke="#9ca3af" stroke-width="2"/>'
-                   '<path d="M30 40l125 80 125-80" fill="none" stroke="#d1d5db" stroke-width="2"/>'
-                   '<rect x="226" y="54" width="40" height="46" fill="#fde2e2" stroke="#c8102e" stroke-dasharray="3 2"/>'
-                   + label(60, 140, 'Maria Santos', 16, anchor='start') + label(60, 162, 'Hauptstraße 12', 16, anchor='start', bold=False)
-                   + label(60, 184, '8010 Graz', 16, anchor='start', bold=False)
-                   + '<rect x="250" y="168" width="140" height="70" rx="8" fill="#e0ebf8" stroke="#1d4e89" stroke-width="2"/>'
-                   + label(320, 192, 'E-Mail:', 13, '#1d4e89') + label(320, 214, 'maria.santos@gmx.at', 11, '#1f2937', bold=False))
-# L05: three people say hello in their languages
-PICS['sprachen'] = ''.join(person(x, c, sk, hr, y=20, long=lg) + label(x, 256, n, 14, '#fff') for x, c, sk, hr, n, lg in ((70, '#2a9d8f', 'a', '#7a4e2d', 'Anna', True), (200, '#1d4e89', 'b', '#222', 'Jose', False), (330, '#f77f00', 'a', '#4a2f1c', 'Emma', True))) \
-    + bubble(14, 16, 112, 'Grüß Gott!', 16) + bubble(140, 16, 120, 'Kumusta!', 16) + bubble(276, 16, 112, 'Hello!', 16)
-# L06: man talks fast, Ali does not understand
-PICS['langsam'] = (person(100, '#34506b', 'a', '#7a4e2d') + person(300, '#c8102e', 'c', '#222')
-                   + bubble(20, 20, 170, 'blablablablabla…', 15) + '<path d="M196 30h30M200 42h40M196 54h30" stroke="#f77f00" stroke-width="4" stroke-linecap="round"/>' + '<text x="300" y="70" font-size="44" font-weight="bold" fill="#f77f00" text-anchor="middle">?</text>'
-                   + label(300, 236, 'Ali', 15, '#fff'))
-# L07: Anna with an Austrian flag and a sign "Wien"
-PICS['anna'] = (person(130, '#2a9d8f', 'a', '#7a4e2d', long=True) + label(130, 236, 'Anna', 15, '#fff') + flag(240, 60, 'AT', 90)
-                + '<rect x="230" y="150" width="110" height="40" rx="6" fill="#1d4e89"/>' + label(285, 177, 'Wien', 22, '#fff'))
-# L08: Jose says he speaks German and Tagalog
-PICS['jose'] = person(110, '#1d4e89', 'b', '#222') + label(110, 236, 'Jose', 15, '#fff') + bubble(20, 22, 190, 'Ich wohne in Wien.', 16) + '<rect x="230" y="130" width="110" height="40" rx="6" fill="#1d4e89"/>' + label(285, 157, 'Wien', 22, '#fff')
-# L09: three numbered pictures: 1 a country (map shape), 2 a street sign, 3 a person
-PICS['nomen'] = ('<rect x="14" y="40" width="116" height="160" rx="10" fill="#fff"/><rect x="142" y="40" width="116" height="160" rx="10" fill="#fff"/><rect x="270" y="40" width="116" height="160" rx="10" fill="#fff"/>'
-                 '<path d="M30 110l30-8 26 4 20-8 14 4v30l-40 8-50-4z" fill="#fbd3d3" stroke="#c8102e" stroke-width="2"/>' + label(72, 172, 'Österreich', 14)
-                 + '<rect x="166" y="96" width="68" height="26" rx="3" fill="#1d4e89" stroke="#fff" stroke-width="2"/>' + label(200, 114, 'Hauptstraße', 10, '#fff') + '<rect x="197" y="122" width="6" height="50" fill="#6b7280"/>'
-                 + '<g transform="translate(270 66) scale(0.55)">' + person(105, '#f77f00', 'a', '#4a2f1c') + '</g>'
-                 + '<rect x="270" y="200" width="116" height="24" fill="#f3ead9"/>'
-                 + ''.join(f'<circle cx="{cx}" cy="58" r="14" fill="#c8102e"/>' + label(cx, 64, str(k), 15, '#fff') for k, cx in ((1, 34), (2, 162), (3, 290))))
-# L10: yellow town sign "Seedorf" with a few houses
-PICS['moosbach'] = ('<rect y="200" width="400" height="60" fill="#8a8f98"/><path d="M0 200q100-30 200-12t200 0v12H0z" fill="#7cc36a"/>'
-                   + house(220, 140, 50) + house(290, 150, 44, '#f2e2b8', '#7a4e2d') + house(345, 156, 38)
-                   + '<rect x="96" y="140" width="8" height="64" fill="#6b7280"/><rect x="30" y="60" width="140" height="84" rx="4" fill="#fff" stroke="#1f2937" stroke-width="5"/>'
-                   + label(100, 112, 'Moosbach', 26))
-# L11: Maria with a map is looking for a street; sign shows another street
-PICS['suchen'] = (person(110, '#c8102e', 'b', '#222', long=True) + label(110, 236, 'Maria', 15, '#fff')
-                  + '<rect x="70" y="170" width="80" height="54" fill="#fff" stroke="#9ca3af"/><path d="M80 186h60M80 200h40M100 176v44" stroke="#7cc36a" stroke-width="3"/>'
-                  + bubble(20, 20, 210, 'Wo ist die Bahnhofstraße?', 14)
-                  + '<rect x="300" y="110" width="8" height="110" fill="#6b7280"/><rect x="250" y="80" width="120" height="32" rx="3" fill="#1d4e89" stroke="#fff" stroke-width="2"/>' + label(310, 102, 'Hauptstraße', 14, '#fff'))
-# L12: panel 1 phone call ends, panel 2 two people part in the street
-PICS['abschied'] = ('<rect x="10" y="10" width="185" height="240" rx="10" fill="#fff"/><rect x="205" y="10" width="185" height="240" rx="10" fill="#fff"/>'
-                    + label(30, 40, '1', 22, '#c8102e') + label(225, 40, '2', 22, '#c8102e')
-                    + '<rect x="80" y="70" width="46" height="84" rx="8" fill="#1f2937"/><rect x="86" y="80" width="34" height="60" rx="3" fill="#9ed8ff"/>'
-                    + '<path d="M60 90q-12 20 0 40M48 82q-20 28 0 56" stroke="#34506b" stroke-width="3" fill="none"/>' + label(102, 190, '📞', 30)
-                    + '<g transform="translate(215 40) scale(0.5)">' + person(100, '#2a9d8f', 'a', '#7a4e2d', long=True) + person(240, '#1d4e89', 'b', '#222') + '</g>'
-)
+# L03: city Graz (left) vs village St. Georgen (right) – two panels, Maria and Lukas in front of their place
+def panel(x, w, fill, body, clip):
+    return (f'<defs><clipPath id="{clip}"><rect x="{x}" y="8" width="{w}" height="244" rx="12"/></clipPath></defs>'
+            f'<g clip-path="url(#{clip})"><rect x="{x}" y="8" width="{w}" height="244" fill="{fill}"/><g transform="translate({x} 0)">{body}</g></g>'
+            f'<rect x="{x}" y="8" width="{w}" height="244" rx="12" fill="none" stroke="#c9b18e" stroke-width="2"/>')
+
+
+def bust(cx, s, shirt, skin, hair, long=False, mood='smile'):
+    """Bust scaled by s, centred at cx, bottom edge at y=252 (panel bottom)."""
+    return f'<g transform="translate({cx - 60 * s} {252 - 260 * s}) scale({s})">{person(60, shirt, skin, hair, long=long, mood=mood)}</g>'
+
+
+def windows(x, y, cols, rows, dx=14, dy=26):
+    return ''.join(f'<rect x="{x + c * dx}" y="{y + r * dy}" width="8" height="13" fill="#9ed8ff" stroke="#6b8fa8" stroke-width="0.8"/>' for c in range(cols) for r in range(rows))
+
+
+city = ('<rect x="0" y="206" width="210" height="50" fill="#a9a9a9"/><path d="M0 226h210" stroke="#fff" stroke-width="3" stroke-dasharray="16 12"/>'
+        '<rect x="14" y="78" width="54" height="128" fill="#b8bec6"/><rect x="72" y="52" width="58" height="154" fill="#9aa3ad"/><rect x="134" y="92" width="56" height="114" fill="#c7cdd4"/>'
+        + windows(22, 88, 3, 4) + windows(80, 62, 3, 5) + windows(142, 102, 3, 3))
+PICS['wohnort'] = (panel(8, 188, '#dfeaf3', city + bust(102, 0.62, '#c8102e', 'b', '#222', long=True), 'clip-city')
+                   + '<rect x="52" y="18" width="116" height="30" rx="5" fill="#fff" stroke="#1d4e89" stroke-width="3"/>' + label(110, 40, 'Graz', 20, '#1d4e89')
+                   + label(110, 238, 'Maria', 14, '#fff')
+                   + panel(204, 188, '#e6f1d8',
+                           '<path d="M0 180q90-34 188-8v80H0z" fill="#8fc66b"/><rect y="214" width="188" height="40" fill="#b99f78"/>'
+                           + house(8, 150, 44) + house(56, 146, 38, '#f2e2b8', '#7a4e2d')
+                           + '<rect x="104" y="112" width="22" height="48" fill="#e8d3b0"/><path d="M100 112l15-26 15 26z" fill="#7a4e2d"/><path d="M115 70v16M109 77h12" stroke="#1f2937" stroke-width="2.5"/>'
+                           + bust(148, 0.62, '#1d4e89', 'a', '#7a4e2d'), 'clip-dorf')
+                   + '<rect x="216" y="18" width="164" height="30" rx="5" fill="#ffd23f" stroke="#1f2937" stroke-width="2.5"/>' + label(298, 40, 'St. Georgen', 18)
+                   + label(352, 238, 'Lukas', 14, '#fff'))
+# L04: envelope with address and a card with the e-mail address (all text >= 17 px)
+PICS['adresse'] = ('<rect x="16" y="14" width="260" height="168" rx="8" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>'
+                   '<path d="M16 22l130 84 130-84" fill="none" stroke="#e1e4e8" stroke-width="2"/>'
+                   '<rect x="222" y="26" width="42" height="50" rx="2" fill="#fff" stroke="#c8102e" stroke-width="2" stroke-dasharray="4 3"/>' + flag(228, 38, 'AT', 30)
+                   + label(34, 118, 'Maria Santos', 19, anchor='start') + label(34, 144, 'Hauptstraße 12', 19, anchor='start', bold=False)
+                   + label(34, 170, '8010 Graz', 19, anchor='start', bold=False)
+                   + '<rect x="16" y="198" width="368" height="50" rx="10" fill="#e0ebf8" stroke="#1d4e89" stroke-width="2.5"/>'
+                   + '<rect x="30" y="212" width="30" height="22" rx="3" fill="#fff" stroke="#1d4e89" stroke-width="2"/><path d="M30 214l15 11 15-11" fill="none" stroke="#1d4e89" stroke-width="2"/>'
+                   + label(72, 231, 'maria.santos@gmx.at', 19, '#1f2937', anchor='start'))
+# L05: course list – who speaks which language (Anna: Deutsch, Englisch · Jose: Tagalog, Englisch, Deutsch · Tom: Deutsch)
+CHIP = {'Deutsch': ('#fbd3d3', '#8a1c2b'), 'Englisch': ('#d6e4f5', '#1d4e89'), 'Tagalog': ('#fbe8b0', '#7a5b00')}
+
+
+def column(cx, name, shirt, skin, hair, langs, long=False):
+    out = f'<g transform="translate({cx - 60 * 0.42} 10) scale(0.42)">{person(60, shirt, skin, hair, long=long)}</g>' + label(cx, 150, name, 17)
+    for k, lg in enumerate(langs):
+        f, t = CHIP[lg]
+        out += f'<rect x="{cx - 48}" y="{162 + k * 30}" width="96" height="25" rx="12" fill="{f}" stroke="{t}" stroke-width="1.5"/>' + label(cx, 180 + k * 30, lg, 15, t)
+    return out
+
+
+PICS['sprachen'] = ('<rect x="8" y="8" width="384" height="244" rx="12" fill="#fff"/><path d="M142 20v222M270 20v222" stroke="#e5e7eb" stroke-width="2"/>'
+                    + column(75, 'Anna', '#2a9d8f', 'a', '#7a4e2d', ['Deutsch', 'Englisch'], True)
+                    + column(206, 'Jose', '#1d4e89', 'b', '#222', ['Tagalog', 'Englisch', 'Deutsch'])
+                    + column(335, 'Tom', '#f77f00', 'a', '#d9a066', ['Deutsch']))
+# L06: a man talks very fast (open mouth, motion lines), Ali does not understand (frown, question marks)
+PICS['langsam'] = (person(95, '#34506b', 'a', '#7a4e2d', mood='open') + person(305, '#c8102e', 'c', '#222', mood='frown') + label(305, 236, 'Ali', 16, '#fff')
+                   + bubble(18, 14, 200, 'Blablablablabla…', 16) + '<path d="M226 22h34M230 36h44M226 50h34" stroke="#f77f00" stroke-width="5" stroke-linecap="round"/>'
+                   + ''.join(f'<text x="{x}" y="{y}" font-size="{s}" font-weight="bold" fill="#f77f00" text-anchor="middle">?</text>' for x, y, s in ((262, 96, 34), (350, 80, 44), (332, 52, 28))))
+# L07: course card Anna (facts: Österreich, Wien, Deutsch)
+def kurskarte(name, land, ort, sprache, fl, shirt, skin, hair, long=False):
+    return ('<rect x="30" y="24" width="340" height="212" rx="14" fill="#fff" stroke="#9ca3af" stroke-width="2.5"/>'
+            '<path d="M30 38q0-14 14-14h312q14 0 14 14v26H30z" fill="#1d4e89"/>' + label(200, 53, 'Kurskarte', 18, '#fff')
+            + '<rect x="48" y="82" width="104" height="134" rx="8" fill="#e8eef5" stroke="#9ca3af"/>'
+            + f'<g transform="translate({100 - 60 * 0.62} {216 - 260 * 0.62}) scale(0.62)" >{person(60, shirt, skin, hair, long=long)}</g>'
+            + label(170, 100, f'{name}', 22, anchor='start') + flag(318, 76, fl, 44)
+            + label(170, 140, f'Land: {land}', 18, anchor='start', bold=False) + label(170, 170, f'Wohnort: {ort}', 18, anchor='start', bold=False)
+            + label(170, 200, f'Sprache: {sprache}', 18, anchor='start', bold=False))
+
+
+PICS['anna'] = kurskarte('Anna Huber', 'Österreich', 'Wien', 'Deutsch', 'AT', '#2a9d8f', 'a', '#7a4e2d', True)
+# L08: course card Jose (facts: Philippinen, Wien, Tagalog)
+PICS['jose'] = kurskarte('Jose Cruz', 'Philippinen', 'Wien', 'Tagalog', 'PH', '#1d4e89', 'b', '#222')
+# L09: three unlabelled pictures: 1 country (real outline of Austria), 2 street, 3 person
+import re
+_nums = [float(n) for n in re.findall(r'-?\d+\.?\d*', GEO['austria']['shapes']['Austria'])]
+_xs, _ys = _nums[0::2], _nums[1::2]
+_bx0, _bx1, _by0, _by1 = min(_xs), max(_xs), min(_ys), max(_ys)
+_sc = 100 / (_bx1 - _bx0)
+PICS['nomen'] = (''.join(f'<rect x="{x}" y="40" width="118" height="186" rx="12" fill="#fff" stroke="#c9b18e" stroke-width="2"/>' for x in (12, 141, 270))
+                 + f'<g transform="translate({21 - _bx0 * _sc} {133 - (_by0 + _by1) / 2 * _sc}) scale({_sc})"><path d="{GEO["austria"]["shapes"]["Austria"]}" fill="#fbd3d3" stroke="#c8102e" stroke-width="{2.2 / _sc}" stroke-linejoin="round"/></g>'
+                 + '<rect x="150" y="150" width="100" height="76" fill="#a9a9a9"/><path d="M200 150v76" stroke="#fff" stroke-width="3" stroke-dasharray="10 8"/>'
+                 + '<rect x="150" y="100" width="30" height="50" fill="#e8d3b0"/><rect x="214" y="112" width="34" height="38" fill="#f2e2b8"/><path d="M146 100l19-24 19 24zM210 112l21-22 21 22z" fill="#c8102e"/>'
+                 + '<rect x="148" y="146" width="102" height="6" fill="#7cc36a"/>'
+                 + f'<g transform="translate({270 + 59 - 60 * 0.75} {226 - 260 * 0.75}) scale(0.75)"><g clip-path="url(#none)">{person(60, "#f77f00", "a", "#4a2f1c")}</g></g>'
+                 + ''.join(f'<circle cx="{c}" cy="40" r="16" fill="#c8102e" stroke="#fff" stroke-width="2"/>' + label(c, 46, str(k), 17, '#fff') for k, c in ((1, 40), (2, 169), (3, 298))))
+# L10: village Moosbach – town sign, houses, church, fields
+PICS['moosbach'] = ('<rect width="400" height="260" fill="#dff0fa"/><path d="M0 170q100-34 200-10t200-14v114H0z" fill="#8fc66b"/><path d="M0 214q200-26 400 0v46H0z" fill="#8a8f98"/><path d="M0 236h400" stroke="#fff" stroke-width="3" stroke-dasharray="18 14"/>'
+                    + house(196, 144, 46) + house(250, 152, 40, '#f2e2b8', '#7a4e2d') + house(300, 148, 44, '#e8d3b0', '#c8102e')
+                    + '<rect x="350" y="110" width="26" height="70" fill="#e8d3b0"/><path d="M346 110l17-32 17 32z" fill="#7a4e2d"/><path d="M363 58v20M356 66h14" stroke="#1f2937" stroke-width="3"/>'
+                    + '<circle cx="182" cy="150" r="14" fill="#4f9a45"/><rect x="180" y="158" width="4" height="22" fill="#6b4a2d"/>'
+                    + '<rect x="58" y="136" width="9" height="82" fill="#6b7280"/><rect x="16" y="56" width="176" height="84" rx="6" fill="#fff" stroke="#1f2937" stroke-width="6"/>'
+                    + label(104, 108, 'Moosbach', 29))
+# L11: Maria with a map asks for the Bahnhofstraße; the street sign says Hauptstraße
+PICS['suchen'] = (person(110, '#c8102e', 'b', '#222', long=True) + label(110, 236, 'Maria', 16, '#fff')
+                  + '<rect x="56" y="168" width="108" height="76" rx="3" fill="#fff" stroke="#9ca3af" stroke-width="2"/><path d="M66 190h88M66 214h60M96 172v68M130 172v68" stroke="#7cc36a" stroke-width="4"/><circle cx="98" cy="192" r="5" fill="#c8102e"/>'
+                  + bubble(14, 14, 250, 'Wo ist die Bahnhofstraße?', 16)
+                  + '<rect x="318" y="124" width="9" height="124" fill="#6b7280"/><rect x="232" y="84" width="160" height="40" rx="5" fill="#1d4e89" stroke="#fff" stroke-width="3"/>' + label(312, 111, 'Hauptstraße', 19, '#fff'))
+# L12: panel 1 – a man phones; panel 2 – two people say goodbye in the street
+PICS['abschied'] = (panel(8, 188, '#fff', bust(100, 0.82, '#1d4e89', 'a', '#4a2f1c')
+                          + '<g transform="rotate(-12 58 130)"><rect x="42" y="96" width="26" height="52" rx="6" fill="#1f2937"/><rect x="46" y="102" width="18" height="34" rx="2" fill="#9ed8ff"/></g>'
+                          + '<circle cx="74" cy="150" r="9" fill="#f1c9a5"/><path d="M26 98q-12 20 0 44M14 90q-22 30 0 60" stroke="#34506b" stroke-width="4" fill="none" stroke-linecap="round"/>', 'clip-tel')
+                    + panel(204, 188, '#e8f1f8', '<rect y="206" width="188" height="50" fill="#a9a9a9"/><path d="M0 230h188" stroke="#fff" stroke-width="3" stroke-dasharray="14 10"/>' + house(8, 130, 44) + house(130, 124, 48, '#f2e2b8', '#7a4e2d')
+                           + f'<g transform="translate(0 -6)">{bust(46, 0.6, "#2a9d8f", "a", "#7a4e2d", long=True)}</g>' + f'<g transform="translate(0 -6)">{bust(142, 0.6, "#1d4e89", "b", "#222")}</g>'
+                           + '<path d="M70 186q16-14 16-36" stroke="#2a9d8f" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="86" cy="146" r="7" fill="#f1c9a5"/>'
+                           + '<path d="M118 186q-16-14-16-36" stroke="#1d4e89" stroke-width="8" stroke-linecap="round" fill="none"/><circle cx="102" cy="146" r="7" fill="#c68a5c"/>', 'clip-str')
+                    + ''.join(f'<circle cx="{c}" cy="30" r="15" fill="#c8102e" stroke="#fff" stroke-width="2"/>' + label(c, 36, str(k), 17, '#fff') for k, c in ((1, 32), (2, 228))))
 # L13: Austria – Vienna, euro, EU flag
 A = GEO['austria']
 _wx, _wy = A['cities']['Wien']

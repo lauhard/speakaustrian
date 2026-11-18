@@ -17,10 +17,10 @@
 <!-- milk carton -->
 <path d="M290 92h40v72h-40z" fill="#fff" stroke="#3a3a3a" stroke-width="3"/><path d="M290 92l8-18h24l8 18z" fill="#e8f1fb" stroke="#3a3a3a" stroke-width="3"/>
 <path d="M290 120h40v24h-40z" fill="#4a90d9"/>
-<!-- price tags -->
-<g font-size="20" font-weight="bold" fill="#1f2937" text-anchor="middle">
-<rect x="56" y="180" width="72" height="34" rx="5" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="92" y="204">2,40 €</text>
-<rect x="164" y="180" width="72" height="34" rx="5" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="200" y="204">3,10 €</text>
-<rect x="274" y="180" width="72" height="34" rx="5" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="310" y="204">1,19 €</text>
+<!-- price tags: name + price -->
+<g fill="#1f2937" text-anchor="middle">
+<rect x="52" y="174" width="80" height="56" rx="6" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="92" y="194" font-size="16" fill="#4b5563">Äpfel</text><text x="92" y="220" font-size="22" font-weight="bold">2,40 €</text>
+<rect x="160" y="174" width="80" height="56" rx="6" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="200" y="194" font-size="16" fill="#4b5563">Brot</text><text x="200" y="220" font-size="22" font-weight="bold">3,10 €</text>
+<rect x="270" y="174" width="80" height="56" rx="6" fill="#fff" stroke="#1f2937" stroke-width="2"/><text x="310" y="194" font-size="16" fill="#4b5563">Milch</text><text x="310" y="220" font-size="22" font-weight="bold">1,19 €</text>
 </g>
 </svg>
