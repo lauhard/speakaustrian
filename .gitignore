@@ -31,3 +31,4 @@ project.inlang/cache/
 
 # Wrangler generated types
 worker-configuration.d.ts
+scripts/content/**/__pycache__/

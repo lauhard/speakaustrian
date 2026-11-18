@@ -28,33 +28,105 @@ for lemma, wid in A102.items():
     vocab.append(v)
 
 C = lambda phrase, de_, en, tl, audio=None: {'phrase': phrase, 'note': L(de_, en, tl), **({'audioText': audio} if audio else {})}
+# Content standard v2 §1: rule cards (headline + why + speakable examples) and culture cards.
+RULE = lambda phrase, de_, en, tl, examples: {'kind': 'rule', 'phrase': phrase, 'note': L(de_, en, tl), 'examples': examples}
+CULTURE = lambda phrase, de_, en, tl: {'kind': 'culture', 'phrase': phrase, 'note': L(de_, en, tl)}
+PHRASE = lambda phrase, de_, en, tl: {'kind': 'phrase', 'phrase': phrase, 'note': L(de_, en, tl)}
 PIC = LOOK()
 lessons = []
 
 
-def lesson(n, title, introduces, cards, items):
+def lesson(n, title, introduces, cards, items, intro=None):
     lid = f'{CH}-L{n:02d}'
     for k, it in enumerate(items, 1):
         it['id'] = f'{lid}-I{k}'
     assert any('image' in i for i in items), lid
-    lessons.append({'id': lid, 'title': title, 'introduces': [r for r in R(*introduces) if r not in NO_CARD], 'cards': cards, 'items': items})
+    lessons.append({'id': lid, 'title': title, **({'intro': intro} if intro else {}), 'introduces': [r for r in R(*introduces) if r not in NO_CARD], 'cards': cards, 'items': items})
 
 
 X = ''
 WHO = lambda: img('herkunft', 'Drei Personen mit Namensschild und Flagge.', 'Three people with name tags and flags.', 'Tatlong tao na may name tag at bandila.')
 
-# L01 ------------------------------------------------------------------ origin
+# L01 ------------------------------------------------------------------ origin (content standard v2 pilot)
+INS = lambda de_, en, tl: L(de_, en, tl)
 lesson(1, L('Woher kommen Sie?', 'Where are you from?', 'Taga-saan ka?'), ['aus', 'Land', 'Heimat', 'Heimatland'], [
-    C('Woher kommen Sie? – Ich komme aus Österreich.', '„aus“ + Land: Ich komme aus Österreich, aus Deutschland.', '“aus” + country: Ich komme aus Österreich (I come from Austria).', '“aus” + bansa: Ich komme aus Österreich (galing ako sa Austria).'),
-    C('Ich komme aus den Philippinen.', 'Mit Artikel: aus den Philippinen, aus der Schweiz. Ohne Artikel: aus Österreich.', 'With an article: aus den Philippinen, aus der Schweiz. Without: aus Österreich.', 'May article: aus den Philippinen, aus der Schweiz. Wala: aus Österreich.'),
-    C('Woher kommst du? – Aus Manila.', 'Mit „du“: Woher kommst du? Kurze Antwort: „Aus Manila.“', 'With “du”: Woher kommst du? Short answer: “Aus Manila.”', 'Sa “du”: Woher kommst du? Maikling sagot: “Aus Manila.”'),
-    C('das Land – das Heimatland – die Heimat', 'Das Heimatland von Jose sind die Philippinen. Seine Heimat ist Manila.', 'Jose’s home country is the Philippines. His home (Heimat) is Manila.', 'Ang sariling bansa ni Jose ay Pilipinas. Ang Heimat niya ay Manila.'),
+    PHRASE('Woher kommen Sie? – Ich komme aus Österreich.', 'So fragen Sie höflich, mit „Sie“. Die Antwort: „Ich komme aus …“ + Land.',
+           'This is the polite question, with “Sie”. The answer: “Ich komme aus …” (I come from …) + country.',
+           'Ito ang magalang na tanong, gamit ang “Sie”. Ang sagot: “Ich komme aus …” (galing ako sa …) + bansa.'),
+    RULE('Woher? → aus + Land', 'Viele Länder haben keinen Artikel. Dann sagen Sie nur „aus“ und das Land.',
+         'Most countries have no article. Then you just say “aus” (from) and the country.',
+         'Karamihan sa mga bansa ay walang article. Kaya “aus” (mula sa) at ang bansa lang.',
+         ['Ich komme aus Österreich.', 'Tom kommt aus Deutschland.']),
+    RULE('aus der Schweiz · aus den Philippinen', 'Manche Länder haben einen Artikel: die Schweiz, die Philippinen. Nach „aus“ wird „die“ zu „der“ (Schweiz) und zu „den“ (Philippinen, Plural).',
+         'Some countries have an article: die Schweiz, die Philippinen. After “aus”, “die” becomes “der” (Switzerland) and “den” (the Philippines, plural).',
+         'May article ang ilang bansa: die Schweiz, die Philippinen. Pagkatapos ng “aus”, ang “die” ay nagiging “der” (Switzerland) at “den” (Pilipinas, plural).',
+         ['Lukas kommt aus der Schweiz.', 'Jose kommt aus den Philippinen.']),
+    PHRASE('Woher kommst du? – Aus Manila.', 'Mit „du“: Woher kommst du? (kommst mit -st). Eine kurze Antwort ist auch gut: „Aus Manila.“',
+           'With “du”: Woher kommst du? (kommst ends in -st). A short answer is fine too: “Aus Manila.”',
+           'Sa “du”: Woher kommst du? (nagtatapos sa -st ang kommst). Puwede rin ang maikling sagot: “Aus Manila.”'),
+    PHRASE('das Land – das Heimatland – die Heimat', 'Das Heimatland ist das Land, aus dem Sie kommen. Jose: Heimatland = die Philippinen, Heimat = Manila.',
+           'Your Heimatland is the country you come from. Jose: home country = the Philippines, home (Heimat) = Manila.',
+           'Ang Heimatland ay ang bansang pinanggalingan mo. Si Jose: sariling bansa = Pilipinas, Heimat = Manila.'),
+    CULTURE('Grüß Gott! – Woher kommen Sie?', 'In Österreich grüßen Sie zuerst: „Grüß Gott!“ Dann fragen Sie mit „Sie“. Mit „du“ sprechen Sie mit Freunden oder Kindern.',
+            'In Austria you greet first: “Grüß Gott!” Then you ask with the polite “Sie”. You use “du” with friends or children.',
+            'Sa Austria, bumabati muna: “Grüß Gott!” Saka magtanong gamit ang magalang na “Sie”. Ang “du” ay para sa mga kaibigan o bata.'),
 ], [
-    choice(X, 'lesen', PIC, 'Woher kommt Jose?', 'aus den Philippinen', ['aus Österreich', 'aus Deutschland'], L('Über Jose steht „Philippinen“, er hat die Flagge der Philippinen.', 'Above Jose it says “Philippinen” and he has the flag of the Philippines.', 'Nakasulat ang “Philippinen” sa itaas ni Jose at may bandila siya ng Pilipinas.'), [G1], R('aus', 'woher'), img=WHO()),
-    choice(X, 'hoeren', LISTEN, None, 'Deutschland', ['Österreich'], L('Sie hören: „Ich komme aus Deutschland.“', 'You hear: “Ich komme aus Deutschland.”', 'Naririnig mo: “Ich komme aus Deutschland.”'), [G1], R('aus', 'Deutschland'), audio='Ich komme aus Deutschland.'),
-    cloze(X, 'grammatikWortschatz', GAPS, 'Woher kommen Sie? – Ich komme {{1}} Österreich.', [['aus']], L('Herkunft: „aus“ + Land.', 'Origin: “aus” + country.', 'Pinagmulan: “aus” + bansa.'), [G1], R('aus')),
-    choice(X, 'sprechen', SAY, 'Woher kommen Sie?', 'Ich komme aus den Philippinen.', ['Ich wohne Philippinen.', 'Ich bin aus Philippinen kommen.'], L('„Ich komme aus …“ – bei den Philippinen mit „den“.', '“Ich komme aus …” – with “den” for the Philippines.', '“Ich komme aus …” – may “den” para sa Pilipinas.'), [G1], R('aus', 'kommen')),
-])
+    choice(X, 'lesen', INS('Anna, Jose und Tom stellen sich vor. Schauen Sie das Bild an.', 'Anna, Jose and Tom introduce themselves on their first day in Vienna. Look at the picture: name and flag show where each person comes from.', 'Nagpapakilala sina Anna, Jose at Tom sa unang araw nila sa Vienna. Tingnan ang larawan: ipinapakita ng pangalan at bandila kung taga-saan sila.'),
+           'Woher kommt Jose?', 'aus den Philippinen', ['aus Österreich', 'aus Deutschland'],
+           L('Richtig: aus den Philippinen. Über Jose steht „Philippinen“, auf dem Shirt ist die Flagge der Philippinen. Anna kommt aus Österreich, Tom aus Deutschland.',
+             'Correct: aus den Philippinen. Above Jose it says “Philippinen” and his shirt shows the Philippine flag. Anna is from Austria, Tom from Germany.',
+             'Tama: aus den Philippinen. Nakasulat sa itaas ni Jose ang “Philippinen” at may bandila ng Pilipinas ang damit niya. Taga-Austria si Anna, taga-Germany si Tom.'),
+           [G1], R('aus', 'woher', 'Philippinen'), img=WHO()),
+    choice(X, 'lesen', INS('Schauen Sie das Bild noch einmal an.', 'Look at the picture again. Which person matches the country?', 'Tingnan muli ang larawan. Sino ang tugma sa bansa?'),
+           'Wer kommt aus Deutschland?', 'Tom', ['Anna', 'Jose'],
+           L('Richtig: Tom. Über Tom steht „Deutschland“, er hat die Flagge Schwarz-Rot-Gold. Anna hat die Flagge Rot-Weiß-Rot: Österreich.',
+             'Correct: Tom. Above Tom it says “Deutschland” and he has the black-red-gold flag. Anna has the red-white-red flag: Austria.',
+             'Tama: Tom. Nakasulat sa itaas ni Tom ang “Deutschland” at may itim-pula-gintong bandila siya. Pula-puti-pula ang kay Anna: Austria.'),
+           [G1], R('wer', 'Deutschland'), img=WHO()),
+    choice(X, 'hoeren', INS('Ein Mann stellt sich vor. Hören Sie.', 'A man introduces himself at the course. Listen and choose where he comes from.', 'May lalaking nagpapakilala sa kurso. Makinig at piliin kung taga-saan siya.'),
+           'Woher kommt Lukas?', 'aus der Schweiz', ['aus Österreich', 'aus Deutschland'],
+           L('Sie hören: „Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.“ Die Schweiz hat einen Artikel – darum „aus der Schweiz“.',
+             'You hear: “Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.” Switzerland has an article – so “aus der Schweiz”.',
+             'Naririnig mo: “Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.” May article ang Switzerland – kaya “aus der Schweiz”.'),
+           [G1], R('aus', 'Schweiz'), audio='Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.', only=True),
+    cloze(X, 'grammatikWortschatz', INS('Anna fragt einen Mann. Ergänzen Sie den Dialog.', 'Anna asks a man at the course. Complete the dialogue with the words below.', 'Nagtanong si Anna sa isang lalaki sa kurso. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba.'),
+          'Anna: Woher {{1}} Sie? – Mann: Ich {{2}} aus Österreich.', [['kommen'], ['komme']],
+          L('Richtig: „Woher kommen Sie?“ – „Ich komme …“. Bei „Sie“ endet das Verb auf -en, bei „ich“ auf -e. „kommt“ passt zu er/sie (Tom kommt …).',
+            'Correct: “Woher kommen Sie?” – “Ich komme …”. With “Sie” the verb ends in -en, with “ich” in -e. “kommt” goes with er/sie (Tom kommt …).',
+            'Tama: “Woher kommen Sie?” – “Ich komme …”. Sa “Sie”, nagtatapos sa -en ang verb; sa “ich”, sa -e. Ang “kommt” ay para sa er/sie (Tom kommt …).'),
+          [G1], R('kommen', 'woher'), bank=['kommen', 'komme', 'kommt']),
+    cloze(X, 'grammatikWortschatz', INS('Ergänzen Sie die Sätze.', 'Complete the sentences about Jose and Anna with the words below.', 'Kumpletuhin ang mga pangungusap tungkol kina Jose at Anna gamit ang mga salita sa ibaba.'),
+          'Jose kommt {{1}} {{2}} Philippinen. Anna kommt {{3}} Österreich.', [['aus'], ['den'], ['aus']],
+          L('Richtig: „aus den Philippinen“ und „aus Österreich“. Die Philippinen haben einen Artikel (Plural): aus den. Österreich hat keinen Artikel. „in“ sagt, wo jemand ist – nicht, woher er kommt.',
+            'Correct: “aus den Philippinen” and “aus Österreich”. The Philippines have an article (plural): aus den. Austria has none. “in” says where someone is – not where they come from.',
+            'Tama: “aus den Philippinen” at “aus Österreich”. May article ang Pilipinas (plural): aus den. Walang article ang Austria. Ang “in” ay kung nasaan ang tao – hindi kung taga-saan.'),
+          [G1], R('aus', 'Philippinen', 'Österreich'), bank=['aus', 'den', 'aus', 'der', 'in']),
+    choice(X, 'grammatikWortschatz', INS('Tom fragt Jose. Sie sind Freunde und sagen „du“.', 'Tom asks Jose. They are friends and say “du”. Which question is right?', 'Nagtanong si Tom kay Jose. Magkaibigan sila at gumagamit ng “du”. Aling tanong ang tama?'),
+           'Tom: „Jose, woher … du?“', 'kommst', ['kommen', 'kommt'],
+           L('Richtig: „Woher kommst du?“ Bei „du“ endet das Verb auf -st. „kommen“ passt zu Sie/wir, „kommt“ zu er/sie/ihr.',
+             'Correct: “Woher kommst du?” With “du” the verb ends in -st. “kommen” goes with Sie/wir, “kommt” with er/sie/ihr.',
+             'Tama: “Woher kommst du?” Sa “du”, nagtatapos sa -st ang verb. Ang “kommen” ay para sa Sie/wir, ang “kommt” sa er/sie/ihr.'),
+           [G1], R('du', 'kommen')),
+    choice(X, 'grammatikWortschatz', INS('Lesen Sie über Jose.', 'Read about Jose. Which word completes the sentence?', 'Basahin ang tungkol kay Jose. Aling salita ang kukumpleto sa pangungusap?'),
+           'Jose kommt aus den Philippinen. Er wohnt in Wien. Die Philippinen sind sein …', 'Heimatland', ['Hobby', 'Dorf'],
+           L('Richtig: Heimatland – das Land, aus dem Jose kommt. Ein Hobby macht man gern, ein Dorf ist ein kleiner Ort – beides passt hier nicht.',
+             'Correct: Heimatland – the country Jose comes from. A hobby is something you like doing, a Dorf is a village – neither fits here.',
+             'Tama: Heimatland – ang bansang pinanggalingan ni Jose. Ang Hobby ay libangan, ang Dorf ay maliit na baryo – hindi tugma ang dalawa.'),
+           [G1], R('Heimatland')),
+    choice(X, 'sprechen', INS('Eine Frau in Wien fragt Sie. Was antworten Sie? Wählen Sie, dann sagen Sie es laut.', 'A woman in Vienna asks you. What do you answer? Choose, then say it aloud.', 'Nagtanong sa iyo ang isang babae sa Vienna. Ano ang sagot mo? Pumili, tapos sabihin nang malakas.'),
+           'Frau: „Grüß Gott! Woher kommen Sie?“', 'Ich komme aus den Philippinen.', ['Ich wohne aus den Philippinen.', 'Ich komme in den Philippinen.'],
+           L('Richtig: „Ich komme aus den Philippinen.“ Woher? → kommen + aus. „wohnen“ sagt, wo Sie jetzt leben, und „in“ passt zu „Wo?“, nicht zu „Woher?“.',
+             'Correct: “Ich komme aus den Philippinen.” Where from? → kommen + aus. “wohnen” says where you live now, and “in” answers “Wo?” (where), not “Woher?” (where from).',
+             'Tama: “Ich komme aus den Philippinen.” Woher? → kommen + aus. Ang “wohnen” ay kung saan ka nakatira ngayon, at ang “in” ay sagot sa “Wo?” (saan), hindi sa “Woher?” (taga-saan).'),
+           [G1], R('aus', 'kommen')),
+], intro={
+    'situation': L('Erster Tag im Deutschkurs in Wien. Anna, Jose und Tom sagen „Grüß Gott“. Dann fragen sie: „Woher kommen Sie?“',
+                   'First day of the German course in Vienna. Anna, Jose and Tom greet each other with “Grüß Gott”. Then everyone wants to know where the others are from.',
+                   'Unang araw ng kursong German sa Vienna. Bumati sina Anna, Jose at Tom ng “Grüß Gott”. Pagkatapos, gusto nilang malaman kung taga-saan ang isa’t isa.'),
+    'goal': L('sagen, woher Sie kommen – und andere fragen: „Woher kommen Sie?“ oder „Woher kommst du?“',
+              'say where you come from – and ask others: “Woher kommen Sie?” or “Woher kommst du?”',
+              'sabihin kung taga-saan ka – at magtanong sa iba: “Woher kommen Sie?” o “Woher kommst du?”'),
+})
 
 # L02 ------------------------------------------------------------------ countries and people
 lesson(2, L('Länder und Menschen', 'Countries and people', 'Mga bansa at tao'), ['Österreicher, Österreicherin', 'österreichisch', 'Deutschland', 'Schweiz', 'Philippiner, Philippinerin', 'Europa', 'Mensch', 'Ausländer, Ausländerin', 'Ausland', 'ausländisch'], [

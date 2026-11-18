@@ -289,6 +289,18 @@
 				"en": "Where are you from?",
 				"tl": "Taga-saan ka?"
 			},
+			"intro": {
+				"situation": {
+					"de": "Erster Tag im Deutschkurs in Wien. Anna, Jose und Tom sagen „Grüß Gott“. Dann fragen sie: „Woher kommen Sie?“",
+					"en": "First day of the German course in Vienna. Anna, Jose and Tom greet each other with “Grüß Gott”. Then everyone wants to know where the others are from.",
+					"tl": "Unang araw ng kursong German sa Vienna. Bumati sina Anna, Jose at Tom ng “Grüß Gott”. Pagkatapos, gusto nilang malaman kung taga-saan ang isa’t isa."
+				},
+				"goal": {
+					"de": "sagen, woher Sie kommen – und andere fragen: „Woher kommen Sie?“ oder „Woher kommst du?“",
+					"en": "say where you come from – and ask others: “Woher kommen Sie?” or “Woher kommst du?”",
+					"tl": "sabihin kung taga-saan ka – at magtanong sa iba: “Woher kommen Sie?” o “Woher kommst du?”"
+				}
+			},
 			"introduces": [
 				"W-A1-0096",
 				"W-A1-0355",
@@ -297,35 +309,65 @@
 			],
 			"cards": [
 				{
+					"kind": "phrase",
 					"phrase": "Woher kommen Sie? – Ich komme aus Österreich.",
 					"note": {
-						"de": "„aus“ + Land: Ich komme aus Österreich, aus Deutschland.",
-						"en": "“aus” + country: Ich komme aus Österreich (I come from Austria).",
-						"tl": "“aus” + bansa: Ich komme aus Österreich (galing ako sa Austria)."
+						"de": "So fragen Sie höflich, mit „Sie“. Die Antwort: „Ich komme aus …“ + Land.",
+						"en": "This is the polite question, with “Sie”. The answer: “Ich komme aus …” (I come from …) + country.",
+						"tl": "Ito ang magalang na tanong, gamit ang “Sie”. Ang sagot: “Ich komme aus …” (galing ako sa …) + bansa."
 					}
 				},
 				{
-					"phrase": "Ich komme aus den Philippinen.",
+					"kind": "rule",
+					"phrase": "Woher? → aus + Land",
 					"note": {
-						"de": "Mit Artikel: aus den Philippinen, aus der Schweiz. Ohne Artikel: aus Österreich.",
-						"en": "With an article: aus den Philippinen, aus der Schweiz. Without: aus Österreich.",
-						"tl": "May article: aus den Philippinen, aus der Schweiz. Wala: aus Österreich."
-					}
+						"de": "Viele Länder haben keinen Artikel. Dann sagen Sie nur „aus“ und das Land.",
+						"en": "Most countries have no article. Then you just say “aus” (from) and the country.",
+						"tl": "Karamihan sa mga bansa ay walang article. Kaya “aus” (mula sa) at ang bansa lang."
+					},
+					"examples": [
+						"Ich komme aus Österreich.",
+						"Tom kommt aus Deutschland."
+					]
 				},
 				{
+					"kind": "rule",
+					"phrase": "aus der Schweiz · aus den Philippinen",
+					"note": {
+						"de": "Manche Länder haben einen Artikel: die Schweiz, die Philippinen. Nach „aus“ wird „die“ zu „der“ (Schweiz) und zu „den“ (Philippinen, Plural).",
+						"en": "Some countries have an article: die Schweiz, die Philippinen. After “aus”, “die” becomes “der” (Switzerland) and “den” (the Philippines, plural).",
+						"tl": "May article ang ilang bansa: die Schweiz, die Philippinen. Pagkatapos ng “aus”, ang “die” ay nagiging “der” (Switzerland) at “den” (Pilipinas, plural)."
+					},
+					"examples": [
+						"Lukas kommt aus der Schweiz.",
+						"Jose kommt aus den Philippinen."
+					]
+				},
+				{
+					"kind": "phrase",
 					"phrase": "Woher kommst du? – Aus Manila.",
 					"note": {
-						"de": "Mit „du“: Woher kommst du? Kurze Antwort: „Aus Manila.“",
-						"en": "With “du”: Woher kommst du? Short answer: “Aus Manila.”",
-						"tl": "Sa “du”: Woher kommst du? Maikling sagot: “Aus Manila.”"
+						"de": "Mit „du“: Woher kommst du? (kommst mit -st). Eine kurze Antwort ist auch gut: „Aus Manila.“",
+						"en": "With “du”: Woher kommst du? (kommst ends in -st). A short answer is fine too: “Aus Manila.”",
+						"tl": "Sa “du”: Woher kommst du? (nagtatapos sa -st ang kommst). Puwede rin ang maikling sagot: “Aus Manila.”"
 					}
 				},
 				{
+					"kind": "phrase",
 					"phrase": "das Land – das Heimatland – die Heimat",
 					"note": {
-						"de": "Das Heimatland von Jose sind die Philippinen. Seine Heimat ist Manila.",
-						"en": "Jose’s home country is the Philippines. His home (Heimat) is Manila.",
-						"tl": "Ang sariling bansa ni Jose ay Pilipinas. Ang Heimat niya ay Manila."
+						"de": "Das Heimatland ist das Land, aus dem Sie kommen. Jose: Heimatland = die Philippinen, Heimat = Manila.",
+						"en": "Your Heimatland is the country you come from. Jose: home country = the Philippines, home (Heimat) = Manila.",
+						"tl": "Ang Heimatland ay ang bansang pinanggalingan mo. Si Jose: sariling bansa = Pilipinas, Heimat = Manila."
+					}
+				},
+				{
+					"kind": "culture",
+					"phrase": "Grüß Gott! – Woher kommen Sie?",
+					"note": {
+						"de": "In Österreich grüßen Sie zuerst: „Grüß Gott!“ Dann fragen Sie mit „Sie“. Mit „du“ sprechen Sie mit Freunden oder Kindern.",
+						"en": "In Austria you greet first: “Grüß Gott!” Then you ask with the polite “Sie”. You use “du” with friends or children.",
+						"tl": "Sa Austria, bumabati muna: “Grüß Gott!” Saka magtanong gamit ang magalang na “Sie”. Ang “du” ay para sa mga kaibigan o bata."
 					}
 				}
 			],
@@ -335,21 +377,22 @@
 					"type": "choice",
 					"skill": "lesen",
 					"instruction": {
-						"de": "Schauen Sie das Bild an. Wählen Sie die richtige Antwort.",
-						"en": "Look at the picture. Choose the correct answer.",
-						"tl": "Tingnan ang larawan. Piliin ang tamang sagot."
+						"de": "Anna, Jose und Tom stellen sich vor. Schauen Sie das Bild an.",
+						"en": "Anna, Jose and Tom introduce themselves on their first day in Vienna. Look at the picture: name and flag show where each person comes from.",
+						"tl": "Nagpapakilala sina Anna, Jose at Tom sa unang araw nila sa Vienna. Tingnan ang larawan: ipinapakita ng pangalan at bandila kung taga-saan sila."
 					},
 					"explanation": {
-						"de": "Über Jose steht „Philippinen“, er hat die Flagge der Philippinen.",
-						"en": "Above Jose it says “Philippinen” and he has the flag of the Philippines.",
-						"tl": "Nakasulat ang “Philippinen” sa itaas ni Jose at may bandila siya ng Pilipinas."
+						"de": "Richtig: aus den Philippinen. Über Jose steht „Philippinen“, auf dem Shirt ist die Flagge der Philippinen. Anna kommt aus Österreich, Tom aus Deutschland.",
+						"en": "Correct: aus den Philippinen. Above Jose it says “Philippinen” and his shirt shows the Philippine flag. Anna is from Austria, Tom from Germany.",
+						"tl": "Tama: aus den Philippinen. Nakasulat sa itaas ni Jose ang “Philippinen” at may bandila ng Pilipinas ang damit niya. Taga-Austria si Anna, taga-Germany si Tom."
 					},
 					"goals": [
 						"A1-03-G1"
 					],
 					"refs": [
 						"W-A1-0096",
-						"W-A1-0038"
+						"W-A1-0038",
+						"W-A1-0362"
 					],
 					"options": [
 						"aus Österreich",
@@ -370,74 +413,229 @@
 				{
 					"id": "A1-03-L01-I2",
 					"type": "choice",
-					"skill": "hoeren",
+					"skill": "lesen",
 					"instruction": {
-						"de": "Hören Sie. Was ist richtig?",
-						"en": "Listen. What is correct?",
-						"tl": "Makinig. Alin ang tama?"
+						"de": "Schauen Sie das Bild noch einmal an.",
+						"en": "Look at the picture again. Which person matches the country?",
+						"tl": "Tingnan muli ang larawan. Sino ang tugma sa bansa?"
 					},
 					"explanation": {
-						"de": "Sie hören: „Ich komme aus Deutschland.“",
-						"en": "You hear: “Ich komme aus Deutschland.”",
-						"tl": "Naririnig mo: “Ich komme aus Deutschland.”"
+						"de": "Richtig: Tom. Über Tom steht „Deutschland“, er hat die Flagge Schwarz-Rot-Gold. Anna hat die Flagge Rot-Weiß-Rot: Österreich.",
+						"en": "Correct: Tom. Above Tom it says “Deutschland” and he has the black-red-gold flag. Anna has the red-white-red flag: Austria.",
+						"tl": "Tama: Tom. Nakasulat sa itaas ni Tom ang “Deutschland” at may itim-pula-gintong bandila siya. Pula-puti-pula ang kay Anna: Austria."
+					},
+					"goals": [
+						"A1-03-G1"
+					],
+					"refs": [
+						"W-A1-0035",
+						"W-A1-0360"
+					],
+					"options": [
+						"Tom",
+						"Anna",
+						"Jose"
+					],
+					"answer": 0,
+					"prompt": "Wer kommt aus Deutschland?",
+					"image": {
+						"src": "/img/a1-03-herkunft.svg",
+						"alt": {
+							"de": "Drei Personen mit Namensschild und Flagge.",
+							"en": "Three people with name tags and flags.",
+							"tl": "Tatlong tao na may name tag at bandila."
+						}
+					}
+				},
+				{
+					"id": "A1-03-L01-I3",
+					"type": "choice",
+					"skill": "hoeren",
+					"instruction": {
+						"de": "Ein Mann stellt sich vor. Hören Sie.",
+						"en": "A man introduces himself at the course. Listen and choose where he comes from.",
+						"tl": "May lalaking nagpapakilala sa kurso. Makinig at piliin kung taga-saan siya."
+					},
+					"explanation": {
+						"de": "Sie hören: „Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.“ Die Schweiz hat einen Artikel – darum „aus der Schweiz“.",
+						"en": "You hear: “Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.” Switzerland has an article – so “aus der Schweiz”.",
+						"tl": "Naririnig mo: “Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.” May article ang Switzerland – kaya “aus der Schweiz”."
 					},
 					"goals": [
 						"A1-03-G1"
 					],
 					"refs": [
 						"W-A1-0096",
-						"W-A1-0360"
+						"W-A1-0361"
 					],
 					"options": [
-						"Deutschland",
-						"Österreich"
+						"aus Österreich",
+						"aus der Schweiz",
+						"aus Deutschland"
 					],
-					"answer": 0,
-					"audioText": "Ich komme aus Deutschland.",
+					"answer": 1,
+					"prompt": "Woher kommt Lukas?",
+					"audioText": "Grüß Gott! Ich heiße Lukas. Ich komme aus der Schweiz.",
 					"audioOnly": true
 				},
 				{
-					"id": "A1-03-L01-I3",
+					"id": "A1-03-L01-I4",
 					"type": "cloze",
 					"skill": "grammatikWortschatz",
 					"instruction": {
-						"de": "Schreiben Sie die fehlenden Wörter.",
-						"en": "Write the missing words.",
-						"tl": "Isulat ang mga nawawalang salita."
+						"de": "Anna fragt einen Mann. Ergänzen Sie den Dialog.",
+						"en": "Anna asks a man at the course. Complete the dialogue with the words below.",
+						"tl": "Nagtanong si Anna sa isang lalaki sa kurso. Kumpletuhin ang dialogo gamit ang mga salita sa ibaba."
 					},
 					"explanation": {
-						"de": "Herkunft: „aus“ + Land.",
-						"en": "Origin: “aus” + country.",
-						"tl": "Pinagmulan: “aus” + bansa."
+						"de": "Richtig: „Woher kommen Sie?“ – „Ich komme …“. Bei „Sie“ endet das Verb auf -en, bei „ich“ auf -e. „kommt“ passt zu er/sie (Tom kommt …).",
+						"en": "Correct: “Woher kommen Sie?” – “Ich komme …”. With “Sie” the verb ends in -en, with “ich” in -e. “kommt” goes with er/sie (Tom kommt …).",
+						"tl": "Tama: “Woher kommen Sie?” – “Ich komme …”. Sa “Sie”, nagtatapos sa -en ang verb; sa “ich”, sa -e. Ang “kommt” ay para sa er/sie (Tom kommt …)."
 					},
 					"goals": [
 						"A1-03-G1"
 					],
 					"refs": [
-						"W-A1-0096"
+						"W-A1-0128",
+						"W-A1-0038"
 					],
-					"text": "Woher kommen Sie? – Ich komme {{1}} Österreich.",
+					"text": "Anna: Woher {{1}} Sie? – Mann: Ich {{2}} aus Österreich.",
+					"gaps": {
+						"1": {
+							"accept": [
+								"kommen"
+							]
+						},
+						"2": {
+							"accept": [
+								"komme"
+							]
+						}
+					},
+					"bank": [
+						"kommen",
+						"komme",
+						"kommt"
+					]
+				},
+				{
+					"id": "A1-03-L01-I5",
+					"type": "cloze",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Ergänzen Sie die Sätze.",
+						"en": "Complete the sentences about Jose and Anna with the words below.",
+						"tl": "Kumpletuhin ang mga pangungusap tungkol kina Jose at Anna gamit ang mga salita sa ibaba."
+					},
+					"explanation": {
+						"de": "Richtig: „aus den Philippinen“ und „aus Österreich“. Die Philippinen haben einen Artikel (Plural): aus den. Österreich hat keinen Artikel. „in“ sagt, wo jemand ist – nicht, woher er kommt.",
+						"en": "Correct: “aus den Philippinen” and “aus Österreich”. The Philippines have an article (plural): aus den. Austria has none. “in” says where someone is – not where they come from.",
+						"tl": "Tama: “aus den Philippinen” at “aus Österreich”. May article ang Pilipinas (plural): aus den. Walang article ang Austria. Ang “in” ay kung nasaan ang tao – hindi kung taga-saan."
+					},
+					"goals": [
+						"A1-03-G1"
+					],
+					"refs": [
+						"W-A1-0096",
+						"W-A1-0362",
+						"W-A1-0357"
+					],
+					"text": "Jose kommt {{1}} {{2}} Philippinen. Anna kommt {{3}} Österreich.",
 					"gaps": {
 						"1": {
 							"accept": [
 								"aus"
 							]
+						},
+						"2": {
+							"accept": [
+								"den"
+							]
+						},
+						"3": {
+							"accept": [
+								"aus"
+							]
 						}
-					}
+					},
+					"bank": [
+						"aus",
+						"den",
+						"aus",
+						"der",
+						"in"
+					]
 				},
 				{
-					"id": "A1-03-L01-I4",
+					"id": "A1-03-L01-I6",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Tom fragt Jose. Sie sind Freunde und sagen „du“.",
+						"en": "Tom asks Jose. They are friends and say “du”. Which question is right?",
+						"tl": "Nagtanong si Tom kay Jose. Magkaibigan sila at gumagamit ng “du”. Aling tanong ang tama?"
+					},
+					"explanation": {
+						"de": "Richtig: „Woher kommst du?“ Bei „du“ endet das Verb auf -st. „kommen“ passt zu Sie/wir, „kommt“ zu er/sie/ihr.",
+						"en": "Correct: “Woher kommst du?” With “du” the verb ends in -st. “kommen” goes with Sie/wir, “kommt” with er/sie/ihr.",
+						"tl": "Tama: “Woher kommst du?” Sa “du”, nagtatapos sa -st ang verb. Ang “kommen” ay para sa Sie/wir, ang “kommt” sa er/sie/ihr."
+					},
+					"goals": [
+						"A1-03-G1"
+					],
+					"refs": [
+						"W-A1-0007",
+						"W-A1-0128"
+					],
+					"options": [
+						"kommst",
+						"kommen",
+						"kommt"
+					],
+					"answer": 0,
+					"prompt": "Tom: „Jose, woher … du?“"
+				},
+				{
+					"id": "A1-03-L01-I7",
+					"type": "choice",
+					"skill": "grammatikWortschatz",
+					"instruction": {
+						"de": "Lesen Sie über Jose.",
+						"en": "Read about Jose. Which word completes the sentence?",
+						"tl": "Basahin ang tungkol kay Jose. Aling salita ang kukumpleto sa pangungusap?"
+					},
+					"explanation": {
+						"de": "Richtig: Heimatland – das Land, aus dem Jose kommt. Ein Hobby macht man gern, ein Dorf ist ein kleiner Ort – beides passt hier nicht.",
+						"en": "Correct: Heimatland – the country Jose comes from. A hobby is something you like doing, a Dorf is a village – neither fits here.",
+						"tl": "Tama: Heimatland – ang bansang pinanggalingan ni Jose. Ang Hobby ay libangan, ang Dorf ay maliit na baryo – hindi tugma ang dalawa."
+					},
+					"goals": [
+						"A1-03-G1"
+					],
+					"refs": [
+						"W-A1-0356"
+					],
+					"options": [
+						"Heimatland",
+						"Hobby",
+						"Dorf"
+					],
+					"answer": 0,
+					"prompt": "Jose kommt aus den Philippinen. Er wohnt in Wien. Die Philippinen sind sein …"
+				},
+				{
+					"id": "A1-03-L01-I8",
 					"type": "choice",
 					"skill": "sprechen",
 					"instruction": {
-						"de": "Was sagen Sie? Wählen Sie, dann sagen Sie es laut.",
-						"en": "What do you say? Choose, then say it aloud.",
-						"tl": "Ano ang sasabihin mo? Pumili, tapos sabihin nang malakas."
+						"de": "Eine Frau in Wien fragt Sie. Was antworten Sie? Wählen Sie, dann sagen Sie es laut.",
+						"en": "A woman in Vienna asks you. What do you answer? Choose, then say it aloud.",
+						"tl": "Nagtanong sa iyo ang isang babae sa Vienna. Ano ang sagot mo? Pumili, tapos sabihin nang malakas."
 					},
 					"explanation": {
-						"de": "„Ich komme aus …“ – bei den Philippinen mit „den“.",
-						"en": "“Ich komme aus …” – with “den” for the Philippines.",
-						"tl": "“Ich komme aus …” – may “den” para sa Pilipinas."
+						"de": "Richtig: „Ich komme aus den Philippinen.“ Woher? → kommen + aus. „wohnen“ sagt, wo Sie jetzt leben, und „in“ passt zu „Wo?“, nicht zu „Woher?“.",
+						"en": "Correct: “Ich komme aus den Philippinen.” Where from? → kommen + aus. “wohnen” says where you live now, and “in” answers “Wo?” (where), not “Woher?” (where from).",
+						"tl": "Tama: “Ich komme aus den Philippinen.” Woher? → kommen + aus. Ang “wohnen” ay kung saan ka nakatira ngayon, at ang “in” ay sagot sa “Wo?” (saan), hindi sa “Woher?” (taga-saan)."
 					},
 					"goals": [
 						"A1-03-G1"
@@ -447,12 +645,12 @@
 						"W-A1-0128"
 					],
 					"options": [
-						"Ich wohne Philippinen.",
 						"Ich komme aus den Philippinen.",
-						"Ich bin aus Philippinen kommen."
+						"Ich wohne aus den Philippinen.",
+						"Ich komme in den Philippinen."
 					],
-					"answer": 1,
-					"prompt": "Woher kommen Sie?"
+					"answer": 0,
+					"prompt": "Frau: „Grüß Gott! Woher kommen Sie?“"
 				}
 			]
 		},
@@ -573,11 +771,11 @@
 						"W-A1-0358"
 					],
 					"options": [
-						"Österreicherin",
 						"Österreicher",
+						"Österreicherin",
 						"Philippinerin"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Anna kommt aus Österreich. Sie ist …"
 				},
 				{
@@ -601,11 +799,11 @@
 						"W-A1-0363"
 					],
 					"options": [
-						"Philippiner",
 						"Philippinerin",
+						"Philippiner",
 						"Österreicher"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Jose kommt aus den Philippinen. Er ist …"
 				},
 				{
@@ -629,11 +827,11 @@
 						"W-A1-0364"
 					],
 					"options": [
-						"Europa",
 						"den Philippinen",
+						"Europa",
 						"Wien"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Österreich, Deutschland und die Schweiz sind in …"
 				},
 				{
@@ -758,10 +956,10 @@
 					],
 					"options": [
 						"in Graz",
-						"in St. Georgen",
-						"in Wien"
+						"in Wien",
+						"in St. Georgen"
 					],
-					"answer": 1,
+					"answer": 2,
 					"prompt": "Wo wohnt Lukas?",
 					"image": {
 						"src": "/img/a1-03-wohnort.svg",
@@ -863,10 +1061,10 @@
 						"W-A1-0148"
 					],
 					"options": [
-						"in Graz",
-						"in Linz"
+						"in Linz",
+						"in Graz"
 					],
-					"answer": 1,
+					"answer": 0,
 					"audioText": "Grüß Gott! Ich wohne in Linz.",
 					"audioOnly": true
 				}
@@ -950,11 +1148,11 @@
 						"W-A1-0369"
 					],
 					"options": [
+						"Hauptstraße",
 						"Graz",
-						"Santos",
-						"Hauptstraße"
+						"Santos"
 					],
-					"answer": 2,
+					"answer": 0,
 					"prompt": "Wie heißt die Straße?",
 					"image": {
 						"src": "/img/a1-03-adresse.svg",
@@ -988,10 +1186,10 @@
 					],
 					"options": [
 						"Wien",
-						"Graz",
-						"Linz"
+						"Linz",
+						"Graz"
 					],
-					"answer": 1,
+					"answer": 2,
 					"prompt": "Maria wohnt in …",
 					"image": {
 						"src": "/img/a1-03-adresse.svg",
@@ -1023,11 +1221,11 @@
 						"W-A1-0373"
 					],
 					"options": [
+						"anna.huber@gmx.at",
 						"annahuber@gmx.at",
-						"anna.huber@gmx.de",
-						"anna.huber@gmx.at"
+						"anna.huber@gmx.de"
 					],
-					"answer": 2,
+					"answer": 0,
 					"audioText": "Die E-Mail-Adresse ist: anna Punkt huber ät g m x Punkt a t.",
 					"audioOnly": true
 				},
@@ -1242,10 +1440,10 @@
 					],
 					"options": [
 						"Ich sprecht Tagalog.",
-						"Ich bin Tagalog.",
-						"Ich spreche Tagalog und Englisch."
+						"Ich spreche Tagalog und Englisch.",
+						"Ich bin Tagalog."
 					],
-					"answer": 2,
+					"answer": 1,
 					"prompt": "Welche Sprachen sprechen Sie?"
 				}
 			]
@@ -1418,10 +1616,10 @@
 						"W-A1-0311"
 					],
 					"options": [
-						"Noch einmal, bitte.",
-						"Auf Wiederhören!"
+						"Auf Wiederhören!",
+						"Noch einmal, bitte."
 					],
-					"answer": 0,
+					"answer": 1,
 					"audioText": "Wie bitte? Ich verstehe nicht. Wiederholen Sie, bitte.",
 					"audioOnly": true
 				}
@@ -1529,11 +1727,11 @@
 						"W-A1-0148"
 					],
 					"options": [
-						"Nein, sie wohnt in Wien.",
 						"Ja, sie wohnt in Graz.",
-						"Ja, sie wohnt in Wien."
+						"Ja, sie wohnt in Wien.",
+						"Nein, sie wohnt in Wien."
 					],
-					"answer": 0,
+					"answer": 2,
 					"prompt": "Wohnt Anna in Graz?",
 					"image": {
 						"src": "/img/a1-03-anna.svg",
@@ -1663,10 +1861,10 @@
 					],
 					"options": [
 						"Nein, er wohnt nicht in Wien.",
-						"Doch, er wohnt in Wien.",
-						"Ja, er wohnt nicht in Wien."
+						"Ja, er wohnt nicht in Wien.",
+						"Doch, er wohnt in Wien."
 					],
-					"answer": 1,
+					"answer": 2,
 					"prompt": "Wohnt Jose nicht in Wien?",
 					"image": {
 						"src": "/img/a1-03-jose.svg",
@@ -1699,10 +1897,10 @@
 					],
 					"options": [
 						"Ja",
-						"Doch",
-						"Nein"
+						"Nein",
+						"Doch"
 					],
-					"answer": 1,
+					"answer": 2,
 					"prompt": "Kommen Sie nicht aus Graz? – … , ich komme aus Graz."
 				},
 				{
@@ -1726,11 +1924,11 @@
 						"W-A1-0051"
 					],
 					"options": [
+						"Ja",
 						"Doch",
-						"Nein",
-						"Ja"
+						"Nein"
 					],
-					"answer": 2,
+					"answer": 0,
 					"prompt": "Wohnen Sie in Wien? – … , ich wohne in Wien."
 				},
 				{
@@ -1754,10 +1952,10 @@
 						"W-A1-0054"
 					],
 					"options": [
-						"Die Frau wohnt in Graz.",
-						"Die Frau wohnt nicht in Graz."
+						"Die Frau wohnt nicht in Graz.",
+						"Die Frau wohnt in Graz."
 					],
-					"answer": 0,
+					"answer": 1,
 					"audioText": "Wohnen Sie nicht in Graz? – Doch!",
 					"audioOnly": true
 				}
@@ -1832,11 +2030,11 @@
 						"W-A1-0355"
 					],
 					"options": [
+						"das Land",
 						"die Land",
-						"die Stadt",
-						"das Land"
+						"die Stadt"
 					],
-					"answer": 2,
+					"answer": 0,
 					"prompt": "Bild 1: Was ist das?",
 					"image": {
 						"src": "/img/a1-03-nomen.svg",
@@ -1869,11 +2067,11 @@
 						"W-A1-0369"
 					],
 					"options": [
+						"die Straße",
 						"das Straße",
-						"der Mensch",
-						"die Straße"
+						"der Mensch"
 					],
-					"answer": 2,
+					"answer": 0,
 					"prompt": "Bild 2: Was ist das?",
 					"image": {
 						"src": "/img/a1-03-nomen.svg",
@@ -1906,11 +2104,11 @@
 						"W-A1-0350"
 					],
 					"options": [
-						"der Mensch",
 						"das Mensch",
-						"das Land"
+						"das Land",
+						"der Mensch"
 					],
-					"answer": 0,
+					"answer": 2,
 					"prompt": "Bild 3: Was ist das?",
 					"image": {
 						"src": "/img/a1-03-nomen.svg",
@@ -2032,11 +2230,11 @@
 						"W-A1-0367"
 					],
 					"options": [
-						"eine Stadt",
 						"ein Dorf",
+						"eine Stadt",
 						"ein Land"
 					],
-					"answer": 1,
+					"answer": 0,
 					"prompt": "Moosbach ist …",
 					"image": {
 						"src": "/img/a1-03-moosbach.svg",
@@ -2133,11 +2331,11 @@
 						"W-A1-0367"
 					],
 					"options": [
-						"eine Stadt",
 						"ein Dorf",
+						"eine Stadt",
 						"ein Land"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Wien ist eine Stadt. Moosbach ist ein Dorf. Was ist Wien?"
 				}
 			]
@@ -2214,10 +2412,10 @@
 					],
 					"options": [
 						"die Hauptstraße",
-						"Graz",
-						"die Bahnhofstraße"
+						"die Bahnhofstraße",
+						"Graz"
 					],
-					"answer": 2,
+					"answer": 1,
 					"prompt": "Was sucht Maria?",
 					"image": {
 						"src": "/img/a1-03-suchen.svg",
@@ -2416,11 +2614,11 @@
 						"W-A1-0383"
 					],
 					"options": [
-						"Auf Wiederhören!",
 						"Auf Wiedersehen!",
+						"Auf Wiederhören!",
 						"Wie bitte?"
 					],
-					"answer": 1,
+					"answer": 0,
 					"prompt": "Bild 2: Was sagen Sie am Ende?",
 					"image": {
 						"src": "/img/a1-03-abschied.svg",
@@ -2478,10 +2676,10 @@
 						"W-A1-0384"
 					],
 					"options": [
-						"am Telefon",
-						"zusammen im Haus"
+						"zusammen im Haus",
+						"am Telefon"
 					],
-					"answer": 0,
+					"answer": 1,
 					"audioText": "Gut, danke. Auf Wiederhören!",
 					"audioOnly": true
 				}
@@ -2623,10 +2821,10 @@
 						"Q36"
 					],
 					"options": [
-						"Deutsch",
-						"Englisch"
+						"Englisch",
+						"Deutsch"
 					],
-					"answer": 0,
+					"answer": 1,
 					"prompt": "Die Staatssprache in Österreich ist …"
 				},
 				{

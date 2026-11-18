@@ -43,7 +43,9 @@ export const ChoiceItem = ItemBase.extend({
 export const ClozeItem = ItemBase.extend({
 	type: z.literal('cloze'),
 	text: z.string().min(1),
-	gaps: z.record(z.string(), z.object({ accept: z.array(z.string().min(1)).min(1) }))
+	// Content standard v2 §3: a hint per gap (base form, category) and a word bank make each gap unambiguous.
+	gaps: z.record(z.string(), z.object({ accept: z.array(z.string().min(1)).min(1), hint: z.string().min(1).optional() })),
+	bank: z.array(z.string().min(1)).min(2).optional()
 }).refine(
 	(i) => {
 		const inText = [...i.text.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]).sort();
@@ -67,7 +69,14 @@ export type ShortItem = z.infer<typeof ShortItem>;
 
 // One teaching card of a micro lesson: a German phrase to hear and a short note on its use.
 // `audioText` overrides what the speech port reads (e.g. digits one by one, letters, prices in words).
-export const Card = z.object({ phrase: z.string().min(1), note: Localized, audioText: z.string().min(1).optional() });
+// Content standard v2 §1: `phrase` = speakable model sentence, `rule` = rule headline with examples, `culture` = everyday Austria.
+export const Card = z.object({
+	phrase: z.string().min(1),
+	note: Localized,
+	audioText: z.string().min(1).optional(),
+	kind: z.enum(['phrase', 'rule', 'culture']).optional(),
+	examples: z.array(z.string().min(1)).optional()
+});
 export type Card = z.infer<typeof Card>;
 
 // Vocabulary entry; `id` is the stable inventory id (02c/03c). Nouns with one article get a genus card.
@@ -83,6 +92,8 @@ export type Vocab = z.infer<typeof Vocab>;
 export const Lesson = z.object({
 	id: z.string().min(1),
 	title: Localized,
+	// Content standard v2 §1: the situation the lesson is about and what the learner can do afterwards.
+	intro: z.object({ situation: Localized, goal: Localized }).optional(),
 	// Vocabulary ids introduced by this lesson (review cards are created when it is finished, R-W2).
 	introduces: z.array(z.string()).optional(),
 	cards: z.array(Card).optional(),

@@ -32,12 +32,35 @@ V = {
 PICS['kursraum'] = ('<rect x="40" y="20" width="230" height="110" rx="6" fill="#2f5d50" stroke="#7a4e2d" stroke-width="6"/>' + label(155, 70, 'Willkommen!', 26, '#fff') + label(155, 104, 'Deutschkurs A1', 16, '#e5e7eb', bold=False)
                     + person(330, '#c8102e', 'a', '#7a4e2d', long=True) + label(330, 244, 'Lehrerin', 13, '#fff')
                     + person(90, '#1d4e89', 'b', '#222', y=40, s=0.55) + person(200, '#2a9d8f', 'c', '#222', y=40, s=0.55, long=True) + '<rect x="40" y="236" width="230" height="24" fill="#a8743f"/>')
-DESK = lambda: ('<rect x="10" y="160" width="380" height="100" fill="#a8743f"/>'
-                '<rect x="30" y="100" width="80" height="100" rx="4" fill="#1d4e89"/><rect x="38" y="108" width="64" height="84" fill="#3a6bb0"/>'
-                '<rect x="130" y="110" width="70" height="90" rx="3" fill="#fff" stroke="#c8102e" stroke-width="3"/><path d="M140 130h50M140 145h50M140 160h50" stroke="#9ed8ff" stroke-width="2"/>'
-                '<path d="M230 200l70-70 8 8-70 70-12 4z" fill="#1d4e89"/><path d="M300 130l8 8 6-6-8-8z" fill="#111"/>'
-                '<path d="M320 205l60-60 6 6-60 60-9 3z" fill="#f2c14e" stroke="#7a4e2d" stroke-width="1"/><path d="M380 145l6 6 4-10z" fill="#f1c9a5"/>')
-PICS['sachen'] = DESK() + ''.join(f'<circle cx="{x}" cy="{y}" r="14" fill="#c8102e"/>' + label(x, y + 6, str(n), 15, '#fff') for n, x, y in ((1, 70, 84), (2, 165, 92), (3, 270, 112), (4, 355, 128)))
+# Content standard v2 §5: Buch and Heft differ by shape, not by colour.
+# Buch = hard cover, thick page block (visible page edges right and below), spine with bands, title plate.
+# Heft = thin soft cover, spiral binding on the left, name label with lines, no page block.
+def BOOK(x, y, w=80, h=100):
+    t = 10
+    edges = ''.join(f'<path d="M{x + w + k} {y + 3 + k}V{y + h + k}" stroke="#b9ad95" stroke-width="1"/>' for k in (2, 4, 6, 8))
+    edges += ''.join(f'<path d="M{x + 3 + k} {y + h + k}H{x + w + k}" stroke="#b9ad95" stroke-width="1"/>' for k in (2, 4, 6, 8))
+    return (f'<rect x="{x + t}" y="{y + t}" width="{w}" height="{h}" rx="2" fill="#fbf7ee" stroke="#8a7a5a" stroke-width="1.2"/>' + edges
+            + f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="3" fill="#1d4e89" stroke="#12345e" stroke-width="1.5"/>'
+            + f'<rect x="{x}" y="{y}" width="12" height="{h}" rx="3" fill="#163d6b"/>'
+            + f'<path d="M{x} {y + 14}h12M{x} {y + h - 14}h12" stroke="#e0b44a" stroke-width="2.5"/>'
+            + f'<rect x="{x + 20}" y="{y + 16}" width="{w - 30}" height="26" rx="2" fill="#f3ead9"/>'
+            + (label(x + 5 + w / 2, y + 34, 'DEUTSCH', 10, '#1d4e89') if w >= 75 else label(x + 5 + w / 2, y + 34, 'A1', 12, '#1d4e89'))
+            + f'<path d="M{x + 26} {y + h - 22}h{w - 42}" stroke="#e0b44a" stroke-width="2"/>')
+
+
+def HEFT(x, y, w=68, h=92):
+    rings = ''.join(f'<ellipse cx="{x + 2}" cy="{y + 8 + 10 * k}" rx="5" ry="2.6" fill="none" stroke="#6b7280" stroke-width="1.8"/>' for k in range(int((h - 10) / 10) + 1))
+    return (f'<rect x="{x + 2}" y="{y + 2}" width="{w}" height="{h}" rx="2" fill="#00000014"/>'
+            + f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="2" fill="#f6c94c" stroke="#b8901f" stroke-width="1.2"/>'
+            + f'<rect x="{x + 14}" y="{y + 18}" width="{w - 24}" height="28" rx="2" fill="#fff" stroke="#b8901f" stroke-width="1"/>'
+            + f'<path d="M{x + 18} {y + 28}h{w - 32}M{x + 18} {y + 38}h{w - 32}" stroke="#9ca3af" stroke-width="1.2"/>' + rings)
+
+
+DESK = lambda: ('<rect x="10" y="168" width="380" height="92" fill="#a8743f"/>'
+                + BOOK(26, 66) + HEFT(140, 78)
+                + '<path d="M230 200l70-70 8 8-70 70-12 4z" fill="#1d4e89"/><path d="M300 130l8 8 6-6-8-8z" fill="#111"/><path d="M226 204l12-4-8-8z" fill="#e5e7eb"/>'
+                + '<path d="M320 205l60-60 6 6-60 60-9 3z" fill="#f2c14e" stroke="#7a4e2d" stroke-width="1"/><path d="M380 145l6 6 4-10z" fill="#f1c9a5"/><path d="M388 143l2 4 1-3z" fill="#333"/>')
+PICS['sachen'] = DESK() + ''.join(f'<circle cx="{x}" cy="{y}" r="14" fill="#c8102e"/>' + label(x, y + 6, str(n), 15, '#fff') for n, x, y in ((1, 70, 48), (2, 174, 60), (3, 270, 112), (4, 355, 128)))
 PICS['seite'] = ('<rect x="70" y="16" width="260" height="228" rx="4" fill="#fff" stroke="#9ca3af" stroke-width="2"/>' + label(200, 46, 'Aufgabe 3', 20, '#c8102e')
                  + ''.join(f'<path d="M95 {y}h{w}" stroke="#9ca3af" stroke-width="6" stroke-linecap="round"/>' for y, w in ((80, 210), (100, 190), (120, 200), (140, 150), (170, 210), (190, 170)))
                  + label(200, 232, 'Seite 12', 16, '#1f2937'))
@@ -52,10 +75,9 @@ PICS['sessel'] = ('<rect y="200" width="400" height="60" fill="#d9c3a3"/>'
                   + ''.join(f'<rect x="{x}" y="150" width="70" height="12" fill="#7a4e2d"/><rect x="{x+6}" y="162" width="6" height="40" fill="#7a4e2d"/><rect x="{x+58}" y="162" width="6" height="40" fill="#7a4e2d"/>' for x in (30, 165, 300))
                   + person(65, '#1d4e89', 'b', '#222', y=-20, s=0.55) + person(200, '#2a9d8f', 'a', '#7a4e2d', y=-20, s=0.55, long=True)
                   + label(65, 230, 'Jose', 14) + label(200, 230, 'Anna', 14) + label(335, 230, 'Ali', 14) + label(335, 130, '?', 36, '#f77f00'))
-PICS['tische'] = ('<rect x="10" y="150" width="180" height="20" fill="#a8743f"/><rect x="210" y="150" width="180" height="20" fill="#a8743f"/>'
-                  + '<rect x="30" y="100" width="56" height="50" rx="3" fill="#1d4e89"/><rect x="100" y="110" width="50" height="40" fill="#fff" stroke="#c8102e" stroke-width="3"/>'
-                  + '<rect x="250" y="110" width="50" height="40" fill="#fff" stroke="#c8102e" stroke-width="3"/>'
-                  + label(100, 200, 'Maria', 18) + label(300, 200, 'Tom', 18))
+PICS['tische'] = ('<rect x="10" y="160" width="180" height="20" fill="#a8743f"/><rect x="210" y="160" width="180" height="20" fill="#a8743f"/>'
+                  + BOOK(28, 92, 58, 66) + HEFT(112, 104, 46, 56) + HEFT(276, 104, 46, 56)
+                  + label(100, 210, 'Maria', 18) + label(300, 210, 'Tom', 18))
 PICS['verben'] = (panel(10, 20, 88, 220, 1) + panel(108, 20, 88, 220, 2) + panel(206, 20, 88, 220, 3) + panel(304, 20, 88, 220, 4)
                   + '<path d="M24 110l30 8 30-8v52l-30 8-30-8z" fill="#fff" stroke="#1d4e89" stroke-width="3"/><path d="M54 118v52" stroke="#1d4e89" stroke-width="2"/>'
                   + '<rect x="118" y="80" width="68" height="44" fill="#2f5d50"/><path d="M130 170l26-30" stroke="#f1c9a5" stroke-width="10" stroke-linecap="round"/>'

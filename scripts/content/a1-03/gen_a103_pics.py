@@ -52,12 +52,33 @@ PICS['herkunft'] = ''.join(person(x, c, sk, hr, long=lg) + flag(x - 18, 196, f) 
                            for x, c, sk, hr, f, n, lg in ((70, '#2a9d8f', 'a', '#7a4e2d', 'AT', 'Anna', True), (200, '#1d4e89', 'b', '#222', 'PH', 'Jose', False), (330, '#f77f00', 'a', '#d9a066', 'DE', 'Tom', False))) \
     + ''.join(label(x, 76, c, 14) for x, c in ((70, 'Österreich'), (200, 'Philippinen'), (330, 'Deutschland')))
 # L02: map – Austria with Vienna, Germany and Switzerland
-PICS['karte'] = ('<rect width="400" height="260" fill="#cfe8f3"/>'
-                 '<path d="M30 20h210l10 70-60 20-70-10-90 20z" fill="#f2e2b8" stroke="#8a7a5a" stroke-width="2"/>'
-                 '<path d="M30 120l90-20 70 10 60-20 130 10v80l-120 20-140-10-90 0z" fill="#fbd3d3" stroke="#c8102e" stroke-width="3"/>'
-                 '<path d="M10 150l60-10 40 30-30 50-70-10z" fill="#e3edc8" stroke="#6d8a3a" stroke-width="2"/>'
-                 + label(140, 60, 'Deutschland', 18) + label(250, 160, 'Österreich', 20, '#c8102e') + label(50, 200, 'Schweiz', 14)
-                 + '<circle cx="345" cy="132" r="7" fill="#1f2937"/>' + label(345, 120, 'Wien', 15) + flag(300, 175, 'AT', 30))
+# Real outlines (Natural Earth 1:50m via scripts/content/geo.mjs, content standard v2 §5): Germany, Austria, Switzerland
+# in their true position with quiet neighbours; one dot = Vienna. Tasks ask which countries are shown and where Vienna is.
+GEO = __import__('json').load(open(str(__import__('pathlib').Path(__file__).resolve().parents[1]) + '/geo.json'))
+FILL = {'Germany': ('#f2e2b8', '#8a7a5a'), 'Austria': ('#fbd3d3', '#c8102e'), 'Switzerland': ('#e3edc8', '#6d8a3a')}
+
+
+def halo(x, y, text, size, color):
+    return (f'<text x="{x}" y="{y}" font-size="{size}" font-weight="bold" fill="{color}" text-anchor="middle" '
+            f'stroke="#fff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">{text}</text>')
+
+
+def geo_map(v, labels, dots, clip):
+    w, h = v['w'], v['h']
+    out = f'<defs><clipPath id="{clip}"><rect width="{w}" height="{h}" rx="10"/></clipPath></defs><g clip-path="url(#{clip})">'
+    out += f'<rect width="{w}" height="{h}" fill="#d6ebf5"/>'
+    out += ''.join(f'<path d="{d}" fill="#efe9de" stroke="#c9bfae" stroke-width="0.8"/>' for n, d in v['shapes'].items() if n not in v['main'])
+    out += ''.join(f'<path d="{v["shapes"][n]}" fill="{FILL[n][0]}" stroke="{FILL[n][1]}" stroke-width="{2.2 if n == "Austria" else 1.6}" stroke-linejoin="round"/>' for n in v['main'])
+    out += '</g>'
+    for city in dots:
+        x, y = v['cities'][city]
+        out += f'<circle cx="{x}" cy="{y}" r="5.5" fill="#1f2937" stroke="#fff" stroke-width="2"/>' + halo(x, y - 11, city, 14, '#1f2937')
+    return out + ''.join(halo(x, y, t, size, color) for x, y, t, size, color in labels)
+
+
+D = GEO['dach']
+cx = lambda n, dx=0, dy=0: (D['centroids'][n][0] + dx, D['centroids'][n][1] + dy)
+PICS['karte'] = geo_map(D, [(*cx('Germany', 0, 10), 'Deutschland', 18, '#5b4a1c'), (*cx('Austria', 4, 6), 'Österreich', 15, '#c8102e'), (*cx('Switzerland', 0, 5), 'Schweiz', 13, '#3f5a1c')], ['Wien'], 'clip-dach')
 # L03: city Graz (left) vs village St. Georgen (right), Maria and Lukas
 PICS['wohnort'] = ('<rect x="0" y="210" width="400" height="50" fill="#c9b18e"/>'
                    '<g fill="#b8bec6"><rect x="20" y="90" width="40" height="120"/><rect x="66" y="60" width="44" height="150"/><rect x="116" y="110" width="40" height="100"/></g>'
@@ -113,10 +134,13 @@ PICS['abschied'] = ('<rect x="10" y="10" width="185" height="240" rx="10" fill="
                     + '<g transform="translate(215 40) scale(0.5)">' + person(100, '#2a9d8f', 'a', '#7a4e2d', long=True) + person(240, '#1d4e89', 'b', '#222') + '</g>'
 )
 # L13: Austria – Vienna, euro, EU flag
-PICS['oesterreich'] = ('<path d="M20 110l90-20 70 10 60-20 130 10v80l-120 20-140-10-90 0z" fill="#fbd3d3" stroke="#c8102e" stroke-width="3"/>'
-                       '<path d="M318 112l6 12 13 1-10 8 3 13-12-7-12 7 3-13-10-8 13-1z" fill="#c8102e"/>' + label(328, 168, 'Wien', 16)
-                       + '<circle cx="80" cy="50" r="30" fill="#d9a441" stroke="#9aa0a6" stroke-width="8"/>' + label(80, 59, '€', 26, '#5b4a1c')
-                       + flag(170, 26, 'EU', 60) + label(200, 82, 'EU', 13) + flag(290, 26, 'AT', 60) + label(170, 230, 'Österreich', 22, '#c8102e'))
+A = GEO['austria']
+_wx, _wy = A['cities']['Wien']
+PICS['oesterreich'] = ('<circle cx="80" cy="46" r="30" fill="#d9a441" stroke="#9aa0a6" stroke-width="8"/>' + label(80, 55, '€', 26, '#5b4a1c')
+                       + flag(170, 18, 'EU', 60) + label(200, 72, 'EU', 13) + flag(290, 18, 'AT', 60)
+                       + '<g transform="translate(10 90)">' + geo_map(A, [], [], 'clip-at')
+                       + f'<path transform="translate({_wx} {_wy})" d="M0-11l3.2 6.6 7.3.9-5.3 5 1.4 7.2L0 5.2l-6.5 3.5 1.4-7.2-5.3-5 7.3-.9z" fill="#c8102e" stroke="#fff" stroke-width="1"/>'
+                       + halo(_wx - 6, _wy + 25, 'Wien', 14, '#1f2937') + halo(A['centroids']['Austria'][0], A['centroids']['Austria'][1] + 6, 'Österreich', 18, '#c8102e') + '</g>')
 
 for name, body in PICS.items():
     open(f'{OUT}{name}.svg', 'w').write(HEAD + body + '</svg>\n')
