@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { lessonScores } from '#lib/lesson-scores.svelte.ts';
-	import { Headphones, Volume2 } from '@lucide/svelte';
+	import { Headphones, Landmark, Lightbulb, Target, Volume2 } from '@lucide/svelte';
 	import { ttsRate } from '#lib/settings.svelte.ts';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
@@ -63,18 +63,58 @@
 {:else if learning && cards.length > 0}
 	<section class="space-y-4">
 		<h1 class="h1" lang="de">{lesson.title.de}</h1>
+		{#if lesson.intro}
+			<!-- Content standard v2 §1: the situation and the can-do goal before the cards. -->
+			<div class="card space-y-3 border-l-4 !border-l-brand" data-testid="lesson-intro">
+				<div>
+					<p class="text-sm font-bold text-muted">{m.learn_situation()}</p>
+					<p class="font-semibold" lang="de">{lesson.intro.situation.de}</p>
+					{#if helpLocale !== 'de'}<p class="text-sm text-muted">{lesson.intro.situation[helpLocale]}</p>{/if}
+				</div>
+				<div class="flex items-start gap-2.5">
+					<span class="icon-tile !h-8 !w-8" aria-hidden="true"><Target size={17} strokeWidth={2.5} /></span>
+					<div>
+						<p class="text-sm font-bold text-muted">{m.learn_goal()}</p>
+						<p class="font-bold" lang="de">{lesson.intro.goal.de}</p>
+						{#if helpLocale !== 'de'}<p class="text-sm text-muted">{lesson.intro.goal[helpLocale]}</p>{/if}
+					</div>
+				</div>
+			</div>
+		{/if}
 		<p class="chip"><Headphones size={16} strokeWidth={2.5} />{m.learn_title()}</p>
 		{#if ttsFailed}<p class="text-sm text-amber-700" role="status">{m.tts_failed()}</p>{/if}
 		<ul class="space-y-3">
 			{#each cards as card (card.phrase)}
-				<li class="card">
-					<button type="button" class="flex w-full items-start gap-3 text-left" onclick={() => listen(card.audioText ?? card.phrase)}>
-						<span aria-hidden="true" class="icon-tile"><Volume2 size={20} strokeWidth={2.25} /></span>
-						<span class="text-xl font-extrabold" lang="de">{card.phrase}</span>
-					</button>
-					<p class="mt-3 font-semibold" lang="de">{card.note.de}</p>
-					{#if helpLocale !== 'de'}<p class="text-sm text-muted">{card.note[helpLocale]}</p>{/if}
-				</li>
+				{#if card.kind === 'rule' || card.kind === 'culture'}
+					<li class="card space-y-2 {card.kind === 'rule' ? '!bg-amber-50 !border-amber-200' : '!bg-sky-50 !border-sky-200'}" data-testid="card-{card.kind}">
+						<p class="flex items-center gap-2 text-sm font-bold {card.kind === 'rule' ? 'text-amber-700' : 'text-sky-700'}">
+							{#if card.kind === 'rule'}<Lightbulb size={16} strokeWidth={2.5} />{m.card_rule()}{:else}<Landmark size={16} strokeWidth={2.5} />{m.card_culture()}{/if}
+						</p>
+						<p class="text-lg font-extrabold" lang="de">{card.phrase}</p>
+						<p class="font-semibold" lang="de">{card.note.de}</p>
+						{#if helpLocale !== 'de'}<p class="text-sm text-muted">{card.note[helpLocale]}</p>{/if}
+						{#if card.examples}
+							<ul class="space-y-1.5 pt-1">
+								{#each card.examples as ex (ex)}
+									<li>
+										<button type="button" class="flex w-full items-center gap-2 rounded-lg bg-white/70 px-2.5 py-1.5 text-left" onclick={() => listen(ex)}>
+											<Volume2 size={16} strokeWidth={2.25} class="shrink-0 text-brand" /><span class="font-semibold" lang="de">{ex}</span>
+										</button>
+									</li>
+								{/each}
+							</ul>
+						{/if}
+					</li>
+				{:else}
+					<li class="card">
+						<button type="button" class="flex w-full items-start gap-3 text-left" onclick={() => listen(card.audioText ?? card.phrase)}>
+							<span aria-hidden="true" class="icon-tile"><Volume2 size={20} strokeWidth={2.25} /></span>
+							<span class="text-xl font-extrabold" lang="de">{card.phrase}</span>
+						</button>
+						<p class="mt-3 font-semibold" lang="de">{card.note.de}</p>
+						{#if helpLocale !== 'de'}<p class="text-sm text-muted">{card.note[helpLocale]}</p>{/if}
+					</li>
+				{/if}
 			{/each}
 		</ul>
 		<div class="actionbar">

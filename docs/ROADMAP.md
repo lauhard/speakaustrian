@@ -23,6 +23,9 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
   - [x] 032 Home XP badge (Andi, 18.11.2026): total XP + thin bar "noch N bis Level L" + large level ring next to the greeting, tap explains XP; header ring hidden on the home page; sidebar shows the total too
   - [x] 033 Small UI fixes (Andi, 18.11.2026): no bar under the home XP, smaller XP text centred with the ring; a failed lesson shows a retry mark (↻, red) instead of its number
 - [ ] UI/UX round 2 (later, Andi 18.11.2026): slimmer UI, splash screen, new icon, hamburger menu, animations, desktop version
+- [ ] Content standard v2 (Andi, 18.11.2026; `docs/content-standard.md`)
+  - [x] 034 Standard draft + pilot: schema (`lesson.intro`, card `kind`/`examples`, cloze `bank` + gap `hint`), learn screen (intro, rule/culture cards with speakable examples), word bank in the cloze; pilot lesson `A1-03-L01` (6 cards, 8 items with situations and full solutions); real country outlines (Natural Earth via `scripts/content/geo.mjs` → `geo.json`) for `a1-03-karte`/`a1-03-oesterreich`; Buch (hard cover, page block) vs Heft (spiral) in `a1-05-sachen`/`a1-05-tische` – these four are the reference pictures (Andi)
+  - [ ] Rollout to A1-01 … A1-05 lessons (cards, items, cloze banks, solutions, pictures), then the pools; 2 chapters per batch + review agent
 - [x] 004b A1-01 micro lessons 5–7: all 44 active A1-01 words now have a lesson and a card
 - [ ] 004 A1-01 complete, in three steps:
   - [x] 004a QA script for content pools: `pnpm qa` (`docs/QA.md`), pools file `<chapter>-pools.json` merged by `content/index.ts`, ≥ 2 twins for real chapters as content test, runs in CI; gaps G-009–G-011

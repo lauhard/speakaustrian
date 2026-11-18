@@ -63,6 +63,22 @@
 	const item = $derived(items[index]);
 	const sk = $derived(skills[item.skill]);
 	const segments = $derived(item.type === 'cloze' ? parseCloze(item.text) : []);
+	const gapOrder = $derived(segments.flatMap((sg) => (sg.kind === 'gap' ? [sg.id] : [])));
+	// A bank word counts as used as often as it stands in a gap (the n-th copy of a word is used if n copies are placed).
+	const bankUsed = (word: string, index: number) => {
+		if (item.type !== 'cloze' || !item.bank) return false;
+		const copiesBefore = item.bank.slice(0, index).filter((b) => b === word).length;
+		return gapOrder.filter((id) => (gaps[id] ?? '').trim() === word).length > copiesBefore;
+	};
+	const tapBank = (word: string, used: boolean) => {
+		if (used) {
+			const id = [...gapOrder].reverse().find((g) => (gaps[g] ?? '').trim() === word);
+			if (id) gaps = { ...gaps, [id]: '' };
+			return;
+		}
+		const empty = gapOrder.find((g) => (gaps[g] ?? '').trim() === '');
+		if (empty) gaps = { ...gaps, [empty]: word };
+	};
 	const isLast = $derived(index === items.length - 1);
 
 	const response = $derived.by((): Response | null => {
@@ -286,7 +302,8 @@
 						<input
 							data-testid="gap-{segment.id}"
 							class="gap {gapClass(segment.id)}"
-							style:width="{Math.max(4, item.type === 'cloze' ? Math.max(...item.gaps[segment.id].accept.map((a) => a.length)) : 6, (gaps[segment.id] ?? '').length) + 2}ch"
+							style:width="{Math.max(4, item.type === 'cloze' ? Math.max(...item.gaps[segment.id].accept.map((a) => a.length), (item.gaps[segment.id].hint ?? '').length) : 6, (gaps[segment.id] ?? '').length) + 2}ch"
+							placeholder={item.type === 'cloze' ? item.gaps[segment.id].hint : undefined}
 							bind:value={gaps[segment.id]}
 							aria-label="Lücke {segment.id}"
 							disabled={grade !== null}
@@ -298,6 +315,18 @@
 					{/if}
 				{/each}
 			</p>
+			{#if item.type === 'cloze' && item.bank}
+				<!-- Content standard v2 §3: word bank; a tap fills the next empty gap, a tap on a used word takes it back. -->
+				<div class="space-y-1.5" data-testid="word-bank">
+					<p class="text-xs font-bold text-muted">{m.word_bank()}</p>
+					<div class="flex flex-wrap gap-2">
+						{#each item.bank as word, w (w)}
+							{@const used = bankUsed(word, w)}
+							<button type="button" class="chip !text-base {used ? 'opacity-40 line-through' : ''}" disabled={grade !== null} data-testid="bank-word" onclick={() => tapBank(word, used)} lang="de">{word}</button>
+						{/each}
+					</div>
+				</div>
+			{/if}
 		{/if}
 
 		{#if grade}
