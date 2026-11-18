@@ -25,7 +25,8 @@ Each step is one small PR that is live after merge. Tick when merged. Spec refs 
 - [ ] UI/UX round 2 (later, Andi 18.11.2026): slimmer UI, splash screen, new icon, hamburger menu, animations, desktop version
 - [ ] Content standard v2 (Andi, 18.11.2026; `docs/content-standard.md`)
   - [x] 034 Standard draft + pilot: schema (`lesson.intro`, card `kind`/`examples`, cloze `bank` + gap `hint`), learn screen (intro, rule/culture cards with speakable examples), word bank in the cloze; pilot lesson `A1-03-L01` (6 cards, 8 items with situations and full solutions); real country outlines (Natural Earth via `scripts/content/geo.mjs` → `geo.json`) for `a1-03-karte`/`a1-03-oesterreich`; Buch (hard cover, page block) vs Heft (spiral) in `a1-05-sachen`/`a1-05-tische` – these four are the reference pictures (Andi)
-  - [ ] Rollout to A1-01 … A1-05 lessons (cards, items, cloze banks, solutions, pictures), then the pools; 2 chapters per batch + review agent
+  - [x] 035 Batch 1 (Sonnet agents + Opus spot check ≥ 20 %): A1-02 all 15 lessons (107 items; generator asserts the standard; notruf/markt pictures labelled), A1-03 L02–L13 (91 items in the chapter; 10 pictures redrawn: course cards, language list, address, village, panels). Spot-check fixes: 3 in A1-02, 1 ambiguity in A1-03-L08 („Ja“ after a „nicht“ question). G-020 (EU 1995 source) logged
+  - [ ] Batch 2: A1-04, A1-05 · Batch 3: A1-01 (needs a generator) · then the pools · QA vocab check for lesson texts
 - [x] 004b A1-01 micro lessons 5–7: all 44 active A1-01 words now have a lesson and a card
 - [ ] 004 A1-01 complete, in three steps:
   - [x] 004a QA script for content pools: `pnpm qa` (`docs/QA.md`), pools file `<chapter>-pools.json` merged by `content/index.ts`, ≥ 2 twins for real chapters as content test, runs in CI; gaps G-009–G-011

@@ -91,9 +91,12 @@ def choice(i, skill, instr, prompt, correct, others, exp, goals=None, refs=None,
     return it
 
 
-def cloze(i, skill, instr, text, gaps, exp, goals=None, refs=None, audio=None, img=None):
+def cloze(i, skill, instr, text, gaps, exp, goals=None, refs=None, audio=None, img=None, bank=None, hints=None):
     it = _base(i, 'cloze', skill, instr, exp, goals, refs)
-    it['text'], it['gaps'] = text, {str(n): {'accept': a} for n, a in enumerate(gaps, 1)}
+    it['text'] = text
+    it['gaps'] = {str(n): {'accept': a, **({'hint': hints[n - 1]} if hints and hints[n - 1] else {})} for n, a in enumerate(gaps, 1)}
+    if bank:
+        it['bank'] = bank  # content standard v2 §3: correct words + 1–2 distractors
     if audio:
         it.update(audioText=audio, audioOnly=True)
     if img:
@@ -122,14 +125,19 @@ img = lambda name, de_, en, tl: {'src': f'/img/{CH.lower()}-{name}.svg', 'alt': 
 
 # ---------------------------------------------------------------- lessons
 C = lambda phrase, de_, en, tl, audio=None: {'phrase': phrase, 'note': L(de_, en, tl), **({'audioText': audio} if audio else {})}
+# Content standard v2 §1 (docs/content-standard.md): phrase / rule (+ speakable examples) / culture cards, lesson intro.
+PHRASE = lambda phrase, de_, en, tl: {'kind': 'phrase', 'phrase': phrase, 'note': L(de_, en, tl)}
+RULE = lambda phrase, de_, en, tl, examples: {'kind': 'rule', 'phrase': phrase, 'note': L(de_, en, tl), 'examples': examples}
+CULTURE = lambda phrase, de_, en, tl: {'kind': 'culture', 'phrase': phrase, 'note': L(de_, en, tl)}
+INTRO = lambda situation, goal: {'situation': situation, 'goal': goal}
 
 
-def lesson(n, title, introduces, cards, items):
+def lesson(n, title, introduces, cards, items, intro=None):
     lid = f'{CH}-L{n:02d}'
     for k, it in enumerate(items, 1):
         it['id'] = f'{lid}-I{k}'
     assert any('image' in i for i in items), f'{lid}: every lesson needs a picture task'
-    LESSONS.append({'id': lid, 'title': title, 'introduces': [r for r in R(*introduces) if r not in NO_CARD], 'cards': cards, 'items': items})
+    LESSONS.append({'id': lid, 'title': title, **({'intro': intro} if intro else {}), 'introduces': [r for r in R(*introduces) if r not in NO_CARD], 'cards': cards, 'items': items})
 
 
 # ---------------------------------------------------------------- pools
