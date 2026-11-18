@@ -30,7 +30,7 @@ Claude implements. Small vertical steps from `docs/ROADMAP.md`: branch `t/NNN-sl
 `src/lib/core` pure logic (content schema, grading, `state.ts`, `policy.ts`, `reducer.ts`) · `src/lib/game.svelte.ts` composition root (clock, ids, storage → `dispatch`) · `src/lib/ports` interfaces · `src/lib/adapters/web` device TTS, localStorage · `src/lib/content` lesson JSON · `src/routes` UI · `messages/` UI strings (paraglide, de/en/tl). Hosting: Cloudflare Workers (D18), see `docs/DEPLOY.md`. Imports of own TS files use `#lib/….ts`.
 
 ## Content rules (D24, D25)
-- Every chapter: gap-fill tasks and ≥ 2 picture tasks; **every lesson: ≥ 1 picture task** (Andi, 16.11.2026; A1-01 follows in content run 2). Tests in `src/lib/content/content.test.ts`.
+- Every chapter: gap-fill tasks and ≥ 2 picture tasks; **every lesson: ≥ 1 picture task** (Andi, 16.11.2026). Tests in `src/lib/content/content.test.ts`.
 - Pictures: SVG in `static/img/`, one flat style (see `a1-01-amt.svg`, `a1-01-nacht.svg`), an unambiguous scene that is needed for the answer and carries several details to ask about (people, name signs, clock, place). Render and look at every new picture before shipping. No decorative or ambiguous pictures.
 - Only vocabulary of the chapter and earlier chapters (`grep -P "\tA1-01$" docs/spec/03c-kapitel-wortschatz.tsv`); situations go into the translated `instruction`.
 - Content pipeline: one generator per chapter `scripts/content/a1-NN.py` on `scripts/content/lib.py` (lessons, pools, pictures; writes JSON + SVG, renders a contact sheet to `/tmp`). Chapter files are loaded by name, no code change. Batch = 2 chapters → `pnpm qa` → slim review agent (Sonnet, 20 %, blockers/should-fix, G-017) → ship. Local e2e only for UI changes.
